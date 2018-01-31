@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.27)  31 JAN 2018 14:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.27)  31 JAN 2018 15:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -326,70 +326,161 @@ File: pppdftex.def 2013/08/25 v0.4v Pdfpages driver for pdfTeX (AM)
 \AM@toc@title=\toks17
 \c@AM@survey=\count92
 \AM@templatesizebox=\box27
-) (./main.aux)
-\openout1 = `main.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count93
-\scratchdimen=\dimen107
-\scratchbox=\box28
-\nofMPsegments=\count94
-\nofMParguments=\count95
-\everyMPshowfont=\toks18
-\MPscratchCnt=\count96
-\MPscratchDim=\dimen108
-\MPnumerator=\count97
-\makeMPintoPDFobject=\count98
-\everyMPtoPDFconversion=\toks19
-) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
-
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-))
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
 Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
-)))
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package hobsub Info: Skipping package `atbegshi' (already loaded).
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen107
+\Hy@linkcounter=\count93
+\Hy@pagecounter=\count94
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count95
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count96
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen108
+\Fld@menulength=\count97
+\Field@Width=\dimen109
+\Fld@charsize=\dimen110
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count98
+\c@Item=\count99
+\c@Hfootnote=\count100
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+\Fld@listcount=\count101
+\c@bookmark@seq@number=\count102
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip46
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 11.
+
+(./main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+ (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count103
+\scratchdimen=\dimen111
+\scratchbox=\box28
+\nofMPsegments=\count104
+\nofMParguments=\count105
+\everyMPshowfont=\toks18
+\MPscratchCnt=\count106
+\MPscratchDim=\dimen112
+\MPnumerator=\count107
+\makeMPintoPDFobject=\count108
+\everyMPtoPDFconversion=\toks19
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
 Package grfext Info: Graphics extension search list:
 (grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
@@ -400,14 +491,37 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box29
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 17.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 17.
+Package hyperref Info: Link coloring ON on input line 23.
 
-[1
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [1
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count109
+)
+LaTeX Info: Redefining \ref on input line 23.
+LaTeX Info: Redefining \pageref on input line 23.
+LaTeX Info: Redefining \nameref on input line 23.
+
+(./main.out) (./main.out)
+\@outlinefile=\write3
+\openout3 = `main.out'.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 25.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 25.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]pdfTeX warning (ext4): dest
+ination with the same identifier (name{page.1}) has been already used, duplicat
+e ignored
+<to be read again> 
+                   \relax 
+l.29 \chapter
+             *{Résumé} [1
 
 ] [2
 
@@ -415,10 +529,16 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ] [4
 
-]
-(./main.toc)
-\tf@toc=\write3
-\openout3 = `main.toc'.
+] (./main.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 3.
+)
+\tf@toc=\write4
+\openout4 = `main.toc'.
 
  [5
 
@@ -428,96 +548,498 @@ Chapter 1.
 
 ]
 Chapter 2.
-(./chapters/chapter02.tex) [7
+(./chapters/chapter02.tex
+<images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_acou
+stics_final.pdf, id=145, 597.45204pt x 845.1575pt>
+File: images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from
+_acoustics_final.pdf Graphic file (type pdf)
+
+<use images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_
+acoustics_final.pdf>
+Package pdftex.def Info: images/chapter02/Interspeech2017_Predicting_epenthetic
+_vowel_quality_from_acoustics_final.pdf used on input line 12.
+(pdftex.def)             Requested size: 597.45058pt x 845.15544pt.
+File: images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from
+_acoustics_final.pdf Graphic file (type pdf)
+
+<use images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_
+acoustics_final.pdf>
+Package pdftex.def Info: images/chapter02/Interspeech2017_Predicting_epenthetic
+_vowel_quality_from_acoustics_final.pdf used on input line 12.
+(pdftex.def)             Requested size: 597.45058pt x 845.15544pt.
+ [7
 
 ]
+<images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_acou
+stics_final.pdf, id=153, page=1, 597.45204pt x 845.1575pt>
+File: images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from
+_acoustics_final.pdf Graphic file (type pdf)
+
+<use images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_
+acoustics_final.pdf, page 1>
+Package pdftex.def Info: images/chapter02/Interspeech2017_Predicting_epenthetic
+_vowel_quality_from_acoustics_final.pdf, page1 used on input line 12.
+(pdftex.def)             Requested size: 597.45058pt x 845.15544pt.
+File: images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from
+_acoustics_final.pdf Graphic file (type pdf)
+
+<use images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_
+acoustics_final.pdf, page 1>
+Package pdftex.def Info: images/chapter02/Interspeech2017_Predicting_epenthetic
+_vowel_quality_from_acoustics_final.pdf, page1 used on input line 12.
+(pdftex.def)             Requested size: 562.06993pt x 795.10587pt.
+File: images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from
+_acoustics_final.pdf Graphic file (type pdf)
+
+<use images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_
+acoustics_final.pdf, page 1>
+Package pdftex.def Info: images/chapter02/Interspeech2017_Predicting_epenthetic
+_vowel_quality_from_acoustics_final.pdf, page1 used on input line 12.
+(pdftex.def)             Requested size: 562.06993pt x 795.10587pt.
+File: images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from
+_acoustics_final.pdf Graphic file (type pdf)
+
+<use images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_
+acoustics_final.pdf, page 1>
+Package pdftex.def Info: images/chapter02/Interspeech2017_Predicting_epenthetic
+_vowel_quality_from_acoustics_final.pdf, page1 used on input line 12.
+(pdftex.def)             Requested size: 562.06993pt x 795.10587pt.
+File: images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from
+_acoustics_final.pdf Graphic file (type pdf)
+
+<use images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_
+acoustics_final.pdf, page 1>
+Package pdftex.def Info: images/chapter02/Interspeech2017_Predicting_epenthetic
+_vowel_quality_from_acoustics_final.pdf, page1 used on input line 12.
+(pdftex.def)             Requested size: 562.06993pt x 795.10587pt.
+ [8 <./images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_fro
+m_acoustics_final.pdf>]
+<images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_acou
+stics_final.pdf, id=234, page=2, 597.45204pt x 845.1575pt>
+File: images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from
+_acoustics_final.pdf Graphic file (type pdf)
+
+<use images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_
+acoustics_final.pdf, page 2>
+Package pdftex.def Info: images/chapter02/Interspeech2017_Predicting_epenthetic
+_vowel_quality_from_acoustics_final.pdf, page2 used on input line 12.
+(pdftex.def)             Requested size: 562.06993pt x 795.10587pt.
+File: images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from
+_acoustics_final.pdf Graphic file (type pdf)
+
+<use images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_
+acoustics_final.pdf, page 2>
+Package pdftex.def Info: images/chapter02/Interspeech2017_Predicting_epenthetic
+_vowel_quality_from_acoustics_final.pdf, page2 used on input line 12.
+(pdftex.def)             Requested size: 562.06993pt x 795.10587pt.
+File: images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from
+_acoustics_final.pdf Graphic file (type pdf)
+
+<use images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_
+acoustics_final.pdf, page 2>
+Package pdftex.def Info: images/chapter02/Interspeech2017_Predicting_epenthetic
+_vowel_quality_from_acoustics_final.pdf, page2 used on input line 12.
+(pdftex.def)             Requested size: 562.06993pt x 795.10587pt.
+ [9 <./images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_fro
+m_acoustics_final.pdf>]
+<images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_acou
+stics_final.pdf, id=241, page=3, 597.45204pt x 845.1575pt>
+File: images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from
+_acoustics_final.pdf Graphic file (type pdf)
+
+<use images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_
+acoustics_final.pdf, page 3>
+Package pdftex.def Info: images/chapter02/Interspeech2017_Predicting_epenthetic
+_vowel_quality_from_acoustics_final.pdf, page3 used on input line 12.
+(pdftex.def)             Requested size: 562.06993pt x 795.10587pt.
+File: images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from
+_acoustics_final.pdf Graphic file (type pdf)
+
+<use images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_
+acoustics_final.pdf, page 3>
+Package pdftex.def Info: images/chapter02/Interspeech2017_Predicting_epenthetic
+_vowel_quality_from_acoustics_final.pdf, page3 used on input line 12.
+(pdftex.def)             Requested size: 562.06993pt x 795.10587pt.
+File: images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from
+_acoustics_final.pdf Graphic file (type pdf)
+
+<use images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_
+acoustics_final.pdf, page 3>
+Package pdftex.def Info: images/chapter02/Interspeech2017_Predicting_epenthetic
+_vowel_quality_from_acoustics_final.pdf, page3 used on input line 12.
+(pdftex.def)             Requested size: 562.06993pt x 795.10587pt.
+ [10 <./images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_fr
+om_acoustics_final.pdf>]
+<images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_acou
+stics_final.pdf, id=267, page=4, 597.45204pt x 845.1575pt>
+File: images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from
+_acoustics_final.pdf Graphic file (type pdf)
+
+<use images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_
+acoustics_final.pdf, page 4>
+Package pdftex.def Info: images/chapter02/Interspeech2017_Predicting_epenthetic
+_vowel_quality_from_acoustics_final.pdf, page4 used on input line 12.
+(pdftex.def)             Requested size: 562.06993pt x 795.10587pt.
+File: images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from
+_acoustics_final.pdf Graphic file (type pdf)
+
+<use images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_
+acoustics_final.pdf, page 4>
+Package pdftex.def Info: images/chapter02/Interspeech2017_Predicting_epenthetic
+_vowel_quality_from_acoustics_final.pdf, page4 used on input line 12.
+(pdftex.def)             Requested size: 562.06993pt x 795.10587pt.
+File: images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from
+_acoustics_final.pdf Graphic file (type pdf)
+
+<use images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_
+acoustics_final.pdf, page 4>
+Package pdftex.def Info: images/chapter02/Interspeech2017_Predicting_epenthetic
+_vowel_quality_from_acoustics_final.pdf, page4 used on input line 12.
+(pdftex.def)             Requested size: 562.06993pt x 795.10587pt.
+ [11 <./images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_fr
+om_acoustics_final.pdf>]
+<images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_acou
+stics_final.pdf, id=273, page=5, 597.45204pt x 845.1575pt>
+File: images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from
+_acoustics_final.pdf Graphic file (type pdf)
+
+<use images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_
+acoustics_final.pdf, page 5>
+Package pdftex.def Info: images/chapter02/Interspeech2017_Predicting_epenthetic
+_vowel_quality_from_acoustics_final.pdf, page5 used on input line 12.
+(pdftex.def)             Requested size: 562.06993pt x 795.10587pt.
+File: images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from
+_acoustics_final.pdf Graphic file (type pdf)
+
+<use images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_
+acoustics_final.pdf, page 5>
+Package pdftex.def Info: images/chapter02/Interspeech2017_Predicting_epenthetic
+_vowel_quality_from_acoustics_final.pdf, page5 used on input line 12.
+(pdftex.def)             Requested size: 562.06993pt x 795.10587pt.
+File: images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from
+_acoustics_final.pdf Graphic file (type pdf)
+
+<use images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_
+acoustics_final.pdf, page 5>
+Package pdftex.def Info: images/chapter02/Interspeech2017_Predicting_epenthetic
+_vowel_quality_from_acoustics_final.pdf, page5 used on input line 12.
+(pdftex.def)             Requested size: 562.06993pt x 795.10587pt.
+ [12 <./images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_fr
+om_acoustics_final.pdf>]
+<images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, id=280,
+ 614.295pt x 813.00938pt>
+File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
+phic file (type pdf)
+
+<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf>
+Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
+hetic_vowel.pdf used on input line 21.
+(pdftex.def)             Requested size: 614.29349pt x 813.0074pt.
+File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
+phic file (type pdf)
+
+<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf>
+Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
+hetic_vowel.pdf used on input line 21.
+(pdftex.def)             Requested size: 614.29349pt x 813.0074pt.
+
+<images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, id=283,
+ page=2, 614.295pt x 813.00938pt>
+File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
+phic file (type pdf)
+
+<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
+e 2>
+Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
+hetic_vowel.pdf, page2 used on input line 21.
+(pdftex.def)             Requested size: 614.29349pt x 813.0074pt.
+File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
+phic file (type pdf)
+
+<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
+e 2>
+Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
+hetic_vowel.pdf, page2 used on input line 21.
+(pdftex.def)             Requested size: 600.6646pt x 794.96979pt.
+File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
+phic file (type pdf)
+
+<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
+e 2>
+Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
+hetic_vowel.pdf, page2 used on input line 21.
+(pdftex.def)             Requested size: 600.6646pt x 794.96979pt.
+File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
+phic file (type pdf)
+
+<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
+e 2>
+Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
+hetic_vowel.pdf, page2 used on input line 21.
+(pdftex.def)             Requested size: 600.6646pt x 794.96979pt.
+File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
+phic file (type pdf)
+
+<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
+e 2>
+Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
+hetic_vowel.pdf, page2 used on input line 21.
+(pdftex.def)             Requested size: 600.6646pt x 794.96979pt.
+ [13 <./images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf>]
+
+<images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, id=329,
+ page=3, 614.295pt x 813.00938pt>
+File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
+phic file (type pdf)
+
+<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
+e 3>
+Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
+hetic_vowel.pdf, page3 used on input line 21.
+(pdftex.def)             Requested size: 600.6646pt x 794.96979pt.
+File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
+phic file (type pdf)
+
+<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
+e 3>
+Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
+hetic_vowel.pdf, page3 used on input line 21.
+(pdftex.def)             Requested size: 600.6646pt x 794.96979pt.
+File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
+phic file (type pdf)
+
+<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
+e 3>
+Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
+hetic_vowel.pdf, page3 used on input line 21.
+(pdftex.def)             Requested size: 600.6646pt x 794.96979pt.
+ [14 <./images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf>]
+
+<images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, id=349,
+ page=4, 614.295pt x 813.00938pt>
+File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
+phic file (type pdf)
+
+<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
+e 4>
+Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
+hetic_vowel.pdf, page4 used on input line 21.
+(pdftex.def)             Requested size: 600.6646pt x 794.96979pt.
+File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
+phic file (type pdf)
+
+<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
+e 4>
+Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
+hetic_vowel.pdf, page4 used on input line 21.
+(pdftex.def)             Requested size: 600.6646pt x 794.96979pt.
+File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
+phic file (type pdf)
+
+<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
+e 4>
+Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
+hetic_vowel.pdf, page4 used on input line 21.
+(pdftex.def)             Requested size: 600.6646pt x 794.96979pt.
+ [15 <./images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf>]
+
+<images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, id=362,
+ page=5, 614.295pt x 813.00938pt>
+File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
+phic file (type pdf)
+
+<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
+e 5>
+Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
+hetic_vowel.pdf, page5 used on input line 21.
+(pdftex.def)             Requested size: 600.6646pt x 794.96979pt.
+File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
+phic file (type pdf)
+
+<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
+e 5>
+Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
+hetic_vowel.pdf, page5 used on input line 21.
+(pdftex.def)             Requested size: 600.6646pt x 794.96979pt.
+File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
+phic file (type pdf)
+
+<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
+e 5>
+Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
+hetic_vowel.pdf, page5 used on input line 21.
+(pdftex.def)             Requested size: 600.6646pt x 794.96979pt.
+ [16 <./images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf>]
+
+<images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, id=369,
+ page=6, 614.295pt x 813.00938pt>
+File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
+phic file (type pdf)
+
+<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
+e 6>
+Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
+hetic_vowel.pdf, page6 used on input line 21.
+(pdftex.def)             Requested size: 600.6646pt x 794.96979pt.
+File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
+phic file (type pdf)
+
+<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
+e 6>
+Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
+hetic_vowel.pdf, page6 used on input line 21.
+(pdftex.def)             Requested size: 600.6646pt x 794.96979pt.
+File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
+phic file (type pdf)
+
+<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
+e 6>
+Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
+hetic_vowel.pdf, page6 used on input line 21.
+(pdftex.def)             Requested size: 600.6646pt x 794.96979pt.
+ [17 <./images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf>]
+
+<images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, id=374,
+ page=7, 614.295pt x 813.00938pt>
+File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
+phic file (type pdf)
+
+<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
+e 7>
+Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
+hetic_vowel.pdf, page7 used on input line 21.
+(pdftex.def)             Requested size: 600.6646pt x 794.96979pt.
+File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
+phic file (type pdf)
+
+<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
+e 7>
+Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
+hetic_vowel.pdf, page7 used on input line 21.
+(pdftex.def)             Requested size: 600.6646pt x 794.96979pt.
+File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
+phic file (type pdf)
+
+<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
+e 7>
+Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
+hetic_vowel.pdf, page7 used on input line 21.
+(pdftex.def)             Requested size: 600.6646pt x 794.96979pt.
+ [18 <./images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf>]
+
+<images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, id=380,
+ page=8, 614.295pt x 813.00938pt>
+File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
+phic file (type pdf)
+
+<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
+e 8>
+Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
+hetic_vowel.pdf, page8 used on input line 21.
+(pdftex.def)             Requested size: 600.6646pt x 794.96979pt.
+File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
+phic file (type pdf)
+
+<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
+e 8>
+Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
+hetic_vowel.pdf, page8 used on input line 21.
+(pdftex.def)             Requested size: 600.6646pt x 794.96979pt.
+File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
+phic file (type pdf)
+
+<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
+e 8>
+Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
+hetic_vowel.pdf, page8 used on input line 21.
+(pdftex.def)             Requested size: 600.6646pt x 794.96979pt.
+ [19 <./images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf>]
+)
 Chapter 3.
-(./chapters/chapter03.tex) [8
+(./chapters/chapter03.tex) [20
 
 ]
 Chapter 4.
-(./chapters/chapter04.tex) [9
+(./chapters/chapter04.tex) [21
 
 ]
 Chapter 5.
-(./chapters/chapter05-disc.tex) [10
+(./chapters/chapter05-disc.tex) (./chapters/appendix.tex
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=393
+, 614.295pt x 794.97pt>
+File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
+aphic file (type pdf)
+
+<use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
+171227_draft.pdf used on input line 3.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
+aphic file (type pdf)
+
+<use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
+171227_draft.pdf used on input line 3.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[22
 
 ]
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=400
+, page=1, 614.295pt x 794.97pt>
+File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
+aphic file (type pdf)
+
+<use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
+ge 1>
+Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
+171227_draft.pdf, page1 used on input line 3.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
+aphic file (type pdf)
+
+<use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
+ge 1>
+Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
+171227_draft.pdf, page1 used on input line 3.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
+aphic file (type pdf)
+
+<use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
+ge 1>
+Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
+171227_draft.pdf, page1 used on input line 3.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
+aphic file (type pdf)
+
+<use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
+ge 1>
+Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
+171227_draft.pdf, page1 used on input line 3.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+
 Appendix A.
-(./chapters/appendix.tex
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=40,
- 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+<use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
+ge 1>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf used on input line 1.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
-aphic file (type pdf)
-
-<use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
-Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf used on input line 1.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-
-[11
-
+171227_draft.pdf, page1 used on input line 3.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [23 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=46,
- page=1, 614.295pt x 794.97pt>
-File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
-aphic file (type pdf)
-
-<use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 1>
-Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page1 used on input line 1.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
-aphic file (type pdf)
-
-<use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 1>
-Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page1 used on input line 1.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
-aphic file (type pdf)
-
-<use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 1>
-Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page1 used on input line 1.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
-aphic file (type pdf)
-
-<use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 1>
-Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page1 used on input line 1.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
-aphic file (type pdf)
-
-<use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 1>
-Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page1 used on input line 1.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [12 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
-]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=82,
- page=2, 614.295pt x 794.97pt>
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=430
+, page=2, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 2>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page2 used on input line 1.
+171227_draft.pdf, page2 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -525,7 +1047,7 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 2>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page2 used on input line 1.
+171227_draft.pdf, page2 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -533,27 +1055,19 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 2>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page2 used on input line 1.
+171227_draft.pdf, page2 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [13 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+ [24 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=91,
- page=3, 614.295pt x 794.97pt>
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=441
+, page=3, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 3>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page3 used on input line 1.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
-aphic file (type pdf)
-
-<use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 3>
-Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page3 used on input line 1.
+171227_draft.pdf, page3 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -561,19 +1075,27 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 3>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page3 used on input line 1.
+171227_draft.pdf, page3 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [14 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
+aphic file (type pdf)
+
+<use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
+ge 3>
+Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
+171227_draft.pdf, page3 used on input line 3.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [25 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=98,
- page=4, 614.295pt x 794.97pt>
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=449
+, page=4, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 4>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page4 used on input line 1.
+171227_draft.pdf, page4 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -581,7 +1103,7 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 4>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page4 used on input line 1.
+171227_draft.pdf, page4 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -589,11 +1111,11 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 4>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page4 used on input line 1.
+171227_draft.pdf, page4 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [15 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+ [26 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=123
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=476
 , page=5, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -601,7 +1123,7 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 5>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page5 used on input line 1.
+171227_draft.pdf, page5 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -609,7 +1131,7 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 5>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page5 used on input line 1.
+171227_draft.pdf, page5 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -617,11 +1139,11 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 5>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page5 used on input line 1.
+171227_draft.pdf, page5 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [16 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+ [27 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=136
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=490
 , page=6, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -629,7 +1151,7 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 6>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page6 used on input line 1.
+171227_draft.pdf, page6 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -637,7 +1159,7 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 6>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page6 used on input line 1.
+171227_draft.pdf, page6 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -645,11 +1167,11 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 6>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page6 used on input line 1.
+171227_draft.pdf, page6 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [17 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+ [28 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=140
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=495
 , page=7, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -657,7 +1179,7 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 7>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page7 used on input line 1.
+171227_draft.pdf, page7 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -665,7 +1187,7 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 7>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page7 used on input line 1.
+171227_draft.pdf, page7 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -673,11 +1195,11 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 7>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page7 used on input line 1.
+171227_draft.pdf, page7 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [18 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+ [29 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=155
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=510
 , page=8, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -685,7 +1207,7 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 8>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page8 used on input line 1.
+171227_draft.pdf, page8 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -693,7 +1215,7 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 8>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page8 used on input line 1.
+171227_draft.pdf, page8 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -701,11 +1223,11 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 8>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page8 used on input line 1.
+171227_draft.pdf, page8 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [19 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+ [30 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=175
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=532
 , page=9, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -713,7 +1235,7 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 9>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page9 used on input line 1.
+171227_draft.pdf, page9 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -721,7 +1243,7 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 9>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page9 used on input line 1.
+171227_draft.pdf, page9 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -729,11 +1251,11 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 9>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page9 used on input line 1.
+171227_draft.pdf, page9 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [20 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+ [31 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=195
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=552
 , page=10, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -741,7 +1263,7 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 10>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page10 used on input line 1.
+171227_draft.pdf, page10 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -749,7 +1271,7 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 10>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page10 used on input line 1.
+171227_draft.pdf, page10 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -757,11 +1279,11 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 10>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page10 used on input line 1.
+171227_draft.pdf, page10 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [21 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+ [32 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=199
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=557
 , page=11, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -769,7 +1291,7 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 11>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page11 used on input line 1.
+171227_draft.pdf, page11 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -777,7 +1299,7 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 11>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page11 used on input line 1.
+171227_draft.pdf, page11 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -785,11 +1307,11 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 11>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page11 used on input line 1.
+171227_draft.pdf, page11 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [22 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+ [33 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=218
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=577
 , page=12, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -797,7 +1319,7 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 12>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page12 used on input line 1.
+171227_draft.pdf, page12 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -805,7 +1327,7 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 12>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page12 used on input line 1.
+171227_draft.pdf, page12 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -813,11 +1335,11 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 12>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page12 used on input line 1.
+171227_draft.pdf, page12 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [23 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+ [34 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=238
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=598
 , page=13, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -825,7 +1347,7 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 13>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page13 used on input line 1.
+171227_draft.pdf, page13 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -833,7 +1355,7 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 13>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page13 used on input line 1.
+171227_draft.pdf, page13 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -841,11 +1363,11 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 13>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page13 used on input line 1.
+171227_draft.pdf, page13 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [24 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+ [35 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=243
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=603
 , page=14, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -853,7 +1375,7 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 14>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page14 used on input line 1.
+171227_draft.pdf, page14 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -861,7 +1383,7 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 14>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page14 used on input line 1.
+171227_draft.pdf, page14 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -869,11 +1391,11 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 14>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page14 used on input line 1.
+171227_draft.pdf, page14 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [25 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+ [36 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=247
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=609
 , page=15, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -881,7 +1403,7 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 15>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page15 used on input line 1.
+171227_draft.pdf, page15 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -889,7 +1411,7 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 15>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page15 used on input line 1.
+171227_draft.pdf, page15 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -897,11 +1419,11 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 15>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page15 used on input line 1.
+171227_draft.pdf, page15 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [26 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+ [37 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=251
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=614
 , page=16, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -909,7 +1431,7 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 16>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page16 used on input line 1.
+171227_draft.pdf, page16 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -917,7 +1439,7 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 16>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page16 used on input line 1.
+171227_draft.pdf, page16 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -925,11 +1447,11 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 16>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page16 used on input line 1.
+171227_draft.pdf, page16 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [27 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+ [38 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=255
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=619
 , page=17, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -937,7 +1459,7 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 17>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page17 used on input line 1.
+171227_draft.pdf, page17 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -945,7 +1467,7 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 17>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page17 used on input line 1.
+171227_draft.pdf, page17 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -953,11 +1475,11 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 17>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page17 used on input line 1.
+171227_draft.pdf, page17 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [28 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+ [39 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=259
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=625
 , page=18, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -965,7 +1487,7 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 18>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page18 used on input line 1.
+171227_draft.pdf, page18 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -973,7 +1495,7 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 18>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page18 used on input line 1.
+171227_draft.pdf, page18 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -981,11 +1503,11 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 18>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page18 used on input line 1.
+171227_draft.pdf, page18 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [29 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+ [40 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=277
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=644
 , page=19, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -993,7 +1515,7 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 19>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page19 used on input line 1.
+171227_draft.pdf, page19 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1001,7 +1523,7 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 19>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page19 used on input line 1.
+171227_draft.pdf, page19 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1009,11 +1531,11 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 19>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page19 used on input line 1.
+171227_draft.pdf, page19 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [30 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+ [41 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=283
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=650
 , page=20, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1021,7 +1543,7 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 20>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page20 used on input line 1.
+171227_draft.pdf, page20 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1029,7 +1551,7 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 20>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page20 used on input line 1.
+171227_draft.pdf, page20 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1037,34 +1559,52 @@ aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
 ge 20>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page20 used on input line 1.
+171227_draft.pdf, page20 used on input line 3.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [31 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
-]) (./main.aux) ) 
+ [42 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 63.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 63.
+ (./main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 63.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 63.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 86ECFEA01DFC7BF19EA522C7B463670B;1250.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 63.
+ ) 
 Here is how much of TeX's memory you used:
- 3023 strings out of 495020
- 46300 string characters out of 6181324
- 102023 words of memory out of 5000000
- 6189 multiletter control sequences out of 15000+600000
- 6063 words of font info for 22 fonts, out of 8000000 for 9000
+ 6632 strings out of 495020
+ 103837 string characters out of 6181324
+ 181724 words of memory out of 5000000
+ 9694 multiletter control sequences out of 15000+600000
+ 8501 words of font info for 30 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 42i,18n,46p,237b,419s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxb.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/txfonts/rtxi.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-txfonts/t1xtt.pfb></usr/share/texmf/fonts/type1/fkr/tipa/tipa10.pfb></usr/share
-/texmf/fonts/type1/fkr/tipa/tipa8.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
-utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (32 pages, 426012 bytes).
+ 43i,18n,46p,237b,470s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+msy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxb.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/txfonts/rtxi.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/txfonts/t1xtt.pfb></usr/share/texmf/fonts/type1/fkr/tipa/tipa10.pfb></usr/
+share/texmf/fonts/type1/fkr/tipa/tipa8.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/c
+ourier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/share/texmf/fonts/ty
+pe1/fkr/tipa/xipa10.pfb>
+Output written on main.pdf (43 pages, 1452079 bytes).
 PDF statistics:
- 320 PDF objects out of 1000 (max. 8388607)
- 217 compressed objects within 3 object streams
- 0 named destinations out of 1000 (max. 500000)
- 116 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 717 PDF objects out of 1000 (max. 8388607)
+ 525 compressed objects within 6 object streams
+ 65 named destinations out of 1000 (max. 500000)
+ 342 words of extra memory for PDF output out of 10000 (max. 10000000)
 

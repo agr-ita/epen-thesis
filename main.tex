@@ -3,6 +3,13 @@
 \usepackage{graphicx}
 \usepackage{pdfpages}
 
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true, %set true if you want colored links
+    linktoc=all,     %set to all if you want both sections and subsections linked
+    linkcolor=black,  %choose some color if you want links to stand out
+}
+
 \graphicspath{{images/}}
 
 \title{
@@ -49,7 +56,8 @@ I want to thank...
 \input{chapters/chapter05-disc}
 
 \appendix
-\chapter{Appendix}
+%\chapter{Are words easier to learn from infant- than adult-directed speech? A quantitative corpus-based investigation}
+%\chapter{Appendix}
 \input{chapters/appendix}
 
 \end{document}
