@@ -1,5 +1,9 @@
 \documentclass[12pt, twoside]{report}
+\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
 \usepackage[utf8]{inputenc}
+\usepackage{float}
 \usepackage{graphicx}
 \usepackage{pdfpages}
 \usepackage[percent]{overpic}
@@ -11,6 +15,13 @@
 }
 
 \graphicspath{{images/}}
+
+\fancyhead{}
+\fancyhead[RO]{\nouppercase{\rightmark}}
+\fancyhead[LE]{\nouppercase{\leftmark}}
+\fancyfoot{}
+\fancyfoot[LE,RO]{\thepage}
+
 
 \title{
 	{Thesis Title}\\
@@ -56,8 +67,11 @@ I want to thank...
 \input{chapters/chapter05-disc}
 
 \appendix
-%\chapter{Are words easier to learn from infant- than adult-directed speech? A quantitative corpus-based investigation}
-%\chapter{Appendix}
+\fancyhead{}
+%\fancyhead[RO, LE]{\rightmark}
+\fancyhead[RO,LE]{\nouppercase{\leftmark}}
+\fancyfoot{}
+\fancyfoot[LE,RO]{\thepage}
 \input{chapters/appendix}
 
 \end{document}

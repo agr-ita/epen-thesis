@@ -7,15 +7,18 @@
 \contentsline {subsection}{\numberline {2.1.4}\ignorespaces Discussion}{12}{subsection.2.1.4}
 \contentsline {subsection}{\numberline {2.1.5}\ignorespaces References}{13}{subsection.2.1.5}
 \contentsline {subsection}{\numberline {2.1.6}Annexes}{14}{subsection.2.1.6}
-\contentsline {subsubsection}{/i/-epenthesis}{14}{section*.6}
-\contentsline {subsubsection}{/u/-epenthesis}{14}{section*.7}
-\contentsline {subsubsection}{Acoustic analyses}{14}{section*.8}
-\contentsline {section}{\numberline {2.2}\ignorespaces Which epenthetic vowel? Phonetic categories versus acoustic detail in perceptual vowel epenthesis}{15}{section.2.2}
+\contentsline {subsubsection}{Human and model responses at identification task}{14}{section*.6}
+\contentsline {subsubsection}{/i/-epenthesis}{14}{section*.7}
+\contentsline {subsubsection}{/u/-epenthesis}{14}{section*.8}
+\contentsline {subsubsection}{Acoustic analyses}{15}{section*.9}
+\contentsline {section}{\numberline {2.2}\ignorespaces Which epenthetic vowel? \\ Phonetic categories versus acoustic detail in perceptual vowel epenthesis}{16}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}\ignorespaces Methods}{17}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}\ignorespaces Results}{18}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}\ignorespaces Discussion}{20}{subsection.2.2.3}
 \contentsline {subsection}{\numberline {2.2.4}\ignorespaces References}{21}{subsection.2.2.4}
 \contentsline {subsection}{\numberline {2.2.5}Annexes}{23}{subsection.2.2.5}
+\contentsline {subsubsection}{Acoustic analyses}{23}{section*.10}
+\contentsline {subsubsection}{ABX task}{23}{section*.11}
 \contentsline {chapter}{\numberline {3}Chapter Three Title}{24}{chapter.3}
 \contentsline {chapter}{\numberline {4}Chapter Four Title}{25}{chapter.4}
 \contentsline {chapter}{\numberline {5}General Discussion}{26}{chapter.5}
