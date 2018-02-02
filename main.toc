@@ -1,25 +1,28 @@
 \contentsline {chapter}{\numberline {1}Introduction}{7}{chapter.1}
 \contentsline {chapter}{\numberline {2}Chapter Two Title}{8}{chapter.2}
-\contentsline {section}{\numberline {2.1}\ignorespaces Predicting epenthetic vowel quality from acoustics}{9}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}\ignorespaces Perception experiment}{9}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}\ignorespaces Acoustic analyses}{10}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}\ignorespaces Production-based exemplar model}{11}{subsection.2.1.3}
-\contentsline {subsection}{\numberline {2.1.4}\ignorespaces Discussion}{12}{subsection.2.1.4}
-\contentsline {subsection}{\numberline {2.1.5}\ignorespaces References}{13}{subsection.2.1.5}
-\contentsline {subsection}{\numberline {2.1.6}Annexes}{14}{subsection.2.1.6}
-\contentsline {subsubsection}{Human and model responses at identification task}{14}{section*.6}
-\contentsline {subsubsection}{/i/-epenthesis}{14}{section*.7}
-\contentsline {subsubsection}{/u/-epenthesis}{14}{section*.8}
-\contentsline {subsubsection}{Acoustic analyses}{15}{section*.9}
-\contentsline {section}{\numberline {2.2}\ignorespaces Which epenthetic vowel? \\ Phonetic categories versus acoustic detail in perceptual vowel epenthesis}{16}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}\ignorespaces Methods}{17}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}\ignorespaces Results}{18}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}\ignorespaces Discussion}{20}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}\ignorespaces References}{21}{subsection.2.2.4}
-\contentsline {subsection}{\numberline {2.2.5}Annexes}{23}{subsection.2.2.5}
-\contentsline {subsubsection}{Acoustic analyses}{23}{section*.10}
-\contentsline {subsubsection}{ABX task}{23}{section*.11}
-\contentsline {chapter}{\numberline {3}Chapter Three Title}{24}{chapter.3}
-\contentsline {chapter}{\numberline {4}Chapter Four Title}{25}{chapter.4}
-\contentsline {chapter}{\numberline {5}General Discussion}{26}{chapter.5}
-\contentsline {chapter}{\numberline {A}\ignorespaces Are words easier to learn from infant- than adult-directed speech? A quantitative corpus-based investigation}{27}{appendix.A}
+\contentsline {section}{\numberline {2.1}\ignorespaces Which epenthetic vowel? \\ Phonetic categories versus acoustic detail in perceptual vowel epenthesis}{9}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}\ignorespaces Methods}{10}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}\ignorespaces Results}{11}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}\ignorespaces Discussion}{13}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}\ignorespaces References}{14}{subsection.2.1.4}
+\contentsline {subsection}{\numberline {2.1.5}Annexes}{16}{subsection.2.1.5}
+\contentsline {subsubsection}{Acoustic analyses}{16}{section*.6}
+\contentsline {subsubsection}{Control items}{16}{section*.7}
+\contentsline {subsubsection}{Test items (by speaker)}{17}{section*.8}
+\contentsline {subsubsection}{ABX task}{18}{section*.9}
+\contentsline {section}{\numberline {2.2}\ignorespaces Predicting epenthetic vowel quality from acoustics}{19}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}\ignorespaces Perception experiment}{19}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}\ignorespaces Acoustic analyses}{20}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}\ignorespaces Production-based exemplar model}{21}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}\ignorespaces Discussion}{22}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}\ignorespaces References}{23}{subsection.2.2.5}
+\contentsline {subsection}{\numberline {2.2.6}Annexes}{24}{subsection.2.2.6}
+\contentsline {subsubsection}{Human responses at identification task}{24}{section*.10}
+\contentsline {subsubsection}{/i/-epenthesis}{25}{section*.11}
+\contentsline {subsubsection}{/u/-epenthesis}{25}{section*.12}
+\contentsline {subsubsection}{Acoustic analyses}{26}{section*.13}
+\contentsline {section}{\numberline {2.3}Summary and Discussion}{26}{section.2.3}
+\contentsline {chapter}{\numberline {3}Chapter Three Title}{28}{chapter.3}
+\contentsline {chapter}{\numberline {4}Chapter Four Title}{29}{chapter.4}
+\contentsline {chapter}{\numberline {5}General Discussion}{30}{chapter.5}
+\contentsline {chapter}{\numberline {A}\ignorespaces Are words easier to learn from infant- than adult-directed speech? A quantitative corpus-based investigation}{31}{appendix.A}
