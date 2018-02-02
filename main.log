@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.27)  2 FEB 2018 16:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.27)  2 FEB 2018 18:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -283,6 +283,21 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
+(/usr/share/texmf/tex/latex/tipa/tipa.sty
+Package: tipa 2002/08/08 TIPA version 1.1
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texmf/tex/latex/tipa/t3enc.def
+File: t3enc.def 2001/12/31 T3 encoding
+Now handling font encoding T3 ...
+... no UTF-8 mapping file for font encoding T3
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.def
+File: ot1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding OT1 on input line 43.
+)))
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count91
@@ -319,6 +334,34 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen111
 \Gin@req@width=\dimen112
 )
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2014/04/23 v1.1a Standard LaTeX Color (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 137.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen113
+\lightrulewidth=\dimen114
+\cmidrulewidth=\dimen115
+\belowrulesep=\dimen116
+\belowbottomsep=\dimen117
+\aboverulesep=\dimen118
+\abovetopsep=\dimen119
+\cmidrulesep=\dimen120
+\cmidrulekern=\dimen121
+\defaultaddspace=\dimen122
+\@cmidla=\count93
+\@cmidlb=\count94
+\@aboverulesep=\dimen123
+\@belowrulesep=\dimen124
+\@thisruleclass=\count95
+\@lastruleclass=\count96
+\@thisrulewidth=\dimen125
+)
 (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
 Package: pdfpages 2013/08/25 v0.4v Insert pages of external PDF documents (AM)
 
@@ -327,15 +370,15 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count93
-\calc@Bcount=\count94
-\calc@Adimen=\dimen113
-\calc@Bdimen=\dimen114
+\calc@Acount=\count97
+\calc@Bcount=\count98
+\calc@Adimen=\dimen126
+\calc@Bdimen=\dimen127
 \calc@Askip=\skip52
 \calc@Bskip=\skip53
 LaTeX Info: Redefining \setlength on input line 75.
 LaTeX Info: Redefining \addtolength on input line 76.
-\calc@Ccount=\count95
+\calc@Ccount=\count99
 \calc@Cskip=\skip54
 )
 (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
@@ -343,30 +386,13 @@ Package: eso-pic 2013/10/06 v2.0d eso-pic (RN)
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty
 Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
-
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
-File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
-)
-Package xcolor Info: Driver file: pdftex.def on input line 225.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
-Package xcolor Info: Model `RGB' extended on input line 1353.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
 File: pppdftex.def 2013/08/25 v0.4v Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box28
 \AM@toc@title=\toks20
-\c@AM@survey=\count96
+\c@AM@survey=\count100
 \AM@templatesizebox=\box29
 )
 (/usr/share/texlive/texmf-dist/tex/latex/overpic/overpic.sty
@@ -375,21 +401,21 @@ Package: overpic 2010/09/13 v0.53  Overwriting graphics
 Package: overpic v0.53 <2010/09/13> (RN)
 (/usr/share/texlive/texmf-dist/tex/latex/eepic/epic.sty
 Enhancements to Picture Environment. Version 1.2 - Released June 1, 1986
-\@@multicnt=\count97
-\d@lta=\count98
-\@delta=\dimen115
-\@@delta=\dimen116
-\@gridcnt=\count99
-\@joinkind=\count100
-\@dotgap=\dimen117
-\@ddotgap=\dimen118
-\@x@diff=\count101
-\@y@diff=\count102
-\x@diff=\dimen119
-\y@diff=\dimen120
+\@@multicnt=\count101
+\d@lta=\count102
+\@delta=\dimen128
+\@@delta=\dimen129
+\@gridcnt=\count103
+\@joinkind=\count104
+\@dotgap=\dimen130
+\@ddotgap=\dimen131
+\@x@diff=\count105
+\@y@diff=\count106
+\x@diff=\dimen132
+\y@diff=\dimen133
 \@dotbox=\box30
-\num@segments=\count103
-\num@segmentsi=\count104
+\num@segments=\count107
+\num@segmentsi=\count108
 \@datafile=\read1
 )
 overpic: relative positioning in percent
@@ -445,16 +471,16 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
-\@linkdim=\dimen121
-\Hy@linkcounter=\count105
-\Hy@pagecounter=\count106
+\@linkdim=\dimen134
+\Hy@linkcounter=\count109
+\Hy@pagecounter=\count110
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count107
+\Hy@SavedSpaceFactor=\count111
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -466,17 +492,17 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count108
+\c@Hy@tempcnt=\count112
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen122
-\Fld@menulength=\count109
-\Field@Width=\dimen123
-\Fld@charsize=\dimen124
+\XeTeXLinkMargin=\dimen135
+\Fld@menulength=\count113
+\Field@Width=\dimen136
+\Fld@charsize=\dimen137
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -486,17 +512,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count110
-\c@Item=\count111
-\c@Hfootnote=\count112
+\Hy@abspage=\count114
+\c@Item=\count115
+\c@Hfootnote=\count116
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count113
-\c@bookmark@seq@number=\count114
+\Fld@listcount=\count117
+\c@bookmark@seq@number=\count118
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
@@ -505,7 +531,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip55
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 15.
+Package hyperref Info: Option `colorlinks' set `true' on input line 18.
 
 (./main.aux
 
@@ -514,20 +540,26 @@ LaTeX Warning: Label `fig:parlato_uepenth' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 37.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 37.
+ (/usr/share/texmf/tex/latex/tipa/t3cmr.fd
+File: t3cmr.fd 2001/12/31 TIPA font definitions
+)
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -566,16 +598,16 @@ LaTeX Font Info:    ... okay on input line 34.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count115
-\scratchdimen=\dimen125
+\scratchcounter=\count119
+\scratchdimen=\dimen138
 \scratchbox=\box31
-\nofMPsegments=\count116
-\nofMParguments=\count117
+\nofMPsegments=\count120
+\nofMParguments=\count121
 \everyMPshowfont=\toks21
-\MPscratchCnt=\count118
-\MPscratchDim=\dimen126
-\MPnumerator=\count119
-\makeMPintoPDFobject=\count120
+\MPscratchCnt=\count122
+\MPscratchDim=\dimen139
+\MPnumerator=\count123
+\makeMPintoPDFobject=\count124
 \everyMPtoPDFconversion=\toks22
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -593,7 +625,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box32
-Package hyperref Info: Link coloring ON on input line 34.
+Package hyperref Info: Link coloring ON on input line 37.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -601,20 +633,20 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count121
+\c@section@level=\count125
 )
-LaTeX Info: Redefining \ref on input line 34.
-LaTeX Info: Redefining \pageref on input line 34.
-LaTeX Info: Redefining \nameref on input line 34.
+LaTeX Info: Redefining \ref on input line 37.
+LaTeX Info: Redefining \pageref on input line 37.
+LaTeX Info: Redefining \nameref on input line 37.
 
 (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 36.
+(Font)              <14.4> on input line 39.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 36.
+(Font)              <7> on input line 39.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
@@ -1009,101 +1041,51 @@ Underfull \hbox (badness 10000) in paragraph at lines 87--88
  []
 
 
-<images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_acou
-stics_final.pdf, id=314, 597.45204pt x 845.1575pt>
-File: images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from
-_acoustics_final.pdf Graphic file (type pdf)
-
-<use images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_
-acoustics_final.pdf>
-Package pdftex.def Info: images/chapter02/Interspeech2017_Predicting_epenthetic
-_vowel_quality_from_acoustics_final.pdf used on input line 106.
-(pdftex.def)             Requested size: 597.45058pt x 845.15544pt.
-File: images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from
-_acoustics_final.pdf Graphic file (type pdf)
-
-<use images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_
-acoustics_final.pdf>
-Package pdftex.def Info: images/chapter02/Interspeech2017_Predicting_epenthetic
-_vowel_quality_from_acoustics_final.pdf used on input line 106.
-(pdftex.def)             Requested size: 597.45058pt x 845.15544pt.
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [18 <./images/chapter02/ahpa_figs.pdf>]
-<images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_acou
-stics_final.pdf, id=337, page=1, 597.45204pt x 845.1575pt>
-File: images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from
-_acoustics_final.pdf Graphic file (type pdf)
-
-<use images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_
-acoustics_final.pdf, page 1>
-Package pdftex.def Info: images/chapter02/Interspeech2017_Predicting_epenthetic
-_vowel_quality_from_acoustics_final.pdf, page1 used on input line 106.
-(pdftex.def)             Requested size: 597.45058pt x 845.15544pt.
-File: images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from
-_acoustics_final.pdf Graphic file (type pdf)
-
-<use images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_
-acoustics_final.pdf, page 1>
-Package pdftex.def Info: images/chapter02/Interspeech2017_Predicting_epenthetic
-_vowel_quality_from_acoustics_final.pdf, page1 used on input line 106.
-(pdftex.def)             Requested size: 597.47792pt x 845.19412pt.
-File: images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from
-_acoustics_final.pdf Graphic file (type pdf)
-
-<use images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_
-acoustics_final.pdf, page 1>
-Package pdftex.def Info: images/chapter02/Interspeech2017_Predicting_epenthetic
-_vowel_quality_from_acoustics_final.pdf, page1 used on input line 106.
-(pdftex.def)             Requested size: 597.47792pt x 845.19412pt.
-File: images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from
-_acoustics_final.pdf Graphic file (type pdf)
-
-<use images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_
-acoustics_final.pdf, page 1>
-Package pdftex.def Info: images/chapter02/Interspeech2017_Predicting_epenthetic
-_vowel_quality_from_acoustics_final.pdf, page1 used on input line 106.
-(pdftex.def)             Requested size: 597.47792pt x 845.19412pt.
+Overfull \hbox (13.48637pt too wide) in paragraph at lines 109--109
+[]\OT1/cmr/bx/n/17.28 Predicting epenthetic vowel qual-ity from acous-
+ []
 
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
+LaTeX Warning: Citation `dupoux_1999' on page 19 undefined on input line 121.
 
-File: images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from
-_acoustics_final.pdf Graphic file (type pdf)
 
-<use images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_
-acoustics_final.pdf, page 1>
-Package pdftex.def Info: images/chapter02/Interspeech2017_Predicting_epenthetic
-_vowel_quality_from_acoustics_final.pdf, page1 used on input line 106.
-(pdftex.def)             Requested size: 597.47792pt x 845.19412pt.
- [19 <./images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_fr
-om_acoustics_final.pdf>]
-<images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_acou
-stics_final.pdf, id=419, page=2, 597.45204pt x 845.1575pt>
-File: images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from
-_acoustics_final.pdf Graphic file (type pdf)
+LaTeX Warning: Citation `dehaene_2000' on page 19 undefined on input line 121.
 
-<use images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_
-acoustics_final.pdf, page 2>
-Package pdftex.def Info: images/chapter02/Interspeech2017_Predicting_epenthetic
-_vowel_quality_from_acoustics_final.pdf, page2 used on input line 106.
-(pdftex.def)             Requested size: 597.47792pt x 845.19412pt.
-File: images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from
-_acoustics_final.pdf Graphic file (type pdf)
 
-<use images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_
-acoustics_final.pdf, page 2>
-Package pdftex.def Info: images/chapter02/Interspeech2017_Predicting_epenthetic
-_vowel_quality_from_acoustics_final.pdf, page2 used on input line 106.
-(pdftex.def)             Requested size: 597.47792pt x 845.19412pt.
+LaTeX Warning: Citation `dupoux_2001' on page 19 undefined on input line 121.
+
+
+LaTeX Warning: Citation `berent2007' on page 19 undefined on input line 121.
+
+
+LaTeX Warning: Citation `kabak2007' on page 19 undefined on input line 121.
+
+
+LaTeX Warning: Citation `monahan2009' on page 19 undefined on input line 121.
+
+
+LaTeX Warning: Citation `dupoux_2011' on page 19 undefined on input line 121.
+
+
+LaTeX Warning: Citation `mattingley2015' on page 19 undefined on input line 121
+.
+
+
+LaTeX Warning: Citation `durvasula2015' on page 19 undefined on input line 121.
+
+
+
+LaTeX Warning: Citation `dupoux_2011' on page 19 undefined on input line 121.
+
+
+Underfull \vbox (badness 5147) has occurred while \output is active []
+
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1111,34 +1093,24 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-File: images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from
-_acoustics_final.pdf Graphic file (type pdf)
+[19]
 
-<use images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_
-acoustics_final.pdf, page 2>
-Package pdftex.def Info: images/chapter02/Interspeech2017_Predicting_epenthetic
-_vowel_quality_from_acoustics_final.pdf, page2 used on input line 106.
-(pdftex.def)             Requested size: 597.47792pt x 845.19412pt.
- [20 <./images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_fr
-om_acoustics_final.pdf>]
-<images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_acou
-stics_final.pdf, id=426, page=3, 597.45204pt x 845.1575pt>
-File: images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from
-_acoustics_final.pdf Graphic file (type pdf)
+LaTeX Warning: Citation `R-base' on page 20 undefined on input line 133.
 
-<use images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_
-acoustics_final.pdf, page 3>
-Package pdftex.def Info: images/chapter02/Interspeech2017_Predicting_epenthetic
-_vowel_quality_from_acoustics_final.pdf, page3 used on input line 106.
-(pdftex.def)             Requested size: 597.47792pt x 845.19412pt.
-File: images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from
-_acoustics_final.pdf Graphic file (type pdf)
 
-<use images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_
-acoustics_final.pdf, page 3>
-Package pdftex.def Info: images/chapter02/Interspeech2017_Predicting_epenthetic
-_vowel_quality_from_acoustics_final.pdf, page3 used on input line 106.
-(pdftex.def)             Requested size: 597.47792pt x 845.19412pt.
+LaTeX Warning: Citation `R-MCMCglmm' on page 20 undefined on input line 133.
+
+
+LaTeX Warning: Citation `R-coda' on page 20 undefined on input line 133.
+
+
+Overfull \hbox (33.10863pt too wide) in paragraph at lines 159--160
+\OT1/cmr/m/n/12 more of-ten than JP par-tic-i-pants (pos-te-rior mode: $\OMS/cm
+sy/m/n/12 ^^@\OT1/cmr/m/n/12 277\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1$, HPD in-te
+r-val: $[\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 389\OML/cmm/m/it/12 :\OT1/cmr/m/n/
+12 2\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 167\OML/cmm/m/it/12 
+:\OT1/cmr/m/n/12 1]$).
+ []
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1146,34 +1118,74 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-File: images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from
-_acoustics_final.pdf Graphic file (type pdf)
+[20]
+Overfull \hbox (1.78992pt too wide) in paragraph at lines 163--164
+\OT1/cmr/m/n/12 els were /u/. Lastly, there was also a main ef-fect of Coro-nal
+ $\OML/cmm/m/it/12 C[]$ \OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 4
+3\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 [\OMS/cm
+sy/m/n/12 ^^@\OT1/cmr/m/n/12 75\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 8\OML/cmm/m/it
+/12 ; \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 9\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 8]
+$):
+ []
 
-<use images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_
-acoustics_final.pdf, page 3>
-Package pdftex.def Info: images/chapter02/Interspeech2017_Predicting_epenthetic
-_vowel_quality_from_acoustics_final.pdf, page3 used on input line 106.
-(pdftex.def)             Requested size: 597.47792pt x 845.19412pt.
- [21 <./images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_fr
-om_acoustics_final.pdf>]
-<images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_acou
-stics_final.pdf, id=452, page=4, 597.45204pt x 845.1575pt>
-File: images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from
-_acoustics_final.pdf Graphic file (type pdf)
 
-<use images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_
-acoustics_final.pdf, page 4>
-Package pdftex.def Info: images/chapter02/Interspeech2017_Predicting_epenthetic
-_vowel_quality_from_acoustics_final.pdf, page4 used on input line 106.
-(pdftex.def)             Requested size: 597.47792pt x 845.19412pt.
-File: images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from
-_acoustics_final.pdf Graphic file (type pdf)
+Overfull \hbox (60.79752pt too wide) in paragraph at lines 163--164
+\OT1/cmr/m/n/12 nants. How-ever, nei-ther the in-ter-ac-tion be-tween Coro-nal 
+$\OML/cmm/m/it/12 C[]$ \OT1/cmr/m/n/12 and Lan-guage ($\OMS/cmsy/m/n/12 ^^@\OT1
+/cmr/m/n/12 63\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 9\OML/cmm/m/it/12 ; \OT1/cmr/m/
+n/12 [\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 132\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 
+1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 0]$),
+ []
 
-<use images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_
-acoustics_final.pdf, page 4>
-Package pdftex.def Info: images/chapter02/Interspeech2017_Predicting_epenthetic
-_vowel_quality_from_acoustics_final.pdf, page4 used on input line 106.
-(pdftex.def)             Requested size: 597.47792pt x 845.19412pt.
+
+Overfull \hbox (3.42282pt too wide) in paragraph at lines 163--164
+\OT1/cmr/m/n/12 were sig-nif-i-cant; thus, JP par-tic-i-pants were not more pro
+ne to avoid-ing /u/-epenthesis
+ []
+
+<images/chapter02/parlato_figs.pdf, id=351, page=1, 252.945pt x 252.945pt>
+File: images/chapter02/parlato_figs.pdf Graphic file (type pdf)
+
+<use images/chapter02/parlato_figs.pdf, page 1>
+Package pdftex.def Info: images/chapter02/parlato_figs.pdf, page1 used on input
+ line 167.
+(pdftex.def)             Requested size: 139.42122pt x 139.41832pt.
+
+<images/chapter02/parlato_figs.pdf, id=353, page=3, 252.945pt x 252.945pt>
+File: images/chapter02/parlato_figs.pdf Graphic file (type pdf)
+
+<use images/chapter02/parlato_figs.pdf, page 3>
+Package pdftex.def Info: images/chapter02/parlato_figs.pdf, page3 used on input
+ line 170.
+(pdftex.def)             Requested size: 139.42122pt x 139.41832pt.
+
+<images/chapter02/parlato_figs.pdf, id=355, page=2, 252.945pt x 252.945pt>
+File: images/chapter02/parlato_figs.pdf Graphic file (type pdf)
+
+<use images/chapter02/parlato_figs.pdf, page 2>
+Package pdftex.def Info: images/chapter02/parlato_figs.pdf, page2 used on input
+ line 176.
+(pdftex.def)             Requested size: 139.42122pt x 139.41832pt.
+
+<images/chapter02/parlato_figs.pdf, id=357, page=4, 252.945pt x 252.945pt>
+File: images/chapter02/parlato_figs.pdf Graphic file (type pdf)
+
+<use images/chapter02/parlato_figs.pdf, page 4>
+Package pdftex.def Info: images/chapter02/parlato_figs.pdf, page4 used on input
+ line 179.
+(pdftex.def)             Requested size: 140.84157pt x 140.84105pt.
+
+
+LaTeX Warning: Citation `escudero2009' on page 21 undefined on input line 188.
+
+
+LaTeX Warning: Citation `han1962' on page 21 undefined on input line 188.
+
+
+LaTeX Warning: Citation `R-wrassp' on page 21 undefined on input line 193.
+
+
+LaTeX Warning: Citation `R-lsmeans' on page 21 undefined on input line 197.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1181,34 +1193,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-File: images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from
-_acoustics_final.pdf Graphic file (type pdf)
+[21]
 
-<use images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_
-acoustics_final.pdf, page 4>
-Package pdftex.def Info: images/chapter02/Interspeech2017_Predicting_epenthetic
-_vowel_quality_from_acoustics_final.pdf, page4 used on input line 106.
-(pdftex.def)             Requested size: 597.47792pt x 845.19412pt.
- [22 <./images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_fr
-om_acoustics_final.pdf>]
-<images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_acou
-stics_final.pdf, id=458, page=5, 597.45204pt x 845.1575pt>
-File: images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from
-_acoustics_final.pdf Graphic file (type pdf)
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
-<use images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_
-acoustics_final.pdf, page 5>
-Package pdftex.def Info: images/chapter02/Interspeech2017_Predicting_epenthetic
-_vowel_quality_from_acoustics_final.pdf, page5 used on input line 106.
-(pdftex.def)             Requested size: 597.47792pt x 845.19412pt.
-File: images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from
-_acoustics_final.pdf Graphic file (type pdf)
+[22 <./images/chapter02/parlato_figs.pdf> <./images/chapter02/parlato_figs.pdf>
+ <./images/chapter02/parlato_figs.pdf> <./images/chapter02/parlato_figs.pdf>]
+<images/chapter02/parlato_fig2.pdf, id=386, 361.35pt x 216.81pt>
+File: images/chapter02/parlato_fig2.pdf Graphic file (type pdf)
 
-<use images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_
-acoustics_final.pdf, page 5>
-Package pdftex.def Info: images/chapter02/Interspeech2017_Predicting_epenthetic
-_vowel_quality_from_acoustics_final.pdf, page5 used on input line 106.
-(pdftex.def)             Requested size: 597.47792pt x 845.19412pt.
+<use images/chapter02/parlato_fig2.pdf>
+Package pdftex.def Info: images/chapter02/parlato_fig2.pdf used on input line 2
+14.
+(pdftex.def)             Requested size: 426.79134pt x 256.07838pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1216,46 +1216,106 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-File: images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from
-_acoustics_final.pdf Graphic file (type pdf)
+[23 <./images/chapter02/parlato_fig2.pdf>]
 
-<use images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_from_
-acoustics_final.pdf, page 5>
-Package pdftex.def Info: images/chapter02/Interspeech2017_Predicting_epenthetic
-_vowel_quality_from_acoustics_final.pdf, page5 used on input line 106.
-(pdftex.def)             Requested size: 597.47792pt x 845.19412pt.
- [23 <./images/chapter02/Interspeech2017_Predicting_epenthetic_vowel_quality_fr
-om_acoustics_final.pdf>]
-<images/chapter02/parlato_per_all.pdf, id=464, page=1, 505.89pt x 505.89pt>
+LaTeX Warning: Citation `sakoe1978' on page 24 undefined on input line 225.
+
+
+LaTeX Warning: Citation `R-dtw' on page 24 undefined on input line 225.
+
+
+LaTeX Warning: Citation `nosofsky1992' on page 24 undefined on input line 234.
+
+
+LaTeX Warning: Reference `fig:per&model_responses' on page 24 undefined on inpu
+t line 240.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[24]
+
+LaTeX Warning: Citation `dupoux_1999' on page 25 undefined on input line 257.
+
+
+LaTeX Warning: Citation `dupoux_2011' on page 25 undefined on input line 257.
+
+
+LaTeX Warning: Citation `rose2006' on page 25 undefined on input line 257.
+
+
+LaTeX Warning: Citation `uffmann2006' on page 25 undefined on input line 257.
+
+
+LaTeX Warning: Citation `dupoux_2011' on page 25 undefined on input line 257.
+
+
+LaTeX Warning: Reference `fig:per&model_responses' on page 25 undefined on inpu
+t line 259.
+
+
+LaTeX Warning: Citation `monahan2009' on page 25 undefined on input line 259.
+
+
+LaTeX Warning: Citation `mattingley2015' on page 25 undefined on input line 259
+.
+
+
+LaTeX Warning: Citation `dupoux_2011' on page 25 undefined on input line 259.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[25]
+
+LaTeX Warning: Citation `chi2005' on page 26 undefined on input line 262.
+
+
+LaTeX Warning: Citation `hyafil2015' on page 26 undefined on input line 262.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[26]
+<images/chapter02/parlato_per_all.pdf, id=426, page=1, 505.89pt x 505.89pt>
 File: images/chapter02/parlato_per_all.pdf Graphic file (type pdf)
 
 <use images/chapter02/parlato_per_all.pdf, page 1>
 Package pdftex.def Info: images/chapter02/parlato_per_all.pdf, page1 used on in
-put line 114.
+put line 278.
 (pdftex.def)             Requested size: 256.0774pt x 256.07838pt.
 
-<images/chapter02/parlato_per_all.pdf, id=465, page=2, 505.89pt x 505.89pt>
+<images/chapter02/parlato_per_all.pdf, id=427, page=2, 505.89pt x 505.89pt>
 File: images/chapter02/parlato_per_all.pdf Graphic file (type pdf)
 
 <use images/chapter02/parlato_per_all.pdf, page 2>
 Package pdftex.def Info: images/chapter02/parlato_per_all.pdf, page2 used on in
-put line 115.
+put line 279.
 (pdftex.def)             Requested size: 256.0774pt x 256.07838pt.
 
-<images/chapter02/parlato_per_iou.pdf, id=466, page=1, 289.08pt x 216.81pt>
+<images/chapter02/parlato_per_iou.pdf, id=428, page=1, 289.08pt x 216.81pt>
 File: images/chapter02/parlato_per_iou.pdf Graphic file (type pdf)
 
 <use images/chapter02/parlato_per_iou.pdf, page 1>
 Package pdftex.def Info: images/chapter02/parlato_per_iou.pdf, page1 used on in
-put line 124.
+put line 288.
 (pdftex.def)             Requested size: 192.0548pt x 144.0412pt.
 
-<images/chapter02/parlato_per_iou.pdf, id=467, page=3, 289.08pt x 216.81pt>
+<images/chapter02/parlato_per_iou.pdf, id=429, page=3, 289.08pt x 216.81pt>
 File: images/chapter02/parlato_per_iou.pdf Graphic file (type pdf)
 
 <use images/chapter02/parlato_per_iou.pdf, page 3>
 Package pdftex.def Info: images/chapter02/parlato_per_iou.pdf, page3 used on in
-put line 126.
+put line 290.
 (pdftex.def)             Requested size: 192.0548pt x 144.0412pt.
 
 Underfull \vbox (badness 1259) has occurred while \output is active []
@@ -1267,46 +1327,46 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[24 <./images/chapter02/parlato_per_all.pdf> <./images/chapter02/parlato_per_al
+[27 <./images/chapter02/parlato_per_all.pdf> <./images/chapter02/parlato_per_al
 l.pdf>]
-<images/chapter02/parlato_per_iou.pdf, id=480, page=2, 289.08pt x 216.81pt>
+<images/chapter02/parlato_per_iou.pdf, id=442, page=2, 289.08pt x 216.81pt>
 File: images/chapter02/parlato_per_iou.pdf Graphic file (type pdf)
 
 <use images/chapter02/parlato_per_iou.pdf, page 2>
 Package pdftex.def Info: images/chapter02/parlato_per_iou.pdf, page2 used on in
-put line 134.
+put line 298.
 (pdftex.def)             Requested size: 192.0548pt x 144.0412pt.
 
-<images/chapter02/parlato_per_iou.pdf, id=481, page=4, 289.08pt x 216.81pt>
+<images/chapter02/parlato_per_iou.pdf, id=443, page=4, 289.08pt x 216.81pt>
 File: images/chapter02/parlato_per_iou.pdf Graphic file (type pdf)
 
 <use images/chapter02/parlato_per_iou.pdf, page 4>
 Package pdftex.def Info: images/chapter02/parlato_per_iou.pdf, page4 used on in
-put line 136.
+put line 300.
 (pdftex.def)             Requested size: 192.0548pt x 144.0412pt.
 
-<images/chapter02/parlato_acoustic.pdf, id=482, page=1, 361.35pt x 361.35pt>
+<images/chapter02/parlato_acoustic.pdf, id=444, page=1, 361.35pt x 361.35pt>
 File: images/chapter02/parlato_acoustic.pdf Graphic file (type pdf)
 
 <use images/chapter02/parlato_acoustic.pdf, page 1>
 Package pdftex.def Info: images/chapter02/parlato_acoustic.pdf, page1 used on i
-nput line 144.
+nput line 308.
 (pdftex.def)             Requested size: 184.9422pt x 184.9429pt.
 
-<images/chapter02/parlato_acoustic.pdf, id=484, page=2, 361.35pt x 361.35pt>
+<images/chapter02/parlato_acoustic.pdf, id=446, page=2, 361.35pt x 361.35pt>
 File: images/chapter02/parlato_acoustic.pdf Graphic file (type pdf)
 
 <use images/chapter02/parlato_acoustic.pdf, page 2>
 Package pdftex.def Info: images/chapter02/parlato_acoustic.pdf, page2 used on i
-nput line 146.
+nput line 310.
 (pdftex.def)             Requested size: 184.9422pt x 184.9429pt.
 
-<images/chapter02/parlato_acoustic.pdf, id=486, page=3, 361.35pt x 361.35pt>
+<images/chapter02/parlato_acoustic.pdf, id=448, page=3, 361.35pt x 361.35pt>
 File: images/chapter02/parlato_acoustic.pdf Graphic file (type pdf)
 
 <use images/chapter02/parlato_acoustic.pdf, page 3>
 Package pdftex.def Info: images/chapter02/parlato_acoustic.pdf, page3 used on i
-nput line 147.
+nput line 311.
 (pdftex.def)             Requested size: 184.9422pt x 184.9429pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1318,23 +1378,24 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[25 <./images/chapter02/parlato_per_iou.pdf> <./images/chapter02/parlato_per_io
+[28 <./images/chapter02/parlato_per_iou.pdf> <./images/chapter02/parlato_per_io
 u.pdf> <./images/chapter02/parlato_per_iou.pdf> <./images/chapter02/parlato_per
 _iou.pdf>]
-Overfull \hbox (1.03061pt too wide) in paragraph at lines 162--163
-\OT1/cmr/m/n/12 2.1), re-flected by abil-ity of ex-em-plar model to re-pro-duce
- mod-u-la-tion of epVqual
- []
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[26 <./images/chapter02/parlato_acoustic.pdf> <./images/chapter02/parlato_acous
+[29 <./images/chapter02/parlato_acoustic.pdf> <./images/chapter02/parlato_acous
 tic.pdf> <./images/chapter02/parlato_acoustic.pdf>]
-Overfull \hbox (6.05695pt too wide) in paragraph at lines 174--175
+Overfull \hbox (1.03061pt too wide) in paragraph at lines 326--327
+\OT1/cmr/m/n/12 2.1), re-flected by abil-ity of ex-em-plar model to re-pro-duce
+ mod-u-la-tion of epVqual
+ []
+
+
+Overfull \hbox (6.05695pt too wide) in paragraph at lines 338--339
 []\OT1/cmr/m/n/12 Match from acoustics-to-acoustics, with-out nor-mal-iz-ing th
 e acous-tics by speaker 
  []
@@ -1346,18 +1407,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[27]
+[30]
 Chapter 3.
-(./chapters/chapter03.tex) [28
+(./chapters/chapter03.tex) [31
 
 ]
 Chapter 4.
-(./chapters/chapter04.tex) [29
+(./chapters/chapter04.tex) [32
 
 ]
 Chapter 5.
 (./chapters/chapter05-disc.tex) (./chapters/appendix.tex
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=536
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=498
 , 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1374,10 +1435,10 @@ Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf used on input line 3.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
-[30
+[33
 
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=543
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=505
 , page=1, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1427,9 +1488,9 @@ ge 1>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf, page1 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [31 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+ [34 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=574
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=541
 , page=2, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1462,9 +1523,9 @@ ge 2>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf, page2 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [32 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+ [35 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=584
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=551
 , page=3, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1497,9 +1558,9 @@ ge 3>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf, page3 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [33 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+ [36 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=592
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=559
 , page=4, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1532,9 +1593,9 @@ ge 4>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf, page4 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [34 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+ [37 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=619
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=587
 , page=5, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1567,9 +1628,9 @@ ge 5>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf, page5 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [35 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+ [38 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=633
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=601
 , page=6, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1602,9 +1663,9 @@ ge 6>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf, page6 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [36 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+ [39 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=638
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=606
 , page=7, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1637,9 +1698,9 @@ ge 7>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf, page7 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [37 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+ [40 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=654
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=621
 , page=8, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1672,9 +1733,9 @@ ge 8>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf, page8 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [38 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+ [41 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=675
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=642
 , page=9, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1707,9 +1768,9 @@ ge 9>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf, page9 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [39 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+ [42 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=695
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=662
 , page=10, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1742,9 +1803,9 @@ ge 10>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf, page10 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [40 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+ [43 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=700
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=668
 , page=11, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1777,9 +1838,9 @@ ge 11>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf, page11 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [41 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+ [44 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=720
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=688
 , page=12, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1812,9 +1873,9 @@ ge 12>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf, page12 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [42 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+ [45 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=741
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=709
 , page=13, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1847,9 +1908,9 @@ ge 13>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf, page13 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [43 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+ [46 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=747
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=714
 , page=14, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1882,9 +1943,9 @@ ge 14>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf, page14 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [44 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+ [47 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=752
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=719
 , page=15, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1917,9 +1978,9 @@ ge 15>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf, page15 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [45 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+ [48 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=757
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=724
 , page=16, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1952,9 +2013,9 @@ ge 16>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf, page16 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [46 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+ [49 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=762
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=730
 , page=17, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1987,9 +2048,9 @@ ge 17>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf, page17 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [47 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+ [50 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=768
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=736
 , page=18, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -2022,9 +2083,9 @@ ge 18>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf, page18 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [48 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+ [51 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=787
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=755
 , page=19, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -2057,9 +2118,9 @@ ge 19>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf, page19 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [49 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+ [52 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=794
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=761
 , page=20, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -2092,56 +2153,55 @@ ge 20>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf, page20 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [50 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+ [53 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 77.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 77.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 80.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 80.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 77.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 77.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 80.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 80.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 6EDEED1ED825AB871DBCBF0762EC743C;1445.
+(rerunfilecheck)             Checksum: 529E213FC7A0D0E1A120305DB25271D5;1455.
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 77.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 80.
  ) 
 Here is how much of TeX's memory you used:
- 7490 strings out of 495020
- 116955 string characters out of 6181324
- 204685 words of memory out of 5000000
- 10490 multiletter control sequences out of 15000+600000
- 9414 words of font info for 33 fonts, out of 8000000 for 9000
+ 8198 strings out of 495020
+ 124094 string characters out of 6181324
+ 208158 words of memory out of 5000000
+ 11156 multiletter control sequences out of 15000+600000
+ 10872 words of font info for 37 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 43i,18n,46p,649b,472s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,18n,46p,1718b,472s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/txfonts/rtxb.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/txfonts/rtxi.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts
-/t1xtt.pfb></usr/share/texmf/fonts/type1/fkr/tipa/tipa10.pfb></usr/share/texmf/
-fonts/type1/fkr/tipa/tipa8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8
-a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/urw/times/utmri8a.pfb></usr/share/texmf/fonts/type1/fkr/tipa
-/xipa10.pfb>
-Output written on main.pdf (50 pages, 1634387 bytes).
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxb.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxi.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/txfonts/t1xtt.pfb></usr/share/texmf/fonts/type1/fkr/tipa/tipa10
+.pfb></usr/share/texmf/fonts/type1/fkr/tipa/tipa12.pfb></usr/share/texmf/fonts/
+type1/fkr/tipa/tipa8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfo
+nts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (53 pages, 971715 bytes).
 PDF statistics:
- 875 PDF objects out of 1000 (max. 8388607)
- 649 compressed objects within 7 object streams
- 92 named destinations out of 1000 (max. 500000)
- 454 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 851 PDF objects out of 1000 (max. 8388607)
+ 645 compressed objects within 7 object streams
+ 113 named destinations out of 1000 (max. 500000)
+ 469 words of extra memory for PDF output out of 10000 (max. 10000000)
 
