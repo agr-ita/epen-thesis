@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.27)  2 FEB 2018 18:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.27)  2 FEB 2018 18:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -362,6 +362,10 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count96
 \@thisrulewidth=\dimen125
 )
+(/usr/share/texlive/texmf-dist/tex/latex/threeparttable/threeparttable.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box28
+)
 (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
 Package: pdfpages 2013/08/25 v0.4v Insert pages of external PDF documents (AM)
 
@@ -390,10 +394,10 @@ Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
 File: pppdftex.def 2013/08/25 v0.4v Pdfpages driver for pdfTeX (AM)
 )
-\AM@pagebox=\box28
+\AM@pagebox=\box29
 \AM@toc@title=\toks20
 \c@AM@survey=\count100
-\AM@templatesizebox=\box29
+\AM@templatesizebox=\box30
 )
 (/usr/share/texlive/texmf-dist/tex/latex/overpic/overpic.sty
 Package: overpic 2010/09/13 v0.53  Overwriting graphics
@@ -413,7 +417,7 @@ Enhancements to Picture Environment. Version 1.2 - Released June 1, 1986
 \@y@diff=\count106
 \x@diff=\dimen132
 \y@diff=\dimen133
-\@dotbox=\box30
+\@dotbox=\box31
 \num@segments=\count107
 \num@segmentsi=\count108
 \@datafile=\read1
@@ -531,7 +535,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip55
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 18.
+Package hyperref Info: Option `colorlinks' set `true' on input line 19.
 
 (./main.aux
 
@@ -540,26 +544,26 @@ LaTeX Warning: Label `fig:parlato_uepenth' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 37.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 37.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 38.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 38.
  (/usr/share/texmf/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -600,7 +604,7 @@ LaTeX Font Info:    ... okay on input line 37.
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count119
 \scratchdimen=\dimen138
-\scratchbox=\box31
+\scratchbox=\box32
 \nofMPsegments=\count120
 \nofMParguments=\count121
 \everyMPshowfont=\toks21
@@ -624,8 +628,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box32
-Package hyperref Info: Link coloring ON on input line 37.
+\AtBeginShipoutBox=\box33
+Package hyperref Info: Link coloring ON on input line 38.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -635,18 +639,18 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count125
 )
-LaTeX Info: Redefining \ref on input line 37.
-LaTeX Info: Redefining \pageref on input line 37.
-LaTeX Info: Redefining \nameref on input line 37.
+LaTeX Info: Redefining \ref on input line 38.
+LaTeX Info: Redefining \pageref on input line 38.
+LaTeX Info: Redefining \nameref on input line 38.
 
 (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 39.
+(Font)              <14.4> on input line 40.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 39.
+(Font)              <7> on input line 40.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
@@ -686,65 +690,80 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
  []
 
-
-<images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, id=165,
- 614.295pt x 813.00938pt>
-File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
-phic file (type pdf)
-
-<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf>
-Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
-hetic_vowel.pdf used on input line 39.
-(pdftex.def)             Requested size: 614.29349pt x 813.0074pt.
-File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
-phic file (type pdf)
-
-<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf>
-Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
-hetic_vowel.pdf used on input line 39.
-(pdftex.def)             Requested size: 614.29349pt x 813.0074pt.
-
 [8
 
 ]
-<images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, id=172,
- page=2, 614.295pt x 813.00938pt>
-File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
-phic file (type pdf)
-
-<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
-e 2>
-Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
-hetic_vowel.pdf, page2 used on input line 39.
-(pdftex.def)             Requested size: 614.29349pt x 813.0074pt.
-File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
-phic file (type pdf)
-
-<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
-e 2>
-Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
-hetic_vowel.pdf, page2 used on input line 39.
-(pdftex.def)             Requested size: 597.78697pt x 791.16129pt.
-File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
-phic file (type pdf)
-
-<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
-e 2>
-Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
-hetic_vowel.pdf, page2 used on input line 39.
-(pdftex.def)             Requested size: 597.78697pt x 791.16129pt.
-File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
-phic file (type pdf)
-
-<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
-e 2>
-Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
-hetic_vowel.pdf, page2 used on input line 39.
-(pdftex.def)             Requested size: 597.78697pt x 791.16129pt.
-
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 39.
+(hyperref)                removing `\\' on input line 42.
+
+
+LaTeX Warning: Citation `sebastian2005' on page 9 undefined on input line 57.
+
+
+LaTeX Warning: Citation `dupoux1999' on page 9 undefined on input line 57.
+
+
+LaTeX Warning: Citation `dehaene2000' on page 9 undefined on input line 57.
+
+
+LaTeX Warning: Citation `dupoux2001' on page 9 undefined on input line 57.
+
+
+LaTeX Warning: Citation `monahan2009' on page 9 undefined on input line 57.
+
+
+LaTeX Warning: Citation `dupoux2011' on page 9 undefined on input line 57.
+
+
+LaTeX Warning: Citation `guekozIS17' on page 9 undefined on input line 57.
+
+
+LaTeX Warning: Citation `kabak2007' on page 9 undefined on input line 57.
+
+
+LaTeX Warning: Citation `berent2008' on page 9 undefined on input line 57.
+
+
+LaTeX Warning: Citation `dejong2012' on page 9 undefined on input line 57.
+
+
+LaTeX Warning: Citation `berent2007' on page 9 undefined on input line 57.
+
+
+LaTeX Warning: Citation `davidson2012' on page 9 undefined on input line 57.
+
+
+LaTeX Warning: Citation `dupoux2011' on page 9 undefined on input line 57.
+
+
+LaTeX Warning: Citation `guekozIS17' on page 9 undefined on input line 57.
+
+
+LaTeX Warning: Citation `halle2014' on page 9 undefined on input line 57.
+
+
+LaTeX Warning: Citation `mattingley2015' on page 9 undefined on input line 57.
+
+
+LaTeX Warning: Citation `guekozIS17' on page 9 undefined on input line 57.
+
+
+LaTeX Warning: Citation `dupoux2011' on page 9 undefined on input line 59.
+
+
+LaTeX Warning: Citation `mattingley2015' on page 9 undefined on input line 59.
+
+
+LaTeX Warning: Citation `durvasula2015' on page 9 undefined on input line 59.
+
+
+LaTeX Warning: Citation `dupoux2011' on page 9 undefined on input line 59.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 60.
+
+LaTeX Warning: Citation `dupoux2011' on page 9 undefined on input line 61.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -752,33 +771,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
-phic file (type pdf)
+[9]
 
-<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
-e 2>
-Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
-hetic_vowel.pdf, page2 used on input line 39.
-(pdftex.def)             Requested size: 597.78697pt x 791.16129pt.
- [9 <./images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf>]
-<images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, id=217,
- page=3, 614.295pt x 813.00938pt>
-File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
-phic file (type pdf)
+LaTeX Warning: Citation `uffmann2006' on page 10 undefined on input line 63.
 
-<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
-e 3>
-Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
-hetic_vowel.pdf, page3 used on input line 39.
-(pdftex.def)             Requested size: 597.78697pt x 791.16129pt.
-File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
-phic file (type pdf)
 
-<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
-e 3>
-Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
-hetic_vowel.pdf, page3 used on input line 39.
-(pdftex.def)             Requested size: 597.78697pt x 791.16129pt.
+LaTeX Warning: Citation `rose2006' on page 10 undefined on input line 63.
+
+
+LaTeX Warning: Citation `keating1988' on page 10 undefined on input line 63.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -786,34 +787,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
-phic file (type pdf)
+[10]
 
-<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
-e 3>
-Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
-hetic_vowel.pdf, page3 used on input line 39.
-(pdftex.def)             Requested size: 597.78697pt x 791.16129pt.
- [10 <./images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf>]
-
-<images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, id=237,
- page=4, 614.295pt x 813.00938pt>
-File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
-phic file (type pdf)
-
-<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
-e 4>
-Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
-hetic_vowel.pdf, page4 used on input line 39.
-(pdftex.def)             Requested size: 597.78697pt x 791.16129pt.
-File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
-phic file (type pdf)
-
-<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
-e 4>
-Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
-hetic_vowel.pdf, page4 used on input line 39.
-(pdftex.def)             Requested size: 597.78697pt x 791.16129pt.
+LaTeX Warning: Citation `lme4' on page 11 undefined on input line 95.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -821,34 +797,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
-phic file (type pdf)
+[11] <images/chapter02/ahpa_tiles.pdf, id=197, 469.755pt x 216.81pt>
+File: images/chapter02/ahpa_tiles.pdf Graphic file (type pdf)
 
-<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
-e 4>
-Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
-hetic_vowel.pdf, page4 used on input line 39.
-(pdftex.def)             Requested size: 597.78697pt x 791.16129pt.
- [11 <./images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf>]
+<use images/chapter02/ahpa_tiles.pdf>
+Package pdftex.def Info: images/chapter02/ahpa_tiles.pdf used on input line 106
+.
+(pdftex.def)             Requested size: 369.90535pt x 170.71652pt.
 
-<images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, id=250,
- page=5, 614.295pt x 813.00938pt>
-File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
-phic file (type pdf)
 
-<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
-e 5>
-Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
-hetic_vowel.pdf, page5 used on input line 39.
-(pdftex.def)             Requested size: 597.78697pt x 791.16129pt.
-File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
-phic file (type pdf)
+LaTeX Font Warning: Font shape `T3/cmr/m/it' in size <12> not available
+(Font)              Font shape `T3/cmr/m/sl' tried instead on input line 107.
 
-<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
-e 5>
-Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
-hetic_vowel.pdf, page5 used on input line 39.
-(pdftex.def)             Requested size: 597.78697pt x 791.16129pt.
+
+LaTeX Warning: Citation `[' on page 12 undefined on input line 113.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -856,34 +818,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
-phic file (type pdf)
+[12 <./images/chapter02/ahpa_tiles.pdf>]
 
-<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
-e 5>
-Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
-hetic_vowel.pdf, page5 used on input line 39.
-(pdftex.def)             Requested size: 597.78697pt x 791.16129pt.
- [12 <./images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf>]
+LaTeX Warning: Citation `daland2015' on page 13 undefined on input line 115.
 
-<images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, id=257,
- page=6, 614.295pt x 813.00938pt>
-File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
-phic file (type pdf)
 
-<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
-e 6>
-Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
-hetic_vowel.pdf, page6 used on input line 39.
-(pdftex.def)             Requested size: 597.78697pt x 791.16129pt.
-File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
-phic file (type pdf)
-
-<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
-e 6>
-Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
-hetic_vowel.pdf, page6 used on input line 39.
-(pdftex.def)             Requested size: 597.78697pt x 791.16129pt.
+LaTeX Warning: Citation `daland2015' on page 13 undefined on input line 118.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -891,34 +831,24 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
-phic file (type pdf)
+[13]
 
-<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
-e 6>
-Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
-hetic_vowel.pdf, page6 used on input line 39.
-(pdftex.def)             Requested size: 597.78697pt x 791.16129pt.
- [13 <./images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf>]
+LaTeX Warning: Citation `han1962' on page 14 undefined on input line 146.
 
-<images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, id=263,
- page=7, 614.295pt x 813.00938pt>
-File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
-phic file (type pdf)
 
-<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
-e 7>
-Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
-hetic_vowel.pdf, page7 used on input line 39.
-(pdftex.def)             Requested size: 597.78697pt x 791.16129pt.
-File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
-phic file (type pdf)
+LaTeX Warning: Citation `vance1987' on page 14 undefined on input line 146.
 
-<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
-e 7>
-Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
-hetic_vowel.pdf, page7 used on input line 39.
-(pdftex.def)             Requested size: 597.78697pt x 791.16129pt.
+
+LaTeX Warning: Citation `[' on page 14 undefined on input line 146.
+
+
+LaTeX Warning: Citation `dupoux2011' on page 14 undefined on input line 152.
+
+
+LaTeX Warning: Citation `[' on page 14 undefined on input line 152.
+
+
+LaTeX Warning: Citation `han1962' on page 14 undefined on input line 152.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -926,83 +856,76 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
-phic file (type pdf)
+[14]
 
-<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
-e 7>
-Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
-hetic_vowel.pdf, page7 used on input line 39.
-(pdftex.def)             Requested size: 597.78697pt x 791.16129pt.
- [14 <./images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf>]
-
-<images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, id=268,
- page=8, 614.295pt x 813.00938pt>
-File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
-phic file (type pdf)
-
-<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
-e 8>
-Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
-hetic_vowel.pdf, page8 used on input line 39.
-(pdftex.def)             Requested size: 597.78697pt x 791.16129pt.
-File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
-phic file (type pdf)
-
-<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
-e 8>
-Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
-hetic_vowel.pdf, page8 used on input line 39.
-(pdftex.def)             Requested size: 597.78697pt x 791.16129pt.
+LaTeX Warning: Citation `mattingley2015' on page 15 undefined on input line 154
+.
 
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 27.18335pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
+LaTeX Warning: Citation `guekozIS17' on page 15 undefined on input line 154.
 
-File: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf Gra
-phic file (type pdf)
 
-<use images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf, pag
-e 8>
-Package pdftex.def Info: images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epent
-hetic_vowel.pdf, page8 used on input line 39.
-(pdftex.def)             Requested size: 597.78697pt x 791.16129pt.
- [15 <./images/chapter02/JASAEL_Guevara-Rukoz_2017_Which_epenthetic_vowel.pdf>]
- <images/chapter02/ahpa_acoustic.pdf, id=273, page=1, 505.89pt x 505.89pt>
+LaTeX Warning: Citation `[' on page 15 undefined on input line 154.
+
+
+LaTeX Warning: Citation `durvasula2015' on page 15 undefined on input line 154.
+
+
+
+LaTeX Warning: Citation `dupoux2011' on page 15 undefined on input line 156.
+
+
+LaTeX Warning: Citation `dupoux2011' on page 15 undefined on input line 156.
+
+
+LaTeX Warning: Citation `wilson2014' on page 15 undefined on input line 156.
+
+
+LaTeX Warning: Citation `schatz2016' on page 15 undefined on input line 156.
+
+<images/chapter02/ahpa_acoustic.pdf, id=228, page=1, 505.89pt x 505.89pt>
 File: images/chapter02/ahpa_acoustic.pdf Graphic file (type pdf)
 
 <use images/chapter02/ahpa_acoustic.pdf, page 1>
 Package pdftex.def Info: images/chapter02/ahpa_acoustic.pdf, page1 used on inpu
-t line 47.
+t line 164.
 (pdftex.def)             Requested size: 341.43436pt x 341.43785pt.
 
-<images/chapter02/ahpa_uep-copyep.pdf, id=274, page=1, 126.4725pt x 216.81pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 27.18335pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[15]
+<images/chapter02/ahpa_uep-copyep.pdf, id=235, page=1, 126.4725pt x 216.81pt>
 File: images/chapter02/ahpa_uep-copyep.pdf Graphic file (type pdf)
 
 <use images/chapter02/ahpa_uep-copyep.pdf, page 1>
 Package pdftex.def Info: images/chapter02/ahpa_uep-copyep.pdf, page1 used on in
-put line 55.
+put line 172.
 (pdftex.def)             Requested size: 85.35696pt x 146.3272pt.
 
-<images/chapter02/ahpa_uep-copyep.pdf, id=275, page=2, 126.4725pt x 216.81pt>
+<images/chapter02/ahpa_uep-copyep.pdf, id=236, page=2, 126.4725pt x 216.81pt>
 File: images/chapter02/ahpa_uep-copyep.pdf Graphic file (type pdf)
 
 <use images/chapter02/ahpa_uep-copyep.pdf, page 2>
 Package pdftex.def Info: images/chapter02/ahpa_uep-copyep.pdf, page2 used on in
-put line 57.
+put line 174.
 (pdftex.def)             Requested size: 85.35696pt x 146.3272pt.
 
-<images/chapter02/ahpa_heath_spk.pdf, id=276, page=1, 289.08pt x 433.62pt>
+<images/chapter02/ahpa_heath_spk.pdf, id=237, page=1, 289.08pt x 433.62pt>
 File: images/chapter02/ahpa_heath_spk.pdf Graphic file (type pdf)
 
 <use images/chapter02/ahpa_heath_spk.pdf, page 1>
 Package pdftex.def Info: images/chapter02/ahpa_heath_spk.pdf, page1 used on inp
-ut line 65.
+ut line 182.
 (pdftex.def)             Requested size: 426.79134pt x 640.21915pt.
 
-Underfull \vbox (badness 2608) has occurred while \output is active []
+Underfull \vbox (badness 2990) has occurred while \output is active []
 
 
 
@@ -1020,23 +943,24 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [17 <./images/chapter02/ahpa_heath_spk.pdf>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 74.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 191.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 74.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 191.
 
-<images/chapter02/ahpa_figs.pdf, id=313, page=6, 505.89pt x 289.08pt>
+<images/chapter02/ahpa_figs.pdf, id=273, page=6, 505.89pt x 289.08pt>
 File: images/chapter02/ahpa_figs.pdf Graphic file (type pdf)
 
 <use images/chapter02/ahpa_figs.pdf, page 6>
 Package pdftex.def Info: images/chapter02/ahpa_figs.pdf, page6 used on input li
-ne 82.
+ne 199.
 (pdftex.def)             Requested size: 384.10959pt x 219.49576pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
 
  []
 
@@ -1047,41 +971,41 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [18 <./images/chapter02/ahpa_figs.pdf>]
-Overfull \hbox (13.48637pt too wide) in paragraph at lines 109--109
+Overfull \hbox (13.48637pt too wide) in paragraph at lines 226--226
 []\OT1/cmr/bx/n/17.28 Predicting epenthetic vowel qual-ity from acous-
  []
 
 
-LaTeX Warning: Citation `dupoux_1999' on page 19 undefined on input line 121.
+LaTeX Warning: Citation `dupoux_1999' on page 19 undefined on input line 238.
 
 
-LaTeX Warning: Citation `dehaene_2000' on page 19 undefined on input line 121.
+LaTeX Warning: Citation `dehaene_2000' on page 19 undefined on input line 238.
 
 
-LaTeX Warning: Citation `dupoux_2001' on page 19 undefined on input line 121.
+LaTeX Warning: Citation `dupoux_2001' on page 19 undefined on input line 238.
 
 
-LaTeX Warning: Citation `berent2007' on page 19 undefined on input line 121.
+LaTeX Warning: Citation `berent2007' on page 19 undefined on input line 238.
 
 
-LaTeX Warning: Citation `kabak2007' on page 19 undefined on input line 121.
+LaTeX Warning: Citation `kabak2007' on page 19 undefined on input line 238.
 
 
-LaTeX Warning: Citation `monahan2009' on page 19 undefined on input line 121.
+LaTeX Warning: Citation `monahan2009' on page 19 undefined on input line 238.
 
 
-LaTeX Warning: Citation `dupoux_2011' on page 19 undefined on input line 121.
+LaTeX Warning: Citation `dupoux_2011' on page 19 undefined on input line 238.
 
 
-LaTeX Warning: Citation `mattingley2015' on page 19 undefined on input line 121
+LaTeX Warning: Citation `mattingley2015' on page 19 undefined on input line 238
 .
 
 
-LaTeX Warning: Citation `durvasula2015' on page 19 undefined on input line 121.
+LaTeX Warning: Citation `durvasula2015' on page 19 undefined on input line 238.
 
 
 
-LaTeX Warning: Citation `dupoux_2011' on page 19 undefined on input line 121.
+LaTeX Warning: Citation `dupoux_2011' on page 19 undefined on input line 238.
 
 
 Underfull \vbox (badness 5147) has occurred while \output is active []
@@ -1095,16 +1019,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [19]
 
-LaTeX Warning: Citation `R-base' on page 20 undefined on input line 133.
+LaTeX Warning: Citation `R-base' on page 20 undefined on input line 250.
 
 
-LaTeX Warning: Citation `R-MCMCglmm' on page 20 undefined on input line 133.
+LaTeX Warning: Citation `R-MCMCglmm' on page 20 undefined on input line 250.
 
 
-LaTeX Warning: Citation `R-coda' on page 20 undefined on input line 133.
+LaTeX Warning: Citation `R-coda' on page 20 undefined on input line 250.
 
 
-Overfull \hbox (33.10863pt too wide) in paragraph at lines 159--160
+Overfull \hbox (33.10863pt too wide) in paragraph at lines 276--277
 \OT1/cmr/m/n/12 more of-ten than JP par-tic-i-pants (pos-te-rior mode: $\OMS/cm
 sy/m/n/12 ^^@\OT1/cmr/m/n/12 277\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1$, HPD in-te
 r-val: $[\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 389\OML/cmm/m/it/12 :\OT1/cmr/m/n/
@@ -1119,7 +1043,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [20]
-Overfull \hbox (1.78992pt too wide) in paragraph at lines 163--164
+Overfull \hbox (1.78992pt too wide) in paragraph at lines 280--281
 \OT1/cmr/m/n/12 els were /u/. Lastly, there was also a main ef-fect of Coro-nal
  $\OML/cmm/m/it/12 C[]$ \OT1/cmr/m/n/12 ($\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 4
 3\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 [\OMS/cm
@@ -1129,7 +1053,7 @@ $):
  []
 
 
-Overfull \hbox (60.79752pt too wide) in paragraph at lines 163--164
+Overfull \hbox (60.79752pt too wide) in paragraph at lines 280--281
 \OT1/cmr/m/n/12 nants. How-ever, nei-ther the in-ter-ac-tion be-tween Coro-nal 
 $\OML/cmm/m/it/12 C[]$ \OT1/cmr/m/n/12 and Lan-guage ($\OMS/cmsy/m/n/12 ^^@\OT1
 /cmr/m/n/12 63\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 9\OML/cmm/m/it/12 ; \OT1/cmr/m/
@@ -1138,54 +1062,54 @@ n/12 [\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 132\OML/cmm/m/it/12 :\OT1/cmr/m/n/12
  []
 
 
-Overfull \hbox (3.42282pt too wide) in paragraph at lines 163--164
+Overfull \hbox (3.42282pt too wide) in paragraph at lines 280--281
 \OT1/cmr/m/n/12 were sig-nif-i-cant; thus, JP par-tic-i-pants were not more pro
 ne to avoid-ing /u/-epenthesis
  []
 
-<images/chapter02/parlato_figs.pdf, id=351, page=1, 252.945pt x 252.945pt>
+<images/chapter02/parlato_figs.pdf, id=306, page=1, 252.945pt x 252.945pt>
 File: images/chapter02/parlato_figs.pdf Graphic file (type pdf)
 
 <use images/chapter02/parlato_figs.pdf, page 1>
 Package pdftex.def Info: images/chapter02/parlato_figs.pdf, page1 used on input
- line 167.
+ line 284.
 (pdftex.def)             Requested size: 139.42122pt x 139.41832pt.
 
-<images/chapter02/parlato_figs.pdf, id=353, page=3, 252.945pt x 252.945pt>
+<images/chapter02/parlato_figs.pdf, id=308, page=3, 252.945pt x 252.945pt>
 File: images/chapter02/parlato_figs.pdf Graphic file (type pdf)
 
 <use images/chapter02/parlato_figs.pdf, page 3>
 Package pdftex.def Info: images/chapter02/parlato_figs.pdf, page3 used on input
- line 170.
+ line 287.
 (pdftex.def)             Requested size: 139.42122pt x 139.41832pt.
 
-<images/chapter02/parlato_figs.pdf, id=355, page=2, 252.945pt x 252.945pt>
+<images/chapter02/parlato_figs.pdf, id=310, page=2, 252.945pt x 252.945pt>
 File: images/chapter02/parlato_figs.pdf Graphic file (type pdf)
 
 <use images/chapter02/parlato_figs.pdf, page 2>
 Package pdftex.def Info: images/chapter02/parlato_figs.pdf, page2 used on input
- line 176.
+ line 293.
 (pdftex.def)             Requested size: 139.42122pt x 139.41832pt.
 
-<images/chapter02/parlato_figs.pdf, id=357, page=4, 252.945pt x 252.945pt>
+<images/chapter02/parlato_figs.pdf, id=312, page=4, 252.945pt x 252.945pt>
 File: images/chapter02/parlato_figs.pdf Graphic file (type pdf)
 
 <use images/chapter02/parlato_figs.pdf, page 4>
 Package pdftex.def Info: images/chapter02/parlato_figs.pdf, page4 used on input
- line 179.
+ line 296.
 (pdftex.def)             Requested size: 140.84157pt x 140.84105pt.
 
 
-LaTeX Warning: Citation `escudero2009' on page 21 undefined on input line 188.
+LaTeX Warning: Citation `escudero2009' on page 21 undefined on input line 305.
 
 
-LaTeX Warning: Citation `han1962' on page 21 undefined on input line 188.
+LaTeX Warning: Citation `han1962' on page 21 undefined on input line 305.
 
 
-LaTeX Warning: Citation `R-wrassp' on page 21 undefined on input line 193.
+LaTeX Warning: Citation `R-wrassp' on page 21 undefined on input line 310.
 
 
-LaTeX Warning: Citation `R-lsmeans' on page 21 undefined on input line 197.
+LaTeX Warning: Citation `R-lsmeans' on page 21 undefined on input line 314.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1202,12 +1126,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [22 <./images/chapter02/parlato_figs.pdf> <./images/chapter02/parlato_figs.pdf>
  <./images/chapter02/parlato_figs.pdf> <./images/chapter02/parlato_figs.pdf>]
-<images/chapter02/parlato_fig2.pdf, id=386, 361.35pt x 216.81pt>
+<images/chapter02/parlato_fig2.pdf, id=341, 361.35pt x 216.81pt>
 File: images/chapter02/parlato_fig2.pdf Graphic file (type pdf)
 
 <use images/chapter02/parlato_fig2.pdf>
-Package pdftex.def Info: images/chapter02/parlato_fig2.pdf used on input line 2
-14.
+Package pdftex.def Info: images/chapter02/parlato_fig2.pdf used on input line 3
+31.
 (pdftex.def)             Requested size: 426.79134pt x 256.07838pt.
 
 
@@ -1218,17 +1142,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [23 <./images/chapter02/parlato_fig2.pdf>]
 
-LaTeX Warning: Citation `sakoe1978' on page 24 undefined on input line 225.
+LaTeX Warning: Citation `sakoe1978' on page 24 undefined on input line 342.
 
 
-LaTeX Warning: Citation `R-dtw' on page 24 undefined on input line 225.
+LaTeX Warning: Citation `R-dtw' on page 24 undefined on input line 342.
 
 
-LaTeX Warning: Citation `nosofsky1992' on page 24 undefined on input line 234.
+LaTeX Warning: Citation `nosofsky1992' on page 24 undefined on input line 351.
 
 
 LaTeX Warning: Reference `fig:per&model_responses' on page 24 undefined on inpu
-t line 240.
+t line 357.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1238,33 +1162,33 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [24]
 
-LaTeX Warning: Citation `dupoux_1999' on page 25 undefined on input line 257.
+LaTeX Warning: Citation `dupoux_1999' on page 25 undefined on input line 374.
 
 
-LaTeX Warning: Citation `dupoux_2011' on page 25 undefined on input line 257.
+LaTeX Warning: Citation `dupoux_2011' on page 25 undefined on input line 374.
 
 
-LaTeX Warning: Citation `rose2006' on page 25 undefined on input line 257.
+LaTeX Warning: Citation `rose2006' on page 25 undefined on input line 374.
 
 
-LaTeX Warning: Citation `uffmann2006' on page 25 undefined on input line 257.
+LaTeX Warning: Citation `uffmann2006' on page 25 undefined on input line 374.
 
 
-LaTeX Warning: Citation `dupoux_2011' on page 25 undefined on input line 257.
+LaTeX Warning: Citation `dupoux_2011' on page 25 undefined on input line 374.
 
 
 LaTeX Warning: Reference `fig:per&model_responses' on page 25 undefined on inpu
-t line 259.
+t line 376.
 
 
-LaTeX Warning: Citation `monahan2009' on page 25 undefined on input line 259.
+LaTeX Warning: Citation `monahan2009' on page 25 undefined on input line 376.
 
 
-LaTeX Warning: Citation `mattingley2015' on page 25 undefined on input line 259
+LaTeX Warning: Citation `mattingley2015' on page 25 undefined on input line 376
 .
 
 
-LaTeX Warning: Citation `dupoux_2011' on page 25 undefined on input line 259.
+LaTeX Warning: Citation `dupoux_2011' on page 25 undefined on input line 376.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1274,10 +1198,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [25]
 
-LaTeX Warning: Citation `chi2005' on page 26 undefined on input line 262.
+LaTeX Warning: Citation `chi2005' on page 26 undefined on input line 379.
 
 
-LaTeX Warning: Citation `hyafil2015' on page 26 undefined on input line 262.
+LaTeX Warning: Citation `hyafil2015' on page 26 undefined on input line 379.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1286,36 +1210,36 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [26]
-<images/chapter02/parlato_per_all.pdf, id=426, page=1, 505.89pt x 505.89pt>
+<images/chapter02/parlato_per_all.pdf, id=380, page=1, 505.89pt x 505.89pt>
 File: images/chapter02/parlato_per_all.pdf Graphic file (type pdf)
 
 <use images/chapter02/parlato_per_all.pdf, page 1>
 Package pdftex.def Info: images/chapter02/parlato_per_all.pdf, page1 used on in
-put line 278.
+put line 395.
 (pdftex.def)             Requested size: 256.0774pt x 256.07838pt.
 
-<images/chapter02/parlato_per_all.pdf, id=427, page=2, 505.89pt x 505.89pt>
+<images/chapter02/parlato_per_all.pdf, id=381, page=2, 505.89pt x 505.89pt>
 File: images/chapter02/parlato_per_all.pdf Graphic file (type pdf)
 
 <use images/chapter02/parlato_per_all.pdf, page 2>
 Package pdftex.def Info: images/chapter02/parlato_per_all.pdf, page2 used on in
-put line 279.
+put line 396.
 (pdftex.def)             Requested size: 256.0774pt x 256.07838pt.
 
-<images/chapter02/parlato_per_iou.pdf, id=428, page=1, 289.08pt x 216.81pt>
+<images/chapter02/parlato_per_iou.pdf, id=382, page=1, 289.08pt x 216.81pt>
 File: images/chapter02/parlato_per_iou.pdf Graphic file (type pdf)
 
 <use images/chapter02/parlato_per_iou.pdf, page 1>
 Package pdftex.def Info: images/chapter02/parlato_per_iou.pdf, page1 used on in
-put line 288.
+put line 405.
 (pdftex.def)             Requested size: 192.0548pt x 144.0412pt.
 
-<images/chapter02/parlato_per_iou.pdf, id=429, page=3, 289.08pt x 216.81pt>
+<images/chapter02/parlato_per_iou.pdf, id=383, page=3, 289.08pt x 216.81pt>
 File: images/chapter02/parlato_per_iou.pdf Graphic file (type pdf)
 
 <use images/chapter02/parlato_per_iou.pdf, page 3>
 Package pdftex.def Info: images/chapter02/parlato_per_iou.pdf, page3 used on in
-put line 290.
+put line 407.
 (pdftex.def)             Requested size: 192.0548pt x 144.0412pt.
 
 Underfull \vbox (badness 1259) has occurred while \output is active []
@@ -1329,44 +1253,44 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [27 <./images/chapter02/parlato_per_all.pdf> <./images/chapter02/parlato_per_al
 l.pdf>]
-<images/chapter02/parlato_per_iou.pdf, id=442, page=2, 289.08pt x 216.81pt>
+<images/chapter02/parlato_per_iou.pdf, id=395, page=2, 289.08pt x 216.81pt>
 File: images/chapter02/parlato_per_iou.pdf Graphic file (type pdf)
 
 <use images/chapter02/parlato_per_iou.pdf, page 2>
 Package pdftex.def Info: images/chapter02/parlato_per_iou.pdf, page2 used on in
-put line 298.
+put line 415.
 (pdftex.def)             Requested size: 192.0548pt x 144.0412pt.
 
-<images/chapter02/parlato_per_iou.pdf, id=443, page=4, 289.08pt x 216.81pt>
+<images/chapter02/parlato_per_iou.pdf, id=396, page=4, 289.08pt x 216.81pt>
 File: images/chapter02/parlato_per_iou.pdf Graphic file (type pdf)
 
 <use images/chapter02/parlato_per_iou.pdf, page 4>
 Package pdftex.def Info: images/chapter02/parlato_per_iou.pdf, page4 used on in
-put line 300.
+put line 417.
 (pdftex.def)             Requested size: 192.0548pt x 144.0412pt.
 
-<images/chapter02/parlato_acoustic.pdf, id=444, page=1, 361.35pt x 361.35pt>
+<images/chapter02/parlato_acoustic.pdf, id=397, page=1, 361.35pt x 361.35pt>
 File: images/chapter02/parlato_acoustic.pdf Graphic file (type pdf)
 
 <use images/chapter02/parlato_acoustic.pdf, page 1>
 Package pdftex.def Info: images/chapter02/parlato_acoustic.pdf, page1 used on i
-nput line 308.
+nput line 425.
 (pdftex.def)             Requested size: 184.9422pt x 184.9429pt.
 
-<images/chapter02/parlato_acoustic.pdf, id=446, page=2, 361.35pt x 361.35pt>
+<images/chapter02/parlato_acoustic.pdf, id=399, page=2, 361.35pt x 361.35pt>
 File: images/chapter02/parlato_acoustic.pdf Graphic file (type pdf)
 
 <use images/chapter02/parlato_acoustic.pdf, page 2>
 Package pdftex.def Info: images/chapter02/parlato_acoustic.pdf, page2 used on i
-nput line 310.
+nput line 427.
 (pdftex.def)             Requested size: 184.9422pt x 184.9429pt.
 
-<images/chapter02/parlato_acoustic.pdf, id=448, page=3, 361.35pt x 361.35pt>
+<images/chapter02/parlato_acoustic.pdf, id=401, page=3, 361.35pt x 361.35pt>
 File: images/chapter02/parlato_acoustic.pdf Graphic file (type pdf)
 
 <use images/chapter02/parlato_acoustic.pdf, page 3>
 Package pdftex.def Info: images/chapter02/parlato_acoustic.pdf, page3 used on i
-nput line 311.
+nput line 428.
 (pdftex.def)             Requested size: 184.9422pt x 184.9429pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1389,13 +1313,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [29 <./images/chapter02/parlato_acoustic.pdf> <./images/chapter02/parlato_acous
 tic.pdf> <./images/chapter02/parlato_acoustic.pdf>]
-Overfull \hbox (1.03061pt too wide) in paragraph at lines 326--327
+Overfull \hbox (1.03061pt too wide) in paragraph at lines 443--444
 \OT1/cmr/m/n/12 2.1), re-flected by abil-ity of ex-em-plar model to re-pro-duce
  mod-u-la-tion of epVqual
  []
 
 
-Overfull \hbox (6.05695pt too wide) in paragraph at lines 338--339
+Overfull \hbox (6.05695pt too wide) in paragraph at lines 455--456
 []\OT1/cmr/m/n/12 Match from acoustics-to-acoustics, with-out nor-mal-iz-ing th
 e acous-tics by speaker 
  []
@@ -1418,7 +1342,7 @@ Chapter 4.
 ]
 Chapter 5.
 (./chapters/chapter05-disc.tex) (./chapters/appendix.tex
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=498
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=452
 , 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1438,7 +1362,7 @@ Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 [33
 
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=505
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=459
 , page=1, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1490,7 +1414,7 @@ Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [34 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=541
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=495
 , page=2, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1525,7 +1449,7 @@ Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [35 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=551
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=505
 , page=3, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1560,7 +1484,7 @@ Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [36 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=559
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=513
 , page=4, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1595,7 +1519,7 @@ Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [37 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=587
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=540
 , page=5, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1630,7 +1554,7 @@ Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [38 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=601
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=554
 , page=6, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1665,7 +1589,7 @@ Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [39 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=606
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=559
 , page=7, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1700,7 +1624,7 @@ Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [40 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=621
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=575
 , page=8, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1735,7 +1659,7 @@ Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [41 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=642
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=596
 , page=9, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1770,7 +1694,7 @@ Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [42 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=662
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=616
 , page=10, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1805,7 +1729,7 @@ Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [43 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=668
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=622
 , page=11, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1840,7 +1764,7 @@ Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [44 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=688
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=642
 , page=12, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1875,7 +1799,7 @@ Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [45 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=709
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=663
 , page=13, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1910,7 +1834,7 @@ Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [46 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=714
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=668
 , page=14, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1945,7 +1869,7 @@ Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [47 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=719
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=673
 , page=15, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1980,7 +1904,7 @@ Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [48 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=724
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=678
 , page=16, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -2015,7 +1939,7 @@ Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [49 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=730
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=684
 , page=17, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -2050,7 +1974,7 @@ Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [50 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=736
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=689
 , page=18, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -2085,7 +2009,7 @@ Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [51 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=755
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=708
 , page=19, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -2120,7 +2044,7 @@ Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [52 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=761
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=715
 , page=20, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -2155,13 +2079,13 @@ Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [53 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 80.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 80.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 81.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 81.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 80.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 80.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 81.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 81.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 529E213FC7A0D0E1A120305DB25271D5;1455.
+(rerunfilecheck)             Checksum: EB99B34811EE3658B8AE74163EE03C54;1502.
 
 
 LaTeX Warning: There were undefined references.
@@ -2169,39 +2093,43 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 80.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 81.
  ) 
 Here is how much of TeX's memory you used:
- 8198 strings out of 495020
- 124094 string characters out of 6181324
- 208158 words of memory out of 5000000
- 11156 multiletter control sequences out of 15000+600000
- 10872 words of font info for 37 fonts, out of 8000000 for 9000
+ 8271 strings out of 495020
+ 123542 string characters out of 6181324
+ 209728 words of memory out of 5000000
+ 11211 multiletter control sequences out of 15000+600000
+ 12496 words of font info for 41 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 43i,18n,46p,1718b,472s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxb.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxi.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/txfonts/t1xtt.pfb></usr/share/texmf/fonts/type1/fkr/tipa/tipa10
-.pfb></usr/share/texmf/fonts/type1/fkr/tipa/tipa12.pfb></usr/share/texmf/fonts/
-type1/fkr/tipa/tipa8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfo
-nts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (53 pages, 971715 bytes).
+ 43i,18n,46p,1952b,466s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/txfonts/rtxb.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/txfonts/rtxi.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t
+1xtt.pfb></usr/share/texmf/fonts/type1/fkr/tipa/tipa10.pfb></usr/share/texmf/fo
+nts/type1/fkr/tipa/tipa12.pfb></usr/share/texmf/fonts/type1/fkr/tipa/tipa8.pfb>
+</usr/share/texmf/fonts/type1/fkr/tipa/tipasl12.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
+tmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (53 pages, 894940 bytes).
 PDF statistics:
- 851 PDF objects out of 1000 (max. 8388607)
- 645 compressed objects within 7 object streams
- 113 named destinations out of 1000 (max. 500000)
- 469 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 823 PDF objects out of 1000 (max. 8388607)
+ 644 compressed objects within 7 object streams
+ 124 named destinations out of 1000 (max. 500000)
+ 424 words of extra memory for PDF output out of 10000 (max. 10000000)
 
