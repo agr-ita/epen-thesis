@@ -14,32 +14,32 @@
 \contentsline {subsection}{\numberline {2.1.5}Supplementary analyses: ABX task}{18}{subsection.2.1.5}
 \contentsline {subsubsection}{Methods}{18}{section*.12}
 \contentsline {paragraph}{Participants}{18}{section*.13}
-\contentsline {paragraph}{Stimuli}{18}{section*.14}
+\contentsline {paragraph}{Stimuli}{19}{section*.14}
 \contentsline {paragraph}{Procedure}{19}{section*.15}
 \contentsline {subsubsection}{Results}{20}{section*.16}
 \contentsline {subsubsection}{Correlation between experimental results}{21}{section*.17}
-\contentsline {section}{\numberline {2.2}Predicting epenthetic vowel quality from acoustics}{22}{section.2.2}
-\contentsline {paragraph}{Abstract}{22}{section*.18}
-\contentsline {subsection}{\numberline {2.2.1}Introduction}{22}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Perception experiment}{23}{subsection.2.2.2}
-\contentsline {subsubsection}{Methods}{23}{section*.19}
-\contentsline {subsubsection}{Results}{23}{section*.20}
-\contentsline {subsubsection}{/i/-epenthesis}{25}{section*.21}
-\contentsline {paragraph}{/u/-epenthesis}{26}{figure.2.9}
-\contentsline {subsection}{\numberline {2.2.3}Acoustic analyses}{26}{subsection.2.2.3}
-\contentsline {subsubsection}{Methods}{26}{section*.23}
-\contentsline {subsubsection}{Results}{27}{section*.24}
-\contentsline {paragraph}{Vowel duration}{27}{figure.2.10}
-\contentsline {paragraph}{Vowel intensity}{28}{figure.2.11}
-\contentsline {paragraph}{Vowel formants}{29}{figure.2.12}
-\contentsline {subsection}{\numberline {2.2.4}Production-based exemplar model}{29}{subsection.2.2.4}
-\contentsline {subsubsection}{Methods}{30}{section*.28}
-\contentsline {subsubsection}{Results}{30}{section*.29}
-\contentsline {paragraph}{/i/-epenthesis}{30}{section*.30}
-\contentsline {paragraph}{/u/-epenthesis}{31}{section*.31}
-\contentsline {subsection}{\numberline {2.2.5}General Discussion}{31}{subsection.2.2.5}
-\contentsline {section}{\numberline {2.3}Summary and Discussion}{34}{section.2.3}
-\contentsline {chapter}{\numberline {3}Chapter Three Title}{35}{chapter.3}
-\contentsline {chapter}{\numberline {4}Chapter Four Title}{36}{chapter.4}
-\contentsline {chapter}{\numberline {5}General Discussion}{37}{chapter.5}
-\contentsline {chapter}{\numberline {A}\ignorespaces Are words easier to learn from infant- than adult-directed speech? A quantitative corpus-based investigation}{38}{appendix.A}
+\contentsline {section}{\numberline {2.2}Predicting epenthetic vowel quality from acoustics}{23}{section.2.2}
+\contentsline {paragraph}{Abstract}{23}{section*.18}
+\contentsline {subsection}{\numberline {2.2.1}Introduction}{23}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Perception experiment}{24}{subsection.2.2.2}
+\contentsline {subsubsection}{Methods}{24}{section*.19}
+\contentsline {subsubsection}{Results}{24}{section*.20}
+\contentsline {subsubsection}{/i/-epenthesis}{26}{section*.21}
+\contentsline {paragraph}{/u/-epenthesis}{27}{figure.2.9}
+\contentsline {subsection}{\numberline {2.2.3}Acoustic analyses}{27}{subsection.2.2.3}
+\contentsline {subsubsection}{Methods}{27}{section*.23}
+\contentsline {subsubsection}{Results}{28}{section*.24}
+\contentsline {paragraph}{Vowel duration}{28}{figure.2.10}
+\contentsline {paragraph}{Vowel intensity}{29}{figure.2.11}
+\contentsline {paragraph}{Vowel formants}{30}{figure.2.12}
+\contentsline {subsection}{\numberline {2.2.4}Production-based exemplar model}{30}{subsection.2.2.4}
+\contentsline {subsubsection}{Methods}{31}{section*.28}
+\contentsline {subsubsection}{Results}{31}{section*.29}
+\contentsline {paragraph}{/i/-epenthesis}{31}{section*.30}
+\contentsline {paragraph}{/u/-epenthesis}{32}{section*.31}
+\contentsline {subsection}{\numberline {2.2.5}General Discussion}{32}{subsection.2.2.5}
+\contentsline {section}{\numberline {2.3}Summary and Discussion}{35}{section.2.3}
+\contentsline {chapter}{\numberline {3}Chapter Three Title}{36}{chapter.3}
+\contentsline {chapter}{\numberline {4}Chapter Four Title}{37}{chapter.4}
+\contentsline {chapter}{\numberline {5}General Discussion}{38}{chapter.5}
+\contentsline {chapter}{\numberline {A}\ignorespaces Are words easier to learn from infant- than adult-directed speech? A quantitative corpus-based investigation}{39}{appendix.A}
