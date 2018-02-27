@@ -43,7 +43,8 @@ In \textbf{section 2.2} I investigate the possibility of predicting epenthetic v
 
 %[TODO] Say that this is a modified version of the JASA-EL paper
 
-{\color{red}[This is extended from JASA-EL paper etc etc]}
+\textit{{\color{blue}The following section is a modified version of the following journal article: \\
+Guevara-Rukoz, A., Lin, I., Morii, M., Minagawa, Y., Dupoux, E., \& Peperkamp, S. (2017). Which epenthetic vowel? Phonetic categories versus acoustic detail in perceptual vowel epenthesis. The Journal of the Acoustical Society of America, 142(2), EL211-EL217.}}
 
 \paragraph{Abstract}
 
@@ -88,11 +89,20 @@ The 330 stimuli were presented in a pseudo-randomised order: Consecutive stimuli
 Test and control trials with responses that were either too fast (before the medial portion of the stimulus could be perceived and processed, $<$400 ms) or too slow ($>$ 3 SD: 3238 ms) were excluded from the analyses. This concerned 736 trials (4.5\%).
 
 \subsubsection{\textit{Control items}}
-%\label{ssec:ctrl_items}
+% \label{ssec:ctrl_items}
 
-Participants experienced perceptual epenthesis in 57\% of control items in which the flanking vowel and coarticulation are of the same quality (/hp/: 52\%, /kp/: 61\%). Recall that in loanwords, the default epenthetic vowel is /u/, while after voiceless laryngeal fricatives it is a copy of the preceding vowel. Focusing on trials with an epenthetic response, we examined whether the choice of epenthetic vowel reflected this pattern. 
+Participants experienced perceptual epenthesis in 57\% of control items in which the flanking vowel and coarticulation are of the same quality (/hp/: 52\%, /kp/: 61\%). Recall that in loanwords, the default epenthetic vowel is /u/, while after voiceless laryngeal fricatives it is a copy of the preceding vowel. Focusing on trials with an epenthetic response, we examined whether the choice of epenthetic vowel reflected this pattern.
 
-First, a generalised mixed-effects model with a declared binomial distribution \cite{lme4} was used to examine a possible effect of consonant cluster on default /u/-epenthesis. Thus, we analyzed the proportion of default \textipa{/u/}, using participant, speaker, experimental block, and trial as random effects, and consonant cluster (\textipa{/kp/} \textit{vs.} \textipa{/hp/}; contrast coded) as fixed effect. This model was compared to a reduced model with no fixed effect. The full model was found to explain significantly more variance than the reduced model ($\beta = -4.2$, $SE = 1.2$, $\chi^{2}(1) = 9.9$, $p < 0.01$), showing that participants experienced significantly less default /u/-epenthesis in \textipa{/hp/-} than \textipa{/kp/-}items (39\% \textit{vs.} 86\% of all trials with epenthesis, respectively). 
+\begin{figure}[H]
+  \centering
+  \begin{overpic}[page=1, width=0.2\linewidth]{chapter02/ahpa_uep-copyep}\end{overpic}
+  \hspace{2cm}
+  \begin{overpic}[page=2, width=0.2\linewidth]{chapter02/ahpa_uep-copyep}\end{overpic}
+  \caption{{\color{blue}Percentage of default /u/-epenthesis (left) and copye epenthesis for control items.}}
+  \label{fig:ahpa_uep-copyep}
+\end{figure}
+
+First, a generalised mixed-effects model with a declared binomial distribution \cite{R-lme4} was used to examine a possible effect of consonant cluster on default /u/-epenthesis. Thus, we analyzed the proportion of default \textipa{/u/}, using participant, speaker, experimental block, and trial as random effects, and consonant cluster (\textipa{/kp/} \textit{vs.} \textipa{/hp/}; contrast coded) as fixed effect. This model was compared to a reduced model with no fixed effect. The full model was found to explain significantly more variance than the reduced model ($\beta = -4.2$, $SE = 1.2$, $\chi^{2}(1) = 9.9$, $p < 0.01$), showing that participants experienced significantly less default /u/-epenthesis in \textipa{/hp/-} than \textipa{/kp/-}items (39\% \textit{vs.} 86\% of all trials with epenthesis, respectively). 
 
 Next, we examined whether epenthesized vowels shared the quality of the flanking vowel more often in /hp/- than in /kp/-clusters. Given that for items with flanking vowel /u/ it is impossible to know if /u/-epenthesis is due to vowel copy or to default epenthesis, these items were excluded. As before, a generalised mixed-effects model with a declared binomial distribution was used. We analyzed the proportion of vowel copy (i.e., whether the flanking vowel and epenthetic vowel shared quality), using participant, speaker, experimental block, and trial as random effects, and consonant cluster (\textipa{/kp/} \textit{vs.} \textipa{/hp/}; contrast coded) as fixed effect. Comparing this full model to a reduced model with no fixed effects revealed a significant effect of consonant cluster ($\beta = 3.7$, $SE = 1.2$, $\chi^{2}(1) = 7.4$, $p < 0.01$). Therefore, participants epenthesized a vowel that matched the flanking vowel more often in /hp/-clusters (53\%) than in /kp/- clusters (13\%). 
 
@@ -104,7 +114,8 @@ Thus, analysis of control items revealed that, similarly to the loanword pattern
 \begin{figure}[t!]
 \centering
     \centerline{\begin{overpic}[height=6cm]{chapter02/ahpa_tiles.pdf}\end{overpic}}
-\caption {{\it Counts of responses for the test and spliced control items. Top: \textipa{/hp/-}items; bottom: \textipa{/kp/-}items. Within each rectangle, flanking vowels and vowel coarticulation are given in the horizontal and vertical axes, respectively. Darker colours indicate higher counts. A figure showing counts separated by speaker can be found in the supplementary materials at https://osf.io/y9h6c}}
+    \caption {{\it Counts of responses for the test and spliced control items. Top: \textipa{/hp/-}items; bottom: \textipa{/kp/-}items. Within each rectangle, flanking vowels and vowel coarticulation are given in the horizontal and vertical axes, respectively. Darker colours indicate higher counts. {\color{blue}Figure \ref{fig:ahpa_spk} shows counts separated by speaker}}}
+% A figure showing counts separated by speaker can be found in the supplementary materials at https://osf.io/y9h6c}}
 \label{fig:tiles}
 \end{figure}
 
@@ -143,40 +154,6 @@ than by considering the flanking vowel. This is true both for /hp/-items, which 
 \subsection{Discussion and conclusion}
 %\label{sec:concl}
 
-We used an identification task to assess the quality of epenthetic vowels perceived by Japanese listeners in illegal consonant clusters with varying amounts of coarticulation. Our findings can be summarized as follows: First, we were able to replicate the perception of illusory vowels within phonotactically illegal clusters by Japanese listeners (64\% of all test trials).\footnote{Note that whereas previous studies examined perceptual epenthesis within clusters with at least one voiced consonant, we presently focused on completely voiceless clusters, a context in which the high vowels /i/ and /u/ may be devoiced in Japanese \cite{han1962, vance1987}}\footnote{As pointed out by an anonymous reviewer, the differences in rates of epenthesis by speaker (Dutch: 68\%, Am. English: 58\%, Arg. Spanish: 66\%) are consistent with an important role for acoustic factors in epenthesis, suggesting that participants interpret speakers' acoustic cues instead of responding based on abstract phonological categories \cite[cf.][]{wilson2014}. This can also be seen in more detail when decomposing Figure \ref{fig:tiles} by speaker, as in supplementary materials available from https://osf.io/y9h6c}
-Second, when the flanking vowel and coarticulation match, the quality of the perceived vowel patterned in the same way as in loanword adaptation data. That is, for \textipa{/kp/}-clusters, the predominant epenthetic vowel was the standard default vowel for Japanese (\textipa{/u/}), while for \textipa{/hp/}-clusters, it was a copy of the flanking vowel. Finally, and most importantly, in items where the coarticulation and flanking vowel differed, the quality of the epenthetic vowel was significantly influenced by both variables, but the influence of the former was much larger than that of the latter, especially in the case of /hp/. Our discussion focuses on this last finding. 
-
-Before discussing its theoretical relevance, let us comment on the numerically small -- yet significant -- influence of flanking vowel on epenthesis for \textipa{/hp/}-clusters, where vowel coarticulation is maximal. This result suggests a contribution of categorical variables on epenthetic vowel quality (i.e., copy effect). A similar effect, though, was also found for \textipa{/kp/}-clusters, for which loanword adaptation patterns provide no particular reason to propose the existence of a categorical copy phenomenon; indeed, in loanwords, coda-/k/ generally triggers default /u/-epenthesis. 
-Therefore, it is possible that this effect results from a response bias due to task demands: given a perceptually uncertain stimulus, the flanking vowel could prime a `copy' response, for instance, because it was visually available on-screen at each trial (e.g. ``ah?pa"). Further work using different tasks is necessary to examine the perceptual reality of this `vowel copy' effect. 
-
-Keeping in mind that this work focuses on the choice of epenthetic vowel, while not directly addressing questions related to why phonologically-illegal clusters are repaired, or what the role of phonotactics in epenthesis is, the finding that the quality of the epenthetic vowel is influenced more by coarticulation than by the flanking vowel calls for a perceptual repair mechanism in which acoustic details are taken into consideration. Two-step models in which epenthetic repair is performed after the consonant cluster in the acoustic input has been represented in terms of discrete phonetic categories are therefore ruled out. Rather, like \cite{dupoux2011}, we argue in favor of one-step models, in which epenthetic vowel quality is based on the similarity between local acoustic cues and prototypical properties of each vowel in the language, such that the closest matching vowel gets selected for insertion. This mechanism can account both for the coarticulation-induced vowel copy effect in items with a \textipa{/hp/}-cluster, as the voiceless glottal fricative /h/ contains strong coarticulation from the adjacent vowels \cite[][also see https://osf.io/y9h6c for supplementary data]{keating1988}, and for the default /u/-epenthesis effect in items with a \textipa{/kp/}-cluster -- which exhibit a lower degree of coarticulation -- as \textipa{/u/} is the phonetically shortest vowel in the language \cite{han1962} and is prone to be devoiced in certain contexts (see footnote).
-
-Focusing on cases where the quality of the epenthetic vowel varies \textit{within language} as a function of the type of cluster, previous studies have investigated whether language-specific phonotactic or phonological properties play a role for the quality of the epenthetic vowel. In Japanese, for instance, dental stops cannot be followed by /u/, and in loanwords this phonotactic constraint gives rise to adaptation by means of /o/-epenthesis (e.g. $'batman' \rightarrow 'batoman'$). Using identification tasks, both \cite{mattingley2015} and \cite{guekozIS17} report that the perceptual equivalent of this effect is only marginally present in Japanese listeners \cite[10-12\% of /o/-epenthesis in /d/-initial clusters; see also][for the absence of such an effect in a discrimination task]{monahan2009}. Thus, so far there is only weak evidence that the mechanism of phonotactic repair takes into account the legality of the resulting CVC-sequence. A stronger effect of cluster-dependent perceptual epenthesis has been reported in Korean listeners, who repair \textipa{/eSma/} and -- to a lesser extent -- \textipa{/ec\super hma/} with an epenthetic \textipa{/i/} instead of the default epenthetic vowel \textipa{/1/} \cite{durvasula2015}. This is argued to be due to the existence of an allophonic rule that palatalizes \textipa{/s/} and \textipa{/t\super h/} before \textipa{/i/}, yielding \textipa{[Si]} and \textipa{[c\super hi]}, respectively. It is also possible, however, that this effect is (partly) due to coarticulation; for instance, acoustic cues in \textipa{/S/} and \textipa{/c\super h/} might be more suggestive of \textipa{/i/} than of \textipa{/1/}.  
-
-To conclude, we directly compared the relative contributions of acoustic and categorical effects on epenthetic vowel quality, and found that the former override the latter. This result thus strengthens those of \cite{dupoux2011}, who also established the presence of acoustic effects but without investigating possible categorical effects. More research is needed to investigate whether our findings generalize to other cases of perceptual epenthesis. This question can be addressed by two complementary approaches. One would be to run additional experiments with cross-spliced stimuli, as in the present study. Another one would be to measure the effective amount of coarticulation in experimental stimuli of previous studies, using a computational implementation of a one-step repair mechanism (see \cite{dupoux2011} and \cite{wilson2014} for propositions, and \cite{schatz2016} for an implementation using Hidden Markov Models).
-
-%%%% Annexes %%%%
-\subsection{Supplementary analyses}
-
-\subsubsection{Acoustic measurements}
-\begin{figure}[H]
-  \centering
-  \begin{overpic}[page=1, width=0.8\linewidth]{chapter02/ahpa_acoustic}\end{overpic}
-  \caption{Figure caption}
-  \label{fig:ahpa_acoustic}
-\end{figure}
-
-\subsubsection{Control items}
-\begin{figure}[H]
-  \centering
-  \begin{overpic}[page=1, width=0.2\linewidth]{chapter02/ahpa_uep-copyep}\end{overpic}
-  \hspace{2cm}
-  \begin{overpic}[page=2, width=0.2\linewidth]{chapter02/ahpa_uep-copyep}\end{overpic}
-  \caption{Figure caption}
-  \label{fig:ahpa_uep-copyep}
-\end{figure}
-
-\subsubsection{Test items (by speaker)}
 \begin{figure}[H]
   \centering
   \begin{overpic}[page=1, width=\linewidth]{chapter02/ahpa_heath_spk}\end{overpic}
@@ -184,26 +161,109 @@ To conclude, we directly compared the relative contributions of acoustic and cat
   \label{fig:ahpa_spk}
 \end{figure}
 
-\subsubsection{ABX task}
-% [TODO] Add correlation results
-We also performed a control ABX task with a different set of participants, as this task promotes a more global perception of the stimuli. In this experiment, participants heard trials with 4 types of AB pairs:
-\begin{itemize}
-    \item $V_1CpV_1$ (non-spliced cluster) vs. $V_1CV_1pV_1$ (full vowel)
-    \item $V_1CpV_1$ (non-spliced cluster) vs. $V_1C_{V_2}pV_1$ (spliced cluster)
-    \item $V_1C_{V_2}pV_1$ (spliced cluster) vs. $V_1C_{V_3}pV_1$ (spliced cluster)
-    \item $V_1C_{V_2}pV_1$ (spliced cluster) vs. $V_1CV_2pV_1$ (full vowel)
-\end{itemize}
+We used an identification task to assess the quality of epenthetic vowels perceived by Japanese listeners in illegal consonant clusters with varying amounts of coarticulation. Our findings can be summarized as follows: First, we were able to replicate the perception of illusory vowels within phonotactically illegal clusters by Japanese listeners (64\% of all test trials).\footnote{Note that whereas previous studies examined perceptual epenthesis within clusters with at least one voiced consonant, we presently focused on completely voiceless clusters, a context in which the high vowels /i/ and /u/ may be devoiced in Japanese \cite{han1962, vance1987}}\footnote{As pointed out by an anonymous reviewer, the differences in rates of epenthesis by speaker (Dutch: 68\%, Am. English: 58\%, Arg. Spanish: 66\%) are consistent with an important role for acoustic factors in epenthesis, suggesting that participants interpret speakers' acoustic cues instead of responding based on abstract phonological categories \cite[cf.][]{wilson2014}.{\color{blue}This can also be seen in more detail when decomposing Figure \ref{fig:tiles} by speaker, as in Figure \ref{fig:ahpa_spk}}} %This can also be seen in more detail when decomposing Figure \ref{fig:tiles} by speaker, as in supplementary materials available from https://osf.io/y9h6c}
+Second, when the flanking vowel and coarticulation match, the quality of the perceived vowel patterned in the same way as in loanword adaptation data. That is, for \textipa{/kp/}-clusters, the predominant epenthetic vowel was the standard default vowel for Japanese (\textipa{/u/}), while for \textipa{/hp/}-clusters, it was a copy of the flanking vowel. Finally, and most importantly, in items where the coarticulation and flanking vowel differed, the quality of the epenthetic vowel was significantly influenced by both variables, but the influence of the former was much larger than that of the latter, especially in the case of /hp/. Our discussion focuses on this last finding. 
+
+Before discussing its theoretical relevance, let us comment on the numerically small -- yet significant -- influence of flanking vowel on epenthesis for \textipa{/hp/}-clusters, where vowel coarticulation is maximal. This result suggests a contribution of categorical variables on epenthetic vowel quality (i.e., copy effect). A similar effect, though, was also found for \textipa{/kp/}-clusters, for which loanword adaptation patterns provide no particular reason to propose the existence of a categorical copy phenomenon; indeed, in loanwords, coda-/k/ generally triggers default /u/-epenthesis. 
+Therefore, it is possible that this effect results from a response bias due to task demands: given a perceptually uncertain stimulus, the flanking vowel could prime a `copy' response, for instance, because it was visually available on-screen at each trial (e.g. ``ah?pa"). Further work using different tasks is necessary to examine the perceptual reality of this `vowel copy' effect.
 
 \begin{figure}[H]
   \centering
-  \begin{overpic}[page=6, width=0.9\linewidth]{chapter02/ahpa_figs}\end{overpic}
-  \caption{Figure caption}
-  \label{fig:ahpa_abx}
+  \begin{overpic}[page=1, width=0.8\linewidth]{chapter02/ahpa_acoustic}\end{overpic}
+  \caption{{\color{blue}Figure caption}}
+  \label{fig:ahpa_acoustic}
 \end{figure}
 
-We saw that ABX accuracy rates for each pair were correlated with how similar response patterns for items A and B were at the identification task. In other words, the more similar response patterns were for A and B at the identification task, the harder it was for participants to discriminate A and B at the ABX task. \\
+Keeping in mind that this work focuses on the choice of epenthetic vowel, while not directly addressing questions related to why phonologically-illegal clusters are repaired, or what the role of phonotactics in epenthesis is, the finding that the quality of the epenthetic vowel is influenced more by coarticulation than by the flanking vowel calls for a perceptual repair mechanism in which acoustic details are taken into consideration. Two-step models in which epenthetic repair is performed after the consonant cluster in the acoustic input has been represented in terms of discrete phonetic categories are therefore ruled out. Rather, like \cite{dupoux2011}, we argue in favor of one-step models, in which epenthetic vowel quality is based on the similarity between local acoustic cues and prototypical properties of each vowel in the language, such that the closest matching vowel gets selected for insertion. This mechanism can account both for the coarticulation-induced vowel copy effect in items with a \textipa{/hp/}-cluster, as the voiceless glottal fricative /h/ contains strong coarticulation from the adjacent vowels {\color{blue}\cite{keating1988} also see Figure \ref{fig:ahpa_acoustic}}, %https://osf.io/y9h6c for supplementary data]{keating1988},
+and for the default /u/-epenthesis effect in items with a \textipa{/kp/}-cluster -- which exhibit a lower degree of coarticulation -- as \textipa{/u/} is the phonetically shortest vowel in the language \cite{han1962} and is prone to be devoiced in certain contexts (see footnote).
 
-Similarity of responses was assessed by computing the Euclidean distance between 6-dimensional vectors [$p_{none}$, $p_a$, $p_e$, $p_i$, $p_o$, $p_u$] of A and B, where $p_x$ corresponds to the proportion of total trials for A (or B) in which participants responded $x$. These results suggest that adaptation patterns attested in the identification task are not task-dependent.
+Focusing on cases where the quality of the epenthetic vowel varies \textit{within language} as a function of the type of cluster, previous studies have investigated whether language-specific phonotactic or phonological properties play a role for the quality of the epenthetic vowel. In Japanese, for instance, dental stops cannot be followed by /u/, and in loanwords this phonotactic constraint gives rise to adaptation by means of /o/-epenthesis (e.g. $'batman' \rightarrow 'batoman'$). Using identification tasks, both \cite{mattingley2015} and \cite{guekozIS17} report that the perceptual equivalent of this effect is only marginally present in Japanese listeners \cite[10-12\% of /o/-epenthesis in /d/-initial clusters; see also][for the absence of such an effect in a discrimination task]{monahan2009}. Thus, so far there is only weak evidence that the mechanism of phonotactic repair takes into account the legality of the resulting CVC-sequence. A stronger effect of cluster-dependent perceptual epenthesis has been reported in Korean listeners, who repair \textipa{/eSma/} and -- to a lesser extent -- \textipa{/ec\super hma/} with an epenthetic \textipa{/i/} instead of the default epenthetic vowel \textipa{/1/} \cite{durvasula2015}. This is argued to be due to the existence of an allophonic rule that palatalizes \textipa{/s/} and \textipa{/t\super h/} before \textipa{/i/}, yielding \textipa{[Si]} and \textipa{[c\super hi]}, respectively. It is also possible, however, that this effect is (partly) due to coarticulation; for instance, acoustic cues in \textipa{/S/} and \textipa{/c\super h/} might be more suggestive of \textipa{/i/} than of \textipa{/1/}.  
+
+To conclude, we directly compared the relative contributions of acoustic and categorical effects on epenthetic vowel quality, and found that the former override the latter. This result thus strengthens those of \cite{dupoux2011}, who also established the presence of acoustic effects but without investigating possible categorical effects. More research is needed to investigate whether our findings generalize to other cases of perceptual epenthesis. This question can be addressed by two complementary approaches. One would be to run additional experiments with cross-spliced stimuli, as in the present study. Another one would be to measure the effective amount of coarticulation in experimental stimuli of previous studies, using a computational implementation of a one-step repair mechanism (see \cite{dupoux2011} and \cite{wilson2014} for propositions, and \cite{schatz2016} for an implementation using Hidden Markov Models).
+
+%%%% Annexes %%%%
+\subsection{Supplementary analyses: ABX task}
+
+In this additional experiment we assessed the perception of illegal consonantal clusters in Japanese using an ABX discrimination task, which, contrary to the vowel identification task used in Experiment 1, does not require an explicit categorization of the item's segments. As in previous work \cite{dupoux1999, dupoux2011}, we used different speakers for stimuli A, B, and X, such that the task could not be performed on the basis of low-level acoustic information.
+
+\subsubsection{Methods}
+\paragraph{Participants}
+Twenty-six native Japanese listeners were recruited in Paris, France %(mean age $XX \pm X.X$; XX female).
+While testing for this experiment was done outside of Japan, we recruited only participants with little experience with French or other languages in which consonant clusters are allowed. For instance, many participants were recently arrived exchange students or family members of professionals that had been transferred to Paris.  
+
+\paragraph{Stimuli}
+From the stimuli used for the identification task, we extracted items relevant for pairs shown in Table \ref{ahpa_ab_pairs}.
+We defined four types of AB pairs with constant flanking vowels, based on the nature of the items in the pair:
+
+\begin{itemize}
+\item Natural cluster items (N) correspond to natural control stimuli from the identification task, disyllabic $V_{1}C_{1}C_{2}V_{1}$ items which have not been spliced.
+\item Spliced cluster items (Sp) correspond to the identification task test stimuli, disyllabic $V_{1}C_{1}(V_{2})C_{2}V_{1}$ items for which the $C_{1}(V_{2})C_{2}$ cluster has been spliced from a $V_{2}C_{1}C_{2}V_{2}$ item.
+  \item Full vowel items (FV) correspond to trisyllabic fillers from the identification task, $V_{1}C_{1}V_{2}C_{2}V_{1}$ items for which the $C_{1}V_{2}C_{2}$ cluster has been spliced from a $V_{2}C_{1}V_{2}C_{2}V_{2}$ item
+\end{itemize}
+
+\begin{table*}[h]
+\centering
+\caption{Types of AB pairs for Experiment 2.} 
+\label{ahpa_ab_pairs}
+\begin{tabular}{ccccc}%cccc}
+\toprule
+%&&&&& \multicolumn{4}{c}{Predicted accuracy} \\
+\multicolumn{1}{c}{Type} & A & B & \# pairs & Example \\ %& Overt$_{(1)}$ & Covert$_{(2)}$ & \textipa{/u/}$_{(3)}$ & None$_{(3)}$\\ 
+\midrule
+N-FV  & natural & full vowel & 10  & \textipa{$/ahpa/ - /ahapa/$} \\ %& $-$ & $-$ & $+$ & $+$ \\
+N-Sp  & natural & spliced    & 40  & \textipa{$/ahpa/ - /ah_{i}pa/$} \\ %& $-$ & $+$ & $-$ & $-$       \\
+Sp-Sp & spliced & spliced    & 100 & \textipa{$/ah_{i}pa/ - /ah_{e}pa/$} \\%& $-$ & $+$ & $-$ & $-$  \\
+Sp-FV & spliced & full vowel & 50  & \textipa{$/ah_{i}pa/ - /ahipa/$} \\%& $+$ & $-$ & $+$ & $+$ \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\paragraph{Procedure}
+Participants were tested in a soundproof room with headphones. On each trial, participants heard two different stimuli of categories A and B, followed by a third stimulus X, belonging either to category A or B. All three stimuli had a $\textipa{V_{1}C(V_{2})pV_{1}}$ structure, with \textipa{$V_{1}$} and \textipa{$C$} remaining constant within each trial.  
+All three tokens heard at each trial were produced by different speakers. Stimuli within each trial were presented with an ISI of 500 ms, and an ITI of 1 s separating a participant's response from the following trial.  
+
+Within each triplet, A always contained either a natural or a spliced cluster, while B always contained either a full vowel or a spliced cluster. Table \ref{table:ahpa_ab_pairs} shows the four different types of AB pairs that were thus tested. 
+
+In total, there were 200 AB pairs. Since there are four possible presentation orders for each pair and its corresponding third item X (i.e., $ABX_A$, $BAX_A$, $ABX_B$, $BAX_B$), there are 800 possible unique trials. In order to reduce the duration of the experiments, participants were divided into two groups exposed to counterbalanced halfs of the total set of trials.    
+
+\subsubsection{Results}
+
+\begin{figure}[H] 
+\centering
+    \begin{overpic}[page=5, height=7cm]{chapter02/ahpa_figs.pdf}
+    \end{overpic}
+    
+    \caption{}
+    \label{fig:ahpa_ABX}
+  \end{figure}
+  
+Trials in which the response was given before all items in the ABX triplet had been played were excluded ({\color{red}XX trials representing XX\%}). %[TODO]
+The remaining data were analysed using a generalised linear mixed-effects model in R (\textit{lme4}; \cite{R-lme4}) with a declared binary distribution. The binomial response variable of interest for each trial was Accuracy (\textit{correct vs. incorrect}); were included as fixed effects Consonant (\textit{\textipa{/h/} vs. \textipa{/k/}}), $Type_{A}$ (\textit{natural vs. spliced}), $Type_{B}$ (\textit{full vowel vs. spliced}), as well as the interactions between every pair of fixed effects. All fixed effects were contrast-coded. Participant, $Item_A$, $Item_B$, and Test Group were included as random effects. Significance testing was done through model comparison: the full model including all fixed and random effects was compared to reduced models, in which one of the fixed effects was absent.
+
+The full model did not explain significantly more data variance than a model excluding the fixed effect Consonant, suggesting that participant accuracy was not significantly different for \textipa{/hp/} and \textipa{/kp/} trials ($\beta = 0.17$, $SE = 0.16$, $\chi^2(1) = 1.1$, $p > 0.05 $).
+
+We did not find evidence of accuracy being lower or higher when an ABX trial contained a natural cluster item instead of a spliced cluster item ($Type_A$; $\beta = 0.20$, $SE = 0.12$, $\chi^2(1) = 2.52$, $p > 0.05$). Moreover, there was no significant interaction between Consonant and $Type_A$ ($\beta = -0.10$, $SE = 0.17$, $\chi^2(1) = 0.37$, $p > 0.05$), nor between $Type_A$ and $Type_B$ ($\beta = 0.08$, $SE = 0.15$, $\chi^2(1) = 0.26$, $p > 0.05$).
+
+By contrast, accuracy was significantly enhanced by the presence of an item with a full vowel cluster (i.e., \textit{Sp-FV} and \textit{N-FV} pairs) ($Type_B$, $\beta = 0.93$, $SE = 0.16$, $\chi^2(1) = 29.8$, $p < 0.0001$). This increase in accuracy appears to be exacerbated in pairs with \textipa{/kp/}-containing items relative to pairs with \textipa{/hp/}-containing items, as the interaction between Consonant and $Type_B$ was also significant ($\beta = -0.7$, $SE = 0.15$, $\chi^2(1) = 19.0$, $p < 0.0001$).
+
+\subsubsection{Correlation between experimental results}
+
+In order to assess the role of perceptual assimilation on stimulus discrimination, we derived a measure of perceptual distance from response patterns given in the identification task, and examined if this distance predicted the outcome in the ABX discrimination task. To do so, we computed for each item a six-dimensional numerical vector of the shape $x = [x_{1}, ..., x_{6}]$, with values corresponding to the percent responses to categories \textipa{a}, \textipa{e}, \textipa{i}, \textipa{o}, \textipa{u}, and \textit{none}, respectively. The distance $d(x,y)$ between two items $x$ and $y$ was computed as the normalized Euclidian distance between their associated vectors:
+    \[d(x,y)=\frac{\sqrt{\sum_i (x_{i} - y_{i})^{2}}} {\sqrt{2}}\]
+
+One data point was obtained per AB pair, giving a total of 200 datapoints (cf. Table \ref{ahpa_ab_pairs}).
+
+%% Statistical analysis: Multiple regression
+\begin{figure}[H]
+\centering
+    \begin{overpic}[page=6, height=8cm]{chapter02/ahpa_figs.pdf}
+    \end{overpic}
+    
+    \caption{Correlation between the perceptual distance derived from the identification task responses and the accuracy at the ABX discrimination task.} 
+    \label{fig:ahpa_corr}
+\end{figure}
+
+Multiple regression analysis was used to test if assimilation patterns from the identification task significantly predicted participants' accuracy during the ABX task. A scatterplot summarizes the results in Figure \ref{fig:ahpa_corr}. The model included as independent variables the normalized perceptual distance between two items (range = [0;1]), and the consonant cluster (\textipa{/hp/} or \textipa{/kp/}). These two predictor variables explained 52\% of the variance ($R^{2} = 0.52$, $F(3,196) = 73.63$, $p < 0.0001$). Consonant cluster ($t < 1$) and the interaction of the two independent variables ($t < 1$) were not statistically significant. On the other hand, perceptual distance significantly predicted accuracy during the ABX task ($t = 13.8$, $p < 0.0001$); the less similar the response patterns to both items in the AB pair, the easier their discrimination in the ABX task. These results suggest that adaptation patterns attested in the identification task are not task-dependent.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -227,15 +287,15 @@ Similarity of responses was assessed by computing the Euclidean distance between
 
 %[TODO] Say that this is a modified version of the Interspeech paper
 
-{\color{red}[This is extended from Interspeech 2017 paper etc etc]}
-
+\textit{{\color{blue}The following section is a modified version of the following conference proceedings: \\
+Guevara-Rukoz, A., Parlato-Oliveira, E., Yu, S., Hirose, Y., Peperkamp, S., and Dupoux, E. (2017). Predicting epenthetic vowel quality from acoustics. Proceedings of Interspeech, 596-600.}}
 
 \paragraph{Abstract}
 Past research has shown that sound sequences not permitted in our native language may be distorted by our perceptual system. A well-documented example is vowel epenthesis, a phenomenon by which listeners hallucinate non-existent vowels within illegal consonantal sequences. As reported in previous work, this occurs for instance in Japanese (JP) and Brazilian Portuguese (BP), languages for which the `default' epenthetic vowels are /u/ and /i/, respectively. In a perceptual experiment, we corroborate the finding that the quality of this illusory vowel is language-dependent, but also that this default choice can be overridden by coarticulatory information present on the consonant cluster. In a second step, we analyse recordings of JP and BP speakers producing `epenthesized' versions of stimuli from the perceptual task. Results reveal that the default vowel corresponds to the vowel with the most reduced acoustic characteristics and whose formants are acoustically closest to formant transitions present in consonantal clusters. Lastly, we model behavioural responses from the perceptual experiment with an exemplar model using dynamic time warping (DTW)-based similarity measures on MFCCs. 
 
 \subsection{Introduction}
 
-When languages borrow words from one another, the borrowed words tend to be adapted to the local phonology. For instance, Brazilian Portuguese phonotactic constraints disallow most obstruent-obstruent and obstruent-nasal sequences, while those of Japanese disallow consonant clusters and consonants in coda position (with the exception of geminates and nasal consonants). Foreign words containing these illegal sequences may be broken up by the insertion of so-called `epenthetic' vowels (e.g., BP: "football" $\rightarrow$ \textipa{/futibol/}, JP: "ice cream" $\rightarrow$ \textipa{/aisukuri:mu/}). This phenomenon has been shown to also happen during on-line perception: listeners \textit{perceive} vowels within illegal consonantal sequences \cite{dupoux_1999, dehaene_2000, dupoux_2001, berent2007, kabak2007, monahan2009, dupoux_2011, mattingley2015, durvasula2015}. This suggests that phonotactic constraints of the native language play an active role during speech perception and induce repair of illegal forms such that they are recoded into the nearest legal one. The specific mechanisms of this repair process are still largely unknown. In particular, what determines the quality of the epenthesized vowel? Past work has shown that perceptual epenthesis is language-dependent (e.g., /i/ in BP, /u/ in JP), but also that it may be influenced by local acoustic properties, i.e., by coarticulation \cite{dupoux_2011}. Here, we study these two effects together, and report, firstly, on a perception experiment with BP and JP listeners. Next, we conduct acoustic analyses of the production of possible epenthetic vowels in a subset of the same participants.
+When languages borrow words from one another, the borrowed words tend to be adapted to the local phonology. For instance, Brazilian Portuguese phonotactic constraints disallow most obstruent-obstruent and obstruent-nasal sequences, while those of Japanese disallow consonant clusters and consonants in coda position (with the exception of geminates and nasal consonants). Foreign words containing these illegal sequences may be broken up by the insertion of so-called `epenthetic' vowels (e.g., BP: "football" $\rightarrow$ \textipa{/futibol/}, JP: "ice cream" $\rightarrow$ \textipa{/aisukuri:mu/}). This phenomenon has been shown to also happen during on-line perception: listeners \textit{perceive} vowels within illegal consonantal sequences \cite{dupoux1999, dehaene2000, dupoux2001, berent2007, kabak2007, monahan2009, dupoux2011, mattingley2015, durvasula2015}. This suggests that phonotactic constraints of the native language play an active role during speech perception and induce repair of illegal forms such that they are recoded into the nearest legal one. The specific mechanisms of this repair process are still largely unknown. In particular, what determines the quality of the epenthesized vowel? Past work has shown that perceptual epenthesis is language-dependent (e.g., /i/ in BP, /u/ in JP), but also that it may be influenced by local acoustic properties, i.e., by coarticulation \cite{dupoux2011}. Here, we study these two effects together, and report, firstly, on a perception experiment with BP and JP listeners. Next, we conduct acoustic analyses of the production of possible epenthetic vowels in a subset of the same participants.
 Lastly, we present an exemplar-based computational model of speech perception which attempts to model phonotactic repairs based on acoustics.
 
 \subsection{Perception experiment}
@@ -249,15 +309,24 @@ Fifty-four items with the structure $V_{1}C_{1}C_{2}V_{2}$, with $V_{1}$ and $V_
 \subsubsection{Results}
 Statistical analyses were performed with the R statistical software \cite{R-base}, using MCMC glmm \cite{R-MCMCglmm, R-coda}. Effects were considered statistically significant if the 95\% highest posterior density (HPD) interval estimated for the variable of interest did not include zero. Please note that we only report effects relevant to hypotheses tested in this work. A full report of all analyses conducted in this paper (as well as additional information) can be found in: https://osf.io/zr88w/.
 
-In order to assess the influence of $V_{1}$ and $V_{2}$ (henceforth: flanking vowels) on epenthetic vowel quality (/i/ or /u/), we fitted models with fixed effects Language (BP \textit{vs.} JP), Number of Same Flanking Vowels (NSFV) ($none$ \textit{vs.} $1$; $none$ and $1$ \textit{vs.} $2$) and their interaction, with Participants as random effect. We also included the fixed effect Coronal $C_{1}$ (non-coronal \textit{vs.} coronal) and the resulting interactions when analysing /u/ responses, as the insertion of default /u/ after coronal consonants yields phonotactically illegal sequences in Japanese. Fixed effects were contrast coded with deviance coding and, in the case of the trinomial variable NSFVs, comparisons were achieved by creating dummy variables "none \textit{vs} 1" with weights [-0.5, 0.5, 0] for levels $none$, $1$ and $2$, respectively, and "Less than 2 \textit{vs.} 2" with weights [-0.25, -0.25, 0.5] for levels $none$, $1$ and $2$. 
+In order to assess the influence of $V_{1}$ and $V_{2}$ (henceforth: flanking vowels) on epenthetic vowel quality (/i/ or /u/), we fitted models with fixed effects Language (BP \textit{vs.} JP), Number of Same Flanking Vowels (NSFV) ($none$ \textit{vs.} $1$; $none$ and $1$ \textit{vs.} $2$) and their interaction, with Participants as random effect. We also included the fixed effect Coronal $C_{1}$ (non-coronal \textit{vs.} coronal) and the resulting interactions when analysing /u/ responses, as the insertion of default /u/ after coronal consonants yields phonotactically illegal sequences in Japanese. Fixed effects were contrast coded with deviance coding and, in the case of the trinomial variable NSFVs, comparisons were achieved by creating dummy variables "none \textit{vs} 1" with weights [-0.5, 0.5, 0] for levels $none$, $1$ and $2$, respectively, and "Less than 2 \textit{vs.} 2" with weights [-0.25, -0.25, 0.5] for levels $none$, $1$ and $2$.
 
-Overall, BP and JP participants experienced vowel epenthesis in 81\% and 87\% of the trials, respectively. We focus our analysis on these trials and, in order to allow for comparisons with the model from Section 4 below, we exclude trials for which the reported epenthetic vowel was /a/ (1\%) or /e/ (BP: 1\%, JP: 3\%). Percentages for the remaining responses of interest (/i/, /o/, and /u/) can be seen in the lefthand part of Table~\ref{tab:model_overall}. 
+\begin{figure}[H]
+  \centering
+  \begin{overpic}[page=1, width=0.7\linewidth]{chapter02/parlato_per_all}\end{overpic}
+  \begin{overpic}[page=2, width=0.7\linewidth]{chapter02/parlato_per_all}\end{overpic}
+  \caption{Responses for all trials from the perception experiment for both BP (top) and JP (bottom), including trials with responses not given by the exemplar model (``none'', ``a'', ``e''). Numbers indicate trial counts, with darker cell backgrounds representing higher values. Within each of the two 3 x 3 grid, trials are separated according to $V_{1}$ (columns) and $V_{2}$ (rows). % [TODO] Check that this is the case and not the other way around 
+    Within each individual rectangle, the horizontal axis shows the first consonant of the consonant cluster, while the vertical axis corresponds to possible responses.}
+  \label{fig:parlato_per_all}
+\end{figure}
+
+{\color{red}Response patterns are shown on Figure \ref{fig:parlato_per_all}.} Overall, BP and JP participants experienced vowel epenthesis in 81\% and 87\% of the trials, respectively. We focus our analysis on these trials and, in order to allow for comparisons with the model from Section 4 below, we exclude trials for which the reported epenthetic vowel was /a/ (1\%) or /e/ (BP: 1\%, JP: 3\%). Percentages for the remaining responses of interest (/i/, /o/, and /u/) can be seen in the lefthand part of Table~\ref{tab:parlato_model_overall}. 
 
 % latex table generated in R 3.2.3 by xtable 1.8-2 package
 % Sun Mar 19 23:36:24 2017
 \begin{table}[th]
   \caption{Percentage of responses.}
-  \label{tab:model_overall}
+  \label{tab:parlato_model_overall}
 \centering
     \begin{tabular}{ccccccc}
     \toprule
@@ -273,31 +342,29 @@ Overall, BP and JP participants experienced vowel epenthesis in 81\% and 87\% of
 
 \subsubsection{/i/-epenthesis}
 
-A main effect of Language shows that BP participants perceived an epenthetic /i/ more often than JP participants (posterior mode: $-277.1$, HPD interval: $[-389.2, -167.1]$). Moreover, the propensity to respond /i/ was influenced by flanking vowels, as indicated by a main effect of NSFV: Participants gave more /i/ responses when one flanking vowel was /i/ ($204.1, [80.8, 283.7]$), and even more so when both flanking vowels were /i/ ($368.9, [208.4, 443.4]$). 
+\begin{figure}[H]
+  \centering
+  \begin{overpic}[page=1, width=0.45\linewidth]{chapter02/parlato_per_iou}\end{overpic}
+  \hspace{1cm}
+  \begin{overpic}[page=3, width=0.45\linewidth]{chapter02/parlato_per_iou}\end{overpic}
+  \caption{Proportion of /i/-epenthesis in the perception experiment with BP and JP participants (left) and the simulations with the corresponding exemplar-based models (right). Bigger dots show mean values, while smaller dots show individual values for human participants.}
+  \label{fig:parlato_iepenth}
+\end{figure}
+
+{\color{red}Figure \ref{fig:parlato_iepenth} shows the proportion of /i/-epenthesis.} A main effect of Language shows that BP participants perceived an epenthetic /i/ more often than JP participants (posterior mode: $-277.1$, HPD interval: $[-389.2, -167.1]$). Moreover, the propensity to respond /i/ was influenced by flanking vowels, as indicated by a main effect of NSFV: Participants gave more /i/ responses when one flanking vowel was /i/ ($204.1, [80.8, 283.7]$), and even more so when both flanking vowels were /i/ ($368.9, [208.4, 443.4]$). 
 
 \paragraph{/u/-epenthesis}
 
-We found a main effect of Language; BP participants epenthesized /u/ less often than JP participants ($265.2, [191.0, 347.2]$). The significant main effect of NSFV shows that participants were overall more prone to perceiving an epenthetic /u/ if one ($137.0, [90.6, 185.4]$) or both ($300.3, [230.4, 387.7]$) flanking vowels were /u/. Lastly, there was also a main effect of Coronal $C_{1}$ ($-43.0, [-75.8, -9.8]$): participants perceived /u/ less often after coronal than after labial and velar consonants. However, neither the interaction between Coronal $C_{1}$ and Language ($-63.9, [-132.1, 3.0]$), nor the triple interactions with NSFV ($-17.8, [-124.9, 84.1]$, $-14.8, [-238.4, 304.3$) were significant; thus, JP participants were not more prone to avoiding /u/-epenthesis after coronal consonants than BP participants. 
-
-\begin{figure*}[th]
+\begin{figure}[H]
   \centering
-    \begin{overpic}[clip, trim={0 0 0 0}, page=1, height=4.9cm]{chapter02/parlato_figs.pdf}  
-    \end{overpic}%
-    \hspace{1.5cm}
-    \begin{overpic}[clip, trim={0 0 0 0}, page=3, height=4.9cm]{chapter02/parlato_figs.pdf}  
-    \end{overpic} 
-    
-    \vspace{0.2cm}
-    \centering
-    
-    \begin{overpic}[clip, trim={0 0 0 0}, page=2, height=4.9cm]{chapter02/parlato_figs.pdf}  
-    \end{overpic}%
-    \hspace{1.5cm}
-    \begin{overpic}[clip, trim={0 0 0 0}, page=4, height=4.95cm]{chapter02/parlato_figs.pdf}  
-    \end{overpic}
-  \caption{Responses from the perception experiment (left) and model predictions (right), for both BP (top) and JP (bottom). Numbers indicate trial counts, with darker cell backgrounds representing higher values. Within each 3 x 3 grid, trials are separated according to $V_{1}$ (columns) and $V_{2}$ (rows). Within each individual rectangle, the horizontal axis relates to whether $C_{1}$ is coronal (/d/) or not, while the vertical axis corresponds to possible responses. For instance, BP participants experienced /i/-epenthesis in all 78 trials involving $/iC_{1}C_{2}a/$ stimuli for which $C_{1}$ was not the coronal consonant /d/.}
-  \label{fig:parlato_permod}
-\end{figure*}
+  \begin{overpic}[page=2, width=0.45\linewidth]{chapter02/parlato_per_iou}\end{overpic}
+  \hspace{1cm}
+  \begin{overpic}[page=4, width=0.45\linewidth]{chapter02/parlato_per_iou}\end{overpic}
+  \caption{Proportion of /u/-epenthesis in the perception experiment with BP and JP participants (left) and the simulations with the corresponding exemplar-based models (right). Bigger dots show mean values, while smaller dots show individual values for human participants.}
+  \label{fig:parlato_uepenth}
+\end{figure}
+
+{\color{red}Figure \ref{fig:parlato_uepenth} shows the proportion of /u/-epenthesis.} We found a main effect of Language; BP participants epenthesized /u/ less often than JP participants ($265.2, [191.0, 347.2]$). The significant main effect of NSFV shows that participants were overall more prone to perceiving an epenthetic /u/ if one ($137.0, [90.6, 185.4]$) or both ($300.3, [230.4, 387.7]$) flanking vowels were /u/. Lastly, there was also a main effect of Coronal $C_{1}$ ($-43.0, [-75.8, -9.8]$): participants perceived /u/ less often after coronal than after labial and velar consonants. However, neither the interaction between Coronal $C_{1}$ and Language ($-63.9, [-132.1, 3.0]$), nor the triple interactions with NSFV ($-17.8, [-124.9, 84.1]$, $-14.8, [-238.4, 304.3$) were significant; thus, JP participants were not more prone to avoiding /u/-epenthesis after coronal consonants than BP participants. 
 
 
 \subsection{Acoustic analyses}
@@ -315,24 +382,37 @@ For each of the continuous response variables examined in this section, we fitte
 
 \paragraph{Vowel duration}
 
-The measured duration of each medial vowel $V_{3}$ (in seconds) was log-transformed to account for distribution skewness. We found a main effect of Medial Vowel ("/i/ \textit{vs} /u/": $0.04$, $[0.02, 0.06]$; "High Vowels \textit{vs.} /o/": $0.32$, $[0.30, 0.34]$), showing that, overall, /o/ is longer than /u/, which is longer than /i/. The interaction of Language and Medial Vowel was also significant ("/i/ \textit{vs} /u/": $-0.15$, $[-0.18, -0.10]$), reflecting the fact that in BP, /i/ is shorter than /u/ (mean /i/: $57.2$ ms; mean /u/: $64.5$ ms; adjusted $p<0.05$) while in JP, /u/ is shorter than /i/ (mean /u/: $69.6$ ms; mean /i/: $72.0$ ms; adjusted $p<0.05$).
+\begin{figure}[H]
+  \centering
+  \begin{overpic}[clip, trim=0 0 0 0, page=1, height=10cm]{chapter02/parlato_acoustic}\end{overpic}
+  \caption{Distribution of log'd vowel duration (in s) of medial vowels /i, o, u/ produced by BP and JP participants. Dashed lines show mean values.}
+  \label{fig:parlato_prod_dur}
+\end{figure}
+
+The measured duration of each medial vowel $V_{3}$ (in seconds) was log-transformed to account for distribution skewness. {\color{red}The resulting distributions can be seen in Figure \ref{fig:parlato_prod_dur}.} We found a main effect of Medial Vowel ("/i/ \textit{vs} /u/": $0.04$, $[0.02, 0.06]$; "High Vowels \textit{vs.} /o/": $0.32$, $[0.30, 0.34]$), showing that, overall, /o/ is longer than /u/, which is longer than /i/. The interaction of Language and Medial Vowel was also significant ("/i/ \textit{vs} /u/": $-0.15$, $[-0.18, -0.10]$), reflecting the fact that in BP, /i/ is shorter than /u/ (mean /i/: $57.2$ ms; mean /u/: $64.5$ ms; adjusted $p<0.05$) while in JP, /u/ is shorter than /i/ (mean /u/: $69.6$ ms; mean /i/: $72.0$ ms; adjusted $p<0.05$).
 
 \paragraph{Vowel intensity}
 
-We compared the mean intensity of the medial vowels $V_{3}$ in decibels (dB). There was a main effect of Medial Vowel, with /i/ having on average lower intensity than /u/ ($0.8$, $[0.7, 1.1]$), and high vowels having lower intensity than /o/ ($2.1$, $[1.9, 2.4]$). Of interest is the fact that the former effect is larger for JP than for BP (Language x "/i/ \textit{vs} /u/": $0.38$, $[0.09, 0.90]$), meaning that while /i/ is the vowel with least intensity in BP (mean: $72.8$ dB \textit{vs.} $73.2$ for /u/; adjusted $p<0.05$), the reverse is not true for JP (mean: $69.7$ dB for /u/ \textit{vs.} $68.7$ for /i/, adjusted $p<0.05$).
+\begin{figure}[H]
+  \centering
+  \begin{overpic}[clip, trim=0 0 0 0, page=2, height=10cm]{chapter02/parlato_acoustic}\end{overpic}
+  \caption{Distribution of median intensity (in dB) of medial vowels /i, o, u/ produced by BP and JP participants. Dashed lines show mean values.}
+  \label{fig:parlato_prod_dB}
+\end{figure}
+
+We compared the mean intensity of the medial vowels $V_{3}$ in decibels (dB). {\color{red}The associated distributions can be seen in Figure \ref{fig:parlato_prod_dB}.} There was a main effect of Medial Vowel, with /i/ having on average lower intensity than /u/ ($0.8$, $[0.7, 1.1]$), and high vowels having lower intensity than /o/ ($2.1$, $[1.9, 2.4]$). Of interest is the fact that the former effect is larger for JP than for BP (Language x "/i/ \textit{vs} /u/": $0.38$, $[0.09, 0.90]$), meaning that while /i/ is the vowel with least intensity in BP (mean: $72.8$ dB \textit{vs.} $73.2$ for /u/; adjusted $p<0.05$), the reverse is not true for JP (mean: $69.7$ dB for /u/ \textit{vs.} $68.7$ for /i/, adjusted $p<0.05$).
 This might be due to an overall higher degree of vocal constriction during the production of /i/ compared to /u/.  
 
 \paragraph{Vowel formants}
 
-We extracted median formant values (F1, F2, and F3, in Bark) from medial vowels $V_{3}$ and computed their Euclidean distance to the transitions found within their respective clusters (e.g. the /i/ in /abiga/ was compared to transitions in /bg/ from the French recording of /abga/). These Euclidean distances were square-root transformed to account for skewness. There was a main effect of Medial Vowel, as on average distance was shorter for /u/ than for /i/ ($-0.06$, $[-0.08, -0.04]$), while it was longer for /o/ relative to both /i/ and /u/ ($0.28$, $[0.25, 0.30]$). Of interest is the significant interaction between Language and Medial Vowel "/i/ \textit{vs} /u/" ($-0.31$, $[-0.36, -0.28]$), reflecting the fact that in BP /i/ formants were closer to cluster transitions than /u/ formants (mean: /i/ $2.8$ \textit{vs.} /u/ $3.1$, adjusted $p<0.05$), while the reverse held in JP (mean: /i/ $2.9$ \textit{vs.} /u/ $2.2$, adjusted $p<0.05$). 
-
-\begin{figure}[t]
+\begin{figure}[H]
   \centering
-  \begin{overpic}[clip, trim={0 0 0 0}, width=\linewidth]{chapter02/parlato_fig2.pdf}  
-  \end{overpic}
-  \caption{Medial vowels and clusters in F1 x F2 space.}
-  \label{fig:prod_formants}
+  \begin{overpic}[clip, trim=0 0 0 0, page=3, height=10cm]{chapter02/parlato_acoustic}\end{overpic}
+  \caption{Distribution of square root Euclidean distance to template in F1 x F2 x F3 space (frequencies in Bark) of medial vowels /i, o, u/ produced by BP and JP participants. Dashed lines show mean values.}
+  \label{fig:parlato_prod_eucl}
 \end{figure}
+
+We extracted median formant values (F1, F2, and F3, in Bark) from medial vowels $V_{3}$ and computed their Euclidean distance to the transitions found within their respective clusters (e.g. the /i/ in /abiga/ was compared to transitions in /bg/ from the French recording of /abga/). {\color{red}The resulting distributions can be seen in Figure \ref{fig:parlato_prod_eucl}.} These Euclidean distances were square-root transformed to account for skewness. There was a main effect of Medial Vowel, as on average distance was shorter for /u/ than for /i/ ($-0.06$, $[-0.08, -0.04]$), while it was longer for /o/ relative to both /i/ and /u/ ($0.28$, $[0.25, 0.30]$). Of interest is the significant interaction between Language and Medial Vowel "/i/ \textit{vs} /u/" ($-0.31$, $[-0.36, -0.28]$), reflecting the fact that in BP /i/ formants were closer to cluster transitions than /u/ formants (mean: /i/ $2.8$ \textit{vs.} /u/ $3.1$, adjusted $p<0.05$), while the reverse held in JP (mean: /i/ $2.9$ \textit{vs.} /u/ $2.2$, adjusted $p<0.05$). 
 
 \subsection{Production-based exemplar model}
 
@@ -354,16 +434,47 @@ where $d$ is the DTW distance, and $c$ is a parameter determining the weight of 
 
 The same statistical models from Section 2, but without a random effect for Participant, were used.
 
-The perception model was able to accurately predict participant responses for 59.1\% (BP) and 58.4\% (JP) of trials. Figure~\ref{fig:per&model_responses} shows a detailed distribution of the responses. As shown in the righthand part of Table~\ref{tab:model_overall}, the model rarely predicted /o/ responses, as expected based on acoustic analyses; however, it is surprising that most /o/ responses were predicted for BP rather than for JP. This might be due to overlap of /u/ and /o/ in the formant space of BP, which is visible in Figure~\ref{fig:prod_formants}.
-Concerning /i/ and /u/, numerically the model predicted more /i/ responses than /u/ responses for BP, and the opposite for JP. However, these differences are not as clear as they are for our human data, where in both languages the default vowel is chosen four times more often than the non-default high vowel.  
+The perception model was able to accurately predict participant responses for 59.1\% (BP) and 58.4\% (JP) of trials. Figure~\ref{fig:parlato_permod} shows a detailed distribution of the responses. As shown in the righthand part of Table~\ref{tab:parlato_model_overall}, the model rarely predicted /o/ responses, as expected based on acoustic analyses; however, it is surprising that most /o/ responses were predicted for BP rather than for JP. This might be due to overlap of /u/ and /o/ in the formant space of BP, which is visible in Figure~\ref{fig:parlato_prod_formants}.
+
+\begin{figure}[t]
+  \centering
+  \begin{overpic}[clip, trim={0 0 0 0}, width=\linewidth]{chapter02/parlato_fig2.pdf}  
+  \end{overpic}
+  \caption{Medial vowels and clusters in F1 x F2 space.}
+  \label{fig:parlato_prod_formants}
+\end{figure}
+
+Concerning /i/ and /u/, numerically the model predicted more /i/ responses than /u/ responses for BP, and the opposite for JP. However, these differences are not as clear as they are for our human data, where in both languages the default vowel is chosen four times more often than the non-default high vowel.
+
+\begin{figure*}[th]
+  \centering
+    \begin{overpic}[clip, trim={0 0 0 0}, page=1, height=4.9cm]{chapter02/parlato_figs.pdf}  
+    \end{overpic}%
+    \hspace{1.5cm}
+    \begin{overpic}[clip, trim={0 0 0 0}, page=3, height=4.9cm]{chapter02/parlato_figs.pdf}  
+    \end{overpic} 
+    
+    \vspace{0.2cm}
+    \centering
+    
+    \begin{overpic}[clip, trim={0 0 0 0}, page=2, height=4.9cm]{chapter02/parlato_figs.pdf}  
+    \end{overpic}%
+    \hspace{1.5cm}
+    \begin{overpic}[clip, trim={0 0 0 0}, page=4, height=4.95cm]{chapter02/parlato_figs.pdf}  
+    \end{overpic}
+  \caption{Responses from the perception experiment (left) and model predictions (right), for both BP (top) and JP (bottom), on trials common to the human and model experiments. Numbers indicate trial counts, with darker cell backgrounds representing higher values. Within each 3 x 3 grid, trials are separated according to $V_{1}$ (columns) and $V_{2}$ (rows). Within each individual rectangle, the horizontal axis relates to whether $C_{1}$ is coronal (/d/) or not, while the vertical axis corresponds to possible responses. For instance, BP participants experienced /i/-epenthesis in all 78 trials involving $/iC_{1}C_{2}a/$ stimuli for which $C_{1}$ was not the coronal consonant /d/.}
+  \label{fig:parlato_permod}
+\end{figure*}
 
 \paragraph{/i/-epenthesis}
 
+{\color{red}Figure \ref{fig:parlato_iepenth} shows the proportion of /i/-epenthesis for human participants and the corresponding exemplar models.}
 We found a main effect of Language ($-52.0$, $[-86.9, -23.8$) and a main effect of NSFV ($none$ \textit{vs.} $1$: $93.3$, $[53.0, 125.0]$; Less than $2$ \textit{vs.} $2$: $245.7$, $[150.8, 328.2]$). 
 Thus, our model is able to reflect the higher frequency of /i/ as epenthetic vowel in BP compared to JP participants, as well as the influence of flanking vowels on /i/-epenthesis in both BP and JP. 
 
 \paragraph{/u/-epenthesis}
 
+{\color{red}Figure \ref{fig:parlato_uepenth} shows the proportion of /u/-epenthesis for human participants and the corresponding exemplar models.}
 We found a main effect of NSFV ($none$ \textit{vs.} $1$: $37.8$, $[16.0, 62.3]$; Less than $2$ \textit{vs.} $2$: $190.7$, $[131.0, 240.6]$) but not of Language ($-15.9$, $[-50.2, 10.1]$). Thus, while our model was able to qualitatively reproduce the influence of flanking vowels on epenthetic vowel quality for /u/, it was unable to reflect the fact that JP listeners perceive /u/ more often than BP listeners. 
 
 There was also a main effect for Coronal $C_{1}$ ($-66.7$, $[-95.6, -39.5]$) but no interaction of this effect with Language ($40.2, [-28.0, 91.8]$); similarly to the perception data, this reflects an overall lower propensity for the model to `epenthesize' /u/ after coronal consonants. 
@@ -371,64 +482,15 @@ The triple interaction NSFV x Coronal $C_{1}$ x Language was significant for bot
 
 \subsection{General Discussion}
 
-Examining epenthetic vowel quality preferences by BP and JP speakers in a perception task, we corroborated previous findings (\cite{dupoux_1999, dupoux_2011}) that, like in loanword adaptations, the default epenthetic vowel during speech perception is /i/ for BP and /u/ for JP. Our acoustic analyses suggest that the choice of epenthetic vowel is acoustically driven. That is, in BP, /i/ is shorter and spectrally closer to the formant transitions in our stimuli than /u/ (and /o/), while the reverse holds in Japanese. As such, it may not be necessary to rely on phonological explanations of epenthetic vowel quality as in \cite{rose2006, uffmann2006}, were we to find that these are shared characteristics of default epenthetic vowels in a variety of languages. We also found an influence of flanking vowels on epenthetic vowel quality, similar to what was reported in \cite{dupoux_2011}. Indeed, participants gave fewer default responses when the quality of the flanking vowels was in disagreement with the default choice, resulting in more "vowel copy" epenthesis (i.e. perceiving a vowel of the same quality as that of a flanking vowel). Furthermore, we found that this effect of flanking vowels is additive, as it is even more prominent when both flanking vowels are of the same quality.
+Examining epenthetic vowel quality preferences by BP and JP speakers in a perception task, we corroborated previous findings (\cite{dupoux1999, dupoux2011}) that, like in loanword adaptations, the default epenthetic vowel during speech perception is /i/ for BP and /u/ for JP. Our acoustic analyses suggest that the choice of epenthetic vowel is acoustically driven. That is, in BP, /i/ is shorter and spectrally closer to the formant transitions in our stimuli than /u/ (and /o/), while the reverse holds in Japanese. As such, it may not be necessary to rely on phonological explanations of epenthetic vowel quality as in \cite{rose2006, uffmann2006}, were we to find that these are shared characteristics of default epenthetic vowels in a variety of languages. We also found an influence of flanking vowels on epenthetic vowel quality, similar to what was reported in \cite{dupoux2011}. Indeed, participants gave fewer default responses when the quality of the flanking vowels was in disagreement with the default choice, resulting in more "vowel copy" epenthesis (i.e. perceiving a vowel of the same quality as that of a flanking vowel). Furthermore, we found that this effect of flanking vowels is additive, as it is even more prominent when both flanking vowels are of the same quality.
 
-Interestingly, phonotactics did not influence JP participants' responses as may have been expected; while /o/ was almost exclusively perceived after coronal consonants, this was almost always the case for stimuli with $V_{1} = /a/$ (cf Figure~\ref{fig:per&model_responses}). In fact, for all combinations of flanking vowels, participants responded /i/ and/or /u/ more often than /o/ in coronal contexts, even though both /du/ and /di/ are phonotactically illegal sequences in JP. These results, which are reminiscent of previous work \cite{monahan2009, mattingley2015}, suggest that constraints on perception given by surface phonotactics can be overruled by constraints relative to matching input acoustics \cite{dupoux_2011}. In fact, if this were not the case, novel sound sequences would have never arisen in JP loanwords (e.g. \textit{party} is adapted as \textipa{/pa:ti/}, not \textipa{/pa:tCi/}). 
+Interestingly, phonotactics did not influence JP participants' responses as may have been expected; while /o/ was almost exclusively perceived after coronal consonants, this was almost always the case for stimuli with $V_{1} = /a/$ (cf Figure~\ref{fig:per&model_responses}). In fact, for all combinations of flanking vowels, participants responded /i/ and/or /u/ more often than /o/ in coronal contexts, even though both /du/ and /di/ are phonotactically illegal sequences in JP. These results, which are reminiscent of previous work \cite{monahan2009, mattingley2015}, suggest that constraints on perception given by surface phonotactics can be overruled by constraints relative to matching input acoustics \cite{dupoux2011}. In fact, if this were not the case, novel sound sequences would have never arisen in JP loanwords (e.g. \textit{party} is adapted as \textipa{/pa:ti/}, not \textipa{/pa:tCi/}). 
 
 Finally, we presented one exemplar model per language, based on productions by BP and JP participants, respectively. These models reproduced the major effects found in the perception experiment --- namely, the preferred epenthetic vowel, and some significant effects of language and flanking vowels --- although with a high level of noise. This noise level may be due to the relatively low number of tokens that were available as exemplars, the fact that the DTW procedure removes temporal cues (recall that we found that default vowels tend to be of shorter duration), and/or the fact that MFCC features do not appropriately capture speaker invariance.
 We interpret the results as providing a proof of principle that some of the salient effects regarding perceptual epenthesis can be accounted for on purely acoustic grounds. Future research is needed to improve on the model, whose predictions deviated from the perceptual data on several counts (e.g., 6\% /o/-epenthesis for BP, but less than 1\% for JP; failure to produce more /u/-epenthesis for JP than BP). These improvements could involve more phonetically and/or temporally informed features (e.g., spectrotemporal representations \cite{chi2005}), state-of-the art large-scale approaches with HMM or DNN systems, or physiologically-inspired models of speech perception (e.g., based on cortical oscillations \cite{hyafil2015}).
 
 To conclude, a triple approach combining perception experiments, acoustic analyses, and modeling allows us to gain insight into the mechanisms underlying perceptual epenthesis, and, more generally, repairs of illegal phonological structure during speech perception.
 
-
-{\color{red}[TODO] Integrate ``annexes''to text}
-
-%%%% Annexes %%%%
-\newpage
-\subsection{Supplementary analyses}
-
-%{\color{red}[TODO] Integrate to text}
-
-\subsubsection{Human responses at identification task} 
-\begin{figure}[H]
-  \centering
-  \begin{overpic}[page=1, width=0.6\linewidth]{chapter02/parlato_per_all}\end{overpic}
-  \begin{overpic}[page=2, width=0.6\linewidth]{chapter02/parlato_per_all}\end{overpic}
-  \caption{Responses from the perception experiment for both BP (top) and JP (bottom), including trials with responses not given by the exemplar model (``none'', ``a'', ``e''). Numbers indicate trial counts, with darker cell backgrounds representing higher values. Within each of the two 3 x 3 grid, trials are separated according to $V_{1}$ (columns) and $V_{2}$ (rows). % [TODO] Check that this is the case and not the other way around 
-    Within each individual rectangle, the horizontal axis shows the first consonant of the consonant cluster, while the vertical axis corresponds to possible responses.}
-  \label{fig:parlato_per_all}
-\end{figure}
-
-\subsubsection{/i/-epenthesis} 
-\begin{figure}[h!]
-  \centering
-  \begin{overpic}[page=1, width=0.45\linewidth]{chapter02/parlato_per_iou}\end{overpic}
-  \hspace{1cm}
-  \begin{overpic}[page=3, width=0.45\linewidth]{chapter02/parlato_per_iou}\end{overpic}
-  \caption{Proportion of /i/-epenthesis in the perception experiment with BP and JP participants (left) and the simulations with the corresponding exemplar-based models (right). Bigger dots show mean values, while smaller dots show individual values for human participants.}
-  \label{fig:parlato_uepenth}
-\end{figure}
-
-\subsubsection{/u/-epenthesis} 
-\begin{figure}[h!]
-  \centering
-  \begin{overpic}[page=2, width=0.45\linewidth]{chapter02/parlato_per_iou}\end{overpic}
-  \hspace{1cm}
-  \begin{overpic}[page=4, width=0.45\linewidth]{chapter02/parlato_per_iou}\end{overpic}
-  \caption{Proportion of /u/-epenthesis in the perception experiment with BP and JP participants (left) and the simulations with the corresponding exemplar-based models (right). Bigger dots show mean values, while smaller dots show individual values for human participants.}
-  \label{fig:parlato_uepenth}
-\end{figure}
-
-\subsubsection{Acoustic analyses} 
-\begin{figure}[H]
-  \centering
-  \begin{overpic}[clip, trim=0 0 0 0, page=1, height=6.5cm]{chapter02/parlato_acoustic}\end{overpic}
-  \hspace{0.5cm}
-  \begin{overpic}[clip, trim=0 0 0 0, page=2, height=6.5cm]{chapter02/parlato_acoustic}\end{overpic}
-  \begin{overpic}[clip, trim=0 0 0 0, page=3, height=6.5cm]{chapter02/parlato_acoustic}\end{overpic}
-  \caption{Acoustic properties of medial vowels /i, o, u/ produced by BP and JP participants. Distribution of log'd vowel duration (in s), median intensity (in dB) and square root Euclidean distance to template in F1 x F2 x F3 space (frequencies in Bark). Dashed lines show mean values.}
-  \label{fig:parlato_prod}
-\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Chapter mini-discussion %

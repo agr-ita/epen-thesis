@@ -1,0 +1,203 @@
+\begin{thebibliography}{}
+
+\bibitem[Bates et~al., 2015]{R-lme4}
+Bates, D., M{\"a}chler, M., Bolker, B., and Walker, S. (2015).
+\newblock Fitting linear mixed-effects models using {lme4}.
+\newblock {\em Journal of Statistical Software}, 67(1):1--48.
+
+\bibitem[Berent et~al., 2008]{berent2008}
+Berent, I., Lennertz, T., Jun, J., Moreno, M.~A., and Smolensky, P. (2008).
+\newblock Language universals in human brains.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  105(14):5321--5325.
+
+\bibitem[Berent et~al., 2007]{berent2007}
+Berent, I., Steriade, D., Lennertz, T., and Vaknin, V. (2007).
+\newblock What we know about what we have never heard: Evidence from perceptual
+  illusions.
+\newblock {\em Cognition}, 104(3):591--630.
+
+\bibitem[Bombien et~al., 2016]{R-wrassp}
+Bombien, L., Winkelmann, R., and Scheffers, M. (2016).
+\newblock {\em wrassp: an R wrapper to the ASSP Library}.
+\newblock R package version 0.1.4.
+
+\bibitem[Chi et~al., 2005]{chi2005}
+Chi, T., Ru, P., and Shamma, S.~A. (2005).
+\newblock Multiresolution spectrotemporal analysis of complex sounds.
+\newblock {\em The Journal of the Acoustical Society of America},
+  118(2):887--906.
+
+\bibitem[Daland et~al., 2015]{daland2015}
+Daland, R., Oh, M., and Kim, S. (2015).
+\newblock When in doubt, read the instructions: Orthographic effects in
+  loanword adaptation.
+\newblock {\em Lingua}, 159:70--92.
+
+\bibitem[Davidson and Shaw, 2012]{davidson2012}
+Davidson, L. and Shaw, J.~A. (2012).
+\newblock Sources of illusion in consonant cluster perception.
+\newblock {\em Journal of Phonetics}, 40(2):234--248.
+
+\bibitem[de~Jong and Park, 2012]{dejong2012}
+de~Jong, K. and Park, H. (2012).
+\newblock Vowel epenthesis and segment identity in korean learners of english.
+\newblock {\em Studies in Second Language Acquisition}, 34(01):127--155.
+
+\bibitem[Dehaene-Lambertz et~al., 2000]{dehaene2000}
+Dehaene-Lambertz, G., Dupoux, E., and Gout, A. (2000).
+\newblock Electrophysiological correlates of phonological processing: a
+  cross-linguistic study.
+\newblock {\em Journal of Cognitive Neuroscience}, 12(4):635--647.
+
+\bibitem[Dupoux et~al., 1999]{dupoux1999}
+Dupoux, E., Kakehi, K., Hirose, Y., Pallier, C., and Mehler, J. (1999).
+\newblock Epenthetic vowels in {J}apanese: {A} perceptual illusion?
+\newblock {\em Journal of experimental psychology: human perception and
+  performance}, 25(6):1568.
+
+\bibitem[Dupoux et~al., 2001]{dupoux2001}
+Dupoux, E., Pallier, C., Kakehi, K., and Mehler, J. (2001).
+\newblock New evidence for prelexical phonological processing in word
+  recognition.
+\newblock {\em Language and cognitive processes}, 16(5-6):491--505.
+
+\bibitem[Dupoux et~al., 2011]{dupoux2011}
+Dupoux, E., Parlato, E., Frota, S., Hirose, Y., and Peperkamp, S. (2011).
+\newblock Where do illusory vowels come from?
+\newblock {\em Journal of Memory and Language}, 64(3):199--210.
+
+\bibitem[Durvasula and Kahng, 2015]{durvasula2015}
+Durvasula, K. and Kahng, J. (2015).
+\newblock Illusory vowels in perceptual epenthesis: the role of phonological
+  alternations.
+\newblock {\em Phonology}, 32(03):385--416.
+
+\bibitem[Escudero et~al., 2009]{escudero2009}
+Escudero, P., Boersma, P., Rauber, A.~S., and Bion, R.~A. (2009).
+\newblock A cross-dialect acoustic description of vowels: {B}razilian and
+  {E}uropean {P}ortuguese.
+\newblock {\em The Journal of the Acoustical Society of America},
+  126(3):1379--1393.
+
+\bibitem[Giorgino, 2009]{R-dtw}
+Giorgino, T. (2009).
+\newblock Computing and visualizing dynamic time warping alignments in {R}: The
+  {dtw} package.
+\newblock {\em Journal of Statistical Software}, 31(7):1--24.
+
+\bibitem[Guevara-Rukoz et~al., 2017]{guekozIS17}
+Guevara-Rukoz, A., Parlato-Oliveira, E., Yu, S., Hirose, Y., Peperkamp, S., and
+  Dupoux, E. (2017).
+\newblock Predicting epenthetic vowel quality from acoustics.
+\newblock In {\em INTERSPEECH}.
+
+\bibitem[Hadfield, 2010]{R-MCMCglmm}
+Hadfield, J.~D. (2010).
+\newblock {MCMC} methods for multi-response generalized linear mixed models:
+  The {MCMCglmm} {R} package.
+\newblock {\em Journal of Statistical Software}, 33(2):1--22.
+
+\bibitem[Hall{\'e} et~al., 2014]{halle2014}
+Hall{\'e}, P., Segu{\'\i}, J., Dom{\'\i}nguez, A., and Cuetos, F. (2014).
+\newblock Special is especial but stuto is not astuto: Perception of prothetic
+  /e/ in speech and print by speakers of spanish.
+\newblock In Jaichenco, V. and Sevilla, Y., editors, {\em Psicolingüística en
+  Español. Homenaje a Juan Seguí.}, pages 31--47. Buenos Aires: Secretariá
+  de Publicaciones, Facultad de Filosofía y Letras, Universidad de Buenos
+  Aires.
+
+\bibitem[Han, 1962]{han1962}
+Han, M.~S. (1962).
+\newblock Unvoicing of vowels in {J}apanese.
+\newblock {\em Onsei no kenkyuu}, 10:81--100.
+
+\bibitem[Hyafil et~al., 2015]{hyafil2015}
+Hyafil, A., Fontolan, L., Kabdebon, C., Gutkin, B., and Giraud, A.-L. (2015).
+\newblock Speech encoding by coupled cortical theta and gamma oscillations.
+\newblock {\em Elife}, 4:e06213.
+
+\bibitem[Kabak and Idsardi, 2007]{kabak2007}
+Kabak, B. and Idsardi, W.~J. (2007).
+\newblock Perceptual distortions in the adaptation of {E}nglish consonant
+  clusters: {S}yllable structure or consonantal contact constraints?
+\newblock {\em Language and Speech}, 50(1):23--52.
+
+\bibitem[Keating, 1988]{keating1988}
+Keating, P.~A. (1988).
+\newblock Underspecification in phonetics.
+\newblock {\em Phonology}, 5(02):275--292.
+
+\bibitem[Lenth, 2016]{R-lsmeans}
+Lenth, R.~V. (2016).
+\newblock Least-squares means: The {R} package {lsmeans}.
+\newblock {\em Journal of Statistical Software}, 69(1):1--33.
+
+\bibitem[Mattingley et~al., 2015]{mattingley2015}
+Mattingley, W., Hume, E., and Hall, K.~C. (2015).
+\newblock {The influence of preceding consonant on perceptual epenthesis in
+  {J}apanese}.
+\newblock In {\em Proceedings of the 18th International Congress of Phonetic
+  Sciences}, pages 888:1--5.
+
+\bibitem[Monahan et~al., 2009]{monahan2009}
+Monahan, P.~J., Takahashi, E., Nakao, C., and Idsardi, W.~J. (2009).
+\newblock Not all epenthetic contexts are equal: {D}ifferential effects in
+  {J}apanese illusory vowel perception.
+\newblock {\em Japanese/Korean linguistics}, 17:391--405.
+
+\bibitem[Nosofsky, 1992]{nosofsky1992}
+Nosofsky, R.~M. (1992).
+\newblock Similarity scaling and cognitive process models.
+\newblock {\em Annual review of Psychology}, 43(1):25--53.
+
+\bibitem[Plummer et~al., 2006]{R-coda}
+Plummer, M., Best, N., Cowles, K., and Vines, K. (2006).
+\newblock {CODA}: Convergence diagnosis and output analysis for {MCMC}.
+\newblock {\em R News}, 6(1):7--11.
+
+\bibitem[{R Core Team}, 2016]{R-base}
+{R Core Team} (2016).
+\newblock {\em R: {A} Language and Environment for Statistical Computing}.
+\newblock R Foundation for Statistical Computing, Vienna, Austria.
+
+\bibitem[Rose and Demuth, 2006]{rose2006}
+Rose, Y. and Demuth, K. (2006).
+\newblock Vowel epenthesis in loanword adaptation: {R}epresentational and
+  phonetic considerations.
+\newblock {\em Lingua}, 116(7):1112--1139.
+
+\bibitem[Sakoe and Chiba, 1978]{sakoe1978}
+Sakoe, H. and Chiba, S. (1978).
+\newblock Dynamic programming algorithm optimization for spoken word
+  recognition.
+\newblock {\em IEEE transactions on acoustics, speech, and signal processing},
+  26(1):43--49.
+
+\bibitem[Schatz, 2016]{schatz2016}
+Schatz, T. (2016).
+\newblock {\em {ABX}-{Discriminability} {Measures} and {Applications}}.
+\newblock PhD thesis, Ecole Normale Supérieure, Paris.
+
+\bibitem[Sebasti{\'a}n-Gall{\'e}s, 2005]{sebastian2005}
+Sebasti{\'a}n-Gall{\'e}s, N. (2005).
+\newblock Cross-language speech perception.
+\newblock {\em The handbook of speech perception}, pages 546--566.
+
+\bibitem[Uffmann, 2006]{uffmann2006}
+Uffmann, C. (2006).
+\newblock Epenthetic vowel quality in loanwords: {E}mpirical and formal issues.
+\newblock {\em Lingua}, 116(7):1079--1111.
+
+\bibitem[Vance, 1987]{vance1987}
+Vance, T.~J. (1987).
+\newblock {\em Introduction to Japanese phonology}.
+\newblock Albany, N.Y.: State University of New York Press.
+
+\bibitem[Wilson et~al., 2014]{wilson2014}
+Wilson, C., Davidson, L., and Martin, S. (2014).
+\newblock Effects of acoustic--phonetic detail on cross-language speech
+  production.
+\newblock {\em Journal of Memory and Language}, 77:1--24.
+
+\end{thebibliography}

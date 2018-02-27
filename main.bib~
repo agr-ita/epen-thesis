@@ -1,0 +1,396 @@
+  preamble{ " \newcommand{\noop}[1]{} " } % a do-nothing command
+  
+  @article{berent2007,
+  title={What we know about what we have never heard: Evidence from perceptual illusions},
+  author={Berent, Iris and Steriade, Donca and Lennertz, Tracy and Vaknin, Vered},
+  journal={Cognition},
+  volume={104},
+  number={3},
+  pages={591--630},
+  year={2007},
+  publisher={Elsevier}
+}
+
+@article{berent2008,
+  title={Language universals in human brains},
+  author={Berent, Iris and Lennertz, Tracy and Jun, Jongho and Moreno, Miguel A and Smolensky, Paul},
+  journal={Proceedings of the National Academy of Sciences},
+  volume={105},
+  number={14},
+  pages={5321--5325},
+  year={2008},
+  publisher={National Acad Sciences}
+}
+
+@inproceedings{best2003,
+  title={X{\'o}{\~o} click perception by English, Isizulu, and Sesotho listeners},
+  author={Best, Catherine T and Traill, Anthony and Carter, Allyson and Harrison, K David and Faber, Alice},
+  booktitle={Proceedings of the 15th International Congress of Phonetic Sciences},
+  pages={853--856},
+  year={2003}
+}
+
+@article{bohn2012,
+  title={Native-language phonetic and phonological influences on perception of American English approximants by Danish and German listeners},
+  author={Bohn, Ocke-Schwen and Best, Catherine T},
+  journal={Journal of Phonetics},
+  volume={40},
+  number={1},
+  pages={109--128},
+  year={2012},
+  publisher={Elsevier}
+}
+
+@article{daland2015,
+  title={When in doubt, read the instructions: Orthographic effects in loanword adaptation},
+  author={Daland, Robert and Oh, Mira and Kim, Syejeong},
+  journal={Lingua},
+  volume={159},
+  pages={70--92},
+  year={2015},
+  publisher={Elsevier}
+}
+@article{davidson2012,
+  title={Sources of illusion in consonant cluster perception},
+  author={Davidson, Lisa and Shaw, Jason A},
+  journal={Journal of Phonetics},
+  volume={40},
+  number={2},
+  pages={234--248},
+  year={2012},
+  publisher={Elsevier}
+}
+
+@article{dehaene2000,
+  title={Electrophysiological correlates of phonological processing: a cross-linguistic study},
+  author={Dehaene-Lambertz, Ghislaine and Dupoux, Emmanuel and Gout, Ariel},
+  journal={Journal of Cognitive Neuroscience},
+  volume={12},
+  number={4},
+  pages={635--647},
+  year={2000},
+  publisher={MIT Press}
+}
+
+
+@article{dejong2012,
+  title={Vowel epenthesis and segment identity in Korean learners of English},
+  author={de Jong, Kenneth and Park, Hanyong},
+  journal={Studies in Second Language Acquisition},
+  volume={34},
+  number={01},
+  pages={127--155},
+  year={2012},
+  publisher={Cambridge Univ Press}
+}
+
+@article{dupoux1997,
+  title={A destressing “deafness” in French?},
+  author={Dupoux, Emmanuel and Pallier, Christophe and Sebastian, Nuria and Mehler, Jacques},
+  journal={Journal of Memory and Language},
+  volume={36},
+  number={3},
+  pages={406--421},
+  year={1997},
+  publisher={Elsevier}
+}
+
+  @article{dupoux1999,
+  title={Epenthetic vowels in Japanese: A perceptual illusion?},
+  author={Dupoux, Emmanuel and Kakehi, Kazuhiko and Hirose, Yuki and Pallier, Christophe and Mehler, Jacques},
+  journal={Journal of experimental psychology: human perception and performance},
+  volume={25},
+  number={6},
+  pages={1568},
+  year={1999},
+  publisher={American Psychological Association}
+}
+
+@article{dupoux2001,
+  title={New evidence for prelexical phonological processing in word recognition},
+  author={Dupoux, Emmanuel and Pallier, Christophe and Kakehi, Kazuhiko and Mehler, Jacques},
+  journal={Language and cognitive processes},
+  volume={16},
+  number={5-6},
+  pages={491--505},
+  year={2001},
+  publisher={Taylor \& Francis}
+}
+
+@article{dupoux2008,
+  title={Persistent stress ‘deafness’: The case of French learners of Spanish},
+  author={Dupoux, Emmanuel and Sebasti{\'a}n-Gall{\'e}s, N{\'u}ria and Navarrete, Eduardo and Peperkamp, Sharon},
+  journal={Cognition},
+  volume={106},
+  number={2},
+  pages={682--706},
+  year={2008},
+  publisher={Elsevier}
+}
+
+  @article{dupoux2011,
+  title={Where do illusory vowels come from?},
+  author={Dupoux, Emmanuel and Parlato, Erika and Frota, Sonia and Hirose, Yuki and Peperkamp, Sharon},
+  journal={Journal of Memory and Language},
+  volume={64},
+  number={3},
+  pages={199--210},
+  year={2011},
+  publisher={Elsevier}
+}
+
+@article{durvasula2015,
+  title={Illusory vowels in perceptual epenthesis: the role of phonological alternations},
+  author={Durvasula, Karthik and Kahng, Jimin},
+  journal={Phonology},
+  volume={32},
+  number={03},
+  pages={385--416},
+  year={2015},
+  publisher={Cambridge Univ Press}
+}
+
+@article{goto1971,
+  title={Auditory perception by normal Japanese adults of the sounds “L” and “R”},
+  author={Goto, Hiromu},
+  journal={Neuropsychologia},
+  volume={9},
+  number={3},
+  pages={317--323},
+  year={1971},
+  publisher={Elsevier}
+}
+
+@inproceedings{guekozIS17,
+  author = {Guevara-Rukoz, Adriana and Parlato-Oliveira, Erika and Yu, Shi and Hirose, Yuki and Peperkamp, Sharon and Dupoux, Emmanuel},
+  title = {Predicting epenthetic vowel quality from acoustics},
+  booktitle = {INTERSPEECH},
+  pages = {}, 
+  year = {2017}
+}
+
+
+@article{halle2008,
+  title={Phonological mediation in visual masked priming: Evidence from phonotactic repair.},
+  author={Hall{\'e}, Pierre A and Dominguez, Alberto and Cuetos, Fernando and Segui, Juan},
+  journal={Journal of Experimental Psychology: Human Perception and Performance},
+  volume={34},
+  number={1},
+  pages={177},
+  year={2008},
+  publisher={American Psychological Association}
+}
+
+@incollection{halle2014,
+    author={Hall{\'e}, Pierre and Segu{\'\i}, Juan and Dom{\'\i}nguez, Alberto and Cuetos, Fernando},
+    title={Special is especial but stuto is not astuto: Perception of prothetic /e/ in speech and print by speakers of Spanish},
+    booktitle={Psicolingüística en Español. Homenaje a Juan Seguí.},
+    publisher={Buenos Aires: Secretariá de Publicaciones, Facultad de Filosofía y Letras, Universidad de Buenos Aires},
+    year={2014},
+    editor={Jaichenco, Virginia and Sevilla, Yamila},
+    pages={31-47}
+}
+
+@article{han1962,
+  title={Unvoicing of vowels in Japanese},
+  author={Han, Mieko Shimizu},
+  journal={Onsei no kenkyuu},
+  volume={10},
+  pages={81--100},
+  year={1962}
+}
+
+@article{holliday2014,
+  title={The perceptual assimilation of Korean obstruents by native Mandarin listeners a},
+  author={Holliday, Jeffrey J},
+  journal={The Journal of the Acoustical Society of America},
+  volume={135},
+  number={3},
+  pages={1585--1595},
+  year={2014},
+  publisher={ASA}
+}
+
+
+@article{iverson2003,
+  title={A perceptual interference account of acquisition difficulties for non-native phonemes},
+  author={Iverson, Paul and Kuhl, Patricia K and Akahane-Yamada, Reiko and Diesch, Eugen and Tohkura, Yoh'ich and Kettermann, Andreas and Siebert, Claudia},
+  journal={Cognition},
+  volume={87},
+  number={1},
+  pages={B47--B57},
+  year={2003},
+  publisher={Elsevier}
+}
+
+
+@article{kabak2007,
+  title={Perceptual distortions in the adaptation of English consonant clusters: Syllable structure or consonantal contact constraints?},
+  author={Kabak, Bari{\c{s}} and Idsardi, William J},
+  journal={Language and Speech},
+  volume={50},
+  number={1},
+  pages={23--52},
+  year={2007},
+  publisher={SAGE Publications Sage UK: London, England}
+}
+
+
+@article{keating1988,
+  title={Underspecification in phonetics},
+  author={Keating, Patricia A},
+  journal={Phonology},
+  volume={5},
+  number={02},
+  pages={275--292},
+  year={1988},
+  publisher={Cambridge Univ Press}
+}
+
+
+@Article{lme4,
+    title = {Fitting Linear Mixed-Effects Models Using {lme4}},
+    author = {Douglas Bates and Martin M{\"a}chler and Ben Bolker and
+      Steve Walker},
+    journal = {Journal of Statistical Software},
+    year = {2015},
+    volume = {67},
+    number = {1},
+    pages = {1--48},
+    doi = {10.18637/jss.v067.i01},
+  }
+ 
+@inproceedings{mattingley2015,
+author = {Mattingley, Wakayo and Hume, Elizabeth and Hall, Kathleen Currie},
+booktitle = {Proceedings of the 18th International Congress of Phonetic Sciences},
+keywords = {Japanese,consonant-vowel interaction,native phonology,perceptual epenthesis},
+title = {The influence of preceding consonant on perceptual epenthesis in Japanese},
+year = {2015}
+}
+ 
+@article{monahan2009,
+  title={Not all epenthetic contexts are equal: Differential effects in Japanese illusory vowel perception},
+  author={Monahan, Philip J and Takahashi, Eri and Nakao, Chizuru and Idsardi, William J},
+  journal={Japanese/Korean linguistics},
+  volume={17},
+  pages={391--405},
+  year={2009}
+}
+
+
+@inproceedings{peperkamp2003,
+  title={Reinterpreting loanword adaptations: the role of perception},
+  author={Peperkamp, Sharon and Dupoux, Emmanuel},
+  booktitle={Proceedings of the 15th international congress of phonetic sciences},
+  volume={367},
+  pages={370},
+  year={2003}
+} 
+  
+@article{praat,
+  title={Praat, a system for doing phonetics by computer},
+  author={Boersma, Paul and others},
+  journal={Glot international},
+  volume={5},
+  number={9/10},
+  pages={341--345},
+  year={2002}
+}
+
+@article{polka1991,
+  title={Cross-language speech perception in adults: Phonemic, phonetic, and acoustic contributions},
+  author={Polka, Linda},
+  journal={The Journal of the Acoustical Society of America},
+  volume={89},
+  number={6},
+  pages={2961--2977},
+  year={1991},
+  publisher={ASA}
+}
+
+@article{rose2006,
+  title={Vowel epenthesis in loanword adaptation: Representational and phonetic considerations},
+  author={Rose, Yvan and Demuth, Katherine},
+  journal={Lingua},
+  volume={116},
+  number={7},
+  pages={1112--1139},
+  year={2006},
+  publisher={Elsevier}
+}
+
+@phdthesis{schatz2016,
+	address = {Paris},
+	title = {{ABX}-{Discriminability} {Measures} and {Applications}},
+	school = {Ecole Normale Supérieure},
+	author = {Schatz, Thomas},
+	year = {2016}
+}
+
+@article{sebastian2005,
+  title={Cross-language speech perception},
+  author={Sebasti{\'a}n-Gall{\'e}s, N{\'u}ria},
+  journal={The handbook of speech perception},
+  pages={546--566},
+  year={2005},
+  publisher={Wiley Online Library}
+}
+
+@article{smith2006,
+  title={Loan phonology is not all perception: Evidence from Japanese loan doublets},
+  author={Smith, Jennifer L},
+  journal={Japanese/Korean Linguistics},
+  volume={14},
+  pages={63--74},
+  year={2006}
+}
+
+@article{uffmann2006,
+  title={Epenthetic vowel quality in loanwords: Empirical and formal issues},
+  author={Uffmann, Christian},
+  journal={Lingua},
+  volume={116},
+  number={7},
+  pages={1079--1111},
+  year={2006},
+  publisher={Elsevier}
+}
+
+@article{wilson2014,
+  title={Effects of acoustic--phonetic detail on cross-language speech production},
+  author={Wilson, Colin and Davidson, Lisa and Martin, Sean},
+  journal={Journal of Memory and Language},
+  volume={77},
+  pages={1--24},
+  year={2014},
+  publisher={Elsevier}
+}
+
+
+@book{vance1987,
+    author    = {Vance, Timothy J.},
+    title     = {Introduction to Japanese phonology},
+    publisher = {Albany, N.Y.: State University of New York Press},
+    year      = {1987}
+}
+
+@article{vendelin2006,
+  title={The influence of orthography on loanword adaptations},
+  author={Vendelin, Inga and Peperkamp, Sharon},
+  journal={Lingua},
+  volume={116},
+  number={7},
+  pages={996--1007},
+  year={2006},
+  publisher={Elsevier}
+}
+
+
+@Manual{rbase,
+    title = {R: A Language and Environment for Statistical Computing},
+    author = {{R Core Team}},
+    organization = {R Foundation for Statistical Computing},
+    address = {Vienna, Austria},
+    year = {2014},
+    url = {http://www.R-project.org/},
+  }
