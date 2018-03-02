@@ -1,9 +1,9 @@
 %%%%%%%%%%
 % [TODO] %
 %%%%%%%%%%
-% [ ] Better figures for the annexes 
-% [ ] Add correlation ABX-id
-% [ ] Figure captions
+% [-] Better figures for the annexes 
+% [X] Add correlation ABX-id
+% [X] Figure captions
 
 %%%%%%%%%%%%%%%%%%%%%%
 % Chapter mini-intro %
@@ -19,7 +19,7 @@
 
 %% Plan %%
 
-In \textbf{section 2.1} a perceptual experiment aims to disentangle the contributions of phonetic categories and acoustic details on epenthetic vowel quality. Participants are asked to report their choice of epenthetic vowel (if any) within consonant cluster in stimuli where the acoustic information contained in the cluster may be in disagreement with the identity of neighbouring vowels. Information theoretic measures allow to quantify the influence of both neighbouring phonetic categories and acoustic details.  
+In \textbf{section 2.1} a perceptual experiment aims to disentangle the contributions of phonetic categories and acoustic details on epenthetic vowel quality. Participants are asked to report their choice of epenthetic vowel (if any) within consonant clusters in stimuli where the acoustic information contained in the cluster may be in disagreement with the identity of neighbouring vowels. Information theoretic measures allow to quantify the influence of both neighbouring phonetic categories and acoustic details.  
 
 
 In \textbf{section 2.2} I investigate the possibility of predicting epenthetic vowel quality in Brazilian Portuguese (BP) and Japanese (JP) using a production-based exemplar model of perception. This type of model predicts the quality of a vowel epenthesized within the cluster of a stimulus based solely on the acoustic similarity of said /CC/ cluster to /CVC/ exemplars produced by native speakers of BP or JP. From this modelling approach we can evaluate the influence of pure acoustics on effects such as default epenthetic vowel quality and modulations induced by neighbouring vowels.
@@ -482,12 +482,12 @@ The triple interaction NSFV x Coronal $C_{1}$ x Language was significant for bot
 
 \subsection{General Discussion}
 
-Examining epenthetic vowel quality preferences by BP and JP speakers in a perception task, we corroborated previous findings (\cite{dupoux1999, dupoux2011}) that, like in loanword adaptations, the default epenthetic vowel during speech perception is /i/ for BP and /u/ for JP. Our acoustic analyses suggest that the choice of epenthetic vowel is acoustically driven. That is, in BP, /i/ is shorter and spectrally closer to the formant transitions in our stimuli than /u/ (and /o/), while the reverse holds in Japanese. As such, it may not be necessary to rely on phonological explanations of epenthetic vowel quality as in \cite{rose2006, uffmann2006}, were we to find that these are shared characteristics of default epenthetic vowels in a variety of languages. We also found an influence of flanking vowels on epenthetic vowel quality, similar to what was reported in \cite{dupoux2011}. Indeed, participants gave fewer default responses when the quality of the flanking vowels was in disagreement with the default choice, resulting in more "vowel copy" epenthesis (i.e. perceiving a vowel of the same quality as that of a flanking vowel). Furthermore, we found that this effect of flanking vowels is additive, as it is even more prominent when both flanking vowels are of the same quality.
+Examining epenthetic vowel quality preferences by BP and JP speakers in a perception task, we corroborated previous findings (\cite{dupoux1999, dupoux2011}) that, like in loanword adaptations, the default epenthetic vowel during speech perception is /i/ for BP and /u/ for JP. Our acoustic analyses suggest that the choice of epenthetic vowel is acoustically driven. That is, in BP, /i/ is shorter and spectrally closer to the formant transitions in our stimuli than /u/ (and /o/), while the reverse holds in Japanese. As such, it may not be necessary to rely on phonological explanations of epenthetic vowel quality as in \cite{rose2006, uffmann2006}, were we to find that these are shared characteristics of default epenthetic vowels in a variety of languages. We also found an influence of flanking vowels on epenthetic vowel quality, similar to what was reported in \cite{dupoux2011}. Indeed, participants gave fewer default responses when the quality of the flanking vowels was in disagreement with the default choice, resulting in more "vowel copy" epenthesis (i.e. perceiving a vowel of the same quality as that of a flanking vowel). Furthermore, we found that this effect of flanking vowels is additive, as it is even more prominent when both flanking vowels are of the same quality. 
 
 Interestingly, phonotactics did not influence JP participants' responses as may have been expected; while /o/ was almost exclusively perceived after coronal consonants, this was almost always the case for stimuli with $V_{1} = /a/$ (cf Figure~\ref{fig:per&model_responses}). In fact, for all combinations of flanking vowels, participants responded /i/ and/or /u/ more often than /o/ in coronal contexts, even though both /du/ and /di/ are phonotactically illegal sequences in JP. These results, which are reminiscent of previous work \cite{monahan2009, mattingley2015}, suggest that constraints on perception given by surface phonotactics can be overruled by constraints relative to matching input acoustics \cite{dupoux2011}. In fact, if this were not the case, novel sound sequences would have never arisen in JP loanwords (e.g. \textit{party} is adapted as \textipa{/pa:ti/}, not \textipa{/pa:tCi/}). 
 
 Finally, we presented one exemplar model per language, based on productions by BP and JP participants, respectively. These models reproduced the major effects found in the perception experiment --- namely, the preferred epenthetic vowel, and some significant effects of language and flanking vowels --- although with a high level of noise. This noise level may be due to the relatively low number of tokens that were available as exemplars, the fact that the DTW procedure removes temporal cues (recall that we found that default vowels tend to be of shorter duration), and/or the fact that MFCC features do not appropriately capture speaker invariance.
-We interpret the results as providing a proof of principle that some of the salient effects regarding perceptual epenthesis can be accounted for on purely acoustic grounds. Future research is needed to improve on the model, whose predictions deviated from the perceptual data on several counts (e.g., 6\% /o/-epenthesis for BP, but less than 1\% for JP; failure to produce more /u/-epenthesis for JP than BP). These improvements could involve more phonetically and/or temporally informed features (e.g., spectrotemporal representations \cite{chi2005}), state-of-the art large-scale approaches with HMM or DNN systems, or physiologically-inspired models of speech perception (e.g., based on cortical oscillations \cite{hyafil2015}).
+We interpret the results as providing a proof of principle that some of the salient effects regarding perceptual epenthesis can be accounted for on purely acoustic grounds. Future research is needed to improve on the model, whose predictions deviated from the perceptual data on several counts (e.g., 6\% /o/-epenthesis for BP, but less than 1\% for JP; failure to produce more /u/-epenthesis for JP than BP). These improvements could involve more phonetically and/or temporally informed features (e.g., spectrotemporal representations \cite{chi2005}), state-of-the art large-scale approaches with HMM or DNN systems, or physiologically-inspired models of speech perception (e.g., based on cortical oscillations \cite{hyafil2015}). 
 
 To conclude, a triple approach combining perception experiments, acoustic analyses, and modeling allows us to gain insight into the mechanisms underlying perceptual epenthesis, and, more generally, repairs of illegal phonological structure during speech perception.
 
@@ -499,33 +499,17 @@ To conclude, a triple approach combining perception experiments, acoustic analys
 \section{Summary and Discussion}
 
 %% Summary %%
-Summary
-\begin{itemize}
-\item When coart and flanking V in agreement, predominantly default epV when epenthesis happens (/i/ in BP, /u/ in JP)  
-\item Higher influence of acoustic details [coarticulation] on epV quality (section 2.1), reflected by ability of exemplar model to reproduce modulation of epVqual by JP/BP speakers (section 2.2) 
-\item Pure acoustic matching not enough (or at least not with current implementation from 2.2); unable to capture striking difference in default epV (+. Role of phonology? (also cf in section 2.1 non-null influence of flanking vowel)
-\item 
-\end{itemize}
 
+{\color{blue}Similarly to what has been previously observed \cite{dupoux1999, dehaene2000, dupoux2011, monahan2009, mattingley2015}[CITE], I find that BP and JP participants experience perceptual vowel epenthesis when presented auditory stimuli with illegal consonant clusters. For most cases, BP and JP participants insert what has been called a ``default'' epenthetic vowel, namely \textipa{/i/} and \textipa{/u/}, respectively. Confirming intuitions laid out by \cite{dupoux2011} and reminiscent of the {\color{red}P-map theory in \cite{steriade2001}}, acoustic measurements revealed that these vowels were, within their respective languages, acoustically minimal in that they were of shorter duration and closer in formant space to cluster transitions than other candidate vowels. \\
 
-%% Short discussion %%
-Model as POC/starting point
+Also in agreement with previous observations \cite{dupoux2011}, I find that the quality of epenthetic vowel is modulated by the identity of flanking vowels: In {\color{red}section 2.2}, we see more \textipa{/u/}-epenthesis by BP participants with more \textipa{/u/} flanking vowels, and more \textipa{/i/}-epenthesis by JP participants with more \textipa{/i/} flanking vowels. Were these modulations of epenthetic vowel quality due to coarticulation cues contained in the consonant clusters or were they due to a phenomenon of vowel copy? \\
 
-\begin{itemize}
-\item Lack of duration info because of DTW
-\item Assumes exemplar representations
-\item Match from acoustics-to-acoustics, without normalizing the acoustics by speaker
-\item Inability to model lack of epenthesis -> Yet we see in both sections 2.1 and 2.2 that a significant percentage of responses are ``none''
-\end{itemize}
+This question was tackled in {\color{red}section 2.1}, by assessing the perception of stimuli for which the identity of the flanking vowels was in disagreement with that of the coarticulation cues contained within consonant clusters. It was found that, while both flanking vowel and coarticulation influenced epenthetic vowel quality, it was the latter that was the most determinant. This is reflected by the results of the exemplar models evaluated in {\color{red}section 2.2}. Indeed, these models compared the acoustics of non-native $CC$ clusters to native $CVC$ exemplars, in order to determine the quality of the vowel to be epenthesized. And while they were unable to mimic default vowel epenthesis, they were able to reproduce quality modulations due to neighbouring vowels. Yet, these models could not perform vowel copy in a way other than by exploiting coarticulation remnants within the clusters. \\             
 
-%% Limitations / Remaining questions %%
-Going further from epVqual 
+Concerning the models' failure to reproduce language-specific default epenthetic vowels, it is difficult to derive the conclusion that acoustics do not have a role in determining default epenthetic vowel quality. Indeed, as previously stated, our proof of concept exemplar model is very limited, as it performs pure acoustic matching between queries and a template without taking (vowel) duration into consideration, and lacking any sort of speaker normalisation. \\
 
-\begin{itemize}
-\item Focus on effect of acoustics on quality; not denying role of phonology (e.g., phonotactics) on misperception of nonnative clusters 
-\item Our results (+ Dup2011) match one-step better than two-step => implementation with more complex one-step model (e.g., HMM using ASR tools)
-%\item 
-\end{itemize}
+Adding to these concerns, it is important to add that the model supposes the existence of {\color{red}multiphonemic} exemplars to which the non-native input is compared to. Leaving aside the fact that the use of exemplar representations during speech perception may be controversial, an important side-effect of exemplar-based models is that they are unable to model lack of epenthesis. Yet we saw in both {\color{red}sections 2.1 and 2.2} that participants did choose the ``no epenthesis'' options {\color{red}in several instances}.  \\
 
+As such, we will now focus on perception models that are flexible enough to also output illegal structures, as our participants do. And, most importantly, the following models shall evaluate epenthetic vowel quality without ignoring the role of phonology (e.g., phonotactics) on misperception of non-native clusters. They must therefore incorporate statistics relative to the frequencies of phonemes and their structural {\color{red}arrangements}. \\
 
-%% Conclusion %%
+As discussed in {\color{red} section 2.1}, ours and \cite{dupoux2011} results are better aligned with one-step theories of non-native speech perception than with two-step theories. Indeed, the influence of acoustic details on epenthetic vowel quality would be lost if epenthesis occurred after an initial categorisation step; computation of the optimal output must incorporate acoustics and phonotactics in a unique step. In the following sections we will be switching from a one-step DTW-based exemplar model of non-native speech perception to more elaborate one-step Hidden Markov Models (HMM) that do not have the limitations listed above.}

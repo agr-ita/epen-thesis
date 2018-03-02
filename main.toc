@@ -1,5 +1,5 @@
 \contentsline {chapter}{\numberline {1}Introduction}{7}{chapter.1}
-\contentsline {chapter}{\numberline {2}Chapter Two Title}{8}{chapter.2}
+\contentsline {chapter}{\numberline {2}{\color {red}Determining epenthetic vowel quality}}{8}{chapter.2}
 \contentsline {section}{\numberline {2.1}Which epenthetic vowel? \\ Phonetic categories versus acoustic detail in perceptual vowel epenthesis}{9}{section.2.1}
 \contentsline {paragraph}{Abstract}{9}{section*.6}
 \contentsline {subsection}{\numberline {2.1.1}Introduction}{9}{subsection.2.1.1}
@@ -39,7 +39,7 @@
 \contentsline {paragraph}{/u/-epenthesis}{32}{section*.31}
 \contentsline {subsection}{\numberline {2.2.5}General Discussion}{32}{subsection.2.2.5}
 \contentsline {section}{\numberline {2.3}Summary and Discussion}{35}{section.2.3}
-\contentsline {chapter}{\numberline {3}Chapter Three Title}{36}{chapter.3}
-\contentsline {chapter}{\numberline {4}Chapter Four Title}{37}{chapter.4}
-\contentsline {chapter}{\numberline {5}General Discussion}{38}{chapter.5}
-\contentsline {chapter}{\numberline {A}\ignorespaces Are words easier to learn from infant- than adult-directed speech? A quantitative corpus-based investigation}{39}{appendix.A}
+\contentsline {chapter}{\numberline {3}Chapter Three Title}{37}{chapter.3}
+\contentsline {chapter}{\numberline {4}Chapter Four Title}{38}{chapter.4}
+\contentsline {chapter}{\numberline {5}General Discussion}{39}{chapter.5}
+\contentsline {chapter}{\numberline {A}\ignorespaces Are words easier to learn from infant- than adult-directed speech? A quantitative corpus-based investigation}{40}{appendix.A}
