@@ -11,18 +11,18 @@
 
 %% Short background %%
 
-[Short BG] \\
+{\color{blue}
+While there seems to be a consensus concerning the presence of perceptual misperceptions due to discrepancies between native phonotactics and non-native phoneme structures, the mechanisms underlying these phenomena are subject to more debate. In the case of perceptual (vowel) epenthesis, certain proposals (e.g., \cite{berent2007, monahan2009}) hypothesize that the process is constituted of two steps in which the quality of the epenthetic vowel is determined by a language-specific grammar after an initial parsing. In particular, good candidate vowels might be those that are subject to vowel reduction or deletion in the native language.  
+In contrast, one-step proposals (e.g., \cite{dupoux2011}) argue that the identity of the epenthetic vowel is determined in the process of parsing the input. In particular, parsing becomes an optimisation problem where the optimal output is the one maximising the acoustic match to the input and the likelihood of the phonemic sequence in the native language. Results by \cite{dupoux2011} support one-step theories, as they were able to modulate the identity of the epenthetic vowel without changing the segmental structure of the input stimuli. \\
 
-%% Research questions (+ alternatives) %%
-
-[Research questions] \\
+%% Research questions %%
+\cite{dupoux2011} manipulated acoustic details in their stimuli, which led to the conclusion that coarticulation cues influenced epenthetic vowel quality. However, several question remain: How does this influence compare to other influences such as those of an abstract grammar? Can we reproduce these modulations of epenthetic vowel quality on naturally produced stimuli? And finally, if acoustics are quintessential to choosing epenthetic vowel quality, does this mean that they are sufficient to do so? \\
 
 %% Plan %%
+In \textbf{section 2.1} a perceptual experiment aims to disentangle the contributions of phonetic categories and acoustic details on epenthetic vowel quality. Participants are asked to report their choice of epenthetic vowel (if any) within consonant clusters in stimuli where the acoustic information contained in the cluster may be in disagreement with the identity of neighbouring vowels. Information theoretic measures allow to quantify the influence of both neighbouring phonetic categories and acoustic details.  \\
 
-In \textbf{section 2.1} a perceptual experiment aims to disentangle the contributions of phonetic categories and acoustic details on epenthetic vowel quality. Participants are asked to report their choice of epenthetic vowel (if any) within consonant clusters in stimuli where the acoustic information contained in the cluster may be in disagreement with the identity of neighbouring vowels. Information theoretic measures allow to quantify the influence of both neighbouring phonetic categories and acoustic details.  
 
-
-In \textbf{section 2.2} I investigate the possibility of predicting epenthetic vowel quality in Brazilian Portuguese (BP) and Japanese (JP) using a production-based exemplar model of perception. This type of model predicts the quality of a vowel epenthesized within the cluster of a stimulus based solely on the acoustic similarity of said /CC/ cluster to /CVC/ exemplars produced by native speakers of BP or JP. From this modelling approach we can evaluate the influence of pure acoustics on effects such as default epenthetic vowel quality and modulations induced by neighbouring vowels.
+In \textbf{section 2.2} I investigate the possibility of predicting epenthetic vowel quality in Brazilian Portuguese (BP) and Japanese (JP) using a production-based exemplar model of perception. This type of model predicts the quality of a vowel epenthesized within the cluster of a stimulus based solely on the acoustic similarity of said /CC/ cluster to /CVC/ exemplars produced by native speakers of BP or JP. From this modelling approach we can evaluate the influence of pure acoustics on effects such as default epenthetic vowel quality and modulations induced by neighbouring vowels, with naturally produced stimuli that have not been manipulated.}
 
 %%%%%%%%%%%%%%%%%%%%
 % /ahpa/ (JASA-EL) %
@@ -113,7 +113,7 @@ Thus, analysis of control items revealed that, similarly to the loanword pattern
 
 \begin{figure}[t!]
 \centering
-    \centerline{\begin{overpic}[height=6cm]{chapter02/ahpa_tiles.pdf}\end{overpic}}
+    \centerline{\begin{overpic}[page=1, width=0.9\linewidth]{chapter02/ahpa_tiles.pdf}\end{overpic}}
     \caption {{\it Counts of responses for the test items and spliced control items. Top: \textipa{/hp/-}items; bottom: \textipa{/kp/-}items. Within each rectangle, flanking vowels and vowel coarticulation are given in the horizontal and vertical axes, respectively. Darker colours indicate higher counts. {\color{blue}Figure \ref{fig:ahpa_spk} shows counts separated by speaker}}}
 % A figure showing counts separated by speaker can be found in the supplementary materials at https://osf.io/y9h6c}}
 \label{fig:tiles}
@@ -149,17 +149,19 @@ To recapitulate, for both coarticulation vowel and flanking vowel, we compute `s
 \end{table}
 
 As shown in Table \ref{infoth}, all sample lower bounds are greater than their respective accidental information gains on all 1000 shufflings, for which the ranges are given in parentheses. Therefore, the `true' lower bounds for both coarticulation and flanking vowel influence on epenthesis are greater than $0$ with $p<0.001$, showing that both coarticulation and flanking vowel quality influence participant responses. However, the amount of influence differs greatly: a larger information gain is yielded by considering vowel coarticulation  %29- and 11-times
-than by considering the flanking vowel. This is true both for /hp/-items, which are heavily coarticulated, and for /kp/-items, where coarticulation is mainly only present in the burst, even though the influence of coarticulation on epenthetic vowel quality is higher for the former (/hp/: $[0.86, 0.92]$ \textit{vs.} /kp/: $[0.44, 0.52]$). (The range of variation within shuffles of accidental information was about .03; thus any difference of .06 or bigger is significant, including differences between MI and IG values, respectively). In summary, both vowel coarticulation and the flanking vowel influence epenthetic vowel quality, but this influence is greater for vowel coarticulation; response patterns are more predictable when the value of this variable is known than when the value of the flanking vowel variable is known. 
-
-\subsection{Discussion and conclusion}
-%\label{sec:concl}
+than by considering the flanking vowel. This is true both for /hp/-items, which are heavily coarticulated, and for /kp/-items, where coarticulation is mainly only present in the burst, even though the influence of coarticulation on epenthetic vowel quality is higher for the former (/hp/: $[0.86, 0.92]$ \textit{vs.} /kp/: $[0.44, 0.52]$). (The range of variation within shuffles of accidental information was about .03; thus any difference of .06 or bigger is significant, including differences between MI and IG values, respectively). In summary, both vowel coarticulation and the flanking vowel influence epenthetic vowel quality, but this influence is greater for vowel coarticulation; response patterns are more predictable when the value of this variable is known than when the value of the flanking vowel variable is known.
 
 \begin{figure}[H]
   \centering
-  \begin{overpic}[page=1, width=0.8\linewidth]{chapter02/ahpa_heath_spk}\end{overpic}
-  \caption{{\color{blue}\textit{Counts of responses for the test items and spliced control items, separated by speaker. For each speaker: top: \textipa{/hp/-}items; bottom: \textipa{/kp/-}items. Within each individual rectangle, flanking vowels and vowel coarticulation are given in the horizontal and vertical axes, respectively. Darker colours indicate higher counts.}}}
+  \begin{overpic}[page=4, width=0.9\linewidth]{chapter02/ahpa_tiles}\end{overpic}
+  \begin{overpic}[page=3, width=0.9\linewidth]{chapter02/ahpa_tiles}\end{overpic}
+  \begin{overpic}[page=2, width=0.9\linewidth]{chapter02/ahpa_tiles}\end{overpic}
+  \caption{{\color{blue}\textit{Counts of responses for the test items and spliced control items, separated by speaker. For each speaker: top: \textipa{/hp/-}items; bottom: \textipa{/kp/-}items. Within each individual rectangle, flanking vowels and vowel coarticulation are given in the horizontal and vertical axes, respectively. Darker colours indicate higher counts, with colours normalized within each speaker.}}}
   \label{fig:ahpa_spk}
 \end{figure}
+
+\subsection{Discussion and conclusion}
+%\label{sec:concl}
 
 We used an identification task to assess the quality of epenthetic vowels perceived by Japanese listeners in illegal consonant clusters with varying amounts of coarticulation. Our findings can be summarized as follows: First, we were able to replicate the perception of illusory vowels within phonotactically illegal clusters by Japanese listeners (64\% of all test trials).\footnote{Note that whereas previous studies examined perceptual epenthesis within clusters with at least one voiced consonant, we presently focused on completely voiceless clusters, a context in which the high vowels /i/ and /u/ may be devoiced in Japanese \cite{han1962, vance1987}}\footnote{As pointed out by an anonymous reviewer, the differences in rates of epenthesis by speaker (Dutch: 68\%, Am. English: 58\%, Arg. Spanish: 66\%) are consistent with an important role for acoustic factors in epenthesis, suggesting that participants interpret speakers' acoustic cues instead of responding based on abstract phonological categories \cite[cf.][]{wilson2014}.{\color{blue}This can also be seen in more detail when decomposing Figure \ref{fig:tiles} by speaker, as in Figure \ref{fig:ahpa_spk}}} %This can also be seen in more detail when decomposing Figure \ref{fig:tiles} by speaker, as in supplementary materials available from https://osf.io/y9h6c}
 Second, when the flanking vowel and coarticulation match, the quality of the perceived vowel patterned in the same way as in loanword adaptation data. That is, for \textipa{/kp/}-clusters, the predominant epenthetic vowel was the standard default vowel for Japanese (\textipa{/u/}), while for \textipa{/hp/}-clusters, it was a copy of the flanking vowel. Finally, and most importantly, in items where the coarticulation and flanking vowel differed, the quality of the epenthetic vowel was significantly influenced by both variables, but the influence of the former was much larger than that of the latter, especially in the case of /hp/. Our discussion focuses on this last finding. 
@@ -167,9 +169,9 @@ Second, when the flanking vowel and coarticulation match, the quality of the per
 Before discussing its theoretical relevance, let us comment on the numerically small -- yet significant -- influence of flanking vowel on epenthesis for \textipa{/hp/}-clusters, where vowel coarticulation is maximal. This result suggests a contribution of categorical variables on epenthetic vowel quality (i.e., copy effect). A similar effect, though, was also found for \textipa{/kp/}-clusters, for which loanword adaptation patterns provide no particular reason to propose the existence of a categorical copy phenomenon; indeed, in loanwords, coda-/k/ generally triggers default /u/-epenthesis. 
 Therefore, it is possible that this effect results from a response bias due to task demands: given a perceptually uncertain stimulus, the flanking vowel could prime a `copy' response, for instance, because it was visually available on-screen at each trial (e.g. ``ah?pa"). Further work using different tasks is necessary to examine the perceptual reality of this `vowel copy' effect.
 
-\begin{figure}[H]
+\begin{figure}[h!]
   \centering
-  \begin{overpic}[page=1, width=0.8\linewidth]{chapter02/ahpa_acoustic}\end{overpic}
+  \begin{overpic}[page=1, width=0.7\linewidth]{chapter02/ahpa_acoustic}\end{overpic}
   \caption{{\color{blue}\textit{Visualisation in $F1 \times F2$ space of full vowels extracted from $CVC$ portions (left panels), and coarticulation found in the first consonant of $C_{V}C$ clusters (right panels), of items used in the experiment. Dimmer dots and lines respectively show median formant values and median formant bandwidths within the vowel or consonant. Dots circled in black and thicker lines show global means.}}}
   \label{fig:ahpa_acoustic}
 \end{figure}
@@ -315,8 +317,8 @@ In order to assess the influence of $V_{1}$ and $V_{2}$ (henceforth: flanking vo
   \centering
   \begin{overpic}[page=1, width=0.7\linewidth]{chapter02/parlato_per_all}\end{overpic}
   \begin{overpic}[page=2, width=0.7\linewidth]{chapter02/parlato_per_all}\end{overpic}
-  \caption{Responses for all trials from the perception experiment for both BP (top) and JP (bottom), including trials with responses not given by the exemplar model (``none'', ``a'', ``e''). Numbers indicate trial counts, with darker cell backgrounds representing higher values. Within each of the two 3 x 3 grid, trials are separated according to $V_{1}$ (columns) and $V_{2}$ (rows). % [TODO] Check that this is the case and not the other way around 
-    Within each individual rectangle, the horizontal axis shows the first consonant of the consonant cluster, while the vertical axis corresponds to possible responses.}
+  \caption{\textit{{\color{blue}Responses for all trials from the perception experiment for both BP (top) and JP (bottom), including trials with responses not given by the exemplar model (``none'', ``a'', ``e''). Numbers indicate trial counts, with darker cell backgrounds representing higher values. Within each of the two 3 x 3 grid, trials are separated according to $V_{1}$ (columns) and $V_{2}$ (rows). % [TODO] Check that this is the case and not the other way around 
+    Within each individual rectangle, the horizontal axis shows the first consonant of the consonant cluster, while the vertical axis corresponds to possible responses.}}}
   \label{fig:parlato_per_all}
 \end{figure}
 
@@ -347,7 +349,7 @@ In order to assess the influence of $V_{1}$ and $V_{2}$ (henceforth: flanking vo
   \begin{overpic}[page=1, width=0.45\linewidth]{chapter02/parlato_per_iou}\end{overpic}
   \hspace{1cm}
   \begin{overpic}[page=3, width=0.45\linewidth]{chapter02/parlato_per_iou}\end{overpic}
-  \caption{Proportion of /i/-epenthesis in the perception experiment with BP and JP participants (left) and the simulations with the corresponding exemplar-based models (right). Bigger dots show mean values, while smaller dots show individual values for human participants.}
+  \caption{\textit{{\color{blue}Proportion of /i/-epenthesis in the perception experiment with BP and JP participants (left) and the simulations with the corresponding exemplar-based models (right). Bigger dots show mean values, while smaller dots show individual values for human participants.}}}
   \label{fig:parlato_iepenth}
 \end{figure}
 
@@ -360,7 +362,7 @@ In order to assess the influence of $V_{1}$ and $V_{2}$ (henceforth: flanking vo
   \begin{overpic}[page=2, width=0.45\linewidth]{chapter02/parlato_per_iou}\end{overpic}
   \hspace{1cm}
   \begin{overpic}[page=4, width=0.45\linewidth]{chapter02/parlato_per_iou}\end{overpic}
-  \caption{Proportion of /u/-epenthesis in the perception experiment with BP and JP participants (left) and the simulations with the corresponding exemplar-based models (right). Bigger dots show mean values, while smaller dots show individual values for human participants.}
+  \caption{\textit{{\color{blue}Proportion of /u/-epenthesis in the perception experiment with BP and JP participants (left) and the simulations with the corresponding exemplar-based models (right). Bigger dots show mean values, while smaller dots show individual values for human participants.}}}
   \label{fig:parlato_uepenth}
 \end{figure}
 
@@ -382,10 +384,10 @@ For each of the continuous response variables examined in this section, we fitte
 
 \paragraph{Vowel duration}
 
-\begin{figure}[H]
+\begin{figure}[h!]
   \centering
-  \begin{overpic}[clip, trim=0 0 0 0, page=1, height=10cm]{chapter02/parlato_acoustic}\end{overpic}
-  \caption{Distribution of log'd vowel duration (in s) of medial vowels /i, o, u/ produced by BP and JP participants. Dashed lines show mean values.}
+  \begin{overpic}[clip, trim=0 0 0 0, page=1, width=0.9\linewidth]{chapter02/parlato_acoustic}\end{overpic}
+  \caption{\textit{{\color{blue}Distribution of log'd vowel duration (in s) of medial vowels /i, o, u/ produced by BP and JP participants. Dashed lines show mean values.}}}
   \label{fig:parlato_prod_dur}
 \end{figure}
 
@@ -393,10 +395,10 @@ The measured duration of each medial vowel $V_{3}$ (in seconds) was log-transfor
 
 \paragraph{Vowel intensity}
 
-\begin{figure}[H]
+\begin{figure}[h!]
   \centering
-  \begin{overpic}[clip, trim=0 0 0 0, page=2, height=10cm]{chapter02/parlato_acoustic}\end{overpic}
-  \caption{Distribution of median intensity (in dB) of medial vowels /i, o, u/ produced by BP and JP participants. Dashed lines show mean values.}
+  \begin{overpic}[clip, trim=0 0 0 0, page=2, width=0.9\linewidth]{chapter02/parlato_acoustic}\end{overpic}
+  \caption{\textit{{\color{blue}Distribution of median intensity (in dB) of medial vowels /i, o, u/ produced by BP and JP participants. Dashed lines show mean values.}}}
   \label{fig:parlato_prod_dB}
 \end{figure}
 
@@ -405,10 +407,10 @@ This might be due to an overall higher degree of vocal constriction during the p
 
 \paragraph{Vowel formants}
 
-\begin{figure}[H]
+\begin{figure}[h!]
   \centering
-  \begin{overpic}[clip, trim=0 0 0 0, page=3, height=10cm]{chapter02/parlato_acoustic}\end{overpic}
-  \caption{Distribution of square root Euclidean distance to template in F1 x F2 x F3 space (frequencies in Bark) of medial vowels /i, o, u/ produced by BP and JP participants. Dashed lines show mean values.}
+  \begin{overpic}[clip, trim=0 0 0 0, page=3, width=0.9\linewidth]{chapter02/parlato_acoustic}\end{overpic}
+  \caption{\textit{{\color{blue}Distribution of square root Euclidean distance to template in F1 x F2 x F3 space (frequencies in Bark) of medial vowels /i, o, u/ produced by BP and JP participants. Dashed lines show mean values.}}}
   \label{fig:parlato_prod_eucl}
 \end{figure}
 
@@ -440,7 +442,7 @@ The perception model was able to accurately predict participant responses for 59
   \centering
   \begin{overpic}[clip, trim={0 0 0 0}, width=\linewidth]{chapter02/parlato_fig2.pdf}  
   \end{overpic}
-  \caption{Medial vowels and clusters in F1 x F2 space.}
+  \caption{\textit{Medial vowels and clusters in F1 x F2 space.}}
   \label{fig:parlato_prod_formants}
 \end{figure}
 
@@ -462,7 +464,7 @@ Concerning /i/ and /u/, numerically the model predicted more /i/ responses than 
     \hspace{1.5cm}
     \begin{overpic}[clip, trim={0 0 0 0}, page=4, height=4.95cm]{chapter02/parlato_figs.pdf}  
     \end{overpic}
-  \caption{Responses from the perception experiment (left) and model predictions (right), for both BP (top) and JP (bottom), on trials common to the human and model experiments. Numbers indicate trial counts, with darker cell backgrounds representing higher values. Within each 3 x 3 grid, trials are separated according to $V_{1}$ (columns) and $V_{2}$ (rows). Within each individual rectangle, the horizontal axis relates to whether $C_{1}$ is coronal (/d/) or not, while the vertical axis corresponds to possible responses. For instance, BP participants experienced /i/-epenthesis in all 78 trials involving $/iC_{1}C_{2}a/$ stimuli for which $C_{1}$ was not the coronal consonant /d/.}
+  \caption{\textit{Responses from the perception experiment (left) and model predictions (right), for both BP (top) and JP (bottom), on trials common to the human and model experiments. Numbers indicate trial counts, with darker cell backgrounds representing higher values. Within each 3 x 3 grid, trials are separated according to $V_{1}$ (columns) and $V_{2}$ (rows). Within each individual rectangle, the horizontal axis relates to whether $C_{1}$ is coronal (/d/) or not, while the vertical axis corresponds to possible responses. For instance, BP participants experienced /i/-epenthesis in all 78 trials involving $/iC_{1}C_{2}a/$ stimuli for which $C_{1}$ was not the coronal consonant /d/.}}
   \label{fig:parlato_permod}
 \end{figure*}
 
