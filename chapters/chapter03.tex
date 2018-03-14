@@ -1,0 +1,139 @@
+%%%%%%%%%%
+% [TODO] %
+%%%%%%%%%%
+% Nothing for now
+
+%%%%%%%%%%%%%%%%%%%%%%
+% Chapter mini-intro %
+%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Short BG
+
+
+%%% Research question + alternatives
+
+
+%%% Plan
+
+
+%%%%%%%%%%%%%%%%%%%
+% General methods % %
+%%%%%%%%%%%%%%%%%%%
+
+\section{General methods}
+\subsection{ASR tools as models of perception}
+
+\subsection{Dissecting the model}
+
+\subsubsection{Corpora}
+\paragraph{CSJ}
+\begin{itemize}
+\item General description (type of speech, number of speakers)
+\item Alignment?
+\item Phone set
+\item ...
+\end{itemize}
+
+\paragraph{KCSS}
+\begin{itemize}
+\item General description (type of speech, number of speakers)
+\item Alignment?
+\item Phone set
+\item ...
+\end{itemize}
+
+\subsubsection{Features}
+\begin{itemize}
+\item What are MFCCs
+\item VTLN and CMVN
+\item Pitch
+\item LDA?
+\item ...
+\end{itemize}
+
+\subsubsection{Acoustic model}
+\begin{itemize}
+\item Monophone model - also, why?
+\item Number of gaussians
+\item Number of states
+\item ...
+\end{itemize}
+    
+\subsubsection{Language models}
+\begin{itemize}
+\item WFSTs
+\item Words \& phones 
+\item n-grams
+\item ...
+\end{itemize}
+
+\subsubsection{Decoding}
+\begin{itemize}
+\item Lattice generation
+\item Acoustic and LM scores 
+\item nbest
+\item CTM
+\item ...
+\end{itemize}
+
+\subsection{Assessing native performance}
+\subsubsection{Lexicon-based decoding}
+\subsubsection{Phonetic-based decoding}
+
+\subsection{Human-model comparisons}
+\subsubsection{Simulations}
+\subsubsection{Data analysis: ABC easy as 123}
+\paragraph{Reasoning}
+\paragraph{Model selection}
+\paragraph{Parameter tuning}
+
+%%%%%%%%%%%%
+% Parlato2 %
+%%%%%%%%%%%%
+
+\section{{\color{red}Parlato2 - duration}}
+\subsection{Introduction}
+\subsection{Methods}
+\subsubsection{Stimuli}
+
+\subsubsection{Language models}
+In this section, we assess what kind of phonotactics could be used by Japanese listeners when perceiving foreign speech that does not conform to native phonotactics. We test 4 types of language models (LM): 
+\begin{enumerate}
+    \item A null language model (0P-LM), which implies that listeners base their decoding of consonant clusters on phonetics alone, without using information on phonotactics
+    \item A phone-unigram language model (1P-LM), which implies that listeners do not take neighbouring phonemes into consideration when decoding the consonant clusters
+    \item An online phone-bigram language model (2PO-LM), which implies that listeners decode the clusters as they hear them (decoding is done from the start of the item)
+    \item A retro phone-bigram language model (2PR-LM), which implies that listeners decode the clusters based on the most recent information (decoding is done from the end of the item)
+    \item A batch phone-bigram language model (2PB-LM), which implies that listeners decode the item considering the entire structure, with bigrams %use bigram transitional probabilities from the entire cluster, in order to find a global optimal transcription
+    \end{enumerate}
+
+    \begin{figure}[htb]
+    \centering
+%    \includegraphics[width=\linewidth]{}
+    \caption{Constrained language model used to test the models. Nodes in the graph represent states, weighted edges represent transitions between states (here: phonemes). Probabilities given by this LM are combined with those from the AM when decoding experimental items.}
+    \label{fig:G_fsa}
+\end{figure}
+\subsection{Results}
+\subsection{Discussion}
+
+
+%%%%%%%%%%%%
+% m-/ahpa/ %
+%%%%%%%%%%%%
+
+\section{{\color{red}m-/ahpa/}}
+\subsection{Introduction}
+\subsection{Methods}
+\subsection{Results}
+\subsection{Discussion}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Chapter mini-discussion %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Summary
+
+%%% Short discussion
+
+%%% Limitations
+
+%%% Conclusions
