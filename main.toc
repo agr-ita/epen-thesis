@@ -64,14 +64,18 @@
 \contentsline {subsection}{\numberline {3.2.2}Methods}{39}{subsection.3.2.2}
 \contentsline {subsubsection}{Stimuli}{39}{section*.46}
 \contentsline {subsubsection}{Language models}{39}{section*.47}
-\contentsline {subsection}{\numberline {3.2.3}Results}{39}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Discussion}{39}{subsection.3.2.4}
-\contentsline {section}{\numberline {3.3}{\color {red}m-/ahpa/}}{39}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Introduction}{39}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Methods}{39}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Results}{39}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}Discussion}{39}{subsection.3.3.4}
-\contentsline {chapter}{\numberline {4}Chapter Four Title}{40}{chapter.4}
-\contentsline {chapter}{\numberline {5}Chapter Five Title}{41}{chapter.5}
-\contentsline {chapter}{\numberline {6}General Discussion}{42}{chapter.6}
-\contentsline {chapter}{\numberline {A}\ignorespaces Are words easier to learn from infant- than adult-directed speech? A quantitative corpus-based investigation}{43}{appendix.A}
+\contentsline {subsubsection}{Data analysis}{39}{section*.48}
+\contentsline {subsection}{\numberline {3.2.3}Results}{40}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Discussion}{40}{subsection.3.2.4}
+\contentsline {section}{\numberline {3.3}{\color {red}m-/ahpa/}}{40}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Introduction}{40}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Methods}{40}{subsection.3.3.2}
+\contentsline {subsubsection}{Stimuli}{40}{section*.49}
+\contentsline {subsubsection}{Language models}{40}{section*.50}
+\contentsline {subsubsection}{Data analysis}{41}{section*.51}
+\contentsline {subsection}{\numberline {3.3.3}Results}{41}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Discussion}{41}{subsection.3.3.4}
+\contentsline {chapter}{\numberline {4}Chapter Four Title}{42}{chapter.4}
+\contentsline {chapter}{\numberline {5}Chapter Five Title}{43}{chapter.5}
+\contentsline {chapter}{\numberline {6}General Discussion}{44}{chapter.6}
+\contentsline {chapter}{\numberline {A}\ignorespaces Are words easier to learn from infant- than adult-directed speech? A quantitative corpus-based investigation}{45}{appendix.A}
