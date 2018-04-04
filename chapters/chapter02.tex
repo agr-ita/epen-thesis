@@ -492,6 +492,90 @@ We interpret the results as providing a proof of principle that some of the sali
 To conclude, a triple approach combining perception experiments, acoustic analyses, and modeling allows us to gain insight into the mechanisms underlying perceptual epenthesis, and, more generally, repairs of illegal phonological structure during speech perception.
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Parlato_duration (Interspeech) %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+{\color{blue}
+\section{Predicting epenthetic vowel quality from acoustics II: It's about time!} \label{3-parlato-dur}
+
+\subsection{Introduction}
+
+
+\subsection{Methods}
+\subsubsection{Features}
+% Recordings from Section 3 were converted into sequences of 39-dimensional feature vectors consisting of 12 Mel-frequency cepstral coefficients (MFCCs) and energy features, with delta and delta-delta coefficients. Coefficient values were standardised. We computed the optimal alignment between all $V_{1}C_{1}C_{2}V_{2}$ templates (e.g. /abgi/) and their corresponding $V_{1}C_{1}V_{3}C_{2}V_{2}$ epenthesized versions (e.g. /abigi/, /abogi/, /abugi/) using Dynamic Time Warping (DTW) \cite{sakoe1978, R-dtw}. In order to ensure that the resulting distances were not mainly influenced by spectral differences of flanking vowels $V_{1}$ and $V_{3}$, we only compared $C_{1}C_{2}$ clusters to $C_{1}V_{3}C_{2}$ sections. Note, however, that coarticulation cues from flanking vowels are expected to be present within the clusters.
+
+- MFCC + delta + delta-delta (39 dim)
+
+- C0 instead of log-energy
+
+- (Pitch not included but computed for future experiments)
+
+
+\subsubsection{Classification}
+%For the simulation, we built a classifier that assigns any given template to one category in the set \{$V_{1}C_{1}iC_{2}V_{2}$, $V_{1}C_{1}oC_{2}V_{2}$, $V_{1}C_{1}uC_{2}V_{2}$\}, based on acoustic similarity. Similarity $s$ between templates and epenthesized versions was defined as
+% 
+% \begin{equation}
+%   s = e^{-cd}
+%   \label{eq1}
+% \end{equation}
+% % 
+% where $d$ is the DTW distance, and $c$ is a parameter determining the weight of the DTW distance on classification \cite{nosofsky1992}. When $c = 0$, DTW is disregarded and all possible classification categories are equally probable. Higher values of $c$ result in higher probabilities being given to items with smaller $d$. In order to control for unequal number of tokens in each category, classification was performed by computing the mean similarity within each category. From there we sampled a classification label weighting category probabilities by the resulting mean similarity weights. 
+
+\paragraph{Dynamic Time Warping}
+
+- Changed step pattern (from defaut symmetric2 to symmetric1)
+
+- Get \%non-diagonal step patterns
+
+
+\paragraph{Similarity function}
+
+- DTW + Dur
+
+\begin{equation}
+  P(R_{J}|S_{i}) = \frac{b_{J} \sum_{j\epsilon C_{J}}M_{j} \eta_{ij}}{\sum_{k}b_{K} \sum_{k\epsilon C_{K}}M_{k} \eta_{ik}}
+  \label{parlato-dur_eq_sim1}
+\end{equation}
+
+with
+
+\begin{equation}
+  \eta_{ij} = e^{-c \cdot d_{ij}}
+  \label{parlato-dur_eq_sim2}
+\end{equation}
+
+with
+
+\begin{equation}
+  d_{ij} = w_{dtw} \cdot DTW_{dist} + w_{dur} \cdot dur_{penalty}
+  \label{parlato-dur_eq_sim3}
+\end{equation}
+
+
+As in section \ref{2-parlato}, we
+
+\subsection{Parameter estimation}
+% Parameter $c$ was individually optimised for each language by performing leave-one-out cross-validation (maximum accuracy: $0.50$ with $c = 0.5$ for BP, and $0.63$ with $c = 2.2$ for JP; chance level at $0.33$).
+
+- grid search
+
+- leave-one-out method
+
+- mean (used in section 2.2) vs median accuracy - corr?
+
+
+\subsubsection{Data analysis}
+
+\subsection{Results}
+
+
+\subsection{Discussion}
+
+}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Chapter mini-discussion %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
