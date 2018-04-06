@@ -505,17 +505,44 @@ To conclude, a triple approach combining perception experiments, acoustic analys
 
 \subsection{Methods}
 \subsubsection{Features}
-% Recordings from Section 3 were converted into sequences of 39-dimensional feature vectors consisting of 12 Mel-frequency cepstral coefficients (MFCCs) and energy features, with delta and delta-delta coefficients. Coefficient values were standardised. We computed the optimal alignment between all $V_{1}C_{1}C_{2}V_{2}$ templates (e.g. /abgi/) and their corresponding $V_{1}C_{1}V_{3}C_{2}V_{2}$ epenthesized versions (e.g. /abigi/, /abogi/, /abugi/) using Dynamic Time Warping (DTW) \cite{sakoe1978, R-dtw}. In order to ensure that the resulting distances were not mainly influenced by spectral differences of flanking vowels $V_{1}$ and $V_{3}$, we only compared $C_{1}C_{2}$ clusters to $C_{1}V_{3}C_{2}$ sections. Note, however, that coarticulation cues from flanking vowels are expected to be present within the clusters.
+% [KALDI] The overall MFCC computation is as follows:
 
-- MFCC + delta + delta-delta (39 dim)
+%     Work out the number of frames in the file (typically 25 ms frames shifted by 10ms each time).
+%     For each frame:
+%         Extract the data, do optional dithering, preemphasis and dc offset removal, and multiply it by a windowing function (various options are supported here, e.g. Hamming)
+%         Work out the energy at this point (if using log-energy not C0).
+%         Do FFT and compute the power spectrum
+%         Compute the energy in each mel bin; these are e.g. 23 triangular overlapping bins whose centers are equally spaced in the mel-frequency domain.
+%         Compute the log of the energies and take the cosine transform, keeping as many coefficients as specified (e.g. 13)
+%         Optionally do cepstral liftering; this is just a scaling of the coefficients, which ensures they have a reasonable range.
 
-- C0 instead of log-energy
+% The lower and upper cutoff of the frequency range covered by the triangular mel bins are controlled by the options –low-freq and –high-freq, which are usually set close to zero and the Nyquist frequency respectively, e.g. –low-freq=20 and –high-freq=7800 for 16kHz sampled speech.
 
-- (Pitch not included but computed for future experiments)
+In order to ensure feature compatibility with future experiments (due to differences in file formats), features were recalculated using the Kaldi speech recognition toolkit \cite{povey2011}, introducing slight changes regarding the parameters used in section \ref{2-parlato}. As in section \ref{2-parlato}, audio recordings of items used as stimuli in the perceptual experiment and those used for the acoustic analyses were converted into sequences of 39-dimensional feature vectors consisting of 12 Mel-frequency cepstral coefficients (MFCCs), with delta and delta-delta coefficients. In contrast to our previously used features, here our first coefficient did not correspond to the log of the total frame energy, but to the zeroth cepstral coefficient. Additionally, we added 3 coefficients (and their corresponding delta and delta-delta coefficients) adding pitch information to our features: normalized-pitch, delta-pitch, voicing-feature. The final 48 coefficient values were standardised to each have zero-mean and unit-variance.      
 
+{\color{red} ACCURACY HIGHER FOR PITCH==FALSE ???
+
+\begin{figure}[h!]
+  \centering
+  \begin{overpic}[clip, trim=0 0 0 0, page=1, width=0.9\linewidth]{chapter02/parlato_dur.pdf}\end{overpic}
+  \caption{\textit{}}
+  \label{}
+\end{figure}
+}
 
 \subsubsection{Classification}
-%For the simulation, we built a classifier that assigns any given template to one category in the set \{$V_{1}C_{1}iC_{2}V_{2}$, $V_{1}C_{1}oC_{2}V_{2}$, $V_{1}C_{1}uC_{2}V_{2}$\}, based on acoustic similarity. Similarity $s$ between templates and epenthesized versions was defined as
+For the simulation, we built a classifier that assigns any given template to one category in the set \{$V_{1}C_{1}iC_{2}V_{2}$, $V_{1}C_{1}oC_{2}V_{2}$, $V_{1}C_{1}uC_{2}V_{2}$\}, based on acoustic similarity to the exemplars recorded by native speakers of BP and JP.
+
+\paragraph{Dynamic Time Warping}
+
+As in section \ref{2-parlato}, we computed the optimal alignment between all $V_{1}C_{1}C_{2}V_{2}$ templates (e.g. /abgi/) and their corresponding $V_{1}C_{1}V_{3}C_{2}V_{2}$ epenthesized versions (e.g. /abigi/, /abogi/, /abugi/) using Dynamic Time Warping (DTW) \cite{sakoe1978} with the R package \textit{dtw} \cite{R-dtw}. In order to ensure that the resulting distances were not mainly influenced by spectral differences of flanking vowels $V_{1}$ and $V_{3}$, we only compared feature frames correpsonding to $C_{1}C_{2}$ clusters and $C_{1}V_{3}C_{2}$ sections. Note, however, that coarticulation cues from flanking vowels are expected to be present within the clusters. 
+
+Concerning DTW specifics, in section \ref{2-parlato} we used the commonly used step pattern for which, at position $x_{i;j}$, the only possible steps are towards positions $x_{i+1;j}$ (horizontal step), $x_{i;j+j}$ (vertical step), or $x_{i+1;j+1}$ (diagonal step). In this default setting (named ``symmetric2'' in the R package \textit{dtw}), a diagonal step is twice as costly as a horizontal or vertical step, which favours template-query matches with compressions/stretching over more direct matches. Therefore, in this section we chose to opt for a step pattern with the same three possible steps as before (i.e., horizontal, vertical, diagonal), but for which diagonal steps cost as much as horizontal/vertical steps on the final DTW distance. Since distances obtained with this step pattern (``symmetric1'') cannot be normalised by being divided by the sum of the lengths of the template and query, we normalise by dividing the cummulative distance by the length of the optimal path.
+
+From the DTW we extract two values per template-query combination: (1) $DTW_{dist}$, the normalised DTW distance between the template and the query, and (2) $DTW_{time}$, the proportion of non-diagonal steps taken in the optimal path. This latter value, which was not present in the previous version of the model, is an indicator of the proportion of time dilation and time compression that was required to match the template and the query.     
+
+\paragraph{Similarity function}
+%Similarity $s$ between templates and epenthesized versions was defined as
 % 
 % \begin{equation}
 %   s = e^{-cd}
@@ -524,19 +551,13 @@ To conclude, a triple approach combining perception experiments, acoustic analys
 % % 
 % where $d$ is the DTW distance, and $c$ is a parameter determining the weight of the DTW distance on classification \cite{nosofsky1992}. When $c = 0$, DTW is disregarded and all possible classification categories are equally probable. Higher values of $c$ result in higher probabilities being given to items with smaller $d$. In order to control for unequal number of tokens in each category, classification was performed by computing the mean similarity within each category. From there we sampled a classification label weighting category probabilities by the resulting mean similarity weights. 
 
-\paragraph{Dynamic Time Warping}
+We reprise the similarity function used in section \ref{2-parlato}, inspired by the exemplar-based generalized context model (GCM) detailed by \cite{nosofsky1992}, and make modifications to accommodate for the inclusion of the duration mismatch penalty $DTW_{time}$.
+Our goal is to classify the $V_{1}C_{1}C_{2}V_{2}$ template into a category from the set of vowels \textipa{/i, o, u/}, through the similarity of the template to exemplars $V_{1}C_{1}iC_{2}V_{2}$, $V_{1}C_{1}oC_{2}V_{2}$, and $V_{1}C_{1}uC_{2}V_{2}$, respectively. We obtain the evidence favouring category J given stimulus i ($P(R_{J}|S_{i})$) by averaging the similarity of said stimulus i to all recorded exemplars of category J. Since we do not aim to introduce a language model to the model, as we want it to be based entirely on acoustics, we do not introduce a term for response bias for category J. All exemplars are weighted equally.   
 
-- Changed step pattern (from defaut symmetric2 to symmetric1)
-
-- Get \%non-diagonal step patterns
-
-
-\paragraph{Similarity function}
-
-- DTW + Dur
 
 \begin{equation}
-  P(R_{J}|S_{i}) = \frac{b_{J} \sum_{j\epsilon C_{J}}M_{j} \eta_{ij}}{\sum_{k}b_{K} \sum_{k\epsilon C_{K}}M_{k} \eta_{ik}}
+  % P(R_{J}|S_{i}) = \frac{b_{J} \sum_{j\epsilon C_{J}}M_{j} \eta_{ij}}{\sum_{k}b_{K} \sum_{k\epsilon C_{K}}M_{k} \eta_{ik}} %Nosofsky92
+  P(R_{J}|S_{i}) = \frac{ \frac{1}{n_{j}} \sum_{j\epsilon C_{J}} \eta_{ij}}{\sum_{k} \frac{1}{n_{k}} \sum_{k\epsilon C_{K}} \eta_{ik}}
   \label{parlato-dur_eq_sim1}
 \end{equation}
 
@@ -550,7 +571,7 @@ with
 with
 
 \begin{equation}
-  d_{ij} = w_{dtw} \cdot DTW_{dist} + w_{dur} \cdot dur_{penalty}
+  d_{ij} = w_{dtw} \cdot DTW_{dist} + w_{dur} \cdot DTW_{time}
   \label{parlato-dur_eq_sim3}
 \end{equation}
 

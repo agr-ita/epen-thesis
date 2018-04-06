@@ -4,45 +4,45 @@ The top-level auxiliary file: main.aux
 The style file: apalike.bst
 Database file #1: main.bib
 Warning--I didn't find a database entry for "["
-You've used 36 entries,
+You've used 37 entries,
             1935 wiz_defined-function locations,
-            711 strings with 9869 characters,
-and the built_in function-call counts, 14671 in all, are:
-= -- 1460
-> -- 584
+            717 strings with 10283 characters,
+and the built_in function-call counts, 15372 in all, are:
+= -- 1518
+> -- 652
 < -- 21
-+ -- 198
-- -- 194
-* -- 1280
-:= -- 2543
-add.period$ -- 109
-call.type$ -- 36
-change.case$ -- 272
-chr.to.int$ -- 36
-cite$ -- 36
-duplicate$ -- 540
-empty$ -- 1033
-format.name$ -- 242
-if$ -- 2847
++ -- 226
+- -- 220
+* -- 1349
+:= -- 2672
+add.period$ -- 114
+call.type$ -- 37
+change.case$ -- 290
+chr.to.int$ -- 37
+cite$ -- 37
+duplicate$ -- 558
+empty$ -- 1062
+format.name$ -- 269
+if$ -- 2975
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 34
-newline$ -- 183
-num.names$ -- 110
-pop$ -- 217
+missing$ -- 35
+newline$ -- 189
+num.names$ -- 113
+pop$ -- 238
 preamble$ -- 1
-purify$ -- 276
+purify$ -- 294
 quote$ -- 0
-skip$ -- 411
+skip$ -- 419
 stack$ -- 0
-substring$ -- 1122
-swap$ -- 67
+substring$ -- 1136
+swap$ -- 68
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 214
+type$ -- 220
 warning$ -- 0
-while$ -- 133
+while$ -- 135
 width$ -- 0
-write$ -- 468
+write$ -- 483
 (There was 1 warning)

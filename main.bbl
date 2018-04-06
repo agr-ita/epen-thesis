@@ -156,6 +156,15 @@ Plummer, M., Best, N., Cowles, K., and Vines, K. (2006).
 \newblock {CODA}: Convergence diagnosis and output analysis for {MCMC}.
 \newblock {\em R News}, 6(1):7--11.
 
+\bibitem[Povey et~al., 2011]{povey2011}
+Povey, D., Ghoshal, A., Boulianne, G., Burget, L., Glembek, O., Goel, N.,
+  Hannemann, M., Motlicek, P., Qian, Y., Schwarz, P., Silovsky, J., Stemmer,
+  G., and Vesely, K. (2011).
+\newblock The kaldi speech recognition toolkit.
+\newblock In {\em IEEE 2011 Workshop on Automatic Speech Recognition and
+  Understanding}. IEEE Signal Processing Society.
+\newblock IEEE Catalog No.: CFP11SRW-USB.
+
 \bibitem[{R Core Team}, 2016]{R-base}
 {R Core Team} (2016).
 \newblock {\em R: {A} Language and Environment for Statistical Computing}.

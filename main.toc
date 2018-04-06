@@ -42,51 +42,51 @@
 \contentsline {subsection}{\numberline {2.3.1}Introduction}{35}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Methods}{35}{subsection.2.3.2}
 \contentsline {subsubsection}{Features}{35}{section*.32}
-\contentsline {subsubsection}{Classification}{35}{section*.33}
-\contentsline {paragraph}{Dynamic Time Warping}{35}{section*.34}
-\contentsline {paragraph}{Similarity function}{35}{section*.35}
-\contentsline {subsection}{\numberline {2.3.3}Parameter estimation}{35}{subsection.2.3.3}
-\contentsline {subsubsection}{Data analysis}{35}{section*.36}
-\contentsline {subsection}{\numberline {2.3.4}Results}{35}{subsection.2.3.4}
-\contentsline {subsection}{\numberline {2.3.5}Discussion}{35}{subsection.2.3.5}
-\contentsline {section}{\numberline {2.4}Summary and Discussion}{36}{section.2.4}
-\contentsline {chapter}{\numberline {3}Chapter Three Title}{38}{chapter.3}
-\contentsline {section}{\numberline {3.1}General methods}{38}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}ASR tools as models of perception}{38}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Dissecting the model}{38}{subsection.3.1.2}
-\contentsline {subsubsection}{Corpora}{38}{section*.37}
-\contentsline {paragraph}{CSJ}{38}{section*.38}
-\contentsline {paragraph}{KCSS}{38}{section*.39}
-\contentsline {subsubsection}{Features}{38}{section*.40}
-\contentsline {subsubsection}{Acoustic model}{39}{section*.41}
-\contentsline {subsubsection}{Language models}{39}{section*.42}
-\contentsline {subsubsection}{Decoding}{39}{section*.43}
-\contentsline {subsection}{\numberline {3.1.3}Assessing native performance}{39}{subsection.3.1.3}
-\contentsline {subsubsection}{Lexicon-based decoding}{39}{section*.44}
-\contentsline {subsubsection}{Phonetic-based decoding}{39}{section*.45}
-\contentsline {subsection}{\numberline {3.1.4}Human-model comparisons}{39}{subsection.3.1.4}
-\contentsline {subsubsection}{Simulations}{39}{section*.46}
-\contentsline {subsubsection}{Data analysis: ABC easy as 123}{39}{section*.47}
-\contentsline {paragraph}{Reasoning}{39}{section*.48}
-\contentsline {paragraph}{Model selection}{39}{section*.49}
-\contentsline {paragraph}{Parameter tuning}{39}{section*.50}
-\contentsline {section}{\numberline {3.2}{\color {red}Parlato2 - duration}}{40}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Introduction}{40}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Methods}{40}{subsection.3.2.2}
-\contentsline {subsubsection}{Stimuli}{40}{section*.51}
-\contentsline {subsubsection}{Language models}{40}{section*.52}
-\contentsline {subsubsection}{Data analysis}{40}{section*.53}
-\contentsline {subsection}{\numberline {3.2.3}Results}{41}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Discussion}{41}{subsection.3.2.4}
-\contentsline {section}{\numberline {3.3}{\color {red}m-/ahpa/}}{41}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Introduction}{41}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Methods}{41}{subsection.3.3.2}
-\contentsline {subsubsection}{Stimuli}{41}{section*.54}
-\contentsline {subsubsection}{Language models}{41}{section*.55}
-\contentsline {subsubsection}{Data analysis}{42}{section*.56}
-\contentsline {subsection}{\numberline {3.3.3}Results}{42}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}Discussion}{42}{subsection.3.3.4}
-\contentsline {chapter}{\numberline {4}Chapter Four Title}{43}{chapter.4}
-\contentsline {chapter}{\numberline {5}Chapter Five Title}{44}{chapter.5}
-\contentsline {chapter}{\numberline {6}General Discussion}{45}{chapter.6}
-\contentsline {chapter}{\numberline {A}\ignorespaces Are words easier to learn from infant- than adult-directed speech? A quantitative corpus-based investigation}{46}{appendix.A}
+\contentsline {subsubsection}{Classification}{36}{section*.33}
+\contentsline {paragraph}{Dynamic Time Warping}{36}{section*.34}
+\contentsline {paragraph}{Similarity function}{36}{section*.35}
+\contentsline {subsection}{\numberline {2.3.3}Parameter estimation}{37}{subsection.2.3.3}
+\contentsline {subsubsection}{Data analysis}{37}{section*.36}
+\contentsline {subsection}{\numberline {2.3.4}Results}{37}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Discussion}{37}{subsection.2.3.5}
+\contentsline {section}{\numberline {2.4}Summary and Discussion}{38}{section.2.4}
+\contentsline {chapter}{\numberline {3}Chapter Three Title}{40}{chapter.3}
+\contentsline {section}{\numberline {3.1}General methods}{40}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}ASR tools as models of perception}{40}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Dissecting the model}{40}{subsection.3.1.2}
+\contentsline {subsubsection}{Corpora}{40}{section*.37}
+\contentsline {paragraph}{CSJ}{40}{section*.38}
+\contentsline {paragraph}{KCSS}{40}{section*.39}
+\contentsline {subsubsection}{Features}{40}{section*.40}
+\contentsline {subsubsection}{Acoustic model}{41}{section*.41}
+\contentsline {subsubsection}{Language models}{41}{section*.42}
+\contentsline {subsubsection}{Decoding}{41}{section*.43}
+\contentsline {subsection}{\numberline {3.1.3}Assessing native performance}{41}{subsection.3.1.3}
+\contentsline {subsubsection}{Lexicon-based decoding}{41}{section*.44}
+\contentsline {subsubsection}{Phonetic-based decoding}{41}{section*.45}
+\contentsline {subsection}{\numberline {3.1.4}Human-model comparisons}{41}{subsection.3.1.4}
+\contentsline {subsubsection}{Simulations}{41}{section*.46}
+\contentsline {subsubsection}{Data analysis: ABC easy as 123}{41}{section*.47}
+\contentsline {paragraph}{Reasoning}{41}{section*.48}
+\contentsline {paragraph}{Model selection}{41}{section*.49}
+\contentsline {paragraph}{Parameter tuning}{41}{section*.50}
+\contentsline {section}{\numberline {3.2}{\color {red}Parlato2 - duration}}{42}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Introduction}{42}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Methods}{42}{subsection.3.2.2}
+\contentsline {subsubsection}{Stimuli}{42}{section*.51}
+\contentsline {subsubsection}{Language models}{42}{section*.52}
+\contentsline {subsubsection}{Data analysis}{42}{section*.53}
+\contentsline {subsection}{\numberline {3.2.3}Results}{43}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Discussion}{43}{subsection.3.2.4}
+\contentsline {section}{\numberline {3.3}{\color {red}m-/ahpa/}}{43}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Introduction}{43}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Methods}{43}{subsection.3.3.2}
+\contentsline {subsubsection}{Stimuli}{43}{section*.54}
+\contentsline {subsubsection}{Language models}{43}{section*.55}
+\contentsline {subsubsection}{Data analysis}{44}{section*.56}
+\contentsline {subsection}{\numberline {3.3.3}Results}{44}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Discussion}{44}{subsection.3.3.4}
+\contentsline {chapter}{\numberline {4}Chapter Four Title}{45}{chapter.4}
+\contentsline {chapter}{\numberline {5}Chapter Five Title}{46}{chapter.5}
+\contentsline {chapter}{\numberline {6}General Discussion}{47}{chapter.6}
+\contentsline {chapter}{\numberline {A}\ignorespaces Are words easier to learn from infant- than adult-directed speech? A quantitative corpus-based investigation}{48}{appendix.A}
