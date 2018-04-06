@@ -42,10 +42,10 @@
 \contentsline {subsection}{\numberline {2.3.1}Introduction}{35}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Methods}{35}{subsection.2.3.2}
 \contentsline {subsubsection}{Features}{35}{section*.32}
-\contentsline {subsubsection}{Classification}{36}{section*.33}
-\contentsline {paragraph}{Dynamic Time Warping}{36}{section*.34}
+\contentsline {subsubsection}{Classification}{35}{section*.33}
+\contentsline {paragraph}{Dynamic Time Warping}{35}{section*.34}
 \contentsline {paragraph}{Similarity function}{36}{section*.35}
-\contentsline {subsection}{\numberline {2.3.3}Parameter estimation}{37}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.3}Parameter estimation}{36}{subsection.2.3.3}
 \contentsline {subsubsection}{Data analysis}{37}{section*.36}
 \contentsline {subsection}{\numberline {2.3.4}Results}{37}{subsection.2.3.4}
 \contentsline {subsection}{\numberline {2.3.5}Discussion}{37}{subsection.2.3.5}
