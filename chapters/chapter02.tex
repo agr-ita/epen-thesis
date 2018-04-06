@@ -1,7 +1,17 @@
 %%%%%%%%%%
 % [TODO] %
 %%%%%%%%%%
-% Nothing for now
+% - [ ] mini-intro
+% --- [ ] No anti-Pinker ...
+% - [ ] /ahpa/
+% --- [ ] Explain more by speaker figure? (also, change labels to "Dutch stimuli")
+% --- [ ] Cluster acoustic analyses:
+% ------ [ ] Explain more what is happening visually
+% ------ [ ] Is a classifier (eg with LDA) better at labeling coart in /hp/ than in /kp/
+% --- [ ] Add contributions (e.g., Isa's ABX)
+% --- [ ] ABX
+% ------ [ ] Figure: use same order as in table
+% ------ [ ] Why? Recall expectations if COART/COPY/DEFAULT-NONE => not sensitive enough for COART vs COPY, but correlation is useful to solidify ID results 
 
 %%%%%%%%%%%%%%%%%%%%%%
 % Chapter mini-intro %
@@ -149,15 +159,6 @@ To recapitulate, for both coarticulation vowel and flanking vowel, we compute `s
 As shown in Table \ref{infoth}, all sample lower bounds are greater than their respective accidental information gains on all 1000 shufflings, for which the ranges are given in parentheses. Therefore, the `true' lower bounds for both coarticulation and flanking vowel influence on epenthesis are greater than $0$ with $p<0.001$, showing that both coarticulation and flanking vowel quality influence participant responses. However, the amount of influence differs greatly: a larger information gain is yielded by considering vowel coarticulation  %29- and 11-times
 than by considering the flanking vowel. This is true both for /hp/-items, which are heavily coarticulated, and for /kp/-items, where coarticulation is mainly only present in the burst, even though the influence of coarticulation on epenthetic vowel quality is higher for the former (/hp/: $[0.86, 0.92]$ \textit{vs.} /kp/: $[0.44, 0.52]$). (The range of variation within shuffles of accidental information was about .03; thus any difference of .06 or bigger is significant, including differences between MI and IG values, respectively). In summary, both vowel coarticulation and the flanking vowel influence epenthetic vowel quality, but this influence is greater for vowel coarticulation; response patterns are more predictable when the value of this variable is known than when the value of the flanking vowel variable is known.
 
-\begin{figure}[H]
-  \centering
-  \begin{overpic}[page=4, width=0.9\linewidth]{chapter02/ahpa_tiles}\end{overpic}
-  \begin{overpic}[page=3, width=0.9\linewidth]{chapter02/ahpa_tiles}\end{overpic}
-  \begin{overpic}[page=2, width=0.9\linewidth]{chapter02/ahpa_tiles}\end{overpic}
-  \caption{{\color{blue}\textit{Counts of responses for the test items and spliced control items, separated by speaker. For each speaker: top: \textipa{/hp/-}items; bottom: \textipa{/kp/-}items. Within each individual rectangle, flanking vowels and vowel coarticulation are given in the horizontal and vertical axes, respectively. Darker colours indicate higher counts, with colours normalized within each speaker.}}}
-  \label{fig:ahpa_spk}
-\end{figure}
-
 \subsection{Discussion and conclusion}
 %\label{sec:concl}
 
@@ -182,7 +183,17 @@ Focusing on cases where the quality of the epenthetic vowel varies \textit{withi
 To conclude, we directly compared the relative contributions of acoustic and categorical effects on epenthetic vowel quality, and found that the former override the latter. This result thus strengthens those of \cite{dupoux2011}, who also established the presence of acoustic effects but without investigating possible categorical effects. More research is needed to investigate whether our findings generalize to other cases of perceptual epenthesis. This question can be addressed by two complementary approaches. One would be to run additional experiments with cross-spliced stimuli, as in the present study. Another one would be to measure the effective amount of coarticulation in experimental stimuli of previous studies, using a computational implementation of a one-step repair mechanism (see \cite{dupoux2011} and \cite{wilson2014} for propositions, and \cite{schatz2016} for an implementation using Hidden Markov Models).
 
 %%%% Annexes %%%%
-\subsection{Supplementary analyses: ABX task}
+\subsection{Annexes}
+\begin{figure}[ht!]
+  \centering
+  \begin{overpic}[page=4, width=0.9\linewidth]{chapter02/ahpa_tiles}\end{overpic}
+  \begin{overpic}[page=3, width=0.9\linewidth]{chapter02/ahpa_tiles}\end{overpic}
+  \begin{overpic}[page=2, width=0.9\linewidth]{chapter02/ahpa_tiles}\end{overpic}
+  \caption{{\color{blue}\textit{Counts of responses for the test items and spliced control items, separated by speaker. For each speaker: top: \textipa{/hp/-}items; bottom: \textipa{/kp/-}items. Within each individual rectangle, flanking vowels and vowel coarticulation are given in the horizontal and vertical axes, respectively. Darker colours indicate higher counts, with colours normalized within each speaker.}}}
+  \label{fig:ahpa_spk}
+\end{figure}
+
+\subsection{Supplementary experiment: ABX task}
 
 {\color{blue}In this additional experiment we assessed the perception of illegal consonantal clusters in Japanese using an ABX discrimination task, which, contrary to the vowel identification task used in Experiment 1, does not require an explicit categorization of the item's segments. As in previous work \cite{dupoux1999, dupoux2011}, we used different speakers for stimuli A, B, and X, such that the task could not be performed on the basis of low-level acoustic information.
 
@@ -544,28 +555,28 @@ From the DTW we extract two values per template-query combination: (1) $DTW_{dis
 % where $d$ is the DTW distance, and $c$ is a parameter determining the weight of the DTW distance on classification \cite{nosofsky1992}. When $c = 0$, DTW is disregarded and all possible classification categories are equally probable. Higher values of $c$ result in higher probabilities being given to items with smaller $d$. In order to control for unequal number of tokens in each category, classification was performed by computing the mean similarity within each category. From there we sampled a classification label weighting category probabilities by the resulting mean similarity weights. 
 
 We reprise the similarity function used in section \ref{2-parlato}, inspired by the exemplar-based generalized context model (GCM) detailed by \cite{nosofsky1992}, and make modifications to accommodate for the inclusion of the duration mismatch penalty $DTW_{time}$.
-Our goal is to classify the $V_{1}C_{1}C_{2}V_{2}$ template into a category from the set of vowels \textipa{/i, o, u/}, through the similarity of the template to exemplars $V_{1}C_{1}iC_{2}V_{2}$, $V_{1}C_{1}oC_{2}V_{2}$, and $V_{1}C_{1}uC_{2}V_{2}$, respectively. We obtain $P(R_{J}|S_{i})$, the evidence favouring category J given stimulus i, by averaging the similarity of said stimulus i to all recorded exemplars of category J. Since we do not aim to introduce a language model to the model, as we want it to be based entirely on acoustics, we do not introduce a term for response bias for category J. All exemplars are weighted equally.   
+Our goal is to classify the $V_{1}C_{1}C_{2}V_{2}$ template into a category from the set of vowels \textipa{/i, o, u/}, through the similarity of the template to exemplars $V_{1}C_{1}iC_{2}V_{2}$, $V_{1}C_{1}oC_{2}V_{2}$, and $V_{1}C_{1}uC_{2}V_{2}$, respectively. We obtain $P(R_{J}|S_{i})$, the evidence favouring category $J$ given stimulus $i$, by averaging the similarity of said stimulus $i$ to all recorded exemplars of category $J$. Since we do not aim to introduce a language model to the model, as we want it to be based entirely on acoustics, we do not introduce a term for response bias for category J. All exemplars are weighted equally.   
 
 {\color{red}
 \begin{equation}
   % P(R_{J}|S_{i}) = \frac{b_{J} \sum_{j\epsilon C_{J}}M_{j} \eta_{ij}}{\sum_{k}b_{K} \sum_{k\epsilon C_{K}}M_{k} \eta_{ik}} %Nosofsky92
-  P(R_{J}|S_{i}) = \frac{ \frac{1}{n_{j}} \sum_{j\epsilon C_{J}} \eta_{ij}}{\sum_{k} \frac{1}{n_{k}} \sum_{k\epsilon C_{K}} \eta_{ik}}
+  P(R_{J}|S_{i}) = \frac{ \frac{1}{n_{J}} \sum_{j\epsilon C_{J}} \eta_{ij}}{\sum_{K} \frac{1}{n_{K}} \sum_{k\epsilon C_{K}} \eta_{ik}}
   \label{parlato-dur_eq_sim1}
 \end{equation}
 }
-with
+where $n_{J}$ is the number of exemplars of category $J$ and with $\eta$ defined as in equation \ref{parlato-dur_eq_sim2},
 
 \begin{equation}
   \eta_{ij} = e^{-c \cdot d_{ij}}
   \label{parlato-dur_eq_sim2}
 \end{equation}
 
-where $c$ is a parameter determining the weight of $d_{ij}$ on classification. When $c = 0$, DTW is disregarded and all possible classification categories are equally probable. Higher values of $c$ result in higher probabilities being given to items with smaller $d_{ij}$.
+where $c$ is a parameter determining the weight of $\eta_{ij}$ on classification. When $c = 0$, DTW is disregarded and all possible classification categories are equally probable. Higher values of $c$ result in higher probabilities being given to items with smaller distance $\eta_{ij}$.
 
-$d_{ij}$ is defined as
+$\eta_{ij}$ is defined as in equation \ref{parlato-dur_eq_sim3}
 
 \begin{equation}
-  d_{ij} = w_{dist} \cdot DTW_{dist} + w_{time} \cdot DTW_{time}
+  \eta_{ij} = w_{dist} \cdot DTW_{dist} + w_{time} \cdot DTW_{time}
   \label{parlato-dur_eq_sim3}
 \end{equation}
 
@@ -574,7 +585,7 @@ where $w_{dist}$ and $w_{time}$ are weights given to $DTW_{dist}$ and $DTW_{time
 \subsection{Parameter estimation}
 % Parameter $c$ was individually optimised for each language by performing leave-one-out cross-validation (maximum accuracy: $0.50$ with $c = 0.5$ for BP, and $0.63$ with $c = 2.2$ for JP; chance level at $0.33$).
 
-Parameters $c$, $w_{dist}$, and $w_{time}$ were optimised by grid search by classifying all exemplars to a category within \textipa{/i, o, u/} in a leave-one-out method. Namely, we assessed the accuracy in the classification of tokens with known labels, by measuring their similarity to all other exemplars.
+We used grid search in order to optimise parameters $c$, $w_{dist}$, and $w_{time}$ for each language. We by classifying all exemplars to a category within \textipa{/i, o, u/} in a leave-one-out method. Namely, we assessed the accuracy in the classification of tokens with known labels, by measuring their similarity to all other exemplars.
 We assessed the optimality of parameter combinations based not on mean classification accuracy, but on median classification accuracy. Indeed, as can be seen in figure \ref{}, these two measures are positively correlated but an increased performance at the level of median accuracy will not be obvious when inspecting mean accuracy.  
 
 \begin{figure}[h!]
