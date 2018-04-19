@@ -1,8 +1,10 @@
 %%%%%%%%%%
 % [TODO] %
 %%%%%%%%%%
-% - [ ] mini-intro
+% - [ ] mini-intro & general
 % --- [ ] No anti-Pinker ...
+% --- [ ] Make figures be in logical places
+% --- [ ] Add acknowledgements for each paper at the beginning + signal what changed
 % - [ ] /ahpa/
 % --- [ ] Explain more by speaker figure? (also, change labels to "Dutch stimuli")
 % --- [ ] Cluster acoustic analyses:
@@ -11,7 +13,12 @@
 % --- [ ] Add contributions (e.g., Isa's ABX)
 % --- [ ] ABX
 % ------ [ ] Figure: use same order as in table
-% ------ [ ] Why? Recall expectations if COART/COPY/DEFAULT-NONE => not sensitive enough for COART vs COPY, but correlation is useful to solidify ID results 
+% ------ [ ] Why? Recall expectations if COART/COPY/DEFAULT-NONE => not sensitive enough for COART vs COPY, but correlation is useful to solidify ID results
+% - [ ] Parlato
+% --- [ ] Figures
+% ------ [X] Change order of V1/V2 in parlato heatmaps
+% ------ [X] Add "human"/"model" labels above graphs
+% ------ [ ] 
 
 %%%%%%%%%%%%%%%%%%%%%%
 % Chapter mini-intro %
@@ -318,14 +325,14 @@ We assess patterns of perceptual epenthesis by BP and JP native listeners on sti
 Fifty-four items with the structure $V_{1}C_{1}C_{2}V_{2}$, with $V_{1}$ and $V_{2}$ vowels from the set \{/a/, /i/, /u/\}, and $C_{1}C_{2}$ a cluster from the set \{/bg/, /bn/, /db/, /dg/, /gb/, /gn/\}, e.g. /abgi/, were recorded by a native speaker of French. Twenty-two native BP listeners and 17 native JP listeners were tested in S\~{a}o Paulo and Tokyo, respectively. None had extensive exposure to languages that allow complex consonantal clusters. At each trial, participants heard a stimulus and had to indicate within 3 seconds which vowel from the set \{/a/, /e/, /i/, /o/, /u/ and \textit{none}\} they perceived within the consonant cluster. 
 
 \subsubsection{Results}
-Statistical analyses were performed with the R statistical software \cite{R-base}, using MCMC glmm \cite{R-MCMCglmm, R-coda}. Effects were considered statistically significant if the 95\% highest posterior density (HPD) interval estimated for the variable of interest did not include zero. Please note that we only report effects relevant to hypotheses tested in this work. A full report of all analyses conducted in this paper (as well as additional information) can be found in: https://osf.io/zr88w/.
+Statistical analyses were performed with the R statistical software \cite{R-base}, using MCMC glmm \cite{R-MCMCglmm, R-coda}. Effects were considered statistically significant if the 95\% highest posterior density (HPD) interval estimated for the variable of interest did not include zero. Please note that we only report effects relevant to hypotheses tested in this work. A full report of all analyses conducted in this section (as well as additional information) can be found in: https://osf.io/zr88w/.
 
 In order to assess the influence of $V_{1}$ and $V_{2}$ (henceforth: flanking vowels) on epenthetic vowel quality (/i/ or /u/), we fitted models with fixed effects Language (BP \textit{vs.} JP), Number of Same Flanking Vowels (NSFV) ($none$ \textit{vs.} $1$; $none$ and $1$ \textit{vs.} $2$) and their interaction, with Participants as random effect. We also included the fixed effect Coronal $C_{1}$ (non-coronal \textit{vs.} coronal) and the resulting interactions when analysing /u/ responses, as the insertion of default /u/ after coronal consonants yields phonotactically illegal sequences in Japanese. Fixed effects were contrast coded with deviance coding and, in the case of the trinomial variable NSFVs, comparisons were achieved by creating dummy variables "none \textit{vs} 1" with weights [-0.5, 0.5, 0] for levels $none$, $1$ and $2$, respectively, and "Less than 2 \textit{vs.} 2" with weights [-0.25, -0.25, 0.5] for levels $none$, $1$ and $2$.
 
 \begin{figure}[H]
   \centering
-  \begin{overpic}[page=1, width=0.7\linewidth]{chapter02/parlato_per_all}\end{overpic}
-  \begin{overpic}[page=2, width=0.7\linewidth]{chapter02/parlato_per_all}\end{overpic}
+  \begin{overpic}[page=1, width=0.6\linewidth]{chapter02/parlato_tiles}\end{overpic}
+  \begin{overpic}[page=2, width=0.6\linewidth]{chapter02/parlato_tiles}\end{overpic}
   \caption{\textit{{\color{blue}Responses for all trials from the perception experiment for both BP (top) and JP (bottom), including trials with responses not given by the exemplar model (``none'', ``a'', ``e''). Numbers indicate trial counts, with darker cell backgrounds representing higher values. Within each of the two 3 x 3 grid, trials are separated according to $V_{1}$ (columns) and $V_{2}$ (rows). % [TODO] Check that this is the case and not the other way around 
     Within each individual rectangle, the horizontal axis shows the first consonant of the consonant cluster, while the vertical axis corresponds to possible responses.}}}
   \label{fig:parlato_per_all}
@@ -351,9 +358,9 @@ In order to assess the influence of $V_{1}$ and $V_{2}$ (henceforth: flanking vo
     \end{tabular}
 \end{table}
 
-\subsubsection{/i/-epenthesis}
+\paragraph{/i/-epenthesis}
 
-\begin{figure}[H]
+\begin{figure}[h!]
   \centering
   \begin{overpic}[page=1, width=0.45\linewidth]{chapter02/parlato_per_iou}\end{overpic}
   \hspace{1cm}
@@ -366,7 +373,7 @@ In order to assess the influence of $V_{1}$ and $V_{2}$ (henceforth: flanking vo
 
 \paragraph{/u/-epenthesis}
 
-\begin{figure}[H]
+\begin{figure}[h!]
   \centering
   \begin{overpic}[page=2, width=0.45\linewidth]{chapter02/parlato_per_iou}\end{overpic}
   \hspace{1cm}
@@ -430,7 +437,7 @@ We extracted median formant values (F1, F2, and F3, in Bark) from medial vowels 
 We built an exemplar model of the perception of phonotactically illegal consonant clusters by BP and JP listeners, exclusively based on acoustics. We used all participants' productions from Section 3 as the inventory of exemplars available to our model. This is a simple way of representing the acoustics that a BP/JP native listener may have been exposed to during language development. As an analogy to the perception experiment from Section 2, the model classified each $V_{1}C_{1}C_{2}V_{2}$ template as $V_{1}C_{1}iC_{2}V_{2}$, $V_{1}C_{1}oC_{2}V_{2}$, or $V_{1}C_{1}uC_{2}V_{2}$, based on the similarity of the template to exemplars of these three categories available in the inventory. We examined whether the model was able to predict participants' epenthetic patterns, in particular, whether it was able to mimic preferences for default vowels and capture the modulation of these preferences induced by flanking vowels.   
 
 \subsubsection{Methods}
-Recordings from Section 3 were converted into sequences of 39-dimensional feature vectors consisting of 12 Mel-frequency cepstral coefficients (MFCCs) and energy features, with delta and delta-delta coefficients. Coefficient values were standardised. We computed the optimal alignment between all $V_{1}C_{1}C_{2}V_{2}$ templates (e.g. /abgi/) and their corresponding $V_{1}C_{1}V_{3}C_{2}V_{2}$ epenthesized versions (e.g. /abigi/, /abogi/, /abugi/) using Dynamic Time Warping (DTW) \cite{sakoe1978, R-dtw}. In order to ensure that the resulting distances were not mainly influenced by spectral differences of flanking vowels $V_{1}$ and $V_{3}$, we only compared $C_{1}C_{2}$ clusters to $C_{1}V_{3}C_{2}$ sections. Note, however, that coarticulation cues from flanking vowels are expected to be present within the clusters. 
+Recordings from Section 3 were converted into sequences of 39-dimensional feature vectors consisting of 12 Mel-frequency cepstral coefficients (MFCCs) and energy features\footnote{Due to a mistake in the feature computation pipeline, this meant that the log energy and the 12 first MFC coefficients were concatenated, not that the first coefficient of 13 coefficients was replaced by the log energy, as was originally intended.}, with delta and delta-delta coefficients. Coefficient values were standardised. We computed the optimal alignment between all $V_{1}C_{1}C_{2}V_{2}$ templates (e.g. /abgi/) and their corresponding $V_{1}C_{1}V_{3}C_{2}V_{2}$ epenthesized versions (e.g. /abigi/, /abogi/, /abugi/) using Dynamic Time Warping (DTW) \cite{sakoe1978, R-dtw}. In order to ensure that the resulting distances were not mainly influenced by spectral differences of flanking vowels $V_{1}$ and $V_{3}$, we only compared $C_{1}C_{2}$ clusters to $C_{1}V_{3}C_{2}$ sections. Note, however, that coarticulation cues from flanking vowels are expected to be present within the clusters. 
 
 For the simulation, we built a classifier that assigns any given template to one category in the set \{$V_{1}C_{1}iC_{2}V_{2}$, $V_{1}C_{1}oC_{2}V_{2}$, $V_{1}C_{1}uC_{2}V_{2}$\}, based on acoustic similarity. Similarity $s$ between templates and epenthesized versions was defined as
 % 
@@ -447,7 +454,7 @@ The same statistical models from Section 2, but without a random effect for Part
 
 The perception model was able to accurately predict participant responses for 59.1\% (BP) and 58.4\% (JP) of trials. Figure~\ref{fig:parlato_permod} shows a detailed distribution of the responses. As shown in the righthand part of Table~\ref{tab:parlato_model_overall}, the model rarely predicted /o/ responses, as expected based on acoustic analyses; however, it is surprising that most /o/ responses were predicted for BP rather than for JP. This might be due to overlap of /u/ and /o/ in the formant space of BP, which is visible in Figure~\ref{fig:parlato_prod_formants}.
 
-\begin{figure}[t]
+\begin{figure}[th!]
   \centering
   \begin{overpic}[clip, trim={0 0 0 0}, width=\linewidth]{chapter02/parlato_fig2.pdf}  
   \end{overpic}
@@ -459,19 +466,19 @@ Concerning /i/ and /u/, numerically the model predicted more /i/ responses than 
 
 \begin{figure*}[th]
   \centering
-    \begin{overpic}[clip, trim={0 0 0 0}, page=1, height=4.9cm]{chapter02/parlato_figs.pdf}  
+    \begin{overpic}[clip, trim={0 0 0 0}, page=3, width=0.35\linewidth]{chapter02/parlato_tiles.pdf}  
     \end{overpic}%
     \hspace{1.5cm}
-    \begin{overpic}[clip, trim={0 0 0 0}, page=3, height=4.9cm]{chapter02/parlato_figs.pdf}  
+    \begin{overpic}[clip, trim={0 0 0 0}, page=5, width=0.35\linewidth]{chapter02/parlato_tiles.pdf}  
     \end{overpic} 
     
     \vspace{0.2cm}
     \centering
     
-    \begin{overpic}[clip, trim={0 0 0 0}, page=2, height=4.9cm]{chapter02/parlato_figs.pdf}  
+    \begin{overpic}[clip, trim={0 0 0 0}, page=4, width=0.35\linewidth]{chapter02/parlato_tiles.pdf}  
     \end{overpic}%
     \hspace{1.5cm}
-    \begin{overpic}[clip, trim={0 0 0 0}, page=4, height=4.95cm]{chapter02/parlato_figs.pdf}  
+    \begin{overpic}[clip, trim={0 0 0 0}, page=6, width=0.35\linewidth]{chapter02/parlato_tiles.pdf}  
     \end{overpic}
   \caption{\textit{Responses from the perception experiment (left) and model predictions (right), for both BP (top) and JP (bottom), on trials common to the human and model experiments. Numbers indicate trial counts, with darker cell backgrounds representing higher values. Within each 3 x 3 grid, trials are separated according to $V_{1}$ (columns) and $V_{2}$ (rows). Within each individual rectangle, the horizontal axis relates to whether $C_{1}$ is coronal (/d/) or not, while the vertical axis corresponds to possible responses. For instance, BP participants experienced /i/-epenthesis in all 78 trials involving $/iC_{1}C_{2}a/$ stimuli for which $C_{1}$ was not the coronal consonant /d/.}}
   \label{fig:parlato_permod}
@@ -491,13 +498,13 @@ We found a main effect of NSFV ($none$ \textit{vs.} $1$: $37.8$, $[16.0, 62.3]$;
 There was also a main effect for Coronal $C_{1}$ ($-66.7$, $[-95.6, -39.5]$) but no interaction of this effect with Language ($40.2, [-28.0, 91.8]$); similarly to the perception data, this reflects an overall lower propensity for the model to `epenthesize' /u/ after coronal consonants. 
 The triple interaction NSFV x Coronal $C_{1}$ x Language was significant for both "levels" of NSFV ($94.1, [19.9, 210.6]$, $525.8, [275.5, 666.1]$). Closer inspection suggests that this reflected the model's inability to predict higher percentages of /u/-responses by both BP and JP participants after coronal consonants when both flanking vowels were /u/. 
 
-\subsection{General Discussion}
+\subsection{Discussion}
 
 Examining epenthetic vowel quality preferences by BP and JP speakers in a perception task, we corroborated previous findings (\cite{dupoux1999, dupoux2011}) that, like in loanword adaptations, the default epenthetic vowel during speech perception is /i/ for BP and /u/ for JP. Our acoustic analyses suggest that the choice of epenthetic vowel is acoustically driven. That is, in BP, /i/ is shorter and spectrally closer to the formant transitions in our stimuli than /u/ (and /o/), while the reverse holds in Japanese. As such, it may not be necessary to rely on phonological explanations of epenthetic vowel quality as in \cite{rose2006, uffmann2006}, were we to find that these are shared characteristics of default epenthetic vowels in a variety of languages. We also found an influence of flanking vowels on epenthetic vowel quality, similar to what was reported in \cite{dupoux2011}. Indeed, participants gave fewer default responses when the quality of the flanking vowels was in disagreement with the default choice, resulting in more "vowel copy" epenthesis (i.e. perceiving a vowel of the same quality as that of a flanking vowel). Furthermore, we found that this effect of flanking vowels is additive, as it is even more prominent when both flanking vowels are of the same quality. 
 
 Interestingly, phonotactics did not influence JP participants' responses as may have been expected; while /o/ was almost exclusively perceived after coronal consonants, this was almost always the case for stimuli with $V_{1} = /a/$ (cf Figure~\ref{fig:per&model_responses}). In fact, for all combinations of flanking vowels, participants responded /i/ and/or /u/ more often than /o/ in coronal contexts, even though both /du/ and /di/ are phonotactically illegal sequences in JP. These results, which are reminiscent of previous work \cite{monahan2009, mattingley2015}, suggest that constraints on perception given by surface phonotactics can be overruled by constraints relative to matching input acoustics \cite{dupoux2011}. In fact, if this were not the case, novel sound sequences would have never arisen in JP loanwords (e.g. \textit{party} is adapted as \textipa{/pa:ti/}, not \textipa{/pa:tCi/}). 
 
-Finally, we presented one exemplar model per language, based on productions by BP and JP participants, respectively. These models reproduced the major effects found in the perception experiment --- namely, the preferred epenthetic vowel, and some significant effects of language and flanking vowels --- although with a high level of noise. This noise level may be due to the relatively low number of tokens that were available as exemplars, the fact that the DTW procedure removes temporal cues (recall that we found that default vowels tend to be of shorter duration), and/or the fact that MFCC features do not appropriately capture speaker invariance.
+Finally, we presented results from one exemplar model per language, based on productions by BP and JP participants, respectively. These models reproduced the major effects found in the perception experiment --- namely, the preferred epenthetic vowel (numerically), and some significant effects of language and flanking vowels --- although with a high level of noise. This noise level may be due to the relatively low number of tokens that were available as exemplars, the fact that the DTW procedure removes temporal cues (recall that we found that default vowels tend to be of shorter duration), and/or the fact that MFCC features do not appropriately capture speaker invariance.
 We interpret the results as providing a proof of principle that some of the salient effects regarding perceptual epenthesis can be accounted for on purely acoustic grounds. Future research is needed to improve on the model, whose predictions deviated from the perceptual data on several counts (e.g., 6\% /o/-epenthesis for BP, but less than 1\% for JP; failure to produce more /u/-epenthesis for JP than BP). These improvements could involve more phonetically and/or temporally informed features (e.g., spectrotemporal representations \cite{chi2005}), state-of-the art large-scale approaches with HMM or DNN systems, or physiologically-inspired models of speech perception (e.g., based on cortical oscillations \cite{hyafil2015}). 
 
 To conclude, a triple approach combining perception experiments, acoustic analyses, and modeling allows us to gain insight into the mechanisms underlying perceptual epenthesis, and, more generally, repairs of illegal phonological structure during speech perception.
@@ -512,7 +519,7 @@ To conclude, a triple approach combining perception experiments, acoustic analys
 \section{Predicting epenthetic vowel quality from acoustics II: It's about time!} \label{3-parlato-dur}
 
 \subsection{Introduction}
-
+%%% What do we need to address after previous experiment?
 
 \subsection{Methods}
 \subsubsection{Features}
@@ -529,8 +536,8 @@ To conclude, a triple approach combining perception experiments, acoustic analys
 
 % The lower and upper cutoff of the frequency range covered by the triangular mel bins are controlled by the options –low-freq and –high-freq, which are usually set close to zero and the Nyquist frequency respectively, e.g. –low-freq=20 and –high-freq=7800 for 16kHz sampled speech.
 
-In order to ensure feature compatibility with future experiments (due to differences in file formats), features were recalculated using the Kaldi speech recognition toolkit \cite{povey2011}, introducing slight changes regarding the parameters used in section \ref{2-parlato}. As in section \ref{2-parlato}, audio recordings of items used as stimuli in the perceptual experiment and those used for the acoustic analyses were converted into sequences of 39-dimensional feature vectors consisting of 12 Mel-frequency cepstral coefficients (MFCCs), with delta and delta-delta coefficients. In contrast to our previously used features, here our first coefficient did not correspond to the log of the total frame energy, but to the zeroth cepstral coefficient. %Additionally, we added 3 coefficients (and their corresponding delta and delta-delta coefficients) adding pitch information to our features: normalized-pitch, delta-pitch, voicing-feature. The final 48 coefficient values were standardised to each have zero-mean and unit-variance.
-The final 39 coefficient values were standardised to each have zero-mean and unit-variance.  
+In order to ensure feature compatibility with future experiments (due to differences in file formats), features were recalculated using the Kaldi speech recognition toolkit \cite{povey2011}, introducing slight changes regarding the parameters used in section \ref{2-parlato}. As in section \ref{2-parlato}, audio recordings of items used as stimuli in the perceptual experiment and those used for the acoustic analyses were converted into sequences of 39-dimensional feature vectors consisting of 13 Mel-frequency cepstral coefficients (MFCCs), with delta and delta-delta coefficients. In contrast to our previously used features, here our first coefficient did not correspond to the log of the total frame energy, but to the zeroth cepstral coefficient. We applied this changed purely due to the change in the tools used for computing the features. Since the zeroth coefficient corresponds to the sum of the log of the 40 mel values, it is roughly equivalent to the log energy. 
+Additionally, we added 3 coefficients (and their corresponding delta and delta-delta coefficients) adding pitch information to our features: normalized-pitch, delta-pitch, voicing-feature. The final 48 coefficient values were standardised to each have zero-mean and unit-variance. The final 48 coefficient values were standardised to each have zero-mean and unit-variance within each speaker.  
 
 \subsubsection{Classification}
 For the simulation, we built a classifier that assigns any given template to one category in the set \{$V_{1}C_{1}iC_{2}V_{2}$, $V_{1}C_{1}oC_{2}V_{2}$, $V_{1}C_{1}uC_{2}V_{2}$\}, based on acoustic similarity to the exemplars recorded by native speakers of BP and JP.
@@ -572,26 +579,42 @@ $\eta_{ij}$ is defined as in equation \ref{parlato-dur_eq_sim3}
 
 where $w_{dist}$ and $w_{time}$ are weights given to $DTW_{dist}$ and $DTW_{time}$, respectively. Setting $w_{time} = 0$ gives an equivalent equation to the one used in section \ref{2-parlato}.
 
-\subsection{Parameter estimation}
+\subsubsection{Parameter estimation}
 % Parameter $c$ was individually optimised for each language by performing leave-one-out cross-validation (maximum accuracy: $0.50$ with $c = 0.5$ for BP, and $0.63$ with $c = 2.2$ for JP; chance level at $0.33$).
 
-We used grid search in order to optimise parameters $c$, $w_{dist}$, and $w_{time}$ for each language. We classified all exemplars to a category within \textipa{/i, o, u/} in a leave-one-out method. Namely, we assessed the accuracy in the classification of tokens with known labels, by measuring their respective similarity to all other exemplars and sampling the classification categories for each.
-We assessed the optimality of parameter combinations based not only on mean classification accuracy, but on median classification accuracy. Indeed, as can be seen in figure \ref{}, these two measures are positively correlated but an increased performance at the level of median accuracy might not be obvious when inspecting mean accuracy.  
+We used grid search in order to optimise parameter $c$ with $w_{dist} = 1$, for each language. We classified all exemplars to a category within \textipa{/i, o, u/} in a leave-one-out cross-validation method. Namely, we assessed the accuracy in the classification of tokens with known labels, by measuring their respective similarity to all other exemplars and sampling the classification categories for each.
+We assessed the optimality of parameter values based not only on mean classification accuracy, but on median classification accuracy. Indeed, as can be seen in figure \ref{}, while these two measures are positively correlated an increased performance at the level of median accuracy might not be obvious when inspecting mean accuracy alone. As a curious side note, increasing the value of $w_{time} = 1$ during cross-validation decreased classification accuracy.   
 
 \begin{figure}[h!]
   \centering
-  \begin{overpic}[clip, trim=0 0 0 0, page=1, width=0.9\linewidth]{chapter02/parlato_dur.pdf}\end{overpic}
+  \begin{overpic}[clip, trim=0 0 0 0, page=1, width=0.9\linewidth]{chapter02/parlato_dur_spknormF.pdf}\end{overpic}
   \caption{\textit{}}
   \label{}
 \end{figure}
 
 \subsubsection{Data analysis}
+Statistical analyses were performed with the R statistical software \cite{R-base}, using Markov chain Monte Carlo generalised linear mixed-models \cite{R-MCMCglmm, R-coda}. These Bayesian models sample coefficients from the posterior probability distribution conditioned on the data and given priors. We used priors that are standard for mixed-effects multinomial models. Model convergence was assessed by visual inspection of trace plots and the Gelman–Rubin convergence diagnostic \cite{gelman1992}, using four chains with different initialisations. Effects were considered statistically significant if the 95\% highest posterior density (HPD) interval estimated for the coefficient of interest did not include zero. 
+
+In order to assess the influence of $V_{1}$ and $V_{2}$ (henceforth: flanking vowels) on epenthetic vowel quality (/i/ or /u/), we chose as fixed effects for our models \textsc{Language} (BP \textit{vs.} JP, sum contrast coded) and \textsc{Number of Same Flanking Vowels} (\textsc{NSFV}; considered as a continuous variable with values 0, 1, or 2 instead of a factor with 3 levels, in order to reduce the number of model parameters and promote convergence), as well as their interaction. As random effects we included \textsc{Cluster} and \textsc{Participant} when analysing data from the perceptual experiment, and \textsc{Cluster} when analysing data from the exemplar models. We also added random slopes for \textsc{Language} on \textsc{Cluster}, and \textsc{NSFV} on \textsc{Participant}. Please note that we re-analyse data from the perceptual experiment described in section \ref{2-parlato} because the statistical models used for the analyses in this section are not identical to those used in section \ref{2-parlato}. The change in models was motivated by a will to avoid coefficient inflation due to the sparsity of our data, as it was the case in section \ref{2-parlato}. 
 
 \subsection{Results}
+\subsubsection{Perception Experiment}
+\paragraph{/i/-epenthesis}
+\paragraph{/u/-epenthesis}
 
+\subsubsection{Exemplar models without duration penalty}
+\paragraph{/i/-epenthesis}
+\paragraph{/u/-epenthesis}
+
+\subsubsection{Exemplar models with duration penalty}
+\paragraph{Setting the duration penalty}
+\paragraph{/i/-epenthesis}
+\paragraph{/u/-epenthesis}
 
 \subsection{Discussion}
+%% Summary of the results
 
+%% Limitations 
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -80,6 +80,11 @@ Escudero, P., Boersma, P., Rauber, A.~S., and Bion, R.~A. (2009).
 \newblock {\em The Journal of the Acoustical Society of America},
   126(3):1379--1393.
 
+\bibitem[Gelman and Rubin, 1992]{gelman1992}
+Gelman, A. and Rubin, D.~B. (1992).
+\newblock Inference from iterative simulation using multiple sequences.
+\newblock {\em Statistical science}, pages 457--472.
+
 \bibitem[Giorgino, 2009]{R-dtw}
 Giorgino, T. (2009).
 \newblock Computing and visualizing dynamic time warping alignments in {R}: The
