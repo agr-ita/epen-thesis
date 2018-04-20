@@ -1,0 +1,91 @@
+\documentclass[12pt, twoside]{report}
+\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
+% \usepackage{bibtex}
+\usepackage{fixltx2e}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage[utf8]{inputenc}
+\usepackage{tipa}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{booktabs}
+\usepackage{threeparttable}
+\usepackage{pdfpages}
+\usepackage[percent]{overpic}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true, %set true if you want colored links
+    linktoc=all,     %set to all if you want both sections and subsections linked
+    linkcolor=black,  %choose some color if you want links to stand out
+  }
+ 
+
+\graphicspath{{images/}}
+
+\fancyhead{}
+\fancyhead[RO]{\nouppercase{\rightmark}}
+\fancyhead[LE]{\nouppercase{\leftmark}}
+\fancyfoot{}
+\fancyfoot[LE,RO]{\thepage}
+
+
+\title{
+	{Thesis Title}\\
+	{\large Institution Name}\\
+%	{\includegraphics{university.jpg}}
+}
+\author{AGR}
+\date{Day Month Year}
+
+\begin{document}
+\maketitle
+
+\chapter*{Abstract}
+Abstract goes here
+
+\chapter*{Résumé}
+Abstract goes ici
+
+\chapter*{Dedication}
+%To mum and dad
+
+%\chapter*{Declaration}
+%I declare that..
+
+\chapter*{Acknowledgements}
+I want to thank...
+
+\tableofcontents
+
+\chapter{Introduction}
+\input{chapters/chapter01-intro}
+
+\chapter{{\color{red}Epenthetic vowel quality: Acoustics, phonetics, phonology}}
+\input{chapters/chapter02}
+\chapter{Chapter Three Title}
+\input{chapters/chapter03}
+
+\chapter{Chapter Four Title}
+\input{chapters/chapter04}
+\chapter{Chapter Five Title}
+\input{chapters/chapter05}
+
+\chapter{General Discussion}
+\input{chapters/chapter06-disc}
+
+\appendix
+\fancyhead{}
+%\fancyhead[RO, LE]{\rightmark}
+\fancyhead[RO,LE]{\nouppercase{\leftmark}}
+\fancyfoot{}
+\fancyfoot[LE,RO]{\thepage}
+\input{chapters/appendix}
+
+\bibliographystyle{apalike}
+\bibliography{main}
+
+\end{document}
+
+%%%% TO-DO %%%%
+% Fix references (apa-like + \citeNP etc)
