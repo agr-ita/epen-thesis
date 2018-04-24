@@ -168,6 +168,37 @@ Therefore, it is possible that this effect results from a response bias due to t
   \label{fig:ahpa_acoustic}
 \end{figure}
 
+{\color{red}
+> d.lda.formants\\
+       phon.type      cons acc.CV.medianF123 acc.voweltrained.medianF123\\
+1     full vowel /hp/-item         0.7555556                   0.8444444\\
+2 coarticulation /hp/-item         0.5172414                   0.3793103\\
+3     full vowel /kp/-item         0.7619048                   0.8095238\\
+4 coarticulation /kp/-item         0.3666667                   0.3333333\\
+
+coarticulation /hp/-item acc.voweltrained.medianF123 
+[1] "Train == Full Vowel"
+            Predicted Group
+Actual Group a e i o u
+           a 5 0 0 0 0
+           e 0 5 1 0 0
+           i 0 4 1 1 0
+           o 5 0 0 0 1
+           u 6 0 0 0 0
+           
+coarticulation /kp/-item acc.voweltrained.medianF123
+[1] "Train == Full Vowel"
+            Predicted Group
+Actual Group a e i o u
+           a 5 1 0 0 0
+           e 1 5 0 0 0
+           i 2 3 0 1 0
+           o 6 0 0 0 0
+           u 6 0 0 0 0          
+
+
+}
+
 Keeping in mind that this work focuses on the choice of epenthetic vowel, while not directly addressing questions related to why phonologically-illegal clusters are repaired, or what the role of phonotactics in epenthesis is, the finding that the quality of the epenthetic vowel is influenced more by coarticulation than by the flanking vowel calls for a perceptual repair mechanism in which acoustic details are taken into consideration. Two-step models in which epenthetic repair is performed after the consonant cluster in the acoustic input has been represented in terms of discrete phonetic categories are therefore ruled out. Rather, like \cite{dupoux2011}, we argue in favor of one-step models, in which epenthetic vowel quality is based on the similarity between local acoustic cues and prototypical properties of each vowel in the language, such that the closest matching vowel gets selected for insertion. This mechanism can account both for the coarticulation-induced vowel copy effect in items with a \textipa{/hp/}-cluster, as the voiceless glottal fricative /h/ contains strong coarticulation from the adjacent vowels {\color{blue}\cite{keating1988} also see Figure \ref{fig:ahpa_acoustic}}, %https://osf.io/y9h6c for supplementary data]{keating1988},
 and for the default /u/-epenthesis effect in items with a \textipa{/kp/}-cluster -- which exhibit a lower degree of coarticulation -- as \textipa{/u/} is the phonetically shortest vowel in the language \cite{han1962} and is prone to be devoiced in certain contexts (see footnote).
 
@@ -557,7 +588,7 @@ We used grid search in order to optimise parameter $c$ for each language, as wel
 We assessed the optimality of parameter values based not only on mean classification accuracy, but also inspecting median classification accuracy. Indeed, while these two measures are positively correlated, an improvement in median accuracy might not be obvious when inspecting mean accuracy alone. In other words, combinations of parameters with similar mean classification accuracy could differ greatly in median classification accuracy.
 While we aimed to optimise parameters when setting $\alpha = 0$ (baseline models with no duration penalty), as a curious side note, increasing the value of $\alpha$ during cross-validation with BP and JP recordings decreased classification accuracy. However, the resulting degradation in accuracy tended towards zero when increasing values of parameter $c$ such as those chosen for this work.
 
-We found that classification accuracy was worse when including pitch features, delta + delta-delta coefficients, and both, than when only using 13 MFCCs. Therefore, for all experiments in this section, the acoustic input given to our models consisted of 13-dimensional vectors. Concerning parameter $c$, we chose optimal values {\color{red}$c = $ (mean and median accuracies: ) for BP models, and $c = $ (mean and median accuracies: )} for JP models.
+We found that classification accuracy was worse when including pitch features, delta + delta-delta coefficients, and both, than when only using 13 MFCCs. Therefore, for all experiments in this section, the acoustic input given to our models consisted of 13-dimensional vectors. Concerning parameter $c$, we chose optimal values $c = 60$ (mean accuracy: $64.6\%$; median accuracy: $1$) for BP models, and $c = 40$ (mean accuracy: $90.1\%$; median accuracy: $1$) for JP models. 
 
 %\begin{figure}[h!]
 %  \centering
@@ -627,7 +658,7 @@ However, the interaction \textsc{Language x NSFV} was significant (mode: $0.96$,
 \subsubsection{Experiment 2: Exemplar models with duration penalty}
 
 \paragraph{Adding the duration-mismatch penalty}
-In this experiment our aim was to examine, first of all, the effect of an increased duration-mismatch penalty on our models' ability to mirror human performance at the perceptual task. Remember that, when performing parameter estimation with BP and JP items, increasing the weight of the duration-mismatch penalty $DTW_{time}$ resulted in a decrease in classification performance. For our optimal values of parameter $c$ this difference was of {\color{red} X and X in mean classification accuracy for BP and JP, respectively}. Apart from $\alpha$, all model parameters ($c$, feature coefficient selection) are set as in Experiment 1.    
+In this experiment our aim was to examine, first of all, the effect of an increased duration-mismatch penalty on our models' ability to mirror human performance at the perceptual task. Remember that, when performing parameter estimation with BP and JP items, increasing the weight of the duration-mismatch penalty $DTW_{time}$ resulted in a decrease in classification performance. For our optimal values of parameter $c$, when changing from $\alpha = 0$ to $\alpha = 5$, this difference was of $0.9\%$ and $7.8\%$ in mean classification accuracy, and $0$ and $0.1\%$ in median classification, for BP and JP, respectively. Apart from $\alpha$, all model parameters ($c$, feature coefficient selection) are set as in Experiment 1.    
 
 In order to assess the effect of varying $\alpha$ when simulating our non-native speech perception experiment, we computed the distance between response patterns given by human participants and models, for each item used in the experiment, while varying the value of $\alpha$. We did this by computing the Euclidean distance between $[h_{i}, h_{o}, h_{u}]$ and $[m_{i}, m_{o}, m_{u}]$, vectors containing the proportion of /i, o, u/ responses given by humans and models, respectively. We normalised distances in order to constrain their values to the interval $[0, 1]$ (0 corresponding to identical response patterns). The variation of the distance between patterns as a function of $\alpha$ can be seen in Figure \ref{fig:parlato_dur_wdur_eucl}.
 

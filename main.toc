@@ -13,9 +13,9 @@
 \contentsline {subsection}{\numberline {2.1.4}Discussion and conclusion}{16}{subsection.2.1.4}
 \contentsline {subsection}{\numberline {2.1.5}Annexes}{18}{subsection.2.1.5}
 \contentsline {subsection}{\numberline {2.1.6}Supplementary experiment: ABX task}{18}{subsection.2.1.6}
-\contentsline {subsubsection}{Methods}{18}{section*.12}
-\contentsline {paragraph}{Participants}{18}{section*.13}
-\contentsline {paragraph}{Stimuli}{18}{section*.14}
+\contentsline {subsubsection}{Methods}{19}{section*.12}
+\contentsline {paragraph}{Participants}{19}{section*.13}
+\contentsline {paragraph}{Stimuli}{20}{section*.14}
 \contentsline {paragraph}{Procedure}{20}{section*.15}
 \contentsline {subsubsection}{Results}{21}{section*.16}
 \contentsline {subsubsection}{Correlation between experimental results}{22}{section*.17}
