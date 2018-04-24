@@ -6,7 +6,7 @@
 % --- [X] Move figures to logical places
 % --- [ ] Add acknowledgements for each paper at the beginning + signal what changed
 % - [ ] /ahpa/
-% --- [ ] Explain more by speaker figure? (also, change labels to "Dutch stimuli")
+% --- [ ] Explain more by-speaker figure? (also, change labels to "Dutch stimuli")
 % --- [ ] Cluster acoustic analyses:
 % ------ [ ] Explain more what is happening visually
 % ------ [ ] Is a classifier (eg with LDA) better at labeling coart in /hp/ than in /kp/
@@ -14,11 +14,9 @@
 % --- [ ] ABX
 % ------ [ ] Figure: use same order as in table
 % ------ [ ] Why? Recall expectations if COART/COPY/DEFAULT-NONE => not sensitive enough for COART vs COPY, but correlation is useful to solidify ID results
-% - [ ] Parlato
+% - [ ] Parlato_dur
 % --- [ ] Figures
-% ------ [X] Change order of V1/V2 in parlato heatmaps
-% ------ [X] Add "human"/"model" labels above graphs
-% ------ [ ] 
+% ------ [ ] Final version
 
 %%%%%%%%%%%%%%%%%%%%%%
 % Chapter mini-intro %
@@ -43,7 +41,7 @@ In \textbf{section \ref{2-parlato-dur}} we modify production-based exemplar mode
 % /ahpa/ (JASA-EL) %
 %%%%%%%%%%%%%%%%%%%%
 
-\newpage
+%\newpage
 \section{Which epenthetic vowel? \\ Phonetic categories versus acoustic detail in perceptual vowel epenthesis} \label{2-ahpa}
 
 \textit{{\color{blue}The following section is a modified version of the following journal article: \\
@@ -486,7 +484,7 @@ To conclude, a triple approach combining perception experiments, acoustic analys
 % Parlato_duration (Interspeech) %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\newpage
+%\newpage
 \section{Predicting epenthetic vowel quality from acoustics II: It's about time!} \label{2-parlato-dur}
 
 \subsection{Introduction}
@@ -515,7 +513,9 @@ For the simulation, we built a classifier that assigns any given template to one
 
 \paragraph{Dynamic Time Warping}
 
-As in section \ref{2-parlato}, we computed the optimal alignment between all $V_{1}C_{1}C_{2}V_{2}$ templates (e.g. /abgi/) and their corresponding $V_{1}C_{1}V_{3}C_{2}V_{2}$ epenthesized versions (e.g. /abigi/, /abogi/, /abugi/) using Dynamic Time Warping (DTW) \cite{sakoe1978} with the R package \textit{dtw} \cite{R-dtw}. In order to ensure that the resulting distances were not mainly influenced by spectral differences of flanking vowels $V_{1}$ and $V_{3}$, we only compared feature frames correpsonding to $C_{1}C_{2}$ clusters and $C_{1}V_{3}C_{2}$ sections. Note, however, that coarticulation cues from flanking vowels are expected to be present within the clusters. 
+As in section \ref{2-parlato}, we computed the optimal alignment between all $V_{1}C_{1}C_{2}V_{2}$ templates (e.g. /abgi/) and their corresponding $V_{1}C_{1}V_{3}C_{2}V_{2}$ epenthesized versions (e.g. /abigi/, /abogi/, /abugi/) using Dynamic Time Warping (DTW) \cite{sakoe1978} with the R package \textit{dtw} \cite{R-dtw}. In order to ensure that the resulting distances were not mainly influenced by spectral differences of flanking vowels $V_{1}$ and $V_{3}$, we only compared feature frames corresponding to $C_{1}C_{2}$ clusters and $C_{1}V_{3}C_{2}$ sections. Note, however, that coarticulation cues from flanking vowels are expected to be present within the clusters.
+
+As input for the DTW distance computation at each speech frame, we used either the entire 48-dimensional feature vectors (MFCCs + pitch features + delta + delta-delta), or we omitted pitch features and/or delta + delta-delta coefficients. The final selection of the features to be used for our models was determined during parameter optimisation. 
 
 Concerning DTW specifics, in section \ref{2-parlato} we used the commonly used step pattern for which, at position $x_{i;j}$, the only possible steps are towards positions $x_{i+1;j}$ (horizontal step), $x_{i;j+j}$ (vertical step), or $x_{i+1;j+1}$ (diagonal step). In this default setting (named ``symmetric2'' in the R package \textit{dtw}), a diagonal step is twice as costly as a horizontal or vertical step, which favours template-query matches with compressions/stretching over more direct matches. Therefore, in this section we chose to opt for a step pattern with the same three possible steps as before (i.e., horizontal, vertical, diagonal), but for which diagonal steps cost as much as horizontal/vertical steps on the final DTW distance. Since distances obtained with this step pattern (``symmetric1'') cannot be normalised by being divided by the sum of the lengths of the template and query, we normalise by dividing the cummulative distance by the length of the optimal path.
 
@@ -549,12 +549,15 @@ $\eta_{ij}$ is defined as in equation \ref{parlato-dur_eq_sim3}
   \label{parlato-dur_eq_sim3}
 \end{equation}
 
-where $\alpha$ is a scaling factor for $DTW_{time}$. Setting $\alpha = 0$, as in Experiment 1, gives an equivalent equation to the one used in section \ref{2-parlato}.
+where $\alpha$ is a scaling factor for $DTW_{time}$. Setting $\alpha = 0$, as in Experiment 1, gives an equation equivalent to the one used in section \ref{2-parlato}.
 
 \subsubsection{Parameter estimation}
-We used grid search in order to optimise parameter $c$, for each language. We classified all exemplars to a category within \textipa{/i, o, u/} in a leave-one-out cross-validation method. Namely, we assessed the accuracy in the classification of tokens with known labels, by measuring their respective similarity to all other exemplars and sampling the classification categories for each.
+We used grid search in order to optimise parameter $c$ for each language, as well as the format of our acoustic features. We classified all $V_1C_1V_3C_2V_3$ exemplars from the BP and JP recordings in section \ref{2-parlato} to a category within \textipa{/i, o, u/} in a leave-one-out cross-validation method. Namely, we assessed the accuracy in the classification of these tokens with known labels, using the classification procedure described above:using DT, we measured their respective similarity to all other exemplars with the same $V_1C_1-C_2V_3$ skeleton, then for each we sampled the classification label from the three possible categories, weighting the sampling probability by the average distance to exemplars of the three categories.
+
 We assessed the optimality of parameter values based not only on mean classification accuracy, but also inspecting median classification accuracy. Indeed, while these two measures are positively correlated, an improvement in median accuracy might not be obvious when inspecting mean accuracy alone. In other words, combinations of parameters with similar mean classification accuracy could differ greatly in median classification accuracy.
-While we aimed to optimise parameters when setting $\alpha = 0$ (baseline models with no duration penalty), as a curious side note, increasing the value of $\alpha$ during cross-validation decreased classification accuracy. However, the resulting degradation in accuracy tended towards zero with increasing values of parameter $c$ such as those chosen for this work.    
+While we aimed to optimise parameters when setting $\alpha = 0$ (baseline models with no duration penalty), as a curious side note, increasing the value of $\alpha$ during cross-validation with BP and JP recordings decreased classification accuracy. However, the resulting degradation in accuracy tended towards zero when increasing values of parameter $c$ such as those chosen for this work.
+
+We found that classification accuracy was worse when including pitch features, delta + delta-delta coefficients, and both, than when only using 13 MFCCs. Therefore, for all experiments in this section, the acoustic input given to our models consisted of 13-dimensional vectors. Concerning parameter $c$, we chose optimal values {\color{red}$c = $ (mean and median accuracies: ) for BP models, and $c = $ (mean and median accuracies: )} for JP models.
 
 %\begin{figure}[h!]
 %  \centering
@@ -599,7 +602,7 @@ We used our exemplar models to simulate the perceptual experiment, setting $\alp
   \centering
   \begin{overpic}[clip, trim=0 0 0 0, page=4, width=0.45\linewidth]{chapter02/parlato_dur.pdf}\end{overpic}
   \begin{overpic}[clip, trim=0 0 0 0, page=5, width=0.45\linewidth]{chapter02/parlato_dur.pdf}\end{overpic}
-  \caption{\textit{}}
+  \caption{\textit{{\color{blue}Responses given by exemplar models with no duration-mismatch penalty ($\alpha = 0$) for BP (left) and JP (right). Numbers indicate trial counts, with darker cell backgrounds representing higher values. Within each 3 x 3 grid, trials are separated according to $V_{1}$ (columns) and $V_{2}$ (rows). Within each individual rectangle, the cluster $C_1$ is given by the horizontal axis, while the vertical axis corresponds to response categories. For instance, the BP model yielded /u/-epenthesis on 37 trials involving $/adC_{2}i/$ items.}}}
   \label{fig:parlato_dur_wdur0_heat}
 \end{figure}
 
@@ -623,51 +626,58 @@ However, the interaction \textsc{Language x NSFV} was significant (mode: $0.96$,
 
 \subsubsection{Experiment 2: Exemplar models with duration penalty}
 
-\paragraph{Setting the duration penalty}
-In order to choose the optimal value for $\alpha$, we computed the distance between the response patterns given by human participants and models, for each item used in the experiment, while varying the value of $w_{time}$. We did this by computing the Euclidean distance between $[h_{i}, h_{o}, h_{u}]$ and $[m_{i}, m_{o}, m_{u}]$, vectors containing the proportion of /i, o, u/ responses given by humans and models, respectively. We normalised distances in order to constrain their values to the interval $[0, 1]$. The variation of the distance between patterns as a function of $w_{time}$ can be seen in Figure \ref{fig:parlato_dur_wdur_eucl}.
+\paragraph{Adding the duration-mismatch penalty}
+In this experiment our aim was to examine, first of all, the effect of an increased duration-mismatch penalty on our models' ability to mirror human performance at the perceptual task. Remember that, when performing parameter estimation with BP and JP items, increasing the weight of the duration-mismatch penalty $DTW_{time}$ resulted in a decrease in classification performance. For our optimal values of parameter $c$ this difference was of {\color{red} X and X in mean classification accuracy for BP and JP, respectively}. Apart from $\alpha$, all model parameters ($c$, feature coefficient selection) are set as in Experiment 1.    
+
+In order to assess the effect of varying $\alpha$ when simulating our non-native speech perception experiment, we computed the distance between response patterns given by human participants and models, for each item used in the experiment, while varying the value of $\alpha$. We did this by computing the Euclidean distance between $[h_{i}, h_{o}, h_{u}]$ and $[m_{i}, m_{o}, m_{u}]$, vectors containing the proportion of /i, o, u/ responses given by humans and models, respectively. We normalised distances in order to constrain their values to the interval $[0, 1]$ (0 corresponding to identical response patterns). The variation of the distance between patterns as a function of $\alpha$ can be seen in Figure \ref{fig:parlato_dur_wdur_eucl}.
+
 \begin{figure}[h!]
   \centering
   \begin{overpic}[clip, trim=0 0 0 0, page=8, width=0.65\linewidth]{chapter02/parlato_dur.pdf}\end{overpic}
-  \caption{\textit{}}
+  \caption{\textit{{\color{blue}Similarity between human and model responses for varying values of the duration-mismatch parameter $\alpha$. Solid lines display the mean similarity, dashed lines display the distribution of proportions across items (median and quartiles).}}}
   \label{fig:parlato_dur_wdur_eucl}
 \end{figure}
 
-Parameter values which minimise the distance between human responses and model responses were $w_{time} = 8$ for BP, and $w_{time} = 3$ for JP. The classification patterns obtained with these parameter values can be seen in Figure \ref{fig:parlato_dur_wdurX_heat}  
+Contrary to what we observed when classifying BP and JP items during parameter optimisation, we observe that increasing the weight of $DTW_{time}$ increases the similarity between model and human responses until a certain value, after which the average similarity decreases.
+In order to examine the best case scenario for models that value duration match between templates and queries, we selected optimal $\alpha$ values for BP and JP, based on the aforementioned response pattern similarity. 
+Parameter values which minimise the distance between human responses and model responses were $\alpha = 8$ for BP, and $\alpha = 3$ for JP. The classification patterns obtained with these parameter values can be seen in Figure \ref{fig:parlato_dur_wdurX_heat}. Do these models better reflect default epenthetic vowel choice and flanking vowel influence than models based solely on spectral features and without duration-mismatch penalties?  
 
 \begin{figure}[h!]
   \centering
   \begin{overpic}[clip, trim=0 0 0 0, page=9, width=0.45\linewidth]{chapter02/parlato_dur.pdf}\end{overpic}
   \begin{overpic}[clip, trim=0 0 0 0, page=10, width=0.45\linewidth]{chapter02/parlato_dur.pdf}\end{overpic}
-  \caption{\textit{}}
+  \caption{\textit{{\color{blue}Responses given by exemplar models with added duration-mismatch penalty for BP (left) and JP (right). Numbers indicate trial counts, with darker cell backgrounds representing higher values. Within each 3 x 3 grid, trials are separated according to $V_{1}$ (columns) and $V_{2}$ (rows). Within each individual rectangle, the cluster $C_1$ is given by the horizontal axis, while the vertical axis corresponds to response categories. For instance, the JP model yielded /u/-epenthesis on 28 trials involving $/ibC_{2}a/$ items.}}}
   \label{fig:parlato_dur_wdurX_heat}
 \end{figure}
 
 \paragraph{/i/-epenthesis}
 The proportion of \textipa{/i/}-epenthesis given by these models is shown on the left panel of Figure \ref{fig:parlato_dur_wdurX_box}.
-The main effect of \textsc{Language} was not significant (mode: $-0.97$, 95\%HPD: $[-6.02, 2.40]$); the models do not appear to reproduce the higher rates of \textipa{/i/}-epenthesis for BP than JP. Note, however, the change in sign of the posterior mode and the shift in HPD interval towards more negative values, compared to values found for \textsc{Language} when there was no duration penalty (mode: $2.85$, HPD: $[-1.48, 8.70]$), reflecting the increase in \textipa{/i/}-epenthesis for the BP model (relative to JP)  with the addition of the duration penalty. Looking at the plot in Figure \ref{fig:parlato_dur_wdurX_box} the fact that \textsc{Language} is not significant might seem surprising. However, note that the interaction \textsc{Language x NSFV} was significant (mode: $-1.02$, 95\%HPD: $[-1.50, -0.47]$). The higher rates of \textipa{/i/}-epenthesis for the BP model relative to the JP model was estimated to be due to a greater effect of flanking vowel for the former.
-Additionally, we found a significant main effect of \textsc{NSFV} (mode: $2.08$, 95\%HPD: $[1.80, 2.31]$); as for human participants, more \textipa{/i/} flanking vowels result in higher rates of \textipa{/i/}-epenthesis by exemplar models with a duration penalty.
+The main effect of \textsc{Language} was not significant (mode: $-0.97$, 95\%HPD: $[-6.02, 2.40]$); the models do not appear to reproduce the higher rates of \textipa{/i/}-epenthesis for BP than JP. Note, however, the change in sign of the posterior mode and the shift in HPD interval towards more negative values, compared to values found for \textsc{Language} when there was no duration penalty (mode: $2.85$, HPD: $[-1.48, 8.70]$), reflecting the increase in \textipa{/i/}-epenthesis for the BP model (relative to JP)  with the addition of the duration penalty. Looking at the plot in Figure \ref{fig:parlato_dur_wdurX_box} the fact that \textsc{Language} is not significant might seem surprising. However, note that the interaction \textsc{Language x NSFV} was significant (mode: $-1.02$, HPD: $[-1.50, -0.47]$). The higher rates of \textipa{/i/}-epenthesis for the BP model relative to the JP model was estimated to be due to a greater effect of flanking vowel for the former.
+Additionally, we found a significant main effect of \textsc{NSFV} (mode: $2.08$, HPD: $[1.80, 2.31]$); as for human participants, more \textipa{/i/} flanking vowels result in higher rates of \textipa{/i/}-epenthesis by exemplar models with a duration penalty.
 
 \begin{figure}[h!]
   \centering
   \begin{overpic}[clip, trim=0 0 0 0, page=11, width=0.45\linewidth]{chapter02/parlato_dur.pdf}\end{overpic}
   \begin{overpic}[clip, trim=0 0 0 0, page=12, width=0.45\linewidth]{chapter02/parlato_dur.pdf}\end{overpic}
   \caption{\textit{{\color{blue}Proportion of \textipa{/i/}-epenthesis (left) and \textipa{/u/}-epenthesis (right) exhibited by BP and JP exemplar models with duration penalty. The box and whiskers plots display the distribution of proportions across $C_1C_2$ clusters (median, quartiles and extrema).}}}
-  \label{parlato_dur_wdurX_box}
+  \label{fig:parlato_dur_wdurX_box}
 \end{figure}
 
 \paragraph{/u/-epenthesis}
 The proportion of \textipa{/u/}-epenthesis given by models with duration penalty is shown on the right panel of Figure \ref{fig:parlato_dur_wdurX_box}.
-The main effect of \textsc{Language} was significant (mode: $2.38$, 95\%HPD: $[0.20, 4.36]$); models with duration penalty seem to reproduce the higher rates of \textipa{/u/}-epenthesis for JP than BP.
-The main effect of \textsc{NSFV} was also significant (mode: $0.45$, 95\%HPD: $[0.23, 0.61]$); models with duration penalties reproduced the tendency to epenthesize \textipa{/u/} more often with more \textipa{/u/} flanking vowels.
-The interaction \textsc{Language x NSFV} was also significant (mode: $-1.21$, 95\%HPD: $[-1.61, -0.86]$).
+The main effect of \textsc{Language} was significant (mode: $2.38$, HPD: $[0.20, 4.36]$); models with duration penalty seem to reproduce the higher rates of \textipa{/u/}-epenthesis for JP than BP.
+The main effect of \textsc{NSFV} was also significant (mode: $0.45$, HPD: $[0.23, 0.61]$); models with duration penalties reproduced the tendency to epenthesize \textipa{/u/} more often with more \textipa{/u/} flanking vowels.
+The interaction \textsc{Language x NSFV} was also significant (mode: $-1.21$, HPD: $[-1.61, -0.86]$).
 
 \subsection{Discussion}
 Summary of the results \\
-- 
+- \\
 
 Limitations \\
 - Absolute duration vs relative duration \\
-- optim within corpus 
+- Optim alpha within corpus using similarity: ideally we would have preferred to optimise this parameters with different data. \\
+- Optim on native items; we don't really know if native speakers would have consistently classified all items as their labels (especially true for items with phonotactically illegal sequences; e.g. aduga in JP; not only vis-à-vis perception but also production of these non-native phoneme sequences: cf variability in valid trials). This may explain fact that increasing alpha always worsened classif performance? \\ 
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%

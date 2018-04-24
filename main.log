@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.26)  23 APR 2018 21:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.26)  24 APR 2018 02:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -820,18 +820,23 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\@ifnextchar' on input line 64.
 
 (./chapters/chapter02.tex
-Overfull \hbox (14.18187pt too wide) in paragraph at lines 28--30
+Overfull \hbox (14.18187pt too wide) in paragraph at lines 26--28
 \OT1/cmr/m/n/12 In the case of per-cep-tual (vowel) epenthe-sis, cer-tain pro-p
 os-als (e.g., [[],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--30
+Underfull \hbox (badness 10000) in paragraph at lines 26--28
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
  []
 
@@ -840,14 +845,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--38
-
- []
-
 [9
 
 ]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\\' on input line 45.
+
+
+Overfull \hbox (19.17351pt too wide) in paragraph at lines 59--60
+\OT1/cmr/m/n/12 nant clus-ters [[], [], [],
+ []
+
+
+Overfull \hbox (4.70836pt too wide) in paragraph at lines 59--60
+\OT1/cmr/m/n/12 fer-ent epenthetic vow-els (\T3/cmr/m/n/12 /1/ \OT1/cmr/m/n/12 
+in Ko-rean [[], [],
+ []
+
+
+Overfull \hbox (32.56412pt too wide) in paragraph at lines 59--60
+[]\OT1/cmr/m/n/12 ]; schwa in En-glish [[], []];
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -855,28 +875,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [10]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 47.
-
-
-Overfull \hbox (19.17351pt too wide) in paragraph at lines 61--62
-\OT1/cmr/m/n/12 nant clus-ters [[], [], [],
- []
-
-
-Overfull \hbox (4.70836pt too wide) in paragraph at lines 61--62
-\OT1/cmr/m/n/12 fer-ent epenthetic vow-els (\T3/cmr/m/n/12 /1/ \OT1/cmr/m/n/12 
-in Ko-rean [[], [],
- []
-
-
-Overfull \hbox (32.56412pt too wide) in paragraph at lines 61--62
-[]\OT1/cmr/m/n/12 ]; schwa in En-glish [[], []];
- []
-
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 64.
+(Font)              <5> on input line 62.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 27.18335pt.
@@ -891,21 +892,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [12]
-<images/chapter02/ahpa_uep-copyep.pdf, id=408, page=1, 289.08pt x 289.08pt>
+<images/chapter02/ahpa_uep-copyep.pdf, id=409, page=1, 289.08pt x 289.08pt>
 File: images/chapter02/ahpa_uep-copyep.pdf Graphic file (type pdf)
 <use images/chapter02/ahpa_uep-copyep.pdf, page 1>
 Package pdftex.def Info: images/chapter02/ahpa_uep-copyep.pdf , page1 used on i
-nput line 101.
+nput line 99.
 (pdftex.def)             Requested size: 192.0548pt x 192.05493pt.
-<images/chapter02/ahpa_uep-copyep.pdf, id=409, page=2, 289.08pt x 289.08pt>
+<images/chapter02/ahpa_uep-copyep.pdf, id=410, page=2, 289.08pt x 289.08pt>
 File: images/chapter02/ahpa_uep-copyep.pdf Graphic file (type pdf)
 <use images/chapter02/ahpa_uep-copyep.pdf, page 2>
 Package pdftex.def Info: images/chapter02/ahpa_uep-copyep.pdf , page2 used on i
-nput line 103.
+nput line 101.
 (pdftex.def)             Requested size: 192.0548pt x 192.05493pt.
-
-Underfull \vbox (badness 2735) has occurred while \output is active []
-
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -913,17 +911,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13]
-<images/chapter02/ahpa_tiles.pdf, id=418, page=1, 469.755pt x 216.81pt>
+[13 <./images/chapter02/ahpa_uep-copyep.pdf> <./images/chapter02/ahpa_uep-copye
+p.pdf>]
+<images/chapter02/ahpa_tiles.pdf, id=426, page=1, 469.755pt x 216.81pt>
 File: images/chapter02/ahpa_tiles.pdf Graphic file (type pdf)
 <use images/chapter02/ahpa_tiles.pdf, page 1>
 Package pdftex.def Info: images/chapter02/ahpa_tiles.pdf , page1 used on input 
-line 119.
+line 117.
 (pdftex.def)             Requested size: 384.10959pt x 177.28249pt.
 
 
 LaTeX Font Warning: Font shape `T3/cmr/m/it' in size <12> not available
-(Font)              Font shape `T3/cmr/m/sl' tried instead on input line 120.
+(Font)              Font shape `T3/cmr/m/sl' tried instead on input line 118.
+
+
+LaTeX Warning: Citation `[' on page 14 undefined on input line 125.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -931,20 +933,25 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14 <./images/chapter02/ahpa_uep-copyep.pdf> <./images/chapter02/ahpa_uep-copye
-p.pdf>]
-
-LaTeX Warning: Citation `[' on page 15 undefined on input line 127.
-
+[14 <./images/chapter02/ahpa_tiles.pdf>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 27.18335pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15 <./images/chapter02/ahpa_tiles.pdf>]
+[15]
 
-LaTeX Warning: Citation `[' on page 16 undefined on input line 160.
+LaTeX Warning: Citation `[' on page 16 undefined on input line 158.
+
+<images/chapter02/ahpa_acoustic.pdf, id=459, page=1, 505.89pt x 505.89pt>
+File: images/chapter02/ahpa_acoustic.pdf Graphic file (type pdf)
+<use images/chapter02/ahpa_acoustic.pdf, page 1>
+Package pdftex.def Info: images/chapter02/ahpa_acoustic.pdf , page1 used on inp
+ut line 166.
+(pdftex.def)             Requested size: 298.75262pt x 298.75812pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -953,74 +960,70 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [16]
-<images/chapter02/ahpa_acoustic.pdf, id=463, page=1, 505.89pt x 505.89pt>
-File: images/chapter02/ahpa_acoustic.pdf Graphic file (type pdf)
-<use images/chapter02/ahpa_acoustic.pdf, page 1>
-Package pdftex.def Info: images/chapter02/ahpa_acoustic.pdf , page1 used on inp
-ut line 168.
-(pdftex.def)             Requested size: 298.75262pt x 298.75812pt.
+
+LaTeX Warning: Citation `[' on page 17 undefined on input line 174.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: Citation `[' on page 17 undefined on input line 176.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 27.18335pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[17]
 Underfull \vbox (badness 5908) has occurred while \output is active []
 
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
+ Make it at least 27.18335pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[18 <./images/chapter02/ahpa_acoustic.pdf>]
-<images/chapter02/ahpa_tiles.pdf, id=502, page=4, 469.755pt x 216.81pt>
+[17 <./images/chapter02/ahpa_acoustic.pdf>]
+<images/chapter02/ahpa_tiles.pdf, id=497, page=4, 469.755pt x 216.81pt>
 File: images/chapter02/ahpa_tiles.pdf Graphic file (type pdf)
 <use images/chapter02/ahpa_tiles.pdf, page 4>
 Package pdftex.def Info: images/chapter02/ahpa_tiles.pdf , page4 used on input 
-line 184.
+line 182.
 (pdftex.def)             Requested size: 384.10959pt x 177.28249pt.
-<images/chapter02/ahpa_tiles.pdf, id=503, page=3, 469.755pt x 216.81pt>
+<images/chapter02/ahpa_tiles.pdf, id=498, page=3, 469.755pt x 216.81pt>
 File: images/chapter02/ahpa_tiles.pdf Graphic file (type pdf)
 <use images/chapter02/ahpa_tiles.pdf, page 3>
 Package pdftex.def Info: images/chapter02/ahpa_tiles.pdf , page3 used on input 
-line 185.
+line 183.
 (pdftex.def)             Requested size: 384.10959pt x 177.28249pt.
-<images/chapter02/ahpa_tiles.pdf, id=504, page=2, 469.755pt x 216.81pt>
+<images/chapter02/ahpa_tiles.pdf, id=499, page=2, 469.755pt x 216.81pt>
 File: images/chapter02/ahpa_tiles.pdf Graphic file (type pdf)
 <use images/chapter02/ahpa_tiles.pdf, page 2>
 Package pdftex.def Info: images/chapter02/ahpa_tiles.pdf , page2 used on input 
-line 186.
+line 184.
 (pdftex.def)             Requested size: 384.10959pt x 177.28249pt.
 
-Overfull \hbox (12.08005pt too wide) in paragraph at lines 193--194
+Overfull \hbox (12.08005pt too wide) in paragraph at lines 191--192
 \OT1/cmr/m/n/12 of the item's seg-ments. As in pre-vi-ous work [[], []],
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
-
-LaTeX Warning: Reference `table:ahpa_ab_pairs' on page 19 undefined on input li
-ne 231.
-
+[18]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 27.18335pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[19]
-Underfull \vbox (badness 4132) has occurred while \output is active []
+[19 <./images/chapter02/ahpa_tiles.pdf> <./images/chapter02/ahpa_tiles.pdf> <./
+images/chapter02/ahpa_tiles.pdf>]
+
+LaTeX Warning: Reference `table:ahpa_ab_pairs' on page 20 undefined on input li
+ne 229.
+
+<images/chapter02/ahpa_figs.pdf, id=524, page=5, 505.89pt x 289.08pt>
+File: images/chapter02/ahpa_figs.pdf Graphic file (type pdf)
+<use images/chapter02/ahpa_figs.pdf, page 5>
+Package pdftex.def Info: images/chapter02/ahpa_figs.pdf , page5 used on input l
+ine 237.
+(pdftex.def)             Requested size: 426.79134pt x 243.88417pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
@@ -1029,15 +1032,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[20 <./images/chapter02/ahpa_tiles.pdf> <./images/chapter02/ahpa_tiles.pdf> <./
-images/chapter02/ahpa_tiles.pdf>]
-<images/chapter02/ahpa_figs.pdf, id=529, page=5, 505.89pt x 289.08pt>
-File: images/chapter02/ahpa_figs.pdf Graphic file (type pdf)
-<use images/chapter02/ahpa_figs.pdf, page 5>
-Package pdftex.def Info: images/chapter02/ahpa_figs.pdf , page5 used on input l
-ine 239.
-(pdftex.def)             Requested size: 426.79134pt x 243.88417pt.
-
+[20]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 27.18335pt.
@@ -1049,11 +1044,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: images/chapter02/ahpa_figs.pdf Graphic file (type pdf)
 <use images/chapter02/ahpa_figs.pdf, page 6>
 Package pdftex.def Info: images/chapter02/ahpa_figs.pdf , page6 used on input l
-ine 265.
+ine 263.
 (pdftex.def)             Requested size: 398.33644pt x 227.62204pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1061,23 +1053,30 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[22]
-Overfull \hbox (13.48637pt too wide) in paragraph at lines 280--280
+[22 <./images/chapter02/ahpa_figs.pdf>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 27.18335pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[23]
+Overfull \hbox (13.48637pt too wide) in paragraph at lines 277--277
 []\OT1/cmr/bx/n/17.28 Predicting epenthetic vowel qual-ity from acous-
  []
 
 
-Overfull \hbox (62.8786pt too wide) in paragraph at lines 290--292
+Overfull \hbox (62.8786pt too wide) in paragraph at lines 287--289
 \OT1/cmr/m/n/12 vow-els within il-le-gal con-so-nan-tal se-quences [[], [],
  []
 
 
-Overfull \hbox (25.95398pt too wide) in paragraph at lines 290--292
+Overfull \hbox (25.95398pt too wide) in paragraph at lines 287--289
 []\OT1/cmr/m/n/12 , [], [], [],
  []
 
 
-Overfull \hbox (4.43846pt too wide) in paragraph at lines 290--292
+Overfull \hbox (4.43846pt too wide) in paragraph at lines 287--289
 []\OT1/cmr/m/n/12 , [], []]. This sug-
  []
 
@@ -1087,11 +1086,26 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[23 <./images/chapter02/ahpa_figs.pdf>]
-Overfull \hbox (15.19446pt too wide) in paragraph at lines 302--303
+[24]
+Overfull \hbox (15.19446pt too wide) in paragraph at lines 299--300
 \OT1/cmr/m/n/12 Statistical anal-y-ses were per-formed with the R sta-tis-ti-ca
 l soft-ware [[]],
  []
+
+<images/chapter02/parlato_tiles.pdf, id=590, page=1, 307.1475pt x 325.215pt>
+File: images/chapter02/parlato_tiles.pdf Graphic file (type pdf)
+<use images/chapter02/parlato_tiles.pdf, page 1>
+Package pdftex.def Info: images/chapter02/parlato_tiles.pdf , page1 used on inp
+ut line 305.
+(pdftex.def)             Requested size: 213.39566pt x 225.95181pt.
+<images/chapter02/parlato_tiles.pdf, id=591, page=2, 307.1475pt x 325.215pt>
+File: images/chapter02/parlato_tiles.pdf Graphic file (type pdf)
+<use images/chapter02/parlato_tiles.pdf, page 2>
+Package pdftex.def Info: images/chapter02/parlato_tiles.pdf , page2 used on inp
+ut line 306.
+(pdftex.def)             Requested size: 213.39566pt x 225.95181pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1099,40 +1113,25 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[24]
-<images/chapter02/parlato_tiles.pdf, id=595, page=1, 307.1475pt x 325.215pt>
-File: images/chapter02/parlato_tiles.pdf Graphic file (type pdf)
-<use images/chapter02/parlato_tiles.pdf, page 1>
-Package pdftex.def Info: images/chapter02/parlato_tiles.pdf , page1 used on inp
-ut line 308.
-(pdftex.def)             Requested size: 213.39566pt x 225.95181pt.
-<images/chapter02/parlato_tiles.pdf, id=596, page=2, 307.1475pt x 325.215pt>
-File: images/chapter02/parlato_tiles.pdf Graphic file (type pdf)
-<use images/chapter02/parlato_tiles.pdf, page 2>
-Package pdftex.def Info: images/chapter02/parlato_tiles.pdf , page2 used on inp
-ut line 309.
-(pdftex.def)             Requested size: 213.39566pt x 225.95181pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<images/chapter02/parlato_per_iou.pdf, id=600, page=1, 289.08pt x 216.81pt>
+[25]
+<images/chapter02/parlato_per_iou.pdf, id=609, page=1, 289.08pt x 216.81pt>
 File: images/chapter02/parlato_per_iou.pdf Graphic file (type pdf)
 <use images/chapter02/parlato_per_iou.pdf, page 1>
 Package pdftex.def Info: images/chapter02/parlato_per_iou.pdf , page1 used on i
-nput line 343.
+nput line 340.
 (pdftex.def)             Requested size: 192.0548pt x 144.0412pt.
-<images/chapter02/parlato_per_iou.pdf, id=601, page=2, 289.08pt x 216.81pt>
+<images/chapter02/parlato_per_iou.pdf, id=610, page=2, 289.08pt x 216.81pt>
 File: images/chapter02/parlato_per_iou.pdf Graphic file (type pdf)
 <use images/chapter02/parlato_per_iou.pdf, page 2>
 Package pdftex.def Info: images/chapter02/parlato_per_iou.pdf , page2 used on i
-nput line 345.
+nput line 342.
 (pdftex.def)             Requested size: 192.0548pt x 144.0412pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (14.63045pt too wide) in paragraph at lines 350--351
+Overfull \hbox (14.63045pt too wide) in paragraph at lines 347--348
 \OT1/cmr/m/n/12 pants were over-all more prone to per-ceiv-ing an epenthetic /u
 / if one ($137\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m/
 n/12 [90\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 6\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1
@@ -1145,28 +1144,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[25]
-Underfull \vbox (badness 1221) has occurred while \output is active []
-
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
 [26 <./images/chapter02/parlato_tiles.pdf> <./images/chapter02/parlato_tiles.pd
 f>]
-<images/chapter02/parlato_acoustic.pdf, id=628, page=1, 505.89pt x 216.81pt>
-File: images/chapter02/parlato_acoustic.pdf Graphic file (type pdf)
-<use images/chapter02/parlato_acoustic.pdf, page 1>
-Package pdftex.def Info: images/chapter02/parlato_acoustic.pdf , page1 used on 
-input line 369.
-(pdftex.def)             Requested size: 384.10959pt x 164.62181pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1175,17 +1154,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [27 <./images/chapter02/parlato_per_iou.pdf> <./images/chapter02/parlato_per_io
 u.pdf>]
-<images/chapter02/parlato_acoustic.pdf, id=651, page=2, 505.89pt x 216.81pt>
+<images/chapter02/parlato_acoustic.pdf, id=643, page=1, 505.89pt x 216.81pt>
+File: images/chapter02/parlato_acoustic.pdf Graphic file (type pdf)
+<use images/chapter02/parlato_acoustic.pdf, page 1>
+Package pdftex.def Info: images/chapter02/parlato_acoustic.pdf , page1 used on 
+input line 366.
+(pdftex.def)             Requested size: 384.10959pt x 164.62181pt.
+<images/chapter02/parlato_acoustic.pdf, id=646, page=2, 505.89pt x 216.81pt>
 File: images/chapter02/parlato_acoustic.pdf Graphic file (type pdf)
 <use images/chapter02/parlato_acoustic.pdf, page 2>
 Package pdftex.def Info: images/chapter02/parlato_acoustic.pdf , page2 used on 
-input line 380.
-(pdftex.def)             Requested size: 384.10959pt x 164.62181pt.
-<images/chapter02/parlato_acoustic.pdf, id=654, page=3, 505.89pt x 216.81pt>
-File: images/chapter02/parlato_acoustic.pdf Graphic file (type pdf)
-<use images/chapter02/parlato_acoustic.pdf, page 3>
-Package pdftex.def Info: images/chapter02/parlato_acoustic.pdf , page3 used on 
-input line 392.
+input line 377.
 (pdftex.def)             Requested size: 384.10959pt x 164.62181pt.
 
 
@@ -1197,7 +1176,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[28 <./images/chapter02/parlato_acoustic.pdf> <./images/chapter02/parlato_acous
+[28 <./images/chapter02/parlato_acoustic.pdf>]
+<images/chapter02/parlato_acoustic.pdf, id=669, page=3, 505.89pt x 216.81pt>
+File: images/chapter02/parlato_acoustic.pdf Graphic file (type pdf)
+<use images/chapter02/parlato_acoustic.pdf, page 3>
+Package pdftex.def Info: images/chapter02/parlato_acoustic.pdf , page3 used on 
+input line 389.
+(pdftex.def)             Requested size: 384.10959pt x 164.62181pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[29 <./images/chapter02/parlato_acoustic.pdf> <./images/chapter02/parlato_acous
 tic.pdf>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1205,68 +1198,57 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[29 <./images/chapter02/parlato_acoustic.pdf>]
-<images/chapter02/parlato_fig2.pdf, id=689, 361.35pt x 216.81pt>
+[30]
+<images/chapter02/parlato_fig2.pdf, id=697, 361.35pt x 216.81pt>
 File: images/chapter02/parlato_fig2.pdf Graphic file (type pdf)
 <use images/chapter02/parlato_fig2.pdf>
 Package pdftex.def Info: images/chapter02/parlato_fig2.pdf  used on input line 
-423.
+420.
 (pdftex.def)             Requested size: 320.09349pt x 192.05713pt.
-<images/chapter02/parlato_tiles.pdf, id=691, page=3, 307.1475pt x 325.215pt>
+<images/chapter02/parlato_tiles.pdf, id=699, page=3, 307.1475pt x 325.215pt>
 File: images/chapter02/parlato_tiles.pdf Graphic file (type pdf)
 <use images/chapter02/parlato_tiles.pdf, page 3>
 Package pdftex.def Info: images/chapter02/parlato_tiles.pdf , page3 used on inp
-ut line 433.
+ut line 430.
 (pdftex.def)             Requested size: 149.37956pt x 158.16577pt.
-<images/chapter02/parlato_tiles.pdf, id=693, page=5, 307.1475pt x 325.215pt>
+<images/chapter02/parlato_tiles.pdf, id=701, page=5, 307.1475pt x 325.215pt>
 File: images/chapter02/parlato_tiles.pdf Graphic file (type pdf)
 <use images/chapter02/parlato_tiles.pdf, page 5>
 Package pdftex.def Info: images/chapter02/parlato_tiles.pdf , page5 used on inp
-ut line 436.
+ut line 433.
 (pdftex.def)             Requested size: 149.37956pt x 158.16577pt.
-<images/chapter02/parlato_tiles.pdf, id=695, page=4, 307.1475pt x 325.215pt>
+<images/chapter02/parlato_tiles.pdf, id=703, page=4, 307.1475pt x 325.215pt>
 File: images/chapter02/parlato_tiles.pdf Graphic file (type pdf)
 <use images/chapter02/parlato_tiles.pdf, page 4>
 Package pdftex.def Info: images/chapter02/parlato_tiles.pdf , page4 used on inp
-ut line 442.
+ut line 439.
 (pdftex.def)             Requested size: 149.37956pt x 158.16577pt.
-<images/chapter02/parlato_tiles.pdf, id=697, page=6, 307.1475pt x 325.215pt>
+<images/chapter02/parlato_tiles.pdf, id=705, page=6, 307.1475pt x 325.215pt>
 File: images/chapter02/parlato_tiles.pdf Graphic file (type pdf)
 <use images/chapter02/parlato_tiles.pdf, page 6>
 Package pdftex.def Info: images/chapter02/parlato_tiles.pdf , page6 used on inp
-ut line 445.
+ut line 442.
 (pdftex.def)             Requested size: 149.37956pt x 158.16577pt.
 
-Overfull \hbox (2.63145pt too wide) in paragraph at lines 453--456
+Overfull \hbox (2.63145pt too wide) in paragraph at lines 450--453
  []\OT1/cmr/bx/n/12 /i/-epenthesis[] \OT1/cmr/m/n/12 The left panel of Fig-ure 
 [][]2.14[][] shows the pro-por-tion of /i/-epenthesis
  []
 
-<images/chapter02/parlato_per_iou.pdf, id=700, page=3, 289.08pt x 216.81pt>
+<images/chapter02/parlato_per_iou.pdf, id=708, page=3, 289.08pt x 216.81pt>
 File: images/chapter02/parlato_per_iou.pdf Graphic file (type pdf)
 <use images/chapter02/parlato_per_iou.pdf, page 3>
 Package pdftex.def Info: images/chapter02/parlato_per_iou.pdf , page3 used on i
-nput line 459.
+nput line 456.
 (pdftex.def)             Requested size: 192.0548pt x 144.0412pt.
-<images/chapter02/parlato_per_iou.pdf, id=701, page=4, 289.08pt x 216.81pt>
+<images/chapter02/parlato_per_iou.pdf, id=709, page=4, 289.08pt x 216.81pt>
 File: images/chapter02/parlato_per_iou.pdf Graphic file (type pdf)
 <use images/chapter02/parlato_per_iou.pdf, page 4>
 Package pdftex.def Info: images/chapter02/parlato_per_iou.pdf , page4 used on i
-nput line 461.
+nput line 458.
 (pdftex.def)             Requested size: 192.0548pt x 144.0412pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[30]
-Overfull \hbox (20.4832pt too wide) in paragraph at lines 476--477
-\OT1/cmr/m/n/12 tion task, we cor-rob-o-rated pre-vi-ous find-ings ([[], []])
- []
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1288,9 +1270,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 f> <./images/chapter02/parlato_tiles.pdf> <./images/chapter02/parlato_tiles.pdf
 > <./images/chapter02/parlato_per_iou.pdf> <./images/chapter02/parlato_per_iou.
 pdf>]
+Overfull \hbox (20.4832pt too wide) in paragraph at lines 473--474
+\OT1/cmr/m/n/12 tion task, we cor-rob-o-rated pre-vi-ous find-ings ([[], []])
+ []
+
 
 LaTeX Warning: Reference `fig:per&model_responses' on page 33 undefined on inpu
-t line 478.
+t line 475.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1299,7 +1285,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [33]
-Overfull \hbox (13.48637pt too wide) in paragraph at lines 491--491
+Overfull \hbox (13.48637pt too wide) in paragraph at lines 488--488
 []\OT1/cmr/bx/n/17.28 Predicting epenthetic vowel qual-ity from acous-
  []
 
@@ -1310,10 +1296,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [34]
-Overfull \hbox (6.2626pt too wide) in paragraph at lines 526--528
+Overfull \hbox (6.2626pt too wide) in paragraph at lines 525--527
 \OT1/cmr/m/n/12 by the exemplar-based gen-er-al-ized con-text model (GCM) de-ta
 iled by [[]],
  []
+
+
+Underfull \vbox (badness 1057) has occurred while \output is active []
+
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1322,16 +1312,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [35]
-Overfull \hbox (15.19446pt too wide) in paragraph at lines 568--569
+Overfull \hbox (15.19446pt too wide) in paragraph at lines 570--571
 \OT1/cmr/m/n/12 Statistical anal-y-ses were per-formed with the R sta-tis-ti-ca
 l soft-ware [[]],
- []
-
-
-Overfull \hbox (2.63145pt too wide) in paragraph at lines 576--580
- []\OT1/cmr/bx/n/12 /i/-epenthesis[] \OT1/cmr/m/n/12 The left panel of Fig-ure 
-[][]2.15[][] shows the pro-por-tion of \T3/cmr/m/n/12 /i/\OT1/cmr/m/n/12 -epent
-hesis
  []
 
 
@@ -1341,53 +1324,47 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [36]
-<images/chapter02/parlato_dur.pdf, id=827, page=2, 361.35pt x 289.08pt>
+Overfull \hbox (2.63145pt too wide) in paragraph at lines 578--582
+ []\OT1/cmr/bx/n/12 /i/-epenthesis[] \OT1/cmr/m/n/12 The left panel of Fig-ure 
+[][]2.15[][] shows the pro-por-tion of \T3/cmr/m/n/12 /i/\OT1/cmr/m/n/12 -epent
+hesis
+ []
+
+<images/chapter02/parlato_dur.pdf, id=821, page=2, 361.35pt x 289.08pt>
 File: images/chapter02/parlato_dur.pdf Graphic file (type pdf)
 <use images/chapter02/parlato_dur.pdf, page 2>
 Package pdftex.def Info: images/chapter02/parlato_dur.pdf , page2 used on input
- line 583.
+ line 585.
 (pdftex.def)             Requested size: 192.0548pt x 153.64394pt.
-<images/chapter02/parlato_dur.pdf, id=829, page=3, 361.35pt x 289.08pt>
+<images/chapter02/parlato_dur.pdf, id=823, page=3, 361.35pt x 289.08pt>
 File: images/chapter02/parlato_dur.pdf Graphic file (type pdf)
 <use images/chapter02/parlato_dur.pdf, page 3>
 Package pdftex.def Info: images/chapter02/parlato_dur.pdf , page3 used on input
- line 584.
+ line 586.
 (pdftex.def)             Requested size: 192.0548pt x 153.64394pt.
-<images/chapter02/parlato_dur.pdf, id=834, page=4, 361.35pt x 289.08pt>
-File: images/chapter02/parlato_dur.pdf Graphic file (type pdf)
-<use images/chapter02/parlato_dur.pdf, page 4>
-Package pdftex.def Info: images/chapter02/parlato_dur.pdf , page4 used on input
- line 601.
-(pdftex.def)             Requested size: 192.0548pt x 153.64394pt.
-<images/chapter02/parlato_dur.pdf, id=836, page=5, 361.35pt x 289.08pt>
-File: images/chapter02/parlato_dur.pdf Graphic file (type pdf)
-<use images/chapter02/parlato_dur.pdf, page 5>
-Package pdftex.def Info: images/chapter02/parlato_dur.pdf , page5 used on input
- line 602.
-(pdftex.def)             Requested size: 192.0548pt x 153.64394pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/chapter02/parlato_dur.pdf, id=839, page=6, 361.35pt x 289.08pt>
-File: images/chapter02/parlato_dur.pdf Graphic file (type pdf)
-<use images/chapter02/parlato_dur.pdf, page 6>
-Package pdftex.def Info: images/chapter02/parlato_dur.pdf , page6 used on input
- line 615.
-(pdftex.def)             Requested size: 192.0548pt x 153.64394pt.
-<images/chapter02/parlato_dur.pdf, id=841, page=7, 361.35pt x 289.08pt>
-File: images/chapter02/parlato_dur.pdf Graphic file (type pdf)
-<use images/chapter02/parlato_dur.pdf, page 7>
-Package pdftex.def Info: images/chapter02/parlato_dur.pdf , page7 used on input
- line 616.
-(pdftex.def)             Requested size: 192.0548pt x 153.64394pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[37 <./images/chapter02/parlato_dur.pdf> <./images/chapter02/parlato_dur.pdf>]
+[37]
+<images/chapter02/parlato_dur.pdf, id=841, page=4, 361.35pt x 289.08pt>
+File: images/chapter02/parlato_dur.pdf Graphic file (type pdf)
+<use images/chapter02/parlato_dur.pdf, page 4>
+Package pdftex.def Info: images/chapter02/parlato_dur.pdf , page4 used on input
+ line 603.
+(pdftex.def)             Requested size: 192.0548pt x 153.64394pt.
+<images/chapter02/parlato_dur.pdf, id=843, page=5, 361.35pt x 289.08pt>
+File: images/chapter02/parlato_dur.pdf Graphic file (type pdf)
+<use images/chapter02/parlato_dur.pdf, page 5>
+Package pdftex.def Info: images/chapter02/parlato_dur.pdf , page5 used on input
+ line 604.
+(pdftex.def)             Requested size: 192.0548pt x 153.64394pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1396,62 +1373,69 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [38 <./images/chapter02/parlato_dur.pdf> <./images/chapter02/parlato_dur.pdf> <
 ./images/chapter02/parlato_dur.pdf> <./images/chapter02/parlato_dur.pdf>]
-<images/chapter02/parlato_dur.pdf, id=879, page=8, 361.35pt x 289.08pt>
+<images/chapter02/parlato_dur.pdf, id=870, page=6, 361.35pt x 289.08pt>
+File: images/chapter02/parlato_dur.pdf Graphic file (type pdf)
+<use images/chapter02/parlato_dur.pdf, page 6>
+Package pdftex.def Info: images/chapter02/parlato_dur.pdf , page6 used on input
+ line 617.
+(pdftex.def)             Requested size: 192.0548pt x 153.64394pt.
+<images/chapter02/parlato_dur.pdf, id=872, page=7, 361.35pt x 289.08pt>
+File: images/chapter02/parlato_dur.pdf Graphic file (type pdf)
+<use images/chapter02/parlato_dur.pdf, page 7>
+Package pdftex.def Info: images/chapter02/parlato_dur.pdf , page7 used on input
+ line 618.
+(pdftex.def)             Requested size: 192.0548pt x 153.64394pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[39 <./images/chapter02/parlato_dur.pdf> <./images/chapter02/parlato_dur.pdf>]
+<images/chapter02/parlato_dur.pdf, id=898, page=8, 361.35pt x 289.08pt>
 File: images/chapter02/parlato_dur.pdf Graphic file (type pdf)
 <use images/chapter02/parlato_dur.pdf, page 8>
 Package pdftex.def Info: images/chapter02/parlato_dur.pdf , page8 used on input
- line 631.
+ line 636.
 (pdftex.def)             Requested size: 277.41176pt x 221.93063pt.
-<images/chapter02/parlato_dur.pdf, id=882, page=9, 361.35pt x 289.08pt>
+<images/chapter02/parlato_dur.pdf, id=901, page=9, 361.35pt x 289.08pt>
 File: images/chapter02/parlato_dur.pdf Graphic file (type pdf)
 <use images/chapter02/parlato_dur.pdf, page 9>
 Package pdftex.def Info: images/chapter02/parlato_dur.pdf , page9 used on input
- line 640.
+ line 647.
 (pdftex.def)             Requested size: 192.0548pt x 153.64394pt.
-<images/chapter02/parlato_dur.pdf, id=884, page=10, 361.35pt x 289.08pt>
+<images/chapter02/parlato_dur.pdf, id=903, page=10, 361.35pt x 289.08pt>
 File: images/chapter02/parlato_dur.pdf Graphic file (type pdf)
 <use images/chapter02/parlato_dur.pdf, page 10>
 Package pdftex.def Info: images/chapter02/parlato_dur.pdf , page10 used on inpu
-t line 641.
+t line 648.
 (pdftex.def)             Requested size: 192.0548pt x 153.64394pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Reference `fig:parlato_dur_wdurX_box' on page 39 undefined on in
-put line 647.
-
-
-LaTeX Warning: Reference `fig:parlato_dur_wdurX_box' on page 39 undefined on in
-put line 648.
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[39 <./images/chapter02/parlato_dur.pdf>]
-<images/chapter02/parlato_dur.pdf, id=908, page=11, 361.35pt x 289.08pt>
+[40 <./images/chapter02/parlato_dur.pdf>]
+<images/chapter02/parlato_dur.pdf, id=928, page=11, 361.35pt x 289.08pt>
 File: images/chapter02/parlato_dur.pdf Graphic file (type pdf)
 <use images/chapter02/parlato_dur.pdf, page 11>
 Package pdftex.def Info: images/chapter02/parlato_dur.pdf , page11 used on inpu
-t line 653.
+t line 660.
 (pdftex.def)             Requested size: 192.0548pt x 153.64394pt.
-<images/chapter02/parlato_dur.pdf, id=910, page=12, 361.35pt x 289.08pt>
+<images/chapter02/parlato_dur.pdf, id=930, page=12, 361.35pt x 289.08pt>
 File: images/chapter02/parlato_dur.pdf Graphic file (type pdf)
 <use images/chapter02/parlato_dur.pdf, page 12>
 Package pdftex.def Info: images/chapter02/parlato_dur.pdf , page12 used on inpu
-t line 654.
+t line 661.
 (pdftex.def)             Requested size: 192.0548pt x 153.64394pt.
 
-
-LaTeX Warning: Reference `fig:parlato_dur_wdurX_box' on page 40 undefined on in
-put line 660.
-
-
-Underfull \vbox (badness 6608) has occurred while \output is active []
+Underfull \vbox (badness 4072) has occurred while \output is active []
 
 
 
@@ -1460,57 +1444,66 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[40 <./images/chapter02/parlato_dur.pdf> <./images/chapter02/parlato_dur.pdf> <
+[41 <./images/chapter02/parlato_dur.pdf> <./images/chapter02/parlato_dur.pdf> <
 ./images/chapter02/parlato_dur.pdf> <./images/chapter02/parlato_dur.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 673--675
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 676--680
+
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[41]
-Overfull \hbox (82.39645pt too wide) in paragraph at lines 682--683
+[42]
+Overfull \hbox (82.39645pt too wide) in paragraph at lines 691--692
 \OT1/cmr/m/n/12 Similarly to what has been pre-vi-ously ob-served [[], [],
  []
 
 
-Overfull \hbox (7.60565pt too wide) in paragraph at lines 682--683
+Overfull \hbox (7.60565pt too wide) in paragraph at lines 691--692
 []\OT1/cmr/m/n/12 , [], []][CITE], I find that
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 682--683
+Underfull \hbox (badness 10000) in paragraph at lines 691--692
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 684--685
+Underfull \hbox (badness 10000) in paragraph at lines 693--694
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 686--687
+Underfull \hbox (badness 10000) in paragraph at lines 695--696
 
  []
 
 
-Overfull \hbox (0.95313pt too wide) in paragraph at lines 688--689
+Overfull \hbox (0.95313pt too wide) in paragraph at lines 697--698
 []\OT1/cmr/m/n/12 Concerning the mod-els' fail-ure to re-pro-duce language-spec
 ific de-fault epenthetic
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 688--689
+Underfull \hbox (badness 10000) in paragraph at lines 697--698
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 690--691
+Underfull \hbox (badness 10000) in paragraph at lines 699--700
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 692--693
+Underfull \hbox (badness 10000) in paragraph at lines 701--702
 
  []
 
@@ -1520,16 +1513,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[42])
+[43])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[43]
+[44]
 Chapter 3.
-(./chapters/chapter03.tex [44
+(./chapters/chapter03.tex [45
 
 ]
 
@@ -1542,8 +1535,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[45]
-<images/chapter03/parlato_hmm_Gfst.pdf, id=971, 614.295pt x 197.73875pt>
+[46]
+<images/chapter03/parlato_hmm_Gfst.pdf, id=991, 614.295pt x 197.73875pt>
 File: images/chapter03/parlato_hmm_Gfst.pdf Graphic file (type pdf)
 <use images/chapter03/parlato_hmm_Gfst.pdf>
 Package pdftex.def Info: images/chapter03/parlato_hmm_Gfst.pdf  used on input l
@@ -1551,7 +1544,7 @@ ine 109.
 (pdftex.def)             Requested size: 341.43436pt x 109.90622pt.
 
 
-LaTeX Warning: Reference `' on page 46 undefined on input line 115.
+LaTeX Warning: Reference `' on page 47 undefined on input line 115.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1559,13 +1552,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[46 <./images/chapter03/parlato_hmm_Gfst.pdf>]
+[47 <./images/chapter03/parlato_hmm_Gfst.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\@ifnextchar' on input line 132.
 
 
-LaTeX Warning: Reference `3-parlato2' on page 47 undefined on input line 141.
+LaTeX Warning: Reference `3-parlato2' on page 48 undefined on input line 141.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1573,8 +1566,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[47]
-<images/chapter03/m-ahpa_Gfst.pdf, id=1000, 614.295pt x 207.77625pt>
+[48]
+<images/chapter03/m-ahpa_Gfst.pdf, id=1020, 614.295pt x 207.77625pt>
 File: images/chapter03/m-ahpa_Gfst.pdf Graphic file (type pdf)
 <use images/chapter03/m-ahpa_Gfst.pdf>
 Package pdftex.def Info: images/chapter03/m-ahpa_Gfst.pdf  used on input line 1
@@ -1592,18 +1585,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[48 <./images/chapter03/m-ahpa_Gfst.pdf>]
+[49 <./images/chapter03/m-ahpa_Gfst.pdf>]
 Chapter 4.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\@ifnextchar' on input line 70.
 
-(./chapters/chapter04.tex) [49
+(./chapters/chapter04.tex) [50
 
 ]
 Chapter 5.
 (./chapters/chapter06-disc.tex) (./chapters/appendix.tex
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=102
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=104
 0, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1617,7 +1610,7 @@ aphic file (type pdf)
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf  used on input line 3.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=102
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=104
 3, page=1, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1633,7 +1626,7 @@ ge 1>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf , page1 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [50
+ [51
 
 ]
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
@@ -1665,8 +1658,8 @@ ge 1>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf , page1 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-[51 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=106
+[52 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>]
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=108
 4, page=2, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1695,8 +1688,8 @@ ge 2>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf , page2 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-[52 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=107
+[53 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>]
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=109
 4, page=3, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1725,8 +1718,8 @@ ge 3>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf , page3 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-[53 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=108
+[54 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>]
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=110
 2, page=4, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1755,9 +1748,9 @@ ge 4>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf , page4 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-[54 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=110
-8, page=5, 614.295pt x 794.97pt>
+[55 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>]
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=112
+9, page=5, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
@@ -1785,8 +1778,8 @@ ge 5>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf , page5 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-[55 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=112
+[56 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>]
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=114
 4, page=6, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1815,8 +1808,8 @@ ge 6>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf , page6 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-[56 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=112
+[57 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>]
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=114
 9, page=7, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1845,8 +1838,8 @@ ge 7>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf , page7 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-[57 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=114
+[58 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>]
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=116
 4, page=8, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1875,8 +1868,8 @@ ge 8>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf , page8 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-[58 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=116
+[59 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>]
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=118
 5, page=9, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1905,8 +1898,8 @@ ge 9>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf , page9 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-[59 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=118
+[60 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>]
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=120
 5, page=10, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -1935,52 +1928,22 @@ ge 10>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf , page10 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-[60 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=119
-0, page=11, 614.295pt x 794.97pt>
-File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
-aphic file (type pdf)
-<use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 11>
-Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf , page11 used on input line 3.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
-aphic file (type pdf)
-<use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 11>
-Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf , page11 used on input line 3.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 27.18335pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
-aphic file (type pdf)
-<use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 11>
-Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf , page11 used on input line 3.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 [61 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>]
 <images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=121
-1, page=12, 614.295pt x 794.97pt>
+1, page=11, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 12>
+ge 11>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf , page12 used on input line 3.
+171227_draft.pdf , page11 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 12>
+ge 11>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf , page12 used on input line 3.
+171227_draft.pdf , page11 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1991,12 +1954,42 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 12>
+ge 11>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf , page12 used on input line 3.
+171227_draft.pdf , page11 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 [62 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>]
 <images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=123
+2, page=12, 614.295pt x 794.97pt>
+File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
+aphic file (type pdf)
+<use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
+ge 12>
+Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
+171227_draft.pdf , page12 used on input line 3.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
+aphic file (type pdf)
+<use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
+ge 12>
+Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
+171227_draft.pdf , page12 used on input line 3.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 27.18335pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
+aphic file (type pdf)
+<use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
+ge 12>
+Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
+171227_draft.pdf , page12 used on input line 3.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[63 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>]
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=125
 3, page=13, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -2025,8 +2018,8 @@ ge 13>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf , page13 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-[63 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=123
+[64 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>]
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=125
 8, page=14, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -2055,8 +2048,8 @@ ge 14>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf , page14 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-[64 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=124
+[65 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>]
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=126
 3, page=15, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -2085,8 +2078,8 @@ ge 15>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf , page15 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-[65 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=124
+[66 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>]
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=126
 8, page=16, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -2115,9 +2108,9 @@ ge 16>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf , page16 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-[66 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=125
-3, page=17, 614.295pt x 794.97pt>
+[67 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>]
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=127
+4, page=17, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
@@ -2145,8 +2138,8 @@ ge 17>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf , page17 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-[67 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=125
+[68 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>]
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=127
 9, page=18, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -2175,8 +2168,8 @@ ge 18>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf , page18 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-[68 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=127
+[69 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>]
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=129
 8, page=19, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -2205,8 +2198,8 @@ ge 19>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf , page19 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-[69 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=128
+[70 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>]
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=130
 4, page=20, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
@@ -2235,13 +2228,13 @@ ge 20>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf , page20 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-[70 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>]
+[71 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>]
 ) (./main.bbl
 Underfull \hbox (badness 2020) in paragraph at lines 66--69
 []\OT1/cmr/m/n/12 Dupoux, E., Par-lato, E., Frota, S., Hi-rose, Y., and
  []
 
-[71
+[72
 
 ]
 
@@ -2250,7 +2243,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[72])
+[73])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 89.
 
 
@@ -2259,7 +2252,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[73]
+[74]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 89.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 89.
@@ -2270,6 +2263,9 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 89.
  )
 (\end occurred inside a group at level 1)
@@ -2277,9 +2273,9 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 89.
 ### simple group (level 1) entered at line 136 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 8669 strings out of 492980
- 132085 string characters out of 6132494
- 222037 words of memory out of 5000000
+ 8670 strings out of 492980
+ 132077 string characters out of 6132494
+ 222350 words of memory out of 5000000
  11805 multiletter control sequences out of 15000+600000
  12797 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2314,10 +2310,10 @@ ipa12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tipa/tipa8.pfb
 texlive/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/20
 17/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2017/texmf-d
 ist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (73 pages, 1183207 bytes).
+Output written on main.pdf (74 pages, 1191432 bytes).
 PDF statistics:
- 1447 PDF objects out of 1728 (max. 8388607)
- 1205 compressed objects within 13 object streams
- 265 named destinations out of 1000 (max. 500000)
+ 1467 PDF objects out of 1728 (max. 8388607)
+ 1223 compressed objects within 13 object streams
+ 266 named destinations out of 1000 (max. 500000)
  778 words of extra memory for PDF output out of 10000 (max. 10000000)
 
