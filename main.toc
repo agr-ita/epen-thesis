@@ -11,55 +11,55 @@
 \contentsline {subsubsection}{\textit {Control items}}{13}{section*.10}
 \contentsline {subsubsection}{\textit {Test items}}{14}{section*.11}
 \contentsline {subsection}{\numberline {2.1.4}Discussion and conclusion}{16}{subsection.2.1.4}
-\contentsline {subsection}{\numberline {2.1.5}Annexes}{18}{subsection.2.1.5}
-\contentsline {subsection}{\numberline {2.1.6}Supplementary experiment: ABX task}{18}{subsection.2.1.6}
+\contentsline {subsection}{\numberline {2.1.5}Annexes}{19}{subsection.2.1.5}
+\contentsline {subsection}{\numberline {2.1.6}Supplementary experiment: ABX task}{19}{subsection.2.1.6}
 \contentsline {subsubsection}{Methods}{19}{section*.12}
 \contentsline {paragraph}{Participants}{19}{section*.13}
-\contentsline {paragraph}{Stimuli}{20}{section*.14}
+\contentsline {paragraph}{Stimuli}{19}{section*.14}
 \contentsline {paragraph}{Procedure}{20}{section*.15}
 \contentsline {subsubsection}{Results}{21}{section*.16}
 \contentsline {subsubsection}{Correlation between experimental results}{22}{section*.17}
-\contentsline {section}{\numberline {2.2}Predicting epenthetic vowel quality from acoustics}{24}{section.2.2}
-\contentsline {paragraph}{Abstract}{24}{section*.18}
-\contentsline {subsection}{\numberline {2.2.1}Introduction}{24}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Perception experiment}{25}{subsection.2.2.2}
-\contentsline {subsubsection}{Methods}{25}{section*.19}
-\contentsline {subsubsection}{Results}{25}{section*.20}
+\contentsline {section}{\numberline {2.2}Predicting epenthetic vowel quality from acoustics}{23}{section.2.2}
+\contentsline {paragraph}{Abstract}{23}{section*.18}
+\contentsline {subsection}{\numberline {2.2.1}Introduction}{23}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Perception experiment}{24}{subsection.2.2.2}
+\contentsline {subsubsection}{Methods}{24}{section*.19}
+\contentsline {subsubsection}{Results}{24}{section*.20}
 \contentsline {paragraph}{/i/-epenthesis}{25}{section*.21}
-\contentsline {paragraph}{/u/-epenthesis}{26}{figure.2.8}
-\contentsline {subsection}{\numberline {2.2.3}Acoustic analyses}{27}{subsection.2.2.3}
+\contentsline {paragraph}{/u/-epenthesis}{25}{figure.2.8}
+\contentsline {subsection}{\numberline {2.2.3}Acoustic analyses}{26}{subsection.2.2.3}
 \contentsline {subsubsection}{Methods}{27}{section*.23}
-\contentsline {subsubsection}{Results}{28}{section*.24}
-\contentsline {paragraph}{Vowel duration}{28}{figure.2.9}
+\contentsline {subsubsection}{Results}{27}{section*.24}
+\contentsline {paragraph}{Vowel duration}{27}{figure.2.9}
 \contentsline {paragraph}{Vowel intensity}{28}{figure.2.10}
-\contentsline {paragraph}{Vowel formants}{29}{figure.2.11}
-\contentsline {subsection}{\numberline {2.2.4}Production-based exemplar model}{30}{subsection.2.2.4}
-\contentsline {subsubsection}{Methods}{30}{section*.28}
-\contentsline {subsubsection}{Results}{31}{section*.29}
-\contentsline {paragraph}{/i/-epenthesis}{31}{section*.30}
+\contentsline {paragraph}{Vowel formants}{28}{figure.2.11}
+\contentsline {subsection}{\numberline {2.2.4}Production-based exemplar model}{29}{subsection.2.2.4}
+\contentsline {subsubsection}{Methods}{29}{section*.28}
+\contentsline {subsubsection}{Results}{30}{section*.29}
+\contentsline {paragraph}{/i/-epenthesis}{30}{section*.30}
 \contentsline {paragraph}{/u/-epenthesis}{31}{section*.31}
-\contentsline {subsection}{\numberline {2.2.5}Discussion}{33}{subsection.2.2.5}
-\contentsline {section}{\numberline {2.3}Predicting epenthetic vowel quality from acoustics II: It's about time!}{34}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Introduction}{34}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Methods}{34}{subsection.2.3.2}
-\contentsline {subsubsection}{Features}{34}{section*.32}
+\contentsline {subsection}{\numberline {2.2.5}Discussion}{31}{subsection.2.2.5}
+\contentsline {section}{\numberline {2.3}Predicting epenthetic vowel quality from acoustics II: It's about time!}{33}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Introduction}{33}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Methods}{33}{subsection.2.3.2}
+\contentsline {subsubsection}{Features}{33}{section*.32}
 \contentsline {subsubsection}{Classification}{34}{section*.33}
-\contentsline {paragraph}{Dynamic Time Warping}{35}{section*.34}
+\contentsline {paragraph}{Dynamic Time Warping}{34}{section*.34}
 \contentsline {paragraph}{Similarity function}{35}{section*.35}
-\contentsline {subsubsection}{Parameter estimation}{36}{section*.36}
-\contentsline {subsubsection}{Data analysis}{37}{section*.37}
+\contentsline {subsubsection}{Parameter estimation}{35}{section*.36}
+\contentsline {subsubsection}{Data analysis}{36}{section*.37}
 \contentsline {subsection}{\numberline {2.3.3}Results}{37}{subsection.2.3.3}
 \contentsline {subsubsection}{Re-analysing results from the perception experiment}{37}{section*.38}
 \contentsline {paragraph}{/i/-epenthesis}{37}{section*.39}
 \contentsline {paragraph}{/u/-epenthesis}{37}{section*.40}
-\contentsline {subsubsection}{Experiment 1: Exemplar models without duration penalty}{38}{section*.41}
-\contentsline {paragraph}{/i/-epenthesis}{38}{section*.42}
-\contentsline {paragraph}{/u/-epenthesis}{39}{section*.43}
+\contentsline {subsubsection}{Experiment 1: Exemplar models without duration penalty}{37}{section*.41}
+\contentsline {paragraph}{/i/-epenthesis}{37}{section*.42}
+\contentsline {paragraph}{/u/-epenthesis}{38}{section*.43}
 \contentsline {subsubsection}{Experiment 2: Exemplar models with duration penalty}{39}{section*.44}
 \contentsline {paragraph}{Adding the duration-mismatch penalty}{39}{section*.45}
 \contentsline {paragraph}{/i/-epenthesis}{40}{section*.46}
-\contentsline {paragraph}{/u/-epenthesis}{42}{section*.47}
-\contentsline {subsection}{\numberline {2.3.4}Discussion}{42}{subsection.2.3.4}
+\contentsline {paragraph}{/u/-epenthesis}{41}{section*.47}
+\contentsline {subsection}{\numberline {2.3.4}Discussion}{41}{subsection.2.3.4}
 \contentsline {section}{\numberline {2.4}Conclusions}{43}{section.2.4}
 \contentsline {chapter}{\numberline {3}Chapter Three Title}{45}{chapter.3}
 \contentsline {section}{\numberline {3.1}General methods}{45}{section.3.1}
