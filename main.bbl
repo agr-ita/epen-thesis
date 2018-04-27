@@ -17,6 +17,11 @@ Berent, I., Steriade, D., Lennertz, T., and Vaknin, V. (2007).
   illusions.
 \newblock {\em Cognition}, 104(3):591--630.
 
+\bibitem[Boersma et~al., 2002]{praat}
+Boersma, P. et~al. (2002).
+\newblock Praat, a system for doing phonetics by computer.
+\newblock {\em Glot international}, 5(9/10):341--345.
+
 \bibitem[Bombien et~al., 2016]{R-wrassp}
 Bombien, L., Winkelmann, R., and Scheffers, M. (2016).
 \newblock {\em wrassp: an R wrapper to the ASSP Library}.
