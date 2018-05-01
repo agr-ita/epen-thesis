@@ -43,69 +43,69 @@
 \contentsline {subsection}{\numberline {2.2.5}Discussion}{32}{subsection.2.2.5}
 \contentsline {section}{\numberline {2.3}Predicting epenthetic vowel quality from acoustics II: It's about time!}{35}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Introduction}{35}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Methods}{35}{subsection.2.3.2}
-\contentsline {subsubsection}{Features}{35}{section*.35}
-\contentsline {subsubsection}{Classification}{35}{section*.36}
-\contentsline {paragraph}{Dynamic Time Warping}{35}{section*.37}
-\contentsline {paragraph}{Similarity function}{36}{section*.38}
-\contentsline {subsubsection}{Parameter estimation}{37}{section*.39}
-\contentsline {subsubsection}{Data analysis}{37}{section*.40}
-\contentsline {subsection}{\numberline {2.3.3}Results}{38}{subsection.2.3.3}
-\contentsline {subsubsection}{Re-analysing results from the perception experiment}{38}{section*.41}
-\contentsline {paragraph}{/i/-epenthesis}{38}{section*.42}
-\contentsline {paragraph}{/u/-epenthesis}{38}{section*.43}
-\contentsline {subsubsection}{Experiment 1: Exemplar models without duration penalty}{39}{section*.44}
-\contentsline {paragraph}{/i/-epenthesis}{39}{section*.45}
-\contentsline {paragraph}{/u/-epenthesis}{39}{section*.46}
-\contentsline {subsubsection}{Experiment 2: Exemplar models with duration penalty}{40}{section*.47}
-\contentsline {paragraph}{Adding the duration-mismatch penalty}{40}{section*.48}
-\contentsline {paragraph}{/i/-epenthesis}{41}{section*.49}
-\contentsline {paragraph}{/u/-epenthesis}{42}{section*.50}
-\contentsline {subsection}{\numberline {2.3.4}Discussion}{43}{subsection.2.3.4}
-\contentsline {section}{\numberline {2.4}Conclusions}{44}{section.2.4}
-\contentsline {chapter}{\numberline {3}Chapter Three Title}{46}{chapter.3}
-\contentsline {section}{\numberline {3.1}General methods}{46}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}ASR tools as models of perception}{46}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Dissecting the model}{46}{subsection.3.1.2}
-\contentsline {subsubsection}{Corpora}{46}{section*.51}
-\contentsline {paragraph}{CSJ}{46}{section*.52}
-\contentsline {paragraph}{KCSS}{46}{section*.53}
-\contentsline {subsubsection}{Features}{46}{section*.54}
-\contentsline {subsubsection}{Acoustic model}{47}{section*.55}
-\contentsline {subsubsection}{Language models}{47}{section*.56}
-\contentsline {subsubsection}{Decoding}{47}{section*.57}
-\contentsline {subsection}{\numberline {3.1.3}Assessing native performance}{47}{subsection.3.1.3}
-\contentsline {subsubsection}{Lexicon-based decoding}{47}{section*.58}
-\contentsline {subsubsection}{Phonetic-based decoding}{47}{section*.59}
-\contentsline {subsection}{\numberline {3.1.4}Human-model comparisons}{47}{subsection.3.1.4}
-\contentsline {subsubsection}{Simulations}{47}{section*.60}
-\contentsline {subsubsection}{Data analysis: ABC easy as 123}{47}{section*.61}
-\contentsline {paragraph}{Reasoning}{47}{section*.62}
-\contentsline {paragraph}{Model selection}{47}{section*.63}
-\contentsline {paragraph}{Parameter tuning}{47}{section*.64}
-\contentsline {section}{\numberline {3.2}{\color {red}Parlato-hmm}}{48}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Introduction}{48}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Methods}{48}{subsection.3.2.2}
-\contentsline {subsubsection}{Stimuli}{48}{section*.65}
-\contentsline {subsubsection}{Language models}{48}{section*.66}
-\contentsline {subsubsection}{Data analysis}{48}{section*.67}
-\contentsline {subsection}{\numberline {3.2.3}Results}{49}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Discussion}{49}{subsection.3.2.4}
-\contentsline {section}{\numberline {3.3}{\color {red}m-/ahpa/}}{49}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Introduction}{49}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Methods}{49}{subsection.3.3.2}
-\contentsline {subsubsection}{Stimuli}{49}{section*.68}
-\contentsline {subsubsection}{Language models}{49}{section*.69}
-\contentsline {subsubsection}{Data analysis}{50}{section*.70}
-\contentsline {subsection}{\numberline {3.3.3}Results}{50}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}Discussion}{50}{subsection.3.3.4}
-\contentsline {section}{\numberline {3.4}{\color {red}k-epenth}}{50}{section.3.4}
-\contentsline {section}{\numberline {3.5}Conclusions}{50}{section.3.5}
-\contentsline {chapter}{\numberline {4}{\color {red}Gestural vs. acoustic primitives in perceptual vowel epenthesis}}{51}{chapter.4}
-\contentsline {section}{\numberline {4.1}Articulatory Inversion}{51}{section.4.1}
-\contentsline {section}{\numberline {4.2}Predicting confusion patterns}{51}{section.4.2}
-\contentsline {section}{\numberline {4.3}Perceptual experiment}{51}{section.4.3}
-\contentsline {section}{\numberline {4.4}Conclusions}{51}{section.4.4}
-\contentsline {chapter}{\numberline {5}General Discussion}{52}{chapter.5}
-\contentsline {chapter}{\numberline {A}\ignorespaces Are words easier to learn from infant- than adult-directed speech? A quantitative corpus-based investigation}{53}{appendix.A}
-\contentsline {chapter}{\numberline {B}References}{73}{appendix.B}
+\contentsline {subsection}{\numberline {2.3.2}Methods}{36}{subsection.2.3.2}
+\contentsline {subsubsection}{Features}{36}{section*.35}
+\contentsline {subsubsection}{Classification}{36}{section*.36}
+\contentsline {paragraph}{Dynamic Time Warping}{36}{section*.37}
+\contentsline {paragraph}{Similarity function}{37}{section*.38}
+\contentsline {subsubsection}{Parameter estimation}{38}{section*.39}
+\contentsline {subsubsection}{Data analysis}{38}{section*.40}
+\contentsline {subsection}{\numberline {2.3.3}Results}{39}{subsection.2.3.3}
+\contentsline {subsubsection}{Re-analysing results from the perception experiment}{39}{section*.41}
+\contentsline {paragraph}{/i/-epenthesis}{39}{section*.42}
+\contentsline {paragraph}{/u/-epenthesis}{39}{section*.43}
+\contentsline {subsubsection}{Experiment 1: Exemplar models without duration penalty}{40}{section*.44}
+\contentsline {paragraph}{/i/-epenthesis}{40}{section*.45}
+\contentsline {paragraph}{/u/-epenthesis}{40}{section*.46}
+\contentsline {subsubsection}{Experiment 2: Exemplar models with duration penalty}{41}{section*.47}
+\contentsline {paragraph}{Adding the duration-mismatch penalty}{41}{section*.48}
+\contentsline {paragraph}{/i/-epenthesis}{42}{section*.49}
+\contentsline {paragraph}{/u/-epenthesis}{43}{section*.50}
+\contentsline {subsection}{\numberline {2.3.4}Discussion}{44}{subsection.2.3.4}
+\contentsline {section}{\numberline {2.4}Conclusions}{46}{section.2.4}
+\contentsline {chapter}{\numberline {3}Chapter Three Title}{48}{chapter.3}
+\contentsline {section}{\numberline {3.1}General methods}{48}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}ASR tools as models of perception}{48}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Dissecting the model}{48}{subsection.3.1.2}
+\contentsline {subsubsection}{Corpora}{48}{section*.51}
+\contentsline {paragraph}{CSJ}{48}{section*.52}
+\contentsline {paragraph}{KCSS}{48}{section*.53}
+\contentsline {subsubsection}{Features}{48}{section*.54}
+\contentsline {subsubsection}{Acoustic model}{49}{section*.55}
+\contentsline {subsubsection}{Language models}{49}{section*.56}
+\contentsline {subsubsection}{Decoding}{49}{section*.57}
+\contentsline {subsection}{\numberline {3.1.3}Assessing native performance}{49}{subsection.3.1.3}
+\contentsline {subsubsection}{Lexicon-based decoding}{49}{section*.58}
+\contentsline {subsubsection}{Phonetic-based decoding}{49}{section*.59}
+\contentsline {subsection}{\numberline {3.1.4}Human-model comparisons}{49}{subsection.3.1.4}
+\contentsline {subsubsection}{Simulations}{49}{section*.60}
+\contentsline {subsubsection}{Data analysis: ABC easy as 123}{49}{section*.61}
+\contentsline {paragraph}{Reasoning}{49}{section*.62}
+\contentsline {paragraph}{Model selection}{49}{section*.63}
+\contentsline {paragraph}{Parameter tuning}{49}{section*.64}
+\contentsline {section}{\numberline {3.2}{\color {red}Parlato-hmm}}{50}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Introduction}{50}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Methods}{50}{subsection.3.2.2}
+\contentsline {subsubsection}{Stimuli}{50}{section*.65}
+\contentsline {subsubsection}{Language models}{50}{section*.66}
+\contentsline {subsubsection}{Data analysis}{50}{section*.67}
+\contentsline {subsection}{\numberline {3.2.3}Results}{51}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Discussion}{51}{subsection.3.2.4}
+\contentsline {section}{\numberline {3.3}{\color {red}m-/ahpa/}}{51}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Introduction}{51}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Methods}{51}{subsection.3.3.2}
+\contentsline {subsubsection}{Stimuli}{51}{section*.68}
+\contentsline {subsubsection}{Language models}{51}{section*.69}
+\contentsline {subsubsection}{Data analysis}{52}{section*.70}
+\contentsline {subsection}{\numberline {3.3.3}Results}{52}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Discussion}{52}{subsection.3.3.4}
+\contentsline {section}{\numberline {3.4}{\color {red}k-epenth}}{52}{section.3.4}
+\contentsline {section}{\numberline {3.5}Conclusions}{52}{section.3.5}
+\contentsline {chapter}{\numberline {4}{\color {red}Gestural vs. acoustic primitives in perceptual vowel epenthesis}}{53}{chapter.4}
+\contentsline {section}{\numberline {4.1}Articulatory Inversion}{53}{section.4.1}
+\contentsline {section}{\numberline {4.2}Predicting confusion patterns}{53}{section.4.2}
+\contentsline {section}{\numberline {4.3}Perceptual experiment}{53}{section.4.3}
+\contentsline {section}{\numberline {4.4}Conclusions}{53}{section.4.4}
+\contentsline {chapter}{\numberline {5}General Discussion}{54}{chapter.5}
+\contentsline {chapter}{\numberline {A}\ignorespaces Are words easier to learn from infant- than adult-directed speech? A quantitative corpus-based investigation}{55}{appendix.A}
+\contentsline {chapter}{\numberline {B}References}{75}{appendix.B}
