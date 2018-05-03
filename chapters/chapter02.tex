@@ -2,45 +2,44 @@
 % [TODO] %
 %%%%%%%%%%
 % - [ ] General
-% --- [ ] No anti-Pinker ...
-% --- [X] Move figures to logical places
-% --- [X] Add acknowl. for each paper at the beginning + signal what changed
 % --- [ ] Rewrite mini-intro
 % --- [ ] Rewrite mini-discussion
-
-% - [ ] /ahpa/
-% --- [X] Explain more by-speaker figure?
-% --- [ ] Change labels to "Dutch stimuli", etc
-% --- [X] Cluster acoustic analyses:
-% ------ [X] Explain more what is happening visually
-% ------ [X] Is a classifier better at labeling coart in /hp/ than in /kp/
-% --- [X] ABX
-% ------ [X] Figure: use same order as in table
-% ------ [X] Why? Recall expectations if COART/COPY/DEFAULT-NONE => not sensitive enough for COART vs COPY, but correlation is useful to solidify ID results
-
-% - [ ] Parlato_dur
-% --- [ ] Figures - Final version (correct labels, etc)
-% --- [ ] Intro
-% --- [ ] Discussion
 
 %%%%%%%%%%%%%%%%%%%%%%
 % Chapter mini-intro %
 %%%%%%%%%%%%%%%%%%%%%%
 
-%% Short background %%
-While there seems to be a consensus concerning the presence of perceptual misperceptions due to discrepancies between native phonotactics and non-native phoneme structures, the mechanisms underlying these phenomena are subject to more debate. In the case of perceptual (vowel) epenthesis, certain proposals (e.g., \cite{berent2007, monahan2009}) hypothesize that the process is constituted of two steps in which the quality of the epenthetic vowel is determined by a language-specific grammar after an initial parsing. In particular, good candidate vowels might be those that are subject to vowel reduction or deletion in the native language.  
-In contrast, one-step proposals (e.g., \cite{dupoux2011}) argue that the identity of the epenthetic vowel is determined in the process of parsing the input. In particular, parsing becomes an optimisation problem where the optimal output is the one maximising the acoustic match to the input and the likelihood of the phonemic sequence in the native language. Results by \cite{dupoux2011} support one-step theories, as they were able to modulate the identity of the epenthetic vowel without changing the segmental structure of the input stimuli. \\
+{\color{red}
+\section{Introduction}
+As we saw in the Introduction, discrepancies between native and non-native phonotactics leads to vowel epenthesis or deletion in loanwords and in online perception.
+While this statement seems to be generally accepted, the mechanisms underlying these phenomena are subject to more debate. in this chapter we will investigate the mechanisms underlying the choice of epenthetic vowel quality. 
+
+
+\subsection{One-step vs two-step theories}
+We saw that proposals such as those by \cite{berent2007, monahan2009} view perceptual vowel epenthesis as a two-step process.
+According to these proposals, the quality of the epenthetic vowel is determined by a language-specific grammar after an initial parsing of the nonnative input.
+For \cite{berent2007}, the identity of the segments present in the nonnative input is retrieved in an initial step, yielding a \textit{phonetic form}. The native grammar then assesses the phonotactic legality of this phonetic form in a second step. If a phonotactic violation is found, the grammar, which combines both language-specific and universal components, repairs the phonetic form by inserting a vowel. The output of this final step is the \textit{phonological representation}.
+Another proposal, that of \cite{monahan2009} also consists in two steps, but with some differences. During the first step the identity of the segments in the input is retrieved and segments are grouped into syllables, following native phonotactics. Some syllables will contain indeterminate segments (e.g., \textipa{/ebzo/} will have been parsed as \textipa{/e.b}V\textipa{.zo/}). In a second step, the quality of the indeterminate segments, in this case the epenthetic vowel, is chosen amongst vowels that are of low sonority and can undergo devoicing. The quality of the vowel might not be determined if an optimal match is not found.   
+
+\subsection{Role of acoustics}
+
+In the case of perceptual vowel epenthesis, certain proposals (e.g., \cite{berent2007, monahan2009}) hypothesize that the process is constituted of two steps in which the quality of the epenthetic vowel is determined by a language-specific grammar after an initial parsing. In particular, good candidate vowels might be those that are subject to vowel reduction or deletion in the native language.  
+In contrast, one-step proposals (e.g., \cite{dupoux2011}) argue that the identity of the epenthetic vowel is determined in the process of parsing the input. In particular, parsing becomes an optimisation problem where the optimal output is the one maximising the acoustic match to the input and the likelihood of the phonemic sequence in the native language.
+This is in contrast to views supporting that the similarity of native and non-native stimuli is computed on a discrete, featural representation (e.g., binary is Results by \cite{dupoux2011} support one-step theories, as they were able to modulate the identity of the epenthetic vowel without changing the segmental structure of the input stimuli. \\
+
+In this section we will investigate perceptual vowel epenthesis in order to tackle two questions: 
 
 %% Research questions %%
 \cite{dupoux2011} manipulated acoustic details in their stimuli, which led to the conclusion that coarticulation cues influenced epenthetic vowel quality. However, several question remain: How does this influence compare to other influences such as those of an abstract grammar? Can we reproduce these modulations of epenthetic vowel quality on naturally produced stimuli? And finally, if acoustics are quintessential to choosing epenthetic vowel quality, does this mean that they are sufficient to do so? \\
 
-%% Plan %%
+\subsection{Chapter preview}
+
 In \textbf{section \ref{2-ahpa}} a perceptual experiment aims to disentangle the contributions of phonetic categories and acoustic details on epenthetic vowel quality. Participants are asked to report their choice of epenthetic vowel (if any) within consonant clusters in stimuli where the acoustic information contained in the cluster may be in disagreement with the identity of neighbouring vowels. Information theoretic measures allow to quantify the influence of both neighbouring phonetic categories and acoustic details.  \\
 
 In \textbf{section \ref{2-parlato}} we investigate the possibility of predicting epenthetic vowel quality in Brazilian Portuguese (BP) and Japanese (JP) using a production-based exemplar model of perception. This type of model predicts the quality of a vowel epenthesized within the cluster of a stimulus based solely on the acoustic similarity of said /CC/ cluster to /CVC/ exemplars produced by native speakers of BP or JP. From this modelling approach we can evaluate the influence of pure acoustics on effects such as default epenthetic vowel quality and modulations induced by neighbouring vowels, with naturally produced stimuli that have not been manipulated. \\
 
 In \textbf{section \ref{2-parlato-dur}} we modify production-based exemplar models from section \ref{2-parlato}. Several modifications are applied, mostly based on increased performance during the parameter optimisation phase. However, a notable modification is the normalisation of features by speaker (our input is still acoustic in nature, but it is closer to phonetics than previously). Also, we include in our models the possibility to add a duration-mismatch penalty, based on the finding that default epenthetic vowels are also those that are shorter. We examine the effect of the presence or absence of the duration penalty on default epenthetic vowel choice and modulations of epenthetic vowel quality by neighbouring vowels.   
-
+}
 
 %%%%%%%%%%%%%%%%%%%%
 % /ahpa/ (JASA-EL) %
@@ -620,9 +619,9 @@ The interaction between the fixed effects \textsc{Language x NSFV} was not signi
 
 \begin{figure}[h!]
   \centering
-  \begin{overpic}[clip, trim=0 0 0 0, page=2, width=0.45\linewidth]{chapter02/parlato_dur.pdf}\end{overpic}
-  \begin{overpic}[clip, trim=0 0 0 0, page=3, width=0.45\linewidth]{chapter02/parlato_dur.pdf}\end{overpic}
-  \caption{\textit{Proportion of \textipa{/i/}-epenthesis (left) and \textipa{/u/}-epenthesis (right) exhibited by BP and JP participants in the perception experiment. The box and whiskers plots display the distribution of proportions across $C_1C_2$ clusters (median, quartiles and extrema). This representation was preferred over showing distributions across participants, in order to have a direct visual representation of what our statistical models are evaluating, as well as to have the same amount of plotted datapoints for participants and models.}}
+  \begin{overpic}[clip, trim=0 0 0 0, page=2, width=0.50\linewidth]{chapter02/parlato_dur.pdf}\end{overpic}
+  \begin{overpic}[clip, trim=0 0 70 0, page=3, width=0.40\linewidth]{chapter02/parlato_dur.pdf}\end{overpic}
+  \caption{\textit{Proportion of \textipa{/i/}-epenthesis (left) and \textipa{/u/}-epenthesis (right) exhibited by BP and JP participants in the perception experiment. The box and whiskers plots display the distribution of proportions across $C_1C_2$ clusters (median, quartiles and extrema). Dashed lines connect mean values. This representation was preferred over showing distributions across participants, in order to have a direct visual representation of what our statistical models are evaluating, as well as to have the same amount of plotted datapoints for participants and models. Data plotted collapsed by participant can be seen in Figure \ref{fig:parlato_perprod_perbox}}}
   \label{fig:parlato_dur_per}
 \end{figure}
 
@@ -652,15 +651,15 @@ The interaction between the fixed effects \textsc{Language x NSFV} was not signi
 
 \begin{figure}[h!]
   \centering
-  \begin{overpic}[clip, trim=0 0 0 0, page=6, width=0.45\linewidth]{chapter02/parlato_dur.pdf}\end{overpic}
-  \begin{overpic}[clip, trim=0 0 0 0, page=7, width=0.45\linewidth]{chapter02/parlato_dur.pdf}\end{overpic}
-  \caption{\textit{Proportion of \textipa{/i/}-epenthesis (left) and \textipa{/u/}-epenthesis (right) exhibited by BP and JP exemplar models with no duration penalty. The box and whiskers plots display the distribution of proportions across $C_1C_2$ clusters (median, quartiles and extrema).}}
+  \begin{overpic}[clip, trim=0 0 0 0, page=6, width=0.50\linewidth]{chapter02/parlato_dur.pdf}\end{overpic}
+  \begin{overpic}[clip, trim=0 0 70 0, page=7, width=0.40\linewidth]{chapter02/parlato_dur.pdf}\end{overpic}
+  \caption{\textit{Proportion of \textipa{/i/}-epenthesis (left) and \textipa{/u/}-epenthesis (right) exhibited by BP and JP exemplar models with no duration penalty. The box and whiskers plots display the distribution of proportions across $C_1C_2$ clusters (median, quartiles and extrema). Dashed lines connect mean values. }}
   \label{fig:parlato_dur_wdur0_box}
 \end{figure}
 \paragraph{/u/-epenthesis}
 The right panel of Figure \ref{fig:parlato_dur_wdur0_box} shows the proportion of \textipa{/u/}-epenthesis for exemplar models with no duration penalty.
 Neither the main effect of \textsc{Language} (mode: $-1.60$, HPD: $[-4.36, 1.16]$) nor the main efect of \textsc{NSFV} (mode: $0.15$, HPD: $[-0.05, 0.34]$) were significant; the models do not appear to reproduce the higher rates of \textipa{/u/}-epenthesis for JP than BP, and they do not show significantly higher rates of \textipa{/u/}-epenthesis with more \textipa{/u/} flanking vowels in general. 
-However, the interaction \textsc{Language x NSFV} was significant (mode: $0.96$, HPD: $[0.57, 1.34]$). As such, we made supplementary analyses to examine the effect of NSFV for each language independently. Using R package \textit{lme4} \cite{R-lme4}, for each language we fitted a generalised linear mixed model (GLMM) with a declared binomial dependent variable (\textipa{/u/}-epenthesis) with \textsc{NSFV} as the sole fixed effect and \textsc{Cluster} as a random effect. We assessed significance through model comparison with a null model without the main effect \textsc{NSFV}. For both the BP and the JP models, we found \textsc{NSFV} to be significant but with opposing effects; while the JP model yielded more \textipa{/u/}-epenthesis with more \textipa{/u/} flanking vowels ({\color{red}$\beta = X$, $SE = X$, $z = X$, $p < 0.05$}), the BP model yielded less \textipa{/u/}-epenthesis with increasing numbers of \textipa{/u/} flanking vowels ({\color{red}$\beta = X$, $SE = X$, $z = X$, $p < 0.05$}).     
+However, the interaction \textsc{Language x NSFV} was significant (mode: $0.96$, HPD: $[0.57, 1.34]$). As such, we made supplementary analyses to examine the effect of NSFV for each language independently. Using R package \textit{lme4} \cite{R-lme4}, for each language we fitted a generalised linear mixed model (GLMM) with a declared binomial dependent variable (\textipa{/u/}-epenthesis) with \textsc{NSFV} as the sole fixed effect and \textsc{Cluster} as a random effect. We assessed significance through model comparison with a null model without the main effect \textsc{NSFV}. For both the BP and the JP models, we found \textsc{NSFV} to be significant but with opposing effects; while the JP model yielded more \textipa{/u/}-epenthesis with more \textipa{/u/} flanking vowels ($\beta = 0.52$, $SE = 0.12$, $z = 4.48$, $p < 0.001$), the BP model yielded less \textipa{/u/}-epenthesis with increasing numbers of \textipa{/u/} flanking vowels ($\beta = -0.44$, $SE = 0.12$, $z = -3.75$, $p < 0.05$).     
 
 \subsubsection{Experiment 2: Exemplar models with duration penalty}
 
@@ -671,7 +670,7 @@ In order to assess the effect of varying $\alpha$ when simulating our non-native
 
 \begin{figure}[h!]
   \centering
-  \begin{overpic}[clip, trim=0 0 0 0, page=8, width=0.65\linewidth]{chapter02/parlato_dur.pdf}\end{overpic}
+  \begin{overpic}[clip, trim=0 0 0 0, page=8, width=0.70\linewidth]{chapter02/parlato_dur.pdf}\end{overpic}
   \caption{\textit{Similarity between human and model responses for varying values of the duration-mismatch parameter $\alpha$. Solid lines display the mean similarity, dashed lines display the distribution of proportions across items (median and quartiles).}}
   \label{fig:parlato_dur_wdur_eucl}
 \end{figure}
@@ -695,9 +694,9 @@ Additionally, we found a significant main effect of \textsc{NSFV} (mode: $2.08$,
 
 \begin{figure}[h!]
   \centering
-  \begin{overpic}[clip, trim=0 0 0 0, page=11, width=0.45\linewidth]{chapter02/parlato_dur.pdf}\end{overpic}
-  \begin{overpic}[clip, trim=0 0 0 0, page=12, width=0.45\linewidth]{chapter02/parlato_dur.pdf}\end{overpic}
-  \caption{\textit{Proportion of \textipa{/i/}-epenthesis (left) and \textipa{/u/}-epenthesis (right) exhibited by BP and JP exemplar models with duration penalty. The box and whiskers plots display the distribution of proportions across $C_1C_2$ clusters (median, quartiles and extrema).}}
+  \begin{overpic}[clip, trim=0 0 0 0, page=11, width=0.50\linewidth]{chapter02/parlato_dur.pdf}\end{overpic}
+  \begin{overpic}[clip, trim=0 0 70 0, page=12, width=0.40\linewidth]{chapter02/parlato_dur.pdf}\end{overpic}
+  \caption{\textit{Proportion of \textipa{/i/}-epenthesis (left) and \textipa{/u/}-epenthesis (right) exhibited by BP and JP exemplar models with duration penalty. The box and whiskers plots display the distribution of proportions across $C_1C_2$ clusters (median, quartiles and extrema). Dashed lines connect mean values.}}
   \label{fig:parlato_dur_wdurX_box}
 \end{figure}
 
@@ -732,7 +731,7 @@ It is important to note that our models' processing of duration can be further i
 
 %% Summary %%
 
-{\color{blue}Similarly to what has been previously observed \cite{dupoux1999, dehaene2000, dupoux2011, monahan2009, mattingley2015}[CITE], I find that BP and JP participants experience perceptual vowel epenthesis when presented auditory stimuli with illegal consonant clusters. For most cases, BP and JP participants insert what has been called a ``default'' epenthetic vowel, namely \textipa{/i/} and \textipa{/u/}, respectively. Confirming intuitions laid out by \cite{dupoux2011} and reminiscent of the {\color{red}P-map theory in \cite{steriade2001}}, acoustic measurements revealed that these vowels were, within their respective languages, acoustically minimal in that they were of shorter duration and closer in formant space to cluster transitions than other candidate vowels. \\
+Similarly to what has been previously observed \cite{dupoux1999, dehaene2000, dupoux2011, monahan2009, mattingley2015}[CITE], I find that BP and JP participants experience perceptual vowel epenthesis when presented auditory stimuli with illegal consonant clusters. For most cases, BP and JP participants insert what has been called a ``default'' epenthetic vowel, namely \textipa{/i/} and \textipa{/u/}, respectively. Confirming intuitions laid out by \cite{dupoux2011} and reminiscent of the {\color{red}P-map theory in \cite{steriade2001}}, acoustic measurements revealed that these vowels were, within their respective languages, acoustically minimal in that they were of shorter duration and closer in formant space to cluster transitions than other candidate vowels. \\
 
 Also in agreement with previous observations \cite{dupoux2011}, I find that the quality of epenthetic vowel is modulated by the identity of flanking vowels: In {\color{red}section 2.2}, we see more \textipa{/u/}-epenthesis by BP participants with more \textipa{/u/} flanking vowels, and more \textipa{/i/}-epenthesis by JP participants with more \textipa{/i/} flanking vowels. Were these modulations of epenthetic vowel quality due to coarticulation cues contained in the consonant clusters or were they due to a phenomenon of vowel copy? \\
 
@@ -744,7 +743,7 @@ Adding to these concerns, it is important to add that the model supposes the exi
 
 As such, we will now focus on perception models that are flexible enough to also output illegal structures, as our participants do. And, most importantly, the following models shall evaluate epenthetic vowel quality without ignoring the role of phonology (e.g., phonotactics) on misperception of non-native clusters. They must therefore incorporate statistics relative to the frequencies of phonemes and their structural {\color{red}arrangements}. \\
 
-As discussed in {\color{red} section 2.1}, ours and \cite{dupoux2011} results are better aligned with one-step theories of non-native speech perception than with two-step theories. Indeed, the influence of acoustic details on epenthetic vowel quality would be lost if epenthesis occurred after an initial categorisation step; computation of the optimal output must incorporate acoustics and phonotactics in a unique step. In the following sections we will be switching from a one-step DTW-based exemplar model of non-native speech perception to more elaborate one-step Hidden Markov Models (HMM) that do not have the limitations listed above.}
+As discussed in {\color{red} section 2.1}, ours and \cite{dupoux2011} results are better aligned with one-step theories of non-native speech perception than with two-step theories. Indeed, the influence of acoustic details on epenthetic vowel quality would be lost if epenthesis occurred after an initial categorisation step; computation of the optimal output must incorporate acoustics and phonotactics in a unique step. In the following sections we will be switching from a one-step DTW-based exemplar model of non-native speech perception to more elaborate one-step Hidden Markov Models (HMM) that do not have the limitations listed above.
 
 %%% From Emm meeting 20/04/18
 % Comparaison modèle psycho non-paramétrique vs modèle ASR paramétrique
