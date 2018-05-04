@@ -3,10 +3,11 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 The style file: apalike.bst
 Database file #1: main.bib
+Warning--I didn't find a database entry for "berent20007"
 Warning--I didn't find a database entry for "["
 You've used 40 entries,
             1935 wiz_defined-function locations,
-            737 strings with 10716 characters,
+            738 strings with 10727 characters,
 and the built_in function-call counts, 16700 in all, are:
 = -- 1657
 > -- 691
@@ -45,4 +46,4 @@ warning$ -- 0
 while$ -- 147
 width$ -- 0
 write$ -- 523
-(There was 1 warning)
+(There were 2 warnings)

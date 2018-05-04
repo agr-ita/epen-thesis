@@ -1,17 +1,15 @@
 %%%%%%%%%%
 % [TODO] %
 %%%%%%%%%%
-% - [ ] General
-% --- [X] Rewrite mini-intro
-% --- [ ] Rewrite mini-discussion
+
 
 %%%%%%%%%%%%%%%%%%%%%%
 % Chapter mini-intro %
 %%%%%%%%%%%%%%%%%%%%%%
 
 \section{Introduction}
-As we saw in the Introduction, discrepancies between native and non-native phonotactics leads to vowel epenthesis or deletion in loanwords and in online perception.
-While this statement seems to be generally accepted, the mechanisms underlying these phenomena are subject to more debate. in this chapter we will investigate the mechanisms underlying the choice of epenthetic vowel quality. 
+As we saw in the Introduction, work on loanword adaptation and online speech perception shows that listeners epenthesize or delete vowels from nonnative input when it does not conform to native non-native phonotactics.
+While this statement seems to be generally accepted, the mechanisms underlying these phenomena are subject to more debate. In this chapter we will investigate the mechanisms underlying the choice of epenthetic vowel quality. 
 
 
 \subsection{One-step vs two-step theories}
@@ -22,9 +20,16 @@ Another proposal, that of \cite{monahan2009} also consists in two steps, but wit
 The two proposals that we have summarised share the fact that the categorisation of the segments that are not the epenthetic vowel occurs in a first step and it is not modified during the second step, where the identity of the epenthetic vowel is determined.
 
 In contrast, one-step proposals such as in \cite{dupoux2011} argue that the identity of the epenthetic vowel is determined in the process of parsing the input, simultaneous to the categorisation of all other segments. In particular, parsing becomes an optimisation problem where the optimal output is the one maximising the acoustic match to the input and the likelihood of the phonemic sequence in the native language.
-Results by \cite{dupoux2011} support one-step theories, since it was possible to modulate the identity of the epenthetic vowel perceived by Japanese and Brazilian Portuguese listeners from stimuli that had the exact same segmental structure. For instance, Japanese listeners epenthesized \textipa{/i/} more often instead of their default \textipa{/u/} in stimuli such as \textipa{/ebzo/} (and vice versa for Brazilian Portuguese listeners). How could this be achieved?
+
+How can we confront and test these one-step and two-step proposals? For this, we can dissect the phenomenon of perceptual vowel epenthesis and split it in two subproblems: (1) When does epenthesis occur? (2) What vowel is epenthesized?
+
+Concerning the first subproblem, neither one-step theories nor two-step theories give explicit predictions concerning the rate of epenthesis. It is even unclear if the one-step theories exposed above allow for epenthesis to \textit{not} happen. In the case of \cite{berent2007}, not epenthesizing a vowel would require directly yielding the phonetic form, without repairs being performed by the grammar. While \cite{berent2007} hypothesizes that this may happen in tasks requiring participants to pay more attention to phonetics, it is unclear in which cases listeners would directly retrieve the phonetic form within a same task, for similar stimuli. In the case of \cite{monahan2009}, lack of epenthesis would involve a different syllabification of the input than when epenthesis happens. Therefore, a priori, epenthesis should always happen if the input is syllabified according to native phonotactics. In the case of \cite{dupoux2011}, lack of epenthesis might occur if the optimal match between the nonnative input and the native output is more strongly driven by acoustic match than by sequence acceptability.   
+
+We now turn to the second subproblem, the choice of epenthetic vowel. For a given phonemic sequence containing a phonotaction violation, two-steps theories would predict that the choice of the epenthetic vowel happens after an initial categorisation step. As such, we do not expect different tokens of a same type to yield epenthetic vowels of different quality. On the other hand, this would be possible for one-step accounts, since the acoustic details are included in the computation of the optimal output. The choice of epenthetic vowel, therefore, allows to empirically tease apart one-step and two-step theories summarised above.      
 
 \subsection{Role of acoustics}
+Results by \cite{dupoux2011} support one-step theories, since the authors were able to modulate the identity of the epenthetic vowel perceived by Japanese and Brazilian Portuguese listeners from stimuli that had the exact same segmental structure. For instance, Japanese listeners epenthesized \textipa{/i/} more often instead of their default \textipa{/u/} in stimuli such as \textipa{/ebzo/} (and vice versa for Brazilian Portuguese listeners). What are the factors determining whether participants more readily epenthesized \textipa{/i/} or \textipa{/u/}?
+
 The modulations in epenthetic vowel quality observed in \cite{dupoux2011} were due to acoustic cues present in the stimuli. Stimuli with the same segmental sequence were constructed by excising the medial vowel from \textipa{/ebuzo/} and \textipa{/ebizo/}, yielding \textipa{/eb(u)zo/} and \textipa{/eb(i)zo/}. These items differ in the coarticulation cues remaining in the consonants, but they have identical segmental structure (\textipa{/ebzo/}). Participants epenthesized \textipa{/i/} more often from \textipa{/eb(i)zo/} than from \textipa{/eb(u)zo/}, and similarly for \textipa{/u/}.
 
 Remember that, for the two-step proposals above, the quality of the epenthetic vowel is determined in a second step, after the identity of the segments has been blocked. Both \textipa{/eb(u)zo/} and \textipa{/eb(i)zo/} would have \textipa{/ebzo/} as a phonetic form (following \cite{berent2007}) or they would be parsed as \textipa{/e.b}V\textipa{zo/} (following \cite{monahan2009}). We cannot predict the modulations in epenthetic vowel from these initial parsings. However, in a one-step processing the acoustic details (in this case, coarticulation) could be taken into account when computing the acoustic match between the input and possible output phoneme sequences. 
@@ -39,14 +44,14 @@ In this section we will investigate perceptual vowel epenthesis in order to tack
 \begin{itemize}
 \item How does the influence of acoustic details on epenthetic vowel quality compare to other influences such as those of an abstract grammar?
 \item Stimuli in \cite{dupoux2011} were made by excising vowels. Can we reproduce the modulations of epenthetic vowel quality caused by coarticulation using naturally produced stimuli?
-\item And finally, if acoustics are quintessential to choosing epenthetic vowel quality, does this mean that they are sufficient to do so?
+\item And finally, if acoustic factors are essential when choosing epenthetic vowel quality, does this mean that they are sufficient to do so?
 \end{itemize}
 
-In \textbf{section \ref{2-ahpa}} a perceptual experiment aims to disentangle the contributions of phonetic categories and acoustic details on epenthetic vowel quality. Participants are asked to report their choice of epenthetic vowel (if any) within consonant clusters in stimuli where the acoustic information contained in the cluster may be in disagreement with the identity of neighbouring vowels. Information theoretic measures allow to quantify the influence of both neighbouring phonetic categories and acoustic details.
+In \textbf{section \ref{2-ahpa}} a perceptual experiment aims at disentangling the contributions of phonetic categories and acoustic details on epenthetic vowel quality. Participants are asked to report their choice of epenthetic vowel (if any) within consonant clusters in stimuli where the acoustic information contained in the cluster may be in disagreement with the identity of neighbouring vowels. Information theoretic measures allow to quantify the influence of both neighbouring phonetic categories and acoustic details.
 
 In \textbf{section \ref{2-parlato}} we investigate the possibility of predicting epenthetic vowel quality in Brazilian Portuguese (BP) and Japanese (JP) using a production-based exemplar model of perception. This type of model predicts the quality of a vowel epenthesized within the cluster of a stimulus based solely on the acoustic similarity of said /CC/ cluster to /CVC/ exemplars produced by native speakers of BP or JP. From this modelling approach we can evaluate the influence of pure acoustics on effects such as default epenthetic vowel quality and modulations induced by neighbouring vowels, with naturally produced stimuli that have not been manipulated.
 
-In \textbf{section \ref{2-parlato-dur}} we modify production-based exemplar models from section \ref{2-parlato}. Several modifications are applied, mostly based on increased performance during the parameter optimisation phase. However, a notable modification is the normalisation of features by speaker (our input is still acoustic in nature, but it is closer to phonetics than previously). Also, we include in our models the possibility to add a duration-mismatch penalty, based on the finding that default epenthetic vowels are also those that are shorter. We examine the effect of the presence or absence of the duration penalty on default epenthetic vowel choice and modulations of epenthetic vowel quality by neighbouring vowels.   
+In \textbf{section \ref{2-parlato-dur}} we modify the production-based exemplar models from section \ref{2-parlato}. Several modifications are applied, mostly based on increased performance during the parameter optimisation phase. However, a notable modification is the normalisation of features by speaker (our input is still acoustic in nature, but it is closer to phonetics than previously). Also, we include in our models the possibility to add a duration-mismatch penalty, based on the finding that default epenthetic vowels are also those that are shorter. We examine the effect of the presence or absence of the duration penalty on default epenthetic vowel choice and modulations of epenthetic vowel quality by neighbouring vowels.   
 
 %%%%%%%%%%%%%%%%%%%%
 % /ahpa/ (JASA-EL) %
@@ -56,7 +61,7 @@ In \textbf{section \ref{2-parlato-dur}} we modify production-based exemplar mode
 \section{Which epenthetic vowel? \\ Phonetic categories versus acoustic detail in perceptual vowel epenthesis} \label{2-ahpa}
 
 \small{\textit{{\color{darkgray}The following section is a modified version of the following journal article: \\
-Guevara-Rukoz, A., Lin, I., Morii, M., Minagawa, Y., Dupoux, E., \& Peperkamp, S. (2017). Which epenthetic vowel? Phonetic categories versus acoustic detail in perceptual vowel epenthesis. The Journal of the Acoustical Society of America, 142(2), EL211-EL217. \\
+Guevara-Rukoz, A., Lin, I., Morii, M., Minagawa, Y., Dupoux, E., \& Peperkamp, S. (2017). Which epenthetic vowel? Phonetic categories versus acoustic detail in perceptual vowel epenthesis. Journal of the Acoustical Society of America, 142(2), EL211-EL217. \\
 Stimuli were designed and recorded by I. Lin.
 Experimental data for the identification task were collected by M. Morii and Y. Minagawa, using scripts by A. Guevara-Rukoz. The ABX experiment was designed and run by I. Lin.
 Statistical analyses, phonetic transcriptions, and acoustical analyses were performed by A. Guevara-Rukoz.
@@ -187,6 +192,8 @@ To conclude, we directly compared the relative contributions of acoustic and cat
 %%%% Annexes %%%%
 \subsection{Annexes}
 
+Here we provide additional results for (a) differences in patterns of epenthesis for items recorded by different speakers, (b) acoustic analyses of coarticulation, and (x) an ABX discrimination task.    
+
 {\color{blue}
 \subsubsection{Identification results separated by speaker}
 \begin{figure}[h!]
@@ -198,7 +205,9 @@ To conclude, we directly compared the relative contributions of acoustic and cat
   \label{fig:ahpa_spk}
 \end{figure}
 
-Our three recorded speakers did not share the same native language, causing their recorded items to differ in their acoustic details. A consequence of this is that response patterns of Japanese participants had subtle differences according to the speaker producing the stimuli, as seen in Figure \ref{fig:ahpa_spk}. For instance, most ``o'' responses were prompted by stimuli recorded by the Dutch speaker, while most ``e'' responses arose from stimuli by the American English speaker. It is difficult to say whether these differences are due to phonetics specific to the native language of the speakers or to personal idiosyncracies, since we only recorded one speaker per native language. Indeed, comparing responses to different languages was not the initial objective of this study. Importantly, as mentioned in the discussion, rates of epenthesis and choice of epenthetic vowel varied according to speaker, which further supports our hypothesis that Japanese participants attended to acoustic details when experiencing perceptual epenthesis. 
+Our three recorded speakers did not share the same native language, causing their recorded items to differ in their acoustic details. A consequence of this is that response patterns of Japanese participants had subtle differences according to the speaker producing the stimuli, as seen in Figure \ref{fig:ahpa_spk}. For instance, most ``o'' responses were prompted by stimuli recorded by the Dutch speaker, while most ``e'' responses arose from stimuli by the American English speaker.
+Importantly, as mentioned in the discussion, rates of epenthesis and choice of epenthetic vowel varied according to speaker, which further supports our hypothesis that Japanese participants attended to acoustic details when experiencing perceptual epenthesis. 
+It would be interesting to see whether these differences are due to phonetics specific to the native language of the speakers or to personal idiosyncracies, since here we only recorded one speaker per native language. %Indeed, comparing responses to different languages was not the initial objective of this study.
 
 \subsubsection{Acoustic analyses}
 \begin{figure}[h!]
@@ -210,7 +219,7 @@ Our three recorded speakers did not share the same native language, causing thei
 
 In order to examine the acoustic properties of our stimuli, we annotated them using Praat \cite{praat} and we automatically extracted the first three formants from all vowels in the stimuli ($V_{1a}$ and $V_{1b}$ from $V_{1a}CpV_{1b}$ items, and $V_{2}$ from $CV_{2}p$ items used to construct $V_{1}CV_{2}pV_{1}$ items), and also from \textipa{/h/} and \textipa{/k/} in $/Cp/$ clusters (coarticulation). Their distribution in F1 x F2 space can be seen in Figure \ref{fig:ahpa_acoustic_space}.
 As might be expected, the vowel triangle formed by vowels \textipa{/i, a, u/} is discernible when plotting full vowels in F1 x F2 space. This is not the case, however, when plotting coarticulation contained by consonants \textipa{/h/} and \textipa{/k/}. Visually, it appears that the distinction between front vowels \textipa{/i, e/} and the rest (\textipa{/a, o, u/} is better maintained in \textipa{/h/} than in \textipa{/k/}.
-We used Linear Discriminant Analysis (LDA) to perform classification of the points plotted in Figure \ref{fig:ahpa_acoustic_space}, using as input features a vector containing the first three formants F1, F2, and F3 of each datapoint. We trained the LDA classifier first using data from full vowels as training data, in order to classify coarticulation from the consonants. The classifier accuracy is $38.0\%$ for coarticulation in \textipa{/h/} and $33.3\%$ for coarticulation in \textipa{/k/}. The corresponding classification patterns can be found in the top part of Figure \ref{fig:ahpa_acoustic_lda}. As we can see, classification patterns are similar; \textipa{/i, e/} coarticulation is classified as \textipa{/e/}, while \textipa{/a, o, u} are mostly classified as \textipa{/a/}.
+We used Linear Discriminant Analysis (LDA) to perform classification of the points plotted in Figure \ref{fig:ahpa_acoustic_space}, using as input features a vector containing the first three formants F1, F2, and F3 of each datapoint. We trained the LDA classifier first using data from full vowels as training data, in order to classify coarticulation from the consonants. The classifier accuracy is $38.0\%$ for coarticulation in \textipa{/h/} and $33.3\%$ for coarticulation in \textipa{/k/}. The corresponding classification patterns can be found in the top part of Figure \ref{fig:ahpa_acoustic_lda}. As we can see, classification patterns are similar; \textipa{/i, e/} coarticulation is classified as \textipa{/e/}, while \textipa{/a, o, u/} are mostly classified as \textipa{/a/}.
 Furthermore, we used LDA with cross-validation (i.e., from a set of $x$ items, an item is classified based on LDA performed on all other $x-1$ items). When the set of interest was that of coarticulation in \textipa{/h/}, the accuracy was of $51.7\%$, while it was $36.7\%$ for coarticulation in \textipa{/k/}. The resulting classifications can be seen in the lower section of Figure \ref{fig:ahpa_acoustic_lda}; for \textipa{/h/} the classification patterns are more similar within members of a taxonomic group (e.g., \textipa{/i, e/}) than for \textipa{/k/}. So while coarticulation from both types of clusters can be mapped onto the original vowel space similarly well (or badly, depending on the perspective), it would be easier to deduce the quality of neighbouring vowels from the coarticulation cues contained within an \textipa{/hp/} cluster than from \textipa{/kp/}, especially with regards to the separation of front vowels \textipa{/i, e/} from \textipa{/a, o, u/}, as can be seen in the lower part of Figure \ref{fig:ahpa_acoustic_lda} and the right panels of Figure \ref{fig:ahpa_acoustic_space}. 
 
 \begin{figure}[h!]
@@ -219,7 +228,7 @@ Furthermore, we used LDA with cross-validation (i.e., from a set of $x$ items, a
   \begin{overpic}[page=6, width=0.45\linewidth]{chapter02/ahpa_acoustic}\end{overpic} 
   \begin{overpic}[page=3, width=0.45\linewidth]{chapter02/ahpa_acoustic}\end{overpic} \hspace{1cm}
   \begin{overpic}[page=4, width=0.45\linewidth]{chapter02/ahpa_acoustic}\end{overpic}
-  \caption{{\color{blue}\textit{Classification of consonants \textipa{/h/} and \textipa{/k/} based on formant values of their coarticulation cues. Classification was performed based on category descriptions dictated by formant values of full vowels (top) or in a cross-validation manner (bottom). Consonants are labeled according to the quality of coarticulation cues, therefore of neighbouring vowels (``Actual Group'', rows). Classification labels are shown in columns (``Predicted Group''), with darker colours indicating higher counts. Dendrograms on the left-hand side of each heatmap show the grouping of consonants according to their similarity in the classification patterns.)}}}
+  \caption{{\color{blue}\textit{Classification of consonants \textipa{/h/} and \textipa{/k/} based on formant values of their coarticulation cues. Classification was performed based on category descriptions dictated by formant values of full vowels (top) or in a cross-validation manner (bottom). Consonants are labeled according to the quality of coarticulation cues, therefore of neighbouring vowels (``Actual Group'', rows). Classification labels are shown in columns (``Predicted Group''), with darker colours indicating higher counts. Dendrograms on the left-hand side of each heatmap show the grouping of consonants according to their similarity in the classification patterns. Diagonals show identity. Please note that the order of the vowels differs between the four panels, since it is set by the dendrograms.}}}
   \label{fig:ahpa_acoustic_lda}
 \end{figure}
 
@@ -227,7 +236,6 @@ Furthermore, we used LDA with cross-validation (i.e., from a set of $x$ items, a
 
 In this additional experiment we assessed the perception of illegal consonantal clusters in Japanese using an ABX discrimination task, which, contrary to the vowel identification task used in Experiment 1, does not require an explicit categorization of the item's segments. As in previous work \cite{dupoux1999, dupoux2011}, we used different speakers for stimuli A, B, and X, such that the task could not be performed on the basis of low-level acoustic information.
 
-\subsubsection{Methods}
 \paragraph{Participants}
 Twenty-six native Japanese listeners were recruited in Paris, France. %(mean age $XX \pm X.X$; XX female).
 While testing for this experiment was done outside of Japan, we recruited only participants with little experience with French or other languages in which consonant clusters are allowed. For instance, many participants were recently arrived exchange students or family members of professionals that had been transferred to Paris.  
@@ -242,7 +250,9 @@ We defined four types of AB pairs with constant flanking vowels, based on the na
   \item Full vowel items (FV) correspond to trisyllabic fillers from the identification task, $V_{1}C_{1}V_{2}C_{2}V_{1}$ items for which the $C_{1}V_{2}C_{2}$ cluster has been spliced from a $V_{2}C_{1}V_{2}C_{2}V_{2}$ item
 \end{itemize}
 
-\begin{table*}[h]
+Table \ref{table:ahpa_ab_pairs} also shows how well participants are predicted to discriminate items in the AB pairs depending on the strategy used when perceiving phonotactically illegal stimuli. Participants might break the illegal consonant cluster by adding a vowel identical to flanking vowels (\textsc{Flank.}), by adding a vowel of the same quality as the coarticulation (\textsc{Coart.}), or they might simply add \textipa{/u/} by default (\textsc{Default}). Participants might also not experience epenthesis at all (\textsc{No Epenth.}).   
+
+\begin{table*}[h!]
 \centering
 \caption{{\color{blue}Types of AB pairs for Experiment 2. The discrimination accuracy is predicted according to whether epenthetic vowel quality is determined by the quality of flanking vowel (Flank.), coarticulation cues (Coart.), or whether participants experience default \textipa{/u/} epenthesis (Default) or do not experience epenthesis (No Epenth.). Cases of good discrimination are marked with plus signs.}}
 \label{table:ahpa_ab_pairs}
@@ -268,9 +278,9 @@ Within each triplet, A always contained either a natural or a spliced cluster, w
 
 In total, there were 200 AB pairs. Since there are four possible presentation orders for each pair and its corresponding third item X (i.e., $ABX_A$, $BAX_A$, $ABX_B$, $BAX_B$), there are 800 possible unique trials. In order to reduce the duration of the experiments, participants were divided into two groups exposed to counterbalanced halfs of the total set of trials.    
 
-\subsubsection{Results}
+\paragraph{Results}
 
-\begin{figure}[H] 
+\begin{figure}[h!] 
 \centering
     \begin{overpic}[page=5, width=\linewidth]{chapter02/ahpa_figs.pdf}
     \end{overpic}
@@ -290,7 +300,7 @@ By contrast, accuracy was significantly enhanced by the presence of an item with
 
 These results are compatible with predictions given by the \textsc{Default} and \textsc{No Epenth.} in Table \ref{table:ahpa_ab_pairs}, i.e., better discrimination for N-FV and Sp-FV pairs. After looking at response patterns from the identification task, this should come as no surprise. Indeed, most of participant responses were ``none'' (36\% of test trials) and ``u'' (32\% of test trials). This ABX task is therefore not sensitive enough to detect differences between the more subtle modulations in epenthetic vowel quality caused by flanking vowels and coarticulation cues. However, we can examine the correlation between ABX discriminability and response patterns for the identification task, in order to verify that results from the latter experiment are not solely due to task-specific demands (e.g., participants focusing on phoneme identity).    
 
-\subsubsection{Correlation with identification results}
+\paragraph{Correlation with identification results}
 
 In order to assess the role of perceptual assimilation on stimulus discrimination, we derived a measure of perceptual distance from response patterns given in the identification task, and examined if this distance predicted the outcome in the ABX discrimination task. To do so, we computed for each item a six-dimensional numerical vector of the shape $x = [x_{1}, ..., x_{6}]$, with values corresponding to the percent responses to categories \textipa{a}, \textipa{e}, \textipa{i}, \textipa{o}, \textipa{u}, and \textit{none}, respectively. The distance $d(x,y)$ between two items $x$ and $y$ was computed as the normalized Euclidian distance between their associated vectors:
     \[d(x,y)=\frac{\sqrt{\sum_i (x_{i} - y_{i})^{2}}} {\sqrt{2}}\]
@@ -347,7 +357,7 @@ In order to assess the influence of $V_{1}$ and $V_{2}$ (henceforth: flanking vo
   \centering
   \begin{overpic}[page=1, width=0.5\linewidth]{chapter02/parlato_tiles}\end{overpic}
   \begin{overpic}[page=2, width=0.5\linewidth]{chapter02/parlato_tiles}\end{overpic}
-  \caption{\textit{{\color{blue}Responses for all trials from the perception experiment for both BP (top) and JP (bottom), including trials with responses not given by the exemplar model (``none'', ``a'', ``e''). Numbers indicate trial counts, with darker cell backgrounds representing higher values. Within each of the two 3 x 3 grid, trials are separated according to $V_{1}$ (columns) and $V_{2}$ (rows). % [TODO] Check that this is the case and not the other way around 
+  \caption{\textit{{\color{blue}Responses for all trials from the perception experiment for both BP (top) and JP (bottom), including trials with responses not given by the exemplar model (``none'', ``a'', ``e''). Numbers indicate trial counts, with darker cell backgrounds representing higher values. Within each of the two 3 x 3 grid, trials are separated according to $V_{1}$ (columns) and $V_{2}$ (rows).
     Within each individual rectangle, the horizontal axis shows the first consonant of the consonant cluster, while the vertical axis corresponds to possible responses.}}}
   \label{fig:parlato_per_all}
 \end{figure}
@@ -523,23 +533,23 @@ We interpret the results as providing a proof of principle that some of the sali
 To conclude, a triple approach combining perception experiments, acoustic analyses, and modeling allows us to gain insight into the mechanisms underlying perceptual epenthesis, and, more generally, repairs of illegal phonological structure during speech perception.
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Parlato_duration (Interspeech) %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%
+% Parlato_duration  %
+%%%%%%%%%%%%%%%%%%%%%
 
 %\newpage
 \section{Predicting epenthetic vowel quality from acoustics II: It's about time!} \label{2-parlato-dur}
 
 \subsection{Introduction}
 %%% Background
-In the previous section we introduced a production-based exemplar model of perception for which input representations were solely acoustic. We used this relatively primitive model to simulate a perceptual experiment probing perceptual vowel epenthesis by BP and JP listeners. We saw that results from the model shared some qualitative similarities with those from the perceptual experiment, the most notable being the models' ability to reproduce modulations of flanking vowels on the quality of the epenthetic vowel. Putting these results together with main results from \ref{2-ahpa} (i.e., higher influence of coarticulation than flanking vowel quality on epenthetic vowel quality), we concluded that modulations of epenthetic vowel quality such as those observed in our perceptual task and in \cite{dupoux2011} were due to acoustic details.
+In the previous section we introduced a production-based exemplar model of perception for which input representations were solely acoustic. We used this relatively primitive model to simulate a perceptual experiment probing perceptual vowel epenthesis by BP and JP listeners. We saw that results from the model shared some qualitative similarities with those from the perceptual experiment, the most notable being the models' ability to reproduce modulations of flanking vowels on the quality of the epenthetic vowel. Putting these results together with main results from section \ref{2-ahpa} (i.e., higher influence of coarticulation than flanking vowel quality on epenthetic vowel quality), we concluded that modulations of epenthetic vowel quality such as those observed in our perceptual task and in \cite{dupoux2011} were due to acoustic details.
 On the other hand, the production-based exemplar models were not able to adequately reproduce effects related to default epenthetic vowels. Recall that for human participants we see a majority of \textipa{/i/}- and \textipa{/u/}- epenthesis for BP and JP, respectively.
 
 However, acoustic analyses of recordings made by native BP and JP speakers showed that default epenthetic vowels were not only the closest in formant space to acoustic cues contained in cluster transitions, but they were also the shortest vowels in the inventory \textipa{/i, o, u/}. As such, we can hypothesize that what is particular about default epenthetic vowels is not limited to their spectral characteristics; vowel duration may be as important, if not more, when computing the less costly vowel insertion. Viewing nonnative speech misperceptions as an optimisation problem, where the output is obtained by applying the phonetically minimal modification to the nonnative input \cite{peperkamp2003, dupoux2011, steriade2001}, we can posit the importance of duration match. In the case of perceptual vowel epenthesis, where the output presents additional segments relative to the input, it would seem logical that, for hypothetically equal spectral properties, shorter segments would be preferred compared to longer segments. For instance, we wouldn't expect JP listeners to epenthesize long vowels instead of short vowels.
 
 We would therefore want our models to take into duration mismatches into consideration when computing the similarity between the nonnative input and stored exemplars. This was not the case for models in section \ref{2-parlato}, because the distance between two items was computed using Dynamic Time Warping (DTW), which by design disregards duration mismatch. The goal of the following section was to introduce a duration-mismatch score that could be combined with the original distance score provided by DTW, in order to produce a distance metric that reflects both the spectral and durational proximity of two items.
 
-Additionally, we performed various changes (highlighted throughout the methods section). Most notably, feature standardisation was performed by speaker in the version of the model described bellow, which in a way equates to the model being aware of speaker identity when computing item similarity. As a consequence, this newer version of the model is not purely acoustic, but phonetic. Considering these changes, before even introducing a duration-mismatch penalty, can our newer models reproduce default epenthetic vowels and flanking vowel-related modulations of epenthetic vowel quality? (Experiment 1). What about models with a duration-mismatch penalty? (Experiment 2).    
+Additionally, we performed various changes (highlighted throughout the methods section). Most notably, feature standardisation was performed by speaker in the version of the model described bellow, which in a way equates to the model being aware of speaker identity when computing item similarity. As a consequence, this newer version of the model is not purely acoustic, as it is a step towards speaker invariant auditory representations. Considering these changes, before even introducing a duration-mismatch penalty, can our newer models reproduce default epenthetic vowels and flanking vowel-related modulations of epenthetic vowel quality? (Experiment 1). What about models with a duration-mismatch penalty? (Experiment 2).    
 
 \subsection{Methods}
 \subsubsection{Features}
@@ -608,12 +618,14 @@ We used grid search in order to optimise parameter $c$ for each language, as wel
 We assessed the optimality of parameter values based not only on mean classification accuracy, but also inspecting median classification accuracy. Indeed, while these two measures are positively correlated, an improvement in median accuracy might not be obvious when inspecting mean accuracy alone. In other words, combinations of parameters with similar mean classification accuracy could differ greatly in median classification accuracy.
 While we aimed to optimise parameters when setting $\alpha = 0$ (baseline models with no duration penalty), as a curious side note, increasing the value of $\alpha$ during cross-validation with BP and JP recordings decreased classification accuracy. However, the resulting degradation in accuracy tended towards zero when increasing values of parameter $c$ such as those chosen for this work.
 
-We found that classification accuracy was worse when including pitch features, delta + delta-delta coefficients, and both, than when only using 13 MFCCs. Therefore, for all experiments in this section, the acoustic input given to our models consisted of 13-dimensional vectors. Concerning parameter $c$, we chose optimal values $c = 60$ (mean accuracy: $64.6\%$; median accuracy: $1$) for BP models, and $c = 40$ (mean accuracy: $90.1\%$; median accuracy: $1$) for JP models. 
+We found that classification accuracy was worse when including pitch features, delta + delta-delta coefficients, and both, than when only using 13 MFCCs. Therefore, for all experiments in this section, the acoustic input given to our models consisted of 13-dimensional vectors. Concerning parameter $c$, we chose optimal values $c = 60$ (mean accuracy: $64.6\%$; median accuracy: $1$) for BP models, and $c = 40$ (mean accuracy: $90.1\%$; median accuracy: $1$) for JP models. This constitutes an improvement compared to the previous version of the model in section \ref{2-parlato} ($50\%$ and $63\%$ mean accuracy for BP and JP, respectively). 
 
 \subsubsection{Data analysis}
 Statistical analyses were performed with the R statistical software \cite{R-base}, using Markov chain Monte Carlo generalised linear mixed-models \cite{R-MCMCglmm, R-coda}. These Bayesian models sample coefficients from the posterior probability distribution conditioned on the data and given priors. We used priors that are standard for mixed-effects multinomial models. Model convergence was assessed by visual inspection of trace plots and the Gelman–Rubin convergence diagnostic \cite{gelman1992}, using four chains with different initialisations. Effects were considered statistically significant if the 95\% highest posterior density (HPD) interval estimated for the coefficient of interest did not include zero. We report both the posterior mode and the 95\% HPD interval.  
 
-In order to assess the influence of $V_{1}$ and $V_{2}$ (henceforth: flanking vowels) on epenthetic vowel quality (/i/ or /u/), we chose as fixed effects for our models \textsc{Language} (BP \textit{vs.} JP, sum contrast coded) and \textsc{Number of Same Flanking Vowels} (\textsc{NSFV}; considered as a continuous variable with values 0, 1, or 2 instead of a factor with 3 levels, in order to reduce the number of model parameters and promote convergence), as well as their interaction. As random effects we included \textsc{Cluster} and \textsc{Participant} when analysing data from the perceptual experiment, and \textsc{Cluster} when analysing data from the exemplar models. We also added random slopes for \textsc{Language} on \textsc{Cluster}, and \textsc{NSFV} on \textsc{Participant}. Please note that we re-analyse data from the perceptual experiment described in section \ref{2-parlato} because the statistical models used for the analyses in this section are not identical to those used in section \ref{2-parlato}. The change in models was motivated by a will to avoid coefficient inflation due to the sparsity of our data, as it was the case in section \ref{2-parlato}. 
+In order to assess the influence of $V_{1}$ and $V_{2}$ (henceforth: flanking vowels) on epenthetic vowel quality (/i/ or /u/), we chose as fixed effects for our models \textsc{Language} (BP \textit{vs.} JP, sum contrast coded) and \textsc{Number of Same Flanking Vowels} (\textsc{NSFV}; considered as a continuous variable with values 0, 1, or 2 instead of a factor with 3 levels, in order to reduce the number of model parameters and promote convergence), as well as their interaction. As random intercepts we included \textsc{Cluster} and \textsc{Participant} when analysing data from the perceptual experiment, and \textsc{Cluster} when analysing data from the exemplar models. We also added random slopes for \textsc{Language} on \textsc{Cluster}, and \textsc{NSFV} on \textsc{Participant}. Please note that we re-analyse data from the perceptual experiment described in section \ref{2-parlato} because the statistical models used for the analyses in this section are not identical to those used in section \ref{2-parlato}.\footnote{Previous statistical models had as fixed factors \textsc{Language}, \textsc{NSFV}, \textsc{Coronal}, all interactions, and random intercepts for \textsc{Participant} (for the perceptual experiment only).} The change in models was motivated by a will to avoid coefficient inflation due to the sparsity of our data, as it was the case in section \ref{2-parlato}.
+
+Because of these changes, we reanalysed the behavioural results before analysing results from the exemplar models. This way a fairer comparison can be made between effects observed in the real and simulated datasets. However, we did not expect these results to be qualitatively different from those in section \ref{2-parlato}.   
 
 \subsection{Results} 
 \subsubsection{Re-analysing results from the perception experiment}
@@ -640,7 +652,7 @@ The interaction between the fixed effects \textsc{Language x NSFV} was not signi
 
 \subsubsection{Experiment 1: Exemplar models without duration penalty}
 
-We used our exemplar models to simulate the perceptual experiment, setting $\alpha = 0$, effectively setting up models with no duration-mismatch penalty. The resulting classification patterns can be seen in Figure \ref{fig:parlato_dur_wdur0_heat}.
+We used our new exemplar models to simulate the perceptual experiment, setting $\alpha = 0$, effectively setting up models with no duration-mismatch penalty. The resulting classification patterns can be seen in Figure \ref{fig:parlato_dur_wdur0_heat}.
 
 \begin{figure}[h!]
   \centering
