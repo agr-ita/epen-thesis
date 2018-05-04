@@ -93,17 +93,24 @@
 \contentsline {subsubsection}{Stimuli}{63}{section*.65}
 \contentsline {subsubsection}{Language models}{63}{section*.66}
 \contentsline {subsubsection}{Data analysis}{64}{section*.67}
-\contentsline {subsection}{\numberline {3.2.3}Results}{65}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Discussion}{65}{subsection.3.2.4}
-\contentsline {section}{\numberline {3.3}{\color {red}m-/ahpa/}}{65}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Introduction}{65}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Methods}{65}{subsection.3.3.2}
-\contentsline {subsubsection}{Stimuli}{65}{section*.68}
+\contentsline {subsection}{\numberline {3.2.3}Results}{64}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Discussion}{64}{subsection.3.2.4}
+\contentsline {section}{\numberline {3.3}{\color {red}m-/ahpa/ + Parlato-lms}}{64}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Introduction}{64}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Methods}{64}{subsection.3.3.2}
+\contentsline {subsubsection}{Stimuli}{64}{section*.68}
 \contentsline {subsubsection}{Language models}{65}{section*.69}
 \contentsline {subsubsection}{Data analysis}{66}{section*.70}
 \contentsline {subsection}{\numberline {3.3.3}Results}{66}{subsection.3.3.3}
 \contentsline {subsection}{\numberline {3.3.4}Discussion}{66}{subsection.3.3.4}
 \contentsline {section}{\numberline {3.4}{\color {red}k-epenth}}{66}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Introduction}{66}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Methods}{66}{subsection.3.4.2}
+\contentsline {subsubsection}{Stimuli}{66}{section*.71}
+\contentsline {subsubsection}{Procedure}{66}{section*.72}
+\contentsline {subsubsection}{Data analysis}{66}{section*.73}
+\contentsline {subsection}{\numberline {3.4.3}Results}{66}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Discussion}{66}{subsection.3.4.4}
 \contentsline {section}{\numberline {3.5}Conclusions}{66}{section.3.5}
 \contentsline {chapter}{\numberline {4}{\color {red}Gestural vs. acoustic primitives in perceptual vowel epenthesis}}{67}{chapter.4}
 \contentsline {section}{\numberline {4.1}Articulatory Inversion}{67}{section.4.1}
