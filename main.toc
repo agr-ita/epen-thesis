@@ -9,7 +9,7 @@
 \contentsline {subsection}{\numberline {2.2.1}Introduction}{12}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Methods}{13}{subsection.2.2.2}
 \contentsline {subsubsection}{\textit {Participants}}{13}{section*.7}
-\contentsline {subsubsection}{\textit {Stimuli}}{13}{section*.8}
+\contentsline {subsubsection}{\textit {Stimuli}}{14}{section*.8}
 \contentsline {subsubsection}{\textit {Procedure}}{14}{section*.9}
 \contentsline {subsection}{\numberline {2.2.3}Results}{14}{subsection.2.2.3}
 \contentsline {subsubsection}{\textit {Control items}}{14}{section*.10}
