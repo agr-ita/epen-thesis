@@ -66,56 +66,59 @@
 \contentsline {paragraph}{/u/-epenthesis}{43}{section*.49}
 \contentsline {subsection}{\numberline {2.4.4}Discussion}{43}{subsection.2.4.4}
 \contentsline {section}{\numberline {2.5}Conclusions}{44}{section.2.5}
-\contentsline {chapter}{\numberline {3}Chapter Three Title}{46}{chapter.3}
-\contentsline {section}{\numberline {3.1}General methods}{46}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}ASR tools as models of perception}{46}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Anatomy of an ASR system}{46}{subsection.3.1.2}
-\contentsline {subsubsection}{Corpora}{46}{section*.50}
-\contentsline {paragraph}{CSJ}{46}{section*.51}
-\contentsline {paragraph}{KCSS}{46}{section*.52}
-\contentsline {subsubsection}{Features}{46}{section*.53}
-\contentsline {subsubsection}{Acoustic model}{47}{section*.54}
-\contentsline {subsubsection}{Language models}{47}{section*.55}
-\contentsline {subsubsection}{Decoding}{47}{section*.56}
-\contentsline {subsection}{\numberline {3.1.3}Assessing native performance}{47}{subsection.3.1.3}
-\contentsline {subsubsection}{Lexicon-based decoding}{47}{section*.57}
-\contentsline {subsubsection}{Phonetic-based decoding}{47}{section*.58}
-\contentsline {subsection}{\numberline {3.1.4}Human-model comparisons}{47}{subsection.3.1.4}
-\contentsline {subsubsection}{Simulations}{47}{section*.59}
-\contentsline {subsubsection}{Data analysis: ABC easy as 123}{47}{section*.60}
-\contentsline {paragraph}{Reasoning}{47}{section*.61}
-\contentsline {paragraph}{Model selection}{47}{section*.62}
-\contentsline {paragraph}{Parameter tuning}{47}{section*.63}
+\contentsline {chapter}{\numberline {3}{\color {red}Using ASR systems as models of speech perception}}{46}{chapter.3}
+\contentsline {section}{\numberline {3.1}Anatomy of an ASR system}{46}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Corpora}{46}{subsection.3.1.1}
+\contentsline {paragraph}{Corpus of Spontaneous Japanese (CSJ)}{46}{section*.50}
+\contentsline {paragraph}{Korean Corpus of Spontaneous Speech (KCSS)}{46}{section*.51}
+\contentsline {paragraph}{Wall Street Journal corpus}{47}{section*.52}
+\contentsline {paragraph}{MOCHA-TIMIT (?)}{47}{section*.53}
+\contentsline {paragraph}{mngu0 (?)}{47}{section*.54}
+\contentsline {subsection}{\numberline {3.1.2}Features}{47}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Acoustic model}{48}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Language models}{48}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.5}Decoding}{48}{subsection.3.1.5}
+\contentsline {subsection}{\numberline {3.1.6}Scoring: Assessing native performance}{48}{subsection.3.1.6}
 \contentsline {section}{\numberline {3.2}{\color {red}Parlato-hmm}}{48}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Introduction}{48}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Methods}{48}{subsection.3.2.2}
-\contentsline {subsubsection}{Stimuli}{48}{section*.64}
-\contentsline {subsubsection}{Language models}{48}{section*.65}
-\contentsline {subsubsection}{Data analysis}{48}{section*.66}
+\contentsline {subsubsection}{Stimuli}{48}{section*.55}
+\contentsline {subsubsection}{Language models}{49}{section*.56}
+\contentsline {subsubsection}{Identification task simulation}{49}{section*.57}
 \contentsline {subsection}{\numberline {3.2.3}Results}{49}{subsection.3.2.3}
 \contentsline {subsection}{\numberline {3.2.4}Discussion}{49}{subsection.3.2.4}
-\contentsline {section}{\numberline {3.3}{\color {red}m-/ahpa/ + Parlato-lms}}{49}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Introduction}{49}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Methods}{49}{subsection.3.3.2}
-\contentsline {subsubsection}{Stimuli}{49}{section*.67}
-\contentsline {subsubsection}{Language models}{49}{section*.68}
-\contentsline {subsubsection}{Data analysis}{50}{section*.69}
-\contentsline {subsection}{\numberline {3.3.3}Results}{50}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}Discussion}{50}{subsection.3.3.4}
-\contentsline {section}{\numberline {3.4}{\color {red}k-epenth}}{50}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Introduction}{50}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Methods}{50}{subsection.3.4.2}
-\contentsline {subsubsection}{Stimuli}{50}{section*.70}
-\contentsline {subsubsection}{Procedure}{50}{section*.71}
-\contentsline {subsubsection}{Data analysis}{50}{section*.72}
-\contentsline {subsection}{\numberline {3.4.3}Results}{50}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}Discussion}{50}{subsection.3.4.4}
-\contentsline {section}{\numberline {3.5}Conclusions}{50}{section.3.5}
-\contentsline {chapter}{\numberline {4}{\color {red}Gestural vs. acoustic primitives in perceptual vowel epenthesis}}{51}{chapter.4}
-\contentsline {section}{\numberline {4.1}Articulatory Inversion}{51}{section.4.1}
-\contentsline {section}{\numberline {4.2}Predicting confusion patterns}{51}{section.4.2}
-\contentsline {section}{\numberline {4.3}Perceptual experiment}{51}{section.4.3}
-\contentsline {section}{\numberline {4.4}Conclusions}{51}{section.4.4}
-\contentsline {chapter}{\numberline {5}General Discussion}{52}{chapter.5}
-\contentsline {chapter}{\numberline {A}\ignorespaces Are words easier to learn from infant- than adult-directed speech? A quantitative corpus-based investigation}{53}{appendix.A}
-\contentsline {chapter}{\numberline {B}References}{73}{appendix.B}
+\contentsline {section}{\numberline {3.3}{\color {red}Investigating surface phonotactics}}{49}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Introduction}{50}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Experiment 1: {\color {red}Parlato-lms}}{50}{subsection.3.3.2}
+\contentsline {subsubsection}{Methods}{50}{section*.58}
+\contentsline {paragraph}{Stimuli}{50}{section*.59}
+\contentsline {paragraph}{Language models}{50}{section*.60}
+\contentsline {paragraph}{Identification task simulation}{50}{section*.61}
+\contentsline {paragraph}{Data analysis: ABC easy as 123}{50}{section*.62}
+\contentsline {subsubsection}{Results and Discussion}{51}{section*.63}
+\contentsline {subsection}{\numberline {3.3.3}Experiment 2: {\color {red}m-/ahpa/}}{51}{subsection.3.3.3}
+\contentsline {subsubsection}{Methods}{51}{section*.64}
+\contentsline {paragraph}{Stimuli}{51}{section*.65}
+\contentsline {paragraph}{Language models}{51}{section*.66}
+\contentsline {paragraph}{Identification task simulation}{51}{section*.67}
+\contentsline {paragraph}{{\color {red}Data analysis}}{51}{section*.68}
+\contentsline {subsubsection}{Results and Discussion}{52}{section*.69}
+\contentsline {subsection}{\numberline {3.3.4}Discussion}{52}{subsection.3.3.4}
+\contentsline {section}{\numberline {3.4}{\color {red}k-epenth}}{52}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Introduction}{52}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Methods}{52}{subsection.3.4.2}
+\contentsline {subsubsection}{Stimuli}{52}{section*.70}
+\contentsline {paragraph}{Identification task simulation}{52}{section*.71}
+\contentsline {subsubsection}{Data analysis}{52}{section*.72}
+\contentsline {subsection}{\numberline {3.4.3}Results}{52}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Discussion}{52}{subsection.3.4.4}
+\contentsline {section}{\numberline {3.5}Conclusions}{52}{section.3.5}
+\contentsline {chapter}{\numberline {4}{\color {red}Gestural vs. acoustic primitives in perceptual vowel epenthesis}}{53}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{53}{section.4.1}
+\contentsline {section}{\numberline {4.2}Articulatory Inversion}{53}{section.4.2}
+\contentsline {section}{\numberline {4.3}Predicting confusion patterns}{53}{section.4.3}
+\contentsline {section}{\numberline {4.4}Perceptual experiment}{53}{section.4.4}
+\contentsline {section}{\numberline {4.5}Conclusions}{53}{section.4.5}
+\contentsline {chapter}{\numberline {5}General Discussion}{54}{chapter.5}
+\contentsline {chapter}{\numberline {A}\ignorespaces Are words easier to learn from infant- than adult-directed speech? A quantitative corpus-based investigation}{55}{appendix.A}
+\contentsline {chapter}{\numberline {B}References}{75}{appendix.B}
