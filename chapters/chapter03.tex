@@ -88,7 +88,6 @@ The WSJ \cite{} is a corpus of both read and spontaneous American English. For o
 \item What are MFCCs
 \item CMVN
 \item Pitch
-\item LDA?
 \item ...
 \end{itemize}
 
@@ -151,6 +150,51 @@ As such, for each item, we obtained a six-dimensional vector $ident_{model} = [p
 We can define the human equivalent $ident_{human} = [p_{none}, p_{a}, p_{e}, p_{i}, p_{o}, p_{u}]$, which contains the percentage of responses for each item, after aggregating all participant responses. 
 
 \subsection{Results}
+\subsubsection{Overall similarity}
+{\color{red}
+> agr.ep
+  resp          x
+1 none 0.24000338
+2    a 0.05292063
+3    e 0.13446180
+4    i 0.22494707
+5    o 0.08715853
+6    u 0.23929037
+
+[TODO]: Eucl dist
+
+\subsubsection{Effect of coarticulation}
+
+\paragraph{/i/-epenthesis}
+MC3.i <- MCMCglmm(pgram ~ flank.i,
+                    data = d.pgram.i, prior = prior3,
+                    nitt = nitt, thin = thin, burnin = burnin)
+
+> posterior.mode(MC3.i$Sol)
+(Intercept)     flank.i 
+ 0.17919295  0.09635787 
+> HPDinterval(MC3.i$Sol, 0.95)
+                 lower     upper
+(Intercept) 0.08449570 0.2423625
+flank.i     0.01396941 0.1784591
+attr(,"Probability")
+[1] 0.95      
+
+\paragraph{/u/-epenthesis}
+MC3.u <- MCMCglmm(pgram ~ flank.u,
+                    data = d.pgram.u, prior = prior3,
+                    nitt = nitt, thin = thin, burnin = burnin)
+
+> posterior.mode(MC3.u$Sol)
+(Intercept)     flank.u 
+ 0.20857536  0.03915723 
+> HPDinterval(MC3.u$Sol, 0.95)
+                  lower      upper
+(Intercept)  0.15822440 0.26797805
+flank.u     -0.02654263 0.09107656
+attr(,"Probability")
+[1] 0.95
+}
 \subsection{Discussion}
 
 
@@ -172,10 +216,10 @@ We used the same stimuli as in sections \ref{2-parlato}, \ref{2-parlato-dur}, an
 In this section, we investigate the type of phonotactic information used by Japanese listeners when perceiving foreign speech that does not conform to native phonotactics. We test 5 types of language models (LM) when decoding our $V_{1}C_{1}C_{2}V_{2}$ items; these differ only in the weights given to edges between nodes 2 and 3 in the graph shown in Figure \ref{fig:parlato_G}: 
 \begin{enumerate}
     \item A null language model (\textsc{0P-LM}), which implies that listeners base their decoding of consonant clusters on phonetics alone, without using information on phonotactics (as in section \ref{3-parlato-hmm}).
-    \item A phone-unigram language model (\textsc{1P-LM}), which implies that listeners do not take neighbouring phonemes into consideration when decoding the consonant clusters; only the frequency of the vowel $V_{ep}$ to be epenthesized is taken into account when choosing epenthetic vowel quality.
-    \item An online phone-bigram language model (\textsc{2PO-LM}), which implies that listeners decode the clusters as they hear them (decoding is done from the start of the item). Here the choice of epenthetic vowel is modulated by $C_{1}V_{ep}$ diphone frequencies. 
-    \item A retro phone-bigram language model (\textsc{2PR-LM}), which implies that listeners decode the clusters based on the most recent information (decoding is done from the end of the item). Here the choice of epenthetic vowel is modulated by $V_{ep}C_{2}$ diphone frequencies.
-    \item A {\color{red}batch phone-bigram language model (\textsc{2PB-LM})}, which implies that listeners decode the item considering the entire structure, with bigrams. Here the choice of epenthetic vowel is modulated by $C_{1}V_{ep}$ and $V_{ep}C_{2}$ diphone frequencies. %check
+    \item A phone-unigram language model (\textsc{1P-LM}), which implies that listeners do not take neighbouring phonemes into consideration when decoding the consonant clusters; only the frequency of the vowel $V_{ep}$ to be epenthesized (compared to that of $C_{2}$) is taken into account when choosing epenthetic vowel quality.
+    \item An online phone-bigram language model (\textsc{2PO-LM}), which implies that listeners decode the clusters as they hear them (decoding is done from the start of the item). Here the choice of epenthetic vowel is modulated by $C_{1}V_{ep}$ and $C_{1}C_{2}$ diphone frequencies. 
+    \item A retro phone-bigram language model (\textsc{2PR-LM}), which implies that listeners decode the clusters based on the most recent information (decoding is done from the end of the item). Here the choice of epenthetic vowel is modulated by $V_{ep}C_{2}$ and $C_{1}C_{2}$ diphone frequencies.
+    \item A batch phone-bigram language model (\textsc{2PB-LM}), which implies that listeners decode the item considering the entire structure, with bigrams. Here the choice of epenthetic vowel is modulated by $C_{1}V_{ep}$ and $V_{ep}C_{2}$ (and $C_{1}C_{2}$) diphone frequencies.  
 \end{enumerate}
 
 

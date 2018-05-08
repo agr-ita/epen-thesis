@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.27)  5 MAY 2018 19:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.27)  8 MAY 2018 18:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1487,7 +1487,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [47]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 131.
+(hyperref)                removing `\@ifnextchar' on input line 130.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1500,22 +1500,14 @@ File: images/chapter03/parlato_hmm_Gfst.pdf Graphic file (type pdf)
 
 <use images/chapter03/parlato_hmm_Gfst.pdf>
 Package pdftex.def Info: images/chapter03/parlato_hmm_Gfst.pdf used on input li
-ne 142.
+ne 141.
 (pdftex.def)             Requested size: 341.43436pt x 109.90622pt.
 
-Overfull \hbox (49.65704pt too wide) in paragraph at lines 150--152
+Overfull \hbox (49.65704pt too wide) in paragraph at lines 149--151
 []\OT1/cmr/m/n/10.95 As such, for each item, we ob-tained a six-dimensional vec
 -tor $\OML/cmm/m/it/10.95 ident[] \OT1/cmr/m/n/10.95 = [\OML/cmm/m/it/10.95 p[]
 ; p[]; p[]; p[]; p[]; p[]\OT1/cmr/m/n/10.95 ]$,
  []
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 161.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 166.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1524,8 +1516,44 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [49 <./images/chapter03/parlato_hmm_Gfst.pdf>]
+Overfull \hbox (60.81642pt too wide) in paragraph at lines 173--182
+[]\OT1/cmr/m/n/10.95 > posterior.mode(MC3.i$\OML/cmm/m/it/10.95 Sol\OT1/cmr/m/n
+/10.95 )(\OML/cmm/m/it/10.95 Intercept\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 f
+lank:i\OT1/cmr/m/n/10.95 0\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 179192950\OML
+/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 09635787 \OML/cmm/m/it/10.95 > HPDinterval\
+OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 MC\OT1/cmr/m/n/10.95 3\OML/cmm/m/it/10.9
+5 :i$\OT1/cmr/m/n/10.95 Sol,
+ []
 
-LaTeX Warning: Reference `' on page 50 undefined on input line 192.
+
+Overfull \hbox (45.5801pt too wide) in paragraph at lines 173--182
+\OT1/cmr/m/n/10.95 0.95) lower up-per (In-ter-cept) 0.08449570 0.2423625 flank.
+i 0.01396941 0.1784591 attr(,"Probability")
+ []
+
+
+Overfull \hbox (68.85007pt too wide) in paragraph at lines 188--198
+[]\OT1/cmr/m/n/10.95 > posterior.mode(MC3.u$\OML/cmm/m/it/10.95 Sol\OT1/cmr/m/n
+/10.95 )(\OML/cmm/m/it/10.95 Intercept\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 f
+lank:u\OT1/cmr/m/n/10.95 0\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 208575360\OML
+/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 03915723 \OML/cmm/m/it/10.95 > HPDinterval\
+OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 MC\OT1/cmr/m/n/10.95 3\OML/cmm/m/it/10.9
+5 :u$\OT1/cmr/m/n/10.95 Sol,
+ []
+
+
+Overfull \hbox (63.22177pt too wide) in paragraph at lines 188--198
+\OT1/cmr/m/n/10.95 0.95) lower up-per (In-ter-cept) 0.15822440 0.26797805 flank
+.u -0.02654263 0.09107656 attr(,"Probability")
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 205.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 210.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1535,19 +1563,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [50]
 
+LaTeX Warning: Reference `' on page 51 undefined on input line 236.
+
+
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 203.
+(hyperref)                removing `\@ifnextchar' on input line 247.
 
 <images/chapter03/m-ahpa_Gfst.pdf, id=1172, 614.295pt x 207.77625pt>
 File: images/chapter03/m-ahpa_Gfst.pdf Graphic file (type pdf)
 
 <use images/chapter03/m-ahpa_Gfst.pdf>
-Package pdftex.def Info: images/chapter03/m-ahpa_Gfst.pdf used on input line 21
-3.
+Package pdftex.def Info: images/chapter03/m-ahpa_Gfst.pdf used on input line 25
+7.
 (pdftex.def)             Requested size: 341.43436pt x 115.4852pt.
 
 
-LaTeX Warning: Reference `' on page 51 undefined on input line 226.
+LaTeX Warning: Reference `' on page 51 undefined on input line 270.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1555,31 +1586,41 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[51 <./images/chapter03/m-ahpa_Gfst.pdf>]
+[51]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 243.
+(hyperref)                removing `\@ifnextchar' on input line 287.
 
 )
+Underfull \vbox (badness 1533) has occurred while \output is active []
+
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[52]
+[52 <./images/chapter03/m-ahpa_Gfst.pdf>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[53]
 Chapter 4.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\@ifnextchar' on input line 71.
 
-(./chapters/chapter04.tex) [53
+(./chapters/chapter04.tex) [54
 
 ]
 Chapter 5.
 (./chapters/chapter06-disc.tex) (./chapters/appendix.tex
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=120
-5, 614.295pt x 794.97pt>
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=121
+3, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
@@ -1595,11 +1636,11 @@ Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf used on input line 3.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
-[54
+[55
 
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=121
-2, page=1, 614.295pt x 794.97pt>
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=122
+1, page=1, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
@@ -1648,60 +1689,25 @@ ge 1>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf, page1 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [55 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
-]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=124
-9, page=2, 614.295pt x 794.97pt>
-File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
-aphic file (type pdf)
-
-<use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 2>
-Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page2 used on input line 3.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
-aphic file (type pdf)
-
-<use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 2>
-Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page2 used on input line 3.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 27.18335pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
-aphic file (type pdf)
-
-<use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 2>
-Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page2 used on input line 3.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [56 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
 <images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=125
-9, page=3, 614.295pt x 794.97pt>
+7, page=2, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 3>
+ge 2>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page3 used on input line 3.
+171227_draft.pdf, page2 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 3>
+ge 2>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page3 used on input line 3.
+171227_draft.pdf, page2 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 
@@ -1714,29 +1720,29 @@ File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 3>
+ge 2>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page3 used on input line 3.
+171227_draft.pdf, page2 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [57 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
 <images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=126
-7, page=4, 614.295pt x 794.97pt>
+7, page=3, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 4>
+ge 3>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page4 used on input line 3.
+171227_draft.pdf, page3 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 4>
+ge 3>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page4 used on input line 3.
+171227_draft.pdf, page3 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 
@@ -1749,29 +1755,29 @@ File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 4>
+ge 3>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page4 used on input line 3.
+171227_draft.pdf, page3 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [58 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=129
-3, page=5, 614.295pt x 794.97pt>
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=127
+5, page=4, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 5>
+ge 4>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page5 used on input line 3.
+171227_draft.pdf, page4 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 5>
+ge 4>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page5 used on input line 3.
+171227_draft.pdf, page4 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 
@@ -1784,29 +1790,29 @@ File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 5>
+ge 4>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page5 used on input line 3.
+171227_draft.pdf, page4 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [59 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
 <images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=130
-7, page=6, 614.295pt x 794.97pt>
+1, page=5, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 6>
+ge 5>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page6 used on input line 3.
+171227_draft.pdf, page5 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 6>
+ge 5>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page6 used on input line 3.
+171227_draft.pdf, page5 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 
@@ -1819,29 +1825,29 @@ File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 6>
+ge 5>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page6 used on input line 3.
+171227_draft.pdf, page5 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [60 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
 <images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=131
-2, page=7, 614.295pt x 794.97pt>
+5, page=6, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 7>
+ge 6>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page7 used on input line 3.
+171227_draft.pdf, page6 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 7>
+ge 6>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page7 used on input line 3.
+171227_draft.pdf, page6 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 
@@ -1854,29 +1860,29 @@ File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 7>
+ge 6>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page7 used on input line 3.
+171227_draft.pdf, page6 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [61 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
 <images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=132
-8, page=8, 614.295pt x 794.97pt>
+1, page=7, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 8>
+ge 7>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page8 used on input line 3.
+171227_draft.pdf, page7 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 8>
+ge 7>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page8 used on input line 3.
+171227_draft.pdf, page7 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 
@@ -1889,29 +1895,29 @@ File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 8>
+ge 7>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page8 used on input line 3.
+171227_draft.pdf, page7 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [62 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=135
-0, page=9, 614.295pt x 794.97pt>
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=133
+7, page=8, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 9>
+ge 8>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page9 used on input line 3.
+171227_draft.pdf, page8 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 9>
+ge 8>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page9 used on input line 3.
+171227_draft.pdf, page8 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 
@@ -1924,29 +1930,29 @@ File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 9>
+ge 8>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page9 used on input line 3.
+171227_draft.pdf, page8 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [63 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=137
-0, page=10, 614.295pt x 794.97pt>
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=135
+8, page=9, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 10>
+ge 9>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page10 used on input line 3.
+171227_draft.pdf, page9 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 10>
+ge 9>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page10 used on input line 3.
+171227_draft.pdf, page9 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 
@@ -1959,29 +1965,29 @@ File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 10>
+ge 9>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page10 used on input line 3.
+171227_draft.pdf, page9 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [64 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
 <images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=137
-5, page=11, 614.295pt x 794.97pt>
+8, page=10, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 11>
+ge 10>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page11 used on input line 3.
+171227_draft.pdf, page10 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 11>
+ge 10>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page11 used on input line 3.
+171227_draft.pdf, page10 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 
@@ -1994,29 +2000,29 @@ File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 11>
+ge 10>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page11 used on input line 3.
+171227_draft.pdf, page10 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [65 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=139
-5, page=12, 614.295pt x 794.97pt>
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=138
+3, page=11, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 12>
+ge 11>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page12 used on input line 3.
+171227_draft.pdf, page11 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 12>
+ge 11>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page12 used on input line 3.
+171227_draft.pdf, page11 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 
@@ -2029,29 +2035,29 @@ File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 12>
+ge 11>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page12 used on input line 3.
+171227_draft.pdf, page11 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [66 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=141
-6, page=13, 614.295pt x 794.97pt>
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=140
+3, page=12, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 13>
+ge 12>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page13 used on input line 3.
+171227_draft.pdf, page12 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 13>
+ge 12>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page13 used on input line 3.
+171227_draft.pdf, page12 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 
@@ -2064,29 +2070,29 @@ File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 13>
+ge 12>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page13 used on input line 3.
+171227_draft.pdf, page12 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [67 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
 <images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=142
-2, page=14, 614.295pt x 794.97pt>
+5, page=13, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 14>
+ge 13>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page14 used on input line 3.
+171227_draft.pdf, page13 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 14>
+ge 13>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page14 used on input line 3.
+171227_draft.pdf, page13 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 
@@ -2099,29 +2105,29 @@ File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 14>
+ge 13>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page14 used on input line 3.
+171227_draft.pdf, page13 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [68 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=142
-7, page=15, 614.295pt x 794.97pt>
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=143
+0, page=14, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 15>
+ge 14>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page15 used on input line 3.
+171227_draft.pdf, page14 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 15>
+ge 14>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page15 used on input line 3.
+171227_draft.pdf, page14 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 
@@ -2134,29 +2140,29 @@ File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 15>
+ge 14>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page15 used on input line 3.
+171227_draft.pdf, page14 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [69 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
 <images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=143
-2, page=16, 614.295pt x 794.97pt>
+5, page=15, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 16>
+ge 15>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page16 used on input line 3.
+171227_draft.pdf, page15 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 16>
+ge 15>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page16 used on input line 3.
+171227_draft.pdf, page15 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 
@@ -2169,29 +2175,29 @@ File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 16>
+ge 15>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page16 used on input line 3.
+171227_draft.pdf, page15 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [70 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=143
-7, page=17, 614.295pt x 794.97pt>
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=144
+0, page=16, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 17>
+ge 16>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page17 used on input line 3.
+171227_draft.pdf, page16 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 17>
+ge 16>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page17 used on input line 3.
+171227_draft.pdf, page16 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 
@@ -2204,29 +2210,29 @@ File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 17>
+ge 16>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page17 used on input line 3.
+171227_draft.pdf, page16 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [71 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
 <images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=144
-2, page=18, 614.295pt x 794.97pt>
+5, page=17, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 18>
+ge 17>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page18 used on input line 3.
+171227_draft.pdf, page17 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 18>
+ge 17>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page18 used on input line 3.
+171227_draft.pdf, page17 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 
@@ -2239,29 +2245,29 @@ File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 18>
+ge 17>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page18 used on input line 3.
+171227_draft.pdf, page17 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [72 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=146
-1, page=19, 614.295pt x 794.97pt>
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=145
+0, page=18, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 19>
+ge 18>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page19 used on input line 3.
+171227_draft.pdf, page18 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 19>
+ge 18>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page19 used on input line 3.
+171227_draft.pdf, page18 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 
@@ -2274,14 +2280,49 @@ File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
-ge 19>
+ge 18>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
-171227_draft.pdf, page19 used on input line 3.
+171227_draft.pdf, page18 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [73 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ]
-<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=146
-8, page=20, 614.295pt x 794.97pt>
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=147
+0, page=19, 614.295pt x 794.97pt>
+File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
+aphic file (type pdf)
+
+<use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
+ge 19>
+Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
+171227_draft.pdf, page19 used on input line 3.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
+aphic file (type pdf)
+
+<use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
+ge 19>
+Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
+171227_draft.pdf, page19 used on input line 3.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 27.18335pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
+aphic file (type pdf)
+
+<use images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, pa
+ge 19>
+Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
+171227_draft.pdf, page19 used on input line 3.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [74 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+]
+<images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf, id=147
+6, page=20, 614.295pt x 794.97pt>
 File: images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf Gr
 aphic file (type pdf)
 
@@ -2313,12 +2354,12 @@ ge 20>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_discriminability_20
 171227_draft.pdf, page20 used on input line 3.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [74 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
+ [75 <./images/appendix/IDS_ADS_Riken_word_discriminability_20171227_draft.pdf>
 ])
 Appendix B.
-(./main.bbl [75
+(./main.bbl [76
 
-] [76
+] [77
 
 ]
 
@@ -2327,7 +2368,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[77])
+[78])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 92.
 
 
@@ -2336,7 +2377,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[78]
+[79]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 92.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 92.
@@ -2351,11 +2392,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 92.
  )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 206 ({)
+### simple group (level 1) entered at line 250 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 9046 strings out of 495020
- 134791 string characters out of 6181324
+ 9051 strings out of 495020
+ 134842 string characters out of 6181324
  229580 words of memory out of 5000000
  11800 multiletter control sequences out of 15000+600000
  15632 words of font info for 50 fonts, out of 8000000 for 9000
@@ -2410,10 +2451,10 @@ pfb></usr/share/texmf/fonts/type1/fkr/tipa/tipasl12.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
 es/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (78 pages, 1290913 bytes).
+Output written on main.pdf (79 pages, 1293979 bytes).
 PDF statistics:
- 1648 PDF objects out of 1728 (max. 8388607)
- 1390 compressed objects within 14 object streams
- 291 named destinations out of 1000 (max. 500000)
+ 1658 PDF objects out of 1728 (max. 8388607)
+ 1399 compressed objects within 14 object streams
+ 296 named destinations out of 1000 (max. 500000)
  886 words of extra memory for PDF output out of 10000 (max. 10000000)
 
