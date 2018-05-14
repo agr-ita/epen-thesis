@@ -65,24 +65,6 @@ The WSJ \cite{} is a corpus of both read and spontaneous American English. For o
 \item ...
 \end{itemize}
 
-\paragraph{MOCHA-TIMIT (?)}
-\begin{itemize}
-\item General description (type of speech, number of speakers)
-\item Alignment?
-\item Phone set
-\item Train-test division (n utterances, time)
-\item ...
-\end{itemize}
-
-\paragraph{mngu0 (?)}
-\begin{itemize}
-\item General description (type of speech, number of speakers)
-\item Alignment?
-\item Phone set
-\item Train-test division (n utterances, time)
-\item ...
-\end{itemize}
-
 \subsection{Features}
 \begin{itemize}
 \item What are MFCCs
@@ -149,6 +131,11 @@ After decoding the stimuli, we obtained for each possible transcription of each 
 As such, for each item, we obtained a six-dimensional vector $ident_{model} = [p_{none}, p_{a}, p_{e}, p_{i}, p_{o}, p_{u}]$, containing a discrete probability distribution, with a probability mass function linking the identification task options 'none', 'a', 'e', 'i', 'o', 'u', to their respective probabilities (i.e., posteriorgrams).
 We can define the human equivalent $ident_{human} = [p_{none}, p_{a}, p_{e}, p_{i}, p_{o}, p_{u}]$, which contains the percentage of responses for each item, after aggregating all participant responses. 
 
+\subsubsection{Data analysis}
+Statistical analyses were performed with the R statistical software \cite{R-base}, using Markov chain Monte Carlo generalised linear mixed-models \cite{R-MCMCglmm, R-coda}. These Bayesian models sample coefficients from the posterior probability distribution conditioned on the data and given priors. We used priors that are standard for mixed-effects multinomial models. Model convergence was assessed by visual inspection of trace plots and the Gelman–Rubin convergence diagnostic \cite{gelman1992}, using eight chains with different initialisations. Effects were considered statistically significant if the 95\% highest posterior density (HPD) interval estimated for the coefficient of interest did not include zero. We report both the posterior mode and the 95\% HPD interval.  
+
+In order to assess the influence of $V_{1}$ and $V_{2}$ (henceforth: flanking vowels) on epenthetic vowel quality (/i/ or /u/), we chose as fixed effect for our statistical models \textsc{Number of Same Flanking Vowels} (\textsc{NSFV}; considered as a continuous variable with values 0, 1, or 2 instead of a factor with 3 levels, in order to reduce the number of model parameters and promote convergence). Due to the almost null variance and the consequent poor trace plot for the random intercept \textsc{Cluster}, we did not include it in the statistical models. Our response variable was the continuous variable \textsc{Posteriorgram}.\footnote{Responses by human participants and exemplar models were given by trial; therefore in previous cases the response variable was binomial.}
+
 \subsection{Results}
 \subsubsection{Overall similarity}
 \begin{figure}[H]
@@ -157,52 +144,47 @@ We can define the human equivalent $ident_{human} = [p_{none}, p_{a}, p_{e}, p_{
   \caption{{\color{red}\textit{CAPTION}}}
   \label{fig:parl_hmm_overall}
 \end{figure}
-Figure \ref{fig:parl_hmm_overall} shows the distribution of posteriorgrams for each response, with one datapoint per stimulus. The most probable transcriptions for the stimuli were  
+Figure \ref{fig:parl_hmm_overall} shows the distribution of posteriorgrams for each response, with one datapoint per stimulus. The most probable transcriptions for the stimuli were ``none'' (26.7\%), ``u'' (24.3\%) and ``i'' (22.5\%).  While these were also the most frequent responses given by human participants (``none'': 13.1\%; ``u'': 63.1\%; ``i'': 15.3\%), the preponderance of \textipa{/u/}-epenthesis is missing in the model.
 
-{\color{red}
-> agr.ep
-  resp          x
-1 none 0.24000338
-2    a 0.05292063
-3    e 0.13446180
-4    i 0.22494707
-5    o 0.08715853
-6    u 0.23929037
+% > agr.ep (model average pgram)
+%   resp          x
+% 1 none 0.26667043
+% 2    a 0.04802057
+% 3    e 0.12948173
+% 4    i 0.22494707
+% 5    o 0.08715853
+% 6    u 0.24372167
 
-[TODO]: Eucl dist
+% > colMeans(d.comp.per[-1]) (human average resp)
+%     p.none        p.a        p.e        p.i        p.o        p.u 
+% 0.13071895 0.01416122 0.02505447 0.15250545 0.04684096 0.63071895 
+
+In order to have a general idea of the model's ability to reproduce human behaviour, we computed the distance between human and model response patterns by computing the normalized Euclidean distance between $ident_{model}$ and $ident_{human}$, within each experimental item. The mean (and median) distance was $0.44$. This is higher than what was obtained by the best exemplar model in section \ref{2-parlato-dur} (mean distance: $0.33$; median distance: $0.21$); however remember that exemplar models were only able to output ``i'', ``o'', and ``u'' as responses. When computing the distance by taking into account the missing responses ``none'', ``a'', and ``e'', responses from the best JP exemplar model have a mean distance of $0.39$ (median: $0.30$) with respect to human responses.
+
+While it might be tempting to conclude that the exemplar model was superior compared to the HMM model, it is important to note that the task modelled by the HMM-based model is closer to the task participants were subjected to (6-alternative forced choice identification task) than the exemplar models (3-AFC identification task). Technically, a ``dummy'' model in the 3-AFC situation, where all options are equally probable, would output ``u'' for $33\%$ of the trials. This is a higher percentage of \textipa{/u/}-epenthesis than the $24.3\%$ from our current model. Since ``u'' is by far the most frequent response given by human participants (and ``a'' and ``e'' are very infrequent), even a dummy 3-AFC \textipa{\{``i'', ``o'', ``u''\}} model might outclass our 6-AFC \textipa{\{``none'', ``a'', ``e'', ``i'', ``o'', ``u''\}} ASR system.
+
+As such, we believe that it is unfair to compare Euclidean distances between models based on different tasks. We can, however, see if the ASR-based model reproduces the qualitative effects that the best exemplar model was able to mimic.
 
 \subsubsection{Effect of coarticulation}
 
 \paragraph{/i/-epenthesis}
-MC3.i <- MCMCglmm(pgram ~ flank.i,
-                    data = d.pgram.i, prior = prior3,
-                    nitt = nitt, thin = thin, burnin = burnin)
 
-> posterior.mode(MC3.i$Sol)
-(Intercept)     flank.i 
- 0.17919295  0.09635787 
-> HPDinterval(MC3.i$Sol, 0.95)
-                 lower     upper
-(Intercept) 0.08449570 0.2423625
-flank.i     0.01396941 0.1784591
-attr(,"Probability")
-[1] 0.95      
+The left panel of Figure \ref{fig:parl_hmm_iu} shows the posteriorgrams for \textipa{/i/}-epenthesis given by our ASR-based model with a ``null'' language model (\textsc{0P-LM}).
+The main effect of \textsc{NSFV} was significant (mode: $0.10$, HPD: $[0.01, 0.18]$). An increased number of \textipa{/i/} flanking vowels resulted in higher posteriorgrams for stimuli transcriptions with \textipa{/i/} epenthesis.
+
+\begin{figure}[H]
+  \centering
+  \begin{overpic}[page=2, width=0.4\linewidth]{chapter03/parl_hmm_figs}\end{overpic}
+  \hspace{1cm}
+  \begin{overpic}[page=3, width=0.4\linewidth]{chapter03/parl_hmm_figs}\end{overpic}
+  \caption{{\color{red}\textit{CAPTION}}}
+  \label{fig:parl_hmm_iu}
+\end{figure}
 
 \paragraph{/u/-epenthesis}
-MC3.u <- MCMCglmm(pgram ~ flank.u,
-                    data = d.pgram.u, prior = prior3,
-                    nitt = nitt, thin = thin, burnin = burnin)
+The right panel of Figure \ref{fig:parl_hmm_iu} shows the posteriorgrams for \textipa{/u/}-epenthesis given by our ASR-based model with a ``null'' language model (\textsc{0P-LM}).
+The main effect of \textsc{NSFV} was not significant (mode: $0.04$, HPD: $[-0.02, 0.10]$). An increased number of \textipa{/u/} flanking vowels did not result in significantly higher posteriorgrams for stimuli transcriptions with \textipa{/u/} epenthesis.
 
-> posterior.mode(MC3.u$Sol)
-(Intercept)     flank.u 
- 0.20857536  0.03915723 
-> HPDinterval(MC3.u$Sol, 0.95)
-                  lower      upper
-(Intercept)  0.15822440 0.26797805
-flank.u     -0.02654263 0.09107656
-attr(,"Probability")
-[1] 0.95
-}
 \subsection{Discussion}
 
 
@@ -263,7 +245,7 @@ We used the same language models as in Experiment 1, adapted to the $V_{1}C_{1}C
 \begin{figure}[htb]
     \centering
     \includegraphics[width=0.8\linewidth]{chapter03/m-ahpa_Gfst.pdf}
-    \caption{Constrained language model used to test the models (here: LM for \textipa{/ahpa/} trials). Nodes in the graph represent states, weighted edges represent transitions between states (here: phonemes). When relevant, weighted edges are labeled with the probability to choose that edge when decoding, which affects the final language model score of each possible path. These scores are then combined with acoustic and duration scores when decoding experimental items.}
+    \caption{Constrained language model used to test the models (here: LM for \textipa{/ahpa/} trials). Nodes in the graph represent states, weighted edges represent transitions between states (here: phonemes). When relevant, weighted edges are labeled with the probability to choose that edge when decoding, which affects the final language model score of each possible path. These scores are then combined with acoustic scores when decoding experimental items.}
     \label{fig:m-ahpa_G}
 \end{figure}
   
@@ -292,7 +274,7 @@ Since we saw in section \ref{2-ahpa} that patterns of epenthesis differed depend
 % k-epenth %
 %%%%%%%%%%%%
 
-\section{{\color{red}k-epenth}} \label{3-k-epenth}
+\section{{\color{red}Do we need to go deeper? Are surface phonotactics enough?}} \label{3-k-epenth}
 \subsection{Introduction}
 \subsection{Methods}
 \subsubsection{Stimuli}
