@@ -27,19 +27,29 @@
 % General methods % %
 %%%%%%%%%%%%%%%%%%%
 
-\section{Anatomy of an ASR system}
-{\color{red} equation}
+\section{Anatomy of an HMM-based speech recogniser}
+In this chapter we used Hidden Markov Model (HMM)-based speech recognisers as model of human perception.
+
+{\color{red}
+...
+[Here equation + graph of modules]
+}
+
+
+In the field of ASR, Neural Network (NN)-based speech recognisers are king. In spite of better performance of NN-based ASR systems, we decided to use more well-understood HMM-based recognisers. Indeed, before the decoding step, these models offer a clear separation between the acoustic model (AM; i.e., mapping between phoneme categories and acoustics) and the language model (LM; i.e., frequencies of word/phoneme sequences). This allowed us to test ASR systems with different LMs while keeping the AM constant, as well as adapting LMs to mimic the experimental paradigms used when testing human participants.
+We will now present the components of an HMM-based ASR system in more detail.
+
 \subsection{Corpora}
 
 In order to train and test our ASR system, we needed transcribed speech corpora. These corpora consisted of speech recordings which have been annotated; for each utterance, we have a more or less detailed transcription of what was said.
 While the ideal annotation is the one for which phoneticians have provided phoneme categories, as well as their boundaries, often we might only have access to by-utterance annotations where we are only provided with a sequence of words/phonemes for each utterance. In these cases, we rely on forced alignment to automatically find phoneme boundaries.
-In the following sections have trained ASR systems with different ``native'' languages. We now present the different speech corpora that were used. 
-{\color{red}Add why we are working on JP, KR, EN (and these corpora); either here or in respective chapter intros)}
+
+In the following sections we have trained ASR systems with different ``native'' languages, namely Japanese (JP) and Korean (KR). These languages were of particular interest because of their relatively restrictive phonotactic constraints with regards to consonant clusters, as well as the availability of spontaneous speech corpora, which we will now present. 
 
 \paragraph{Corpus of Spontaneous Japanese (CSJ)}
 As the name suggests, the CSJ \cite{maekawa2003} contains recordings of spontaneous Standard Japanese. The corpus is composed of two subparts: (1) academic presentation speech (APS), which consists of live recordings of academic presentations, and (2) simulated public speech (SPS), where speakers presented everyday topics in front of a small audience. For our models we only kept SPS, which is more representative of everyday conversations at the level of the lexicon, and has a more balanced population than the young male-dominated APS.
 Our subset of the corpus contained 400,547 utterances produced by 594 speakers (331 female, 263 male), with an average of 674.3 utterances per speaker.  
-Recordings were manually transcribed by native speakers of Japanese. Phoneme boundaries were {\color{red}manually adjusted}.
+Recordings were manually transcribed by native speakers of Japanese. Phoneme boundaries were {\color{red}manually adjusted, however this alignment was not used when our models, as it was overwritten by forced alignment}.
 
 \begin{itemize}
 \item Train-test division (n utterances, time)
@@ -53,15 +63,6 @@ Recordings were manually transcribed by native speakers of Korean. We used phone
 The corpus contains 126,132 utterances produced by 40 speakers (as explained above), with an average of 3153.3 utterances per speaker. 
 
 \begin{itemize}
-\item Train-test division (n utterances, time)
-\item ...
-\end{itemize}
-
-\paragraph{Wall Street Journal corpus}
-The WSJ \cite{} is a corpus of both read and spontaneous American English. For our work, we only kept to read subset of the corpus.  
-\begin{itemize}
-\item General description (type of speech, number of speakers)
-\item Alignment?
 \item Train-test division (n utterances, time)
 \item ...
 \end{itemize}
@@ -109,7 +110,7 @@ The WSJ \cite{} is a corpus of both read and spontaneous American English. For o
 %%%%%%%%%%%%
 % Parlato2 %
 %%%%%%%%%%%%
-
+\newpage
 \section{{\color{red}Parlato-hmm}} \label{3-parlato-hmm}
 \subsection{Introduction}
 \subsection{Methods}
@@ -122,7 +123,7 @@ In order for the decoding task to be analogous to the experiment described in se
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.8\linewidth]{chapter03/parlato_hmm_Gfst.pdf}
-\caption{Constrained language model used for decoding the stimulus \textipa{/abgi/}. Nodes in the graph represent states, edges represent transitions between states (here: phonemes). The lack of weights on edges issued from a same node (e.g., between states 2 and 3) indicates that path selection is entirely decided by acoustic scores when decoding experimental items. An optional silence can be inserted by the model between states 3 and 4.}
+\caption{Constrained language model used for decoding the stimulus \textipa{/abgi/}. Nodes in the graph represent states, edges represent transitions between states (here: phonemes). The lack of weights on edges issued from a same node (e.g., between states 2 and 3) indicates that path selection is entirely decided by acoustic scores when decoding experimental items, with an acoustic scale of $0.1$. An optional silence can be inserted by the model between states 3 and 4.}
 \label{fig:parlato_G}
 \end{figure}
 
@@ -133,7 +134,7 @@ As such, for each item, we obtained a six-dimensional vector $ident_{model} = [p
 We can define the human equivalent $ident_{human} = [p_{none}, p_{a}, p_{e}, p_{i}, p_{o}, p_{u}]$, which contains the percentage of responses for each item, after aggregating all participant responses. 
 
 \subsubsection{Data analysis}
-Statistical analyses were performed with the R statistical software \cite{R-base}, using Markov chain Monte Carlo generalised linear mixed-models \cite{R-MCMCglmm, R-coda}. These Bayesian models sample coefficients from the posterior probability distribution conditioned on the data and given priors. We used priors that are standard for mixed-effects multinomial models. Model convergence was assessed by visual inspection of trace plots and the Gelman–Rubin convergence diagnostic \cite{gelman1992}, using eight chains with different initialisations. Effects were considered statistically significant if the 95\% highest posterior density (HPD) interval estimated for the coefficient of interest did not include zero. We report both the posterior mode and the 95\% HPD interval.  
+Statistical analyses were performed with the R statistical software \cite{R-base}, using Markov chain Monte Carlo generalised linear mixed-models \cite{R-MCMCglmm, R-coda}. These Bayesian models sample coefficients from the posterior probability distribution conditioned on the data and given priors. We used priors that are standard for linear models. Model convergence was assessed by visual inspection of trace plots and the Gelman–Rubin convergence diagnostic \cite{gelman1992}, using eight chains with different initialisations. Effects were considered statistically significant if the 95\% highest posterior density (HPD) interval estimated for the coefficient of interest did not include zero. We report both the posterior mode and the 95\% HPD interval.  
 
 In order to assess the influence of $V_{1}$ and $V_{2}$ (henceforth: flanking vowels) on epenthetic vowel quality (/i/ or /u/), we chose as fixed effect for our statistical models \textsc{Number of Same Flanking Vowels} (\textsc{NSFV}; considered as a continuous variable with values 0, 1, or 2 instead of a factor with 3 levels, in order to reduce the number of model parameters and promote convergence). Due to the almost null variance and the consequent poor trace plot for the random intercept \textsc{Cluster}, we did not include it in the statistical models. Our response variable was the continuous variable \textsc{Posteriorgram}.\footnote{Responses by human participants and exemplar models were given by trial; therefore in previous cases the response variable was binomial.}
 
@@ -142,7 +143,7 @@ In order to assess the influence of $V_{1}$ and $V_{2}$ (henceforth: flanking vo
 \begin{figure}[H]
   \centering
   \begin{overpic}[page=1, width=0.5\linewidth]{chapter03/parl_hmm_figs}\end{overpic}
-  \caption{{\color{red}\textit{CAPTION}}}
+  \caption{\textit{Distribution of posteriorgrams obtained when decoding with a ``null'' language model (0P-LM). The box and whiskers plots display the distribution of posteriorgrams across experimental items.}}
   \label{fig:parl_hmm_overall}
 \end{figure}
 Figure \ref{fig:parl_hmm_overall} shows the distribution of posteriorgrams for each response, with one datapoint per stimulus. The most probable transcriptions for the stimuli were ``none'' (26.7\%), ``u'' (24.3\%) and ``i'' (22.5\%).  While these were also the most frequent responses given by human participants (``none'': 13.1\%; ``u'': 63.1\%; ``i'': 15.3\%), the preponderance of \textipa{/u/}-epenthesis is missing in the model.
@@ -178,21 +179,23 @@ The main effect of \textsc{NSFV} was significant (mode: $0.10$, HPD: $[0.01, 0.1
   \begin{overpic}[page=2, width=0.4\linewidth]{chapter03/parl_hmm_figs}\end{overpic}
   \hspace{1cm}
   \begin{overpic}[page=3, width=0.4\linewidth]{chapter03/parl_hmm_figs}\end{overpic}
-  \caption{{\color{red}\textit{CAPTION}}}
+  \caption{\textit{Posteriorgrams for \textipa{/i/}-epenthesis (left) and \textipa{/u/}-epenthesis (right) obtained when decoding with a ``null'' language model (0P-LM). The box and whiskers plots display the distribution of posteriorgrams across experimental items, represented by individual dots.}}
   \label{fig:parl_hmm_iu}
 \end{figure}
 
 \paragraph{/u/-epenthesis}
 The right panel of Figure \ref{fig:parl_hmm_iu} shows the posteriorgrams for \textipa{/u/}-epenthesis given by our ASR-based model with a ``null'' language model (\textsc{0P-LM}).
-The main effect of \textsc{NSFV} was not significant (mode: $0.04$, HPD: $[-0.02, 0.10]$). An increased number of \textipa{/u/} flanking vowels did not result in significantly higher posteriorgrams for stimuli transcriptions with \textipa{/u/} epenthesis.
+The main effect of \textsc{NSFV} was not significant (mode: $0.04$, HPD: $[-0.02, 0.10]$). Therefore, an increased number of \textipa{/u/} flanking vowels did not result in significantly higher posteriorgrams for stimuli transcriptions with \textipa{/u/} epenthesis.
 
 \subsection{Discussion}
+%%% Summary
 
+%%% Duration in ASR?
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 % m-/ahpa/ + parlato_lms %
 %%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\newpage
 \section{{\color{red}Investigating surface phonotactics}} \label{3-surfphono}
 
 \small{\textit{{\color{red}ADD ACKNOWLEDGEMENTS THOMAS + EMMANUEL.\\}}}
@@ -274,7 +277,7 @@ Since we saw in section \ref{2-ahpa} that patterns of epenthesis differed depend
 %%%%%%%%%%%%
 % k-epenth %
 %%%%%%%%%%%%
-
+\newpage
 \section{{\color{red}Do we need to go deeper? Are surface phonotactics enough?}} \label{3-k-epenth}
 \subsection{Introduction}
 \subsection{Methods}

@@ -23,7 +23,7 @@
 \BOOKMARK [2][-]{subsection.2.4.4}{Discussion}{section.2.4}% 23
 \BOOKMARK [1][-]{section.2.5}{Conclusions}{chapter.2}% 24
 \BOOKMARK [0][-]{chapter.3}{redUsing ASR systems as models of speech perception}{}% 25
-\BOOKMARK [1][-]{section.3.1}{Anatomy of an ASR system}{chapter.3}% 26
+\BOOKMARK [1][-]{section.3.1}{Anatomy of an HMM-based speech recogniser}{chapter.3}% 26
 \BOOKMARK [2][-]{subsection.3.1.1}{Corpora}{section.3.1}% 27
 \BOOKMARK [2][-]{subsection.3.1.2}{Features}{section.3.1}% 28
 \BOOKMARK [2][-]{subsection.3.1.3}{Acoustic model}{section.3.1}% 29
@@ -54,8 +54,13 @@
 \BOOKMARK [2][-]{subsection.4.2.3}{Discussion}{section.4.2}% 54
 \BOOKMARK [1][-]{section.4.3}{Predicting confusion patterns}{chapter.4}% 55
 \BOOKMARK [2][-]{subsection.4.3.1}{Methods}{section.4.3}% 56
-\BOOKMARK [1][-]{section.4.4}{Perceptual experiment}{chapter.4}% 57
-\BOOKMARK [1][-]{section.4.5}{Conclusions}{chapter.4}% 58
-\BOOKMARK [0][-]{chapter.5}{General Discussion}{}% 59
-\BOOKMARK [0][-]{appendix.A}{Are words easier to learn from infant- than adult-directed speech? A quantitative corpus-based investigation}{}% 60
-\BOOKMARK [0][-]{appendix.B}{References}{}% 61
+\BOOKMARK [2][-]{subsection.4.3.2}{Results}{section.4.3}% 57
+\BOOKMARK [2][-]{subsection.4.3.3}{Discussion}{section.4.3}% 58
+\BOOKMARK [1][-]{section.4.4}{Perceptual experiment}{chapter.4}% 59
+\BOOKMARK [2][-]{subsection.4.4.1}{Methods}{section.4.4}% 60
+\BOOKMARK [2][-]{subsection.4.4.2}{Results}{section.4.4}% 61
+\BOOKMARK [2][-]{subsection.4.4.3}{Discussion}{section.4.4}% 62
+\BOOKMARK [1][-]{section.4.5}{Conclusions}{chapter.4}% 63
+\BOOKMARK [0][-]{chapter.5}{General Discussion}{}% 64
+\BOOKMARK [0][-]{appendix.A}{Are words easier to learn from infant- than adult-directed speech? A quantitative corpus-based investigation}{}% 65
+\BOOKMARK [0][-]{appendix.B}{References}{}% 66

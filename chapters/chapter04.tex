@@ -30,7 +30,7 @@
 \item General description (type of speech, number of speakers)
 \item Articulators
 \item Phone set
-\item Train-test division (n utterances, time)
+\item Train-valid-test division (n utterances, time, distribution of phonemes)
 \item ...
 \end{itemize}
 
@@ -39,7 +39,7 @@
 \item General description (type of speech, number of speakers)
 \item Articulators: tongue {tip, back, dorsum}, upper lip, lower lip, jaw
 \item Phone set
-\item Train-test division (n utterances, time)
+\item Train-valid-test division (n utterances, time, distribution of phonemes)
 \item ...
 \end{itemize}
 
@@ -48,7 +48,7 @@
 \item General description (type of speech, number of speakers)
 \item Articulators: tongue {tip, back, dorsum}, upper lip, lower lip, jaw
 \item Phone set
-\item Train-test division (n utterances, time)
+\item Train-valid-test division (n utterances, time, distribution of phonemes)
 \item ...
 \end{itemize}
 
@@ -58,26 +58,38 @@
 \paragraph{Articulatory}
 {\color{red}Added velum to mngu0 from MOCHA-TIMIT speaker X; added voicing as binary variable...}
 
-
 \subsubsection{Model architectures} 
 \paragraph{Multilayer Perceptron (MLP)}
 \paragraph{Mixture Density Network (MDN)}
 \paragraph{Trajectory Mixture Density Network (TMDN)}
 \paragraph{Recurrent Neural Network (RNN)}
+\paragraph{Adversarial {\color{red}blabla}}
+
+\subsubsection{Evaluation metrics}
+\paragraph{RMSE}
+{\color{red}The RMSE, traditionally use to evaluate ac-art inversion models was computed as blablabla and it represents the deviation in distance between real and reconstructed x and y for articulators blablabla}
+\paragraph{ABX}
+{\color{red}RMSE traditionally used but what does it mean/how does it translate to what we actually care about? ABX => check contrasts}
+
 
 \subsection{Results}
 \subsubsection{Selecting model architecture}
-{\color{red}Performance is better for RNN blabla when training/testing on mngu0 (?)...}
+{\color{red}Performance (RMSE) is better for RNN blabla when training/testing on mngu0 so we keep it for the next steps blabla... \\ Also, check ABX?}
 
-\subsubsection{Differences in contrast preservation between acoustics and articulatory features}
-{\color{red}ABX is higher for X contrast for acoustic, blablabla...}
+\subsubsection{Data augmentation for mngu0}
+{\color{red}From model trained on MOCHA-TIMIT (msak; say why) we reconstruct the velum ([nasal] feature) for mngu0. Blablabla. We tried to reconstruct [voice] from laryngograph but it didn't work because blabla so we train model to predict binary voicing value blabla.}
+
+\subsubsection{Acoustic-articulatory inverter}
+{\color{red}Training from MOCHA-TIMIT + mngu0 blabla}
+
 
 \subsubsection{Robustness across languages}
 {\color{red}Test mspka?}
+
+
 \subsection{Discussion}
 
 BLABLA
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%% 
 % Predicting confusions % %
@@ -87,6 +99,17 @@ BLABLA
 \small{\textit{{\color{red}ADD ACKNOWLEDGEMENTS PAUL + EWAN + EMMANUEL + ACKN MILICA.\\}}}
 
 \subsection{Methods}
+\subsubsection{Corpora}
+\paragraph{Wall Street Journal - Read (WSJ)}
+The WSJ \cite{} is a corpus of both read and spontaneous American English. For our work, we only kept to read subset of the corpus.  
+\begin{itemize}
+\item General description (type of speech, number of speakers)
+\item Alignment?
+\item Train-test division (n utterances, time)
+\item ...
+\end{itemize}
+
+\paragraph{Breakfast corpus (MOCHA + mngu0)}
 \subsubsection{Stimuli}
 %We used the same stimuli as in sections \ref{2-parlato} and \ref{2-parlato-dur}. As a reminder, a native French speaker recorded 54 items with the structure $V_{1}C_{1}C_{2}V_{2}$, with $V_{1}$ and $V_{2}$ vowels from the set \{/a/, /i/, /u/\}, and $C_{1}C_{2}$ a cluster from the set \{/bg/, /bn/, /db/, /dg/, /gb/, /gn/\} (e.g. /abgi/).
 
@@ -96,11 +119,6 @@ Item-specific language models were constructed, as shown in Figure \ref{fig:blab
 We test {\color{red}X} types of language models (LM) when decoding our items; these differ only in the weights given to edges between nodes {\color{red}X and X} in the graph shown in Figure \ref{fig:blabla}: 
 \begin{enumerate}
     \item A null language model (\textsc{0P-LM}), which implies that listeners base their decoding of consonant clusters on phonetics alone, without using information on phonotactics.
-    \item A phone-unigram language model (\textsc{1P-LM}), which implies that listeners do not take neighbouring phonemes into consideration when decoding the consonant clusters; only the frequency of the vowel $V_{ep}$ to be epenthesized (compared to that of $C_{2}$) is taken into account when choosing epenthetic vowel quality.
-    \item An online phone-bigram language model (\textsc{2PO-LM}), which implies that listeners decode the clusters as they hear them (decoding is done from the start of the item). Here the choice of epenthetic vowel is modulated by $C_{1}V_{ep}$ and $C_{1}C_{2}$ diphone frequencies. 
-    \item A retro phone-bigram language model (\textsc{2PR-LM}), which implies that listeners decode the clusters based on the most recent information (decoding is done from the end of the item). Here the choice of epenthetic vowel is modulated by $V_{ep}C_{2}$ and $C_{1}C_{2}$ diphone frequencies.
-    \item A batch phone-bigram language model (\textsc{2PB-LM}), which implies that listeners decode the item considering the entire structure, with bigrams. Here the choice of epenthetic vowel is modulated by $C_{1}V_{ep}$ and $V_{ep}C_{2}$ (and $C_{1}C_{2}$) diphone frequencies.  
-    \item {\color{red}SYLLABLE LM}
 \end{enumerate}
 {\color{red}The above are copied from another chapter; not all relevant. Maybe. Blabla}
 
@@ -115,6 +133,10 @@ We test {\color{red}X} types of language models (LM) when decoding our items; th
 After decoding the stimuli, we obtained for each possible transcription of each item the corresponding acoustic and language model scores. From these we derived the item posteriorgrams, which indicate how probable a given transcription was given the audio input. We used these probabilities as proxies of the probability that a listener might exploit when performing reverse inference during speech perception, and therefore, the probabilities used when responding in an identification task. 
 
 As such, for each item, we obtained a six-dimensional vector $ident_{model} = [p_{none}, p_{a}, p_{e}, p_{i}, p_{o}, p_{u}]$, containing a discrete probability distribution, with a probability mass function linking the identification task options 'none', 'a', 'e', 'i', 'o', 'u', to their respective probabilities (i.e., posteriorgrams).
+\subsection{Results}
+\subsection{Discussion}
+
+BLABLA
 
 %%%%%%%%%%%%%%%%%%%%%%%%% 
 % Perceptual experiment % %
@@ -122,7 +144,15 @@ As such, for each item, we obtained a six-dimensional vector $ident_{model} = [p
 
 \section{Perceptual experiment}
 \small{\textit{{\color{red}ADD ACKNOWLEDGEMENTS PAUL + EWAN + EMMANUEL.\\}}}
+\subsection{Methods}
+\subsubsection{Stimuli}
+\subsubsection{Participants}
+\subsubsection{Procedure}
+\subsubsection{Data analysis}
+\subsection{Results}
+\subsection{Discussion}
 
+BLABLA
 %%%%%%%%%%%%%%%%%%%%%%%%%%% 
 % Chapter mini-discussion %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
