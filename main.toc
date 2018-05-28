@@ -122,44 +122,45 @@
 \contentsline {subsubsection}{Corpora}{51}{section*.75}
 \contentsline {paragraph}{MOCHA-TIMIT}{51}{section*.76}
 \contentsline {paragraph}{mngu0}{51}{section*.77}
-\contentsline {paragraph}{mspka}{52}{section*.78}
+\contentsline {paragraph}{mspka}{51}{section*.78}
 \contentsline {subsubsection}{Features}{52}{section*.79}
 \contentsline {paragraph}{Acoustic}{52}{section*.80}
 \contentsline {paragraph}{Articulatory}{52}{section*.81}
 \contentsline {subsubsection}{Model architectures}{52}{section*.82}
 \contentsline {paragraph}{Multilayer Perceptron (MLP)}{52}{section*.83}
-\contentsline {paragraph}{Mixture Density Network (MDN)}{52}{section*.84}
-\contentsline {paragraph}{Trajectory Mixture Density Network (TMDN)}{52}{section*.85}
-\contentsline {paragraph}{Recurrent Neural Network (RNN)}{52}{section*.86}
-\contentsline {paragraph}{Adversarial {\color {red}blabla}}{52}{section*.87}
-\contentsline {subsubsection}{Evaluation metrics}{52}{section*.88}
-\contentsline {paragraph}{RMSE}{52}{section*.89}
-\contentsline {paragraph}{ABX}{52}{section*.90}
-\contentsline {subsection}{\numberline {4.2.2}Results}{52}{subsection.4.2.2}
-\contentsline {subsubsection}{Selecting model architecture}{52}{section*.91}
-\contentsline {subsubsection}{Data augmentation for mngu0}{52}{section*.92}
-\contentsline {subsubsection}{Acoustic-articulatory inverter}{53}{section*.93}
-\contentsline {subsubsection}{Robustness across languages}{53}{section*.94}
-\contentsline {subsection}{\numberline {4.2.3}Discussion}{53}{subsection.4.2.3}
-\contentsline {section}{\numberline {4.3}Predicting confusion patterns}{53}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Methods}{53}{subsection.4.3.1}
-\contentsline {subsubsection}{Corpora}{53}{section*.95}
-\contentsline {paragraph}{Wall Street Journal - Read (WSJ)}{53}{section*.96}
-\contentsline {paragraph}{Breakfast corpus (MOCHA + mngu0)}{53}{section*.97}
-\contentsline {subsubsection}{Stimuli}{53}{section*.98}
-\contentsline {subsubsection}{Language models}{53}{section*.99}
-\contentsline {subsubsection}{Identification task simulation}{54}{section*.100}
-\contentsline {subsection}{\numberline {4.3.2}Results}{54}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Discussion}{54}{subsection.4.3.3}
-\contentsline {section}{\numberline {4.4}Perceptual experiment}{54}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Methods}{54}{subsection.4.4.1}
-\contentsline {subsubsection}{Stimuli}{54}{section*.101}
-\contentsline {subsubsection}{Participants}{54}{section*.102}
-\contentsline {subsubsection}{Procedure}{54}{section*.103}
-\contentsline {subsubsection}{Data analysis}{54}{section*.104}
-\contentsline {subsection}{\numberline {4.4.2}Results}{54}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Discussion}{54}{subsection.4.4.3}
-\contentsline {section}{\numberline {4.5}Conclusions}{54}{section.4.5}
-\contentsline {chapter}{\numberline {5}General Discussion}{55}{chapter.5}
-\contentsline {chapter}{\numberline {A}\ignorespaces Are words easier to learn from infant- than adult-directed speech? A quantitative corpus-based investigation}{56}{appendix.A}
-\contentsline {chapter}{\numberline {B}References}{76}{appendix.B}
+\contentsline {paragraph}{Mixture Density Network (MDN)}{53}{section*.84}
+\contentsline {paragraph}{Trajectory Mixture Density Network (TMDN)}{53}{section*.85}
+\contentsline {paragraph}{Recurrent Neural Network (RNN)}{54}{section*.86}
+\contentsline {paragraph}{Auto-Encoder}{55}{section*.87}
+\contentsline {paragraph}{Generative Adversarial Networks (GAN)}{55}{section*.88}
+\contentsline {subsubsection}{Evaluation metrics}{55}{section*.89}
+\contentsline {paragraph}{RMSE}{55}{section*.90}
+\contentsline {paragraph}{ABX score}{56}{section*.91}
+\contentsline {subsection}{\numberline {4.2.2}Results}{56}{subsection.4.2.2}
+\contentsline {subsubsection}{Selecting model architecture}{56}{section*.92}
+\contentsline {subsubsection}{Data augmentation for mngu0}{56}{section*.93}
+\contentsline {subsubsection}{Acoustic-articulatory inverter}{56}{section*.94}
+\contentsline {subsubsection}{Robustness across languages}{56}{section*.95}
+\contentsline {subsection}{\numberline {4.2.3}Discussion}{56}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.3}Predicting confusion patterns}{56}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Methods}{56}{subsection.4.3.1}
+\contentsline {subsubsection}{Corpora}{56}{section*.96}
+\contentsline {paragraph}{Wall Street Journal - Read (WSJ)}{56}{section*.97}
+\contentsline {paragraph}{Breakfast corpus (MOCHA + mngu0)}{57}{section*.98}
+\contentsline {subsubsection}{Stimuli}{57}{section*.99}
+\contentsline {subsubsection}{Language models}{57}{section*.100}
+\contentsline {subsubsection}{Identification task simulation}{58}{section*.101}
+\contentsline {subsection}{\numberline {4.3.2}Results}{58}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Discussion}{58}{subsection.4.3.3}
+\contentsline {section}{\numberline {4.4}Perceptual experiment}{58}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Methods}{58}{subsection.4.4.1}
+\contentsline {subsubsection}{Stimuli}{58}{section*.102}
+\contentsline {subsubsection}{Participants}{58}{section*.103}
+\contentsline {subsubsection}{Procedure}{58}{section*.104}
+\contentsline {subsubsection}{Data analysis}{58}{section*.105}
+\contentsline {subsection}{\numberline {4.4.2}Results}{58}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Discussion}{58}{subsection.4.4.3}
+\contentsline {section}{\numberline {4.5}Conclusions}{58}{section.4.5}
+\contentsline {chapter}{\numberline {5}General Discussion}{59}{chapter.5}
+\contentsline {chapter}{\numberline {A}\ignorespaces Are words easier to learn from infant- than adult-directed speech? A quantitative corpus-based investigation}{60}{appendix.A}
+\contentsline {chapter}{\numberline {B}References}{80}{appendix.B}

@@ -26,51 +26,124 @@
 \subsection{Methods}
 \subsubsection{Corpora}
 \paragraph{MOCHA-TIMIT}
+%MOCHA: http://data.cstr.ed.ac.uk/mocha/README_v1.2.txt
+
+The MOCHA-TIMIT corpus {\color{red}\cite{mocha}} consists of recordings of 460 TIMIT sentences read by two native speakers of Southern English (1 female, fsew0; 1 male, msak0). Recording sessions were done in a sound damped studio. Two types of data were acquired: acoustic data (i.e., 16-bit audio at 16kHz) and articulatory data (i.e., laryngography at 16kHz, electromagnetic articulography (EMA) at 500Hz, electropalatography at 200Hz). 
+The following articulators were tracked by EMA: upper incisor (UI), lower incisor (LI), upper lip (UL), lower lip (LL), tongue tip (TT), tongue blade (TB), tongue dorsum (TD), velum (VE). 
+
 \begin{itemize}
-\item General description (type of speech, number of speakers)
-\item Articulators
-\item Phone set
 \item Train-valid-test division (n utterances, time, distribution of phonemes)
-\item ...
 \end{itemize}
 
 \paragraph{mngu0}
+The mngu0 corpus {\color{red}\cite{richmond2011}} consists of recordings of 1,354 utterances (approximately 67 min of speech) read by a native speaker of British English. In parallel to the acquisition of the {\color{red}16-bit audio at 16kHz}, articulatory data was acquired through EMA at 200Hz.   
+The following articulators were tracked: lower incisor (LI), upper lip (UL), lower lip (LL), tongue tip (TT), tongue body (TB), tongue dorsum (TD). 
+
 \begin{itemize}
-\item General description (type of speech, number of speakers)
-\item Articulators: tongue {tip, back, dorsum}, upper lip, lower lip, jaw
-\item Phone set
 \item Train-valid-test division (n utterances, time, distribution of phonemes)
-\item ...
 \end{itemize}
 
+{\color{gray}
 \paragraph{mspka}
 \begin{itemize}
-\item General description (type of speech, number of speakers)
+\item General description (type of speech, number of speakers, language, subsets?, number of utterances/time)
+\item Audio recording
 \item Articulators: tongue {tip, back, dorsum}, upper lip, lower lip, jaw
-\item Phone set
 \item Train-valid-test division (n utterances, time, distribution of phonemes)
-\item ...
-\end{itemize}
+\end{itemize}}
 
 \subsubsection{Features} 
 \paragraph{Acoustic}
-13 MFCC (c0, not log-energy) + 3 pitch (?) + delta + delta-delta
-\paragraph{Articulatory}
-{\color{red}Added velum to mngu0 from MOCHA-TIMIT speaker X; added voicing as binary variable...}
+Features were recalculated using the Kaldi speech recognition toolkit \cite{povey2011}. Audio recordings were converted into sequences of 39-dimensional feature vectors consisting of 13 Mel-frequency cepstral coefficients (MFCCs; the first coefficient being the zeroth cepstral coefficient), with delta and delta-delta coefficients. 
+Additionally, we added 3 coefficients (and their corresponding delta and delta-delta coefficients) adding pitch information to our features: normalized-pitch, delta-pitch, voicing-feature. 
+The final 48 coefficient values were standardized to have zero-mean and unit-variance within coefficient and within each speaker.
 
-\subsubsection{Model architectures} 
+\paragraph{Articulatory}
+Articulatory features consisted of 15-dimensional vectors containing x and y coordinates for the following articulators: lower incisor (LI), upper lip (UL), lower lip (LL), tongue tip (TT), tongue blade (TB), tongue dorsum (TD), velum (VE), as well as an additional binary coefficient for voicing (VO). %CHECK
+This last coefficient was added manually based on phone transcriptions.
+Since information about the velum (VE) was not available for the mngu0 corpus, we reconstructed this value based on velar data from the MOCHA-TIMIT corpus, as explained below.  
+
+\subsubsection{Model architectures}
+
+The literature on neural-networks-based acoustic-to-articulatory inversion reports the use of a variety of types of networks, differing as to the way a prediction is derived from the hidden layer's output, the number of hidden layers and units, and the kind of units used. Historically, the first models used comprised a unique hidden layer of no more than a hundred units and attention was focused on the kind of output that could best perform on the inversion task [Richmond, 2002].
+% TODO: voir ce qu'on met là selon les paragraphes suivants
+% (les points "historiques" / littérature sont peut-être plus pertinents si distribués au sein des paragrpahes)
+
+% TODO (?): brève introduction aux réseaux de neurone
+
+% TODO: somewhere, talk about activation functions and specify that we "always" use ReLU (save for continuous targets readout: identity function, i.e. only a linear transformation of the last hidden layer's output, and for binary targets readout: abs(sigmoid function) to output a [0, 1] probability, rounded to get the output)
+
+Notations: let $K$ be the number of articulatory points to predict. % TODO: move this around if needed
+
 \paragraph{Multilayer Perceptron (MLP)}
+
+The Multilayer Perceptron (MLP) was the first kind of neural network used for acoustic-to-articulatory inversion tasks, noticeably in [Papcun et alii, 1992]. A MLP is a feed-forward neural network, meaning that each and every unit of a given layer feeds its output to each and every unit of the next layer. It is used as an end-to-end model: for a given audio frame, speech features computed on this frame are fed to the network's input layer's units, while the readout layer, made of $K$ units, outputs the network's prediction for each of the $K$ articulatory points at this frame. The loss function typically used to train the model through back-propagation is the (root) mean squared error of prediction.\\
+
+So as to take time dependencies into account, the MLP may be fed with data from an ensemble of successive audio frames, constituting a context window, typically centered on the time at which the articulatory features are to be predicted. Delta features of the prediction may also be computed and integrated in the network's loss function at training. Finally, the signal composed of the network's predictions for successive time frames along a given utterance may be smoothed through low-pass filtering. The latter technique may use a global cutoff frequency or a channel-wise one ([Richmond, 2002]), selected to minimize prediction error. It may be fixed arbitrarily, selected among a discrete set of frequencies and updated at given training steps, or started at a given value and adjusted jointly with the network's weights (this is also valid for other classes of models applied to the inversion task, as in [Ghosh \& Narayanan, 2010]).\\
+
+Early works on acoustic-to-articulatory inversion with a MLP resorted to rather shallow networks consisting of one or two hidden layers, as noted in [Uria et alii, 2012], a paper which reports performance improvements yielded by deeper networks, for both MLP, MDN and TMDN (the latter two network types are introduced in the following two paragraphs). The authors reported that the best MLP they were able to train consisted of five hidden layers of 300 units each. They also underlined the role of layer-wise pre-training, although the reported gain is actually somehow limited.\\
+
+% TODO: add scores ?
+
 \paragraph{Mixture Density Network (MDN)}
+
+By design, when fed with an input vector, a MLP trained by minimizing the root mean square error function will output the (learned) conditional mean of the target data points with respect to this vector. However, the mapping between articulatory gestures and acoustic data is not bijective, i.e. different gestures may be mapped to nearly-identical acoustic results, and vice-versa. This phenomenon may appear for any given speaker, for whom the preference for a given way to produce a sound may be linked to the continuity of articulatory movements while producing an utterance, and in data from multiple speakers, due to speaker-specific pronunciation tactics. Due to this, a MLP may appear ill-fit to learn acoustic-to-articulatory mapping, while a network able to model multimodal distributions may be a better choice. Grounding on this fact, [Richmond, 2002] first introduced the use of a Mixture Density Network (MDN) for inversion tasks.\\
+
+The MDN (first developed by [Bishop, 1995]) is a feed-forward network which resembles the MLP, but whose readout layer, instead of a prediction for target data, outputs parameters of a Gaussian mixture density modeling the (predicted) probability distribution of the target data. This allows the network to model multimodal distributions (depending on the selected number of mixture components), but also means that one ought to choose how to derive a prediction from the produced mixture density function. A MDN is classically trained by maximizing the average log-likelihood of predicted frame-wise density functions, given the target data points whose distribution is to model, although it is also possible to minimize the prediction error derived from the distributions, as shown in the results section.\\
+% TODO: choose to keep or not the remark on training // rmse and adjust the link to the results section
+% TODO: if maths are specified, explicit which parameters are created -- noticeably the diagonal variance matrix
+
+So as to derive a prediction from the mixture density function output by the model for a given frame, some authors (e.g. [Liu et alii, 2015]) simply take the mean of the mixture component of highest prior probability, or the average of the component's means weighted by their prior probabilities. Our approach, inspired from [Richmond, 2007] (see paragraph below on the TMDN), relies on a single-iteration expectation maximization (E-M) algorithm (which could be extended by running multiple iterations). It consists in initializing the prediction as the average of the component's means weighted by their prior probabilities, then computing the occupancy probabilities of the components (i.e. the posterior probability of each mixture component to have produced the initial prediction) and finally taking as prediction the average of the components' means weighted by those occupancy probabilities.\\
+% TODO: if it seems more relevant, move this to the results / model selection section
+
 \paragraph{Trajectory Mixture Density Network (TMDN)}
+
+The Trajectory Mixture Network (TMDN) was first introduced in [Richmond, 2006]. It consists of a MDN (or of multiple articulator-specific MDNs, depending on the papers and mostly for the earliest ones) producing mixture density functions modeling the distribution of both static, delta and delta-delta articulatory features, and of a specific algorithm to derive a prediction from those. The term "trajectory" reflects the fact that the algorithm is computed over a time sequence of frame-wise mixture density parameters predictions (typically, the outputs associated with an entire utterance) and is supposed to select trajectories which are respectful of movements' time dependencies, and thus relatively smooth.\\
+
+The trajectory selection algorithm, designated by K. Richmond and the other authors using the TMDN as the maximum likelihood parameters generation (MLPG) algorithm, is drawn from [Tokuda et alii, 2000] and was initially developed for HMM-based speech synthesis. It consists of an E-M algorithm where the expectation step derives the most likely time-sequence of target points given a time-sequence of mixture components' parameters (i.e. feature-wise means and standard deviations), while the maximization step updates the time-sequence of mixture components. One may choose to select, at each time, the parameters of a single component of the mixture density, or to use occupancy probabilities of the components (or prior probabilities, at initialization) to compute weighted averages of the components' parameters ; we have opted for the latter.\\
+
+% TODO: do the maths, if it seems relevant and/or reduce explanation ; the algorithm is not easily described with words (a schema may be better)
+
+% TODO (?) : It is worth noting that training a TMDN and computing predictions is not an easy task...
+% normalization issues (likelihood computation) ; "logic" of predicting deltas ; computational cost of the trajectory selection algorithm
+
 \paragraph{Recurrent Neural Network (RNN)}
-\paragraph{Adversarial {\color{red}blabla}}
+
+Recurrent Neural Networks (RNN) form a class of neural networks that process sequences of input vectors sequentially through units which, in addition to the output they feed to the units on the following layer, update an internal state variable that is then used when processing the following input vector. In other words, RNN units keep and update a "memory" as they process a sequence of inputs and use it to adjust their outputs. The use of RNNs for acoustic-to-articulatory inversion is relatively recent, and is reported to have yielded important improvements to state-of-the-art performances ([Liu et alii, 2015], [Zhu et alii, 2015]).\\
+% probably best explained by a schema with a rolled / unrolled RNN
+
+Various kinds of RNN units exist, with the Long Short-Term Memory (LSTM) units being the most common one, while the Gated Recurrent Units (GRU) have been introduced more recently ([Cho et alii, 2014]). As the previously mentioned papers report results from networks comrising LSTM units, and as early tests in our study showed little if any difference in performance reached with either kind of units, we also opted for LSTM units. To further improve the way a RNN takes time dependencies into account, the aforementioned authors use bidirectional RNNs, i.e. sets of two RNNs which process input sequences in opposite temporal directions and then have their outputs aggregated (e.g. by simply concatenating the two sets of layers' outputs and feeding them to a following feed-forward layer), something we also found to improve performances early on and therefore adopted.\\
+% TODO: maybe move some stuff to results, as they describe design choices ?
+
+Stacks of recurrent units may be used jointly with feed-forward layers, either feeding or being fed by such layers' units. Therefore, any of the previously introduced networks can have its hidden layers' architecture include a bidirectional-LSTM (BiLSTM). [Zhu et alii, 2015] report that using feed-forward layers before BiLSTM layers yields better performance than doing the opposite or interlacing both kinds of layers, at least for architectures composed of three layers of 300 units. This can be interpreted as the early feed-forward layer(s) extracting useful information from the input vectors' frames through time-independent operations, which is then processed by the BiLSTM units in a time-dependent way.\\
+% TODO: mention that our architecture - FBB with 300 units each - is the same as theirs?
+
+\paragraph{Auto-Encoder}
+
+An auto-encoder is a neural network composed of two stacked sub-networks, and encoder and a decoder. The encoder aims at producing an alternative representation, or encoding, of the input data that the decoder aims at transforming into another (known) representation, typically attempting to reconstruct the input vectors. Such architectures may be used to produce a "new" encoding of the input data, i.e. one that is made to preserve the initial information by training the network to minimize the reconstruction error but whose nature is not fixed prior to training (save for its dimensionality). In our case however, we designed the to perform acoustic-to-articulatory inversion and the decoder to reconstruct the intial speech features from the predicted articulatory features, and trained our auto-encoder networks to minimize jointly the prediction error and the reconstruction error. The rationale for this design is that we wanted to test whether explicitly constraining the network to retain most the information from the input data when performing the inversion would improve the ABX discriminability of the produced articulatory features (see section on ABX) and the generalization of the network to data from new speakers.\\
+% TODO: fix link to ABX section
+
+To our knowledge, auto-encoder networks have never been used to perform acoustic-to-articulatory inversion, at least not in the way described above. The only related work we found is that of Badino et alii ([Badino et alii, 2016]), who use an auto-encoder to produce alternative articulatory features and then train end-to-end neural networks to perform the inversion from acoustic features to those features - an interesting approach, which we however did not attempt to follow.\\
+
+
+{\color{gray}\paragraph{Generative Adversarial Networks (GAN)}
+
+Generative Adversarial Networks (GAN) were introduced in [Goodfellow et alii, 2014] and have since been applied to a variety of task, noticeably for automated speech synthesis or recognition. A GAN model consists of two networks, a generator and a discriminator, which contest against each other in a zero-sum game. The generator is trained to perform a task through which it produces some data (in our case, it predicts articulatory features out of acoustic features), while the discriminator learns to distinguish some true data from that produced by the generator (in our case, if learns to separate true articulatory features from inverted ones). The networks' loss functions are then combined so that the generator is penalized for having its outputs well-identified by the discriminator, and both networks are trained iteratively on small batches of data.\\
+
+We think that this adversarial approach may be of interest to improve the quality of the inverted features; GAN models training is however not an easy process and can prove very unstable (meaning that the networks do not converge as expected), mainly due to mathematics subtleties. Our attempts at training an inverter as the generator model of a GAN model have either produced mediocre results (with very slight or no improvement of pre-trained models, or rather high error metrics of the learned inversion task) or simply failed. % note: I used to be able to train (rather bad) models through my GAN implementation, but have recently been unable to reproduce the experience, with all models having their gradients explode and produce NaNs everywhere.
+% TODO: drop this section, probably (or move it elsewhere) -- our implementation is not satisfactory,
+% which I think is a three-fold problem: 1. The loss function is probably not right. 2. The iterative training process could probably be improved (number of iterations / quantity of data for each network at each step). 3. To actually fix the former two points rigorously, we would need to do maths that take more time than we have and to feel like beyond my grasp.
+}
 
 \subsubsection{Evaluation metrics}
 \paragraph{RMSE}
-{\color{red}The RMSE, traditionally use to evaluate ac-art inversion models was computed as blablabla and it represents the deviation in distance between real and reconstructed x and y for articulators blablabla}
-\paragraph{ABX}
-{\color{red}RMSE traditionally used but what does it mean/how does it translate to what we actually care about? ABX => check contrasts}
+The root-mean-squared error (RMSE), which is traditionally used to evaluate the performance of acoustic-articulatory inversion models, was computed as {\color{red}blablabla}. It measures the deviation in distance (cm) between real articulator coordinates and their reconstructions by the inversion model. While a unique RMSE is usually reported, we report individual scores for all articulatory coefficients when relevant.
 
+\paragraph{ABX score}
+In addition to computing the traditionally used RMSE, we assessed the discriminability of phonemic contrasts in acoustic and articulatory data using the ABX measure of discriminability {\color{red}\cite{}.} We used the open tool ABXpy available at https://github.com/bootphon/ABXpy. 
+ABX discriminability provides a measure of how separable are two categories A and B, by systematically computing the cosine distance of $a$ and $b$, tokens of categories A and B, to $x$, a token of either category A or B. The assumption being that two tokens of a same category should be closer in the embedding defined by the acoustic/articulatory features than two tokens with different labels. 
+An ABX score of $1$ denotes perfect discriminability of categories A and B, while a score of $0.5$ denotes confusability of the categories. 
+In our case, we computed the ABX discrimination of phonemes, within phonemic contexts (i.e., previous and next phoneme) and speakers. An overall ABX score was computed per phoneme by collapsing scores by context.
 
 \subsection{Results}
 \subsubsection{Selecting model architecture}
@@ -101,38 +174,49 @@ BLABLA
 \subsection{Methods}
 \subsubsection{Corpora}
 \paragraph{Wall Street Journal - Read (WSJ)}
-The WSJ \cite{} is a corpus of both read and spontaneous American English. For our work, we only kept to read subset of the corpus.  
+The WSJ \cite{} is a corpus of both read and spontaneous American English. For our work, we only kept to read subset of the corpus. In total, 338 speakers (X female, Y male) uttered X 
+{\color{red}
 \begin{itemize}
-\item General description (type of speech, number of speakers)
-\item Alignment?
-\item Train-test division (n utterances, time)
-\item ...
-\end{itemize}
+\item General description (type of speech, number of speakers, language, subsets?, number of utterances/time)
+\item Audio recording
+\item Articulators: tongue {tip, back, dorsum}, upper lip, lower lip, jaw
+\item Train-valid-test division (n utterances, time, distribution of phonemes)
+\end{itemize}}
 
 \paragraph{Breakfast corpus (MOCHA + mngu0)}
+{\color{red}
+\begin{itemize}
+\item General description (type of speech, number of speakers, language, subsets?, number of utterances/time)
+\item Audio recording
+\item Articulators: tongue {tip, back, dorsum}, upper lip, lower lip, jaw
+\item Train-valid-test division (n utterances, time, distribution of phonemes)
+\end{itemize}}
+
+
 \subsubsection{Stimuli}
-%We used the same stimuli as in sections \ref{2-parlato} and \ref{2-parlato-dur}. As a reminder, a native French speaker recorded 54 items with the structure $V_{1}C_{1}C_{2}V_{2}$, with $V_{1}$ and $V_{2}$ vowels from the set \{/a/, /i/, /u/\}, and $C_{1}C_{2}$ a cluster from the set \{/bg/, /bn/, /db/, /dg/, /gb/, /gn/\} (e.g. /abgi/).
+We recorded a female native speaker of Serbo-Croatian in a sound proof room reading a list of {\color{red}$X$} items containing a $C_{1}C_{2}$ cluster either in syllable-initial position ($C_{1}C_{2}V_{1}C_{3}V_{1}$, e.g., \textipa{/znapa/}) or intra-syllabic position ($V_{1}C_{1}C_{2}V_{1}$, e.g., \textipa{/azna/}). $V_{1}$ and $C_{3}$ were always set to \textipa{/a/} and \textipa{/p/}, respectively. 
+We also recorded the "epenthesized" equivalents of said stimuli, namely $C_{1}V_{ep}C_{2}V_{1}C_{3}V_{1}$ (\textipa{/z@napa/}) and $V_{1}C_{1}V_{ep}C_{2}V_{1}$ (\textipa{/az@na/}) with $V_{ep}$ set as {\color{red}\textipa{[@]}}.
+For all stimuli stress fell on the first $V_{1}$.
+{\color{red}The list of stimuli is given by Table X.}
 
 \subsubsection{Language models}
-Item-specific language models were constructed, as shown in Figure \ref{fig:blabla}. Thus, when decoding a $C_{1}C_{2}V_{1}C_{3}V_{2}$ stimulus, the perception model was only given the possibility to transcribe it as $C_{1}(V_{ep})C_{2}V_{1}C_{3}V_{2}$, where phones between parentheses are optional and $V_{ep} = $ \textipa{[@]}. 
+Item-specific language models were constructed, as shown in Figure \ref{fig:G_fst}. Thus, when decoding a $C_{1}(V_{ep})C_{2}V_{1}C_{3}V_{1}$ stimulus, the perception model was only given the possibility to transcribe it as $C_{1}(V_{ep})C_{2}V_{1}C_{3}V_{2}$, where phones between parentheses are optional and $V_{ep} = $ \textipa{[@]}. And similarly for $V_{1}C_{1}(V_{ep}C_{2}V_{1}$ items.
+While $V_{1}$ was intended to be \textipa{/a/} phonologically, we allowed the model to transcribe $V_{1}$ as any phoneme associated with the grapheme [a]. This allowed to account for phonetic reduction in our stimuli, but also to foresee for the possibility that these transcriptions might be considered by English-speaking participants from the psycholinguistic experiment, due to item transcriptions being presented orthographically onscreen.
 
-We test {\color{red}X} types of language models (LM) when decoding our items; these differ only in the weights given to edges between nodes {\color{red}X and X} in the graph shown in Figure \ref{fig:blabla}: 
-\begin{enumerate}
-    \item A null language model (\textsc{0P-LM}), which implies that listeners base their decoding of consonant clusters on phonetics alone, without using information on phonotactics.
-\end{enumerate}
-{\color{red}The above are copied from another chapter; not all relevant. Maybe. Blabla}
+We use a null/uniform language model (\textsc{0P-LM}), which implies that listeners base their decoding of consonant clusters on phonetics alone, without using information on phonotactics.
 
-%\begin{figure}[htb]
-%\centering
-%\includegraphics[width=0.8\linewidth]{chapter04/blabla.pdf}
-%\caption{Constrained language model used to test the models (here: LM for \textipa{/znapa/} trials). Nodes in the graph represent states, weighted edges represent transitions between states (here: phonemes). When relevant, eighted edges are labeled with the probability to choose that edge when decoding, which affects the final language model score of each possible path. These scores are then combined with acoustic scores when decoding experimental items. An optional silence can be inserted by the model between states 3 and 4.}
-%\label{fig:blabla}
-%\end{figure}
+\begin{figure*}[htb]
+\centering
+%\includegraphics[width=0.8\linewidth]{chapter04/G_azna.pdf}
+\vspace{0.5cm}
+%\includegraphics[width=0.8\linewidth]{chapter04/G_znapa.pdf}
+\caption{Constrained language model used to test the models (here: LM for \textipa{/znapa/} (top) and \textipa{/azna/} (bottom) trials). Nodes in the graph represent states, weighted edges represent transitions between states (here: phonemes). The LMs are "null"/uniform LMs, as they only constrain the possible decoding outputs without assigning higher or lower probabilities to certain edges. The optimal decoding path is therefore dependent on the acoustic/articulatory scores.}
+\label{fig:G_fst}
+\end{figure*}
 
 \subsubsection{Identification task simulation}
-After decoding the stimuli, we obtained for each possible transcription of each item the corresponding acoustic and language model scores. From these we derived the item posteriorgrams, which indicate how probable a given transcription was given the audio input. We used these probabilities as proxies of the probability that a listener might exploit when performing reverse inference during speech perception, and therefore, the probabilities used when responding in an identification task. 
+After decoding the stimuli, we obtained for each possible transcription of each item the corresponding acoustic/articulatory and language model scores. From these we derived the item posteriorgrams, which indicate how probable a given transcription was, given the acoustic or articulatory input. We used these probabilities as proxies of the probability that a listener might exploit when performing reverse inference during speech perception, and therefore, the probabilities used when responding in an identification task. As such, for each item, we obtained a percentage of vowel epenthesis.
 
-As such, for each item, we obtained a six-dimensional vector $ident_{model} = [p_{none}, p_{a}, p_{e}, p_{i}, p_{o}, p_{u}]$, containing a discrete probability distribution, with a probability mass function linking the identification task options 'none', 'a', 'e', 'i', 'o', 'u', to their respective probabilities (i.e., posteriorgrams).
 \subsection{Results}
 \subsection{Discussion}
 
