@@ -69,11 +69,11 @@
 \contentsline {chapter}{\numberline {3}{\color {red}Using ASR systems as models of speech perception}}{40}{chapter.3}
 \contentsline {section}{\numberline {3.1}Anatomy of an HMM-based speech recogniser}{40}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Corpora}{40}{subsection.3.1.1}
-\contentsline {paragraph}{Corpus of Spontaneous Japanese (CSJ)}{40}{section*.50}
+\contentsline {paragraph}{Corpus of Spontaneous Japanese (CSJ)}{41}{section*.50}
 \contentsline {paragraph}{Korean Corpus of Spontaneous Speech (KCSS)}{41}{section*.51}
 \contentsline {subsection}{\numberline {3.1.2}Features}{41}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Acoustic model}{41}{subsection.3.1.3}
-\contentsline {subsection}{\numberline {3.1.4}Language models}{41}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.3}Acoustic model}{42}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Language models}{42}{subsection.3.1.4}
 \contentsline {subsection}{\numberline {3.1.5}Decoding}{42}{subsection.3.1.5}
 \contentsline {subsection}{\numberline {3.1.6}Scoring: Assessing native performance}{42}{subsection.3.1.6}
 \contentsline {section}{\numberline {3.2}{\color {red}Parlato-hmm}}{43}{section.3.2}
@@ -163,4 +163,4 @@
 \contentsline {section}{\numberline {4.5}Conclusions}{58}{section.4.5}
 \contentsline {chapter}{\numberline {5}General Discussion}{59}{chapter.5}
 \contentsline {chapter}{\numberline {A}\ignorespaces Are words easier to learn from infant- than adult-directed speech? A quantitative corpus-based investigation}{60}{appendix.A}
-\contentsline {chapter}{\numberline {B}References}{80}{appendix.B}
+\contentsline {chapter}{\numberline {B}References}{92}{appendix.B}

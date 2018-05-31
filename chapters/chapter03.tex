@@ -28,16 +28,26 @@
 %%%%%%%%%%%%%%%%%%%
 
 \section{Anatomy of an HMM-based speech recogniser}
-In this chapter we used Hidden Markov Model (HMM)-based speech recognisers as model of human perception.
+In this chapter we used Hidden Markov Model (HMM)-based speech recognisers as model of human perception. 
+Speech audio waveforms are transformed into sequences of acoustic vectors $A_{1:T} = a_{1}, ..., a_{T}$ through the first step, called feature extraction. In the decoding phase that follows, the ASR system attempts to find the sequence of words $w_{1:L} = w_{1}, ..., w_{L}$ which is most likely to have produced the sequence of acoustic vectors $A$.
+Mathematically, this equates to solving the following equation:
 
-{\color{red}
-...
-[Here equation + graph of modules]
-}
+\begin{equation}
+  \widehat{w} = \underset{w}{arg\,max} \left \{  P(w|A)\right \}
+  \label{eq_hmm_dec_post}
+\end{equation}
 
+Put into Bayesian terms, this represents computing the posterior probability $P(w|A)$ of all combinations of words, given the acoustics. From this, the decoder then selects the sequence of words $w$ with highest posterior probability given the acoustic evidence $A$. However, due to the recursive and compositional nature of language, it is difficult to evaluate all possible combinations of words, in order to find the most probable one. As such, following Bayes's theorem, equation \ref{eq_hmm_dec_post} can be rearranged as:
+
+\begin{equation}
+  \widehat{w} = \underset{w}{arg\,max} \left \{  P(A|w)P(w)\right \}
+  \label{eq_hmm_dec_post}
+\end{equation}
+
+The likelihood $P(A|w)$, given by the acoustic model, is the probability of the acoustics given the sequence of words. This is The prior $P(w)$, given by the language model, corresponds to the probability of the word sequence, and can be derived from frequency counts.
 
 In the field of ASR, Neural Network (NN)-based speech recognisers are king. In spite of better performance of NN-based ASR systems, we decided to use more well-understood HMM-based recognisers. Indeed, before the decoding step, these models offer a clear separation between the acoustic model (AM; i.e., mapping between phoneme categories and acoustics) and the language model (LM; i.e., frequencies of word/phoneme sequences). This allowed us to test ASR systems with different LMs while keeping the AM constant, as well as adapting LMs to mimic the experimental paradigms used when testing human participants.
-We will now present the components of an HMM-based ASR system in more detail.
+We will now present the components of an HMM-based ASR system, as depicted in Figure \ref{fig:truc}, in more detail.
 
 \subsection{Corpora}
 
@@ -70,6 +80,7 @@ The corpus contains 126,132 utterances produced by 40 speakers (as explained abo
 \subsection{Features}
 \begin{itemize}
 \item What are MFCCs
+  \item deltas + ddeltas (over 5 frames)
 \item CMVN
 \item Pitch
 \item ...
