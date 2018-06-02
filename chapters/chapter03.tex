@@ -201,7 +201,7 @@ The main effect of \textsc{NSFV} was not significant (mode: $0.04$, HPD: $[-0.02
 \subsection{Discussion}
 %%% Summary
 
-%%% Duration in ASR?
+%%% Duration in ASR? [check topology]
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 % m-/ahpa/ + parlato_lms %
@@ -241,9 +241,9 @@ We used the same procedure as in section \ref{3-parlato-hmm}.
 In order to select the language model which best predicted our behavioural data, we inferred the \textit{a posteriori} distributions of the weights given to acoustic model and language model in {\color{red}equation \ref{}}, using ABC. The following aggregated data were used as summary statistics:
 
 \begin{itemize}
-\item \textsc{\%none}: Proportion of ``none'' responses (no epenthesis)
-\item \textsc{\%$V_{1}\underline{\vee}V_{2}$}: Proportion of trials where the epenthesized vowel shares the quality of either $V_{1}$ or $V_{2}$, with $V_{1} \neq V_{2}$
-\item \textsc{\%$V_{1}\land V_{2}$}: Proportion of trials where the epenthesized vowel shares the quality of both $V_{1}$ and $V_{2}$, with $V_{1} = V_{2}$
+\item \textsc{\%none}: Proportion of ``none'' responses (no epenthesis) over all trials.
+\item \textsc{\%$V_{1}\underline{\vee}V_{2}$}: Proportion of trials where the epenthesized vowel shares the quality of either $V_{1}$ or $V_{2}$, with $V_{1} \neq V_{2}$ (out of all trials with epenthesis).
+\item \textsc{\%$V_{1}\land V_{2}$}: Proportion of trials where the epenthesized vowel shares the quality of both $V_{1}$ and $V_{2}$, with $V_{1} = V_{2}$ (out of all trials with epenthesis).
 \item \textsc{\%default}: Proportion of default \textipa{/u/}-epenthesis over all trials
 \item \textsc{\%coronal}: Proportion of \textipa{/o/}-epenthesis following coronal consonants over all trials with clusters containing coronal consonants 
 \end{itemize} 
