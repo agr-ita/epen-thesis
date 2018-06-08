@@ -6,9 +6,11 @@ Database file #1: main.bib
 Warning--I didn't find a database entry for "["
 Warning--I didn't find a database entry for "maekawa2003"
 Warning--I didn't find a database entry for "yun2015"
+Warning--I didn't find a database entry for "mocha"
+Warning--I didn't find a database entry for "richmond2011"
 You've used 40 entries,
             1935 wiz_defined-function locations,
-            739 strings with 10734 characters,
+            741 strings with 10751 characters,
 and the built_in function-call counts, 16700 in all, are:
 = -- 1657
 > -- 691
@@ -47,4 +49,4 @@ warning$ -- 0
 while$ -- 147
 width$ -- 0
 write$ -- 523
-(There were 3 warnings)
+(There were 5 warnings)
