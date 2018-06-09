@@ -5,7 +5,8 @@
 % [ ] Anatomy of ASR system
 % [ ] Parlato-hmm
 % [ ] surfphono
-% --- [ ] Explain ABC methodology
+% --- [ ] Add table with frequencies
+% --- [ ] Results
 % [ ] Mini-discussion
 
 %%%%%%%%%%%%%%%%%%%%%%
@@ -226,6 +227,8 @@ In this section, we investigate the type of phonotactic information used by Japa
     \item A batch phone-bigram language model (\textsc{2PB-LM}), which implies that listeners decode the item considering the entire structure, with bigrams. Here the choice of epenthetic vowel is modulated by $C_{1}V_{ep}$ and $V_{ep}C_{2}$ (and $C_{1}C_{2}$) diphone frequencies.  
 \end{enumerate}
 
+{\color{red}ADD TABLE WITH FREQUENCIES}
+
 
 \paragraph{Identification task simulation}
 We used the same procedure as in section \ref{3-parlato-hmm}. Therefore, for each LM, we obtain for each item a six-dimensional vector $ident_{LM} = [p_{none}, p_{a}, p_{e}, p_{i}, p_{o}, p_{u}]$ containing posteriorgrams for each of the six possible responses. In a similar way, the human equivalent $ident_{human} = [p_{none}, p_{a}, p_{e}, p_{i}, p_{o}, p_{u}]$ contains the percentage of responses for each item, after aggregating all participant responses. 
@@ -239,8 +242,6 @@ We chose as fixed effect the \textsc{Language Model} (\textsc{LM}) used during d
 
 Statistical analyses were performed with the R statistical software \cite{R-base}, using Markov chain Monte Carlo generalised linear mixed-models \cite{R-MCMCglmm, R-coda}. These Bayesian models sample coefficients from the posterior probability distribution conditioned on the data and given priors. We used priors that are standard for linear models. Model convergence was assessed by visual inspection of trace plots and the Gelman–Rubin convergence diagnostic \cite{gelman1992}, using eight chains with different initialisations. Effects were considered statistically significant if the 95\% highest posterior density (HPD) interval estimated for the coefficient of interest did not include zero. We report both the posterior mode and the 95\% HPD interval.  
 
-%In order to select the language model which best predicted our behavioural data, we inferred the \textit{a posteriori} distributions of the weights given to acoustic model and language model in {\color{red}equation \ref{}}, using ABC. The following aggregated data were used as summary statistics:
-
 %\begin{itemize}
 %\item \textsc{\%none}: Proportion of ``none'' responses (no epenthesis) over all trials.
 %\item \textsc{\%$V_{1}\underline{\vee}V_{2}$}: Proportion of trials where the epenthesized vowel shares the quality of either $V_{1}$ or $V_{2}$, with $V_{1} \neq V_{2}$ (out of all trials with epenthesis).
@@ -250,50 +251,18 @@ Statistical analyses were performed with the R statistical software \cite{R-base
 %\end{itemize} 
 
 \subsubsection{Results and Discussion}
-{\color{red} RESULTS
-% $> summary(MC2.1)
 
-%  Iterations = 20001:169961
-%  Thinning interval  = 40
-%  Sample size  = 3750 
-
-%  DIC: -161.9572 
-
-%  G-structure:  ~c1
-
-%    post.mean  l-95% CI u-95% CI eff.samp
-% c1    0.4374 0.0003149    1.184     2876
-
-%  R-structure:  ~units
-
-%       post.mean l-95% CI u-95% CI eff.samp
-% units   0.03142  0.02619  0.03674     4058
-
-%  Location effects: modper.dist ~ lm 
-
-%                  post.mean   l-95% CI   u-95% CI eff.samp   pMCMC   
-% (Intercept)      0.4809114 -0.0640950  0.9562979     3556 0.05867 . 
-% lmunigram        0.0253643 -0.0413540  0.0951623     3445 0.45813   
-% lmbigram_online  0.0834542  0.0183947  0.1503082     3750 0.01387 * 
-% lmbigram_retro  -0.0005802 -0.0619566  0.0685334     3750 0.99680   
-% lmbigram_batch   0.0894134  0.0180592  0.1533017     3764 0.00907 **
-% ---
-% Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
-% > posterior.mode(MC2.1Sol)
-%     (Intercept)       lmunigram lmbigram_online  lmbigram_retro  lmbigram_batch 
-%     0.473257621     0.033990801     0.079494255     0.007554976     0.082065261 
-% > HPDinterval(MC2.1Sol, 0.95)
-%                       lower      upper
-% (Intercept)     -0.06409497 0.95629789
-% lmunigram       -0.04135399 0.09516229
-% lmbigram_online  0.01839468 0.15030825
-% lmbigram_retro  -0.06195661 0.06853336
-% lmbigram_batch   0.01805916 0.15330165
-% attr(,"Probability")
-% [1] 0.9498667$
-}
+\paragraph{Response patterns}
+{\color{red}Graph showing response patterns}
 
 
+\paragraph{Overall similarity}
+We found that, relative to the \textsc{null (0P)} LM, the \textsc{bigram online (2PO)} (mode: $0.08$, HPD: $[0.02, 0.15]$) and the \textsc{bigram batch (2PB)} (mode: $0.08$, HPD: $[0.02, 0.15]$) language models resulted in significantly higher Euclidean distances between the model responses and human responses. On the other hand, we did not find evidence of a difference between the \textsc{null (0P)} LM and the \textsc{unigram (1P)} (mode: $0.03$, HPD: $[-0.04, 0.10]$) or \textsc{bigram retro (2PR)} (mode: $0.0$, HPD: $[-0.06, 0.07]$) language models.
+
+Interestingly, the models that performed less similarly to human behaviour are those for which \textipa{/u/}- and \textipa{/i/}-epenthesis was blocked after coronal consonants, since these \textipa{/du/} and \textipa{/di/} are phonotactically illegal in Japanese. Yet, as seen in Figure \ref{fig:parlato_per_all}, JP participants mostly reported experiencing \textipa{/u/}- and \textipa{/i/}-epenthesis on trials where $C_{1}$ was a coronal consonant. Similar to how ``none'' responses are blocked for all bigram models, acoustics are unable to counter low diphone probability.
+
+\paragraph{{\color{red}Zooming in on epenthetic vowel quality}}
+We arbitrarily chose a smoothing factor ($10^{-8}$)  in order to allow the language models to assign a non-zero probability to diphones never seen in the language corpus. The magnitude of this smoothing factor is expected to have an effect on the posteriorgrams assigned to ``none'' responses when decoding the experimental items. Since ``none'' responses constitute $13\%$ of human responses, and since the choice of the smoothing factor only affects the bigram language models, it may be beneficial to focus on the models' ability to mimic epenthetic vowel quality after isolating it from the percentage of epenthesis. As such, we perform the same analysis as above, but after removing $p_{none}$ from $ident_{LM}$ and $ident_{human}$. 
 
 \subsection{Experiment 2: {\color{red}m-/ahpa/}}
 \subsubsection{Methods}
