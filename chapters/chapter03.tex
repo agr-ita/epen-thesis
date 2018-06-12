@@ -29,24 +29,24 @@
 
 \section{Anatomy of our HMM-based speech recogniser}
 In this chapter we used Hidden Markov Model (HMM)-based speech recognisers as models of human perception. 
-Speech audio waveforms are transformed into sequences of \textbf{acoustic vectors} $X_{1:T} = x_{1}, ..., x_{T}$ through the first step, called feature extraction. In the decoding phase that follows, the trained ASR system attempts to find the sequence of words $W_{1:L} = w_{1}, ..., w_{L}$ which is most likely to have produced the sequence of acoustic feature vectors $X$.
+Speech audio waveforms are transformed into a sequence of \textbf{acoustic vectors} $X_{1:T} = x_{1}, ..., x_{T}$ through the first step, called feature extraction. In the decoding phase that follows, the trained ASR system attempts to find the sequence of words $w_{1:L} = w_{1}, ..., w_{L}$ which is most likely to have produced the sequence of acoustic feature vectors $X$.
 Mathematically, this equates to solving the following equation:
 
 \begin{equation}
-  \widehat{W} = \underset{W}{arg\,max} \left \{  P(W|X)\right \}
+  \widehat{w} = \underset{w}{arg\,max} \left \{  P(w|X)\right \}
   \label{eq_hmm_dec_post}
 \end{equation}
 
-Put into Bayesian terms, this represents computing the posterior probability $P(w|X)$ of all combinations of words, given the acoustics, and retrieving the index of the most probable one: the decoder selects the sequence of words $W$ with highest posterior probability given the acoustic evidence $X$. However, due to the recursive and compositional nature of language, it may be difficult to evaluate all possible combinations of words, in order to find the most probable one. As such, following Bayes's theorem, equation \ref{eq_hmm_dec_post} can be rearranged as:
+Put into Bayesian terms, this represents computing the posterior probability $P(w|X)$ of all combinations of words, given the acoustics, and retrieving the index of the most probable one: the decoder selects the sequence of words $w$ with highest posterior probability given the acoustic evidence $X$. However, due to the recursive and compositional nature of language, it may be difficult to evaluate all possible combinations of words, in order to find the most probable one. As such, following Bayes's theorem, equation \ref{eq_hmm_dec_post} can be rearranged as:
 
 \begin{equation}
-  \widehat{W} = \underset{W}{arg\,max} \left \{  P(X|W)P(W)\right \}
+  \widehat{w} = \underset{w}{arg\,max} \left \{  P(X|w)P(w)\right \}
   \label{eq_hmm_dec_post}
 \end{equation}
 
-The likelihood $P(X|W)$, given by the \textbf{acoustic model}, is the probability of the acoustics given the sequence of words. The prior $P(W)$, given by the \textbf{language model}, corresponds to the probability of the word sequence, and can be derived from frequency counts. These probabilities can be extracted by training our ASR system using annotated speech corpora.
+The likelihood $P(X|w)$, given by the \textbf{acoustic model}, is the probability of the acoustics given the sequence of words. The prior $P(w)$, given by the \textbf{language model}, corresponds to the probability of the word sequence, and can be derived from frequency counts. These probabilities can be extracted by training our ASR system using annotated speech corpora.
 
-In the field of ASR, Neural Network (NN)-based speech recognisers are state-of-the-art. In spite of better performance of NN-based ASR systems, we decided to use more well-understood HMM-based recognisers. Indeed, before the decoding step, these models offer a clear separation between the acoustic model (AM; i.e., mapping between phoneme categories and acoustics) and the language model (LM; i.e., frequencies of word/phoneme sequences). This allowed us to test ASR systems with different LMs while keeping the AM constant, as well as adapting LMs to mimic the experimental paradigms used when testing human participants.
+In the field of ASR, Neural Network (NN)-based speech recognisers are the state-of-the-art. In spite of better performance of NN-based ASR systems, we decided to use more well-understood HMM-based recognisers. Indeed, before the decoding step, these models offer a clear separation between the acoustic model (AM; i.e., mapping between phoneme categories and acoustics) and the language model (LM; i.e., frequencies of word/phoneme sequences). This allowed us to test ASR systems with different LMs while keeping the AM constant, as well as adapting LMs to mimic the experimental paradigms used when testing human participants. Importantly, unlike NNs which are often qualified as ``black boxes'', we are able to better understand and analyse how the ASR system processes acoustic input. 
 We will now present the components of an HMM-based ASR system, as depicted in Figure \ref{fig:hmm_architecture}, in more detail.
 
 \begin{figure}[htb]
@@ -110,12 +110,11 @@ Coefficient values are then standardised using Cepstral Mean Variance Normalisat
 
 \subsection{Acoustic model}
 
-Now that we have extracted the acoustic features for the labelled utterances in our corpus, we are able to train the acoustic model (AM). Recall, the AM gives the likelihood $P(X|W)$, which corresponds to the probability of the acoustics given the sequence of words $W$.
-In order to simplify things, let's not view an utterance as a sequence of words which are sequences of phonemes themselves, but as a sequence of phonemes. Then, we consider the probability of the acoustics $X$ given the sequence of phonemes $W$.
+Now that we have extracted the acoustic features for the labelled utterances in our corpus, we are able to train the acoustic model (AM). Recall, the AM gives the likelihood $P(X|w)$, which corresponds to the probability of the acoustics given the sequence of words $w$.
 
 \subsubsection{Estimating Gaussian distributions}
 We have 48-dimensional vectors (i.e., our acoustic features), as well as their accompanying transcriptions, as input for our acoustic model. As such, for each acoustic frame, we know the identity of the phoneme that it constitutes. Therefore, we have access to a variety of feature vectors which we can group by phonemic category. Using these distributions of acoustic vectors, we are able to represent each phoneme as a multivariate Gaussian distribution with 48 dimensions. During training, our acoustic model learns what each multivariate Gaussian distribution looks like for each phoneme by estimating the means and covariance matrices necessary for defining said distributions.
-Then, the AM is able to tell us, for any new frame $x$, $P(x|w)$ the likelihood that the frame originates from each multivariate distribution (i.e., phoneme) $w$. However, this assumes that a (multivariate) Gaussian distribution will be sufficient to model the distribution of our data. This is a strong assumption but it is made unnecessary by replacing multivariate Gaussian distributions with Gaussian Mixture Models (GMM).
+Then, the AM is able to tell us, for any new frame $x$, $P(x|w_{l})$ the likelihood that the frame originates from each multivariate distribution (i.e., phoneme) $w_{l}$. However, this assumes that a (multivariate) Gaussian distribution will be sufficient to model the distribution of our data. This is a strong assumption but it is made unnecessary by replacing multivariate Gaussian distributions with Gaussian Mixture Models (GMM).
 
 \subsubsection{Adding Gaussian Mixture Models (GMM) into the mix}
 Indeed, given enough components, GMMs are universal approximators of densities. We can therefore represent each phoneme not as a single multivariate Gaussian but as a mixture of multiple ones, relaxing the normality assumption. Similar to the single multivariate case, training consists of teaching the acoustic model what the distribution of exemplars of each phoneme looks like. The AM can then fit mixtures of Gaussians to fit these (non-Gaussian) distributions. When presented with a new frame, the AM can retrieve the likelihood that it originates from each GMM (i.e., phoneme). However, this type of acoustic model does not take into consideration the sequential nature of speech. Here is where Hidden Markov Models (HMM) come into place.   
@@ -127,7 +126,7 @@ In previous paragraphs we mentioned that, during training, our AM was learning t
 
 Please note that HMMs follow a Markovian process; the probability of a state only depends on the state beforehand. Consequently, the duration of phonemes cannot be explicitly learned by the acoustic model. However, durations are implicitly reflected by the transition probabilities in the self-loops: for a given state, the higher the self-loop probability, the longer the model will ``remain'' at said state and the longer the sequence of acoustic vectors assigned to the corresponding phoneme.     
 
-\subsubsection{Phony triphones}
+\subsubsection{Why not triphones?}
 If the reader is already familiar with ASR systems, they may expect us to go a step further and no longer treat phonemes as units (i.e., monophones) but, instead, handle triphones. For this latter representation, an independent three-state HMM would be built for each combination ofthree phonemes. For instance, there would no longer be an HMM for \textipa{/p/}, but we would have all context-dependent versions of this phoneme as individual HMMs (e.g., the triphone \textipa{/a+p+i/}, which is the phone \textipa{/p/} when preceded by \textipa{/a/} and followed by \textipa{/i/}).
 Traditionally, triphone-based HMM-based ASR systems perform better than monophone systems. However, this does not apply to our situation. Recall that we aim to use these speech recognition systems as models of nonnative speech perception, using tasks analogous to paradigms used in psycholinguistic experiments (namely, identification/forced-choice tasks). Importantly, we are focusing on modelling perceptual vowel epenthesis. This context excludes the use of triphones for the following reasons:
 \begin{enumerate}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.26)  12 JUN 2018 12:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.26)  13 JUN 2018 00:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1673,7 +1673,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [43]
 
-LaTeX Warning: Citation `saraclar2001' on page 44 undefined on input line 135.
+LaTeX Warning: Citation `saraclar2001' on page 44 undefined on input line 134.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1691,23 +1691,23 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [45]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 172.
+(hyperref)                removing `\@ifnextchar' on input line 171.
 
 <images/chapter03/parlato_hmm_Gfst.pdf, id=1229, 614.295pt x 197.73875pt>
 File: images/chapter03/parlato_hmm_Gfst.pdf Graphic file (type pdf)
 <use images/chapter03/parlato_hmm_Gfst.pdf>
 Package pdftex.def Info: images/chapter03/parlato_hmm_Gfst.pdf  used on input l
-ine 183.
+ine 182.
 (pdftex.def)             Requested size: 341.43436pt x 109.90622pt.
 
-Overfull \hbox (49.65704pt too wide) in paragraph at lines 191--193
+Overfull \hbox (49.65704pt too wide) in paragraph at lines 190--192
 []\OT1/cmr/m/n/10.95 As such, for each item, we ob-tained a six-dimensional vec
 -tor $\OML/cmm/m/it/10.95 ident[] \OT1/cmr/m/n/10.95 = [\OML/cmm/m/it/10.95 p[]
 ; p[]; p[]; p[]; p[]; p[]\OT1/cmr/m/n/10.95 ]$,
  []
 
 
-Overfull \hbox (1.85632pt too wide) in paragraph at lines 191--193
+Overfull \hbox (1.85632pt too wide) in paragraph at lines 190--192
 \OT1/cmr/m/n/10.95 pos-te-ri-or-grams). We can de-fine the hu-man equiv-a-lent 
 $\OML/cmm/m/it/10.95 ident[] \OT1/cmr/m/n/10.95 = [\OML/cmm/m/it/10.95 p[]; p[]
 ; p[]; p[]; p[]; p[]\OT1/cmr/m/n/10.95 ]$,
@@ -1720,13 +1720,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [46 <./images/chapter03/parlato_hmm_Gfst.pdf>]
-Overfull \hbox (64.31673pt too wide) in paragraph at lines 195--196
+Overfull \hbox (64.31673pt too wide) in paragraph at lines 194--195
 \OT1/cmr/m/n/10.95 us-ing Markov chain Monte Carlo gen-er-alised lin-ear mixed-
 models [[], []].
  []
 
 
-Overfull \hbox (2.09415pt too wide) in paragraph at lines 197--198
+Overfull \hbox (2.09415pt too wide) in paragraph at lines 196--197
 []\OT1/cmr/m/n/10.95 In or-der to as-sess the in-flu-ence of $\OML/cmm/m/it/10.
 95 V[]$ \OT1/cmr/m/n/10.95 and $\OML/cmm/m/it/10.95 V[]$ \OT1/cmr/m/n/10.95 (he
 nce-forth: flank-ing vow-els) on epenthetic
@@ -1736,7 +1736,7 @@ nce-forth: flank-ing vow-els) on epenthetic
 File: images/chapter03/parl_hmm_figs.pdf Graphic file (type pdf)
 <use images/chapter03/parl_hmm_figs.pdf, page 1>
 Package pdftex.def Info: images/chapter03/parl_hmm_figs.pdf , page1 used on inp
-ut line 203.
+ut line 202.
 (pdftex.def)             Requested size: 213.39566pt x 182.91313pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1749,16 +1749,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: images/chapter03/parl_hmm_figs.pdf Graphic file (type pdf)
 <use images/chapter03/parl_hmm_figs.pdf, page 2>
 Package pdftex.def Info: images/chapter03/parl_hmm_figs.pdf , page2 used on inp
-ut line 237.
+ut line 236.
 (pdftex.def)             Requested size: 170.71393pt x 146.3272pt.
 <images/chapter03/parl_hmm_figs.pdf, id=1270, page=3, 252.945pt x 216.81pt>
 File: images/chapter03/parl_hmm_figs.pdf Graphic file (type pdf)
 <use images/chapter03/parl_hmm_figs.pdf, page 3>
 Package pdftex.def Info: images/chapter03/parl_hmm_figs.pdf , page3 used on inp
-ut line 239.
+ut line 238.
 (pdftex.def)             Requested size: 170.71393pt x 146.3272pt.
 
-Overfull \hbox (12.26282pt too wide) in paragraph at lines 245--247
+Overfull \hbox (12.26282pt too wide) in paragraph at lines 244--246
  []\OT1/cmr/bx/n/12 /u/-epenthesis[] \OT1/cmr/m/n/10.95 The right panel of Fig-
 ure [][]3.6[][] shows the pos-te-ri-or-grams for \T3/cmr/m/n/10.95 /u/\OT1/cmr/
 m/n/10.95 -epenthesis
@@ -1781,11 +1781,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [49]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 257.
+(hyperref)                removing `\@ifnextchar' on input line 256.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 262.
+(hyperref)                removing `\@ifnextchar' on input line 261.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1794,20 +1794,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [50]
-Overfull \hbox (8.83533pt too wide) in paragraph at lines 290--291
+Overfull \hbox (8.83533pt too wide) in paragraph at lines 289--290
 []\OT1/cmr/m/n/10.95 Statistical anal-y-ses were per-formed with the R sta-tis-
 ti-cal soft-ware [[]],
  []
 
 
-Overfull \hbox (64.31673pt too wide) in paragraph at lines 290--291
+Overfull \hbox (64.31673pt too wide) in paragraph at lines 289--290
 \OT1/cmr/m/n/10.95 us-ing Markov chain Monte Carlo gen-er-alised lin-ear mixed-
 models [[], []].
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 314.
+(hyperref)                removing `\@ifnextchar' on input line 313.
 
 
 Underfull \vbox (badness 2617) has occurred while \output is active []
@@ -1824,7 +1824,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: images/chapter03/m-ahpa_Gfst.pdf Graphic file (type pdf)
 <use images/chapter03/m-ahpa_Gfst.pdf>
 Package pdftex.def Info: images/chapter03/m-ahpa_Gfst.pdf  used on input line 3
-24.
+23.
 (pdftex.def)             Requested size: 341.43436pt x 115.4852pt.
 
 
@@ -1836,7 +1836,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [52 <./images/chapter03/m-ahpa_Gfst.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 354.
+(hyperref)                removing `\@ifnextchar' on input line 353.
 
 )
 
@@ -3079,7 +3079,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 96.
  )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 317 ({)
+### simple group (level 1) entered at line 316 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
  10109 strings out of 492980
@@ -3141,7 +3141,7 @@ st/fonts/type1/public/tipa/tipa10.pfb></usr/local/texlive/2017/texmf-dist/fonts
 ublic/tipa/tipa8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tip
 a/tipasl10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tipa/tipa
 sl12.pfb>
-Output written on main.pdf (105 pages, 2365685 bytes).
+Output written on main.pdf (105 pages, 2365581 bytes).
 PDF statistics:
  1848 PDF objects out of 2073 (max. 8388607)
  1550 compressed objects within 16 object streams
