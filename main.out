@@ -23,7 +23,7 @@
 \BOOKMARK [2][-]{subsection.2.4.4}{Discussion}{section.2.4}% 23
 \BOOKMARK [1][-]{section.2.5}{Conclusions}{chapter.2}% 24
 \BOOKMARK [0][-]{chapter.3}{redUsing ASR systems as models of speech perception}{}% 25
-\BOOKMARK [1][-]{section.3.1}{Anatomy of an HMM-based speech recogniser}{chapter.3}% 26
+\BOOKMARK [1][-]{section.3.1}{Anatomy of our HMM-based speech recogniser}{chapter.3}% 26
 \BOOKMARK [2][-]{subsection.3.1.1}{Corpora}{section.3.1}% 27
 \BOOKMARK [2][-]{subsection.3.1.2}{Features}{section.3.1}% 28
 \BOOKMARK [2][-]{subsection.3.1.3}{Acoustic model}{section.3.1}% 29

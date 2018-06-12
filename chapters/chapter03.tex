@@ -27,27 +27,34 @@
 % General methods % %
 %%%%%%%%%%%%%%%%%%%
 
-\section{Anatomy of an HMM-based speech recogniser}
+\section{Anatomy of our HMM-based speech recogniser}
 In this chapter we used Hidden Markov Model (HMM)-based speech recognisers as model of human perception. 
-Speech audio waveforms are transformed into sequences of acoustic vectors $A_{1:T} = a_{1}, ..., a_{T}$ through the first step, called feature extraction. In the decoding phase that follows, the ASR system attempts to find the sequence of words $w_{1:L} = w_{1}, ..., w_{L}$ which is most likely to have produced the sequence of \textbf{acoustic feature vectors} $A$.
+Speech audio waveforms are transformed into sequences of acoustic vectors $X_{1:T} = x_{1}, ..., x_{T}$ through the first step, called feature extraction. In the decoding phase that follows, the trained ASR system attempts to find the sequence of words $W_{1:L} = w_{1}, ..., w_{L}$ which is most likely to have produced the sequence of \textbf{acoustic feature vectors} $X$.
 Mathematically, this equates to solving the following equation:
 
 \begin{equation}
-  \widehat{w} = \underset{w}{arg\,max} \left \{  P(w|A)\right \}
+  \widehat{W} = \underset{W}{arg\,max} \left \{  P(W|X)\right \}
   \label{eq_hmm_dec_post}
 \end{equation}
 
-Put into Bayesian terms, this represents computing the posterior probability $P(w|A)$ of all combinations of words, given the acoustics, and retrieving the index of the most probable one: the decoder selects the sequence of words $w$ with highest posterior probability given the acoustic evidence $A$. However, due to the recursive and compositional nature of language, it may be difficult to evaluate all possible combinations of words, in order to find the most probable one. As such, following Bayes's theorem, equation \ref{eq_hmm_dec_post} can be rearranged as:
+Put into Bayesian terms, this represents computing the posterior probability $P(w|X)$ of all combinations of words, given the acoustics, and retrieving the index of the most probable one: the decoder selects the sequence of words $W$ with highest posterior probability given the acoustic evidence $X$. However, due to the recursive and compositional nature of language, it may be difficult to evaluate all possible combinations of words, in order to find the most probable one. As such, following Bayes's theorem, equation \ref{eq_hmm_dec_post} can be rearranged as:
 
 \begin{equation}
-  \widehat{w} = \underset{w}{arg\,max} \left \{  P(A|w)P(w)\right \}
+  \widehat{W} = \underset{W}{arg\,max} \left \{  P(X|W)P(W)\right \}
   \label{eq_hmm_dec_post}
 \end{equation}
 
-The likelihood $P(A|w)$, given by the \textbf{acoustic model}, is the probability of the acoustics given the sequence of words. The prior $P(w)$, given by the \textbf{language model}, corresponds to the probability of the word sequence, and can be derived from frequency counts. These probabilities can be extracted by training our ASR system using annotated speech corpora.
+The likelihood $P(X|W)$, given by the \textbf{acoustic model}, is the probability of the acoustics given the sequence of words. The prior $P(W)$, given by the \textbf{language model}, corresponds to the probability of the word sequence, and can be derived from frequency counts. These probabilities can be extracted by training our ASR system using annotated speech corpora.
 
 In the field of ASR, Neural Network (NN)-based speech recognisers are king. In spite of better performance of NN-based ASR systems, we decided to use more well-understood HMM-based recognisers. Indeed, before the decoding step, these models offer a clear separation between the acoustic model (AM; i.e., mapping between phoneme categories and acoustics) and the language model (LM; i.e., frequencies of word/phoneme sequences). This allowed us to test ASR systems with different LMs while keeping the AM constant, as well as adapting LMs to mimic the experimental paradigms used when testing human participants.
-We will now present the components of an HMM-based ASR system, as depicted in Figure \ref{fig:truc}, in more detail.
+We will now present the components of an HMM-based ASR system, as depicted in Figure \ref{fig:hmm_architecture}, in more detail.
+
+\begin{figure}[htb]
+\centering
+%\includegraphics[width=0.8\linewidth]{chapter03/parlato_hmm_Gfst.pdf}
+\caption{{\color{red}\textit{Components of our ASR system.}}}
+\label{fig:hmm_architecture}
+\end{figure}
 
 \subsection{Corpora}
 
@@ -62,8 +69,7 @@ Our subset of the corpus contained 400,547 utterances produced by 594 speakers (
 Recordings were manually transcribed by native speakers of Japanese. Phoneme boundaries were {\color{red}manually adjusted, however this alignment was not used when our models, as it was overwritten by forced alignment}.
 
 \begin{itemize}
-\item Train-test division (n utterances, time)
-\item ...
+{\color{red}\item Train-test division (n utterances, time)}
 \end{itemize}
 
 \paragraph{Korean Corpus of Spontaneous Speech (KCSS)}
@@ -73,12 +79,18 @@ Recordings were manually transcribed by native speakers of Korean. We used phone
 The corpus contains 126,132 utterances produced by 40 speakers (as explained above), with an average of 3153.3 utterances per speaker. 
 
 \begin{itemize}
-\item Train-test division (n utterances, time)
-\item ...
+{\color{red}\item Train-test division (n utterances, time)}
 \end{itemize}
 
 \subsection{Features}
 In order for our ASR systems to be able to use speech as input, it is necessary to perform signal analysis. This procedure transforms the continuous raw speech waveform into sequential speech features. This latter form ensures a more compact representation of the information in speech, with modifications that enhance phonemic contrasts and better approximate how speech is processed by the human cochlea. In this work we used Mel-frequency cepstrum coefficients (MFCC), traditionally used for HMM-based ASR systems.
+
+\begin{figure}[htb]
+\centering
+%\includegraphics[width=0.8\linewidth]{chapter03/parlato_hmm_Gfst.pdf}
+\caption{{\color{red}\textit{[Is this necessary or is the text enough?] Processing stages required to obtain MFCCs.}}}
+\label{fig:hmm_architecture}
+\end{figure}
 
 Speech is recorded with a microphone; the continuous audio signal is digitalized at a sampling rate of 16kHz.
 The audio is then segmented into frames of 25 ms, with a shift of 10 ms between the beginning of each frame. By using frames, we make the assumption that the signal is stationary, and we apply the following proccessing steps to each frame, using Kaldi \cite{povey2011}:
@@ -88,7 +100,7 @@ The audio is then segmented into frames of 25 ms, with a shift of 10 ms between 
 \item Windowing: The data in the 25 ms frame is multiplied by a tapered window (Hamming window), to avoid discontinuities at the edges of the segment.
 \item Spectral analysis: By applying a Fast Fourier Transform (FFT), we find out how much energy there is at each frequency band.
 \item Nonlinear frequency scaling: In order to compensate for the fact that human hearing is less sensitive to higher frequencies, frequencies are mapped onto a Mel scale, which is linear until approximately 1000 Hz and logarithmic afterwards. This is done by applying a mel-filter bank with 23 bins, which are equally spaced in the mel-frequency domain. Each filter summarises the amount of energy in a section of the range of frequencies. 
-\item Cepstral analysis: The log of the energy in each bin is computed, from which we take the cosine transform. We keep 13 MFCCs, including $c_{0}$, the zeroth coefficient.
+\item Cepstral analysis: The log of the energy in each bin is computed, from which we take the cosine transform. We keep 13 MFCCs, including $c_{0}$, the zeroth coefficient which represents the average of the log-frequency of the bins \cite{galesyoung2007}..
   \item {\color{red}Cepstral liftering: Coefficients are scaled, ensuring that they have a reasonable range.}
 \end{enumerate}
 
@@ -97,14 +109,39 @@ To these 16 static features we add their respective dynamic features ($\Delta$ a
 Coefficient values are then standardised using Cepstral Mean Variance Normalisation (CMVN); for each speaker the distribution of each coefficient's values has a mean value of zero and a variance of one. 
 
 \subsection{Acoustic model}
-\begin{itemize}
-\item Monophone model - also, why?
-\item Number of gaussians
-\item Number of states
-\item Duration included in state transitions 
-\item ...
-\end{itemize}
-    
+
+Now that we have extracted the acoustic features for the labelled utterances in our corpus, we are able to train the acoustic model (AM). Recall, the AM gives the likelihood $P(X|W)$, which corresponds to the probability of the acoustics given the sequence of words $W$.
+In order to simplify things, let's not view an utterance as a sequence of words which are sequences of phonemes themselves, but as a sequence of phonemes. Then, we consider the probability of the acoustics $X$ given the sequence of phones $W$.
+
+\subsubsection{Estimating Gaussian distributions}
+We have 48-dimensional vectors (i.e., our acoustic features), as well as their accompanying transcriptions, as input for our acoustic model. As such, for each acoustic frame, we know the identity of the phoneme that it constitutes. Therefore, we have access to a variety of feature vectors which we can group by phonemic category. Using these distributions of acoustic vectors, we are able to represent each phoneme as a multivariate Gaussian distribution with 48 dimensions. During training, our acoustic model learns what each multivariate Gaussian distribution looks like for each phoneme by estimating the means and covariance matrices necessary for defining said distributions.
+Then, the AM is able to tell us, for any new frame $x$, $P(x|w)$ the likelihood that the frame originates from each multivariate distribution (i.e., phoneme) $w$. However, this assumes that a (multivariate) Gaussian distribution will be sufficient to model the distribution of our data. This is a strong assumption but it is made unnecessary by replacing multivariate Gaussian distributions with Gaussian Mixture Models (GMM).
+
+\subsubsection{Adding Gaussian Mixture Models (GMM) into the mix}
+Indeed, given enough components, GMMs are universal approximators of densities. We can therefore represent each phoneme not as a single multivariate Gaussian but as a mixture of multiple ones, relaxing the normality assumption. Similar to the single multivariate case, training consists of teaching the acoustic model what the distribution of exemplars of each phoneme looks like. The AM can then fit mixtures of Gaussians to fit these (non-Gaussian) distributions. When presented with a new frame, the AM can retrieve the likelihood that it originates from each GMM (i.e., phoneme). However, this type of acoustic model does not take into consideration the sequential nature of speech. Here is where Hidden Markov Models (HMM) come into place.   
+
+\subsubsection{Modelling sequences with HMMs}
+Before even mentioning how different phonemes are connected to each other in HMMs, our first modification will be within the representation of an individual phoneme itself. While in the previous paragraph each phoneme was a GMM, now we represent a phoneme by a sequence of three GMMs, called \textbf{states}. In a left-to-right model such as ours, the three states are disposed sequentially (i.e., it is only possible to go from state 1 to state 2, and from state 2 to state 3) and they correspond to a description of phonemes unfolded in the time domain. Shifting to a three-state representation allows us to better handle the variability in phoneme production due to coarticulation; indeed, while state 2 represents the more stable, medial portion of a phoneme, states 1 and 3 will be subjected to more diversity due to surrounding phonemes. Additionally, some phonemes are better represented by a sequence of steps rather than a stationary description of their acoustics. For instance, plosives such as \textipa{/p/} are often described as sequences of an airway closure, followed by a period of occlusion and an optional release.
+
+In previous paragraphs we mentioned that, during training, our AM was learning the GMMs for all phonemes based on the corpus data. Now that we represent phonemes as three-state HMMs, our AM also needs to learn the transition probabilities, within states (i.e., self-loops) and between adjacent states. How do we go from isolated phonemes to sequences of phonemes? Phoneme HMMs are simply chained together, meaning that the AM also learns the transition probabilities between the last state and first state of a pair of phonemes.
+
+Please note that HMMs follow a Markovian process; the probability of a state only depends on the state beforehand. Consequently, the duration of phonemes cannot be explicitly learned by the acoustic model. However, durations are implicitly reflected by the transition probabilities in the self-loops: for a given state, the higher the self-loop probability, the longer the model will ``remain'' at said state and the longer the sequence of acoustic vectors assigned to the corresponding phoneme.     
+
+\subsubsection{Phony triphones}
+If the reader is already familiar with ASR systems, they may expect us to go a step further and no longer treat phonemes as units (i.e., monophones) but, instead, handle triphones. For this latter representation, an independent three-state HMM would be built for each combination ofthree phonemes. For instance, there would no longer be an HMM for \textipa{/p/}, but we would have all context-dependent versions of this phoneme as individual HMMs (e.g., the triphone \textipa{/a+p+i/}, which is the phone \textipa{/p/} when preceded by \textipa{/a/} and followed by \textipa{/i/}).
+Traditionally, triphone-based HMM-based ASR systems perform better than monophone systems. However, this does not apply to our situation. Recall that we aim to use these speech recognition systems as models of nonnative speech perception, using tasks analogous to paradigms used in psycholinguistic experiments (namely, identification/forced-choice tasks). Importantly, we are focusing on modelling perceptual vowel epenthesis. This context excludes the use of triphones for the following reasons:
+\begin{enumerate}
+\item First of all, by definition, our ASR systems will have to decode speech that does not follow native phonotactics. Decoding such stimuli requires the existence of triphones corresponding to the input, yet the model will have never encountered such triphones in the training data. While this situation might seem appealing, one must consider the fact that the ASR system \textit{will attempt to account for said triphones} during decoding in spite of the lack of data. Importantly, poorly estimated triphones (e.g., \textipa{/a+h+p/}, when decoding \textipa{/ahpa/}) will be put up against well-estimated triphones (e.g., \textipa{/a+h+a/}) during the forced-choice tasks. The well-estimated triphones might simply have the upper hand and be preferred over poorly-estimated ones for this reason alone, irrespective of the actual acoustic match between the stimuli and the phoneme models.
+  \item Secondly, our tasks consist of phonetic labelling. It has been shown that monophone models are able to perform well in this context relative to triphones, as long as the number of Gaussians available to the model is increased {\color{red}\cite{saraclar2001}}. As shown in Figure \ref{fig:hmm_gaussians}, the performance of our models increased when increasing the number of total Gaussians from the Kaldi default of 1000 to 6000, which would average to approximately 50 Gaussians per state for a language with an inventory of 40 phonemes.   
+\end{enumerate}
+
+\begin{figure}[htb]
+\centering
+%\includegraphics[width=0.8\linewidth]{chapter03/parlato_hmm_Gfst.pdf}
+\caption{{\color{red}\textit{Changes in word error rate (\%WER) and phone error rate (\%PER) following variation of the number of total Gaussians allocated to the acoustic model.}}}
+\label{fig:hmm_gaussians}
+\end{figure}
+
 \subsection{Language models}
 \begin{itemize}
 \item WFSTs
@@ -139,7 +176,7 @@ Coefficient values are then standardised using Cepstral Mean Variance Normalisat
 We used the same stimuli as in sections \ref{2-parlato} and \ref{2-parlato-dur}. As a reminder, a native French speaker recorded 54 items with the structure $V_{1}C_{1}C_{2}V_{2}$, with $V_{1}$ and $V_{2}$ vowels from the set \{/a/, /i/, /u/\}, and $C_{1}C_{2}$ a cluster from the set \{/bg/, /bn/, /db/, /dg/, /gb/, /gn/\} (e.g. /abgi/).
 
 \subsubsection{Language models}
-In order for the decoding task to be analogous to the experiment described in sections \ref{2-parlato_per} and \ref{2-parlato-dur}, trial-specific language models were constructed, as shown in Figure \ref{fig:parlato_G}. Thus, when decoding a $V_{1}C_{1}C_{2}V_{2}$ stimulus, the perception model was only given the possibility to transcribe it as $V_{1}C_{1}(V_{3})(SIL)C_{2}V_{2}$, where phones between parentheses are optional and $V_{3}$ was from the set of vowels \textipa{/a, e, i, o, u/}. In this section our language model was only used to constrain the list of possible outputs from decoding; one output was not more probable than another based on the language models alone. Therefore, here we used a null language model (\textsc{0P-LM}), meaning that the quality of the epenthesized vowels was only be determined by the acoustic match.
+In order for the decoding task to be analogous to the experiment described in sections \ref{2-parlato_per} and \ref{2-parlato-dur}, trial-specific language models were constructed, as shown in Figure \ref{fig:parlato_G}. Thus, when decoding a $V_{1}C_{1}C_{2}V_{2}$ stimulus, the perception model was only given the possibility to transcribe it as $V_{1}C_{1}(V_{3})(SIL)C_{2}V_{2}$, where phones between parentheses are optional and $V_{3}$ was from the set of vowels \textipa{/a, e, i, o, u/}. In this section our language model was only used to constrain the list of possible outputs from decoding; one output was not more probable than another based on the language models alone. Therefore, here we used a null language model (\textsc{0P-LM}), meaning that the quality of the epenthesized vowels was only determined by the acoustic match.
 
 \begin{figure}[htb]
 \centering
