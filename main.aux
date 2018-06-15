@@ -271,163 +271,165 @@
 \newlabel{eq_hmm_dec_post}{{3.2}{40}{Anatomy of our HMM-based speech recogniser}{equation.3.1.2}{}}
 \citation{maekawa2003}
 \citation{yun2015}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces {\color  {red}\textit  {Components of our ASR system.}}}}{41}{figure.3.1}}
-\newlabel{fig:hmm_architecture}{{3.1}{41}{\color {red}\textit {Components of our ASR system.}}{figure.3.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces \textit  {Architecture of our ASR system, including its input (acoustic features) and output (transcription).}}}{41}{figure.3.1}}
+\newlabel{fig:hmm_architecture}{{3.1}{41}{\textit {Architecture of our ASR system, including its input (acoustic features) and output (transcription).}}{figure.3.1}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Corpora}{41}{subsection.3.1.1}}
 \@writefile{toc}{\contentsline {paragraph}{Corpus of Spontaneous Japanese (CSJ)}{41}{section*.50}}
-\@writefile{toc}{\contentsline {paragraph}{Korean Corpus of Spontaneous Speech (KCSS)}{41}{section*.51}}
 \citation{povey2011}
 \citation{galesyoung2007}
+\@writefile{toc}{\contentsline {paragraph}{Korean Corpus of Spontaneous Speech (KCSS)}{42}{section*.51}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Features}{42}{subsection.3.1.2}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces {\color  {red}\textit  {[Is this necessary or is the text enough?] Processing stages required to obtain MFCCs.}}}}{42}{figure.3.2}}
 \newlabel{fig:hmm_architecture}{{3.2}{42}{\color {red}\textit {[Is this necessary or is the text enough?] Processing stages required to obtain MFCCs.}}{figure.3.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}Acoustic model}{42}{subsection.3.1.3}}
-\@writefile{toc}{\contentsline {subsubsection}{Estimating Gaussian distributions}{43}{section*.52}}
-\@writefile{toc}{\contentsline {subsubsection}{Adding Gaussian Mixture Models (GMM) into the mix}{43}{section*.53}}
-\@writefile{toc}{\contentsline {subsubsection}{Modelling sequences with HMMs}{43}{section*.54}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}Acoustic model}{43}{subsection.3.1.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces \textit  {Left-to-right 3-state phoneme HMM with simplified 2-dimensional GMMs (one per state). Start and stop states connect the phoneme with the previous and next phoneme, respectively.}}}{44}{figure.3.3}}
+\newlabel{fig:hmm_3state}{{3.3}{44}{\textit {Left-to-right 3-state phoneme HMM with simplified 2-dimensional GMMs (one per state). Start and stop states connect the phoneme with the previous and next phoneme, respectively.}}{figure.3.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Estimating Gaussian distributions}{44}{section*.52}}
+\@writefile{toc}{\contentsline {subsubsection}{Adding Gaussian Mixture Models (GMM) into the mix}{44}{section*.53}}
+\@writefile{toc}{\contentsline {subsubsection}{Modelling sequences with HMMs}{45}{section*.54}}
+\@writefile{toc}{\contentsline {subsubsection}{Why not triphones?}{45}{section*.55}}
 \citation{saraclar2001}
-\@writefile{toc}{\contentsline {subsubsection}{Why not triphones?}{44}{section*.55}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces {\color  {red}\textit  {Changes in word error rate (\%WER) and phone error rate (\%PER) following variation of the number of total Gaussians allocated to the acoustic model.}}}}{44}{figure.3.3}}
-\newlabel{fig:hmm_gaussians}{{3.3}{44}{\color {red}\textit {Changes in word error rate (\%WER) and phone error rate (\%PER) following variation of the number of total Gaussians allocated to the acoustic model.}}{figure.3.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.4}Language models}{44}{subsection.3.1.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.5}Decoding}{45}{subsection.3.1.5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.6}Scoring: Assessing native performance}{45}{subsection.3.1.6}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}{\color  {red}Parlato-hmm}}{46}{section.3.2}}
-\newlabel{3-parlato-hmm}{{3.2}{46}{\color {red}Parlato-hmm}{section.3.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Introduction}{46}{subsection.3.2.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Methods}{46}{subsection.3.2.2}}
-\@writefile{toc}{\contentsline {subsubsection}{Stimuli}{46}{section*.56}}
-\@writefile{toc}{\contentsline {subsubsection}{Language models}{46}{section*.57}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Constrained language model used for decoding the stimulus {\fontencoding  {T3}\selectfont  /agni/}. Nodes in the graph represent states, edges represent transitions between states (here: phonemes). The lack of weights on edges issued from a same node (e.g., between states 2 and 3) indicates that path selection is entirely decided by acoustic scores when decoding experimental items, with an acoustic scale of $0.1$. An optional silence can be inserted by the model between states 3 and 4.}}{46}{figure.3.4}}
-\newlabel{fig:parlato_G}{{3.4}{46}{Constrained language model used for decoding the stimulus \textipa {/agni/}. Nodes in the graph represent states, edges represent transitions between states (here: phonemes). The lack of weights on edges issued from a same node (e.g., between states 2 and 3) indicates that path selection is entirely decided by acoustic scores when decoding experimental items, with an acoustic scale of $0.1$. An optional silence can be inserted by the model between states 3 and 4}{figure.3.4}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Identification task simulation}{46}{section*.58}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces {\color  {red}\textit  {Changes in word error rate (\%WER) and phone error rate (\%PER) following variation of the number of total Gaussians allocated to the acoustic model.}}}}{46}{figure.3.4}}
+\newlabel{fig:hmm_gaussians}{{3.4}{46}{\color {red}\textit {Changes in word error rate (\%WER) and phone error rate (\%PER) following variation of the number of total Gaussians allocated to the acoustic model.}}{figure.3.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.4}Language models}{46}{subsection.3.1.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.5}Decoding}{46}{subsection.3.1.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.6}Scoring: Assessing native performance}{46}{subsection.3.1.6}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}{\color  {red}Parlato-hmm}}{47}{section.3.2}}
+\newlabel{3-parlato-hmm}{{3.2}{47}{\color {red}Parlato-hmm}{section.3.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Introduction}{47}{subsection.3.2.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Methods}{47}{subsection.3.2.2}}
+\@writefile{toc}{\contentsline {subsubsection}{Stimuli}{47}{section*.56}}
+\@writefile{toc}{\contentsline {subsubsection}{Language models}{47}{section*.57}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Constrained language model used for decoding the stimulus {\fontencoding  {T3}\selectfont  /agni/}. Nodes in the graph represent states, edges represent transitions between states (here: phonemes). The lack of weights on edges issued from a same node (e.g., between states 2 and 3) indicates that path selection is entirely decided by acoustic scores when decoding experimental items, with an acoustic scale of $0.1$. An optional silence can be inserted by the model between states 3 and 4.}}{47}{figure.3.5}}
+\newlabel{fig:parlato_G}{{3.5}{47}{Constrained language model used for decoding the stimulus \textipa {/agni/}. Nodes in the graph represent states, edges represent transitions between states (here: phonemes). The lack of weights on edges issued from a same node (e.g., between states 2 and 3) indicates that path selection is entirely decided by acoustic scores when decoding experimental items, with an acoustic scale of $0.1$. An optional silence can be inserted by the model between states 3 and 4}{figure.3.5}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Identification task simulation}{47}{section*.58}}
 \citation{R-base}
 \citation{R-MCMCglmm}
 \citation{R-coda}
 \citation{gelman1992}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces \textit  {Example of how the ASR system decodes the item {\fontencoding  {T3}\selectfont  /agni/}, using the null language model in Figure \ref  {fig:parlato_G}. From top to bottom: original waveform, item name, aligned transcriptions given by the model (from the most probable to the least probable), and spectrogram with formant contours. SIL = silence.}}}{47}{figure.3.5}}
-\newlabel{fig:parl_hmm_align}{{3.5}{47}{\textit {Example of how the ASR system decodes the item \textipa {/agni/}, using the null language model in Figure \ref {fig:parlato_G}. From top to bottom: original waveform, item name, aligned transcriptions given by the model (from the most probable to the least probable), and spectrogram with formant contours. SIL = silence.}}{figure.3.5}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Data analysis}{47}{section*.59}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Results}{48}{subsection.3.2.3}}
-\@writefile{toc}{\contentsline {subsubsection}{Overall similarity}{48}{section*.60}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces \textit  {Distribution of posteriorgrams obtained when decoding with a null language model. The box and whiskers plots display the distribution of posteriorgrams across experimental items.}}}{48}{figure.3.6}}
-\newlabel{fig:parl_hmm_overall}{{3.6}{48}{\textit {Distribution of posteriorgrams obtained when decoding with a null language model. The box and whiskers plots display the distribution of posteriorgrams across experimental items.}}{figure.3.6}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Effect of coarticulation}{49}{section*.61}}
-\@writefile{toc}{\contentsline {paragraph}{/i/-epenthesis}{49}{section*.62}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces \textit  {Posteriorgrams for {\fontencoding  {T3}\selectfont  /i/}-epenthesis (left) and {\fontencoding  {T3}\selectfont  /u/}-epenthesis (right) obtained when decoding with a ``null'' language model. The box and whiskers plots display the distribution of posteriorgrams across experimental items, represented by individual dots.}}}{49}{figure.3.7}}
-\newlabel{fig:parl_hmm_iu}{{3.7}{49}{\textit {Posteriorgrams for \textipa {/i/}-epenthesis (left) and \textipa {/u/}-epenthesis (right) obtained when decoding with a ``null'' language model. The box and whiskers plots display the distribution of posteriorgrams across experimental items, represented by individual dots.}}{figure.3.7}{}}
-\@writefile{toc}{\contentsline {paragraph}{/u/-epenthesis}{49}{section*.63}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.4}Discussion}{49}{subsection.3.2.4}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}{\color  {red}Investigating surface phonotactics}}{50}{section.3.3}}
-\newlabel{3-surfphono}{{3.3}{50}{\color {red}Investigating surface phonotactics}{section.3.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Introduction}{50}{subsection.3.3.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Experiment 1: {\color  {red}Parlato-lms}}{50}{subsection.3.3.2}}
-\@writefile{toc}{\contentsline {subsubsection}{Methods}{50}{section*.64}}
-\@writefile{toc}{\contentsline {paragraph}{Stimuli}{50}{section*.65}}
-\@writefile{toc}{\contentsline {paragraph}{Language models}{50}{section*.66}}
-\@writefile{toc}{\contentsline {paragraph}{Identification task simulation}{50}{section*.67}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces \textit  {Example of how the ASR system decodes the item {\fontencoding  {T3}\selectfont  /agni/}, using the null language model in Figure \ref  {fig:parlato_G}. From top to bottom: original waveform, item name, aligned transcriptions given by the model (from the most probable to the least probable), and spectrogram with formant contours. SIL = silence.}}}{48}{figure.3.6}}
+\newlabel{fig:parl_hmm_align}{{3.6}{48}{\textit {Example of how the ASR system decodes the item \textipa {/agni/}, using the null language model in Figure \ref {fig:parlato_G}. From top to bottom: original waveform, item name, aligned transcriptions given by the model (from the most probable to the least probable), and spectrogram with formant contours. SIL = silence.}}{figure.3.6}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Data analysis}{48}{section*.59}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Results}{49}{subsection.3.2.3}}
+\@writefile{toc}{\contentsline {subsubsection}{Overall similarity}{49}{section*.60}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces \textit  {Distribution of posteriorgrams obtained when decoding with a null language model. The box and whiskers plots display the distribution of posteriorgrams across experimental items.}}}{49}{figure.3.7}}
+\newlabel{fig:parl_hmm_overall}{{3.7}{49}{\textit {Distribution of posteriorgrams obtained when decoding with a null language model. The box and whiskers plots display the distribution of posteriorgrams across experimental items.}}{figure.3.7}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Effect of coarticulation}{50}{section*.61}}
+\@writefile{toc}{\contentsline {paragraph}{/i/-epenthesis}{50}{section*.62}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces \textit  {Posteriorgrams for {\fontencoding  {T3}\selectfont  /i/}-epenthesis (left) and {\fontencoding  {T3}\selectfont  /u/}-epenthesis (right) obtained when decoding with a ``null'' language model. The box and whiskers plots display the distribution of posteriorgrams across experimental items, represented by individual dots.}}}{50}{figure.3.8}}
+\newlabel{fig:parl_hmm_iu}{{3.8}{50}{\textit {Posteriorgrams for \textipa {/i/}-epenthesis (left) and \textipa {/u/}-epenthesis (right) obtained when decoding with a ``null'' language model. The box and whiskers plots display the distribution of posteriorgrams across experimental items, represented by individual dots.}}{figure.3.8}{}}
+\@writefile{toc}{\contentsline {paragraph}{/u/-epenthesis}{50}{section*.63}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.4}Discussion}{50}{subsection.3.2.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}{\color  {red}Investigating surface phonotactics}}{51}{section.3.3}}
+\newlabel{3-surfphono}{{3.3}{51}{\color {red}Investigating surface phonotactics}{section.3.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Introduction}{51}{subsection.3.3.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Experiment 1: {\color  {red}Parlato-lms}}{51}{subsection.3.3.2}}
+\@writefile{toc}{\contentsline {subsubsection}{Methods}{51}{section*.64}}
+\@writefile{toc}{\contentsline {paragraph}{Stimuli}{51}{section*.65}}
+\@writefile{toc}{\contentsline {paragraph}{Language models}{51}{section*.66}}
+\@writefile{toc}{\contentsline {paragraph}{Identification task simulation}{51}{section*.67}}
 \citation{R-base}
 \citation{R-MCMCglmm}
 \citation{R-coda}
 \citation{gelman1992}
-\@writefile{toc}{\contentsline {paragraph}{Data analysis}{51}{section*.68}}
-\@writefile{toc}{\contentsline {subsubsection}{Results and Discussion}{51}{section*.69}}
-\@writefile{toc}{\contentsline {paragraph}{Effect of acoustic scale}{51}{section*.70}}
-\@writefile{toc}{\contentsline {paragraph}{Response patterns}{51}{section*.71}}
-\@writefile{toc}{\contentsline {paragraph}{Overall similarity}{51}{section*.72}}
-\@writefile{toc}{\contentsline {paragraph}{Zooming in on epenthetic vowel quality}{51}{section*.73}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces \textit  {Distribution of the proportion of responses given by human participants (topmost panel) and posteriorgrams obtained when decoding with different language models. The box and whiskers plots display the distribution of posteriorgrams across experimental items, with boxplots separated according to the $C_{1}$ in the cluster.}}}{52}{figure.3.8}}
-\newlabel{fig:parlato-lms}{{3.8}{52}{\textit {Distribution of the proportion of responses given by human participants (topmost panel) and posteriorgrams obtained when decoding with different language models. The box and whiskers plots display the distribution of posteriorgrams across experimental items, with boxplots separated according to the $C_{1}$ in the cluster.}}{figure.3.8}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Experiment 2: {\color  {red}m-/ahpa/}}{53}{subsection.3.3.3}}
-\@writefile{toc}{\contentsline {subsubsection}{Methods}{53}{section*.74}}
-\@writefile{toc}{\contentsline {paragraph}{Stimuli}{53}{section*.75}}
-\@writefile{toc}{\contentsline {paragraph}{Language models}{53}{section*.76}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces \textit  {Constrained language model used to test the models (here: LM for {\fontencoding  {T3}\selectfont  /ahpa/} trials). Nodes in the graph represent states, weighted edges represent transitions between states (here: phonemes). When relevant, weighted edges are labeled with the probability to choose that edge when decoding, which affects the final language model score of each possible path. These scores are then combined with acoustic scores when decoding experimental items.}}}{53}{figure.3.9}}
-\newlabel{fig:m-ahpa_G}{{3.9}{53}{\textit {Constrained language model used to test the models (here: LM for \textipa {/ahpa/} trials). Nodes in the graph represent states, weighted edges represent transitions between states (here: phonemes). When relevant, weighted edges are labeled with the probability to choose that edge when decoding, which affects the final language model score of each possible path. These scores are then combined with acoustic scores when decoding experimental items.}}{figure.3.9}{}}
-\@writefile{toc}{\contentsline {paragraph}{Identification task simulation}{53}{section*.77}}
-\@writefile{toc}{\contentsline {paragraph}{{\color  {red}Data analysis}}{53}{section*.78}}
-\@writefile{toc}{\contentsline {subsubsection}{Results and Discussion}{53}{section*.79}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.4}Discussion}{53}{subsection.3.3.4}}
+\@writefile{toc}{\contentsline {paragraph}{Data analysis}{52}{section*.68}}
+\@writefile{toc}{\contentsline {subsubsection}{Results and Discussion}{52}{section*.69}}
+\@writefile{toc}{\contentsline {paragraph}{Effect of acoustic scale}{52}{section*.70}}
+\@writefile{toc}{\contentsline {paragraph}{Response patterns}{52}{section*.71}}
+\@writefile{toc}{\contentsline {paragraph}{Overall similarity}{52}{section*.72}}
+\@writefile{toc}{\contentsline {paragraph}{Zooming in on epenthetic vowel quality}{52}{section*.73}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces \textit  {Distribution of the proportion of responses given by human participants (topmost panel) and posteriorgrams obtained when decoding with different language models. The box and whiskers plots display the distribution of posteriorgrams across experimental items, with boxplots separated according to the $C_{1}$ in the cluster.}}}{53}{figure.3.9}}
+\newlabel{fig:parlato-lms}{{3.9}{53}{\textit {Distribution of the proportion of responses given by human participants (topmost panel) and posteriorgrams obtained when decoding with different language models. The box and whiskers plots display the distribution of posteriorgrams across experimental items, with boxplots separated according to the $C_{1}$ in the cluster.}}{figure.3.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Experiment 2: {\color  {red}m-/ahpa/}}{54}{subsection.3.3.3}}
+\@writefile{toc}{\contentsline {subsubsection}{Methods}{54}{section*.74}}
+\@writefile{toc}{\contentsline {paragraph}{Stimuli}{54}{section*.75}}
+\@writefile{toc}{\contentsline {paragraph}{Language models}{54}{section*.76}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces \textit  {Constrained language model used to test the models (here: LM for {\fontencoding  {T3}\selectfont  /ahpa/} trials). Nodes in the graph represent states, weighted edges represent transitions between states (here: phonemes). When relevant, weighted edges are labeled with the probability to choose that edge when decoding, which affects the final language model score of each possible path. These scores are then combined with acoustic scores when decoding experimental items.}}}{54}{figure.3.10}}
+\newlabel{fig:m-ahpa_G}{{3.10}{54}{\textit {Constrained language model used to test the models (here: LM for \textipa {/ahpa/} trials). Nodes in the graph represent states, weighted edges represent transitions between states (here: phonemes). When relevant, weighted edges are labeled with the probability to choose that edge when decoding, which affects the final language model score of each possible path. These scores are then combined with acoustic scores when decoding experimental items.}}{figure.3.10}{}}
+\@writefile{toc}{\contentsline {paragraph}{Identification task simulation}{54}{section*.77}}
+\@writefile{toc}{\contentsline {paragraph}{{\color  {red}Data analysis}}{54}{section*.78}}
+\@writefile{toc}{\contentsline {subsubsection}{Results and Discussion}{54}{section*.79}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.4}Discussion}{54}{subsection.3.3.4}}
 \citation{durvasula2015}
 \citation{kabak2007}
 \citation{durvasula2015}
 \citation{durvasula2015}
-\@writefile{toc}{\contentsline {section}{\numberline {3.4}{\color  {red}Do we need to go deeper? Are surface phonotactics enough?}}{54}{section.3.4}}
-\newlabel{3-k-epenth}{{3.4}{54}{\color {red}Do we need to go deeper? Are surface phonotactics enough?}{section.3.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Introduction}{54}{subsection.3.4.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}Methods}{54}{subsection.3.4.2}}
-\@writefile{toc}{\contentsline {subsubsection}{Stimuli}{54}{section*.80}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces \textit  {Experimental items. Reproduced from \cite  {durvasula2015} (Table I).}}}{54}{table.3.1}}
-\newlabel{tab:k-ep_stim}{{3.1}{54}{\textit {Experimental items. Reproduced from \cite {durvasula2015} (Table I).}}{table.3.1}{}}
-\@writefile{toc}{\contentsline {paragraph}{Language models}{54}{section*.81}}
-\@writefile{toc}{\contentsline {paragraph}{Identification task simulation}{54}{section*.82}}
-\@writefile{toc}{\contentsline {subsubsection}{Data analysis}{54}{section*.83}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.3}Results}{54}{subsection.3.4.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.4}Discussion}{54}{subsection.3.4.4}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.5}Conclusions}{54}{section.3.5}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}{\color  {red}Do we need to go deeper? Are surface phonotactics enough?}}{55}{section.3.4}}
+\newlabel{3-k-epenth}{{3.4}{55}{\color {red}Do we need to go deeper? Are surface phonotactics enough?}{section.3.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Introduction}{55}{subsection.3.4.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}Methods}{55}{subsection.3.4.2}}
+\@writefile{toc}{\contentsline {subsubsection}{Stimuli}{55}{section*.80}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces \textit  {Experimental items. Reproduced from \cite  {durvasula2015} (Table I).}}}{55}{table.3.1}}
+\newlabel{tab:k-ep_stim}{{3.1}{55}{\textit {Experimental items. Reproduced from \cite {durvasula2015} (Table I).}}{table.3.1}{}}
+\@writefile{toc}{\contentsline {paragraph}{Language models}{55}{section*.81}}
+\@writefile{toc}{\contentsline {paragraph}{Identification task simulation}{55}{section*.82}}
+\@writefile{toc}{\contentsline {subsubsection}{Data analysis}{55}{section*.83}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.3}Results}{55}{subsection.3.4.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.4}Discussion}{55}{subsection.3.4.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.5}Conclusions}{55}{section.3.5}}
 \citation{mocha}
 \citation{richmond2011}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}{\color  {red}Gestural vs. acoustic primitives in perceptual vowel epenthesis}}{55}{chapter.4}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}{\color  {red}Gestural vs. acoustic primitives in perceptual vowel epenthesis}}{56}{chapter.4}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}Introduction}{55}{section.4.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Articulatory Inversion}{55}{section.4.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Methods}{55}{subsection.4.2.1}}
-\@writefile{toc}{\contentsline {subsubsection}{Corpora}{55}{section*.84}}
-\@writefile{toc}{\contentsline {paragraph}{MOCHA-TIMIT}{55}{section*.85}}
-\@writefile{toc}{\contentsline {paragraph}{mngu0}{55}{section*.86}}
-\@writefile{toc}{\contentsline {paragraph}{mspka}{55}{section*.87}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Introduction}{56}{section.4.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Articulatory Inversion}{56}{section.4.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Methods}{56}{subsection.4.2.1}}
+\@writefile{toc}{\contentsline {subsubsection}{Corpora}{56}{section*.84}}
+\@writefile{toc}{\contentsline {paragraph}{MOCHA-TIMIT}{56}{section*.85}}
+\@writefile{toc}{\contentsline {paragraph}{mngu0}{56}{section*.86}}
+\@writefile{toc}{\contentsline {paragraph}{mspka}{56}{section*.87}}
 \citation{povey2011}
-\@writefile{toc}{\contentsline {subsubsection}{Features}{56}{section*.88}}
-\@writefile{toc}{\contentsline {paragraph}{Acoustic}{56}{section*.89}}
-\@writefile{toc}{\contentsline {paragraph}{Articulatory}{56}{section*.90}}
-\@writefile{toc}{\contentsline {subsubsection}{Model architectures}{56}{section*.91}}
-\@writefile{toc}{\contentsline {paragraph}{Multilayer Perceptron (MLP)}{56}{section*.92}}
-\@writefile{toc}{\contentsline {paragraph}{Mixture Density Network (MDN)}{57}{section*.93}}
-\@writefile{toc}{\contentsline {paragraph}{Trajectory Mixture Density Network (TMDN)}{57}{section*.94}}
-\@writefile{toc}{\contentsline {paragraph}{Recurrent Neural Network (RNN)}{58}{section*.95}}
-\@writefile{toc}{\contentsline {paragraph}{Auto-Encoder}{59}{section*.96}}
-\@writefile{toc}{\contentsline {paragraph}{Generative Adversarial Networks (GAN)}{59}{section*.97}}
-\@writefile{toc}{\contentsline {subsubsection}{Evaluation metrics}{59}{section*.98}}
-\@writefile{toc}{\contentsline {paragraph}{RMSE}{59}{section*.99}}
-\@writefile{toc}{\contentsline {paragraph}{ABX score}{60}{section*.100}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Results}{60}{subsection.4.2.2}}
-\@writefile{toc}{\contentsline {subsubsection}{Selecting model architecture}{60}{section*.101}}
-\@writefile{toc}{\contentsline {subsubsection}{Data augmentation for mngu0}{60}{section*.102}}
-\@writefile{toc}{\contentsline {subsubsection}{Acoustic-articulatory inverter}{60}{section*.103}}
-\@writefile{toc}{\contentsline {subsubsection}{Robustness across languages}{60}{section*.104}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.3}Discussion}{60}{subsection.4.2.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}Predicting confusion patterns}{60}{section.4.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}Methods}{60}{subsection.4.3.1}}
-\@writefile{toc}{\contentsline {subsubsection}{Corpora}{60}{section*.105}}
-\@writefile{toc}{\contentsline {paragraph}{Wall Street Journal - Read (WSJ)}{60}{section*.106}}
-\@writefile{toc}{\contentsline {paragraph}{Breakfast corpus (MOCHA + mngu0)}{61}{section*.107}}
-\@writefile{toc}{\contentsline {subsubsection}{Stimuli}{61}{section*.108}}
-\@writefile{toc}{\contentsline {subsubsection}{Language models}{61}{section*.109}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Constrained language model used to test the models (here: LM for {\fontencoding  {T3}\selectfont  /znapa/} (top) and {\fontencoding  {T3}\selectfont  /azna/} (bottom) trials). Nodes in the graph represent states, weighted edges represent transitions between states (here: phonemes). The LMs are "null"/uniform LMs, as they only constrain the possible decoding outputs without assigning higher or lower probabilities to certain edges. The optimal decoding path is therefore dependent on the acoustic/articulatory scores.}}{61}{figure.4.1}}
-\newlabel{fig:G_fst}{{4.1}{61}{Constrained language model used to test the models (here: LM for \textipa {/znapa/} (top) and \textipa {/azna/} (bottom) trials). Nodes in the graph represent states, weighted edges represent transitions between states (here: phonemes). The LMs are "null"/uniform LMs, as they only constrain the possible decoding outputs without assigning higher or lower probabilities to certain edges. The optimal decoding path is therefore dependent on the acoustic/articulatory scores}{figure.4.1}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Identification task simulation}{62}{section*.110}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}Results}{62}{subsection.4.3.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.3}Discussion}{62}{subsection.4.3.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.4}Perceptual experiment}{62}{section.4.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}Methods}{62}{subsection.4.4.1}}
-\@writefile{toc}{\contentsline {subsubsection}{Stimuli}{62}{section*.111}}
-\@writefile{toc}{\contentsline {subsubsection}{Participants}{62}{section*.112}}
-\@writefile{toc}{\contentsline {subsubsection}{Procedure}{62}{section*.113}}
-\@writefile{toc}{\contentsline {subsubsection}{Data analysis}{62}{section*.114}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.2}Results}{62}{subsection.4.4.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.3}Discussion}{62}{subsection.4.4.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.5}Conclusions}{62}{section.4.5}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}General Discussion}{63}{chapter.5}}
+\@writefile{toc}{\contentsline {subsubsection}{Features}{57}{section*.88}}
+\@writefile{toc}{\contentsline {paragraph}{Acoustic}{57}{section*.89}}
+\@writefile{toc}{\contentsline {paragraph}{Articulatory}{57}{section*.90}}
+\@writefile{toc}{\contentsline {subsubsection}{Model architectures}{57}{section*.91}}
+\@writefile{toc}{\contentsline {paragraph}{Multilayer Perceptron (MLP)}{57}{section*.92}}
+\@writefile{toc}{\contentsline {paragraph}{Mixture Density Network (MDN)}{58}{section*.93}}
+\@writefile{toc}{\contentsline {paragraph}{Trajectory Mixture Density Network (TMDN)}{58}{section*.94}}
+\@writefile{toc}{\contentsline {paragraph}{Recurrent Neural Network (RNN)}{59}{section*.95}}
+\@writefile{toc}{\contentsline {paragraph}{Auto-Encoder}{60}{section*.96}}
+\@writefile{toc}{\contentsline {paragraph}{Generative Adversarial Networks (GAN)}{60}{section*.97}}
+\@writefile{toc}{\contentsline {subsubsection}{Evaluation metrics}{60}{section*.98}}
+\@writefile{toc}{\contentsline {paragraph}{RMSE}{60}{section*.99}}
+\@writefile{toc}{\contentsline {paragraph}{ABX score}{61}{section*.100}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Results}{61}{subsection.4.2.2}}
+\@writefile{toc}{\contentsline {subsubsection}{Selecting model architecture}{61}{section*.101}}
+\@writefile{toc}{\contentsline {subsubsection}{Data augmentation for mngu0}{61}{section*.102}}
+\@writefile{toc}{\contentsline {subsubsection}{Acoustic-articulatory inverter}{61}{section*.103}}
+\@writefile{toc}{\contentsline {subsubsection}{Robustness across languages}{61}{section*.104}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.3}Discussion}{61}{subsection.4.2.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Predicting confusion patterns}{61}{section.4.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}Methods}{61}{subsection.4.3.1}}
+\@writefile{toc}{\contentsline {subsubsection}{Corpora}{61}{section*.105}}
+\@writefile{toc}{\contentsline {paragraph}{Wall Street Journal - Read (WSJ)}{61}{section*.106}}
+\@writefile{toc}{\contentsline {paragraph}{Breakfast corpus (MOCHA + mngu0)}{62}{section*.107}}
+\@writefile{toc}{\contentsline {subsubsection}{Stimuli}{62}{section*.108}}
+\@writefile{toc}{\contentsline {subsubsection}{Language models}{62}{section*.109}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Constrained language model used to test the models (here: LM for {\fontencoding  {T3}\selectfont  /znapa/} (top) and {\fontencoding  {T3}\selectfont  /azna/} (bottom) trials). Nodes in the graph represent states, weighted edges represent transitions between states (here: phonemes). The LMs are "null"/uniform LMs, as they only constrain the possible decoding outputs without assigning higher or lower probabilities to certain edges. The optimal decoding path is therefore dependent on the acoustic/articulatory scores.}}{62}{figure.4.1}}
+\newlabel{fig:G_fst}{{4.1}{62}{Constrained language model used to test the models (here: LM for \textipa {/znapa/} (top) and \textipa {/azna/} (bottom) trials). Nodes in the graph represent states, weighted edges represent transitions between states (here: phonemes). The LMs are "null"/uniform LMs, as they only constrain the possible decoding outputs without assigning higher or lower probabilities to certain edges. The optimal decoding path is therefore dependent on the acoustic/articulatory scores}{figure.4.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Identification task simulation}{63}{section*.110}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}Results}{63}{subsection.4.3.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.3}Discussion}{63}{subsection.4.3.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Perceptual experiment}{63}{section.4.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}Methods}{63}{subsection.4.4.1}}
+\@writefile{toc}{\contentsline {subsubsection}{Stimuli}{63}{section*.111}}
+\@writefile{toc}{\contentsline {subsubsection}{Participants}{63}{section*.112}}
+\@writefile{toc}{\contentsline {subsubsection}{Procedure}{63}{section*.113}}
+\@writefile{toc}{\contentsline {subsubsection}{Data analysis}{63}{section*.114}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.2}Results}{63}{subsection.4.4.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.3}Discussion}{63}{subsection.4.4.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.5}Conclusions}{63}{section.4.5}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}General Discussion}{64}{chapter.5}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {chapter}{\numberline {A}\ignorespaces Are words easier to learn from infant- than adult-directed speech? }{64}{appendix.A}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}\ignorespaces Are words easier to learn from infant- than adult-directed speech? }{65}{appendix.A}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{RIKENlex}{{A}{64}{\ignorespaces Are words easier to learn from infant- than adult-directed speech?}{appendix.A}{}}
+\newlabel{RIKENlex}{{A}{65}{\ignorespaces Are words easier to learn from infant- than adult-directed speech?}{appendix.A}{}}
 \bibstyle{apalike}
 \bibdata{main}
-\@writefile{toc}{\contentsline {chapter}{\numberline {B}References}{96}{appendix.B}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {B}References}{97}{appendix.B}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \bibcite{R-lme4}{Bates et\nobreakspace  {}al., 2015}
