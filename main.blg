@@ -6,47 +6,48 @@ Database file #1: main.bib
 Warning--I didn't find a database entry for "["
 Warning--I didn't find a database entry for "maekawa2003"
 Warning--I didn't find a database entry for "yun2015"
+Warning--I didn't find a database entry for "saraclar2001"
 Warning--I didn't find a database entry for "mocha"
 Warning--I didn't find a database entry for "richmond2011"
-You've used 40 entries,
+You've used 41 entries,
             1935 wiz_defined-function locations,
-            741 strings with 10751 characters,
-and the built_in function-call counts, 16700 in all, are:
-= -- 1657
-> -- 691
+            748 strings with 10960 characters,
+and the built_in function-call counts, 17130 in all, are:
+= -- 1700
+> -- 709
 < -- 27
-+ -- 238
-- -- 232
-* -- 1448
-:= -- 2880
-add.period$ -- 123
-call.type$ -- 40
-change.case$ -- 310
-chr.to.int$ -- 40
-cite$ -- 40
-duplicate$ -- 620
-empty$ -- 1160
-format.name$ -- 289
-if$ -- 3258
++ -- 246
+- -- 238
+* -- 1488
+:= -- 2954
+add.period$ -- 126
+call.type$ -- 41
+change.case$ -- 317
+chr.to.int$ -- 41
+cite$ -- 41
+duplicate$ -- 634
+empty$ -- 1190
+format.name$ -- 296
+if$ -- 3340
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 38
-newline$ -- 204
-num.names$ -- 122
-pop$ -- 257
+missing$ -- 39
+newline$ -- 209
+num.names$ -- 125
+pop$ -- 262
 preamble$ -- 1
-purify$ -- 314
+purify$ -- 321
 quote$ -- 0
-skip$ -- 473
+skip$ -- 484
 stack$ -- 0
-substring$ -- 1235
-swap$ -- 88
+substring$ -- 1274
+swap$ -- 89
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 238
+type$ -- 244
 warning$ -- 0
-while$ -- 147
+while$ -- 151
 width$ -- 0
-write$ -- 523
-(There were 5 warnings)
+write$ -- 536
+(There were 6 warnings)

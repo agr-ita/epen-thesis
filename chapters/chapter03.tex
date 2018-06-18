@@ -65,22 +65,42 @@ In the following sections we have trained ASR systems with different ``native'' 
 
 \paragraph{Corpus of Spontaneous Japanese (CSJ)}
 As the name suggests, the CSJ \cite{maekawa2003} contains recordings of spontaneous Standard Japanese. The corpus is composed of two subparts: (1) academic presentation speech (APS), which consists of live recordings of academic presentations, and (2) simulated public speech (SPS), where speakers presented everyday topics in front of a small audience. For our models we only kept SPS, which is more representative of everyday conversations at the level of the lexicon, and has a more balanced population than the young male-dominated APS.
-Our subset of the corpus contained 400,547 utterances produced by 594 speakers (331 female, 263 male), with an average of 674.3 utterances per speaker.  
 Recordings were manually transcribed by native speakers of Japanese. Phoneme boundaries were {\color{red}manually adjusted, however this alignment was not used when our models, as it was overwritten by forced alignment}.
+Our subset of the corpus contained $400,547$ utterances produced by $594$ speakers\footnote{We used utterances from the same speakers for the validation and test sets, but their data was not used during model training. The same was done for the Korean model.} ($331$ female, $263$ male), with an average of $674.3$ utterances per speaker. The division of the corpus across training, validation, and test set are shown in Table \ref{tab:hmm_csj}.
 
-\begin{itemize}
-{\color{red}\item Train-test division (n utterances, time)}
-\end{itemize}
+\begin{table}[htb]
+\centering
+\caption{Datasets used for training and evaluating the Japanese ASR system.}
+\label{tab:hmm_csj}
+\vspace{0.25cm}
+\begin{tabular}{rrrrrr}
+  \toprule
+      & Proportion &\# Utterances & Duration & \# Speakers &  \\ \midrule
+  train & $80\%$ &  $322,208$            & 6 days, 8:26:33     &   475          &  \\
+  valid & $5\%$ &  $19,566$         &  9:12:03    &   119          &  \\
+  test  & $15\%$ &  $58,773$        &  1 day, 3:19:14    &  119           & \\ \bottomrule
+\end{tabular}
+\end{table}
 
 \paragraph{Korean Corpus of Spontaneous Speech (KCSS)}
 
-The KCSS \cite{yun2015} consists of recordings of spontaneous Seoul Korean. Forty speakers aged 10 to 49 (5 female speakers and 5 male speakers per decade) were recorded in a quiet room, for approximately 1 hour each. Speech was ellicited through questions related to the speakers' personal opinions, habits, acquaintances, etc.      
-Recordings were manually transcribed by native speakers of Korean. We used phonetic transcriptions faithful to actual pronunciations which, for instance, include phonetic reduction (akin to \textit{yesterday} being transcribed as \textipa{/jESeI/} instead of the canonical \textipa{/jEst\textrhookschwa deI/}). Transcriptions include {\color{red}manually adjusted} phoneme boundaries, as well as word syllabification.
-The corpus contains 126,132 utterances produced by 40 speakers (as explained above), with an average of 3153.3 utterances per speaker. 
+The KCSS \cite{yun2015} consists of recordings of spontaneous Seoul Korean. Forty speakers aged $10$ to $49$ ($5$ female speakers and $5$ male speakers per decade) were recorded in a quiet room, for approximately 1 hour each. Speech was ellicited through questions related to the speakers' personal opinions, habits, acquaintances, etc.      
+Recordings were manually transcribed by native speakers of Korean. We used phonetic transcriptions faithful to actual pronunciations which, for instance, include phonetic reduction (akin to \textit{yesterday} being transcribed as \textipa{/jESeI/} instead of the canonical \textipa{/jEst\textrhookschwa deI/}). Transcriptions include {\color{red}manually adjusted} phoneme boundaries, as well as word syllabification. {\color{red}[NOTE]: \%WER for mono-pitchT-1000 is 81.1\% with forced alignment and ... 99.3\% when ``using the manual alignment''!!!! For this latter, many words as transcribed as ``$<$unk$>$'', so something is very wrong. Maybe at the level of the ali.*.gz files?}
+The corpus contains $57,504$ utterances produced by $40$ speakers (as explained above), with an average of $1,437.6$ utterances per speaker. The division of the corpus across training, validation, and test sets is shown in Table \ref{tab:hmm_kcss}.
 
-\begin{itemize}
-{\color{red}\item Train-test division (n utterances, time)}
-\end{itemize}
+\begin{table}[htb]
+\centering
+\caption{Datasets used for training and evaluating the Korean ASR system.}
+\label{tab:hmm_kcss}
+\vspace{0.25cm}
+\begin{tabular}{rrrrrr}
+  \toprule
+      & Proportion & \# Utterances & Duration & \# Speakers &  \\ \midrule
+  train & $80\%$ &  $46,208$ &   18:58:15   &   $32$    &  \\
+  valid & $5\%$ &  $2,824$ &  1:16:39  &  $8$  &  \\
+  test  & $15\%$ &  $8,472$ & 3:54:15   & $8$    & \\ \bottomrule
+\end{tabular}
+\end{table}
 
 \subsection{Features}
 In order for our ASR systems to be able to use speech as input, it is necessary to perform signal analysis. This procedure transforms the continuous raw speech waveform into sequential speech features. This latter form ensures a more compact representation of the information in speech, with modifications that enhance phonemic contrasts and better approximate how speech is processed by the human cochlea. In this work we used Mel-frequency cepstrum coefficients (MFCC), traditionally used for HMM-based ASR systems.
@@ -89,7 +109,7 @@ In order for our ASR systems to be able to use speech as input, it is necessary 
 \centering
 %\includegraphics[width=0.8\linewidth]{chapter03/parlato_hmm_Gfst.pdf}
 \caption{{\color{red}\textit{[Is this necessary or is the text enough?] Processing stages required to obtain MFCCs.}}}
-\label{fig:hmm_architecture}
+\label{fig:hmm_features}
 \end{figure}
 
 Speech is recorded with a microphone; the continuous audio signal is digitalized at a sampling rate of 16kHz.
@@ -98,17 +118,15 @@ The audio is then segmented into frames of 25 ms, with a shift of 10 ms between 
 \begin{enumerate}
 \item Pre-processing: The data is extracted and pre-processed (dithering, pre-emphasis, and DC offset removal).
 \item Windowing: The data in the 25 ms frame is multiplied by a tapered window (Hamming window), to avoid discontinuities at the edges of the segment.
-\item Spectral analysis: By applying a Fast Fourier Transform (FFT), we find out how much energy there is at each frequency band.
+\item Spectral analysis: By applying a Fast Fourier Transform (FFT), we find out how much energy there is at each frequency band for this frame.
 \item Nonlinear frequency scaling: In order to compensate for the fact that human hearing is less sensitive to higher frequencies, frequencies are mapped onto a Mel scale, which is linear until approximately 1000 Hz and logarithmic afterwards. This is done by applying a mel-filter bank with 23 bins, which are equally spaced in the mel-frequency domain. Each filter summarises the amount of energy in a section of the range of frequencies. 
-\item Cepstral analysis: The log of the energy in each bin is computed, from which we take the cosine transform. We keep 13 MFCCs, including $c_{0}$, the zeroth coefficient which represents the average of the log-frequency of the bins \cite{galesyoung2007}..
-  \item {\color{red}Cepstral liftering: Coefficients are scaled, ensuring that they have a reasonable range.}
+\item Cepstral analysis: The log of the energy in each bin is computed, from which we take the cosine transform. We keep 13 MFCCs, including $c_{0}$, the zeroth coefficient which represents the average of the log-frequency of the bins \cite{gales2008}.
+  \item Cepstral liftering: Coefficients are scaled, ensuring that they have a reasonable range.
 \end{enumerate}
 
-We therefore obtain 13 MFCCs that summarise the information at each frame of audio. To these coefficients, we add 3 coefficients carrying information about pitch: normalized-pitch, delta-pitch, voicing-feature.
+We therefore obtain 13 MFCCs that summarise the information at each frame of audio. To these coefficients, we add 3 coefficients carrying information about pitch: normalized-pitch, delta-pitch, voicing-feature\footnote{Information about pitch was added because of its contrastive relevance in Japanese at the lexical level (i.e., pitch accent) and in Korean at the phonemic level (e.g., tonogenesis in the three-way contrasts of plosives). In practice, adding pitch features resulted in a slight improvement of model performance in Japanese (from $41.3\%$ WER to $39.6\%$; acoustic model with 6000 Gaussians).}.
 To these 16 static features we add their respective dynamic features ($\Delta$ and $\Delta^2$) that describe the evolution of the coefficient values over time. 
 Coefficient values are then standardised using Cepstral Mean Variance Normalisation (CMVN); for each speaker the distribution of each coefficient's values has a mean value of zero and a variance of one. 
-
-{\color{red} [TO-DO]: added pitch because better performance for CSJ (+ pitch used in both JP and KR)}
 
 \subsection{Acoustic model}
 
@@ -145,17 +163,17 @@ Please note that HMMs follow a Markovian process; the probability of a state onl
 $<$/OLD VERSION$>$}
 
 \subsubsection{Why not triphones?}
-If the reader is already familiar with ASR systems, they may expect us to go a step further and no longer treat phonemes as units (i.e., monophones) but, instead, handle triphones. For this latter representation, an independent three-state HMM would be built for each combination ofthree phonemes. For instance, there would no longer be an HMM for \textipa{/p/}, but we would have all context-dependent versions of this phoneme as individual HMMs (e.g., the triphone \textipa{/a+p+i/}, which is the phone \textipa{/p/} when preceded by \textipa{/a/} and followed by \textipa{/i/}).
+If the reader is already familiar with ASR systems, they may expect us to go a step further and no longer treat phonemes as units (i.e., monophones) but, instead, handle triphones. For this latter representation, an independent three-state HMM would be built for each combination of three phonemes. For instance, there would no longer be an HMM for \textipa{/p/}, but we would have all context-dependent versions of this phoneme as individual HMMs (e.g., the triphone \textipa{/a+p+i/}, which is the phone \textipa{/p/} when preceded by \textipa{/a/} and followed by \textipa{/i/}).
 Traditionally, triphone-based HMM-based ASR systems perform better than monophone systems. However, this does not apply to our situation. Recall that we aim to use these speech recognition systems as models of nonnative speech perception, using tasks analogous to paradigms used in psycholinguistic experiments (namely, identification/forced-choice tasks). Importantly, we are focusing on modelling perceptual vowel epenthesis. This context excludes the use of triphones for the following reasons:
 \begin{enumerate}
 \item First of all, by definition, our ASR systems will have to decode speech that does not follow native phonotactics. Decoding such stimuli requires the existence of triphones corresponding to the input, yet the model will have never encountered such triphones in the training data. While this situation might seem appealing, one must consider the fact that the ASR system \textit{will attempt to account for said triphones} during decoding in spite of the lack of data. Importantly, poorly estimated triphones (e.g., \textipa{/a+h+p/}, when decoding \textipa{/ahpa/}) will be put up against well-estimated triphones (e.g., \textipa{/a+h+a/}) during the forced-choice tasks. The well-estimated triphones might simply be preferred as transcriptions over poorly-estimated ones for this reason alone, irrespective of the actual acoustic match between the stimuli and the phoneme models.
-  \item Secondly, our tasks consist of phonetic labelling. It has been shown that monophone models are able to perform well in this context relative to triphones, as long as the number of Gaussians available to the model is increased {\color{red}\cite{saraclar2001}}. As shown in Figure \ref{fig:hmm_gaussians}, the performance of our models increased when increasing the number of total Gaussians from the Kaldi default of 1000 to 6000, which would average to approximately 50 Gaussians per state for a language with an inventory of 40 phonemes.   
+  \item Secondly, our tasks consist of phonetic labelling. It has been shown that monophone models are able to perform well in this context relative to triphones, as long as the number of Gaussians available to the model is increased {\color{red}\cite{saraclar2001}}. As shown in Figure \ref{fig:hmm_gaussians}, the performance of our models increased (i.e., error decreased) when increasing the number of total Gaussians from the Kaldi default of 1000 to 6000, which would average to approximately 50 Gaussians per state for a language with an inventory of 40 phonemes.   
 \end{enumerate}
 
 \begin{figure}[htb]
 \centering
-%\includegraphics[width=0.8\linewidth]{chapter03/parlato_hmm_Gfst.pdf}
-\caption{{\color{red}\textit{Changes in word error rate (\%WER) and phone error rate (\%PER) following variation of the number of total Gaussians allocated to the acoustic model.}}}
+\includegraphics[trim={0 8.5cm 0 0}, clip, width=0.8\linewidth]{chapter03/mono-gaussians.png}
+\caption{{\color{red}\textit{Changes in word error rate (\%WER) and phone error rate (\%PER) following variation of the number of total Gaussians allocated to the acoustic model. Scores correspond to decoding performed on the validation set. [TODO]: Add WER + Korean data. Add triphone performance for comparison.}}}
 \label{fig:hmm_gaussians}
 \end{figure}
 
@@ -179,6 +197,10 @@ Traditionally, triphone-based HMM-based ASR systems perform better than monophon
 \subsection{Scoring: Assessing native performance}
 \begin{itemize}
 \item Lexicon-based decoding
+  \begin{itemize}
+  \item CSJ mono-pitchT-6000: WER; PER 
+  \item KCSS mono-pitchT-6000: WER; PER
+  \end{itemize}
 \item Phonetic-based decoding
 \end{itemize}
 

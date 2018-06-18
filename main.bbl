@@ -85,6 +85,12 @@ Escudero, P., Boersma, P., Rauber, A.~S., and Bion, R.~A. (2009).
 \newblock {\em The Journal of the Acoustical Society of America},
   126(3):1379--1393.
 
+\bibitem[Gales et~al., 2008]{gales2008}
+Gales, M., Young, S., et~al. (2008).
+\newblock The application of hidden markov models in speech recognition.
+\newblock {\em Foundations and Trends{\textregistered} in Signal Processing},
+  1(3):195--304.
+
 \bibitem[Gelman and Rubin, 1992]{gelman1992}
 Gelman, A. and Rubin, D.~B. (1992).
 \newblock Inference from iterative simulation using multiple sequences.
