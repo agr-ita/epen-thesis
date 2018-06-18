@@ -168,8 +168,14 @@ Traditionally, triphone-based HMM-based ASR systems perform better than monophon
 \begin{enumerate}
 \item First of all, by definition, our ASR systems will have to decode speech that does not follow native phonotactics. Decoding such stimuli requires the existence of triphones corresponding to the input, yet the model will have never encountered such triphones in the training data. While this situation might seem appealing, one must consider the fact that the ASR system \textit{will attempt to account for said triphones} during decoding in spite of the lack of data. Importantly, poorly estimated triphones (e.g., \textipa{/a+h+p/}, when decoding \textipa{/ahpa/}) will be put up against well-estimated triphones (e.g., \textipa{/a+h+a/}) during the forced-choice tasks. The well-estimated triphones might simply be preferred as transcriptions over poorly-estimated ones for this reason alone, irrespective of the actual acoustic match between the stimuli and the phoneme models.
   \item Secondly, our tasks consist of phonetic labelling. It has been shown that monophone models are able to perform well in this context relative to triphones, as long as the number of Gaussians available to the model is increased {\color{red}\cite{saraclar2001}}. As shown in Figure \ref{fig:hmm_gaussians}, the performance of our models increased (i.e., error decreased) when increasing the number of total Gaussians from the Kaldi default of 1000 to 6000, which would average to approximately 50 Gaussians per state for a language with an inventory of 40 phonemes.   
-\end{enumerate}
-
+  \end{enumerate}
+  
+ %| %WER (LM=word n2) / %PER (LM=phone n1) | alignT      | alignF       |
+ %|----------------------------------------+-------------+--------------|
+ %| 1000 Gaussians                         | 99.33 / ??? | 81.09% / ??? |
+ %| 3000 Gaussians                         |             | 77.21% / ??? |
+ %| 6000 Gaussians                         |             | 74.84% / ??? |
+ 
 \begin{figure}[htb]
 \centering
 \includegraphics[trim={0 8.5cm 0 0}, clip, width=0.8\linewidth]{chapter03/mono-gaussians.png}
