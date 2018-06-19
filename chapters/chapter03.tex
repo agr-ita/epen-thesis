@@ -188,11 +188,11 @@ As shown in Figure \ref{fig:hmm_architecture}, the acoustic model is combined wi
 
 The lexicon is, put simply, a pronunciation dictionary. It links the acoustic model (i.e., phoneme-level HMMs) with the language model, which is at the word level. For each word, we indicate in the dictionary the sequence of phonemes that constitute it. It is also possible to account for multiple pronunciations of a word due to dialectal differences (e.g., ``tomato'' pronounced as {\color{red}\textipa{/tomeito/} or \textipa{/tomato/}}), phonological phenomena (e.g., homoorganic assimilation: ``handbag'' {\color{red}\textipa{/hanbag/} $\rightarrow$ \textipa{/hambag/}}), or supresegmental information (e.g., stress contrasts: ``record'' \textipa{/'rekord/} (noun) vs. \textipa{/re'kord/} (verb)).
 
-At the word level, the language model stores $P(W)$, the probability of occurrence of word sequences. For this we use \textit{n}-grams: we approximate the probability of a sequence
+At the word level, the language model specifies $P(W)$, the probability of occurrence of word sequence $W$. For this we use \textit{n}-grams: we approximate the probability of a sequence
 \begin{equation}
 P(W) = P(w_{1})P(w_2|w_1)P(w_3 | w_1, w_2)...P(w_L | w_1, w_2, ..., w_L)
 \end{equation}
-by the product of the probability of the component words, each conditioned on the \textit{n-1} words preceding it. For instance, if $n = 2$, we obtain a bigram model, where the LM stores the probability of a word depending on a single prceding word. The probability of the word sequence $W$ can then be approximated as:    
+by using the product of the probability of the component words, each conditioned on the \textit{n-1} words preceding it. For instance, if $n = 2$, we obtain a bigram model, where the LM stores the probability of a word depending on a single prceding word. The probability of the word sequence $W$ can then be approximated as:    
 \begin{equation}
 P(W) \approx P(w_{1})P(w_2|w_1)P(w_3 | w_2)...P(w_L | w_{L-1})
 \end{equation}
@@ -207,7 +207,9 @@ Since not all word combinations are bound to appear in the training corpus, smoo
 Additionally to the bigram word LM, we computed a unigram phone LM in order to evaluate our models' ability to do phonetic decoding. In this case, the lexicon is identical to the phoneme inventory and the LM consists of phoneme counts.  
 
 \subsection{Decoding}
-Using dynamic programming, the ASR system builds a graph of the possible word sequences that can serve as transcription of the audio, based on the acoustic model, the lexicon, and the language model. In order to keep the problem computationally tractable, only the most likely transcription hypotheses are kept; this is known as pruning.
+When decoding speech, the ASR system builds a graph containing candidate word sequences that can serve as transcription for the audio input, based on the acoustic model, the lexicon, and the language model. In order to keep the problem computationally tractable, only the most likely transcription hypotheses are kept; this is known as pruning.
+
+The output of the decoding step is not a single transcription but what is called a lattice. 
 
 \begin{itemize}
 \item Lattice generation
