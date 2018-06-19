@@ -179,19 +179,36 @@ Traditionally, triphone-based HMM-based ASR systems perform better than monophon
 \begin{figure}[htb]
 \centering
 \includegraphics[trim={0 8.5cm 0 0}, clip, width=0.8\linewidth]{chapter03/mono-gaussians.png}
-\caption{{\color{red}\textit{Changes in word error rate (\%WER) and phone error rate (\%PER) following variation of the number of total Gaussians allocated to the acoustic model. Scores correspond to decoding performed on the validation set. [TODO]: Add WER + Korean data. Add triphone performance for comparison.}}}
+\caption{\textit{Changes in word error rate (\%WER) and phone error rate (\%PER) following variation of the number of total Gaussians allocated to the acoustic model. Scores correspond to decoding performed on the validation set. {\color{red}[TODO]: Add WER + Korean data (WER: 1K:81\%, 3K:77\%, 6K:75\%). Add triphone performance for comparison?}}}
 \label{fig:hmm_gaussians}
 \end{figure}
 
 \subsection{Language models}
-\begin{itemize}
-\item WFSTs
-\item Words \& phones 
-\item n-grams
-\item ...
-\end{itemize}
+As shown in Figure \ref{fig:hmm_architecture}, the acoustic model is combined with two other components in order to decode speech: the Lexicon and the Language Model (LM).
+
+The lexicon is, put simply, a pronunciation dictionary. It links the acoustic model (i.e., phoneme-level HMMs) with the language model, which is at the word level. For each word, we indicate in the dictionary the sequence of phonemes that constitute it. It is also possible to account for multiple pronunciations of a word due to dialectal differences (e.g., ``tomato'' pronounced as {\color{red}\textipa{/tomeito/} or \textipa{/tomato/}}), phonological phenomena (e.g., homoorganic assimilation: ``handbag'' {\color{red}\textipa{/hanbag/} $\rightarrow$ \textipa{/hambag/}}), or supresegmental information (e.g., stress contrasts: ``record'' \textipa{/'rekord/} (noun) vs. \textipa{/re'kord/} (verb)).
+
+At the word level, the language model stores $P(W)$, the probability of occurrence of word sequences. For this we use \textit{n}-grams: we approximate the probability of a sequence
+\begin{equation}
+P(W) = P(w_{1})P(w_2|w_1)P(w_3 | w_1, w_2)...P(w_L | w_1, w_2, ..., w_L)
+\end{equation}
+by the product of the probability of the component words, each conditioned on the \textit{n-1} words preceding it. For instance, if $n = 2$, we obtain a bigram model, where the LM stores the probability of a word depending on a single prceding word. The probability of the word sequence $W$ can then be approximated as:    
+\begin{equation}
+P(W) \approx P(w_{1})P(w_2|w_1)P(w_3 | w_2)...P(w_L | w_{L-1})
+\end{equation}
+
+In our case, these probabilities are obtained from word counts in the training corpus as follows:
+\begin{equation}
+P(w_i | w_j) \approx \frac{c(w_i, w_j)}{c(w_i)}
+\end{equation}
+where $c(w_i, w_j)$ is the number of observations of $w_i$ followed by $w_j$, and $c(w_i)$ is the total number of occurrences of $w_i$.
+Since not all word combinations are bound to appear in the training corpus, smoothing is performed; null probabilities are given a small probability of appearing. 
+
+Additionally to the bigram word LM, we computed a unigram phone LM in order to evaluate our models' ability to do phonetic decoding. In this case, the lexicon is identical to the phoneme inventory and the LM consists of phoneme counts.  
 
 \subsection{Decoding}
+Using dynamic programming, the ASR system builds a graph of the possible word sequences that can serve as transcription of the audio, based on the acoustic model, the lexicon, and the language model. In order to keep the problem computationally tractable, only the most likely transcription hypotheses are kept; this is known as pruning.
+
 \begin{itemize}
 \item Lattice generation
 \item Acoustic and LM scores 
@@ -201,14 +218,14 @@ Traditionally, triphone-based HMM-based ASR systems perform better than monophon
 \end{itemize}
 
 \subsection{Scoring: Assessing native performance}
-\begin{itemize}
-\item Lexicon-based decoding
-  \begin{itemize}
-  \item CSJ mono-pitchT-6000: WER; PER 
-  \item KCSS mono-pitchT-6000: WER; PER
-  \end{itemize}
-\item Phonetic-based decoding
-\end{itemize}
+
+We tested the decoding performance on the validation set of AMs with total number of Gaussians going from 1000 to 6000. We find that the models with the highest amount of Gaussians (i.e., 6000) give the best performance. We did not pursue increasing the number of Gaussians even further, as performance gain was reaching an asymptote at this point and adding more Gaussians would have increased the computational demands for each experiment. Additionally, we expect that adding ``too many'' Gaussians would have lead to overfitting of the models to the training set. Here we provide the evaluation of the Japanese and Korean ASR systems on the test sets ($15\%$ of the corpora), at the lexical level (i.e., using a bigram word LM) and at the phonetic level (i.e., using a unigram phone LM).  
+
+\subsubsection{Lexical decoding}
+{\color{red}[TODO] (models currently running)}
+
+\subsubsection{Phonetic decoding}
+{\color{red}[TODO] (models currently running)}
 
 %%%%%%%%%%%%
 % Parlato2 %
