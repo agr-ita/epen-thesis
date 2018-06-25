@@ -1,0 +1,6 @@
+date: Jun 25 2018 20:45:48.131403
+user: adriana
+host: champa
+name: features on corpus 
+source: corpus = /home/adriana/Projects/PhD/thesis/writing/epen-thesis/images/chapter03/cutedog/data
+comment: 

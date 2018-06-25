@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.27)  25 JUN 2018 20:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.27)  25 JUN 2018 21:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1587,11 +1587,12 @@ Chapter 3.
 (./chapters/chapter03.tex [40
 
 ]
-<images/chapter03/hmm_all.pdf, id=1097, 812.5608pt x 362.93102pt>
-File: images/chapter03/hmm_all.pdf Graphic file (type pdf)
+<images/chapter03/hmm_all_version2.pdf, id=1097, 812.5608pt x 362.93102pt>
+File: images/chapter03/hmm_all_version2.pdf Graphic file (type pdf)
 
-<use images/chapter03/hmm_all.pdf>
-Package pdftex.def Info: images/chapter03/hmm_all.pdf used on input line 54.
+<use images/chapter03/hmm_all_version2.pdf>
+Package pdftex.def Info: images/chapter03/hmm_all_version2.pdf used on input li
+ne 54.
 (pdftex.def)             Requested size: 426.79134pt x 190.63023pt.
 
 
@@ -1603,7 +1604,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[41 <./images/chapter03/hmm_all.pdf>]
+[41 <./images/chapter03/hmm_all_version2.pdf>]
 
 LaTeX Warning: Citation `yun2015' on page 42 undefined on input line 87.
 
@@ -3052,7 +3053,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 99.
 ### bottom level 
 Here is how much of TeX's memory you used:
  9963 strings out of 495020
- 147065 string characters out of 6181324
+ 147110 string characters out of 6181324
  247334 words of memory out of 5000000
  12635 multiletter control sequences out of 15000+600000
  17964 words of font info for 59 fonts, out of 8000000 for 9000
@@ -3122,7 +3123,7 @@ re/qtmr.pfb></usr/share/texmf/fonts/type1/fkr/tipa/tipa10.pfb></usr/share/texmf
 /fonts/type1/fkr/tipa/tipa12.pfb></usr/share/texmf/fonts/type1/fkr/tipa/tipa8.p
 fb></usr/share/texmf/fonts/type1/fkr/tipa/tipasl10.pfb></usr/share/texmf/fonts/
 type1/fkr/tipa/tipasl12.pfb>
-Output written on main.pdf (102 pages, 2936244 bytes).
+Output written on main.pdf (102 pages, 3004203 bytes).
 PDF statistics:
  1823 PDF objects out of 2073 (max. 8388607)
  1494 compressed objects within 15 object streams

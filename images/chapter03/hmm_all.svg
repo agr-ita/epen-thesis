@@ -585,9 +585,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="415.59113"
-     inkscape:cy="218.2072"
+     inkscape:zoom="1.4"
+     inkscape:cx="348.01094"
+     inkscape:cy="233.5881"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -651,7 +651,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -3117,7 +3117,7 @@
              id="flowPara11794"
              style="font-size:22px;text-align:start;text-anchor:start">tomato = t + ə + m + ɑː + t +əʊ</flowPara><flowPara
              style="font-size:22px;text-align:start;text-anchor:start"
-             id="flowPara11499"> </flowPara><flowPara
+             id="flowPara11499" /><flowPara
              style="font-size:22px;text-align:start;text-anchor:start"
              id="flowPara11497" /></flowRoot>      </g>
       <path
@@ -3137,7 +3137,7 @@
        xml:space="preserve"
        id="flowRoot8364-8-0-3"
        style="font-size:22px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Gentium Book Basic;-inkscape-font-specification:Gentium Book Basic"
-       transform="translate(-269.57737,113.25785)"><flowRegion
+       transform="translate(-235.29166,113.25785)"><flowRegion
          id="flowRegion8366-2-9-4"><rect
            id="rect8368-2-4-0"
            width="202.85165"
@@ -3146,5 +3146,5 @@
            y="184.02609"
            style="font-size:22px;text-align:center;text-anchor:middle" /></flowRegion><flowPara
          id="flowPara8372-2-5-1"
-         style="font-size:22px">Transcription</flowPara></flowRoot>  </g>
+         style="font-size:22px">Aligned transcription</flowPara></flowRoot>  </g>
 </svg>

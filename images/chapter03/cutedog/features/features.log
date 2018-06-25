@@ -1,0 +1,20 @@
+2018-06-25 20:45:48,131 - WARNING - asking 8 cores but reduced to 1
+2018-06-25 20:45:48,133 - INFO - computing mfcc features with pitch
+2018-06-25 20:45:48,138 - DEBUG - steps/make_mfcc_pitch.sh --nj 1 --cmd run.pl data/features exp/make_mfcc/features /home/adriana/Projects/PhD/thesis/writing/epen-thesis/images/chapter03/cutedog/features
+2018-06-25 20:45:48,161 - DEBUG - utils/validate_data_dir.sh: WARNING: you have only one speaker.  This probably a bad idea.
+2018-06-25 20:45:48,161 - DEBUG - Search for the word 'bold' in http://kaldi.sourceforge.net/data_prep.html
+2018-06-25 20:45:48,162 - DEBUG - for more information.
+2018-06-25 20:45:48,213 - DEBUG - utils/validate_data_dir.sh: Successfully validated data-directory data/features
+2018-06-25 20:45:48,247 - DEBUG - steps/make_mfcc_pitch.sh [info]: segments file exists: using that.
+2018-06-25 20:45:48,337 - DEBUG - Succeeded creating MFCC & Pitch features for features
+2018-06-25 20:45:48,337 - INFO - computing CMVN statistics
+2018-06-25 20:45:48,341 - DEBUG - steps/compute_cmvn_stats.sh data/features exp/make_mfcc/features /home/adriana/Projects/PhD/thesis/writing/epen-thesis/images/chapter03/cutedog/features
+2018-06-25 20:45:48,364 - DEBUG - Succeeded creating CMVN stats for features
+2018-06-25 20:45:48,364 - INFO - computing deltas (order 2)
+2018-06-25 20:45:48,382 - DEBUG - add-deltas --delta-order=2 scp:/home/adriana/Projects/PhD/thesis/writing/epen-thesis/images/chapter03/cutedog/features/raw_mfcc_pitch_features.1.scp ark:/home/adriana/Projects/PhD/thesis/writing/epen-thesis/images/chapter03/cutedog/features/raw_mfcc_pitch_features.1.scp_tmp
+2018-06-25 20:45:48,391 - DEBUG - copy-feats ark:/home/adriana/Projects/PhD/thesis/writing/epen-thesis/images/chapter03/cutedog/features/raw_mfcc_pitch_features.1.scp_tmp ark,scp:/home/adriana/Projects/PhD/thesis/writing/epen-thesis/images/chapter03/cutedog/features/raw_mfcc_pitch_features.1.ark,/home/adriana/Projects/PhD/thesis/writing/epen-thesis/images/chapter03/cutedog/features/raw_mfcc_pitch_features.1.scp
+2018-06-25 20:45:48,391 - DEBUG - LOG (copy-feats:main():copy-feats.cc:101) Copied 1 feature matrices.
+2018-06-25 20:45:48,392 - INFO - exporting Kaldi ark features to h5features...
+2018-06-25 20:45:48,392 - INFO - writing 1 ark files to feats.h5f in group features
+2018-06-25 20:45:48,417 - DEBUG - converting 1 ark files to h5features in /home/adriana/Projects/PhD/thesis/writing/epen-thesis/images/chapter03/cutedog/features/feats.h5f/features
+2018-06-25 20:45:48,418 - DEBUG - converting raw_mfcc_pitch_features.1.ark...
