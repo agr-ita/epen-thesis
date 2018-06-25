@@ -83,97 +83,50 @@
 \contentsline {subsection}{\numberline {3.1.6}Scoring: Assessing native performance}{48}{subsection.3.1.6}
 \contentsline {subsubsection}{Lexical decoding - \%WER}{49}{section*.58}
 \contentsline {subsubsection}{Phonetic decoding - \%PER}{49}{section*.59}
-\contentsline {section}{\numberline {3.2}{\color {red}Parlato-hmm}}{50}{section.3.2}
+\contentsline {section}{\numberline {3.2}{\color {red}Investigating surface phonotactics}}{50}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Introduction}{50}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Methods}{50}{subsection.3.2.2}
-\contentsline {subsubsection}{Stimuli}{50}{section*.60}
-\contentsline {subsubsection}{Language models}{50}{section*.61}
-\contentsline {subsubsection}{Identification task simulation}{50}{section*.62}
-\contentsline {subsubsection}{Data analysis}{51}{section*.63}
-\contentsline {subsection}{\numberline {3.2.3}Results}{52}{subsection.3.2.3}
-\contentsline {subsubsection}{Overall similarity}{52}{section*.64}
-\contentsline {subsubsection}{Effect of coarticulation}{53}{section*.65}
-\contentsline {paragraph}{/i/-epenthesis}{53}{section*.66}
-\contentsline {paragraph}{/u/-epenthesis}{53}{section*.67}
-\contentsline {subsection}{\numberline {3.2.4}Discussion}{53}{subsection.3.2.4}
-\contentsline {section}{\numberline {3.3}{\color {red}Investigating surface phonotactics}}{54}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Introduction}{54}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Experiment 1: {\color {red}Parlato-lms}}{54}{subsection.3.3.2}
-\contentsline {subsubsection}{Methods}{54}{section*.68}
-\contentsline {paragraph}{Stimuli}{54}{section*.69}
-\contentsline {paragraph}{Language models}{54}{section*.70}
-\contentsline {paragraph}{Identification task simulation}{54}{section*.71}
-\contentsline {paragraph}{Data analysis}{55}{section*.72}
-\contentsline {subsubsection}{Results and Discussion}{55}{section*.73}
-\contentsline {paragraph}{Response patterns}{55}{section*.74}
-\contentsline {paragraph}{Overall similarity}{55}{section*.75}
-\contentsline {paragraph}{Zooming in on epenthetic vowel quality}{55}{section*.76}
-\contentsline {subsection}{\numberline {3.3.3}Experiment 2: {\color {red}m-/ahpa/}}{57}{subsection.3.3.3}
-\contentsline {subsubsection}{Methods}{57}{section*.77}
-\contentsline {paragraph}{Stimuli}{57}{section*.78}
-\contentsline {paragraph}{Language models}{57}{section*.79}
-\contentsline {paragraph}{Identification task simulation}{57}{section*.80}
-\contentsline {paragraph}{{\color {red}Data analysis}}{57}{section*.81}
-\contentsline {subsubsection}{Results and Discussion}{57}{section*.82}
-\contentsline {subsection}{\numberline {3.3.4}Discussion}{57}{subsection.3.3.4}
-\contentsline {section}{\numberline {3.4}{\color {red}Do we need to go deeper? Are surface phonotactics enough?}}{58}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Introduction}{58}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Methods}{58}{subsection.3.4.2}
-\contentsline {subsubsection}{Stimuli}{58}{section*.83}
-\contentsline {paragraph}{Language models}{58}{section*.84}
-\contentsline {paragraph}{Identification task simulation}{58}{section*.85}
-\contentsline {subsubsection}{Data analysis}{58}{section*.86}
-\contentsline {subsection}{\numberline {3.4.3}Results}{58}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}Discussion}{58}{subsection.3.4.4}
-\contentsline {section}{\numberline {3.5}Conclusions}{58}{section.3.5}
-\contentsline {chapter}{\numberline {4}{\color {red}Gestural vs. acoustic primitives in perceptual vowel epenthesis}}{59}{chapter.4}
-\contentsline {section}{\numberline {4.1}Introduction}{59}{section.4.1}
-\contentsline {section}{\numberline {4.2}Articulatory Inversion}{59}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Methods}{59}{subsection.4.2.1}
-\contentsline {subsubsection}{Corpora}{59}{section*.87}
-\contentsline {paragraph}{MOCHA-TIMIT}{59}{section*.88}
-\contentsline {paragraph}{mngu0}{59}{section*.89}
-\contentsline {paragraph}{mspka}{59}{section*.90}
-\contentsline {subsubsection}{Features}{60}{section*.91}
-\contentsline {paragraph}{Acoustic}{60}{section*.92}
-\contentsline {paragraph}{Articulatory}{60}{section*.93}
-\contentsline {subsubsection}{Model architectures}{60}{section*.94}
-\contentsline {paragraph}{Multilayer Perceptron (MLP)}{60}{section*.95}
-\contentsline {paragraph}{Mixture Density Network (MDN)}{61}{section*.96}
-\contentsline {paragraph}{Trajectory Mixture Density Network (TMDN)}{61}{section*.97}
-\contentsline {paragraph}{Recurrent Neural Network (RNN)}{62}{section*.98}
-\contentsline {paragraph}{Auto-Encoder}{63}{section*.99}
-\contentsline {paragraph}{Generative Adversarial Networks (GAN)}{63}{section*.100}
-\contentsline {subsubsection}{Evaluation metrics}{63}{section*.101}
-\contentsline {paragraph}{RMSE}{63}{section*.102}
-\contentsline {paragraph}{ABX score}{64}{section*.103}
-\contentsline {subsection}{\numberline {4.2.2}Results}{64}{subsection.4.2.2}
-\contentsline {subsubsection}{Selecting model architecture}{64}{section*.104}
-\contentsline {subsubsection}{Data augmentation for mngu0}{64}{section*.105}
-\contentsline {subsubsection}{Acoustic-articulatory inverter}{64}{section*.106}
-\contentsline {subsubsection}{Robustness across languages}{64}{section*.107}
-\contentsline {subsection}{\numberline {4.2.3}Discussion}{64}{subsection.4.2.3}
-\contentsline {section}{\numberline {4.3}Predicting confusion patterns}{64}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Methods}{64}{subsection.4.3.1}
-\contentsline {subsubsection}{Corpora}{64}{section*.108}
-\contentsline {paragraph}{Wall Street Journal - Read (WSJ)}{64}{section*.109}
-\contentsline {paragraph}{Breakfast corpus (MOCHA + mngu0)}{65}{section*.110}
-\contentsline {subsubsection}{Stimuli}{65}{section*.111}
-\contentsline {subsubsection}{Language models}{65}{section*.112}
-\contentsline {subsubsection}{Identification task simulation}{66}{section*.113}
-\contentsline {subsection}{\numberline {4.3.2}Results}{66}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Discussion}{66}{subsection.4.3.3}
-\contentsline {section}{\numberline {4.4}Perceptual experiment}{66}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Methods}{66}{subsection.4.4.1}
-\contentsline {subsubsection}{Stimuli}{66}{section*.114}
-\contentsline {subsubsection}{Participants}{66}{section*.115}
-\contentsline {subsubsection}{Procedure}{66}{section*.116}
-\contentsline {subsubsection}{Data analysis}{66}{section*.117}
-\contentsline {subsection}{\numberline {4.4.2}Results}{66}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Discussion}{66}{subsection.4.4.3}
-\contentsline {section}{\numberline {4.5}Conclusions}{66}{section.4.5}
-\contentsline {chapter}{\numberline {5}General Discussion}{67}{chapter.5}
-\contentsline {paragraph}{Paradigm}{67}{section*.118}
-\contentsline {paragraph}{ASR system}{67}{section*.119}
-\contentsline {chapter}{\numberline {A}\ignorespaces Are words easier to learn from infant- than adult-directed speech? }{68}{appendix.A}
-\contentsline {chapter}{\numberline {B}References}{100}{appendix.B}
+\contentsline {subsection}{\numberline {3.2.2}Experiment 1: {\color {red}Parlato-lms}}{50}{subsection.3.2.2}
+\contentsline {subsubsection}{Methods}{50}{section*.60}
+\contentsline {paragraph}{Stimuli}{50}{section*.61}
+\contentsline {paragraph}{Language models}{50}{section*.62}
+\contentsline {paragraph}{Identification task simulation}{51}{section*.63}
+\contentsline {subsubsection}{Data analysis}{51}{section*.64}
+\contentsline {paragraph}{Global ressemblance}{51}{section*.65}
+\contentsline {paragraph}{Effect of coarticulation}{51}{section*.66}
+\contentsline {subsubsection}{Results and Discussion}{52}{section*.67}
+\contentsline {paragraph}{Response patterns}{52}{figure.3.6}
+\contentsline {paragraph}{Global similarity}{52}{section*.69}
+\contentsline {paragraph}{Zooming in on epenthetic vowel quality}{52}{section*.70}
+\contentsline {paragraph}{Effect of coarticulation}{54}{section*.71}
+\contentsline {subsection}{\numberline {3.2.3}Experiment 2: {\color {red}m-/ahpa/}}{54}{subsection.3.2.3}
+\contentsline {subsubsection}{Methods}{54}{section*.72}
+\contentsline {paragraph}{Stimuli}{54}{section*.73}
+\contentsline {paragraph}{Language models}{55}{section*.74}
+\contentsline {paragraph}{Identification task simulation}{55}{section*.75}
+\contentsline {paragraph}{{\color {red}Data analysis}}{55}{section*.76}
+\contentsline {subsubsection}{Results and Discussion}{55}{section*.77}
+\contentsline {subsection}{\numberline {3.2.4}Discussion}{55}{subsection.3.2.4}
+\contentsline {section}{\numberline {3.3}{\color {red}Do we need to go deeper? Are surface phonotactics enough?}}{56}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Introduction}{56}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Methods}{56}{subsection.3.3.2}
+\contentsline {subsubsection}{Stimuli}{56}{section*.78}
+\contentsline {paragraph}{Language models}{56}{section*.79}
+\contentsline {paragraph}{Identification task simulation}{56}{section*.80}
+\contentsline {subsubsection}{Data analysis}{56}{section*.81}
+\contentsline {subsection}{\numberline {3.3.3}Results}{56}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Discussion}{56}{subsection.3.3.4}
+\contentsline {section}{\numberline {3.4}{\color {red}[art2ac] Perceptual experiment}}{57}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Introduction}{57}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Methods}{57}{subsection.3.4.2}
+\contentsline {subsubsection}{Stimuli}{57}{section*.82}
+\contentsline {paragraph}{Language models}{57}{section*.83}
+\contentsline {paragraph}{Identification task simulation}{57}{section*.84}
+\contentsline {subsubsection}{Data analysis}{57}{section*.85}
+\contentsline {subsection}{\numberline {3.4.3}Results}{57}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Discussion}{57}{subsection.3.4.4}
+\contentsline {section}{\numberline {3.5}Conclusions}{57}{section.3.5}
+\contentsline {chapter}{\numberline {4}General Discussion}{58}{chapter.4}
+\contentsline {paragraph}{Paradigm}{58}{section*.86}
+\contentsline {paragraph}{ASR system}{58}{section*.87}
+\contentsline {chapter}{\numberline {A}\ignorespaces Are words easier to learn from infant- than adult-directed speech? }{59}{appendix.A}
+\contentsline {chapter}{\numberline {B}References}{91}{appendix.B}
