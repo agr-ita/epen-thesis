@@ -40,10 +40,9 @@ Mathematically, this equates to solving the following equation:
 Put into Bayesian terms, this represents computing the posterior probability $P(w|X)$ of all combinations of words, given the acoustics, and retrieving the index of the most probable one: the decoder selects the sequence of words $w$ with highest posterior probability given the acoustic evidence $X$. However, due to how there is an infinite number of possible combinations of words, it may be difficult to evaluate all possible combinations of words, in order to find the most probable one. As such, following Bayes's theorem, equation \ref{eq_hmm_dec_post} can be rearranged as:
 
 \begin{equation}
-  \widehat{w} = \underset{w}{arg\,max} \left \{  P(X|w)P(w)\right \}
+  \widehat{w} = \underset{w}{arg\,max} \left \{  P(X|w)P(w)\right \}\footnote{In practice $P(X|w)P(w)$ is often computed in the log space as $\alpha ~log P(X|w) + log P(w)$, where $\alpha$ is a scaling factor called acoustic scale (set to $0.1$ in our models)}
   \label{eq_hmm_dec_post}
 \end{equation}
-
 The likelihood $P(X|w)$, given by the \textbf{acoustic model}, is the probability of the acoustics given the sequence of words. The prior $P(w)$, given by the \textbf{language model}, corresponds to the probability of the word sequence, and can be derived from frequency counts. These probabilities can be extracted by training our ASR system using annotated speech corpora.
 
 Recently, in the field of ASR, Neural Network (NN)-based speech recognisers are the state-of-the-art. In spite of better performance of NN-based ASR systems, we decided to use HMM-based recognisers, which are more well-understood than NNs while still offering good speech recognition performance. Indeed, before the decoding step, these models offer a clear separation between the acoustic model (AM; i.e., mapping between phoneme categories and acoustics) and the language model (LM; i.e., frequencies of word/phoneme sequences). This allowed us to test ASR systems with different LMs while keeping the AM constant, as well as adapting LMs to mimic the experimental paradigms used when testing human participants. Importantly, unlike NNs which are often qualified as ``black boxes'', we are able to better understand and analyse how the ASR system processes acoustic input. 
@@ -153,7 +152,7 @@ As their name suggests, HMMs follow a Markovian process; the value of a state on
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.6\linewidth]{chapter03/hmm_3state.pdf}
-\caption{\textit{Left-to-right 3-state phoneme HMM with simplified 2-dimensional GMMs (one per state). Start and stop states connect the phoneme with the previous and next phoneme, respectively.}}
+\caption{\textit{Left-to-right 3-state phoneme HMM with simplified 2-dimensional GMM (one per state). Start and stop states connect the phoneme with the previous and next phoneme, respectively.}}
 \label{fig:hmm_3state}
 \end{figure}
 
@@ -230,10 +229,11 @@ The output of the decoding step is not a single transcription but what is called
 We tested the decoding performance on the validation set of AMs with total number of Gaussians going from 1000 to 6000. We find that the models with the highest amount of Gaussians (i.e., 6000) give the best performance. We did not pursue increasing the number of Gaussians even further, as performance gain was reaching an asymptote at this point and adding more Gaussians would have increased the computational demands for each experiment. Additionally, we expect that adding ``too many'' Gaussians would have lead to overfitting of the models to the training set. Here we provide the evaluation of the ASR systems on the test sets ($15\%$ of the corpora), at the lexical level (i.e., using a bigram word LM) and at the phonetic level (i.e., using a unigram phone LM).  
 
 \subsubsection{Lexical decoding - \%WER}
-{\color{red}[TODO] (models currently running)}
+{\color{red}[TODO] (models running)}
+%%% Rudimentary but good performance 
 
 \subsubsection{Phonetic decoding - \%PER}
-{\color{red}[TODO] (models currently running)}
+{\color{red}[TODO] (models running)}
 
 %%%%%%%%%%%%
 % Parlato2 %
@@ -249,6 +249,12 @@ We tested the decoding performance on the validation set of AMs with total numbe
 \small{\textit{{\color{red}ADD ACKNOWLEDGEMENTS THOMAS + EMMANUEL.\\}}}
 
 \subsection{Introduction}
+%%% Background
+
+%%%
+
+%%% Plan
+
 \subsection{Experiment 1: {\color{red}Parlato-lms}}
 \subsubsection{Methods}
 \paragraph{Stimuli}
@@ -260,7 +266,7 @@ In order for the decoding task to be analogous to the behavioural experiment des
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.8\linewidth]{chapter03/parlato_hmm_Gfst.pdf}
-\caption{Constrained language model used for decoding the stimulus \textipa{/agni/}. Nodes in the graph represent states, edges represent transitions between states (here: phonemes). The weights on edges issued from a same node (e.g., between states 2 and 3) influence path selection when decoding experimental items (acoustic scale of $0.1$).}
+\caption{Constrained language model used for decoding the stimulus \textipa{/agni/}. Nodes in the graph represent states, edges represent transitions between states (here: phonemes). The weights on edges issued from a same node (e.g., between states 2 and 3) influence path selection when decoding experimental items.}
 \label{fig:parlato_G}
 \end{figure}
 
@@ -275,7 +281,7 @@ In this section, we investigate the type of phonotactic information that might b
 \end{enumerate}
 
 \paragraph{Identification task simulation}
-After decoding the stimuli, we extracted from the resulting lattice each possible transcription of each item, and the corresponding acoustic and language model scores. An example of how the ASR system decodes the experimental stimuli can be seen in Figure \ref{fig:parl_hmm_align}. From the acoustic and language model scores\footnote{with an acoustic scale of $0.1$} we derived the item posteriorgrams, which indicate how probable a given transcription was given the audio input. We used these probabilities as proxies of the probability that a listener might exploit when performing reverse inference during speech perception, and therefore, the probabilities used when responding in an identification task. 
+After decoding the stimuli, we extracted from the resulting lattice each possible transcription of each item, and the corresponding acoustic and language model scores. An example of how the ASR system decodes the experimental stimuli can be seen in Figure \ref{fig:parl_hmm_align}. From the (scaled) acoustic and language model scores we derived the item posteriorgrams, which indicate how probable a given transcription was given the audio input. We used these probabilities as proxies of the probability that a listener might exploit when performing reverse inference during speech perception, and therefore, the probabilities used when responding in an identification task. 
 
 As such, for each item, we obtained a six-dimensional vector $ident_{model} = [p_{none}, p_{a}, p_{e}, p_{i}, p_{o}, p_{u}]$, containing a discrete probability distribution, with a probability mass function linking the identification task options `none', `a', `e', `i', `o', `u', to their respective probabilities (i.e., posteriorgrams).
 We can define the human equivalent $ident_{human} = [p_{none}, p_{a}, p_{e}, p_{i}, p_{o}, p_{u}]$, which contains the percentage of responses for each item, after aggregating all participant responses. 
@@ -283,13 +289,15 @@ We can define the human equivalent $ident_{human} = [p_{none}, p_{a}, p_{e}, p_{
 \begin{figure}[htb!]
   \centering
   \begin{overpic}[trim={0 2.5cm 0 1.5cm},clip, width=0.8\linewidth]{chapter03/parlato-hmm_praat_agni.pdf}\end{overpic}
-  \caption{\textit{Example of how the ASR system decodes the item \textipa{/agni/}, using the null language model in Figure \ref{fig:parlato_G}. From top to bottom: original waveform, item name, aligned transcriptions given by the model (from the most probable to the least probable), and spectrogram with formant contours. SIL = silence.}}
+  \caption{\textit{Example of how the ASR system decodes the item \textipa{/agni/}, using the null language model in Figure \ref{fig:parlato_G}. From top to bottom: original waveform, item name, aligned transcriptions given by the model (from the most probable to the least probable, with the corresponding posteriorgrams shown to their right side), and spectrogram with formant contours. SIL = silence.}}
   \label{fig:parl_hmm_align}
 \end{figure}
 
 \subsubsection{Data analysis}
 
 \paragraph{Global ressemblance}
+As a global measure of ressemblance 
+
 %In order to compare how well LMs compared at mimicking human behaviour, we computed the Euclidean distance between $ident_{LM}$ and $ident_{human}$ for each item, for each LM. Do models that integrate information about phoneme probabilities (i.e., \textsc{unigram} LM) or diphone probabilities (i.e., \textsc{bigram} LMs) show smaller \textsc{Eucl. distances} to human data than the \textsc{null} LM?
 
 %The response variable of our statistical models was the \textsc{Eucl. distance} between $ident_{LM}$ and $ident_{human}$, as described above. We chose as fixed effect the \textsc{Language Model} (\textsc{LM}) used during decoding, considered as a categorical variable with \textsc{null} as the reference level. The variable was contrast coded with simple coding, meaning that non-reference levels were compared to the reference level, with the intercept corresponding to the grand mean (all levels). \textsc{$C_{1}$} was added as a random intercept.

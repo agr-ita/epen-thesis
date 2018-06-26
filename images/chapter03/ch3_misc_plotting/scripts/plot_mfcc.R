@@ -72,7 +72,7 @@ p.mfcc.stand <- ggplot(data = melted_mfcc.stand, aes(x=Var2, y=-Var1, fill=value
 # OUTPUT ####
 ##########
 
-pdf(file="figures/cutedog_mfcc.pdf", width = 10, height = 1)
+pdf(file="figures/cutedog_mfcc.pdf", width = 7, height = 3)
 p.mfcc
 p.mfcc.stand
 dev.off()
