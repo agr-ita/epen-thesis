@@ -1,6 +1,7 @@
 \documentclass[12pt, twoside]{report}
 \usepackage[a4paper,width=150mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
 % \usepackage{bibtex}
+\usepackage{amsmath}
 \usepackage{fixltx2e}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -8,7 +9,7 @@
 \usepackage{tipa}
 \usepackage{float}
 \usepackage{graphicx}
-\usepackage{color}
+\usepackage{xcolor}
 \usepackage{booktabs}
 \usepackage{threeparttable}
 \usepackage{pdfpages}
@@ -19,7 +20,11 @@
     linktoc=all,     %set to all if you want both sections and subsections linked
     linkcolor=black,  %choose some color if you want links to stand out
   }
- 
+\usepackage{setspace}
+% \doublespacing
+\usepackage{lineno}
+
+o\setcounter{secnumdepth}{3o}
 
 \graphicspath{{images/}}
 
@@ -56,23 +61,29 @@ Abstract goes ici
 \chapter*{Acknowledgements}
 I want to thank...
 
-\tableofcontents
+\chapter*{Publications}
 
+
+\tableofcontents
+\linenumbers
 \chapter{Introduction}
+\setcounter{page}{1}
 \input{chapters/chapter01-intro}
 
-\chapter{{\color{red}Epenthetic vowel quality: Acoustics, phonetics, phonology}}
+\chapter{Role of acoustic details in the choice of epenthetic vowel quality}
 \input{chapters/chapter02}
-\chapter{Chapter Three Title}
+
+\chapter{Modelling speech perception with ASR systems}
 \input{chapters/chapter03}
 
-\chapter{Chapter Four Title}
-\input{chapters/chapter04}
-\chapter{Chapter Five Title}
-\input{chapters/chapter05}
+%\chapter{{\color{red}Gestural vs. acoustic primitives in perceptual vowel epenthesis}}
+%\input{chapters/chapter04}
+
+% \chapter{Chapter Five Title}
+%\input{chapters/chapter05}
 
 \chapter{General Discussion}
-\input{chapters/chapter06-disc}
+\input{chapters/chapter05-disc}
 
 \appendix
 \fancyhead{}
@@ -82,6 +93,7 @@ I want to thank...
 \fancyfoot[LE,RO]{\thepage}
 \input{chapters/appendix}
 
+\chapter{References}
 \bibliographystyle{apalike}
 \bibliography{main}
 
