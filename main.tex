@@ -21,7 +21,7 @@
     linkcolor=black,  %choose some color if you want links to stand out
   }
 \usepackage{setspace}
-% \doublespacing
+%\doublespacing
 \usepackage{lineno}
 
 \setcounter{secnumdepth}{3}
@@ -85,6 +85,10 @@ I want to thank...
 \chapter{General Discussion}
 \input{chapters/chapter05-disc}
 
+%\chapter{References}
+\bibliographystyle{apalike}
+\bibliography{main}
+
 \appendix
 \fancyhead{}
 %\fancyhead[RO, LE]{\rightmark}
@@ -92,10 +96,6 @@ I want to thank...
 \fancyfoot{}
 \fancyfoot[LE,RO]{\thepage}
 \input{chapters/appendix}
-
-\chapter{References}
-\bibliographystyle{apalike}
-\bibliography{main}
 
 \end{document}
 

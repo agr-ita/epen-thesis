@@ -225,6 +225,10 @@ We tested the decoding performance on the validation set of AMs with total numbe
 As seen in Figure \ref{fig:hmm_gaussians}, we find that the models with the highest amount of Gaussians (i.e., 15000) give the best performance for monophone models, both at the lexical (\%WER, word error rate) and phonetic (\%PER, phone error rate) levels.
 We did not pursue increasing the number of Gaussians even further, as performance gain was reaching an asymptote at this point and adding more Gaussians would have increased the computational demands for each experiment. Additionally, we expect that adding ``too many'' Gaussians would have lead to overfitting of the models to the training set. Here we provide the evaluation of the ASR systems on the test sets ($15\%$ of the corpora), at the lexical level (i.e., using a bigram word LM) and at the phonetic level (i.e., using a unigram phone LM).  
 
+%   corpus model totgauss   set   WER   PER
+%6     CSJ  mono       15  test 37.48 37.96
+%12   KCSS  mono       15  test 73.35 50.70
+
 \subsubsection{Lexical decoding - \%WER}
 {\color{red}[TODO] (models running)}
 %%% Rudimentary but good performance 
@@ -246,6 +250,8 @@ We did not pursue increasing the number of Gaussians even further, as performanc
 \small{\textit{{\color{red}ADD ACKNOWLEDGEMENTS THOMAS + EMMANUEL.\\}}}
 
 \subsection{Introduction}
+
+{\color{red}[TODO]}
 %%% Background
 
 %%% Goal
@@ -280,9 +286,9 @@ In this section, we investigate the type of phonotactic information that might b
 \end{enumerate}
     
 \paragraph{Identification task simulation}
-\begin{figure}[htb!]
+\begin{figure}[htb]
   \centering
-  \begin{overpic}[trim={0 1cm 0 1.5cm},clip, width=0.8\linewidth]{chapter03/m-ahpa_praat_ah0apa.pdf}\end{overpic}
+  \begin{overpic}[trim={0 1cm 0 1.5cm},clip, width=0.7\linewidth]{chapter03/m-ahpa_praat_ah0apa.pdf}\end{overpic}
   \caption{\textit{Example of how the ASR system decodes the item \textipa{/ah$_{a}$pa/}, using the null version of the language model in Figure \ref{fig:m-ahpa_G}. From top to bottom: original waveform, item name, aligned transcriptions given by the model (from the most probable to the least probable, with the corresponding posteriorgrams shown to their right side), and spectrogram with formant contours. SIL = silence.}}
   \label{fig:m-ahpa_align}
 \end{figure}
@@ -292,25 +298,74 @@ After decoding the stimuli, we extracted from the resulting lattice each possibl
 As such, for each item, we obtained a six-dimensional vector $ident_{model} = [p_{none}, p_{a}, p_{e}, p_{i}, p_{o}, p_{u}]$, containing a discrete probability distribution, with a probability mass function linking the identification task options `none', `a', `e', `i', `o', `u', to their respective probabilities (i.e., posteriorgrams).
 We can define the human equivalent $ident_{human} = [p_{none}, p_{a}, p_{e}, p_{i}, p_{o}, p_{u}]$, which contains the percentage of responses for each item, after aggregating all participant responses. 
 
-\paragraph{{\color{red}Data analysis}}
-%%% Correlation (only one value -> r) - Global
-%%% Fine grain
+\subsubsection{Quantitative analysis}
+In order to perform a global evaluation of the similarity between the behavioural responses and the responses obtained with the five LMs described above, we computed the Pearson's product-moment correlation coefficient between the human and model posteriorgrams. The model with the highest correlation to the human data was the \textsc{null} LM ($r = 0.76$), followed by the \textsc{unigram}, \textsc{bigram online}, and \textsc{bigram retro} LMs ($r = 0.65$), and lastly, the \textsc{bigram batch} LM ($r = 0.62$). Numerically, the \textsc{null} LM better approximated the human data.
 
-\subsubsection{Results: All models}
+In order to assess if the correlation differences between the \textsc{null} LM and other LMs were significant, we computed these differences and their corresponding 95\% confidence intervals (CIs), using bootstrapping with 1000 samples\footnote{Sampling was done by item.}. As can be seen in Table \ref{tab:m-ahpa-cor_diff}, the correlation between the human data and the output of the \textsc{null} LM was significantly higher than those of other LMs.
 
-\paragraph{All items: Overall ressemblance}
-Blablabla {\color{red}Describe graph showing response patterns and then correlation analyses}
+% latex table generated in R 3.3.3 by xtable 1.8-2 package
+% Mon Jul  2 21:36:40 2018
+\begin{table}[htb!]
+\centering
+\caption{\textit{Difference in correlation with human data between the null LM and other LMs. The lower and upper bounds of the 95\% confidence intervals are given. Positive values indicate higher correlation between human data and the null model output than between human data and other LM output.}}
+  \label{tab:m-ahpa-cor_diff}
+\vspace{0.25cm}
+\begin{tabular}{lccc}
+  \toprule
+ & Lower bound & Observed Difference & Upper bound \\  \midrule
+null vs. unigram & 0.07 & 0.10 & 0.14 \\ 
+  null vs. bigram online & 0.08 & 0.11 & 0.14 \\ 
+  null vs. bigram retro & 0.07 & 0.10 & 0.13 \\ 
+  null vs. bigram batch & 0.10 & 0.13 & 0.17 \\ \bottomrule 
+\end{tabular}
+\end{table}
 
-\paragraph{Filler items: Identification accuracy}
-%%%Full vowel (control)
-%% null not good enough (cf coart=E and coart=U) 
-Blablabla
-\subsubsection{Results: Focus on best model}
+Contrary to the null and unigram LMs, the bigram models were subject to an arbitrarily set smoothing parameter, which determined the probability of choosing a sequence of phonemes that had never been observed in the training data. We set this smoothing parameter to $10^{-8}$, which is a strict value, as it is relatively close to zero. This was done in order to evaluate whether the acoustic match could rescue decoding options which are not supported by the language's phonotactics. In order to evaluate the similarity between models' outputs and human data without the influence of the value of the smoothing parameter, we computed the correlation between the human data and models' posteriorgrams after excluding the posteriorgrams for ``none'' responses and re-normalising the remaining posteriorgrams. As such, we are focusing on the correlation related to epenthetic vowel quality.
+Here, the highest correlation still corresponded to the \textsc{null} LM ($r = 0.77$), followed by the \textsc{bigram retro} ($r = 0.74$), the \textsc{bigram online} ($r = 0.73$), and finally the \textsc{unigram} and the \textsc{bigram batch} LMs ($r = 0.71$). 
+As shown in Table \ref{tab:m-ahpa-cor_diff-nonone}, while the difference between the correlations diminished relative to what is shown in Table \ref{tab:m-ahpa-cor_diff}, the CIs still did not overlap with zero, meaning that the correlation between the human data and the output of the \textsc{null} LM was significantly higher than those of other LMs.  
+
+% latex table generated in R 3.3.3 by xtable 1.8-2 package
+% Tue Jul  3 03:37:50 2018
+\begin{table}[htb!]
+\centering
+\caption{\textit{Difference in correlation with human data between the null LM and other LMs, after removing the ``none'' responses. The lower and upper bounds of the 95\% confidence intervals are given. Positive values indicate higher correlation between human data and the null model output than between human data and other LM output.}}
+\label{tab:m-ahpa-cor_diff-nonone}
+\vspace{0.25cm}
+\begin{tabular}{lccc}
+   \toprule
+  & Lower bound & Observed Difference & Upper bound \\  \midrule
+  null vs. unigram & 0.03 & 0.05 & 0.08  \\  
+  null vs. bigram online & 0.02 & 0.04 & 0.06  \\   
+  null vs. bigram retro & 0.01 & 0.02 & 0.04   \\ 
+  null vs. bigram batch & 0.03 & 0.06 & 0.08   \\ \bottomrule 
+\end{tabular}
+\end{table}
+
+\subsubsection{Qualitative analyses}
+
+\paragraph{Identification accuracy}
+Using the set of filler items such as \textipa{/ahapa/} and \textipa{/okipo/} (i.e., spliced items with a full vowel between $C_1$ and $C_2$), we can assess identification accuracy relative to our item labels. Indeed, recall that while our phonetically-trained speakers were instructed to read items following ``standard'' IPA pronunciations, it is possible for our human participants to not perceive the intended vowel categories due to adaptation processes (e.g., misperceiving \textipa{/u/}, which is not realised as \textipa{[u]} but as \textipa{[W]} in Japanese), and/or due to speaker idiosyncrasies.
+
+Overall, human participants identified the correct intended vowel category in $79.5\%$ of the trials. As can be seen in Figure \ref{fig:m-ahpa_fV_acc}, this was mostly due to confusions between the intended \textipa{/o/} and \textipa{/u/} categories, with msot errors being \textipa{/u/} being identified as \textipa{/o/}.
+Consistent with our correlation analyses, the \textsc{null} LM gave the highest accuracy out of all models (accuracy: $74\%$), followed by the \textsc{bigram retro} (accuracy: $72.6\%$), the \textsc{unigram} (accuracy: $72.5\%$), the \textsc{bigram online} (accuracy: $72.6\%$), and finally the \textsc{bigram batch} LM (accuracy: $68.7\%$). 
+As seen in Figure \ref{fig:m-ahpa_fV_acc}, like human participants, the models showed difficulty categorising \textipa{/u/} items as such; in particular, these were almost always classified as exemplars of \textipa{/o/} when $C_2 = \textipa{/h/}$. However, unlike human participants, models misperceived \textipa{/e/} as \textipa{/i/}. This misperception appears to be worse for the \textsc{bigram online} and \textsc{bigram batch} language models.
+In sum, while the accuracy rates for the models were close to that of humans, we saw that the models showed not only quantitative but also qualitative differences in their identification of non-native full vowels, in comparison with human participants. 
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=1\linewidth]{chapter03/m-ahpa_figures.pdf}
+\caption{\textit{{\color{red}TODO}}}
+\label{fig:m-ahpa_fV_acc}
+\end{figure}
+
 \paragraph{Control items: Default /u/-epenthesis}
-Blablabla
+{\color{red}[TODO]}
 
 \paragraph{Control items: Vowel copy}
-Blablabla
+{\color{red}[TODO]}
+
+\paragraph{Test items: Mutual Information}
+{\color{red}[TODO]}
 
 \subsection{Experiment 2: {\color{red}Parlato-lms}}
 \subsubsection{Methods}
@@ -330,33 +385,91 @@ In order for the decoding task to be analogous to the behavioural experiment des
 \end{figure}
 
 \paragraph{Identification task simulation}
-We used the same procedure as in Experiment 1. An example of how the ASR system decodes the experimental stimuli can be seen in Figure \ref{fig:m-ahpa_align}. 
+We used the same procedure as in Experiment 1. An example of how the ASR system decodes the experimental stimuli can be seen in Figure \ref{fig:parl_hmm_align}. 
 
 \begin{figure}[htb!]
   \centering
-  \begin{overpic}[trim={0 2.5cm 0 1.5cm},clip, width=0.8\linewidth]{chapter03/parlato-hmm_praat_agni.pdf}\end{overpic}
+  \begin{overpic}[trim={0 2.5cm 0 1.5cm},clip, width=0.7\linewidth]{chapter03/parlato-hmm_praat_agni.pdf}\end{overpic}
   \caption{\textit{Example of how the ASR system decodes the item \textipa{/agni/}, using the null version of the language model in Figure \ref{fig:parlato_G}. From top to bottom: original waveform, item name, aligned transcriptions given by the model (from the most probable to the least probable, with the corresponding posteriorgrams shown to their right side), and spectrogram with formant contours. SIL = silence.}}
   \label{fig:parl_hmm_align}
 \end{figure}
 
-\subsubsection{Data analysis}
+\subsubsection{Results: Quantitative analysis}
+As in Experiment 1, we computed the Pearson's product-moment correlation coefficient between the human and model posteriorgrams in order to assess a global measure ressemblance between models' outputs and the human data from section \ref{2-parlato_per}. The model with the highest correlation to the human data was the \textsc{bigram retro} LM ($r = 0.43$), followed by the \textsc{null} ($r = 0.40$), the \textsc{unigram} ($r = 0.30$), the \textsc{bigram online} ($r = 0.23$) and lastly, the \textsc{bigram batch} LM ($r = 0.19$). Numerically, the \textsc{bigram retro} LM better approximated the human data.
 
-\paragraph{Global ressemblance}
-As a global measure of ressemblance 
+In order to assess if the correlation differences between the \textsc{null} LM and other LMs were significant, we computed these differences and their corresponding 95\% confidence intervals (CIs), using bootstrapping with 1000 samples. As can be seen in Table \ref{tab:parlato_lms-cor_diff}, the correlation between the human data and the output of the \textsc{null} LM was significantly higher than those of the \textsc{unigram}, \textsc{bigram online} and \textsc{bigram batch}. While the correlation to the human data for \textsc{bigram retro} LM was numerically higher than for the \textsc{null} LM, we did not find evidence of a significant difference between the two as the CI of their difference overlaps zero.
+
+% latex table generated in R 3.3.3 by xtable 1.8-2 package
+% Tue Jul  3 03:53:37 2018
+\begin{table}[ht]
+\centering
+\caption{\textit{Difference in correlation with human data between the null LM and other LMs. The lower and upper bounds of the 95\% confidence intervals are given. Positive values indicate higher correlation between human data and the null model output than between human data and other LM output.}}
+\label{tab:parlato_lms-cor_diff}
+\vspace{0.25cm}
+\begin{tabular}{lccc}
+   \toprule
+  & Lower bound & Observed Difference & Upper bound \\  \midrule
+null vs. unigram & 0.03 & 0.11 & 0.18 \\ 
+null vs. bigram online  & 0.03 & 0.18 & 0.31 \\ 
+null vs. bigram retro & -0.13 & -0.03 & 0.08 \\ 
+null vs. bigram batch & 0.06 & 0.21 & 0.35 \\  \bottomrule 
+\end{tabular}
+\end{table}
+
+Similarly to how we did in Experiment 1, we evaluated the similarity between models' outputs and human data without focusing on percentage of vowel epenthesis. For this we computed the correlation between the human data and models' posteriorgrams after excluding the posteriorgrams for ``none'' responses and re-normalising the remaining posteriorgrams. Recall that, as a consequence, we are focusing on the correlation related to epenthetic vowel quality. The highest correlation corresponded to the \textsc{null} LM ($r = 0.53$), followed by \textsc{bigram retro} ($r = 0.46$), \textsc{unigram} ($r = 0.33$), \textsc{bigram online} ($r = 0.21$), and \textsc{bigram batch} ($r = 0.17$). 
+As can be seen in Figure \ref{tab:parlato_lms-cor_diff-nonone}, the correlation between the human data and the output of the \textsc{null} LM was significantly higher than those between the human data and other LMs. 
+
+% latex table generated in R 3.3.3 by xtable 1.8-2 package
+% Tue Jul  3 04:00:07 2018
+\begin{table}[ht]
+\centering
+\caption{\textit{Difference in correlation with human data between the null LM and other LMs, after removing the ``none'' responses. The lower and upper bounds of the 95\% confidence intervals are given. Positive values indicate higher correlation between human data and the null model output than between human data and other LM output.}}
+\label{tab:parlato_lms-cor_diff-nonone}
+\vspace{0.25cm}
+\begin{tabular}{lccc}
+   \toprule
+  & Lower bound & Observed Difference & Upper bound \\  \midrule
+null vs. unigram & 0.16 & 0.21 & 0.26  \\ 
+null vs. bigram online   & 0.18 & 0.33 & 0.46 \\ 
+null vs. bigram retro    & 0.04 & 0.08 & 0.12 \\ 
+ null vs. bigram batch    & 0.21 & 0.36 & 0.51 \\  \bottomrule 
+\end{tabular}
+\end{table}
+
+
+\subsubsection{Results: Qualitative analysis}
+
+\paragraph{Default vowel}
+
+\begin{figure}[htb!]
+    \centering
+    \includegraphics[page=1, width=0.8\linewidth]{chapter03/parlato-lms_figs.pdf}
+    \caption{\textit{Distribution of the proportion of responses given by human participants (topmost panel) and posteriorgrams obtained when decoding with different language models. The box and whiskers plots display the distribution of posteriorgrams across experimental items, with boxplots separated according to the $C_{1}$ in the cluster.}}
+    \label{fig:parlato-lms}
+  \end{figure}
+
+{\color{red}Describe graph showing response patterns}
+
+% 1     0         human 0.13071895
+% 2     a         human 0.01416122
+% 3     e         human 0.02505447
+% 4     i         human 0.15250545
+% 5     o         human 0.04684096
+% 6     u         human 0.63071895
+% 7     0          null 0.27663941
+% 8     a          null 0.05414450
+% 9     e          null 0.11487889
+% 10    i          null 0.22482459
+% 11    o          null 0.08025081
+% 12    u          null 0.24926179
 
 %In order to compare how well LMs compared at mimicking human behaviour, we computed the Euclidean distance between $ident_{LM}$ and $ident_{human}$ for each item, for each LM. Do models that integrate information about phoneme probabilities (i.e., \textsc{unigram} LM) or diphone probabilities (i.e., \textsc{bigram} LMs) show smaller \textsc{Eucl. distances} to human data than the \textsc{null} LM?
 
 %The response variable of our statistical models was the \textsc{Eucl. distance} between $ident_{LM}$ and $ident_{human}$, as described above. We chose as fixed effect the \textsc{Language Model} (\textsc{LM}) used during decoding, considered as a categorical variable with \textsc{null} as the reference level. The variable was contrast coded with simple coding, meaning that non-reference levels were compared to the reference level, with the intercept corresponding to the grand mean (all levels). \textsc{$C_{1}$} was added as a random intercept.
 
-%Statistical analyses were performed with the R statistical software \cite{R-base}, using Markov chain Monte Carlo generalised linear mixed-models \cite{R-MCMCglmm, R-coda}. These Bayesian models sample coefficients from the posterior probability distribution conditioned on the data and given priors. We used priors that are standard for linear models. Model convergence was assessed by visual inspection of trace plots and the Gelman–Rubin convergence diagnostic \cite{gelman1992}, using eight chains with different initialisations. Effects were considered statistically significant if the 95\% highest posterior density (HPD) interval estimated for the coefficient of interest did not include zero. We report both the posterior mode and the 95\% HPD interval.  
+%Statistical analyses were performed with the R statistical software \cite{R-base}, using Markov chain Monte Carlo generalised linear mixed-models \cite{R-MCMCglmm, R-coda}. These Bayesian models sample coefficients from the posterior probability distribution conditioned on the data and given priors. We used priors that are standard for linear models. Model convergence was assessed by visual inspection of trace plots and the Gelman–Rubin convergence diagnostic \cite{gelman1992}, using eight chains with different initialisations. Effects were considered statistically significant if the 95\% highest posterior density (HPD) interval estimated for the coefficient of interest did not include zero. We report both the posterior mode and the 95\% HPD interval.
 
-\paragraph{Effect of coarticulation}
-Statistical analyses were performed with the R statistical software \cite{R-base}, using Markov chain Monte Carlo generalised linear mixed-models \cite{R-MCMCglmm, R-coda}. These Bayesian models sample coefficients from the posterior probability distribution conditioned on the data and given priors. We used priors that are standard for linear models. Model convergence was assessed by visual inspection of trace plots and the Gelman–Rubin convergence diagnostic \cite{gelman1992}, using eight chains with different initialisations. Effects were considered statistically significant if the 95\% highest posterior density (HPD) interval estimated for the coefficient of interest did not include zero. We report both the posterior mode and the 95\% HPD interval.  
-
-In order to assess the influence of $V_{1}$ and $V_{2}$ (henceforth: flanking vowels) on epenthetic vowel quality (/i/ or /u/), we chose as fixed effect for our statistical models \textsc{Number of Same Flanking Vowels} (\textsc{NSFV}; considered as a continuous variable with values 0, 1, or 2 instead of a factor with 3 levels, in order to reduce the number of model parameters and promote convergence). Due to the almost null variance and the consequent poor trace plot for the random intercept \textsc{Cluster}, we did not include it in the statistical models. Our response variable was the continuous variable \textsc{Posteriorgram}.\footnote{Responses by human participants and exemplar models were given by trial; therefore in previous analyses the response variable was binomial.}
-
-
-\subsubsection{Results and Discussion}
+%We found that, relative to the \textsc{null} LM, the \textsc{bigram online} (mode: $0.08$, HPD: $[0.02, 0.15]$) and the \textsc{bigram batch} (mode: $0.08$, HPD: $[0.02, 0.15]$) language models resulted in significantly higher Euclidean distances between the model responses and human responses. On the other hand, we did not find evidence of a difference between the \textsc{null} LM and the \textsc{unigram} (mode: $0.03$, HPD: $[-0.04, 0.10]$) or \textsc{bigram retro} (mode: $0.0$, HPD: $[-0.06, 0.07]$) language models.
 
 %%\subsubsection{Overall similarity}
 %\begin{figure}[H]
@@ -386,49 +499,40 @@ In order to assess the influence of $V_{1}$ and $V_{2}$ (henceforth: flanking vo
 
 % As such, we believe that it is unfair to compare Euclidean distances between models based on different tasks. We can, however, see if the ASR-based model reproduces the qualitative effects that the best exemplar model was able to mimic.
 
-\paragraph{Response patterns}
-\begin{figure}[htb!]
-    \centering
-    \includegraphics[page=2, width=0.8\linewidth]{chapter03/parlato-lms_figs.pdf}
-    \caption{\textit{Distribution of the proportion of responses given by human participants (topmost panel) and posteriorgrams obtained when decoding with different language models. The box and whiskers plots display the distribution of posteriorgrams across experimental items, with boxplots separated according to the $C_{1}$ in the cluster.}}
-    \label{fig:parlato-lms}
-  \end{figure}
+% We arbitrarily chose a smoothing factor ($10^{-8}$)  in order to allow the language models to assign a non-zero probability to diphones never seen in the language corpus. The magnitude of this smoothing factor is expected to have an effect on the posteriorgrams assigned to ``none'' responses when decoding the experimental items. Since ``none'' responses constitute $13\%$ of human responses, and since the choice of the smoothing factor only affects the bigram language models, it may be beneficial to do a post-hoc analysis focusing on the models' ability to mimic epenthetic vowel quality after isolating it from the percentage of epenthesis. As such, we perform the same analysis as above, but after removing $p_{none}$ from $ident_{LM}$ and $ident_{human}$.
 
-{\color{red}Describe graph showing response patterns and then correlation analyses}
+% The results are qualitatively identical: relative to the \textsc{null} LM, only the \textsc{bigram online} (mode: $0.11$, HPD: $[0.05, 0.19]$) and the \textsc{bigram batch (2PB)} (mode: $0.11$, HPD: $[0.05, 0.19]$) language models resulted in significantly higher Euclidean distances. There was no evidence of a significant difference for the \textsc{unigram (1P)} (mode: $0.06$, HPD: $[-0.02, 0.12]$) or \textsc{bigram retro (2PR)} (mode: $0.03$, HPD: $[-0.04, 0.10]$) language models 
 
-\paragraph{Overall ressemblance}
-%We found that, relative to the \textsc{null} LM, the \textsc{bigram online} (mode: $0.08$, HPD: $[0.02, 0.15]$) and the \textsc{bigram batch} (mode: $0.08$, HPD: $[0.02, 0.15]$) language models resulted in significantly higher Euclidean distances between the model responses and human responses. On the other hand, we did not find evidence of a difference between the \textsc{null} LM and the \textsc{unigram} (mode: $0.03$, HPD: $[-0.04, 0.10]$) or \textsc{bigram retro} (mode: $0.0$, HPD: $[-0.06, 0.07]$) language models.
-
-\paragraph{Coarticulation effects}
-We arbitrarily chose a smoothing factor ($10^{-8}$)  in order to allow the language models to assign a non-zero probability to diphones never seen in the language corpus. The magnitude of this smoothing factor is expected to have an effect on the posteriorgrams assigned to ``none'' responses when decoding the experimental items. Since ``none'' responses constitute $13\%$ of human responses, and since the choice of the smoothing factor only affects the bigram language models, it may be beneficial to do a post-hoc analysis focusing on the models' ability to mimic epenthetic vowel quality after isolating it from the percentage of epenthesis. As such, we perform the same analysis as above, but after removing $p_{none}$ from $ident_{LM}$ and $ident_{human}$.
-
-The results are qualitatively identical: relative to the \textsc{null} LM, only the \textsc{bigram online} (mode: $0.11$, HPD: $[0.05, 0.19]$) and the \textsc{bigram batch (2PB)} (mode: $0.11$, HPD: $[0.05, 0.19]$) language models resulted in significantly higher Euclidean distances. There was no evidence of a significant difference for the \textsc{unigram (1P)} (mode: $0.06$, HPD: $[-0.02, 0.12]$) or \textsc{bigram retro (2PR)} (mode: $0.03$, HPD: $[-0.04, 0.10]$) language models 
-
-Interestingly, the models that performed less similarly to human behaviour are those for which \textipa{/u/}- and \textipa{/i/}-epenthesis was blocked after coronal consonants, since \textipa{/du/} and \textipa{/di/} are phonotactically illegal in Japanese and therefore do not appear in our corpus. Yet, as seen in Figure \ref{fig:parlato_per_all}, JP participants mostly reported experiencing \textipa{/u/}- and \textipa{/i/}-epenthesis on trials where $C_{1}$ was a coronal consonant. Similar to how ``none'' responses are blocked for all bigram models, acoustics are unable to counter the low diphone probability of \textipa{/du/} and \textipa{/di/}.
+% Interestingly, the models that performed less similarly to human behaviour are those for which \textipa{/u/}- and \textipa{/i/}-epenthesis was blocked after coronal consonants, since \textipa{/du/} and \textipa{/di/} are phonotactically illegal in Japanese and therefore do not appear in our corpus. Yet, as seen in Figure \ref{fig:parlato_per_all}, JP participants mostly reported experiencing \textipa{/u/}- and \textipa{/i/}-epenthesis on trials where $C_{1}$ was a coronal consonant. Similar to how ``none'' responses are blocked for all bigram models, acoustics are unable to counter the low diphone probability of \textipa{/du/} and \textipa{/di/}.
 
 \paragraph{Effect of coarticulation}
 
+Statistical analyses were performed with the R statistical software \cite{R-base}, using Markov chain Monte Carlo generalised linear mixed-models \cite{R-MCMCglmm, R-coda}. These Bayesian models sample coefficients from the posterior probability distribution conditioned on the data and given priors. We used priors that are standard for linear models. Model convergence was assessed by visual inspection of trace plots and the Gelman–Rubin convergence diagnostic \cite{gelman1992}, using eight chains with different initialisations. Effects were considered statistically significant if the 95\% highest posterior density (HPD) interval estimated for the coefficient of interest did not include zero. We report both the posterior mode and the 95\% HPD interval.  
+
+In order to assess the influence of $V_{1}$ and $V_{2}$ (henceforth: flanking vowels) on epenthetic vowel quality (/i/ or /u/), we chose as fixed effect for our statistical models \textsc{Number of Same Flanking Vowels} (\textsc{NSFV}; considered as a continuous variable with values 0, 1, or 2 instead of a factor with 3 levels, in order to reduce the number of model parameters and promote convergence). Due to the almost null variance and the consequent poor trace plot for the random intercept \textsc{Cluster}, we did not include it in the statistical models. Our response variable was the continuous variable \textsc{Posteriorgram}.\footnote{Responses by human participants and exemplar models were given by trial; therefore in previous analyses the response variable was binomial.}
+
 %\paragraph{/i/-epenthesis}
 The left panel of Figure \ref{fig:parl_hmm_iu} shows the posteriorgrams for \textipa{/i/}-epenthesis given by our ASR-based model with a ``null'' language model.
-The main effect of \textsc{NSFV} was significant (mode: $0.10$, HPD: $[0.01, 0.18]$). An increased number of \textipa{/i/} flanking vowels resulted in higher posteriorgrams for stimuli transcriptions with \textipa{/i/} epenthesis.
+The main effect of \textsc{NSFV} was significant (mode: $0.14$, HPD: $[0.06, 0.22]$). An increased number of \textipa{/i/} flanking vowels resulted in higher posteriorgrams for stimuli transcriptions with \textipa{/i/} epenthesis.
 
 \begin{figure}[H]
   \centering
-  \begin{overpic}[page=2, width=0.4\linewidth]{chapter03/parl_hmm_figs}\end{overpic}
+  \begin{overpic}[page=1, width=0.4\linewidth]{chapter03/parl_hmm_figs}\end{overpic}
   \hspace{1cm}
-  \begin{overpic}[page=3, width=0.4\linewidth]{chapter03/parl_hmm_figs}\end{overpic}
+  \begin{overpic}[page=2, width=0.4\linewidth]{chapter03/parl_hmm_figs}\end{overpic}
   \caption{\textit{Posteriorgrams for \textipa{/i/}-epenthesis (left) and \textipa{/u/}-epenthesis (right) obtained when decoding with a ``null'' language model. The box and whiskers plots display the distribution of posteriorgrams across experimental items, represented by individual dots.}}
   \label{fig:parl_hmm_iu}
 \end{figure}
 
 %\paragraph{/u/-epenthesis}
 The right panel of Figure \ref{fig:parl_hmm_iu} shows the posteriorgrams for \textipa{/u/}-epenthesis given by our ASR-based model with a ``null'' language model.
-The main effect of \textsc{NSFV} was not significant (mode: $0.04$, HPD: $[-0.02, 0.10]$). Therefore, an increased number of \textipa{/u/} flanking vowels did not result in significantly higher posteriorgrams for stimuli transcriptions with \textipa{/u/} epenthesis.
+The main effect of \textsc{NSFV} was not significant (mode: $0.03$, HPD: $[-0.03, 0.09]$). Therefore, an increased number of \textipa{/u/} flanking vowels did not result in significantly higher posteriorgrams for stimuli transcriptions with \textipa{/u/} epenthesis.
 
 \subsection{Discussion}
-
+{\color{red}[TODO]}
 %%% Probabilities
 % Was using the probability of 'p' or 'p' within a diphone a good choice for the probability of 'ahpa'? What are the alternatives (e.g., give a probability of 1, but weight by P(4 phone word) vs P(5 phone word)? Remember that, for the unigram P(ahpa) = P(ahxpa)/P(x) since P(ahxpa) = P(a) * P(h) * P(p) * P(a) * P(x)) 
+% Smoothing for unseen sequences?
 
 %%% Duration in ASR? [check topology]
 
