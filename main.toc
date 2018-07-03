@@ -71,18 +71,16 @@
 \contentsline {subsection}{\numberline {3.1.1}Corpora}{41}{subsection.3.1.1}
 \contentsline {paragraph}{Corpus of Spontaneous Japanese (CSJ)}{41}{section*.30}
 \contentsline {paragraph}{Korean Corpus of Spontaneous Speech (KCSS)}{42}{section*.31}
-\contentsline {paragraph}{Wall Street Journal - Read (WSJ)}{42}{section*.32}
+\contentsline {paragraph}{Wall Street Journal - Read (WSJ)}{43}{section*.32}
 \contentsline {subsection}{\numberline {3.1.2}Features}{43}{subsection.3.1.2}
 \contentsline {subsection}{\numberline {3.1.3}Acoustic model}{44}{subsection.3.1.3}
 \contentsline {subsubsection}{\numberline {3.1.3.1}Estimating Gaussian distributions}{45}{subsubsection.3.1.3.1}
-\contentsline {subsubsection}{\numberline {3.1.3.2}Adding Gaussian Mixture Models (GMM) into the mix}{45}{subsubsection.3.1.3.2}
+\contentsline {subsubsection}{\numberline {3.1.3.2}Adding Gaussian Mixture Models (GMM) into the mix}{46}{subsubsection.3.1.3.2}
 \contentsline {subsubsection}{\numberline {3.1.3.3}Modelling sequences with HMMs}{46}{subsubsection.3.1.3.3}
 \contentsline {subsubsection}{\numberline {3.1.3.4}Why not triphones?}{46}{subsubsection.3.1.3.4}
 \contentsline {subsection}{\numberline {3.1.4}Language models}{47}{subsection.3.1.4}
 \contentsline {subsection}{\numberline {3.1.5}Decoding}{48}{subsection.3.1.5}
 \contentsline {subsection}{\numberline {3.1.6}Scoring: Assessing native performance}{48}{subsection.3.1.6}
-\contentsline {subsubsection}{\numberline {3.1.6.1}Lexical decoding - \%WER}{49}{subsubsection.3.1.6.1}
-\contentsline {subsubsection}{\numberline {3.1.6.2}Phonetic decoding - \%PER}{49}{subsubsection.3.1.6.2}
 \contentsline {section}{\numberline {3.2}{\color {red}Investigating surface phonotactics}}{50}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Introduction}{50}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Experiment 1: {\color {red}m-/ahpa/}}{50}{subsection.3.2.2}
@@ -128,4 +126,4 @@
 \contentsline {chapter}{\numberline {4}General Discussion}{62}{chapter.4}
 \contentsline {paragraph}{Paradigm}{62}{section*.49}
 \contentsline {paragraph}{ASR system}{62}{section*.50}
-\contentsline {chapter}{\numberline {A}\ignorespaces Are words easier to learn from infant- than adult-directed speech? }{66}{appendix.A}
+\contentsline {chapter}{\numberline {A}\ignorespaces Are words easier to learn from infant- than adult-directed speech? }{67}{appendix.A}

@@ -27,6 +27,11 @@ Bombien, L., Winkelmann, R., and Scheffers, M. (2016).
 \newblock {\em wrassp: an R wrapper to the ASSP Library}.
 \newblock R package version 0.1.4.
 
+\bibitem[Chan and Lane, 2015]{chan2015}
+Chan, W. and Lane, I. (2015).
+\newblock Deep recurrent neural networks for acoustic modelling.
+\newblock {\em arXiv preprint arXiv:1504.01482}.
+
 \bibitem[Chi et~al., 2005]{chi2005}
 Chi, T., Ru, P., and Shamma, S.~A. (2005).
 \newblock Multiresolution spectrotemporal analysis of complex sounds.
@@ -149,6 +154,12 @@ Lenth, R.~V. (2016).
 \newblock Least-squares means: The {R} package {lsmeans}.
 \newblock {\em Journal of Statistical Software}, 69(1):1--33.
 
+\bibitem[Maekawa, 2003]{maekawa2003}
+Maekawa, K. (2003).
+\newblock Corpus of spontaneous japanese: Its design and evaluation.
+\newblock In {\em ISCA \& IEEE Workshop on Spontaneous Speech Processing and
+  Recognition}.
+
 \bibitem[Mattingley et~al., 2015]{mattingley2015}
 Mattingley, W., Hume, E., and Hall, K.~C. (2015).
 \newblock {The influence of preceding consonant on perceptual epenthesis in
@@ -166,6 +177,18 @@ Monahan, P.~J., Takahashi, E., Nakao, C., and Idsardi, W.~J. (2009).
 Nosofsky, R.~M. (1992).
 \newblock Similarity scaling and cognitive process models.
 \newblock {\em Annual review of Psychology}, 43(1):25--53.
+
+\bibitem[Panayotov et~al., 2015]{panayotov2015}
+Panayotov, V., Chen, G., Povey, D., and Khudanpur, S. (2015).
+\newblock Librispeech: an asr corpus based on public domain audio books.
+\newblock In {\em Acoustics, Speech and Signal Processing (ICASSP), 2015 IEEE
+  International Conference on}, pages 5206--5210. IEEE.
+
+\bibitem[Paul and Baker, 1992]{paul1992}
+Paul, D.~B. and Baker, J.~M. (1992).
+\newblock The design for the wall street journal-based csr corpus.
+\newblock In {\em Proceedings of the workshop on Speech and Natural Language},
+  pages 357--362. Association for Computational Linguistics.
 
 \bibitem[Peperkamp and Dupoux, 2003]{peperkamp2003}
 Peperkamp, S. and Dupoux, E. (2003).
@@ -205,6 +228,11 @@ Sakoe, H. and Chiba, S. (1978).
 \newblock {\em IEEE transactions on acoustics, speech, and signal processing},
   26(1):43--49.
 
+\bibitem[Saraclar, 2001]{saraclar2001}
+Saraclar, M. (2001).
+\newblock {\em Pronunciation modeling for conversational speech recognition}.
+\newblock The Johns Hopkins University.
+
 \bibitem[Schatz, 2016]{schatz2016}
 Schatz, T. (2016).
 \newblock {\em {ABX}-{Discriminability} {Measures} and {Applications}}.
@@ -236,5 +264,12 @@ Wilson, C., Davidson, L., and Martin, S. (2014).
 \newblock Effects of acoustic--phonetic detail on cross-language speech
   production.
 \newblock {\em Journal of Memory and Language}, 77:1--24.
+
+\bibitem[Yun et~al., 2015]{yun2015}
+Yun, W., Yoon, K., Park, S., Lee, J., Cho, S., Kang, D., Byun, K., Hahn, H.,
+  and Kim, J. (2015).
+\newblock The korean corpus of spontaneous speech.
+\newblock {\em Daegu: Industry-Academic Cooperation Foundation, Keimyung
+  University (Distributor)}.
 
 \end{thebibliography}

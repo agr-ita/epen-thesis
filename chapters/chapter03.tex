@@ -69,7 +69,7 @@ Our subset of the corpus contained $400,547$ utterances produced by $594$ speake
 
 \begin{table}[htb]
 \centering
-\caption{Datasets used for training and evaluating the Japanese ASR system.}
+\caption{Datasets used for training and evaluating the Japanese ASR system with the CSJ.}
 \label{tab:hmm_csj}
 \vspace{0.25cm}
 \begin{tabular}{rrrrrr}
@@ -91,7 +91,7 @@ The corpus contains $57,504$ utterances produced by $40$ speakers (as explained 
 
 \begin{table}[htb]
 \centering
-\caption{Datasets used for training and evaluating the Korean ASR system.}
+\caption{Datasets used for training and evaluating the Korean ASR system with the KCSS.}
 \label{tab:hmm_kcss}
 \vspace{0.25cm}
 \begin{tabular}{rrrrrr}
@@ -104,13 +104,13 @@ The corpus contains $57,504$ utterances produced by $40$ speakers (as explained 
 \end{table}
 
 \paragraph{Wall Street Journal - Read (WSJ)}
-The WSJ \cite{} is a corpus of both read and spontaneous American English.
-For our work, we only kept the read subset of the corpus, which consisted of {\color{red}professionally trained (?) journalists} reacorded while reading news articles. The recordings were not phonetically transcribed, as were the CSJ and KCSS. However, we had access to the news articles themselves, as well as to a dictionary which mapped the standard phonetic pronunciation of words in American English to the words in the articles.
+The WSJ \cite{paul1992} is a corpus of both read and spontaneous American English.
+For our work, we only kept the read subset of the corpus, which consisted of {\color{red}professionally trained journalists} recorded while reading news articles. The recordings were not phonetically transcribed, as were the CSJ and KCSS. However, we had access to the news articles themselves, as well as to a dictionary which mapped the standard phonetic pronunciation of words in American English to the words in the articles.
 In total, $338$ speakers {\color{red}($X$ female, $Y$ male)} uttered $71,037$ utterances, with an average of $210.2$ utterances per speaker. The division of the corpus across training, validation, and test sets is shown in Table \ref{tab:hmm_wsj}. 
 
 \begin{table}[htb]
 \centering
-\caption{Datasets used for training and evaluating the American English ASR system.}
+\caption{Datasets used for training and evaluating the American English ASR system with the WSJ corpus.}
 \label{tab:hmm_wsj}
 \vspace{0.25cm}
 \begin{tabular}{rrrrrr}
@@ -177,14 +177,11 @@ Please note that HMMs follow a Markovian process; the probability of a state onl
 $<$/OLD VERSION$>$}
 
 \subsubsection{Why not triphones?}
-If the reader is already familiar with ASR systems, they may expect us to go a step further and no longer treat phonemes as units (i.e., monophones) but, instead, handle triphones. For this latter representation, an independent three-state HMM would be built for each combination of three phonemes. For instance, there would no longer be an HMM for \textipa{/p/}, but we would have all context-dependent versions of this phoneme as individual HMMs (e.g., the triphone \textipa{/a+p+i/}, which is the phone \textipa{/p/} when preceded by \textipa{/a/} and followed by \textipa{/i/}).
-Traditionally, triphone-based HMM-based ASR systems perform better than monophone systems. However, this does not apply to our situation. Recall that we aim to use these speech recognition systems as models of nonnative speech perception, using tasks analogous to paradigms used in psycholinguistic experiments (namely, identification/forced-choice tasks). Importantly, we are focusing on modelling perceptual vowel epenthesis. This context excludes the use of triphones for the following reasons:
-\begin{enumerate}
-\item First of all, by definition, our ASR systems will have to decode speech that does not follow native phonotactics. Decoding such stimuli requires the existence of triphones corresponding to the input, yet the model will have never encountered such triphones in the training data. While this situation might seem appealing, one must consider the fact that the ASR system \textit{will attempt to account for said triphones} during decoding in spite of the lack of data. Importantly, poorly estimated triphones (e.g., \textipa{/a+h+p/}, when decoding \textipa{/ahpa/}) will be put up against well-estimated triphones (e.g., \textipa{/a+h+a/}) during the forced-choice tasks. The well-estimated triphones might simply be preferred as transcriptions over poorly-estimated ones for this reason alone, irrespective of the actual acoustic match between the stimuli and the phoneme models.
-{\color{red}  \item Secondly, our tasks consist of phonetic labelling. It has been shown that monophone models are able to perform well in this context relative to triphones, as long as the number of Gaussians available to the model is increased {\color{red}\cite{saraclar2001}}. As shown in Figure \ref{fig:hmm_gaussians}, the performance of our models increased (i.e., error decreased) when increasing the number of total Gaussians from the Kaldi default of 1000 to 6000, which would average to approximately 50 Gaussians per state for a language with an inventory of 40 phonemes.}   
-  \end{enumerate}
+If the reader is already familiar with ASR systems, they may expect us to go a step further and no longer treat phonemes as units for the HMMs (i.e., monophone acoustic models) but, instead, use context-dependent triphones. In this latter representation, an independent three-state HMM is built for each phoneme within a phonemic context. With some simplifications, this equates to no longer having an HMM for the phoneme \textipa{/p/}, but having all context-dependent versions of this phoneme as individual HMMs (e.g., the triphone \textipa{/p$_{a\_i}$/}, which is the phone \textipa{/p/} when preceded by \textipa{/a/} and followed by \textipa{/i/}).
+Traditionally, triphone-based HMM-based ASR systems perform better than monophone systems. However, these more complex models are inappropriate for our experiments. Recall that we aim to use these speech recognition systems as models of nonnative speech perception, using tasks analogous to paradigms used in psycholinguistic experiments (namely, identification/forced-choice tasks). Importantly, we are focusing on modelling perceptual vowel epenthesis. This situation excludes the use of triphones because, by definition, our ASR systems will have to decode speech that does not follow native phonotactics. Decoding such stimuli implies the existence of triphones corresponding to the input, yet the model will have never encountered such triphones in the training data. While this situation might seem analogous to what listeners may experience, one must consider the fact that the ASR system \textit{will attempt to account for said triphones} during decoding in spite of the lack of data. Importantly, poorly estimated triphones (e.g., \textipa{/h$_{a\_p}$/}, when decoding \textipa{/ahpa/}) will be put up against well-estimated triphones (e.g., \textipa{/h$_{a\_a}$/}) during the forced-choice tasks. The well-estimated triphones might simply be preferred as transcriptions over poorly-estimated ones for this reason alone, irrespective of the actual acoustic match between the stimuli and phoneme models.
+In order to increase the performance of monophone models at phonetic labelling tasks such as ours, it is possible to increase the number of total Gaussians available to the model \cite{saraclar2001}. 
 
-\subsection{Language models}
+\subsection{Language models} \label{hmm_lm}
 As shown in Figure \ref{fig:hmm_architecture}, the acoustic model is combined with two other components in order to decode speech: the Lexicon and the Language Model (LM).
 
 The lexicon is, put simply, a pronunciation dictionary. It links the acoustic model (i.e., phoneme-level HMMs) with the language model, which is at the word level. For each word, we indicate in the dictionary the sequence of phonemes that constitute it. It is also possible to account for multiple pronunciations of a word due to dialectal differences (e.g., ``tomato'' pronounced as \textipa{/t@mA:t@U/} or \textipa{/t@meIRoU/}), phonological phenomena (e.g., homoorganic assimilation: ``handbag'' \textipa{/h\ae ndb@g/} $\rightarrow$ \textipa{/h\ae mb@g/}), or supresegmental information (e.g., stress contrasts: ``record'' \textipa{/'rekord/} (noun) vs. \textipa{/re'kord/} (verb)).
@@ -217,26 +214,25 @@ The output of the decoding step is not a single transcription but what is called
 \begin{figure}[htb]
 \centering
 \includegraphics[trim={0 0 0 0}, clip, width=0.8\linewidth]{chapter03/ch3_misc_plotting/figures/plot_hmm_evaluations.pdf}
-\caption{\textit{Changes in word error rate (\%WER) and phone error rate (\%PER) following variation of the number of total Gaussians allocated to monophone acoustic models (circles). The error rates obtained with a triphone model are included as comparison (triangles). Scores correspond to decoding performed on the validation set. {\color{red}[TODO]: Add WSJ?}}}
+\caption{\textit{Changes in word error rate (\%WER) and phone error rate (\%PER) following variation of the number of total Gaussians allocated to monophone acoustic models (circles). The error rates obtained with a triphone model with $15,000$ Gaussians are included as comparison (triangles). Scores correspond to decoding performed on the validation set. {\color{red}[TODO]: Add WSJ if enough time to add [art2ac]}}}
 \label{fig:hmm_gaussians}
 \end{figure}
 
-We tested the decoding performance on the validation set of AMs with total number of Gaussians going from 1000 to 15000, numbers which correspond to the default number of Gaussians used for training, respectively, non-speaker adapted monophone and triphone models in Kaldi. 
-As seen in Figure \ref{fig:hmm_gaussians}, we find that the models with the highest amount of Gaussians (i.e., 15000) give the best performance for monophone models, both at the lexical (\%WER, word error rate) and phonetic (\%PER, phone error rate) levels.
-We did not pursue increasing the number of Gaussians even further, as performance gain was reaching an asymptote at this point and adding more Gaussians would have increased the computational demands for each experiment. Additionally, we expect that adding ``too many'' Gaussians would have lead to overfitting of the models to the training set. Here we provide the evaluation of the ASR systems on the test sets ($15\%$ of the corpora), at the lexical level (i.e., using a bigram word LM) and at the phonetic level (i.e., using a unigram phone LM).  
 
-%   corpus model totgauss   set   WER   PER
-%6     CSJ  mono       15  test 37.48 37.96
-%12   KCSS  mono       15  test 73.35 50.70
+We tested the decoding performance on the validation set of AMs with total number of Gaussians going from $1,000$ to $15,000$, numbers which correspond to the default number of Gaussians used for training, respectively, non-speaker adapted monophone and triphone models in Kaldi.
+In order to do so, we used the language models described in section \ref{hmm_lm}, namely a word bigram LM and a phone unigram LM, which were used to obtain word error rates (\%WER) and phone error rates (\%PER), respectively. Note that while we provide word bigram WER\% as a reference value to compare with existing speech recognition models, our main focus is on PER\%. Indeed, we will use our models in paradigms involving phonetic decoding of non-native nonwords; the phone unigram PER\% evaluation gives us an insight into how well our ASR systems can do phonetic decoding on native (non)words. 
 
-\subsubsection{Lexical decoding - \%WER}
-{\color{red}[TODO] (models running)}
+As seen in Figure \ref{fig:hmm_gaussians}, we find that the performance of our models increased (i.e., error rates decreased) when increasing the number of total Gaussians from the Kaldi default of $1,000$ to $15,000$, which would average to approximately $125$ Gaussians per state for a language with an inventory of 35 phonemes\footnote{Phoneme counts: CSJ: 37, KCSS: 36, WSJ: 39}.   
+Therefore, the acoustic models with the highest amount of Gaussians (i.e., $15,000$) give the best performance for monophone models, both at the lexical (\%WER) and phonetic (\%PER) levels of decoding.
+We did not pursue increasing the number of Gaussians even further, as performance gain was reaching an asymptote at this point and adding more Gaussians would have increased the computational demands for each experiment. Additionally, we expect that adding ``too many'' Gaussians might have lead to overfitting of the models to the training set.
+As expected, triphone models performed better than monophone models, in spite of having the same amount of total Gaussians than our best monophone models (CSJ: $37.96\%$ monophone \textit{vs.} $25.33\%$ triphone; KCSS: $50.70\%$ monophone \textit{vs.} $38.42\%$ triphone)\footnote{As a reference, in 2015 some state-of-the-art speaker adapted HMM-GMM systems trained on 82 hours of the WSJ achieved $6.26\%$ WER \cite{panayotov2015} and $5.39\%$ WER \cite{chan2015} on the WSJ eval'92 dataset. Contemporary deep neural network-based systems achieved $3.47\%$ WER on the same dataset \cite{chan2015}.}. Later in this chapter we will discuss how it might be possible to increase acoustic model performance in future work, without having recourse to triphone HMMs, which as said previously are not appropriate for our experiments.  
+
+Concerning the test set (i.e., $15\%$ of the corpora), we find \%WER comparable to those obtained for the validation set (CSJ: $37.48\%$ on test, $37.64\%$ on validation; KCSS: $73.35\%$ on test, $74.03\%$ on validation), and similarly for \%PER (CSJ: $37.96\%$ on test, $38.07\%$ on validation; KCSS: $50.70\%$ on test and validation).
+Since the validation and test sets contain utterances from the same speakers, this information does not allow us to evaluate our models' sensitivity when decoding data from speakers not used in the training data (recall that none of our models have any speaker adaptation; only CMVN is applied when processing the features). However, the fact that validation and test set scores are similar indicates that, while rudimentary, our acoustic models give stable performances when confronted with datasets with structurally different lexical exemplars and acoustically different phonetic exemplars.   
+
 %%% Rudimentary but good performance 
 
-\subsubsection{Phonetic decoding - \%PER}
-{\color{red}[TODO] (models running)}
-
-%%%%%%%%%%%%
+%%%%%%%%%%%% 
 % Parlato2 %
 %%%%%%%%%%%%
 %\section{{\color{red}Parlato-hmm}} \label{3-parlato-hmm} [Merged into SurfPhono]

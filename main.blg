@@ -4,50 +4,45 @@ The top-level auxiliary file: main.aux
 The style file: apalike.bst
 Database file #1: main.bib
 Warning--I didn't find a database entry for "["
-Warning--I didn't find a database entry for "maekawa2003"
-Warning--I didn't find a database entry for "yun2015"
-Warning--I didn't find a database entry for "saraclar2001"
-Warning--I didn't find a database entry for "mocha"
-Warning--I didn't find a database entry for "richmond2011"
-You've used 41 entries,
+You've used 47 entries,
             1935 wiz_defined-function locations,
-            748 strings with 10960 characters,
-and the built_in function-call counts, 17130 in all, are:
-= -- 1700
-> -- 709
-< -- 27
-+ -- 246
-- -- 238
-* -- 1488
-:= -- 2954
-add.period$ -- 126
-call.type$ -- 41
-change.case$ -- 317
-chr.to.int$ -- 41
-cite$ -- 41
-duplicate$ -- 634
-empty$ -- 1190
-format.name$ -- 296
-if$ -- 3340
+            770 strings with 12030 characters,
+and the built_in function-call counts, 19706 in all, are:
+= -- 1952
+> -- 820
+< -- 33
++ -- 288
+- -- 276
+* -- 1679
+:= -- 3385
+add.period$ -- 146
+call.type$ -- 47
+change.case$ -- 365
+chr.to.int$ -- 47
+cite$ -- 47
+duplicate$ -- 748
+empty$ -- 1369
+format.name$ -- 344
+if$ -- 3865
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 39
-newline$ -- 209
-num.names$ -- 125
-pop$ -- 262
+missing$ -- 46
+newline$ -- 239
+num.names$ -- 143
+pop$ -- 321
 preamble$ -- 1
-purify$ -- 321
+purify$ -- 370
 quote$ -- 0
-skip$ -- 484
+skip$ -- 570
 stack$ -- 0
-substring$ -- 1274
-swap$ -- 89
-text.length$ -- 6
+substring$ -- 1422
+swap$ -- 115
+text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 244
+type$ -- 278
 warning$ -- 0
-while$ -- 151
+while$ -- 169
 width$ -- 0
-write$ -- 536
-(There were 6 warnings)
+write$ -- 612
+(There was 1 warning)
