@@ -27,7 +27,7 @@
 \BOOKMARK [2][-]{subsection.3.1.1}{Corpora}{section.3.1}% 27
 \BOOKMARK [2][-]{subsection.3.1.2}{Features}{section.3.1}% 28
 \BOOKMARK [2][-]{subsection.3.1.3}{Acoustic model}{section.3.1}% 29
-\BOOKMARK [2][-]{subsection.3.1.4}{Language models}{section.3.1}% 30
+\BOOKMARK [2][-]{subsection.3.1.4}{Lexicon \046 language models}{section.3.1}% 30
 \BOOKMARK [2][-]{subsection.3.1.5}{Decoding}{section.3.1}% 31
 \BOOKMARK [2][-]{subsection.3.1.6}{Scoring: Assessing native performance}{section.3.1}% 32
 \BOOKMARK [1][-]{section.3.2}{redInvestigating surface phonotactics}{chapter.3}% 33
