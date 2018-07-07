@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.27)  5 JUL 2018 21:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.27)  7 JUL 2018 03:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1679,18 +1679,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [48]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 223.
+(hyperref)                removing `\@ifnextchar' on input line 245.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 238.
+(hyperref)                removing `\@ifnextchar' on input line 260.
 
 <images/chapter03/m-ahpa_Gfst.pdf, id=1263, 614.295pt x 207.77625pt>
 File: images/chapter03/m-ahpa_Gfst.pdf Graphic file (type pdf)
 
 <use images/chapter03/m-ahpa_Gfst.pdf>
-Package pdftex.def Info: images/chapter03/m-ahpa_Gfst.pdf used on input line 24
-8.
+Package pdftex.def Info: images/chapter03/m-ahpa_Gfst.pdf used on input line 27
+0.
 (pdftex.def)             Requested size: 341.43436pt x 115.4852pt.
 
 
@@ -1700,7 +1700,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [49 <./images/chapter03/m-ahpa_Gfst.pdf>]
-Overfull \hbox (6.09016pt too wide) in paragraph at lines 257--258
+Overfull \hbox (6.09016pt too wide) in paragraph at lines 279--280
 []\OT1/cmr/m/n/10.95 A phone-unigram LM, which im-plies that lis-ten-ers do not
  take neigh-bour-ing phonemes
  []
@@ -1710,17 +1710,17 @@ File: images/chapter03/m-ahpa_praat_ah0apa.pdf Graphic file (type pdf)
 
 <use images/chapter03/m-ahpa_praat_ah0apa.pdf>
 Package pdftex.def Info: images/chapter03/m-ahpa_praat_ah0apa.pdf used on input
- line 266.
+ line 288.
 (pdftex.def)             Requested size: 298.75262pt x 345.4352pt.
 
-Overfull \hbox (49.65704pt too wide) in paragraph at lines 273--275
+Overfull \hbox (49.65704pt too wide) in paragraph at lines 295--297
 []\OT1/cmr/m/n/10.95 As such, for each item, we ob-tained a six-dimensional vec
 -tor $\OML/cmm/m/it/10.95 ident[] \OT1/cmr/m/n/10.95 = [\OML/cmm/m/it/10.95 p[]
 ; p[]; p[]; p[]; p[]; p[]\OT1/cmr/m/n/10.95 ]$,
  []
 
 
-Overfull \hbox (1.85632pt too wide) in paragraph at lines 273--275
+Overfull \hbox (1.85632pt too wide) in paragraph at lines 295--297
 \OT1/cmr/m/n/10.95 pos-te-ri-or-grams). We can de-fine the hu-man equiv-a-lent 
 $\OML/cmm/m/it/10.95 ident[] \OT1/cmr/m/n/10.95 = [\OML/cmm/m/it/10.95 p[]; p[]
 ; p[]; p[]; p[]; p[]\OT1/cmr/m/n/10.95 ]$,
@@ -1751,19 +1751,19 @@ File: images/chapter03/m-ahpa_figures.pdf Graphic file (type pdf)
 
 <use images/chapter03/m-ahpa_figures.pdf>
 Package pdftex.def Info: images/chapter03/m-ahpa_figures.pdf used on input line
- 331.
+ 353.
 (pdftex.def)             Requested size: 426.79134pt x 232.80154pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 345.
+(hyperref)                removing `\@ifnextchar' on input line 367.
 
 <images/chapter03/parlato_hmm_Gfst.pdf, id=1336, 614.295pt x 197.73875pt>
 File: images/chapter03/parlato_hmm_Gfst.pdf Graphic file (type pdf)
 
 <use images/chapter03/parlato_hmm_Gfst.pdf>
 Package pdftex.def Info: images/chapter03/parlato_hmm_Gfst.pdf used on input li
-ne 356.
+ne 378.
 (pdftex.def)             Requested size: 341.43436pt x 109.90622pt.
 
 <images/chapter03/parlato-hmm_praat_agni.pdf, id=1338, 433.62pt x 614.295pt>
@@ -1771,7 +1771,7 @@ File: images/chapter03/parlato-hmm_praat_agni.pdf Graphic file (type pdf)
 
 <use images/chapter03/parlato-hmm_praat_agni.pdf>
 Package pdftex.def Info: images/chapter03/parlato-hmm_praat_agni.pdf used on in
-put line 367.
+put line 389.
 (pdftex.def)             Requested size: 298.75262pt x 344.83795pt.
 
 
@@ -1801,7 +1801,7 @@ File: images/chapter03/parlato-lms_figs.pdf Graphic file (type pdf)
 
 <use images/chapter03/parlato-lms_figs.pdf, page 1>
 Package pdftex.def Info: images/chapter03/parlato-lms_figs.pdf, page1 used on i
-nput line 420.
+nput line 442.
 (pdftex.def)             Requested size: 341.43436pt x 569.08514pt.
 
 
@@ -1811,7 +1811,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [55]
-Overfull \hbox (2.09415pt too wide) in paragraph at lines 486--487
+Overfull \hbox (2.09415pt too wide) in paragraph at lines 508--509
 []\OT1/cmr/m/n/10.95 In or-der to as-sess the in-flu-ence of $\OML/cmm/m/it/10.
 95 V[]$ \OT1/cmr/m/n/10.95 and $\OML/cmm/m/it/10.95 V[]$ \OT1/cmr/m/n/10.95 (he
 nce-forth: flank-ing vow-els) on epenthetic
@@ -1822,7 +1822,7 @@ File: images/chapter03/parl_hmm_figs.pdf Graphic file (type pdf)
 
 <use images/chapter03/parl_hmm_figs.pdf, page 1>
 Package pdftex.def Info: images/chapter03/parl_hmm_figs.pdf, page1 used on inpu
-t line 494.
+t line 516.
 (pdftex.def)             Requested size: 170.71393pt x 146.3272pt.
 
 <images/chapter03/parl_hmm_figs.pdf, id=1415, page=2, 252.945pt x 216.81pt>
@@ -1830,7 +1830,7 @@ File: images/chapter03/parl_hmm_figs.pdf Graphic file (type pdf)
 
 <use images/chapter03/parl_hmm_figs.pdf, page 2>
 Package pdftex.def Info: images/chapter03/parl_hmm_figs.pdf, page2 used on inpu
-t line 496.
+t line 518.
 (pdftex.def)             Requested size: 170.71393pt x 146.3272pt.
 
 
@@ -1857,7 +1857,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [58]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 533.
+(hyperref)                removing `\@ifnextchar' on input line 555.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1868,7 +1868,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [59]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 570.
+(hyperref)                removing `\@ifnextchar' on input line 592.
 
 )
 
@@ -3090,12 +3090,12 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 100.
  )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 241 ({)
+### simple group (level 1) entered at line 263 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
  9995 strings out of 495020
  148334 string characters out of 6181324
- 250080 words of memory out of 5000000
+ 250105 words of memory out of 5000000
  12653 multiletter control sequences out of 15000+600000
  18417 words of font info for 60 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -3170,7 +3170,7 @@ re/qtmr.pfb></usr/share/texmf/fonts/type1/fkr/tipa/tipa10.pfb></usr/share/texmf
 /fonts/type1/fkr/tipa/tipa12.pfb></usr/share/texmf/fonts/type1/fkr/tipa/tipa8.p
 fb></usr/share/texmf/fonts/type1/fkr/tipa/tipasl10.pfb></usr/share/texmf/fonts/
 type1/fkr/tipa/tipasl12.pfb>
-Output written on main.pdf (105 pages, 3529241 bytes).
+Output written on main.pdf (105 pages, 3529510 bytes).
 PDF statistics:
  1895 PDF objects out of 2073 (max. 8388607)
  1550 compressed objects within 16 object streams
