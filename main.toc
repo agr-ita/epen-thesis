@@ -88,40 +88,39 @@
 \contentsline {subsubsection}{\numberline {3.2.2.2}Quantitative analysis}{50}{subsubsection.3.2.2.2}
 \contentsline {subsubsection}{\numberline {3.2.2.3}Qualitative analyses}{52}{subsubsection.3.2.2.3}
 \contentsline {paragraph}{Identification accuracy}{52}{section*.36}
-\contentsline {paragraph}{Control items: Default /u/-epenthesis}{53}{section*.37}
-\contentsline {paragraph}{Control items: Vowel copy}{53}{section*.38}
-\contentsline {paragraph}{Test items: Mutual Information}{53}{section*.39}
-\contentsline {subsection}{\numberline {3.2.3}Experiment 2: {\color {red}Parlato-lms}}{53}{subsection.3.2.3}
-\contentsline {subsubsection}{\numberline {3.2.3.1}Methods}{53}{subsubsection.3.2.3.1}
-\contentsline {paragraph}{Stimuli}{53}{section*.40}
-\contentsline {paragraph}{Language models}{53}{section*.41}
-\contentsline {paragraph}{Identification task simulation}{53}{section*.42}
-\contentsline {subsubsection}{\numberline {3.2.3.2}Results: Quantitative analysis}{55}{subsubsection.3.2.3.2}
-\contentsline {subsubsection}{\numberline {3.2.3.3}Results: Qualitative analysis}{55}{subsubsection.3.2.3.3}
-\contentsline {paragraph}{Default vowel}{55}{figure.3.9}
-\contentsline {paragraph}{Effect of coarticulation}{55}{section*.44}
-\contentsline {subsection}{\numberline {3.2.4}Discussion}{58}{subsection.3.2.4}
-\contentsline {section}{\numberline {3.3}{\color {red}Do we need to go deeper? Are surface phonotactics enough?}}{59}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Introduction}{59}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Methods}{59}{subsection.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.2.1}Stimuli}{59}{subsubsection.3.3.2.1}
-\contentsline {paragraph}{Language models}{59}{section*.45}
-\contentsline {paragraph}{Identification task simulation}{59}{section*.46}
-\contentsline {subsubsection}{\numberline {3.3.2.2}Data analysis}{59}{subsubsection.3.3.2.2}
-\contentsline {subsection}{\numberline {3.3.3}Results}{59}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}Discussion}{59}{subsection.3.3.4}
-\contentsline {section}{\numberline {3.4}{\color {red}[art2ac] Perceptual experiment}}{60}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Introduction}{60}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Methods}{60}{subsection.3.4.2}
-\contentsline {subsubsection}{\numberline {3.4.2.1}Stimuli}{60}{subsubsection.3.4.2.1}
-\contentsline {paragraph}{Language models}{60}{section*.47}
-\contentsline {paragraph}{Identification task simulation}{60}{section*.48}
-\contentsline {subsubsection}{\numberline {3.4.2.2}Data analysis}{60}{subsubsection.3.4.2.2}
-\contentsline {subsection}{\numberline {3.4.3}Results}{60}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}Discussion}{60}{subsection.3.4.4}
-\contentsline {section}{\numberline {3.5}Conclusions}{60}{section.3.5}
-\contentsline {chapter}{\numberline {4}General Discussion}{61}{chapter.4}
-\contentsline {paragraph}{Paradigm}{61}{section*.49}
-\contentsline {paragraph}{ASR system}{61}{section*.50}
-\contentsline {paragraph}{Quantitative approach}{61}{section*.51}
-\contentsline {chapter}{\numberline {A}\ignorespaces Are words easier to learn from infant- than adult-directed speech? }{66}{appendix.A}
+\contentsline {paragraph}{Control items}{53}{section*.37}
+\contentsline {paragraph}{Test items}{54}{section*.38}
+\contentsline {subsection}{\numberline {3.2.3}Experiment 2: {\color {red}Parlato-lms}}{54}{subsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.3.1}Methods}{54}{subsubsection.3.2.3.1}
+\contentsline {paragraph}{Stimuli}{54}{section*.39}
+\contentsline {paragraph}{Language models}{55}{section*.40}
+\contentsline {paragraph}{Identification task simulation}{55}{section*.41}
+\contentsline {subsubsection}{\numberline {3.2.3.2}Results: Quantitative analysis}{57}{subsubsection.3.2.3.2}
+\contentsline {subsubsection}{\numberline {3.2.3.3}Results: Qualitative analysis}{57}{subsubsection.3.2.3.3}
+\contentsline {paragraph}{Default vowel}{57}{figure.3.12}
+\contentsline {paragraph}{Effect of coarticulation}{57}{section*.43}
+\contentsline {subsection}{\numberline {3.2.4}Discussion}{59}{subsection.3.2.4}
+\contentsline {section}{\numberline {3.3}{\color {red}Do we need to go deeper? Are surface phonotactics enough?}}{60}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Introduction}{60}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Methods}{60}{subsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.2.1}Stimuli}{60}{subsubsection.3.3.2.1}
+\contentsline {paragraph}{Language models}{60}{section*.44}
+\contentsline {paragraph}{Identification task simulation}{60}{section*.45}
+\contentsline {subsubsection}{\numberline {3.3.2.2}Data analysis}{60}{subsubsection.3.3.2.2}
+\contentsline {subsection}{\numberline {3.3.3}Results}{60}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Discussion}{60}{subsection.3.3.4}
+\contentsline {section}{\numberline {3.4}{\color {red}[art2ac] Perceptual experiment}}{61}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Introduction}{61}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Methods}{61}{subsection.3.4.2}
+\contentsline {subsubsection}{\numberline {3.4.2.1}Stimuli}{61}{subsubsection.3.4.2.1}
+\contentsline {paragraph}{Language models}{61}{section*.46}
+\contentsline {paragraph}{Identification task simulation}{61}{section*.47}
+\contentsline {subsubsection}{\numberline {3.4.2.2}Data analysis}{61}{subsubsection.3.4.2.2}
+\contentsline {subsection}{\numberline {3.4.3}Results}{61}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Discussion}{61}{subsection.3.4.4}
+\contentsline {section}{\numberline {3.5}Conclusions}{61}{section.3.5}
+\contentsline {chapter}{\numberline {4}General Discussion}{62}{chapter.4}
+\contentsline {paragraph}{Paradigm}{62}{section*.48}
+\contentsline {paragraph}{ASR system}{62}{section*.49}
+\contentsline {paragraph}{Quantitative approach}{62}{section*.50}
+\contentsline {chapter}{\numberline {A}\ignorespaces Are words easier to learn from infant- than adult-directed speech? }{67}{appendix.A}

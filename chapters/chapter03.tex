@@ -343,11 +343,6 @@ As shown in Table \ref{tab:m-ahpa-cor_diff-nonone}, while the difference between
 \paragraph{Identification accuracy}
 Using the set of filler items such as \textipa{/ahapa/} and \textipa{/okipo/} (i.e., spliced items with a full vowel between $C_1$ and $C_2$), we can assess identification accuracy relative to our item labels. Indeed, recall that while our phonetically-trained speakers were instructed to read items following ``standard'' IPA pronunciations, it is possible for our human participants to not perceive the intended vowel categories due to adaptation processes (e.g., misperceiving \textipa{/u/}, which is not realised as \textipa{[u]} but as \textipa{[W]} in Japanese), and/or due to speaker idiosyncrasies.
 
-Overall, human participants identified the correct intended vowel category in $79.5\%$ of the trials. As can be seen in Figure \ref{fig:m-ahpa_fV_acc}, this was mostly due to confusions between the intended \textipa{/o/} and \textipa{/u/} categories, with msot errors being \textipa{/u/} being identified as \textipa{/o/}.
-Consistent with our correlation analyses, the \textsc{null} LM gave the highest accuracy out of all models (accuracy: $74\%$), followed by the \textsc{bigram retro} (accuracy: $72.6\%$), the \textsc{unigram} (accuracy: $72.5\%$), the \textsc{bigram online} (accuracy: $72.6\%$), and finally the \textsc{bigram batch} LM (accuracy: $68.7\%$). 
-As seen in Figure \ref{fig:m-ahpa_fV_acc}, like human participants, the models showed difficulty categorising \textipa{/u/} items as such; in particular, these were almost always classified as exemplars of \textipa{/o/} when $C_2 = \textipa{/h/}$. However, unlike human participants, models misperceived \textipa{/e/} as \textipa{/i/}. This misperception appears to be worse for the \textsc{bigram online} and \textsc{bigram batch} language models.
-In sum, while the accuracy rates for the models were close to that of humans, we saw that the models showed not only quantitative but also qualitative differences in their identification of non-native full vowels, in comparison with human participants. 
-
 \begin{figure}[htb]
 \centering
 \includegraphics[width=1\linewidth]{chapter03/m-ahpa_figures.pdf}
@@ -355,14 +350,49 @@ In sum, while the accuracy rates for the models were close to that of humans, we
 \label{fig:m-ahpa_fV_acc}
 \end{figure}
 
-\paragraph{Control items: Default /u/-epenthesis}
+Overall, human participants identified the correct intended vowel category in $79.5\%$ of the trials. As can be seen in Figure \ref{fig:m-ahpa_fV_acc}, this was mostly due to confusions between the intended \textipa{/o/} and \textipa{/u/} categories, with most errors being \textipa{/u/} being identified as \textipa{/o/}.
+Consistent with our correlation analyses, the \textsc{null} LM gave the highest accuracy out of all models (accuracy: $74\%$), followed by the \textsc{bigram retro} (accuracy: $72.6\%$), the \textsc{unigram} (accuracy: $72.5\%$), the \textsc{bigram online} (accuracy: $72.6\%$), and finally the \textsc{bigram batch} LM (accuracy: $68.7\%$). 
+As seen in Figure \ref{fig:m-ahpa_fV_acc}, like human participants, the models showed difficulty categorising \textipa{/u/} items as such; in particular, these were almost always classified as exemplars of \textipa{/o/} when $C_2 = \textipa{/h/}$. However, unlike human participants, models misperceived \textipa{/e/} as \textipa{/i/}. This misperception appears to be worse for the \textsc{bigram online} and \textsc{bigram batch} language models.
+In sum, while the accuracy rates for the models were close to that of humans, we saw that the models showed not only quantitative but also qualitative differences in their identification of non-native full vowels, in comparison with human participants. Below we continue our qualitative analyses on what was determined to be the best model according to the correlation analyses and the filler item accuracy, namely the ASR system with a \textsc{null} LM.  
+
+\paragraph{Control items}
+Human participants experienced vowel epenthesis in $56\%$ (\textipa{/hp/}: $52\%$; \textipa{/kp/}: $61\%$)\footnote{Note that since posteriorgrams are computed by weighting items from all three speakers are equally, values reported in this section might differ slightly from those in section \ref{2-ahpa}. Indeed, due to how data was cleaned in section \ref{2-ahpa}, some trials were removed and the number of trials per item per speaker might have differed in some cases. In order to ensure that human and model data are comparable, we re-do statistical analyses of human data when necessary and report the resulting coefficients.} of control items in which the flanking vowel and coarticulation are of the same quality. The \textsc{null LM} gave an output of $68\%$ epenthesis, with $72\%$ and $65\%$ epenthesis for \textipa{/hp/} and \textipa{/kp/}, respectively. As such, the model gave a higher percentage of epenthesis for \textipa{/hp/} clusters compared to \textipa{/kp/}clusters, while the opposite was true for humans.
+
+Now we focus on epenthetic vowel quality, meaning that we perform analyses after removing ``none'' responses and re-normalising posteriorgrams. We find that, like humans (\textipa{/hp/}: $44\%$; \textipa{/kp/}: $87\%$; total: $66\%$), the model gave lower percentages of default \textipa{/u/}-epenthesis for \textipa{/hp/} ($47\%$) than \textipa{/kp/} ($65\%$) clusters (total: $56\%$). However, this difference is not as marked as it is for humans. Recall that in section \ref{2-ahpa} we found that humans experiences significantly more default \textipa{/u/}-epenthesis for \textipa{/kp/} clusters, while experiencing significantly more vowel copy epenthesis for \textipa{/hp/} clusters. These patterns of responses mirrored loanword data. Do we find these effects in the output of our model? 
+
+We first examined possible effects of consonant cluster on default \textipa{/u/}-epenthesis by using the R statistical software \cite{R-base}, using Markov chain Monte Carlo generalised linear mixed-models \cite{R-MCMCglmm, R-coda}. These Bayesian models sample coefficients from the posterior probability distribution conditioned on the data and given priors. We used priors that are standard for linear models. Model convergence was assessed by visual inspection of trace plots and the Gelman–Rubin convergence diagnostic \cite{gelman1992}, using eight chains with different initialisations. Effects were considered statistically significant if the 95\% highest posterior density (HPD) interval estimated for the coefficient of interest did not include zero. We report both the posterior mode and the 95\% HPD interval.  
+
+The left panel of Figure \ref{fig:m-ahpa_ctrl} shows the posteriograms of \textipa{/u/}-epenthesis for humans and all models. For the ASR system with the null LM, we assessed the variation of the continuous response variable ``u'' response \textsc{Posteriorgram} that was caused by the fixed effect \textsc{Consonant} cluster (\textipa{/kp/} \textit{vs.} \textipa{/hp/}; contrast coded with deviance coding).
+We initially included random intercepts for \textsc{Speaker} and \textsc{Item}, as well as a random slope for \textsc{Speaker} on \textsc{Consonant}. However, these were removed as their addition caused the models to be singular (estimated null variances), with consequently poor trace plots.
+We found the main effect of \textsc{Consonant} to be significant (mode: $-0.19$, HPD: $[-0.29,-0.07]$), meaning that as for humans (mode: $-0.42$, HPD: $[-0.61,-0.26]$), the model gave significantly more \textipa{/u/}-epenthesis for \textipa{/hp/}- than \textipa{/kp/}-clusters. However, as evidenced by the statistical model coefficients, the magnitude of the effect is larger for humans than for the model.  
+
+\begin{figure}[htb]
+\centering
+\includegraphics[page=8, width=1\linewidth]{chapter03/m-ahpa_figures.pdf}
+\caption{\textit{{\color{red}TODO}}}
+\label{fig:m-ahpa_ctrl}
+\end{figure}
+
+Turning to vowel copy epenthesis in control items for which the flanking vowel was not \textipa{/u/}, we used the same statistical models but with copy vowel \textsc{Posteriorgram} as the continuous response variable. For instance, for the item \textipa{/ek$_{e}$pe/}, this was the posteriorgram for the ``e'' response. The distribution of posteriorgrams for humans and all models is shown in the right panel of Figure \ref{fig:m-ahpa_ctrl}.
+While there was a trend in the same direction for the null LM, namely higher percentages of vowel copy for \textipa{/hp/}- than \textipa{/kp/}-clusters, we did not find a significant main effect of \textsc{Consonant} for the model (mode: $0.11$, HPD: $[-0.02, 0.24]$) as we did for humans (mode: $0.39$, HPD: $[0.20, 0.58]$). 
+
+\paragraph{Test items}
 {\color{red}[TODO]}
 
-\paragraph{Control items: Vowel copy}
-{\color{red}[TODO]}
+\begin{figure}[htb!]
+\centering
+\includegraphics[page=5, width=0.75\linewidth]{chapter03/m-ahpa_figures.pdf}
+\caption{\textit{{\color{red}TODO}}}
+\label{fig:m-ahpa_test_coll}
+\end{figure}
 
-\paragraph{Test items: Mutual Information}
-{\color{red}[TODO]}
+\begin{figure}[htb!]
+\centering
+\includegraphics[page=4, width=1\linewidth]{chapter03/m-ahpa_figures.pdf}
+\caption{\textit{{\color{red}TODO}}}
+\label{fig:m-ahpa_test}
+\end{figure}
+
 
 \subsection{Experiment 2: {\color{red}Parlato-lms}}
 \subsubsection{Methods}
@@ -439,8 +469,8 @@ null vs. bigram retro    & $0.53 - 0.46$ & $0.08$ $[0.04, 0.12]$ & Yes \\
 
 \begin{figure}[htb!]
     \centering
-    \includegraphics[page=1, width=0.8\linewidth]{chapter03/parlato-lms_figs.pdf}
-    \caption{\textit{Distribution of the proportion of responses given by human participants (topmost panel) and posteriorgrams obtained when decoding with different language models. The box and whiskers plots display the distribution of posteriorgrams across experimental items, with boxplots separated according to the $C_{1}$ in the cluster.}}
+    \includegraphics[page=2, width=1\linewidth]{chapter03/parlato-lms_figs.pdf}
+    \caption{\textit{Distribution of the proportion of responses given by human participants (leftmost panels) and posteriorgrams obtained when decoding with different language models. The box and whiskers plots display the distribution of posteriorgrams across experimental items, with boxplots separated according to the $C_{1}$ in the cluster and the responses (rows).}}
     \label{fig:parlato-lms}
   \end{figure}
 
