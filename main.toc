@@ -1,140 +1,138 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Subjects \& goals // Overview: What is this (epen)thesis about?}{1}{section.1.1}
-\contentsline {section}{\numberline {1.2}Epenthesis [main]}{1}{section.1.2}
-\contentsline {section}{\numberline {1.3}Theories of nonnative speech processing [how]}{2}{section.1.3}
-\contentsline {section}{\numberline {1.4}Input representations of nonnative speech [what]}{2}{section.1.4}
-\contentsline {section}{\numberline {1.5}Adding to the mix}{2}{section.1.5}
-\contentsline {section}{\numberline {1.6}Processing workflow}{3}{section.1.6}
-\contentsline {section}{\numberline {1.7}Justifying the modelling approach}{3}{section.1.7}
-\contentsline {section}{\numberline {1.8}Plan}{3}{section.1.8}
-\contentsline {chapter}{\numberline {2}Role of acoustic details in the choice of epenthetic vowel quality}{4}{chapter.2}
-\contentsline {section}{\numberline {2.1}Introduction}{4}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}One-step vs two-step theories}{4}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Role of acoustics}{5}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}Chapter preview}{6}{subsection.2.1.3}
-\contentsline {section}{\numberline {2.2}Which epenthetic vowel? \\ Phonetic categories versus acoustic detail in perceptual vowel epenthesis}{7}{section.2.2}
-\contentsline {paragraph}{Abstract}{7}{section*.7}
-\contentsline {subsection}{\numberline {2.2.1}Introduction}{7}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Methods}{8}{subsection.2.2.2}
-\contentsline {subsubsection}{\numberline {2.2.2.1}\textit {Participants}}{8}{subsubsection.2.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.2.2}\textit {Stimuli}}{9}{subsubsection.2.2.2.2}
-\contentsline {subsubsection}{\numberline {2.2.2.3}\textit {Procedure}}{9}{subsubsection.2.2.2.3}
-\contentsline {subsection}{\numberline {2.2.3}Results}{9}{subsection.2.2.3}
-\contentsline {subsubsection}{\numberline {2.2.3.1}\textit {Control items}}{9}{subsubsection.2.2.3.1}
-\contentsline {subsubsection}{\numberline {2.2.3.2}\textit {Test items}}{10}{subsubsection.2.2.3.2}
-\contentsline {subsection}{\numberline {2.2.4}Discussion and conclusion}{12}{subsection.2.2.4}
-\contentsline {subsection}{\numberline {2.2.5}Annexes}{14}{subsection.2.2.5}
-\contentsline {subsubsection}{\numberline {2.2.5.1}Identification results separated by speaker}{14}{subsubsection.2.2.5.1}
-\contentsline {subsubsection}{\numberline {2.2.5.2}Acoustic analyses}{14}{subsubsection.2.2.5.2}
-\contentsline {subsubsection}{\numberline {2.2.5.3}Supplementary experiment: ABX task}{16}{subsubsection.2.2.5.3}
-\contentsline {paragraph}{Participants}{16}{section*.8}
-\contentsline {paragraph}{Stimuli}{16}{section*.9}
-\contentsline {paragraph}{Procedure}{17}{section*.10}
-\contentsline {paragraph}{Results}{18}{figure.2.6}
-\contentsline {paragraph}{Correlation with identification results}{19}{section*.12}
-\contentsline {section}{\numberline {2.3}Predicting epenthetic vowel quality from acoustics}{20}{section.2.3}
-\contentsline {paragraph}{Abstract}{20}{section*.13}
-\contentsline {subsection}{\numberline {2.3.1}Introduction}{21}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Perception experiment}{21}{subsection.2.3.2}
-\contentsline {subsubsection}{\numberline {2.3.2.1}Methods}{21}{subsubsection.2.3.2.1}
-\contentsline {subsubsection}{\numberline {2.3.2.2}Results}{21}{subsubsection.2.3.2.2}
-\contentsline {paragraph}{/i/-epenthesis}{22}{section*.14}
-\contentsline {paragraph}{/u/-epenthesis}{22}{figure.2.9}
-\contentsline {subsection}{\numberline {2.3.3}Acoustic analyses}{22}{subsection.2.3.3}
-\contentsline {subsubsection}{\numberline {2.3.3.1}Methods}{23}{subsubsection.2.3.3.1}
-\contentsline {subsubsection}{\numberline {2.3.3.2}Results}{24}{subsubsection.2.3.3.2}
-\contentsline {paragraph}{Vowel duration}{25}{figure.2.10}
-\contentsline {paragraph}{Vowel intensity}{25}{figure.2.11}
-\contentsline {paragraph}{Vowel formants}{25}{figure.2.12}
-\contentsline {subsection}{\numberline {2.3.4}Production-based exemplar model}{25}{subsection.2.3.4}
-\contentsline {subsubsection}{\numberline {2.3.4.1}Methods}{26}{subsubsection.2.3.4.1}
-\contentsline {subsubsection}{\numberline {2.3.4.2}Results}{27}{subsubsection.2.3.4.2}
-\contentsline {paragraph}{/i/-epenthesis}{27}{section*.19}
-\contentsline {paragraph}{/u/-epenthesis}{27}{section*.20}
-\contentsline {subsection}{\numberline {2.3.5}Discussion}{29}{subsection.2.3.5}
-\contentsline {section}{\numberline {2.4}Predicting epenthetic vowel quality from acoustics II: It's about time!}{30}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Introduction}{30}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Methods}{31}{subsection.2.4.2}
-\contentsline {subsubsection}{\numberline {2.4.2.1}Features}{31}{subsubsection.2.4.2.1}
-\contentsline {subsubsection}{\numberline {2.4.2.2}Classification}{31}{subsubsection.2.4.2.2}
-\contentsline {paragraph}{Dynamic Time Warping}{31}{section*.21}
-\contentsline {paragraph}{Similarity function}{32}{section*.22}
-\contentsline {subsubsection}{\numberline {2.4.2.3}Parameter estimation}{32}{subsubsection.2.4.2.3}
-\contentsline {subsubsection}{\numberline {2.4.2.4}Data analysis}{33}{subsubsection.2.4.2.4}
-\contentsline {subsection}{\numberline {2.4.3}Results}{34}{subsection.2.4.3}
-\contentsline {subsubsection}{\numberline {2.4.3.1}Re-analysing results from the perception experiment}{34}{subsubsection.2.4.3.1}
-\contentsline {paragraph}{/i/-epenthesis}{34}{section*.23}
-\contentsline {paragraph}{/u/-epenthesis}{34}{section*.24}
-\contentsline {subsubsection}{\numberline {2.4.3.2}Exemplar models without duration penalty}{34}{subsubsection.2.4.3.2}
-\contentsline {paragraph}{/i/-epenthesis}{35}{section*.25}
-\contentsline {paragraph}{/u/-epenthesis}{36}{section*.26}
-\contentsline {subsubsection}{\numberline {2.4.3.3}Exemplar models with duration penalty}{36}{subsubsection.2.4.3.3}
-\contentsline {paragraph}{Adding the duration-mismatch penalty}{36}{section*.27}
-\contentsline {paragraph}{/i/-epenthesis}{37}{section*.28}
-\contentsline {paragraph}{/u/-epenthesis}{38}{section*.29}
-\contentsline {subsection}{\numberline {2.4.4}Discussion}{38}{subsection.2.4.4}
-\contentsline {section}{\numberline {2.5}Conclusions}{40}{section.2.5}
-\contentsline {chapter}{\numberline {3}Modelling speech perception with ASR systems}{42}{chapter.3}
-\contentsline {section}{\numberline {3.1}Anatomy of our HMM-based speech recogniser}{42}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Corpora}{43}{subsection.3.1.1}
-\contentsline {paragraph}{Corpus of Spontaneous Japanese (CSJ)}{43}{section*.30}
-\contentsline {paragraph}{Korean Corpus of Spontaneous Speech (KCSS)}{44}{section*.31}
-\contentsline {paragraph}{Wall Street Journal - Read (WSJ)}{44}{section*.32}
-\contentsline {subsection}{\numberline {3.1.2}Features}{45}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Acoustic model}{46}{subsection.3.1.3}
-\contentsline {subsubsection}{\numberline {3.1.3.1}Why not triphones?}{47}{subsubsection.3.1.3.1}
-\contentsline {subsection}{\numberline {3.1.4}Lexicon \& language models}{48}{subsection.3.1.4}
-\contentsline {subsection}{\numberline {3.1.5}Decoding}{48}{subsection.3.1.5}
-\contentsline {subsection}{\numberline {3.1.6}Scoring: Assessing native performance}{49}{subsection.3.1.6}
-\contentsline {section}{\numberline {3.2}{\color {red}Investigating surface phonotactics}}{51}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Introduction}{51}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Experiment 1: {\color {red}m-/ahpa/}}{51}{subsection.3.2.2}
-\contentsline {subsubsection}{\numberline {3.2.2.1}Methods}{51}{subsubsection.3.2.2.1}
-\contentsline {paragraph}{Stimuli}{51}{section*.33}
-\contentsline {paragraph}{Language models}{51}{section*.34}
-\contentsline {paragraph}{Identification task simulation}{52}{figure.3.5}
-\contentsline {subsubsection}{\numberline {3.2.2.2}Quantitative analysis}{52}{subsubsection.3.2.2.2}
-\contentsline {subsubsection}{\numberline {3.2.2.3}Qualitative analyses}{54}{subsubsection.3.2.2.3}
-\contentsline {paragraph}{Identification accuracy}{54}{section*.36}
-\contentsline {paragraph}{Control items}{55}{section*.37}
-\contentsline {paragraph}{Test items}{56}{section*.38}
-\contentsline {subsection}{\numberline {3.2.3}Experiment 2: {\color {red}Parlato-lms}}{57}{subsection.3.2.3}
-\contentsline {subsubsection}{\numberline {3.2.3.1}Methods}{57}{subsubsection.3.2.3.1}
-\contentsline {paragraph}{Stimuli}{57}{section*.39}
-\contentsline {paragraph}{Language models}{57}{section*.40}
-\contentsline {paragraph}{Identification task simulation}{58}{section*.41}
-\contentsline {subsubsection}{\numberline {3.2.3.2}Results: Quantitative analysis}{58}{subsubsection.3.2.3.2}
-\contentsline {subsubsection}{\numberline {3.2.3.3}Results: Qualitative analysis}{59}{subsubsection.3.2.3.3}
-\contentsline {paragraph}{Default vowel}{59}{figure.3.12}
-\contentsline {paragraph}{Effect of coarticulation}{59}{section*.43}
-\contentsline {subsection}{\numberline {3.2.4}Discussion}{61}{subsection.3.2.4}
-\contentsline {section}{\numberline {3.3}{\color {red}Do we need to go deeper? Are surface phonotactics enough?}}{62}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Introduction}{62}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Methods}{62}{subsection.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.2.1}Stimuli}{62}{subsubsection.3.3.2.1}
-\contentsline {paragraph}{Language models}{62}{section*.44}
-\contentsline {paragraph}{Identification task simulation}{62}{section*.45}
-\contentsline {subsubsection}{\numberline {3.3.2.2}Data analysis}{62}{subsubsection.3.3.2.2}
-\contentsline {subsection}{\numberline {3.3.3}Results}{62}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}Discussion}{62}{subsection.3.3.4}
-\contentsline {section}{\numberline {3.4}{\color {red}[art2ac] Introducing allophony}}{63}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Introduction}{63}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Methods}{63}{subsection.3.4.2}
-\contentsline {subsubsection}{\numberline {3.4.2.1}Behavioural experiment}{63}{subsubsection.3.4.2.1}
-\contentsline {paragraph}{Participants}{63}{section*.46}
-\contentsline {paragraph}{Stimuli}{63}{section*.47}
-\contentsline {paragraph}{Procedure}{63}{section*.48}
-\contentsline {subsubsection}{\numberline {3.4.2.2}Modelling}{63}{subsubsection.3.4.2.2}
-\contentsline {paragraph}{Stimuli}{63}{section*.49}
-\contentsline {paragraph}{Acoustic models}{63}{section*.50}
-\contentsline {paragraph}{Language models}{63}{section*.51}
-\contentsline {paragraph}{Identification task simulation}{64}{section*.52}
-\contentsline {subsubsection}{\numberline {3.4.2.3}Data analysis}{64}{subsubsection.3.4.2.3}
-\contentsline {subsection}{\numberline {3.4.3}Results}{64}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}Discussion}{64}{subsection.3.4.4}
-\contentsline {section}{\numberline {3.5}Conclusions}{64}{section.3.5}
-\contentsline {chapter}{\numberline {4}General Discussion}{65}{chapter.4}
-\contentsline {paragraph}{Paradigm}{65}{section*.53}
-\contentsline {paragraph}{ASR system}{65}{section*.54}
-\contentsline {paragraph}{Quantitative approach}{65}{section*.55}
-\contentsline {chapter}{\numberline {A}\ignorespaces Are words easier to learn from infant- than adult-directed speech? }{70}{appendix.A}
+\contentsline {section}{\numberline {1.1}Perceptual vowel epenthesis [main]}{2}{section.1.1}
+\contentsline {section}{\numberline {1.2}Input representations of nonnative speech [what]}{2}{section.1.2}
+\contentsline {section}{\numberline {1.3}Adding to the mix}{3}{section.1.3}
+\contentsline {section}{\numberline {1.4}Processing workflow}{3}{section.1.4}
+\contentsline {section}{\numberline {1.5}Justifying the modelling approach}{4}{section.1.5}
+\contentsline {section}{\numberline {1.6}Outline of this thesis}{4}{section.1.6}
+\contentsline {chapter}{\numberline {2}Role of acoustic details in the choice of epenthetic vowel quality}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introduction}{5}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}One-step vs two-step theories}{5}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Role of acoustics}{6}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Chapter preview}{7}{subsection.2.1.3}
+\contentsline {section}{\numberline {2.2}Which epenthetic vowel? \\ Phonetic categories versus acoustic detail in perceptual vowel epenthesis}{8}{section.2.2}
+\contentsline {paragraph}{Abstract}{8}{section*.7}
+\contentsline {subsection}{\numberline {2.2.1}Introduction}{8}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Methods}{9}{subsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.2.1}\textit {Participants}}{9}{subsubsection.2.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2.2}\textit {Stimuli}}{10}{subsubsection.2.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.2.3}\textit {Procedure}}{10}{subsubsection.2.2.2.3}
+\contentsline {subsection}{\numberline {2.2.3}Results}{10}{subsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.3.1}\textit {Control items}}{10}{subsubsection.2.2.3.1}
+\contentsline {subsubsection}{\numberline {2.2.3.2}\textit {Test items}}{11}{subsubsection.2.2.3.2}
+\contentsline {subsection}{\numberline {2.2.4}Discussion and conclusion}{13}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}Annexes}{15}{subsection.2.2.5}
+\contentsline {subsubsection}{\numberline {2.2.5.1}Identification results separated by speaker}{15}{subsubsection.2.2.5.1}
+\contentsline {subsubsection}{\numberline {2.2.5.2}Acoustic analyses}{15}{subsubsection.2.2.5.2}
+\contentsline {subsubsection}{\numberline {2.2.5.3}Supplementary experiment: ABX task}{17}{subsubsection.2.2.5.3}
+\contentsline {paragraph}{Participants}{17}{section*.8}
+\contentsline {paragraph}{Stimuli}{17}{section*.9}
+\contentsline {paragraph}{Procedure}{18}{section*.10}
+\contentsline {paragraph}{Results}{19}{figure.2.6}
+\contentsline {paragraph}{Correlation with identification results}{20}{section*.12}
+\contentsline {section}{\numberline {2.3}Predicting epenthetic vowel quality from acoustics}{21}{section.2.3}
+\contentsline {paragraph}{Abstract}{21}{section*.13}
+\contentsline {subsection}{\numberline {2.3.1}Introduction}{22}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Perception experiment}{22}{subsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.2.1}Methods}{22}{subsubsection.2.3.2.1}
+\contentsline {subsubsection}{\numberline {2.3.2.2}Results}{22}{subsubsection.2.3.2.2}
+\contentsline {paragraph}{/i/-epenthesis}{23}{section*.14}
+\contentsline {paragraph}{/u/-epenthesis}{23}{figure.2.9}
+\contentsline {subsection}{\numberline {2.3.3}Acoustic analyses}{23}{subsection.2.3.3}
+\contentsline {subsubsection}{\numberline {2.3.3.1}Methods}{24}{subsubsection.2.3.3.1}
+\contentsline {subsubsection}{\numberline {2.3.3.2}Results}{25}{subsubsection.2.3.3.2}
+\contentsline {paragraph}{Vowel duration}{26}{figure.2.10}
+\contentsline {paragraph}{Vowel intensity}{26}{figure.2.11}
+\contentsline {paragraph}{Vowel formants}{26}{figure.2.12}
+\contentsline {subsection}{\numberline {2.3.4}Production-based exemplar model}{26}{subsection.2.3.4}
+\contentsline {subsubsection}{\numberline {2.3.4.1}Methods}{27}{subsubsection.2.3.4.1}
+\contentsline {subsubsection}{\numberline {2.3.4.2}Results}{28}{subsubsection.2.3.4.2}
+\contentsline {paragraph}{/i/-epenthesis}{28}{section*.19}
+\contentsline {paragraph}{/u/-epenthesis}{28}{section*.20}
+\contentsline {subsection}{\numberline {2.3.5}Discussion}{30}{subsection.2.3.5}
+\contentsline {section}{\numberline {2.4}Predicting epenthetic vowel quality from acoustics II: It's about time!}{31}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Introduction}{31}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Methods}{32}{subsection.2.4.2}
+\contentsline {subsubsection}{\numberline {2.4.2.1}Features}{32}{subsubsection.2.4.2.1}
+\contentsline {subsubsection}{\numberline {2.4.2.2}Classification}{32}{subsubsection.2.4.2.2}
+\contentsline {paragraph}{Dynamic Time Warping}{32}{section*.21}
+\contentsline {paragraph}{Similarity function}{33}{section*.22}
+\contentsline {subsubsection}{\numberline {2.4.2.3}Parameter estimation}{33}{subsubsection.2.4.2.3}
+\contentsline {subsubsection}{\numberline {2.4.2.4}Data analysis}{34}{subsubsection.2.4.2.4}
+\contentsline {subsection}{\numberline {2.4.3}Results}{35}{subsection.2.4.3}
+\contentsline {subsubsection}{\numberline {2.4.3.1}Re-analysing results from the perception experiment}{35}{subsubsection.2.4.3.1}
+\contentsline {paragraph}{/i/-epenthesis}{35}{section*.23}
+\contentsline {paragraph}{/u/-epenthesis}{35}{section*.24}
+\contentsline {subsubsection}{\numberline {2.4.3.2}Exemplar models without duration penalty}{35}{subsubsection.2.4.3.2}
+\contentsline {paragraph}{/i/-epenthesis}{36}{section*.25}
+\contentsline {paragraph}{/u/-epenthesis}{37}{section*.26}
+\contentsline {subsubsection}{\numberline {2.4.3.3}Exemplar models with duration penalty}{37}{subsubsection.2.4.3.3}
+\contentsline {paragraph}{Adding the duration-mismatch penalty}{37}{section*.27}
+\contentsline {paragraph}{/i/-epenthesis}{38}{section*.28}
+\contentsline {paragraph}{/u/-epenthesis}{39}{section*.29}
+\contentsline {subsection}{\numberline {2.4.4}Discussion}{39}{subsection.2.4.4}
+\contentsline {section}{\numberline {2.5}Conclusions}{41}{section.2.5}
+\contentsline {chapter}{\numberline {3}Modelling speech perception with ASR systems}{43}{chapter.3}
+\contentsline {section}{\numberline {3.1}Anatomy of our HMM-based speech recogniser}{43}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Corpora}{44}{subsection.3.1.1}
+\contentsline {paragraph}{Corpus of Spontaneous Japanese (CSJ)}{44}{section*.30}
+\contentsline {paragraph}{Korean Corpus of Spontaneous Speech (KCSS)}{45}{section*.31}
+\contentsline {paragraph}{Wall Street Journal - Read (WSJ)}{45}{section*.32}
+\contentsline {subsection}{\numberline {3.1.2}Features}{46}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Acoustic model}{47}{subsection.3.1.3}
+\contentsline {subsubsection}{\numberline {3.1.3.1}Why not triphones?}{48}{subsubsection.3.1.3.1}
+\contentsline {subsection}{\numberline {3.1.4}Lexicon \& language models}{49}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.5}Decoding}{49}{subsection.3.1.5}
+\contentsline {subsection}{\numberline {3.1.6}Scoring: Assessing native performance}{50}{subsection.3.1.6}
+\contentsline {section}{\numberline {3.2}{\color {red}Investigating surface phonotactics}}{52}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Introduction}{52}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Experiment 1: {\color {red}m-/ahpa/}}{52}{subsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.1}Methods}{52}{subsubsection.3.2.2.1}
+\contentsline {paragraph}{Stimuli}{52}{section*.33}
+\contentsline {paragraph}{Language models}{52}{section*.34}
+\contentsline {paragraph}{Identification task simulation}{53}{figure.3.5}
+\contentsline {subsubsection}{\numberline {3.2.2.2}Quantitative analysis}{53}{subsubsection.3.2.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.3}Qualitative analyses}{55}{subsubsection.3.2.2.3}
+\contentsline {paragraph}{Identification accuracy}{55}{section*.36}
+\contentsline {paragraph}{Control items}{56}{section*.37}
+\contentsline {paragraph}{Test items}{57}{section*.38}
+\contentsline {subsection}{\numberline {3.2.3}Experiment 2: {\color {red}Parlato-lms}}{58}{subsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.3.1}Methods}{58}{subsubsection.3.2.3.1}
+\contentsline {paragraph}{Stimuli}{58}{section*.39}
+\contentsline {paragraph}{Language models}{58}{section*.40}
+\contentsline {paragraph}{Identification task simulation}{59}{section*.41}
+\contentsline {subsubsection}{\numberline {3.2.3.2}Results: Quantitative analysis}{59}{subsubsection.3.2.3.2}
+\contentsline {subsubsection}{\numberline {3.2.3.3}Results: Qualitative analysis}{60}{subsubsection.3.2.3.3}
+\contentsline {paragraph}{Default vowel}{60}{figure.3.12}
+\contentsline {paragraph}{Effect of coarticulation}{60}{section*.43}
+\contentsline {subsection}{\numberline {3.2.4}Discussion}{62}{subsection.3.2.4}
+\contentsline {section}{\numberline {3.3}{\color {red}Do we need to go deeper? Are surface phonotactics enough?}}{63}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Introduction}{63}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Methods}{63}{subsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.2.1}Stimuli}{63}{subsubsection.3.3.2.1}
+\contentsline {paragraph}{Language models}{63}{section*.44}
+\contentsline {paragraph}{Identification task simulation}{63}{section*.45}
+\contentsline {subsubsection}{\numberline {3.3.2.2}Data analysis}{63}{subsubsection.3.3.2.2}
+\contentsline {subsection}{\numberline {3.3.3}Results}{63}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Discussion}{63}{subsection.3.3.4}
+\contentsline {section}{\numberline {3.4}{\color {red}[art2ac] Introducing allophony}}{64}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Introduction}{64}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Methods}{64}{subsection.3.4.2}
+\contentsline {subsubsection}{\numberline {3.4.2.1}Behavioural experiment}{64}{subsubsection.3.4.2.1}
+\contentsline {paragraph}{Participants}{64}{section*.46}
+\contentsline {paragraph}{Stimuli}{64}{section*.47}
+\contentsline {paragraph}{Procedure}{64}{section*.48}
+\contentsline {subsubsection}{\numberline {3.4.2.2}Modelling}{64}{subsubsection.3.4.2.2}
+\contentsline {paragraph}{Stimuli}{64}{section*.49}
+\contentsline {paragraph}{Acoustic models}{64}{section*.50}
+\contentsline {paragraph}{Language models}{64}{section*.51}
+\contentsline {paragraph}{Identification task simulation}{65}{section*.52}
+\contentsline {subsubsection}{\numberline {3.4.2.3}Data analysis}{65}{subsubsection.3.4.2.3}
+\contentsline {subsection}{\numberline {3.4.3}Results}{65}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Discussion}{65}{subsection.3.4.4}
+\contentsline {section}{\numberline {3.5}Conclusions}{65}{section.3.5}
+\contentsline {chapter}{\numberline {4}General Discussion}{66}{chapter.4}
+\contentsline {paragraph}{Paradigm}{66}{section*.53}
+\contentsline {paragraph}{ASR system}{66}{section*.54}
+\contentsline {paragraph}{Quantitative approach}{66}{section*.55}
+\contentsline {chapter}{\numberline {A}\ignorespaces Are words easier to learn from infant- than adult-directed speech? }{71}{appendix.A}

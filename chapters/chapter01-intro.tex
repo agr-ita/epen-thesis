@@ -1,34 +1,37 @@
-{\color{red}[TODO]: Find better titles T-T}
+%{\color{red}[TODO]: Find better titles T-T}
 
-\section{Subjects \& goals // Overview: What is this (epen)thesis about?}
+%\section{Subjects \& goals // Overview: What is this (epen)thesis about?}
 
-\section{Epenthesis [main]}
+Beginning from the time in her mother's womb, a baby is exposed to what will later become their native language(s). Initially able to discriminate a wide variety of sounds, the perceptual system of the infant progressively becomes attuned to sounds and structures useful for decoding their native language(s) [CITE Werker]. That is, the acoustic space is partitioned according to how native phonemes, which are generally accepted as the smallest phonetic units capable of conveying a lexical distinction, map onto it. The perceptual system also becomes sensitive to the distribution of sound combinations [CITE: Jusczyk; Saffran...]. In sum, exposure to the native language-to-be results in the optimisation of the perceptual system to process the language in question.
+
+While this allows us to communicate efficiently in our native language, issues arise when we attempt to acquire nonnative languages. Nonnative input is subject to a perceptual system that has been attuned to different segmental and suprasegmental inventories, and different phonotactics (i.e., structural constraints). This often results in nonnative speech being misperceived; phonemes and prosodic elements might be replaced (assimilation) or deleted (ellipsis), or additional sounds might even be inserted (epenthesis).
+
+It seems to be a general consensus that the input modification that result in these misperceptions are minimal in nature, leading to an output that is the closest native representation of the nonnative input [CITE]. But how can we define this distance metric? this is where theories diverge; through the years multiple proposals have spawned in the loanword and psycholinguistics literature. When grouping proposals, the most salient rift is that opposing phonology-based to phonetically-based approaches. However, note that the dichotomy is relatively artificial, as a combination of these two proposals is also a possibility.
+
+In this dissertation, I present computational models that can be used to quantitatively evaluate hypotheses concerning the underlying mechanisms of nonnative speech (mis)perception. Following on [CITE peperkamp], I experimentally test nonnative speech perception using psycholinguistics paradigms which tap onto online perception of nonwords, in order to reduce the influence of confounds such as orthography. I subject the proposed computational models to tasks analogous to those completed by human participants and analyse their behaviour both quantitatively and qualitatively. Do we find phonetically-based mechanisms to be necessary to predict perceptual vowel epenthesis? If so, do they suffice? 
+
+
+\section{Perceptual vowel epenthesis [main]}
 
 \begin{itemize}
 \item What is epenthesis?
 \item Epenthesis fossils: loanwords \\
-  - loanwords + online: phonotactics' mismatch -> epenthesis/deletions
+  - loanwords + online: phonotactics' mismatch $\rightarrow$ epenthesis/deletions
 \item Focus on perceptual vowel epenthesis
 \item When does epenthesis happen?
   \begin{itemize}
-  \item JP:
-  \item KR:
-  \item BP (but not PP):
-  \item ES:
-  \item EN:
-  \item MCh:
+  \item JP: Dupoux (1999), Dehaene (2001), Dupoux (2001), Monahan (2009), Dupoux (2011), Mattingley (2015)
+  \item KR: de Jong \& Park (2012), Durvasula (2015) 
+  \item BP (but not PP): Dupoux (2011)
+  \item ES: Hallé
+  \item EN: Berent (multi), Davidson
+  \item MCh: Durvasula (2018)
+  \item CCh: Silverman (1992)
   \end{itemize}
   
 \item Neurobiology of epenthesis \\
-  - Dehaene2000: Japanese subjects almost never distinguished /CC/ from /CuC/. Native language phonotactics modifies speech perception; vowel epenthesis is by-production of perception processes. Electrophysiological results: responses observed in FR were either not present of shorter + weaker in JP subjects. Fast and automatic coding of the speech input -> compatible with Coarse Coding models of speech perception (but not Segmental or Hierarchical). 
+  - Dehaene (2000): Japanese subjects almost never distinguished /CC/ from /CuC/. Native language phonotactics modifies speech perception; vowel epenthesis is by-production of perception processes. Electrophysiological results: responses observed in FR were either not present of shorter + weaker in JP subjects. Fast and automatic coding of the speech input -> compatible with Coarse Coding models of speech perception (but not Segmental or Hierarchical). 
 
-\end{itemize}
-
-\section{Theories of nonnative speech processing [how]}
-
-\begin{itemize}
-\item Native speech perception (categorical; development)
-\item Best / Kuhl / Flege / Burnham / Liberman\&Mattingley...
 \end{itemize}
 
 \section{Input representations of nonnative speech [what]}
@@ -36,18 +39,21 @@
 \begin{itemize}
 \item Representation of the input
   \begin{itemize}
-  \item Phonological approach (e.g., cf loanword literature Lovins75, Yip93, Shinohara04) \\
+  \item Phonological approach \\
     - Adapted (epenthetic) output corresponds to best match to input with certain order of faithfulness/markedness constraints. Underlying representation (UR) in native language assumed to be close to nonnative form (i.e., abstract wordform $\rightarrow$ ``repair'' by grammar (constraint filter)
-    - Feature-based proximity (Paradis \& LaCharité)
-
+    - La Charité \& Paradis (2005): Feature-based proximity. Loanwords introduced by bilinguals, who can manipulate and compare L1 and L2 systems. \\
+    - Hyman (1970), Lovins (1975), Yip (1993), Jacobs \& Gussenhoven (2000), Shinohara (2004): relatively faithful (at least for initial word importers) underlying representation is mapped to a distorted surface form by the phonological grammar, with its native (loan-specific?) rules or constraints.  
   \item Acoustic/phonetic \\
-    - PepkDpx2003: phonetically minimal modification \\
-    - cf Steriade2001's P-map
+    - Psycholinguistic theories of nonnative speech perception: Best (1995), Kuhl (1995), / Flege / Burnham /  
+    - Peperkamp \& Dupoux (2003): phonetically minimal modification mapping by phonetic decoding module, and underlying representation is derived from percept by the phonological decoding module (i.e., it's unfaithful to nonnative UR). The phonetic decoding module takes into account segmental, suprasegmental, and syllabic inventory $\rightarrow$ find phonetically minimal modification \\
+    - Steriade (2001): P-map
+  \item Shin \& Iverson (2011): correlation between \%epenth and vowel discrimination.   
   \item Articulatory \\
-    - articulation on perception (D'Ausilio, Berent, etc)
+    - activation of motor cortex areas during perception + perception biases trigger by disruption of motor cortex activity with TMS (D'Ausilio, Berent (2015), etc)
   \item Gestures \\
-    - ZhaoBerent2018(?): Epenthesis from read stimuli (i.e., no acoustic input) \\
-    - BestTyler2007: "PAM posits that perceivers extract invariants about *articulatory gestures* from the speech signal, rather than forming categories from acoustic-phonetic cues"
+    - Browman \& Goldstein (1980s): Articulatory Phonology; dynamic gestures as units, developing in space at time (as opposed to the static segment). Sounds correspond to constellation of gestures. Allows to explain gradient effects.  
+    - Zhao \& Berent (2018): Epenthesis from read stimuli (i.e., no acoustic input) \\
+    - Best \& Tyler (2007): "PAM posits that perceivers extract invariants about *articulatory gestures* from the speech signal, rather than forming categories from acoustic-phonetic cues"
   \end{itemize}
 \end{itemize}
 
@@ -55,27 +61,44 @@
  
 \begin{itemize}
 \item Structural information (phonotactics: surface, syllabic) \\
-  KabakIdsardi2007: "best working hypothesis is that violations involving syllable structure instead of consonantal contact affect perception, and neither nasalization nor lateralization have any basis in perception."
+  Kabak \& Idsardi (2007): "best working hypothesis is that violations involving syllable structure instead of consonantal contact affect perception, and neither nasalization nor lateralization have any basis in perception."
   \item Phonological rules / constraints
-  \item Lexical/phone frequency (probabilistic info) \\
-    KabakIds2007: "a phonological influence of L1 phonotactic knowledge, rather than an effect of frequency, plays a primary role in explaining Korean groups’ performance."
+  \item Lexical influx/phone frequency (probabilistic info) \\
+    - Kabak \& Idsardi (2007): "a phonological influence of L1 phonotactic knowledge, rather than an effect of frequency, plays a primary role in explaining Korean groups’ performance." \\
+    - Dupoux (2001): Prelexical process 
 
   \item Orthography \\
-    - Cf interaction of orthography on vowel adaptation in VendelinPepkmp2006
-    - Daland2015: ``Strong evidence that Korean listeners relied on the English orthography in selecting the korean vowel adaptation.''; Perceptual Uncertainty Hypothesis: "Orthography is most likely to constrain loanword adaptation in cases when it is not fully determined by perception/phonology alone."
+    - Vendelin \& Peperkamp (2006): Cf interaction of orthography on vowel adaptation \\ 
+    - Daland (2015): ``Strong evidence that Korean listeners relied on the English orthography in selecting the korean vowel adaptation.''; Perceptual Uncertainty Hypothesis: "Orthography is most likely to constrain loanword adaptation in cases when it is not fully determined by perception/phonology alone."
     
 \end{itemize}
 
 \section{Processing workflow}
 \begin{itemize}
-    \item One-step (Dup2011, Wilson?, Duvarsula), vs. Two-step (Berent2007, Monahan2009)
-    \item early process (input syst) vs late process (orthography, differences in production ...)
-    \end{itemize}
+\item One-step vs. Two-step
+  \begin{itemize}
+  \item Two-step
+      \begin{itemize}
+        \item Silverman (1992): From evidence of Cantonese loans from English, model with 2 scansions: (1) Perceptual level representation $\rightarrow$ preliminary segmental + prosodic structure. (2) Operation level representation $\rightarrow$ final form. (Yet Silverman seemed to assume that loanwords are faithful to online percepts).
+        \item Monahan (2009):
+        \item Berent (2007): 
+      \end{itemize}
+  \item One-step
+      \begin{itemize}
+         \item Dupoux (2011): simultaneous optimisation of the acoustic match and the sequence match.
+         \item Wilson (2014?):
+         \item Durvasula (2015): as Dupoux2011, process of reverse inference, but including access to native phonological rules to infer pseudo-underlying forms of the nonnative input.
+      \end{itemize}  
+  \end{itemize}
+\item early process (input syst) vs late process (orthography, differences in production ...)
+  \begin{itemize}
+     \item Dehaene (2001): "However, the condition effect observed in Japanese during the second response suggests that some information about the input could be recovered from other processing systems";
+  \end{itemize}  
+\end{itemize}
     
 \section{Justifying the modelling approach}
 \epigraph{... But why make models?}{\textit{Derek Zoolander, probably.}}
 Quantitative testing $~$
 
-\section{Plan}
+\section{Outline of this thesis}
 
-"However, the condition effect observed in Japanese during the second response suggests that some information about the input could be recovered from other processing systems";
