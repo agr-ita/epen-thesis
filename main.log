@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.27)  20 JUL 2018 20:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.27)  20 JUL 2018 22:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1934,7 +1934,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [63 <./images/chapter03/parlato-lms_figs.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 587.
+(hyperref)                removing `\@ifnextchar' on input line 589.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1945,7 +1945,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [64]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 624.
+(hyperref)                removing `\@ifnextchar' on input line 629.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1989,7 +1989,7 @@ pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1593, 487.79437pt x 704.
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1594, 487.79437pt x 704.
 60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2025,7 +2025,7 @@ pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1601, page=1, 487.79437p
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1602, page=1, 487.79437p
 t x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2075,7 +2075,7 @@ pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1634, page=2, 487.79437p
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1635, page=2, 487.79437p
 t x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2110,7 +2110,7 @@ pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1643, page=3, 487.79437p
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1644, page=3, 487.79437p
 t x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2145,7 +2145,7 @@ pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1651, page=4, 487.79437p
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1652, page=4, 487.79437p
 t x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2180,7 +2180,7 @@ pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1656, page=5, 487.79437p
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1657, page=5, 487.79437p
 t x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2215,7 +2215,7 @@ pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1662, page=6, 487.79437p
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1663, page=6, 487.79437p
 t x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2250,7 +2250,7 @@ pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1668, page=7, 487.79437p
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1669, page=7, 487.79437p
 t x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2285,7 +2285,7 @@ pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1677, page=8, 487.79437p
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1678, page=8, 487.79437p
 t x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2320,7 +2320,7 @@ pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1684, page=9, 487.79437p
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1685, page=9, 487.79437p
 t x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2355,7 +2355,7 @@ pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1691, page=10, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1692, page=10, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2390,7 +2390,7 @@ pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1696, page=11, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1697, page=11, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2425,7 +2425,7 @@ pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1702, page=12, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1703, page=12, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2460,7 +2460,7 @@ pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1708, page=13, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1709, page=13, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2495,7 +2495,7 @@ pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1714, page=14, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1715, page=14, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2530,7 +2530,7 @@ pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1724, page=15, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1725, page=15, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2565,7 +2565,7 @@ pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1742, page=16, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1743, page=16, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2600,7 +2600,7 @@ pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1747, page=17, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1748, page=17, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2635,7 +2635,7 @@ pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1753, page=18, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1754, page=18, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2670,7 +2670,7 @@ pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1763, page=19, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1764, page=19, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2705,7 +2705,7 @@ pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1768, page=20, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1769, page=20, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2740,7 +2740,7 @@ pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1774, page=21, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1775, page=21, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2775,7 +2775,7 @@ pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1780, page=22, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1781, page=22, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2810,7 +2810,7 @@ pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1785, page=23, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1786, page=23, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2845,7 +2845,7 @@ pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1790, page=24, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1791, page=24, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2880,7 +2880,7 @@ pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1800, page=25, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1801, page=25, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2915,7 +2915,7 @@ pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1805, page=26, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1806, page=26, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2950,7 +2950,7 @@ pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1810, page=27, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1811, page=27, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2985,7 +2985,7 @@ pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1815, page=28, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1816, page=28, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -3020,7 +3020,7 @@ pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1820, page=29, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1821, page=29, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -3055,7 +3055,7 @@ pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1825, page=30, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1826, page=30, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -3090,7 +3090,7 @@ pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1831, page=31, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1832, page=31, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -3125,7 +3125,7 @@ pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1836, page=32, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1837, page=32, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -3176,8 +3176,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 125.
 ### simple group (level 1) entered at line 263 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 10089 strings out of 495020
- 149871 string characters out of 6181324
+ 10090 strings out of 495020
+ 149892 string characters out of 6181324
  251904 words of memory out of 5000000
  12716 multiletter control sequences out of 15000+600000
  18417 words of font info for 60 fonts, out of 8000000 for 9000
@@ -3265,10 +3265,10 @@ re/qtmr.pfb></usr/share/texmf/fonts/type1/fkr/tipa/tipa10.pfb></usr/share/texmf
 /fonts/type1/fkr/tipa/tipa12.pfb></usr/share/texmf/fonts/type1/fkr/tipa/tipa8.p
 fb></usr/share/texmf/fonts/type1/fkr/tipa/tipasl10.pfb></usr/share/texmf/fonts/
 type1/fkr/tipa/tipasl12.pfb>
-Output written on main.pdf (111 pages, 3602235 bytes).
+Output written on main.pdf (111 pages, 3602442 bytes).
 PDF statistics:
- 2004 PDF objects out of 2073 (max. 8388607)
- 1649 compressed objects within 17 object streams
- 384 named destinations out of 1000 (max. 500000)
+ 2006 PDF objects out of 2073 (max. 8388607)
+ 1651 compressed objects within 17 object streams
+ 385 named destinations out of 1000 (max. 500000)
  1016 words of extra memory for PDF output out of 10000 (max. 10000000)
 

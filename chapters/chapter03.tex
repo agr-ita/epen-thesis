@@ -577,8 +577,12 @@ The main effect of \textsc{NSFV} was not significant (mode: $0.03$, HPD: $[-0.03
 % Smoothing for unseen sequences?
 % Hybrid model? Vary acoustic scale and find optimal value? (there are some qualitative effects that we seem to see in bigrams, for instance, that might increase correlation)  
 
+%%% Null model isn't really null in that transition probabilities in HMMs capture diphone probabilities already. Ideally, for a truly null model, need to modify topology and equalise all C->V TPs. But not identical to having just P(V|C).
 
 %%% Duration in ASR? [check topology]
+
+%%% Qualitative analyses
+% Need analyses with a lot more items (we only have 54 datapoints; 24-24-6)
 
 %%%%%%%%%%%%
 % k-epenth %
@@ -612,9 +616,12 @@ The organisation of the stimuli, based on place of articulation of \textsc{C}, i
 
 \paragraph{Identification task simulation}
 
-
-\subsubsection{Data analysis}
 \subsection{Results}
+\subsubsection{English model (control)}
+%% Hopefully the model mostly outputs "none" for clusters and it's almost perfectly accurate for fullV !!!!! 
+
+\subsubsection{Korean model (test)}
+
 \subsection{Discussion}
 
 %%%%%%%%%%%%
@@ -682,6 +689,8 @@ After decoding the stimuli, we obtained for each possible transcription of each 
 % Ideas:
 %% --- Automatic iterative decoding from null model  
 %% --- For specific phoneme sequences, find exemplars (e.g., for /hp/ check all /hVp/) and see if well transcribed. Adapt probabilities accordingly. PB: Need many exemplars + Time consuming. 
+
+%%% Null model isn't really null in that transition probabilities in HMMs capture diphone probabilities already. Ideally, for a truly null model, need to modify topology and equalise all C->V TPs. But not identical to having just P(V|C).
 
 % Need better acoustic model. But we need not to integrate triphones.
 % Ideas:

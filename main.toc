@@ -114,8 +114,9 @@
 \contentsline {subsubsection}{\numberline {3.3.2.1}Stimuli}{64}{subsubsection.3.3.2.1}
 \contentsline {paragraph}{Language models}{64}{section*.46}
 \contentsline {paragraph}{Identification task simulation}{64}{section*.47}
-\contentsline {subsubsection}{\numberline {3.3.2.2}Data analysis}{64}{subsubsection.3.3.2.2}
 \contentsline {subsection}{\numberline {3.3.3}Results}{64}{subsection.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.3.1}English model (control)}{64}{subsubsection.3.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.3.2}Korean model (test)}{64}{subsubsection.3.3.3.2}
 \contentsline {subsection}{\numberline {3.3.4}Discussion}{64}{subsection.3.3.4}
 \contentsline {section}{\numberline {3.4}{\color {red}[art2ac] Introducing allophony}}{65}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Introduction}{65}{subsection.3.4.1}
