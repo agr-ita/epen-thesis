@@ -8,41 +8,30 @@ While this allows us to communicate efficiently in our native language, issues a
 
 It seems to be a general consensus that the input modification that result in these misperceptions are minimal in nature, leading to an output that is the closest native representation of the nonnative input [CITE]. But how can we define this distance metric? this is where theories diverge; through the years multiple proposals have spawned in the loanword and psycholinguistics literature. When grouping proposals, the most salient rift is that opposing phonology-based to phonetically-based approaches. However, note that the dichotomy is relatively artificial, as a combination of these two proposals is also a possibility.
 
-In this dissertation, I present computational models that can be used to quantitatively evaluate hypotheses concerning the underlying mechanisms of nonnative speech (mis)perception, focusing on the phenomenon of perceptual vowel epenthesis. Following on [CITE peperkamp], I experimentally test nonnative speech perception using psycholinguistics paradigms which tap onto online perception of nonwords, in order to reduce the influence of confounds such as orthography. I subject the proposed computational models to tasks analogous to those completed by human participants and analyse their behaviour both quantitatively and qualitatively. Do we find phonetically-based mechanisms to be necessary to predict perceptual vowel epenthesis? If so, do they suffice? 
+In this dissertation, I present computational models that can be used to quantitatively evaluate hypotheses concerning the underlying mechanisms of nonnative speech (mis)perception, focusing on the phenomenon of perceptual vowel epenthesis. Following on [CITE peperkamp], I experimentally test nonnative speech perception using psycholinguistics paradigms which tap onto online perception of nonwords, in order to reduce the influence of confounds such as orthography. I subject the proposed computational models to tasks analogous to those completed by human participants and analyse their behaviour both quantitatively and qualitatively. Do we find perception-based mechanisms to be necessary to predict perceptual vowel epenthesis? If so, do they suffice? 
 
 
 \section{Perceptual vowel epenthesis [main]}
 
-\begin{itemize}
-\item What is epenthesis?
-\item Epenthesis fossils: loanwords \\
-  - loanwords + online: phonotactics' mismatch $\rightarrow$ epenthesis/deletions
-\item Focus on perceptual vowel epenthesis
-\item When does epenthesis happen?
-  \begin{itemize}
-  \item JP: Dupoux (1999), Dehaene (2001), Dupoux (2001), Monahan (2009), Dupoux (2011), Mattingley (2015)
-  \item KR: de Jong \& Park (2012), Durvasula (2015) 
-  \item BP (but not PP): Dupoux (2011)
-  \item ES: Hallé
-  \item EN: Berent (multi), Davidson
-  \item MCh: Durvasula (2018)
-  \item CCh: Silverman (1992)
-  \end{itemize}
-  
-\item Neurobiology of epenthesis \\
-  - Dehaene (2000): Japanese subjects almost never distinguished /CC/ from /CuC/. Native language phonotactics modifies speech perception; vowel epenthesis is by-production of perception processes. Electrophysiological results: responses observed in FR were either not present of shorter + weaker in JP subjects. Fast and automatic coding of the speech input -> compatible with Coarse Coding models of speech perception (but not Segmental or Hierarchical). 
+As mentioned above epenthesis is the phenomenon in which a sound that was not initially present in the input is inserted and surfaces in the output\footnote{Depending on context, the word ``epenthesis'' can refer to the addition of any sound (consonant, vowel ...) in different situations such as online perception, online production, diachronic lexical changes, etc. For the purpose of this thesis, however, we will specifically use the word ``epenthesis'' to refer to perceptual vowel epenthesis, unless stated otherwise.}. As such, when listeners experience perceptual vowel epenthesis, they hallucinate vowels not initially present in the input. In the cases studied in this work, this happens in order to break phonotactically illegal clusters present in the input. For instance, in Japanese most consonant clusters\footnote{Consonant clusters can only be geminates or a nasal followed by another consonant.}, such as \textipa{/bz/}, are phonotactically illegal. When hearing nonwords containing these clusters, such as \textipa{/ebzo/}, Japanese listeners may hallucinate an epenthetic \textipa{/u/}\footnote{A more faithful phonetic transcription of the vowel is \textipa{[W]} but following previous work the phonological notation \textipa{/u/} will be used in the remainder of the thesis.} within the cluster, yielding \textipa{/ebuzo/} as the output percept \cite{dupoux1999}. Epenthesis of \textipa{/u/} by Japanese listeners is not only evident in their behaviour but also in their brain responses; they have difficulties differentiating the clusters produced by a French speaker from their epenthesized counterparts (e.g., \textipa{/ebzo/} \textit{vs.} \textipa{/ebuzo/}) while also showing different event-related potentials compared to native French speakers \cite{dehaene2000}.
+Epenthesis has also been attested in languages other than Japanese [cite: Dupoux (1999), Dehaene (2001), Dupoux (2001), Monahan (2009), Dupoux (2011), Mattingley (2015)]; it has been studied in Korean [cite: de Jong \& Park (2012), Durvasula (2015), Shin \& Iverson (2011)], Brazilian Portuguese [cite: Dupoux (2011)], Spanish [cite: Hallé (2014)], English [cite: Berent (multi), Davidson], Mandarin Chinese [cite: Durvasula (2018)], and Cantonese [cite: Silverman (1992)?]. 
 
-\end{itemize}
+
+%Epenthesis fossils: loanwords \\
+%  - loanwords + online: phonotactics' mismatch $\rightarrow$ epenthesis/deletions
 
 \section{Input representations of nonnative speech [what]}
 
+Perceptual vowel epenthesis has been the subject of research mainly in two fields: loanword phonology and psycholinguistics. The former focuses on how words of nonnative origin have been adapted when being imported to the native language; this is mostly a diachronic process involving multiple individuals and possibly various methods of word transmission (e.g., through written materials, orally, etc), with the assumption that words are introduced by highly proefficient speakers of the nonnative language. In contrast, the psycholinguistic approach focuses on online perception and, while data from multiple participants is collected, the modifications observed on the output of perception are assumed to be individual in nature. Participants are not expect to be proficient in the nonnative language, which minimises the influence of linguistic knowledge and orthography. Considering these differences, it comes as no surprise that, while both seem to agree that the output is the closest possible native match to the nonnative input, the two approaches hypothesise different mechanisms to account for perceptual vowel epenthesis. 
+
+In particular, there is the question of how the nonnative input is represented and processed in the minds of the listeners. With a little simplification, authors from the loanword literature advance the hypothesis that are more phonological and abstract in nature. The adapted (epenthetic) output corresponds to the best match to the input after candidate matches are passed through a grammatical filter, comprising faithfulness and markedness constraints arranged in a certain order that may or may not be compatible with native sets of constraints [cite: Hyman (1970), Lovins (1975), Yip (1993), Jacobs \& Gussenhoven (2000), Shinohara (2004)]. As mentioned previously, the initial importers of the nonnative words are assumed to be highly proficient in the target language (e.g., bilinguals); as such, in this view a faithful underlying representation of the input only becomes adapted when the grammar computes a surface representation from said underlying form (e.g., during production).      
+
+
 \begin{itemize}
-\item Representation of the input
+  \item
   \begin{itemize}
   \item Phonological approach \\
-    - Adapted (epenthetic) output corresponds to best match to input with certain order of faithfulness/markedness constraints. Underlying representation (UR) in native language assumed to be close to nonnative form (i.e., abstract wordform $\rightarrow$ ``repair'' by grammar (constraint filter)
     - La Charité \& Paradis (2005): Feature-based proximity. Loanwords introduced by bilinguals, who can manipulate and compare L1 and L2 systems. \\
-    - Hyman (1970), Lovins (1975), Yip (1993), Jacobs \& Gussenhoven (2000), Shinohara (2004): relatively faithful (at least for initial word importers) underlying representation is mapped to a distorted surface form by the phonological grammar, with its native (loan-specific?) rules or constraints.  
   \item Acoustic/phonetic \\
     - Psycholinguistic theories of nonnative speech perception: Best (1995), Kuhl (1995), / Flege / Burnham /  
     - Peperkamp \& Dupoux (2003): phonetically minimal modification mapping by phonetic decoding module, and underlying representation is derived from percept by the phonological decoding module (i.e., it's unfaithful to nonnative UR). The phonetic decoding module takes into account segmental, suprasegmental, and syllabic inventory $\rightarrow$ find phonetically minimal modification \\
@@ -86,8 +75,8 @@ In this dissertation, I present computational models that can be used to quantit
   \item One-step
       \begin{itemize}
          \item Dupoux (2011): simultaneous optimisation of the acoustic match and the sequence match.
-         \item Wilson (2014?):
-         \item Durvasula (2015): as Dupoux2011, process of reverse inference, but including access to native phonological rules to infer pseudo-underlying forms of the nonnative input.
+         \item Wilson (2014?): Bayesian approach where task is P(phon|acoustics) \~ P(X|phon)P(phon), with P(phon) being the phonotactic acceptability 
+         \item Durvasula (2015): as Dupoux (2011) \& Wilson \& Davidson (2013), process of reverse inference, but including access to native phonological rules to infer pseudo-underlying forms of the nonnative input.
       \end{itemize}  
   \end{itemize}
 \item early process (input syst) vs late process (orthography, differences in production ...)
