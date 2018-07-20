@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.27)  20 JUL 2018 20:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.3.27)  20 JUL 2018 20:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -789,11 +789,11 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.24 \section{Perceptual vowel epenthesis [main]}
+l.30 \section{Perceptual vowel epenthesis [main]}
                                                   [1
 
 ]
-Overfull \hbox (22.74239pt too wide) in paragraph at lines 33--33
+Overfull \hbox (22.74239pt too wide) in paragraph at lines 39--39
 []\OT1/cmr/bx/n/17.28 Input rep-re-sen-ta-tions of non-na-tive speech [what] 
  []
 
@@ -807,9 +807,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.38 
+l.44 
       [2]
-Underfull \hbox (badness 10000) in paragraph at lines 43--45
+Underfull \hbox (badness 10000) in paragraph at lines 49--51
 
  []
 
@@ -823,7 +823,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.65   \item L
+l.71   \item L
               exical influx/phone frequency (probabilistic info) \\ [3]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -835,7 +835,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.99 ...els?}{\textit{Derek Zoolander, probably.}}
+l.105 ...ls?}{\textit{Derek Zoolander, probably.}}
                                                    [4])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3178,7 +3178,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 125.
 Here is how much of TeX's memory you used:
  10089 strings out of 495020
  149871 string characters out of 6181324
- 251855 words of memory out of 5000000
+ 251904 words of memory out of 5000000
  12716 multiletter control sequences out of 15000+600000
  18417 words of font info for 60 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -3265,7 +3265,7 @@ re/qtmr.pfb></usr/share/texmf/fonts/type1/fkr/tipa/tipa10.pfb></usr/share/texmf
 /fonts/type1/fkr/tipa/tipa12.pfb></usr/share/texmf/fonts/type1/fkr/tipa/tipa8.p
 fb></usr/share/texmf/fonts/type1/fkr/tipa/tipasl10.pfb></usr/share/texmf/fonts/
 type1/fkr/tipa/tipasl12.pfb>
-Output written on main.pdf (111 pages, 3598493 bytes).
+Output written on main.pdf (111 pages, 3602235 bytes).
 PDF statistics:
  2004 PDF objects out of 2073 (max. 8388607)
  1649 compressed objects within 17 object streams
