@@ -1,3 +1,5 @@
+\contentsline {paragraph}{Journal articles}{6}{section*.6}
+\contentsline {paragraph}{Conference proceedings}{6}{section*.7}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Perceptual vowel epenthesis [main]}{2}{section.1.1}
 \contentsline {section}{\numberline {1.2}Input representations of nonnative speech [what]}{2}{section.1.2}
@@ -11,7 +13,7 @@
 \contentsline {subsection}{\numberline {2.1.2}Role of acoustics}{7}{subsection.2.1.2}
 \contentsline {subsection}{\numberline {2.1.3}Chapter preview}{8}{subsection.2.1.3}
 \contentsline {section}{\numberline {2.2}Which epenthetic vowel? \\ Phonetic categories versus acoustic detail in perceptual vowel epenthesis}{9}{section.2.2}
-\contentsline {paragraph}{Abstract}{9}{section*.7}
+\contentsline {paragraph}{Abstract}{9}{section*.9}
 \contentsline {subsection}{\numberline {2.2.1}Introduction}{9}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Methods}{10}{subsection.2.2.2}
 \contentsline {subsubsection}{\numberline {2.2.2.1}\textit {Participants}}{10}{subsubsection.2.2.2.1}
@@ -25,18 +27,18 @@
 \contentsline {subsubsection}{\numberline {2.2.5.1}Identification results separated by speaker}{16}{subsubsection.2.2.5.1}
 \contentsline {subsubsection}{\numberline {2.2.5.2}Acoustic analyses}{16}{subsubsection.2.2.5.2}
 \contentsline {subsubsection}{\numberline {2.2.5.3}Supplementary experiment: ABX task}{18}{subsubsection.2.2.5.3}
-\contentsline {paragraph}{Participants}{18}{section*.8}
-\contentsline {paragraph}{Stimuli}{18}{section*.9}
-\contentsline {paragraph}{Procedure}{19}{section*.10}
+\contentsline {paragraph}{Participants}{18}{section*.10}
+\contentsline {paragraph}{Stimuli}{18}{section*.11}
+\contentsline {paragraph}{Procedure}{19}{section*.12}
 \contentsline {paragraph}{Results}{20}{figure.2.6}
-\contentsline {paragraph}{Correlation with identification results}{21}{section*.12}
+\contentsline {paragraph}{Correlation with identification results}{21}{section*.14}
 \contentsline {section}{\numberline {2.3}Predicting epenthetic vowel quality from acoustics}{22}{section.2.3}
-\contentsline {paragraph}{Abstract}{22}{section*.13}
+\contentsline {paragraph}{Abstract}{22}{section*.15}
 \contentsline {subsection}{\numberline {2.3.1}Introduction}{23}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Perception experiment}{23}{subsection.2.3.2}
 \contentsline {subsubsection}{\numberline {2.3.2.1}Methods}{23}{subsubsection.2.3.2.1}
 \contentsline {subsubsection}{\numberline {2.3.2.2}Results}{23}{subsubsection.2.3.2.2}
-\contentsline {paragraph}{/i/-epenthesis}{24}{section*.14}
+\contentsline {paragraph}{/i/-epenthesis}{24}{section*.16}
 \contentsline {paragraph}{/u/-epenthesis}{24}{figure.2.9}
 \contentsline {subsection}{\numberline {2.3.3}Acoustic analyses}{24}{subsection.2.3.3}
 \contentsline {subsubsection}{\numberline {2.3.3.1}Methods}{25}{subsubsection.2.3.3.1}
@@ -47,37 +49,37 @@
 \contentsline {subsection}{\numberline {2.3.4}Production-based exemplar model}{27}{subsection.2.3.4}
 \contentsline {subsubsection}{\numberline {2.3.4.1}Methods}{28}{subsubsection.2.3.4.1}
 \contentsline {subsubsection}{\numberline {2.3.4.2}Results}{29}{subsubsection.2.3.4.2}
-\contentsline {paragraph}{/i/-epenthesis}{29}{section*.19}
-\contentsline {paragraph}{/u/-epenthesis}{29}{section*.20}
+\contentsline {paragraph}{/i/-epenthesis}{29}{section*.21}
+\contentsline {paragraph}{/u/-epenthesis}{29}{section*.22}
 \contentsline {subsection}{\numberline {2.3.5}Discussion}{31}{subsection.2.3.5}
 \contentsline {section}{\numberline {2.4}Predicting epenthetic vowel quality from acoustics II: It's about time!}{32}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Introduction}{32}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}Methods}{33}{subsection.2.4.2}
 \contentsline {subsubsection}{\numberline {2.4.2.1}Features}{33}{subsubsection.2.4.2.1}
 \contentsline {subsubsection}{\numberline {2.4.2.2}Classification}{33}{subsubsection.2.4.2.2}
-\contentsline {paragraph}{Dynamic Time Warping}{33}{section*.21}
-\contentsline {paragraph}{Similarity function}{34}{section*.22}
+\contentsline {paragraph}{Dynamic Time Warping}{33}{section*.23}
+\contentsline {paragraph}{Similarity function}{34}{section*.24}
 \contentsline {subsubsection}{\numberline {2.4.2.3}Parameter estimation}{34}{subsubsection.2.4.2.3}
 \contentsline {subsubsection}{\numberline {2.4.2.4}Data analysis}{35}{subsubsection.2.4.2.4}
 \contentsline {subsection}{\numberline {2.4.3}Results}{36}{subsection.2.4.3}
 \contentsline {subsubsection}{\numberline {2.4.3.1}Re-analysing results from the perception experiment}{36}{subsubsection.2.4.3.1}
-\contentsline {paragraph}{/i/-epenthesis}{36}{section*.23}
-\contentsline {paragraph}{/u/-epenthesis}{36}{section*.24}
+\contentsline {paragraph}{/i/-epenthesis}{36}{section*.25}
+\contentsline {paragraph}{/u/-epenthesis}{36}{section*.26}
 \contentsline {subsubsection}{\numberline {2.4.3.2}Exemplar models without duration penalty}{36}{subsubsection.2.4.3.2}
-\contentsline {paragraph}{/i/-epenthesis}{37}{section*.25}
-\contentsline {paragraph}{/u/-epenthesis}{38}{section*.26}
+\contentsline {paragraph}{/i/-epenthesis}{37}{section*.27}
+\contentsline {paragraph}{/u/-epenthesis}{38}{section*.28}
 \contentsline {subsubsection}{\numberline {2.4.3.3}Exemplar models with duration penalty}{38}{subsubsection.2.4.3.3}
-\contentsline {paragraph}{Adding the duration-mismatch penalty}{38}{section*.27}
-\contentsline {paragraph}{/i/-epenthesis}{39}{section*.28}
-\contentsline {paragraph}{/u/-epenthesis}{40}{section*.29}
+\contentsline {paragraph}{Adding the duration-mismatch penalty}{38}{section*.29}
+\contentsline {paragraph}{/i/-epenthesis}{39}{section*.30}
+\contentsline {paragraph}{/u/-epenthesis}{40}{section*.31}
 \contentsline {subsection}{\numberline {2.4.4}Discussion}{40}{subsection.2.4.4}
 \contentsline {section}{\numberline {2.5}Conclusions}{42}{section.2.5}
 \contentsline {chapter}{\numberline {3}Modelling speech perception with ASR systems}{44}{chapter.3}
 \contentsline {section}{\numberline {3.1}Anatomy of our HMM-based speech recogniser}{44}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Corpora}{45}{subsection.3.1.1}
-\contentsline {paragraph}{Corpus of Spontaneous Japanese (CSJ)}{45}{section*.30}
-\contentsline {paragraph}{Korean Corpus of Spontaneous Speech (KCSS)}{46}{section*.31}
-\contentsline {paragraph}{Wall Street Journal - Read (WSJ)}{46}{section*.32}
+\contentsline {paragraph}{Corpus of Spontaneous Japanese (CSJ)}{45}{section*.32}
+\contentsline {paragraph}{Korean Corpus of Spontaneous Speech (KCSS)}{46}{section*.33}
+\contentsline {paragraph}{Wall Street Journal - Read (WSJ)}{46}{section*.34}
 \contentsline {subsection}{\numberline {3.1.2}Features}{47}{subsection.3.1.2}
 \contentsline {subsection}{\numberline {3.1.3}Acoustic model}{48}{subsection.3.1.3}
 \contentsline {subsubsection}{\numberline {3.1.3.1}Why not triphones?}{49}{subsubsection.3.1.3.1}
@@ -88,30 +90,30 @@
 \contentsline {subsection}{\numberline {3.2.1}Introduction}{53}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Experiment 1: {\color {red}m-/ahpa/}}{53}{subsection.3.2.2}
 \contentsline {subsubsection}{\numberline {3.2.2.1}Methods}{53}{subsubsection.3.2.2.1}
-\contentsline {paragraph}{Stimuli}{53}{section*.33}
-\contentsline {paragraph}{Language models}{53}{section*.34}
+\contentsline {paragraph}{Stimuli}{53}{section*.35}
+\contentsline {paragraph}{Language models}{53}{section*.36}
 \contentsline {paragraph}{Identification task simulation}{54}{figure.3.5}
 \contentsline {subsubsection}{\numberline {3.2.2.2}Quantitative analysis}{54}{subsubsection.3.2.2.2}
 \contentsline {subsubsection}{\numberline {3.2.2.3}Qualitative analyses}{56}{subsubsection.3.2.2.3}
-\contentsline {paragraph}{Identification accuracy}{56}{section*.36}
-\contentsline {paragraph}{Control items}{57}{section*.37}
-\contentsline {paragraph}{Test items}{58}{section*.38}
+\contentsline {paragraph}{Identification accuracy}{56}{section*.38}
+\contentsline {paragraph}{Control items}{57}{section*.39}
+\contentsline {paragraph}{Test items}{58}{section*.40}
 \contentsline {subsection}{\numberline {3.2.3}Experiment 2: {\color {red}Parlato-lms}}{59}{subsection.3.2.3}
 \contentsline {subsubsection}{\numberline {3.2.3.1}Methods}{59}{subsubsection.3.2.3.1}
-\contentsline {paragraph}{Stimuli}{59}{section*.39}
-\contentsline {paragraph}{Language models}{59}{section*.40}
-\contentsline {paragraph}{Identification task simulation}{60}{section*.41}
+\contentsline {paragraph}{Stimuli}{59}{section*.41}
+\contentsline {paragraph}{Language models}{59}{section*.42}
+\contentsline {paragraph}{Identification task simulation}{60}{section*.43}
 \contentsline {subsubsection}{\numberline {3.2.3.2}Results: Quantitative analysis}{60}{subsubsection.3.2.3.2}
 \contentsline {subsubsection}{\numberline {3.2.3.3}Results: Qualitative analysis}{61}{subsubsection.3.2.3.3}
 \contentsline {paragraph}{Default vowel}{61}{figure.3.12}
-\contentsline {paragraph}{Effect of coarticulation}{61}{section*.43}
+\contentsline {paragraph}{Effect of coarticulation}{61}{section*.45}
 \contentsline {subsection}{\numberline {3.2.4}Discussion}{63}{subsection.3.2.4}
 \contentsline {section}{\numberline {3.3}{\color {red}Do we need to go deeper? Are surface phonotactics enough?}}{64}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Introduction}{64}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Methods}{64}{subsection.3.3.2}
 \contentsline {subsubsection}{\numberline {3.3.2.1}Stimuli}{64}{subsubsection.3.3.2.1}
-\contentsline {paragraph}{Language models}{64}{section*.44}
-\contentsline {paragraph}{Identification task simulation}{64}{section*.45}
+\contentsline {paragraph}{Language models}{64}{section*.46}
+\contentsline {paragraph}{Identification task simulation}{64}{section*.47}
 \contentsline {subsubsection}{\numberline {3.3.2.2}Data analysis}{64}{subsubsection.3.3.2.2}
 \contentsline {subsection}{\numberline {3.3.3}Results}{64}{subsection.3.3.3}
 \contentsline {subsection}{\numberline {3.3.4}Discussion}{64}{subsection.3.3.4}
@@ -119,20 +121,20 @@
 \contentsline {subsection}{\numberline {3.4.1}Introduction}{65}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}Methods}{65}{subsection.3.4.2}
 \contentsline {subsubsection}{\numberline {3.4.2.1}Behavioural experiment}{65}{subsubsection.3.4.2.1}
-\contentsline {paragraph}{Participants}{65}{section*.46}
-\contentsline {paragraph}{Stimuli}{65}{section*.47}
-\contentsline {paragraph}{Procedure}{65}{section*.48}
-\contentsline {subsubsection}{\numberline {3.4.2.2}Modelling}{65}{subsubsection.3.4.2.2}
+\contentsline {paragraph}{Participants}{65}{section*.48}
 \contentsline {paragraph}{Stimuli}{65}{section*.49}
-\contentsline {paragraph}{Acoustic models}{65}{section*.50}
-\contentsline {paragraph}{Language models}{65}{section*.51}
-\contentsline {paragraph}{Identification task simulation}{66}{section*.52}
+\contentsline {paragraph}{Procedure}{65}{section*.50}
+\contentsline {subsubsection}{\numberline {3.4.2.2}Modelling}{65}{subsubsection.3.4.2.2}
+\contentsline {paragraph}{Stimuli}{65}{section*.51}
+\contentsline {paragraph}{Acoustic models}{65}{section*.52}
+\contentsline {paragraph}{Language models}{65}{section*.53}
+\contentsline {paragraph}{Identification task simulation}{66}{section*.54}
 \contentsline {subsubsection}{\numberline {3.4.2.3}Data analysis}{66}{subsubsection.3.4.2.3}
 \contentsline {subsection}{\numberline {3.4.3}Results}{66}{subsection.3.4.3}
 \contentsline {subsection}{\numberline {3.4.4}Discussion}{66}{subsection.3.4.4}
 \contentsline {section}{\numberline {3.5}Conclusions}{66}{section.3.5}
 \contentsline {chapter}{\numberline {4}General Discussion}{67}{chapter.4}
-\contentsline {paragraph}{Paradigm}{67}{section*.53}
-\contentsline {paragraph}{ASR system}{67}{section*.54}
-\contentsline {paragraph}{Quantitative approach}{67}{section*.55}
+\contentsline {paragraph}{Paradigm}{67}{section*.55}
+\contentsline {paragraph}{ASR system}{67}{section*.56}
+\contentsline {paragraph}{Quantitative approach}{67}{section*.57}
 \contentsline {chapter}{\numberline {A}\ignorespaces Are words easier to learn from infant- than adult-directed speech? }{72}{appendix.A}
