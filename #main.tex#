@@ -13,6 +13,7 @@
 \usepackage{booktabs}
 \usepackage{threeparttable}
 \usepackage{pdfpages}
+\usepackage{epigraph}
 \usepackage[percent]{overpic}
 \usepackage{hyperref}
 \hypersetup{
@@ -21,10 +22,10 @@
     linkcolor=black,  %choose some color if you want links to stand out
   }
 \usepackage{setspace}
-% \doublespacing
+%\doublespacing
 \usepackage{lineno}
 
-o\setcounter{secnumdepth}{3o}
+\setcounter{secnumdepth}{3}
 
 \graphicspath{{images/}}
 
@@ -36,7 +37,7 @@ o\setcounter{secnumdepth}{3o}
 
 
 \title{
-	{Thesis Title}\\
+	{Decoding perceptual vowel epenthesis: Experiments \& Modelling}\\
 	{\large Institution Name}\\
 %	{\includegraphics{university.jpg}}
 }
@@ -52,17 +53,41 @@ Abstract goes here
 \chapter*{Résumé}
 Abstract goes ici
 
-\chapter*{Dedication}
-%To mum and dad
+\chapter*{}
+\epigraph{%Los niños han ido con Platero al arroyo de los chopos, y ahora lo traen trotando, entre juegos sin razón y risas desproporcionadas, todo cargado de flores amarillas.
+  Allá abajo les ha llovido —aquella nube fugaz que veló el prado verde con sus hilos de oro y plata, en los que tembló, como en una lira de llanto, el arco iris—. Y sobre la empapada lana del asnucho, las campanillas mojadas gotean todavía.
+
+  ¡Idilio fresco, alegre, sentimental! ¡Hasta el rebuzno de Platero se hace tierno bajo la dulce carga llovida! De cuando en cuando, vuelve la cabeza y arranca las flores a que su bocota alcanza. Las campanillas, níveas y gualdas, le cuelgan, un momento, entre el blanco babear verdoso y luego se le van a la barrigota cinchada. ¡Quién, como tú, Platero, pudiera comer flores..., y que no le hicieran daño!
+
+    ¡Tarde equívoca de abril!... Los ojos brillantes y vivos de Platero copian toda la hora de sol y lluvia, en cuyo ocaso, sobre el campo de San Juan, se ve llover, deshilachada, otra nube rosa.}{\textit{Idilio de Abril. Platero y yo. \\ Juan Ramón Jiménez}}
 
 %\chapter*{Declaration}
 %I declare that..
 
 \chapter*{Acknowledgements}
 I want to thank...
+%do not forget la Maison de la Prairie
 
 \chapter*{Publications}
 
+\paragraph{Journal articles}
+\begin{itemize}
+\item \textbf{Guevara-Rukoz, A.}, Cristia, A., Ludusan, B., Thiollière, R., Martin, A., Mazuka, R., \& Dupoux, E. (2018). \\
+  Are words easier to learn from infant- than adult-directed speech? A quantitative corpus-based investigation. \\
+  Cognitive Science. https://doi.org/10.1111/cogs.12616
+\item Fort, M., Lammertink, I., Peperkamp, S., \textbf{Guevara-Rukoz, A.}, Fikkert, P., \& Tsuji, S. (2018). \\
+  SymBouki: a meta-analysis on the emergence of sound symbolism in early language acquisition. \\
+  Developmental Science. https://doi.org/10.1111/desc.12659
+\item \textbf{Guevara-Rukoz, A.}, Lin, I., Morii, M., Minagawa, Y., Dupoux, E., \& Peperkamp, S. (2017). \\
+  Which epenthetic vowel? Phonetic categories versus acoustic detail in perceptual vowel epenthesis. \\
+  The Journal of the Acoustical Society of America, 142(2), EL211-EL217.
+\end{itemize}
+\paragraph{Conference proceedings}
+\begin{itemize}
+\item \textbf{Guevara-Rukoz, A.}, Parlato-Oliveira, E., Yu, S., Hirose, Y., Peperkamp, S., and Dupoux, E. (2017). \\
+  Predicting epenthetic vowel quality from acoustics. \\
+  Proceedings of Interspeech, 596-600.
+\end{itemize}
 
 \tableofcontents
 \linenumbers
@@ -76,14 +101,12 @@ I want to thank...
 \chapter{Modelling speech perception with ASR systems}
 \input{chapters/chapter03}
 
-%\chapter{{\color{red}Gestural vs. acoustic primitives in perceptual vowel epenthesis}}
-%\input{chapters/chapter04}
-
-% \chapter{Chapter Five Title}
-%\input{chapters/chapter05}
-
 \chapter{General Discussion}
 \input{chapters/chapter05-disc}
+
+%\chapter{References}
+\bibliographystyle{apalike}
+\bibliography{main}
 
 \appendix
 \fancyhead{}
@@ -91,11 +114,7 @@ I want to thank...
 \fancyhead[RO,LE]{\nouppercase{\leftmark}}
 \fancyfoot{}
 \fancyfoot[LE,RO]{\thepage}
-\input{chapters/appendix}
-
-\chapter{References}
-\bibliographystyle{apalike}
-\bibliography{main}
+\input{chapters/appendix} %% [TODO]: Add to table of contents
 
 \end{document}
 

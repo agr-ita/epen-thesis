@@ -9,7 +9,7 @@
 %%%%%%%%%%%%%%%%%%%%%%
 % Chapter mini-intro %
 %%%%%%%%%%%%%%%%%%%%%%
-
+\section{Introduction}
 %%% Short BG
 %\subsection{ASR tools as models of perception}
 
@@ -286,7 +286,7 @@ In this section, we investigate the type of phonotactic information that might b
 \begin{figure}[htb]
   \centering
   \begin{overpic}[trim={0 1cm 0 1.5cm},clip, width=0.7\linewidth]{chapter03/m-ahpa_praat_ah0apa.pdf}\end{overpic}
-  \caption{\textit{Example of how the ASR system decodes the item \textipa{/ah$_{a}$pa/}, using the null version of the language model in Figure \ref{fig:m-ahpa_G}. From top to bottom: original waveform, item name, aligned transcriptions given by the model (from the most probable to the least probable, with the corresponding posteriorgrams shown to their right side), and spectrogram with formant contours. SIL = silence.}}
+  \caption{\textit{Example of how the ASR system decodes the item \textipa{/ah$_{a}$pa/}, using the null version of the language model in Figure \ref{fig:m-ahpa_G}. From top to bottom: original waveform, item name, aligned transcriptions given by the model (from the most probable to the least probable, with the corresponding posteriorgrams shown to their right side), and spectrogram with formant contours. SIL = silence. {\color{red}TODO: get updated figure (this is with mono-6K)}}}
   \label{fig:m-ahpa_align}
 \end{figure}
 
@@ -419,7 +419,7 @@ We used the same procedure as in Experiment 1. An example of how the ASR system 
 \begin{figure}[htb!]
   \centering
   \begin{overpic}[trim={0 2.5cm 0 1.5cm},clip, width=0.7\linewidth]{chapter03/parlato-hmm_praat_agni.pdf}\end{overpic}
-  \caption{\textit{Example of how the ASR system decodes the item \textipa{/agni/}, using the null version of the language model in Figure \ref{fig:parlato_G}. From top to bottom: original waveform, item name, aligned transcriptions given by the model (from the most probable to the least probable, with the corresponding posteriorgrams shown to their right side), and spectrogram with formant contours. SIL = silence.}}
+  \caption{\textit{Example of how the ASR system decodes the item \textipa{/agni/}, using the null version of the language model in Figure \ref{fig:parlato_G}. From top to bottom: original waveform, item name, aligned transcriptions given by the model (from the most probable to the least probable, with the corresponding posteriorgrams shown to their right side), and spectrogram with formant contours. SIL = silence. {\color{red}TODO: get updated figure (this is with mono-6K)}}}
   \label{fig:parl_hmm_align}
 \end{figure}
 
@@ -621,7 +621,33 @@ The organisation of the stimuli, based on place of articulation of \textsc{C}, i
 %% Hopefully the model mostly outputs "none" for clusters and it's almost perfectly accurate for fullV !!!!! 
 
 \subsubsection{Korean model (test)}
+%> aggregate(pgram~palatal+fullV, data=d.mod.pgram[d.mod.pgram$resp == "--",], FUN=mean)
+%  palatal fullV      pgram
+%1   FALSE FALSE 0.37217973
+%2    TRUE FALSE 0.30667840
+%3   FALSE  TRUE 0.05465978
+%4    TRUE  TRUE 0.04285943
 
+%> aggregate(pgram~fullV, data=d.mod.pgram[d.mod.pgram$resp == "--",], FUN=mean)
+%  fullV      pgram
+%1 FALSE 0.33942907
+%2  TRUE 0.04875961
+
+\begin{figure}[H]
+  \centering
+  \begin{overpic}[page=2, width=0.4\linewidth]{chapter03/k-epenth_figs}\end{overpic}
+  \hspace{1cm}
+  \begin{overpic}[page=3, width=0.4\linewidth]{chapter03/k-epenth_figs}\end{overpic}
+  \caption{\textit{{\color{red}[TODO]}}}
+  \label{fig:k-epenth_KR_fullV}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \begin{overpic}[page=4, width=0.7\linewidth]{chapter03/k-epenth_figs}\end{overpic}  
+  \caption{\textit{{\color{red}[TODO]}}}
+  \label{fig:k-epenth_KR_clusters}
+\end{figure}
 \subsection{Discussion}
 
 %%%%%%%%%%%%
@@ -671,8 +697,9 @@ We use a null/uniform language model (\textsc{0P-LM}), which implies that listen
 \paragraph{Identification task simulation}
 After decoding the stimuli, we obtained for each possible transcription of each item the corresponding acoustic/articulatory and language model scores. From these we derived the item posteriorgrams, which indicate how probable a given transcription was, given the acoustic or articulatory input. We used these probabilities as proxies of the probability that a listener might exploit when performing reverse inference during speech perception, and therefore, the probabilities used when responding in an identification task. As such, for each item, we obtained a percentage of vowel epenthesis.
 
-\subsubsection{Data analysis}
 \subsection{Results}
+\subsubsection{Comparing models}
+\subsubsection{Comparing models to humans}
 \subsection{Discussion}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
