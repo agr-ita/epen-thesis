@@ -1,6 +1,6 @@
 %%% TO-DO %%%
-% - [ ] Keep same POV throughout sentences 
-% - [ ] 1 sentence == 1 idea. Expand; don't be afraid to write more text!
+% - [X] Keep same POV throughout sentences 
+% - [X] 1 sentence == 1 idea. Expand; don't be afraid to write more text!
 
 
 % - [ ] Check paper comments (Emm 20/07)
@@ -15,11 +15,21 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Beginning from the time in her mother's womb, a baby is exposed to what will later become their native language(s). Initially able to discriminate a wide variety of sounds, the perceptual system of the infant progressively becomes attuned to sounds and structures useful for decoding their native language(s) [CITE Werker]. That is, the acoustic space is partitioned according to how native phonemes, which are generally accepted as the smallest phonetic units capable of conveying a lexical distinction, map onto it. The perceptual system also becomes sensitive to the distribution of sound combinations [CITE: Jusczyk; Saffran...]. In sum, %Not really conveying what was said earlier! 
-exposure to the native language-to-be results in the optimisation of the perceptual system to process the language in question.
+Beginning from the time spent in her mother's womb, a baby is exposed to sounds and, importantly, she is exposed to speech. Initially a ``universal listener'', in her early months she is initially able to discriminate a wide variety of sounds [CITE]. However, as she is exposed to only one or a few languages that are spoken around her, she progressively loses the ``universal listener'' title. Indeed, through this exposure, her perceptual system progressively becomes attuned to sounds and structures useful for decoding what will progressively become her native language(s) [CITE Werker].
 
-While this allows us to communicate efficiently in our native language, issues arise when we attempt to acquire nonnative languages. Nonnative input is subject to a perceptual system that has been attuned to different segmental and suprasegmental inventories, and different phonotactics (i.e., structural constraints). This often results in nonnative speech being misperceived; phonemes and prosodic elements might be replaced (assimilation) or deleted (ellipsis), or additional sounds might even be inserted (epenthesis).
+That is, at around 10 months of age, the infant's perceptual system shows signs of becoming optimised for receiving and processing native input.
+On one hand, a native phonemic inventory is established. Phonemes are generally as the smallest phonetic units capable of conveying a lexical distinction in a language. It is therefore essential for the infant to be able to notice when two different acoustic signals correspond to the same or different phonemes, in order to properly access lexical meaning. For this to happen, her perceptual system partitions the acoustic space into areas corresponding to the phonemes relevant for her native language [CITE]. 
 
+On the other hand, the infant also becomes aware of which phoneme combinations occur in the language and which ones do not [CITE Saffran, ...]. In particular, she progressively acquires the phonotactics for her native language, namely, the constraints determining what constitutes well-formed native sound combinations [CITE: Jusczyk, Pisoni?...]. This is useful, for instance, when trying to find word boundaries in fluent speech, as it is more probable for a rare phoneme combination to occur between words than within words [CITE]. 
+
+Through the optimisation process that results in the acquisition of the nativephoneme inventory and native phonotactics, the infant's perceptual system becomes specialised in her native language, allowing her to better tackle problemes such as word learning.  
+
+Most of us have been that universal listener baby that then became a perceptually attuned infant. And while this allows us to communicate efficiently in our native language, issues arise when we attempt to acquire nonnative languages as adults.
+When we hear nonnative speech, it is processed by a perceptual system that has been optimised for our native language. The nonnative speech is processed according to segmental and suprasegmental inventories, and phonotactics that do not match does intended by the speech source.   
+This often results in nonnative speech being misperceived; phonemes and prosodic elements might be replaced (assimilation) or deleted (ellipsis). Additional phonemes might even be inserted (epenthesis).
+
+%%% Continue editing here %%% 
+{\color{red}
 It seems to be a general consensus %amongst who??? which literature???
 that the input % input and output are reminiscent of theoretical linguistics, not perception! Perception: intput --processing/mapping---> output   ==> confusions / merging. Make sure to define input and output for EACH loanword and perception. 
 processing that result in these misperceptions are minimal in nature, leading to an output that is the closest native representation of the nonnative input [CITE]. But how can we define this distance metric? this is where theories diverge; through the years multiple proposals have spawned in the loanword and psycholinguistics literature. When grouping proposals, the most salient rift is that opposing phonology-based to phonetically-based approaches. %Thomas: line 24: « When grouping  proposals, the most salient rift is that opposing phonology-based to phonetically-based approaches » -> introduire brièvement les concepts de phonology vs phonetics avant cette phrase?
@@ -28,8 +38,22 @@ However, note that the dichotomy is relatively artificial, as a combination of t
 In this dissertation, I present computational models that can be used to quantitatively evaluate hypotheses concerning the underlying mechanisms of nonnative speech (mis)perception, focusing on the phenomenon of perceptual vowel epenthesis. Following on [CITE peperkamp], I experimentally test nonnative speech perception using psycholinguistics paradigms which tap onto online %Thomas: tu mentionnes plusieurs fois "online nonword perception", qu'est-ce que tu veux dire par "online" dans ce contexte?
 perception of nonwords, in order to reduce the influence of confounds such as orthography. %Thomas: line 33: what about semantic confounds?
 I subject the proposed computational models to tasks analogous to those completed by human participants and analyse their behaviour both quantitatively and qualitatively. Do we find perception-based mechanisms to be necessary to predict perceptual vowel epenthesis? If so, do they suffice? 
+}
+% - [ ] OR: 1) Loanwords 2) Perception (->1 maybe explains loanwords) 3) Here: dealing with perception
+
+\section{Vowel epenthesis in loanword adaptations}
+\section{Perceptual vowel epenthesis}
+\section{Processing steps in perceptual vowel epenthesis}
+\section{Justifying the modelling approach}
+\epigraph{... But why make models?}{\textit{Derek Zoolander, probably.}}
+Quantitative testing $~$
+
+Suggestion Thomas: ``au-delà de permettre des tests quantitatifs, ça peut être bénéfique simplement pour formuler et réfléchir aux théories (less vague/ambiguous than verbal theories, forces rigorous definitions and precise hypothesis formulation, makes it easier to identify where theories fundamentally differs and where there is only shallow differences).''
+\section{Outline of this thesis}
+%%%%%%%
 
 
+{\color{red}
 \section{Perceptual vowel epenthesis [main]}
 
 As mentioned above epenthesis is the phenomenon in which a sound that was not initially present in the input is inserted and surfaces in the output\footnote{Depending on context, the word ``epenthesis'' can refer to the addition of any sound (consonant, vowel ...) in different situations such as online perception, online production, diachronic lexical changes, etc. For the purpose of this thesis, however, we will specifically use the word ``epenthesis'' to refer to perceptual vowel epenthesis, unless stated otherwise.}. As such, when listeners experience perceptual vowel epenthesis, they hallucinate vowels not initially present in the input. In the cases studied in this work, this happens in order to break phonotactically illegal clusters present in the input. For instance, in Japanese most consonant clusters\footnote{Consonant clusters can only be geminates or a nasal followed by another consonant.}, such as \textipa{/bz/}, are phonotactically illegal. When hearing nonwords containing these clusters, such as \textipa{/ebzo/}, Japanese listeners may hallucinate an epenthetic \textipa{/u/}\footnote{A more faithful phonetic transcription of the vowel is \textipa{[W]} but following previous work the phonological notation \textipa{/u/} will be used in the remainder of the thesis.} within the cluster, yielding \textipa{/ebuzo/} as the output percept \cite{dupoux1999}. Epenthesis of \textipa{/u/} by Japanese listeners is not only evident in their behaviour but also in their brain responses; they have difficulties differentiating the clusters produced by a French speaker from their epenthesized counterparts (e.g., \textipa{/ebzo/} \textit{vs.} \textipa{/ebuzo/}) while also showing different event-related potentials compared to native French speakers \cite{dehaene2000}.
@@ -103,10 +127,7 @@ In particular, there is the question of how the nonnative input is represented a
      \item Dehaene (2001): "However, the condition effect observed in Japanese during the second response suggests that some information about the input could be recovered from other processing systems";
   \end{itemize}  
 \end{itemize}
-    
-\section{Justifying the modelling approach}
-\epigraph{... But why make models?}{\textit{Derek Zoolander, probably.}}
-Quantitative testing $~$ \\
-Suggestion Thomas: ``au-delà de permettre des tests quantitatifs, ça peut être bénéfique simplement pour formuler et réfléchir aux théories (less vague/ambiguous than verbal theories, forces rigorous definitions and precise hypothesis formulation, makes it easier to identify where theories fundamentally differs and where there is only shallow differences).''
-\section{Outline of this thesis}
+}
+
+
 
