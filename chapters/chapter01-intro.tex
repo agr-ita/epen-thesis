@@ -1,18 +1,14 @@
 %%% TO-DO %%%
 % - [X] Keep same POV throughout sentences 
 % - [X] 1 sentence == 1 idea. Expand; don't be afraid to write more text!
-
-
 % - [ ] Check paper comments (Emm 20/07)
-% - [ ] Paragraph 3: "There are multiple proposals. Need to better define them/have precise proposals to test empirically. Here: we take one of the proposals and put it to a test with a computational model"
+% - [X] Paragraph 3: "There are multiple proposals. Need to better define them/have precise proposals to test empirically. Here: we take one of the proposals and put it to a test with a computational model"
 % - [ ] STRUCTURE
 %     - [ ] EITHER: 1) Perceptual 2) Similar phenomenon in loanwords
 %     - [ ] OR: 1) Loanwords 2) Perception (->1 maybe explains loanwords) 3) Here: dealing with perception
 % - [ ] SEPARER PERCEPTION AND LOANWORDS (including what is input and output in each). Lw = source of inspiration + data (allows predictions for perception) 
 % - [ ] Careful not to confuse perceptual task with "individual loanword task"
 % - [ ] Préciser qu'on va tester spécifiquement les théories one step
-
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Beginning from the time spent in her mother's womb, a baby is exposed to sounds and, importantly, she is exposed to speech. Initially a ``universal listener'', in her early months she is initially able to discriminate a wide variety of sounds [CITE]. However, as she is exposed to only one or a few languages that are spoken around her, she progressively loses the ``universal listener'' title. Indeed, through this exposure, her perceptual system progressively becomes attuned to sounds and structures useful for decoding what will progressively become her native language(s) [CITE Werker].
@@ -24,23 +20,20 @@ On the other hand, the infant also becomes aware of which phoneme combinations o
 
 Through the optimisation process that results in the acquisition of the nativephoneme inventory and native phonotactics, the infant's perceptual system becomes specialised in her native language, allowing her to better tackle problemes such as word learning.  
 
-Most of us have been that universal listener baby that then became a perceptually attuned infant. And while this allows us to communicate efficiently in our native language, issues arise when we attempt to acquire nonnative languages as adults.
-When we hear nonnative speech, it is processed by a perceptual system that has been optimised for our native language. The nonnative speech is processed according to segmental and suprasegmental inventories, and phonotactics that do not match does intended by the speech source.   
+Most of us have been that universal listener baby that then became a perceptually attuned infant. And while this perceptual attunement allows us to communicate efficiently in our native language, issues arise when we attempt to acquire nonnative languages as adults.
+Nonnative speech is processed by a perceptual system that has been optimised for our native language. It is therefore processed according to segmental and suprasegmental inventories, and phonotactics that do not match those intended by the speech source. 
 This often results in nonnative speech being misperceived; phonemes and prosodic elements might be replaced (assimilation) or deleted (ellipsis). Additional phonemes might even be inserted (epenthesis).
 
-%%% Continue editing here %%% 
-{\color{red}
-It seems to be a general consensus %amongst who??? which literature???
-that the input % input and output are reminiscent of theoretical linguistics, not perception! Perception: intput --processing/mapping---> output   ==> confusions / merging. Make sure to define input and output for EACH loanword and perception. 
-processing that result in these misperceptions are minimal in nature, leading to an output that is the closest native representation of the nonnative input [CITE]. But how can we define this distance metric? this is where theories diverge; through the years multiple proposals have spawned in the loanword and psycholinguistics literature. When grouping proposals, the most salient rift is that opposing phonology-based to phonetically-based approaches. %Thomas: line 24: « When grouping  proposals, the most salient rift is that opposing phonology-based to phonetically-based approaches » -> introduire brièvement les concepts de phonology vs phonetics avant cette phrase?
-However, note that the dichotomy is relatively artificial, as a combination of these two proposals is also a possibility. % ED: "Balle dans le pied" :( | Thomas: phrase un peu bizarre
+It seems to be generally accepted in the loanword adaptation and nonnative speech perception literatures that misperceptions of nonnative speech result from minimal modifications of the original speech. However, there are multiple proposals relating to the exact nature of these modifications. For instance, are these phonetically-minimal? Phonologically-minimal?    
+% - [ ] Paragraph 3: "There are multiple proposals. Need to better define them/have precise proposals to test empirically. Here: we take one of the proposals and put it to a test with a computational model"
 
-In this dissertation, I present computational models that can be used to quantitatively evaluate hypotheses concerning the underlying mechanisms of nonnative speech (mis)perception, focusing on the phenomenon of perceptual vowel epenthesis. Following on [CITE peperkamp], I experimentally test nonnative speech perception using psycholinguistics paradigms which tap onto online %Thomas: tu mentionnes plusieurs fois "online nonword perception", qu'est-ce que tu veux dire par "online" dans ce contexte?
-perception of nonwords, in order to reduce the influence of confounds such as orthography. %Thomas: line 33: what about semantic confounds?
-I subject the proposed computational models to tasks analogous to those completed by human participants and analyse their behaviour both quantitatively and qualitatively. Do we find perception-based mechanisms to be necessary to predict perceptual vowel epenthesis? If so, do they suffice? 
-}
+It is my belief that the various proposals put forward must be formally defined in order to be tested empirically.  
+In this dissertation, I select one of the proposals advanced by the psycholinguistics literature, namely the perception-based reverse inference models of nonnative speech perception, and test a proof-of-concept computational implementations. 
+%For the purpose of this work, the computational models are issued from the field of automatic speech recognition (ASR). 
+I present various methodologies for qualitatively and quantitatively evaluating the reverse inference proposal, focusing on the phenomenon of perceptual vowel epenthesis. Following on [CITE peperkamp], the data arising from the computational models is compared to data from psycholinguistics experiments. In these, nonnative speech perception is evaluated using psycholinguistics paradigms which tap onto online (i.e., real-time, individual) perception of nonwords, in order to reduce the influence of confounds such as orthography and semantics.
+In other words, I subject the proposed computational models to tasks analogous to those completed by human participants and analyse their behaviour both quantitatively and qualitatively. Do we find perception-based mechanisms to be necessary to predict perceptual vowel epenthesis? If so, do they suffice? 
+
 % - [ ] OR: 1) Loanwords 2) Perception (->1 maybe explains loanwords) 3) Here: dealing with perception
-
 \section{Vowel epenthesis in loanword adaptations}
 \section{Perceptual vowel epenthesis}
 \section{Processing steps in perceptual vowel epenthesis}
