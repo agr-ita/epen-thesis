@@ -1,20 +1,39 @@
 %%% TO-DO %%%
+% - [ ] Comments on paper
+
+% - [ ] 0) Main
+% --- [ ] Alice
+% --- [ ] Don't namedrop "LW" and "misperceptions"
+
+% - [ ] 1) Loanwords
+% --- [ ] Give examples
+% --- [ ] Why are we talking about this?
+
+% - [ ] 3) One/two step
+% --- [ ] Schemas
+% --- [ ] Add formula Wilson (+ possible proposal for two-step)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Beginning from the time spent in her mother's womb, a baby is exposed to sounds and, importantly, she is exposed to speech. Initially a ``universal listener'', in her early months she is initially able to discriminate a wide variety of sounds [CITE]. However, as she is exposed to only one or a few languages that are spoken around her, she progressively loses the ``universal listener'' title. Indeed, through this exposure, her perceptual system progressively becomes attuned to sounds and structures useful for decoding what will progressively become her native language(s) [CITE Werker].
+
+Beginning from the time spent in her mother's womb, a baby is exposed to sounds and, importantly, to speech. Initially a ``universal listener'', in her early months she is initially able to discriminate a wide variety of sounds [CITE]. However, as she is exposed to only one or a few languages that are spoken around her, she progressively loses the ``universal listener'' title. Indeed, through this exposure, her perceptual system progressively becomes attuned to sounds and structures useful for decoding what will progressively become her native language(s) [CITE Werker].
 
 That is, at around 10 months of age, the infant's perceptual system shows signs of becoming optimised for receiving and processing native input.
-On one hand, a native phonemic inventory is established. Phonemes are generally as the smallest phonetic units capable of conveying a lexical distinction in a language. It is therefore essential for the infant to be able to notice when two different acoustic signals correspond to the same or different phonemes, in order to properly access lexical meaning. For this to happen, her perceptual system partitions the acoustic space into areas corresponding to the phonemes relevant for her native language [CITE]. 
+On one hand, a native phonemic inventory is established. Phonemes are generally defined as the smallest phonetic units capable of conveying a lexical distinction in a language. It is therefore essential for the infant to be able to notice when two different acoustic signals correspond to the same or different phonemes, in order to properly access lexical meaning. For this to happen, her perceptual system partitions the acoustic space into areas corresponding to the phonemes relevant for her native language [CITE]. 
 
 On the other hand, the infant also becomes aware of which phoneme combinations occur in the language and which ones do not [CITE Saffran, ...]. In particular, she progressively acquires the phonotactics for her native language, namely, the constraints determining what constitutes well-formed native sound combinations [CITE: Jusczyk, Pisoni?...]. This is useful, for instance, when trying to find word boundaries in fluent speech, as it is more probable for a rare phoneme combination to occur between words than within words [CITE]. 
 
 Through the optimisation process that results in the acquisition of the nativephoneme inventory and native phonotactics, the infant's perceptual system becomes specialised in her native language, allowing her to better tackle problemes such as word learning.  
 
-Most of us have been that universal listener baby that then became a perceptually attuned infant. And while this perceptual attunement allows us to communicate efficiently in our native language, issues arise when we attempt to acquire nonnative languages as adults.
-Nonnative speech is processed by a perceptual system that has been optimised for our native language. It is therefore processed according to segmental and suprasegmental inventories, and phonotactics that do not match those intended by the speech source. 
-This often results in nonnative speech being misperceived; phonemes and prosodic elements might be replaced (assimilation) or deleted (ellipsis). Additional phonemes might even be inserted (epenthesis).
+A few years later, the infant is now an adult with an attuned perceptual system. 
+And while this perceptual attunement allows her to communicate efficiently in her native language, issues arise when she now attempts to acquire nonnative languages.
+Nonnative speech is processed by her perceptual system, which has been optimised for her native language. The nonnative speech is therefore processed according to her native segmental and suprasegmental inventories, and phonotactics, which do not match those intended by the speech source. 
+For our adult listener this will often result in nonnative speech being misperceived; phonemes and prosodic elements might be replaced (assimilation) or deleted (ellipsis). Additional phonemes might even be inserted (epenthesis).
 
-It seems to be generally accepted in the loanword adaptation and nonnative speech perception literatures that misperceptions of nonnative speech result from minimal modifications of the original speech. However, there are multiple proposals relating to the exact nature of these modifications. For instance, are these phonetically-minimal? Phonologically-minimal?    
+%Most of us have been that universal listener baby that then became a perceptually attuned infant. And while this perceptual attunement allows us to communicate efficiently in our native language, issues arise when we attempt to acquire nonnative languages as adults.
+%Nonnative speech is processed by a perceptual system that has been optimised for our native language. It is therefore processed according to segmental and suprasegmental inventories, and phonotactics that do not match those intended by the speech source. 
+%This often results in nonnative speech being misperceived; phonemes and prosodic elements might be replaced (assimilation) or deleted (ellipsis). Additional phonemes might even be inserted (epenthesis).
+
+It seems to be generally accepted in the nonnative speech perception literature that misperceptions of nonnative speech result from minimal modifications of the original speech. However, there are multiple proposals relating to the exact nature of these modifications. For instance, are these phonetically-minimal? Phonologically-minimal? Is it a multi-step process?   
 
 It is my belief that the various proposals put forward must be formally defined in order to be tested empirically.  
 In this dissertation, I select one of the proposals advanced by the psycholinguistics literature, namely the perception-based reverse inference models of nonnative speech perception, and test a proof-of-concept computational implementations. 
@@ -22,9 +41,19 @@ In this dissertation, I select one of the proposals advanced by the psycholingui
 I present various methodologies for qualitatively and quantitatively evaluating the reverse inference proposal, focusing on the phenomenon of perceptual vowel epenthesis. Following on [CITE peperkamp], the data arising from the computational models is compared to data from psycholinguistics experiments. In these, nonnative speech perception is evaluated using psycholinguistics paradigms which tap onto online (i.e., real-time, individual) perception of nonwords, in order to reduce the influence of confounds such as orthography and semantics.
 In other words, I subject the proposed computational models to tasks analogous to those completed by human participants and analyse their behaviour both quantitatively and qualitatively. Do we find perception-based mechanisms to be necessary to predict perceptual vowel epenthesis? If so, do they suffice? 
 
-% - [ ] OR: 1) Loanwords 2) Perception (->1 maybe explains loanwords) 3) Here: dealing with perception
+In order to investigate the underlying mechanisms of nonnative speech perception, we are required to refer to work in two relevant fields, loanword adaptations and nonnative misperceptions.
+The former focuses on how words from a source language are modified when introduced to a borrowing language. Rather embedded in the field of theoretical linguistics, this literature offers an indirect window to perception, as loanwords are the product of various complex language transmission phenomena. 
+On the other hand, the experimentally inclined literature of psycholinguistics on nonnative speech perception offers more direct data for undestanding misperceptions. However, data may be less readily available than for loanwords. I will now present both literatures, focusing on various mechanisms that have been proposed to explain the phenomenon of vowel epenthesis within both fields.  
+
 \section{Vowel epenthesis in loanword adaptations}
-The phenomenon of vowel epenthesis was first studied in the context of loanword adaptations, namely the modification of words from a source language when they are introduced to a borrowing language. In this context, vowel epenthesis consists in the insertion of a vowel in the (borrowing) surface form of a word that did not contain said vowel in the underlying representation in the source language.  
+The phenomenon of vowel epenthesis was first studied in the context of loanword adaptations, namely the modification of words from a source language when they are introduced to a borrowing language. Consider the following examples:
+\begin{itemize}
+  \item English ``strike'' \textipa{/st\*raIk/} $\rightarrow$ Japanese \textipa{/s\textbf{u}t\textbf{o}raik\textbf{u}/}
+  \item French ``baguette'' \textipa{/bagEt/} $\rightarrow$ Japanese \textipa{/baget:\textbf{o}/} %\begin{CJK}{UTF8}{goth}バゲット\end{CJK} \textipa{//} 
+  \item English ``snob'' \textipa{/sn6b/} $\rightarrow$ Spanish \textipa{/\textbf{e}snob/}
+  \end{itemize}
+  
+In this context, vowel epenthesis consists in the insertion of a vowel in the (borrowing) surface form of a word that did not contain said vowel in the underlying representation in the source language.  
 The foreign word is imported to the borrowing language in a diachronic process involving multiple individuals and possibly various methods of word transmission (e.g., through written materials, orally, etc). Additionally, adaptations can be influenced by orthography, when available [CITE Daland 2015; Ito?]. The assumption being that words are introduced by highly proficient speakers of the nonnative language that are, therefore, able to access a faithful underlying representation of the source word. 
 
 Concerning the question of how the nonnative source word is transformed into the adapted loanword, authors from the loanword literature advance the hypothesis that the underlying mechanisms are phonological and abstract in nature.
@@ -36,7 +65,7 @@ Another similar mechanism was proposed by [CITE La Charité \& Paradis (2005)], 
 In many proposals, the role of perception has been assumed to be minimal, or at least secondary, in loanword adaptation [CITE e.g., LaChParadis1997?]. However, this view is far from being a consensus. For instance, as briefly mentioned earlier, \cite{steriade2001} proposed that some grammar-based modifications resulted in more perceptually-salient modifications of the source word, resulting in a greater amounts of degradation.
 Also, [CITE silverman1992] proposed his multiple scansion theory of loanword adaptation. In this theory, the underlying representation in the borrowing language is retrieved from a phonetic, possibly acoustic, form of the source word. In a first step, a perceptual-level representation is established, where the underlying representation is built with preliminary segmental and prosodic structure. It is only at a second step, at the operational level, that the phonology of the borrowing language is applied to the word (e.g., through a grammatical filter), resulting in modifications such as vowel epenthesis, when necessary. For similar proposals, see [CITE Kenstowicz 2001/2003, KenstowiczSuchato, Yip1993/2006].  
 
-{\color{red}Change to (1) Purely phonological and (2) Perceptual???????}
+{\color{red}Alternative structure: Change to (1) Purely phonological and (2) Perceptual???????}
 
 
 \section{Perceptual vowel epenthesis}
