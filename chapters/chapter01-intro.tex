@@ -46,19 +46,19 @@ The former focuses on how words from a source language are modified when introdu
 On the other hand, the experimentally inclined literature of psycholinguistics on nonnative speech perception offers more direct data for undestanding misperceptions. However, data may be less readily available than for loanwords. I will now present both literatures, focusing on various mechanisms that have been proposed to explain the phenomenon of vowel epenthesis within both fields.  
 
 \section{Vowel epenthesis in loanword adaptations}
-The phenomenon of vowel epenthesis was first studied in the context of loanword adaptations, namely the modification of words from a source language when they are introduced to a borrowing language. Consider the following examples:
+The phenomenon of vowel epenthesis was first studied in the context of loanword adaptations, namely the modification of words from a source language when they are introduced to a borrowing language. Consider the bold vowels in the following examples:
 \begin{itemize}
   \item English ``strike'' \textipa{/st\*raIk/} $\rightarrow$ Japanese \textipa{/s\textbf{u}t\textbf{o}raik\textbf{u}/}
   \item French ``baguette'' \textipa{/bagEt/} $\rightarrow$ Japanese \textipa{/baget:\textbf{o}/} %\begin{CJK}{UTF8}{goth}バゲット\end{CJK} \textipa{//} 
   \item English ``snob'' \textipa{/sn6b/} $\rightarrow$ Spanish \textipa{/\textbf{e}snob/}
   \end{itemize}
   
-In this context, vowel epenthesis consists in the insertion of a vowel in the (borrowing) surface form of a word that did not contain said vowel in the underlying representation in the source language.  
+In this context, vowel epenthesis consists in the insertion of a vowel in the (borrowing) surface form of a word that did not contain said vowel in the underlying representation in the source language. Epenthesis often occurs when the introduced word does not respect the phonotactics of the borrowing language (e.g., illegal consonant clusters, illegal syllabification).
 The foreign word is imported to the borrowing language in a diachronic process involving multiple individuals and possibly various methods of word transmission (e.g., through written materials, orally, etc). Additionally, adaptations can be influenced by orthography, when available [CITE Daland 2015; Ito?]. The assumption being that words are introduced by highly proficient speakers of the nonnative language that are, therefore, able to access a faithful underlying representation of the source word. 
 
 Concerning the question of how the nonnative source word is transformed into the adapted loanword, authors from the loanword literature advance the hypothesis that the underlying mechanisms are phonological and abstract in nature.
 
-For instance, in a grammar-based view, the adapted loanword corresponds to the best match to the source word after candidate adaptations are passed through a grammatical filter  [cite: Hyman (1970), Lovins (1975), Yip (1993), Jacobs \& Gussenhoven (2000), Shinohara (2004)]. In this case, the grammar comprises faithfulness and markedness constraints arranged in a certain order, with some authors suggesting that some modifications might be more degrading that others \cite{steriade2001}. How constraints are arranged may or may not be compatible with how native sets of constraints are ordered. It is assumed that the underlying representation of the source word is accessible and is used in the derivation of the adapted loanword. As such, the faithful underlying representation only becomes adapted when the grammar computes a surface representation from said underlying form (e.g., during production).   \\
+For instance, in a grammar-based view, the adapted loanword corresponds to the best match to the source word after candidate adaptations are passed through a grammatical filter  [CITE: Hyman (1970), Lovins (1975), Yip (1993), Jacobs \& Gussenhoven (2000), Shinohara (2004)]. In this case, the grammar comprises faithfulness and markedness constraints arranged in a certain order, with some authors suggesting that some modifications might be more degrading that others \cite{steriade2001}. How constraints are arranged may or may not be compatible with how native sets of constraints are ordered. It is assumed that the underlying representation of the source word is accessible and is used in the derivation of the adapted loanword. As such, the faithful underlying representation only becomes adapted when the grammar computes a surface representation from said underlying form (e.g., during production).   \\
 
 Another similar mechanism was proposed by [CITE La Charité \& Paradis (2005)], where adaptations are based on minimal featural changes. The source word is adapted by highly proficient bilinguals, who can manipulate and compare the phonological systems of both the source and the borrowing languages. In this case, adaptation consists in these highly proficient bilinguals choosing the modifications of the source word that result in the least featural changes (e.g., voicing) between the source adaptation and the resulting loanword.  
 
@@ -95,8 +95,24 @@ For \cite{berent2007}, the identity of the segments present in the nonnative inp
 Another proposal, that of \cite{monahan2009} also consists in two steps, but with some differences. During the first step the identity of the segments in the input is retrieved and segments are grouped into syllables, following native phonotactics. Some syllables will contain indeterminate segments (e.g., \textipa{/ebzo/} will have been parsed as \textipa{/e.b}V\textipa{.zo/}). In a second step, the quality of the indeterminate segments, in this case the epenthetic vowel, is chosen amongst vowels that are of low sonority and can undergo devoicing. The quality of the vowel might not be determined if an optimal match is not found.
 The two proposals that we have summarised share the fact that the categorisation of the segments that are not the epenthetic vowel occurs in a first step and it is not modified during the second step, where the identity of the epenthetic vowel is determined.
 
-In contrast, with one-step proposals, authors such as \cite{dupoux2011} and \cite{wilson2013} argue that the identity of the epenthetic vowel is determined in the process of parsing the input, simultaneously to the categorisation of all other segments. The phonotactic legality of the input is therefore assessed at the same time as the categorisation happens. Notably, the input is not processed as a linear sequence of sounds; syllabic structure is taken into account during the parsing process \cite{kabak2007}.  
-\cite{wilson2013} qualifies the process as a process of reverse inference within a Bayesian framework, where the perceptual system computes the posterior probability of candidate percepts given the acoustic input. These are estimated, for each candidate percept, from the product of the likelihood of the acoustics given the percept and the prior probability of the percept, defined as its phonotactic acceptability. 
+\begin{figure}[h!]
+  \centering
+%  \begin{overpic}[page=4, width=0.7\linewidth]{chapter02/ahpa_tiles}\end{overpic}
+%  \begin{overpic}[page=3, width=0.7\linewidth]{chapter02/ahpa_tiles}\end{overpic}
+  \caption{{\color{red}[TODO]: \textit{Schematisation of two-step (left) and one-step (right) proposals.}}}
+  \label{fig:ahpa_spk}
+\end{figure}
+
+In contrast, with one-step proposals, authors such as \cite{dupoux2011} and \cite{wilson2013} argue that the identity of the epenthetic vowel is determined in the process of parsing the input, simultaneously to the categorisation of all other segments. The phonotactic legality of the input is therefore assessed at the same time as the categorisation happens. Notably, the input is not processed as a linear sequence of sounds; syllabic structure is taken into account during the parsing process \cite{kabak2007}.
+
+\cite{wilson2013} qualifies the process as a process of reverse inference within a Bayesian framework, where the perceptual system computes $P([x_i]  | \{z\})$ the posterior probability of candidate percepts $[x_i]$ given the auditory input $\{z\}$. These are estimated, for each candidate percept, from  the product of $P(\{z\}|[x_{i}])$ the likelihood of the acoustics given the percept and $P([x_{i}])$ the prior probability of the percept, defined as its phonotactic acceptability. Mathematically, this can be decribed with the formula in equation \ref{eq_onestep}. The final percept then corresponds to the percept with highest posterior probability, namely the percept satisfying $\underset{x}{arg\,max} \left \{ P(\{z\}|[x_{i}]) \cdot P([x_{i}]) \right \}$. 
+There are two elements on the right side of the equation  
+
+\begin{equation}
+  P(\left[x_{i}\right] | \left\{ z\right\} ) \propto P(\left\{ z\right\} |\left[ x_{i} \right]) \cdot P(\left[ x_{i} \right])
+  \label{eq_onestep}
+\end{equation} 
+
 In other words, for one-step models, parsing becomes an optimisation problem where the optimal output is the one maximising the acoustic match to the input and the likelihood of the phonemic sequence in the native language. \cite{durvasula2015} adds to the aforementioned proposals by suggesting that listeners are decoding nonnative speech through a process of reverse inference that not only optimises the output according to phonetic representations and surface phonotactics, but also according to native phonological alternations (i.e., mappings between underlying and surface representations).
 
 \section{Justifying the modelling approach}
