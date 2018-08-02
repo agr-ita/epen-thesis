@@ -108,35 +108,32 @@
 \contentsline {paragraph}{Default vowel}{63}{figure.3.12}
 \contentsline {paragraph}{Effect of coarticulation}{63}{section*.45}
 \contentsline {subsection}{\numberline {3.3.4}Discussion}{65}{subsection.3.3.4}
-\contentsline {section}{\numberline {3.4}{\color {red}Do we need to go deeper? Are surface phonotactics enough?}}{66}{section.3.4}
+\contentsline {section}{\numberline {3.4}{\color {red}Investigating acoustic/phonetic match}}{66}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Introduction}{66}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Methods}{66}{subsection.3.4.2}
-\contentsline {subsubsection}{\numberline {3.4.2.1}Stimuli}{66}{subsubsection.3.4.2.1}
-\contentsline {paragraph}{Language models}{66}{section*.46}
-\contentsline {paragraph}{Identification task simulation}{66}{section*.47}
-\contentsline {subsection}{\numberline {3.4.3}Results}{67}{subsection.3.4.3}
-\contentsline {subsubsection}{\numberline {3.4.3.1}English model (control)}{67}{subsubsection.3.4.3.1}
-\contentsline {subsubsection}{\numberline {3.4.3.2}Korean model (test)}{67}{subsubsection.3.4.3.2}
-\contentsline {subsection}{\numberline {3.4.4}Discussion}{67}{subsection.3.4.4}
-\contentsline {section}{\numberline {3.5}{\color {red}[art2ac] Introducing allophony}}{68}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Introduction}{68}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Methods}{68}{subsection.3.5.2}
-\contentsline {subsubsection}{\numberline {3.5.2.1}Behavioural experiment}{68}{subsubsection.3.5.2.1}
-\contentsline {paragraph}{Participants}{68}{section*.48}
-\contentsline {paragraph}{Stimuli}{68}{section*.49}
-\contentsline {paragraph}{Procedure}{68}{section*.50}
-\contentsline {subsubsection}{\numberline {3.5.2.2}Modelling}{68}{subsubsection.3.5.2.2}
-\contentsline {paragraph}{Stimuli}{68}{section*.51}
-\contentsline {paragraph}{Acoustic models}{68}{section*.52}
-\contentsline {paragraph}{Language models}{68}{section*.53}
-\contentsline {paragraph}{Identification task simulation}{69}{section*.54}
-\contentsline {subsection}{\numberline {3.5.3}Results}{69}{subsection.3.5.3}
-\contentsline {subsubsection}{\numberline {3.5.3.1}Comparing models}{69}{subsubsection.3.5.3.1}
-\contentsline {subsubsection}{\numberline {3.5.3.2}Comparing models to humans}{69}{subsubsection.3.5.3.2}
-\contentsline {subsection}{\numberline {3.5.4}Discussion}{69}{subsection.3.5.4}
-\contentsline {section}{\numberline {3.6}Conclusions}{69}{section.3.6}
+\contentsline {subsection}{\numberline {3.4.2}{\color {red}Experiment 1: Phonological alternations}}{66}{subsection.3.4.2}
+\contentsline {subsubsection}{\numberline {3.4.2.1}Methods}{66}{subsubsection.3.4.2.1}
+\contentsline {paragraph}{Stimuli}{66}{section*.46}
+\contentsline {paragraph}{Language models}{66}{section*.47}
+\contentsline {paragraph}{Identification task simulation}{66}{section*.48}
+\contentsline {subsubsection}{\numberline {3.4.2.2}Results}{66}{subsubsection.3.4.2.2}
+\contentsline {paragraph}{English model (control)}{66}{section*.49}
+\contentsline {paragraph}{Korean model (test)}{67}{figure.3.15}
+\contentsline {subsubsection}{\numberline {3.4.2.3}Discussion}{67}{subsubsection.3.4.2.3}
+\contentsline {subsection}{\numberline {3.4.3}{\color {red}Experiment 2: Allophony}}{67}{subsection.3.4.3}
+\contentsline {subsubsection}{\numberline {3.4.3.1}Methods}{67}{subsubsection.3.4.3.1}
+\contentsline {paragraph}{Stimuli}{67}{section*.51}
+\contentsline {paragraph}{Behavioural experiment}{68}{section*.52}
+\contentsline {paragraph}{Modelling: Acoustic models}{68}{section*.53}
+\contentsline {paragraph}{Modelling: Language models}{68}{section*.54}
+\contentsline {paragraph}{Modelling: Identification task simulation}{68}{section*.55}
+\contentsline {subsubsection}{\numberline {3.4.3.2}Results}{68}{subsubsection.3.4.3.2}
+\contentsline {paragraph}{Comparing models}{68}{section*.56}
+\contentsline {paragraph}{Comparing models to humans}{68}{section*.57}
+\contentsline {subsubsection}{\numberline {3.4.3.3}Discussion}{69}{subsubsection.3.4.3.3}
+\contentsline {subsection}{\numberline {3.4.4}General discussion}{69}{subsection.3.4.4}
+\contentsline {section}{\numberline {3.5}Conclusions}{69}{section.3.5}
 \contentsline {chapter}{\numberline {4}General Discussion}{70}{chapter.4}
-\contentsline {paragraph}{Paradigm}{70}{section*.55}
-\contentsline {paragraph}{ASR system}{70}{section*.56}
-\contentsline {paragraph}{Quantitative approach}{70}{section*.57}
+\contentsline {paragraph}{Paradigm}{70}{section*.58}
+\contentsline {paragraph}{ASR system}{70}{section*.59}
+\contentsline {paragraph}{Quantitative approach}{70}{section*.60}
 \contentsline {chapter}{\numberline {A}\ignorespaces Are words easier to learn from infant- than adult-directed speech? }{75}{appendix.A}

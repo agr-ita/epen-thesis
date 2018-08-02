@@ -4,6 +4,7 @@
 % [ ] Mini-intro
 % [ ] surfphono
 % [ ] k-epenth
+% [ ] wpd
 % [ ] Mini-discussion
 
 %%%%%%%%%%%%%%%%%%%%%%
@@ -588,10 +589,11 @@ The main effect of \textsc{NSFV} was not significant (mode: $0.03$, HPD: $[-0.03
 % k-epenth %
 %%%%%%%%%%%%
 \newpage
-\section{{\color{red}Do we need to go deeper? Are surface phonotactics enough?}} \label{3-k-epenth}
+\section{{\color{red}Investigating acoustic/phonetic match}} \label{3-acmatch}
 \subsection{Introduction}
-\subsection{Methods}
-\subsubsection{Stimuli}
+\subsection{{\color{red}Experiment 1: Phonological alternations}}
+\subsubsection{Methods}
+\paragraph{Stimuli}
 
 The stimuli, which have been previously used in \cite{durvasula2015}, were kindly provided by the authors from said paper. They consist of 12 items of the form \textipa{/e}C(V)\textipa{ma/}, with \textsc{C} either an alveolar consonant from the set \{\textipa{/t\super h, s/}\} or a palatal consonant from the set \{\textipa{/c\super h, S/}\}, and \textsc{V} a vowel from the set \{\textipa{/1}\textipa{, i/}\}\footnote{Following the original article, we use \textipa{[1]} to denote the close back unrounded vowel found in the Korean vowel inventory. However, the notation \textipa{[W]} has also previously been used (e.g., in \cite{kabak2007})}.
 Each item was recorded twice by a male trained phonetician. The speaker is a native speaker of Indian English and Telugu, also a near-native speaker of standard Hindi. The clusters present in the items are phonotactically legal in these two latter languages. All items were produced with stress on the first syllable.
@@ -616,11 +618,11 @@ The organisation of the stimuli, based on place of articulation of \textsc{C}, i
 
 \paragraph{Identification task simulation}
 
-\subsection{Results}
-\subsubsection{English model (control)}
+\subsubsection{Results}
+\paragraph{English model (control)}
 %% Hopefully the model mostly outputs "none" for clusters and it's almost perfectly accurate for fullV !!!!! 
 
-\subsubsection{Korean model (test)}
+\paragraph{Korean model (test)}
 %> aggregate(pgram~palatal+fullV, data=d.mod.pgram[d.mod.pgram$resp == "--",], FUN=mean)
 %  palatal fullV      pgram
 %1   FALSE FALSE 0.37217973
@@ -648,37 +650,33 @@ The organisation of the stimuli, based on place of articulation of \textsc{C}, i
   \caption{\textit{{\color{red}[TODO]}}}
   \label{fig:k-epenth_KR_clusters}
 \end{figure}
-\subsection{Discussion}
+\subsubsection{Discussion}
 
 %%%%%%%%%%%%
 % art2ac-per %
 %%%%%%%%%%%%
-\newpage
-\section{{\color{red}[art2ac] Introducing allophony}} \label{3-art2ac-per}
-\subsection{Introduction}
+%\section{{\color{red}[art2ac] Introducing allophony}} \label{3-art2ac-per}
+%\subsection{Introduction}
 
-\subsection{Methods}
-\subsubsection{Behavioural experiment}
-\paragraph{Participants}
-{\color{red}[TODO]: Mechanical Turk}
-
+\subsection{{\color{red}Experiment 2: Allophony}}
+\subsubsection{Methods}
 \paragraph{Stimuli}
 We recorded a female native speaker of Serbo-Croatian in a sound proof room reading a list of {\color{red}$X$} items containing a $C_{1}C_{2}$ cluster either in syllable-initial position ($C_{1}C_{2}V_{1}C_{3}V_{1}$, e.g., \textipa{/znapa/}) or intra-syllabic position ($V_{1}C_{1}C_{2}V_{1}$, e.g., \textipa{/azna/}). $V_{1}$ and $C_{3}$ were always set to \textipa{/a/} and \textipa{/p/}, respectively. 
 We also recorded the "epenthesized" equivalents of said stimuli, namely $C_{1}V_{ep}C_{2}V_{1}C_{3}V_{1}$ (\textipa{/z@napa/}) and $V_{1}C_{1}V_{ep}C_{2}V_{1}$ (\textipa{/az@na/}) with $V_{ep}$ set as {\color{red}\textipa{[@]}}.
 For all stimuli stress fell on the first $V_{1}$.
 {\color{red}The list of stimuli is given by Table X.}
 
-\paragraph{Procedure}
+\paragraph{Behavioural experiment}
 {\color{red}[TODO]: Mechanical Turk}
 
-\subsubsection{Modelling}
-\paragraph{Stimuli}
 
-\paragraph{Acoustic models}
+\paragraph{Modelling: Acoustic models}
+
+%\paragraph{Acoustic models}
 {\color{red} [TODO]: wpdF vs. wpdT}
 
 
-\paragraph{Language models}
+\paragraph{Modelling: Language models}
 Item-specific language models were constructed, as shown in Figure \ref{fig:G_fst}. Thus, when decoding a $C_{1}(V_{ep})C_{2}V_{1}C_{3}V_{1}$ stimulus, the perception model was only given the possibility to transcribe it as $C_{1}(V_{ep})C_{2}V_{1}C_{3}V_{2}$, where phones between parentheses are optional and $V_{ep} = $ \textipa{[@]}. And similarly for $V_{1}C_{1}(V_{ep}C_{2}V_{1}$ items.
 While $V_{1}$ was intended to be \textipa{/a/} phonologically, we allowed the model to transcribe $V_{1}$ as any phoneme associated with the grapheme [a]. This allowed to account for phonetic reduction in our stimuli, but also to foresee for the possibility that these transcriptions might be considered by English-speaking participants from the psycholinguistic experiment, due to item transcriptions being presented orthographically onscreen.
 
@@ -694,13 +692,14 @@ We use a null/uniform language model (\textsc{0P-LM}), which implies that listen
 \end{figure*}
 
 
-\paragraph{Identification task simulation}
+\paragraph{Modelling: Identification task simulation}
 After decoding the stimuli, we obtained for each possible transcription of each item the corresponding acoustic/articulatory and language model scores. From these we derived the item posteriorgrams, which indicate how probable a given transcription was, given the acoustic or articulatory input. We used these probabilities as proxies of the probability that a listener might exploit when performing reverse inference during speech perception, and therefore, the probabilities used when responding in an identification task. As such, for each item, we obtained a percentage of vowel epenthesis.
 
-\subsection{Results}
-\subsubsection{Comparing models}
-\subsubsection{Comparing models to humans}
-\subsection{Discussion}
+\subsubsection{Results}
+\paragraph{Comparing models}
+\paragraph{Comparing models to humans}
+\subsubsection{Discussion}
+\subsection{General discussion}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Chapter mini-discussion %
