@@ -16,7 +16,7 @@
 \contentsline {subsection}{\numberline {2.2.1}Introduction}{11}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Methods}{12}{subsection.2.2.2}
 \contentsline {subsubsection}{\numberline {2.2.2.1}\textit {Participants}}{12}{subsubsection.2.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.2.2}\textit {Stimuli}}{13}{subsubsection.2.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.2.2}\textit {Stimuli}}{12}{subsubsection.2.2.2.2}
 \contentsline {subsubsection}{\numberline {2.2.2.3}\textit {Procedure}}{13}{subsubsection.2.2.2.3}
 \contentsline {subsection}{\numberline {2.2.3}Results}{13}{subsection.2.2.3}
 \contentsline {subsubsection}{\numberline {2.2.3.1}\textit {Control items}}{13}{subsubsection.2.2.3.1}
