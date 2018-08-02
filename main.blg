@@ -1,48 +1,49 @@
-This is BibTeX, Version 0.99d (TeX Live 2015/dev/Debian)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
 The style file: apalike.bst
 Database file #1: main.bib
+Warning--I didn't find a database entry for "silverman1992"
 Warning--I didn't find a database entry for "["
-You've used 47 entries,
+You've used 48 entries,
             1935 wiz_defined-function locations,
-            770 strings with 12030 characters,
-and the built_in function-call counts, 19706 in all, are:
-= -- 1952
-> -- 820
-< -- 33
-+ -- 288
-- -- 276
-* -- 1679
-:= -- 3385
-add.period$ -- 146
-call.type$ -- 47
-change.case$ -- 365
-chr.to.int$ -- 47
-cite$ -- 47
-duplicate$ -- 748
-empty$ -- 1369
-format.name$ -- 344
-if$ -- 3865
+            776 strings with 12158 characters,
+and the built_in function-call counts, 20060 in all, are:
+= -- 1985
+> -- 833
+< -- 35
++ -- 292
+- -- 280
+* -- 1706
+:= -- 3445
+add.period$ -- 149
+call.type$ -- 48
+change.case$ -- 372
+chr.to.int$ -- 48
+cite$ -- 48
+duplicate$ -- 766
+empty$ -- 1398
+format.name$ -- 351
+if$ -- 3937
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 46
-newline$ -- 239
-num.names$ -- 143
-pop$ -- 321
+missing$ -- 47
+newline$ -- 244
+num.names$ -- 146
+pop$ -- 331
 preamble$ -- 1
-purify$ -- 370
+purify$ -- 377
 quote$ -- 0
-skip$ -- 570
+skip$ -- 580
 stack$ -- 0
-substring$ -- 1422
-swap$ -- 115
-text.length$ -- 8
+substring$ -- 1434
+swap$ -- 117
+text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 278
+type$ -- 284
 warning$ -- 0
-while$ -- 169
+while$ -- 171
 width$ -- 0
-write$ -- 612
-(There was 1 warning)
+write$ -- 625
+(There were 2 warnings)

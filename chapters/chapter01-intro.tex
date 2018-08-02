@@ -1,17 +1,17 @@
 %%% TO-DO %%%
-% - [ ] Comments on paper
+% - [X] Comments on paper
 
-% - [ ] 0) Main
-% --- [ ] Alice
-% --- [ ] Don't namedrop "LW" and "misperceptions"
+% - [X] 0) Main
+% --- [X] Alice
+% --- [X] Don't namedrop "LW" and "misperceptions"
 
-% - [ ] 1) Loanwords
-% --- [ ] Give examples
-% --- [ ] Why are we talking about this?
+% - [X] 1) Loanwords
+% --- [X] Give examples
+% --- [X] Why are we talking about this?
 
 % - [ ] 3) One/two step
 % --- [ ] Schemas
-% --- [ ] Add formula Wilson (+ possible proposal for two-step)
+% --- [X] Add formula WilsonDavidson (+ possible proposal for two-step)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -65,7 +65,7 @@ Another similar mechanism was proposed by [CITE La Charité \& Paradis (2005)], 
 In many proposals, the role of perception has been assumed to be minimal, or at least secondary, in loanword adaptation [CITE e.g., LaChParadis1997?]. However, this view is far from being a consensus. For instance, as briefly mentioned earlier, \cite{steriade2001} proposed that some grammar-based modifications resulted in more perceptually-salient modifications of the source word, resulting in a greater amounts of degradation.
 Also, [CITE silverman1992] proposed his multiple scansion theory of loanword adaptation. In this theory, the underlying representation in the borrowing language is retrieved from a phonetic, possibly acoustic, form of the source word. In a first step, a perceptual-level representation is established, where the underlying representation is built with preliminary segmental and prosodic structure. It is only at a second step, at the operational level, that the phonology of the borrowing language is applied to the word (e.g., through a grammatical filter), resulting in modifications such as vowel epenthesis, when necessary. For similar proposals, see [CITE Kenstowicz 2001/2003, KenstowiczSuchato, Yip1993/2006].  
 
-{\color{red}Alternative structure: Change to (1) Purely phonological and (2) Perceptual???????}
+{\color{red}Alternative structure: Change to (1) Purely phonological and (2) Perceptual}
 
 
 \section{Perceptual vowel epenthesis}
@@ -88,46 +88,50 @@ In contrast, the psycholinguistic approach focuses on online perception and, whi
 
 \section{Processing steps in perceptual vowel epenthesis}
 
-From now on we will focus on perceptual vowel epenthesis, referring to loanwords as a source of inspiration for experimental setups and as a source of informed predictions. Concerning the process of vowel epenthesis, we can identify two types of proposed pipelines that differ in the amount of processing steps that the nonnative input is subjected to during perception: these are two-step and one-step theories of nonnative speech perception. While these names are somewhat transparent, we will now explain in more detail the differences between the two types of proposals.   
+From now on we will focus on perceptual vowel epenthesis, referring to loanwords as a source of inspiration for experimental setups and as a source of informed predictions. Concerning the process of vowel epenthesis, we can identify two types of proposed pipelines that differ in the amount of processing steps that the nonnative input is subjected to during perception: these are two-step and one-step theories of nonnative speech perception, illustrated in Figure \label{ref:intro_12step}. While these names are somewhat transparent, we will now explain in more detail the differences between the two types of proposals.   
 
 Reminiscent of Silverman's multiple scansion theory for loanword adaptations \cite{silverman1992}, two-step theories of nonnative speech perception divide the perception process in two stages. According to these proposals, the quality of the epenthetic vowel is determined by a language-specific grammar after an initial parsing of the nonnative input.
 For \cite{berent2007}, the identity of the segments present in the nonnative input is retrieved in an initial step, yielding a \textit{phonetic form}. The native grammar then assesses the phonotactic legality of this phonetic form in a second step. If a phonotactic violation is found, the grammar, which combines both language-specific and universal components, repairs the phonetic form by inserting a vowel. The output of this final step is the \textit{phonological representation}.
 Another proposal, that of \cite{monahan2009} also consists in two steps, but with some differences. During the first step the identity of the segments in the input is retrieved and segments are grouped into syllables, following native phonotactics. Some syllables will contain indeterminate segments (e.g., \textipa{/ebzo/} will have been parsed as \textipa{/e.b}V\textipa{.zo/}). In a second step, the quality of the indeterminate segments, in this case the epenthetic vowel, is chosen amongst vowels that are of low sonority and can undergo devoicing. The quality of the vowel might not be determined if an optimal match is not found.
 The two proposals that we have summarised share the fact that the categorisation of the segments that are not the epenthetic vowel occurs in a first step and it is not modified during the second step, where the identity of the epenthetic vowel is determined.
 
-\begin{figure}[h!]
+\begin{figure}[htb!]
   \centering
-%  \begin{overpic}[page=4, width=0.7\linewidth]{chapter02/ahpa_tiles}\end{overpic}
-%  \begin{overpic}[page=3, width=0.7\linewidth]{chapter02/ahpa_tiles}\end{overpic}
-  \caption{{\color{red}[TODO]: \textit{Schematisation of two-step (left) and one-step (right) proposals.}}}
-  \label{fig:ahpa_spk}
+  \begin{overpic}[page=1, width=0.9\linewidth]{chapter01-intro/12step}\end{overpic}
+  \caption{\textit{Schematisation of two-step and one-step proposals for perceptual vowel epenthesis.}}
+  \label{fig:intro_12step}
 \end{figure}
 
 In contrast, with one-step proposals, authors such as \cite{dupoux2011} and \cite{wilson2013} argue that the identity of the epenthetic vowel is determined in the process of parsing the input, simultaneously to the categorisation of all other segments. The phonotactic legality of the input is therefore assessed at the same time as the categorisation happens. Notably, the input is not processed as a linear sequence of sounds; syllabic structure is taken into account during the parsing process \cite{kabak2007}.
 
-\cite{wilson2013} qualifies the process as a process of reverse inference within a Bayesian framework, where the perceptual system computes $P([x_i]  | \{z\})$ the posterior probability of candidate percepts $[x_i]$ given the auditory input $\{z\}$. These are estimated, for each candidate percept, from  the product of $P(\{z\}|[x_{i}])$ the likelihood of the acoustics given the percept and $P([x_{i}])$ the prior probability of the percept, defined as its phonotactic acceptability. Mathematically, this can be decribed with the formula in equation \ref{eq_onestep}. The final percept then corresponds to the percept with highest posterior probability, namely the percept satisfying $\underset{x}{arg\,max} \left \{ P(\{z\}|[x_{i}]) \cdot P([x_{i}]) \right \}$. 
-There are two elements on the right side of the equation  
+\cite{wilson2013} qualify the process as a process of reverse inference within a Bayesian framework, where the perceptual system computes $P(w | X)$ the posterior probability of candidate percepts $w$ given the auditory input $X$. These are estimated, for each candidate percept, from the product of $P(X|w)$ the likelihood of the acoustics given the percept and $P(w)$ the prior probability of the percept, defined as its phonotactic acceptability. Mathematically, this can be formulated as in equation \ref{eq_onestep1}. Then, in a maximum \textit{a posteriori} (MAP) estimation scenario, the final percept $\widehat{w}$ corresponds to the percept with the highest posterior probability, as shown in equation \ref{eq_onestep2}. Alternatively, the final percept may be estimated by weighted sampling, where weights are defined by the posterior probabilities.     
 
 \begin{equation}
-  P(\left[x_{i}\right] | \left\{ z\right\} ) \propto P(\left\{ z\right\} |\left[ x_{i} \right]) \cdot P(\left[ x_{i} \right])
-  \label{eq_onestep}
-\end{equation} 
+  P(w | X) \propto P(X | w) \cdot P(w)
+  \label{eq_onestep1}
+\end{equation}
+
+\begin{equation}
+  \widehat{w} = \underset{w}{arg\,max} \left \{ P(X|w) \cdot P(w) \right \}
+  \label{eq_onestep2}
+\end{equation}
 
 In other words, for one-step models, parsing becomes an optimisation problem where the optimal output is the one maximising the acoustic match to the input and the likelihood of the phonemic sequence in the native language. \cite{durvasula2015} adds to the aforementioned proposals by suggesting that listeners are decoding nonnative speech through a process of reverse inference that not only optimises the output according to phonetic representations and surface phonotactics, but also according to native phonological alternations (i.e., mappings between underlying and surface representations).
 
 \section{Justifying the modelling approach}
 \epigraph{... But why make models?}{\textit{Derek Zoolander, probably.}}
 
-In this thesis I will evaluate computational implementations of one-step theories of nonnative speech perception. While only this restricted family of theories will be evaluated, I would like to encourage further research to be done with similar methodology, whether it is to investigate the same type of theories or not.
+In this thesis I will evaluate computational implementations of one-step theories of nonnative speech perception. Notably, I will investigate models from the field of automatic speech recognition (ASR) which are a direct implementation of the Bayesian model shown in equation \ref{eq_onestep1}\footnote{The equivalent of a weighted sampling procedure was preferred over MAP estimation for percept selection, since participant responses in previous experimental work on epenthesis tended to show variation and were not deterministic.}. 
+While only the one-step family of theories will be evaluated in this preliminary work, I encourage further research to be done with similar methodologies in order to investigate all of the various co-existing proposals.
 
-Using computational models in order to investigate competing theories is beneficial in several ways. Firstly, the need to translate the theories into model implementations forces model ideators to provide a mathematically and/or algorithmically well defined model, as opposed to more vague and ambiguous verbally defined theories that leave more espace to reader interpretations. Having more rigorous model definitions also allows to better understand competing theories (what is the exact nature of the input? which grammar constraints are applied and how? ...), meaning that it is easier to compare proposals and see where they differ significantly or not. 
+Indeed, using computational models in order to investigate competing theories is beneficial in several ways. Firstly, the need to translate the theories into model implementations forces model ideators to provide a mathematically and/or algorithmically well defined model. This is in contrast to more vague and ambiguous verbally defined theories that leave more espace to reader interpretations. Having more rigorous model definitions also allows to better understand competing theories (what is the exact nature of the input? which grammar constraints are applied and how? ...), meaning that it is easier to compare proposals and see where they differ significantly or not. 
 
-Secondly, obtaining a computational implementation of a theory means that it is then possible to derive predictions from the model. It is possible then to qualitatively and quantitatively test these predictions, and compare them to what is observed in behavioural data.
+Secondly, obtaining a computational implementation of a theory means that it is then possible to derive predictions from the models in question. It is then possible to qualitatively and quantitatively examine these predictions, and compare them to what is observed in behavioural data.
 
 \section{Outline of this thesis}
 %%%%%%%
 
-
+{\color{red}[TO-DO when writing discussion]}
 
 
 
