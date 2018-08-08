@@ -347,9 +347,11 @@ Using the set of filler items such as \textipa{/ahapa/} and \textipa{/okipo/} (i
 \begin{figure}[htb]
 \centering
 \includegraphics[width=1\linewidth]{chapter03/m-ahpa_figures.pdf}
-\caption{\textit{{\color{red}TODO}}}
+\caption{\textit{Response patterns for the identification task on full vowel stimuli (filler items). Human and models responses are separated by columns; intended identity of the medial vowel is given by rows. Within each rectangle, the horizontal axis corresponds to possible responses from the set \{``none'', ``a'', ``e'', ``i'', ``o'' , ``u''\}. The vertical axis corresponds to proportion of responses (i.e., posteriorgrams, in the case of models). The box and whiskers plots display the distribution of the proportions across items (median, quartiles and extrema). For instance, we can see from the first row that, similar to humans, all models correctly classified most /VC\textipa{ap}V/ items as containing a medial \textipa{/a/} vowel.}}
 \label{fig:m-ahpa_fV_acc}
 \end{figure}
+
+%Distribution of the proportion of responses given by human participants (leftmost panels) and posteriorgrams obtained when decoding with different language models. The box and whiskers plots display the distribution of posteriorgrams across experimental items, with boxplots separated according to the $C_{1}$ in the cluster and the responses (rows).
 
 Overall, human participants identified the correct intended vowel category in $79.5\%$ of the trials. As can be seen in Figure \ref{fig:m-ahpa_fV_acc}, this was mostly due to confusions between the intended \textipa{/o/} and \textipa{/u/} categories, with most errors being \textipa{/u/} being identified as \textipa{/o/}.
 Consistent with our correlation analyses, the \textsc{null} LM gave the highest accuracy out of all models (accuracy: $74\%$), followed by the \textsc{bigram retro} (accuracy: $72.6\%$), the \textsc{unigram} (accuracy: $72.5\%$), the \textsc{bigram online} (accuracy: $72.6\%$), and finally the \textsc{bigram batch} LM (accuracy: $68.7\%$). 
@@ -370,7 +372,7 @@ We found the main effect of \textsc{Consonant} to be significant (mode: $-0.19$,
 \begin{figure}[htb]
 \centering
 \includegraphics[page=8, width=1\linewidth]{chapter03/m-ahpa_figures.pdf}
-\caption{\textit{{\color{red}TODO}}}
+\caption{\textit{Proportion of default \textipa{/u/}-epenthesis (left) and vowel copy epenthesis (right) given by human participants and models. The box and whiskers plots display the distribution of the proportions across items (median, quartiles and extrema).}}
 \label{fig:m-ahpa_ctrl}
 \end{figure}
 
@@ -384,15 +386,19 @@ As shown in Figure \ref{fig:m-ahpa_test_coll}, reponses that were represented th
 
 \begin{figure}[htb!]
 \centering
-\includegraphics[page=5, width=0.75\linewidth]{chapter03/m-ahpa_figures.pdf}
-\caption{\textit{{\color{red}TODO}}}
+\includegraphics[page=5, width=\linewidth]{chapter03/m-ahpa_figures.pdf}
+\caption{\textit{Response patterns for the identification task on spliced test stimuli. Horizontal axes correspond to possible responses from the set \{``none'', ``a'', ``e'', ``i'', ``o'' , ``u''\}. Vertical axes correspond to proportion of responses (i.e., posteriorgrams, in the case of models). The box and whiskers plots display the distribution of the proportions across items (median, quartiles and extrema).}}
 \label{fig:m-ahpa_test_coll}
 \end{figure}
+
+% Response patterns for the identification task on full vowel stimuli (filler items). Human and models responses are separated by columns; intended identity of the medial vowel is given by rows. Within each rectangle, the horizontal axis corresponds to possible responses from the set \{``none'', ``a'', ``e'', ``i'', ``o'' , ``u''\}. The vertical axis corresponds to proportion of responses (i.e., posteriorgrams, in the case of models). The box and whiskers plots display the distribution of the proportions across items (median, quartiles and extrema). For instance, we can see from the first row that, similar to humans, all models correctly classified most /VC\textipa{ap}V/ items as containing a medial \textipa{/a/} vowel.
+%Proportion of default \textipa{/u/}-epenthesis (left) and vowel copy epenthesis (right) given by human participants and models. The box and whiskers plots display the distribution of the proportions across items (median, quartiles and extrema)
+
 
 \begin{figure}[htb!]
 \centering
 \includegraphics[page=4, width=1\linewidth]{chapter03/m-ahpa_figures.pdf}
-\caption{\textit{{\color{red}TODO}}}
+\caption{\textit{Response patterns for the identification task on spliced test stimuli. Human and models responses are separated by columns; vowel coarticulation within the consonant clusters is given by rows. Within each rectangle, the horizontal axis corresponds to possible responses from the set \{``none'', ``a'', ``e'', ``i'', ``o'' , ``u''\}. The vertical axis corresponds to proportion of responses (i.e., posteriorgrams, in the case of models). The box and whiskers plots display the distribution of the proportions across items (median, quartiles and extrema).}}
 \label{fig:m-ahpa_test}
 \end{figure}
 
@@ -409,8 +415,8 @@ In order for the decoding task to be analogous to the behavioural experiment des
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.8\linewidth]{chapter03/parlato_hmm_Gfst.pdf}
-\caption{Constrained language model used to test the models (here: LM for decoding \textipa{/agni/}). Nodes in the graph represent states, weighted edges represent transitions between states (here: phonemes). When relevant, weighted edges are labeled with the probability to choose that edge when decoding, which affects the final language model score of each possible path. When no weights are shown (e.g., between states 3 and 4), there is no preference between the paths concerned. The language model scores are combined with acoustic scores when decoding experimental items.
-}
+\caption{\textit{Constrained language model used to test the models (here: LM for decoding \textipa{/agni/}). Nodes in the graph represent states, weighted edges represent transitions between states (here: phonemes). When relevant, weighted edges are labeled with the probability to choose that edge when decoding, which affects the final language model score of each possible path. When no weights are shown (e.g., between states 3 and 4), there is no preference between the paths concerned. The language model scores are combined with acoustic scores when decoding experimental items.
+}}
 \label{fig:parlato_G}
 \end{figure}
 
@@ -473,10 +479,10 @@ null vs. bigram retro    & $0.53 - 0.46$ & $0.08$ $[0.04, 0.12]$ & Yes \\
 \begin{figure}[htb!]
     \centering
     \includegraphics[page=2, width=1\linewidth]{chapter03/parlato-lms_figs.pdf}
-    \caption{\textit{Distribution of the proportion of responses given by human participants (leftmost panels) and posteriorgrams obtained when decoding with different language models. The box and whiskers plots display the distribution of posteriorgrams across experimental items, with boxplots separated according to the $C_{1}$ in the cluster and the responses (rows).}}
+    \caption{\textit{Response patterns for the identification task. Human and models responses are separated by columns; responses are given by rows. Within each rectangle, the horizontal axis separates proportions according to $C_{1}$. The vertical axis corresponds to proportion of responses (i.e., posteriorgrams, in the case of models). The box and whiskers plots display the distribution of the proportions across items (median, quartiles and extrema).}}
     \label{fig:parlato-lms}
   \end{figure}
-
+  
 {\color{red}Describe graph showing response patterns}
 
 % 1     0         human 0.13071895
