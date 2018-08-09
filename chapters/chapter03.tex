@@ -259,6 +259,8 @@ Since the validation and test sets contain utterances from the same speakers, th
 %%% Plan
 
 \subsection{Experiment 1: {\color{red}m-/ahpa/}}
+{\color{red}ADD MINI INTRO}
+
 \subsubsection{Methods}
 \paragraph{Stimuli}
 We used the same stimuli as in section \ref{2-ahpa}. As a reminder, we recorded 3 speakers producing disyllabic $V_{1}C_{1}C_{2}V_{1}$ and trisyllabic $V_{1}C_{1}V_{2}C_{2}V_{1}$, with $V_{1}$ a flanking vowel in the set \textipa{/a, e, i, o, u/}, $C_{1}$ \textipa{/h/} or /k/, and $C_{2}$ a fixed consonant, /p/ (e.g, \textipa{/ahpa/}, \textipa{/ahapa/}). By cross-splicing the disyllabic natural control items (e.g., \textipa{/ahpa/}), we obtained disyllabic spliced control items (e.g., \texorpdfstring{\textipa{/ah\textsubscript{a}pa/}}{}), disyllabic spliced test stimuli (e.g., \texorpdfstring{\textipa{/ah\textsubscript{u}pa/}}{}), and trisyllabic spliced fillers (e.g., {\textipa{/ahapa/}), where subscripts indicate the identity of the vowels flanking the clusters in the original recording. Therefore, within each speaker, all stimuli of the same structure (in our example, \textipa{/ah($V$)pa/} items) have acoustically identical flanking vowels.
@@ -380,28 +382,59 @@ Turning to vowel copy epenthesis in control items for which the flanking vowel w
 While there was a trend in the same direction for the null LM, namely higher percentages of vowel copy for \textipa{/hp/}- than \textipa{/kp/}-clusters, we did not find a significant main effect of \textsc{Consonant} for the model (mode: $0.11$, HPD: $[-0.02, 0.24]$) as we did for humans (mode: $0.39$, HPD: $[0.20, 0.58]$). 
 
 \paragraph{Test items}
-{\color{red}[TODO]}
-
-As shown in Figure \ref{fig:m-ahpa_test_coll}, reponses that were represented the most in the null model posteriorgrams were ``none'' (\%), ``i'' (\%), and ``u'' (\%). These were also the responses that human participants gave the most (``none'' (\%), ``i'' (\%), and ``u'' (\%)).
+Next we examine the identification task response patterns for test items. As a reminder, for these spliced items, the vowel coarticulation was different from the flanking vowels.
 
 \begin{figure}[htb!]
 \centering
-\includegraphics[page=5, width=\linewidth]{chapter03/m-ahpa_figures.pdf}
+\includegraphics[page=5, width=0.9\linewidth]{chapter03/m-ahpa_figures.pdf}
 \caption{\textit{Response patterns for the identification task on spliced test stimuli. Horizontal axes correspond to possible responses from the set \{``none'', ``a'', ``e'', ``i'', ``o'' , ``u''\}. Vertical axes correspond to proportion of responses (i.e., posteriorgrams, in the case of models). The box and whiskers plots display the distribution of the proportions across items (median, quartiles and extrema).}}
 \label{fig:m-ahpa_test_coll}
 \end{figure}
 
-% Response patterns for the identification task on full vowel stimuli (filler items). Human and models responses are separated by columns; intended identity of the medial vowel is given by rows. Within each rectangle, the horizontal axis corresponds to possible responses from the set \{``none'', ``a'', ``e'', ``i'', ``o'' , ``u''\}. The vertical axis corresponds to proportion of responses (i.e., posteriorgrams, in the case of models). The box and whiskers plots display the distribution of the proportions across items (median, quartiles and extrema). For instance, we can see from the first row that, similar to humans, all models correctly classified most /VC\textipa{ap}V/ items as containing a medial \textipa{/a/} vowel.
-%Proportion of default \textipa{/u/}-epenthesis (left) and vowel copy epenthesis (right) given by human participants and models. The box and whiskers plots display the distribution of the proportions across items (median, quartiles and extrema)
+As shown in Figure \ref{fig:m-ahpa_test_coll}, reponses that were represented the most in the null model posteriorgrams were {\color{red}``none'' (\%), ``i'' (\%), and ``u'' (\%)}. These were also the responses that human participants gave the most {\color{red}(``none'' (\%), ``i'' (\%), and ``u'' (\%))}.
 
+We saw in section \ref{2-ahpa} that, for human participants, responses were mainly determined by the quality of the vowel coarticulation within the consonant cluster. This manifested itself in the appearance of horizontal bars, and some very faint vertical bars, in the top panels of Figure \ref{fig:m-ahpa_test_heat}. Do we observe something similar in the output of the model with null LM?
 
 \begin{figure}[htb!]
 \centering
-\includegraphics[page=4, width=1\linewidth]{chapter03/m-ahpa_figures.pdf}
-\caption{\textit{Response patterns for the identification task on spliced test stimuli. Human and models responses are separated by columns; vowel coarticulation within the consonant clusters is given by rows. Within each rectangle, the horizontal axis corresponds to possible responses from the set \{``none'', ``a'', ``e'', ``i'', ``o'' , ``u''\}. The vertical axis corresponds to proportion of responses (i.e., posteriorgrams, in the case of models). The box and whiskers plots display the distribution of the proportions across items (median, quartiles and extrema).}}
-\label{fig:m-ahpa_test}
+\includegraphics[page=9, width=0.9\linewidth]{chapter03/m-ahpa_figures.pdf} \\ \vspace{0.5cm}
+\includegraphics[page=10, width=0.9\linewidth]{chapter03/m-ahpa_figures.pdf}
+\caption{\textit{Counts of responses for the test items for human participants (top panel) and the ASR model with a null LM (bottom panel). Within each panel: Top: \textipa{/hp/-}items; bottom: \textipa{/kp/-}items. Within each rectangle, flanking vowels and vowel coarticulation are given in the horizontal and vertical axes, respectively. Darker colours indicate higher counts.}}
+\label{fig:m-ahpa_test_heat}
 \end{figure}
 
+When examining the bottom panels in Figure \ref{fig:m-ahpa_test_heat}, we see that response patterns are more noisy than for human participants. In spite of that, we can notice several similarities to human responses.
+We generally see that responses are mostly organised in horizontal lines, with ``none'' and ``u'' responses spread relatively uniformly across all combinations of vowel coarticulations and flanking vowels. This spread was even more uniform than for human responses, where less ``u'' responses were given for items with front vowel coarticulation (i.e., \textipa{[i, e]}). In spite of this increase in ``u'' responses for items with front vowel coarticulation, the model responses show that, as for humans, most ``i'' responses were triggered by front vowel coarticulation.
+
+When focusing on \textipa{/hp} items, we see that for human responses there is a correspondence between the quality of the vowel coarticulation and the response (e.g., most ``a'' responses come from items with \textipa{[a]} coarticulation). This correspondence is blurred in model responses:
+\begin{itemize}
+    \item ``a'' responses: A horizontal line is visible corresponding to \textipa{[a]} vowel coarticulation as it is for human responses. However, additional horizontal lines corresponding to back vowel coarticulation (i.e., \textipa{[o, u]}) are also visible. The source of most ``a'' responses are items with \textipa{[u]} coarticulation.
+    \item ``e'' responses: These were triggered by front vowel coarticulation for the model, while for humans they were triggered specifically by \textipa{[e]} vowel coarticulation (horizontal line) and \textipa{/e/} flanking vowel (fainter vertical line).
+    \item ``i'' responses: Similar to humans, the majority of ``i'' responses given by the model were triggered by front vowel coarticulation. However, instead of seeing fainter vertical lines corresponding to front vowel flanking vowels as in human responses, for the model, ``i'' responses were also triggered to a minor extent by non-front vowel coarticulation, even when the flanking vowel was not a front vowel.
+    \item ``o'' responses: For humans, this response was triggered by back vowel coarticulation. For the model, \textipa{[a]} vowel coarticulation also triggered ``o'' responses. In other words, ``o'' responses were mostly triggered by non-front vowel coarticulation.
+  
+  \end{itemize}
+
+  Additionally, we see that differences between model responses for \textipa{/hp/}-items and \textipa{/kp/}-items is not as apparent as it is for human responses. In the latter (top panels of Figure \ref{fig:m-ahpa_test_heat}), we see that participants barely responded \{``a'', ``e'', ``o''\} for \textipa{/kp/}-items. Meanwhile, for model responses, the rectangles for \{``a'', ``e'', ``o''\} responses for \textipa{/kp/}-items are fainter versions of their \textipa{/hp/} counterparts.
+  
+  Results from section \ref{2-ahpa} led us to conclude that vowel coarticulation, which was less present in \textipa{/kp/} clusters, influenced response patterns less for \textipa{/kp/}-items than for \textipa{/hp/}-items.
+  Coherent with qualitative analyses on vowel copy epenthesis in control items, the difference of the effect of vowel coarticulation on \textipa{/hp/}- and \textipa{/kp/}-items is not as marked for the model as it is for human participants. 
+
+% \begin{figure}[htb!]
+% \centering
+% \includegraphics[page=4, width=1\linewidth]{chapter03/m-ahpa_figures.pdf}
+% \caption{\textit{Response patterns for the identification task on spliced test stimuli. Human and models responses are separated by columns; vowel coarticulation within the consonant clusters is given by rows. Within each rectangle, the horizontal axis corresponds to possible responses from the set \{``none'', ``a'', ``e'', ``i'', ``o'' , ``u''\}. The vertical axis corresponds to proportion of responses (i.e., posteriorgrams, in the case of models). The box and whiskers plots display the distribution of the proportions across items (median, quartiles and extrema).}}
+% \label{fig:m-ahpa_test}
+% \end{figure}
+
+\subsubsection{Conclusions}
+In summary, through quantitative analyses, we found that the responses from the ASR model with a null LM better approximated human responses, out of the different LM tested. Qualitative analyses showed that the null LM model responses where generally similar to human responses, but with some added noise.
+
+For the identification of full vowels, like humans, the model was accurate at identifying \textipa{/a, i, o/}. Like humans, the model identified \textipa{/u/} as ``o'' in many instances; however, the specific patterns were not exactly mirroring the confusions observed in human responses. Also unlike humans, the model identified instances of \textipa{/e/} as ``i''.
+
+For the identification of control items (i.e., spliced items with matching vowel coarticulation and flanking vowel), the model numerically mirrored the two effects observed in human responses: more default \textipa{/u/} epenthesis for \textipa{/kp/}-items than \textipa{/hp/}-items, and more copy vowel epenthesis for \textipa{/hp/}-items than \textipa{/kp/}-items. However, the effects are damped for the model; the latter difference was not significant for the model, while the former was significant but of lower magnitude than in human responses. Also unlike humans, the model epenthesized vowels more often for \textipa{/hp/}-items than for \textipa{/kp/}-items, as the opposite was true for humans. 
+
+Concerning the test items (i.e., spliced items with mismatching vowel coarticulation and flanking vowel), like humans, most of the null LM model responses are in the set \{``none'', ``u'', ``i''\}. When examining model responses more in detail, we found that vowel coarticulation was driving responses as for humans, but the influence was less specific. One thing to note is that the noise observed in the model responses does not appear to be random; it is in line with the acoustics of the stimuli. As seen in the annex acoustic analyses in section \ref{2-ahpa}, vowel coarticulations in \textipa{/hp/}-items can be clustered as follows, based on their formant values: [[[a,u],o][e,i]]. There is a separation of front and non-front vowel coarticulations, which is also seen in the model responses. Since humans also seem to be sensitive to this acoustic proximity (e.g., ``i'' responses mostly triggered by \textipa{[i,e]} coarticulation; ``o'' responses mostly triggered by \textipa{[o,u]} coarticulation), a question that arises is if the noise observed in the model might be reduced when using a more performant acoustic model in the ASR system.      
 
 \subsection{Experiment 2: {\color{red}Parlato-lms}}
 \subsubsection{Methods}
@@ -574,6 +607,7 @@ The main effect of \textsc{NSFV} was not significant (mode: $0.03$, HPD: $[-0.03
 % Null LM failures (not best model ever, but good):
 %% Default /u/
 %% Vowel confusions /e/-/i/ and /o/-/u/
+%% Damped coarticulation effects
 
 % Phonotactics' impediments
 %% -> Blocks never seen sequences
@@ -584,7 +618,7 @@ The main effect of \textsc{NSFV} was not significant (mode: $0.03$, HPD: $[-0.03
 % Smoothing for unseen sequences?
 % Hybrid model? Vary acoustic scale and find optimal value? (there are some qualitative effects that we seem to see in bigrams, for instance, that might increase correlation)  
 
-%%% Null model isn't really null in that transition probabilities in HMMs capture diphone probabilities already. Ideally, for a truly null model, need to modify topology and equalise all C->V TPs. But not identical to having just P(V|C).
+%%% Null model isn't really null in that transition probabilities in HMMs capture diphone probabilities already. Ideally, for a truly null model, need to modify topology and equalise all C->V TPs. But not identical to having just P(V|C). %%Emmanuel says this is already the case
 
 %%% Duration in ASR? [check topology]
 
