@@ -599,6 +599,8 @@ Now we turn to coarticulation effects observed in the behavioural task. We saw i
 \section{{\color{red}Investigating acoustic/phonetic match}} \label{3-acmatch}
 \subsection{Introduction}
 \subsection{{\color{red}Experiment 1: Phonological alternations}}
+In this experiment, we investigate if our ASR models are able to reproduce are able to reproduce qualitative effects observed in previous work by \cite{durvasula2015}. More specifically, we trained ASR models using Korean and English data to model the perception of consonant clusters by Korean and American English listeners, respectively. The American English listeners, who served as the control population, did not experience vowel epenthesis, unlike their Korean counterparts. Additionally, the authors observed that Korean listeners epenthesized \textipa{/i/} more often when the first consonant of the cluster was a palatal consonant, at the expense of the default epenthetic vowel \textipa{/1/}. The authors attributed this to listeners taking into consideration phonological alternations when using reverse inference to decode the stimuli. Since our models were not explicitly made aware of phonological alternations, to what extent were they able to reproduce these effects?  
+
 \subsubsection{Methods}
 \paragraph{Stimuli}
 
@@ -644,37 +646,32 @@ Concerning the language models used during the decoding, in order for the decodi
 After decoding the stimuli with the ASR models, we extracted from the resulting lattices each possible transcription of each item, and the corresponding acoustic and language model scores. %An example of how the ASR system decodes the experimental stimuli can be seen in Figure \ref{fig:k-epenth_align}.
 From the (scaled) acoustic and language model scores we derived the item posteriorgrams, which indicate how probable a given transcription was given the audio input. We used these probabilities as proxies of the probability that a listener might exploit when performing reverse inference during speech perception, and therefore, the probabilities used when responding in an identification task. 
 
-As such, for each item, we obtained a three-dimensional vector $ident_{model} = [p_{none}, p_{i}, {\color{red}p_{\textipa{1}}}]$, containing a discrete probability distribution, with a probability mass function linking the identification task options \{`none', `\textipa{i}', `\textipa{1}'}, to their respective probabilities (i.e., posteriorgrams).
+As such, for each item, we obtained a three-dimensional vector $ident_{model} = [p_{none}, p_{i}, {\color{red}p_{\textipa{1}}}]$, containing a discrete probability distribution, with a probability mass function linking the identification task options \{`none', `\textipa{i}', `\textipa{1}'\}, to their respective probabilities (i.e., posteriorgrams).
 We can define the human equivalent $ident_{human} = [p_{none}, p_{i}, {\color{red}p_{\textipa{1}}}]$, which contains the percentage of responses for each item, after aggregating all participant responses.
 
 \subsubsection{Results}
 \paragraph{English model (control)}
-%% Hopefully the model mostly outputs "none" for clusters and it's almost perfectly accurate for fullV !!!!!
+%% Hopefully the model mostly outputs "none" for clusters and it's almost perfectly accurate for fullV !!!!! (but who knows, since the acoustics are not native for English either)
+
+% Accuracy
+{\color{red}[...]}
 
 % Percentage of epenthesis
-% Accuracy
+Overall, the model posteriorgrams for ``none'' responses for items without a full medial vowel was {\color{red}$XX\%$}; in comparison, English listeners almost never experienced vowel epenthesis ($99\%$ ``none'' responses). {\color{red}[...]}
+
 
 \paragraph{Korean model (test)}
-% Percentage of epenthesis
-
 % Accuracy
-
-
-% [i] in palatal
-
-%> aggregate(pgram~palatal+fullV, data=d.mod.pgram[d.mod.pgram$resp == "--",], FUN=mean)
-%  palatal fullV      pgram
-%1   FALSE FALSE 0.37217973
-%2    TRUE FALSE 0.30667840
-%3   FALSE  TRUE 0.05465978
-%4    TRUE  TRUE 0.04285943
+For items with a full medial vowel (e.g. \textipa{/et\super h1ma/}), Korean listeners responded ``none'' in the presence of a medial vowel in $21\%$ of the relevant trials. Importantly, the ellision of the medial vowel by Korean listeners was more prominent for items with medial \textipa{[1]} ($37\%$ ``none'') than those with medial \textipa{[i]} ($5\%$ ``none'').
+The model posteriorgrams for ``none'' responses averaged to {\color{red}$5\%$}. \\
+{\color{red}[... Do we see similar ellision in the model? ... ]; [Accuracy]}
 
 %> aggregate(pgram~fullV, data=d.mod.pgram[d.mod.pgram$resp == "--",], FUN=mean)
 %  fullV      pgram
 %1 FALSE 0.33942907
 %2  TRUE 0.04875961
 
-\begin{figure}[H]
+\begin{figure}[htb!]
   \centering
   \begin{overpic}[page=2, width=0.4\linewidth]{chapter03/k-epenth_figs}\end{overpic}
   \hspace{1cm}
@@ -683,21 +680,35 @@ We can define the human equivalent $ident_{human} = [p_{none}, p_{i}, {\color{re
   \label{fig:k-epenth_KR_fullV}
 \end{figure}
 
-\begin{figure}[H]
+%> aggregate(pgram~palatal+fullV, data=d.mod.pgram[d.mod.pgram$resp == "--",], FUN=mean)
+%  palatal fullV      pgram
+%1   FALSE FALSE 0.37217973
+%2    TRUE FALSE 0.30667840
+%3   FALSE  TRUE 0.05465978
+%4    TRUE  TRUE 0.04285943
+
+% Percentage of epenthesis
+Overall, for items with consonant clusters, Korean listeners experienced vowel epenthesis in approximately $78\%$ of the trials. In comparison, the model posteriorgrams for epenthetic responses averaged $66\%$. 
+% [i] in palatal
+Focusing on trials with vowel epenthesis, after renormalising, we find that {\color{red}[...]}
+
+\begin{figure}[htb!]
   \centering
   \begin{overpic}[page=4, width=0.5\linewidth]{chapter03/k-epenth_figs}\end{overpic}  
   \caption{\textit{{\color{red}[TODO]}}}
   \label{fig:k-epenth_KR_clusters}
 \end{figure}
-\subsubsection{Discussion}
+
+\subsubsection{Summary}
+{\color{red}[TODO]}
 
 %%%%%%%%%%%%
 % art2ac-per %
 %%%%%%%%%%%%
-%\section{{\color{red}[art2ac] Introducing allophony}} \label{3-art2ac-per}
-%\subsection{Introduction}
-
+\newpage
 \subsection{{\color{red}Experiment 2: Allophony}}
+In this experiment, we introduced basic allophony to the acoustic models of our ASR system, and evaluated whether this modification resulted in a better approximation of human responses in a task probing epenthesis. More specifically, we trained two different acoustic models which differed in whether phones were word position-dependent or not. We trained the models using the WSJ American English corpus, in order to model the perception of phonotactically illegal Serbian clusters by American English listeners. The clusters were either word-initial or word-medial. We expected American English listeners to experience epenthesis less frequently with word-medial clusters, as these clusters were legal in syllable boundaries. We examined whether this was the case and, if so, whether word position-dependent models better reflected this effect than non-word position-dependent ones.         
+
 \subsubsection{Methods}
 \paragraph{Stimuli}
 We recorded a female native speaker of Serbo-Croatian in a sound proof room reading a list of {\color{red}$X$} items containing a $C_{1}C_{2}$ cluster either in syllable-initial position ($C_{1}C_{2}V_{1}C_{3}V_{1}$, e.g., \textipa{/znapa/}) or intra-syllabic position ($V_{1}C_{1}C_{2}V_{1}$, e.g., \textipa{/azna/}). $V_{1}$ and $C_{3}$ were always set to \textipa{/a/} and \textipa{/p/}, respectively. 
@@ -741,14 +752,19 @@ We use a null/uniform language model, which implies that listeners base their de
 \label{fig:wpd_G}
 \end{figure*}
 
-
 \paragraph{Identification task simulation}
 After decoding the stimuli, we obtained for each possible transcription of each item the corresponding acoustic and language model scores. From these we derived the item posteriorgrams; we collapsed together reponses with and without epenthesis, respectively. As such, posteriorgrams indicated the probability of epenthesizing \textipa{[@]} given the acoustic input. We used these probabilities as proxies of the probability that a listener might exploit when performing reverse inference during speech perception, and therefore, the probabilities used when responding in an identification task. In other words, for each item, we obtained a percentage of vowel epenthesis.
 
 \subsubsection{Results}
-\paragraph{Comparing models}
-\paragraph{Comparing models to humans}
-\subsubsection{Discussion}
+\paragraph{Quantitative analysis}
+% Overall correlations to human data
+
+\paragraph{Qualitative analysis}
+% Full vowel items
+
+% word-initial cluster vs. word-medial cluster
+
+\subsubsection{Summary}
 \subsection{General discussion}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
