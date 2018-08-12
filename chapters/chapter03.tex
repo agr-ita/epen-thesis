@@ -234,11 +234,6 @@ Since the validation and test sets contain utterances from the same speakers, th
 % 17    WSJ   tri       15 valid  8.48    NA
 % 18    WSJ  mono       15  test 11.50    NA
 
-%%%%%%%%%%%% 
-% Parlato2 %
-%%%%%%%%%%%%
-%\section{{\color{red}Parlato-hmm}} \label{3-parlato-hmm} [Merged into SurfPhono]
-
 %%%%%%%%%%%%%
 % SurfPhono %
 %%%%%%%%%%%%%
@@ -255,11 +250,13 @@ Since the validation and test sets contain utterances from the same speakers, th
 %%% Goal
 % Test acoustic model (null)
 % Compare with more informative LMs
+% Qualitative testing on best LM
+% Investigate phonetic match - wpd/phonological alt 
 
 %%% Plan
 
-\subsection{Experiment 1: {\color{red}m-/ahpa/}}
-{\color{red}ADD MINI INTRO}
+\subsection{Experiment 1}%: {\color{red}m-/ahpa/}}
+In this experiment we investigated how various versions of our ASR model differing in their language models (LMs) compared to real behavioural data. While we varied the LMs, the acoustic model was kept constant; as stated in the previous section, we used HMM-GMM monophone models with $15000$ Gaussians. We used our models to perform simulations of the identification task described in section \ref{2-ahpa}, where Japanese listeners were asked to indicate whether they heard an epenthetic vowel within the consonant cluster of $V_{1}C_{1}C_{2}V_{1}$ items (e.g., \textipa{/ahpa/}). For these items, the quality of the coarticulation cues either matched or mismatched the quality of the flanking vowels. We analysed the results quantitatively in order to assess if injecting additional phonotactic information allowed the model to better approximate human responses. We also performed qualitative analyses in order to see if the best version of the model reproduced the effects observed in section \ref{2-ahpa}. 
 
 \subsubsection{Methods}
 \paragraph{Stimuli}
@@ -427,7 +424,7 @@ When focusing on \textipa{/hp} items, we see that for human responses there is a
 % \label{fig:m-ahpa_test}
 % \end{figure}
 
-\subsubsection{Conclusions}
+\subsubsection{Summary}
 In summary, through quantitative analyses, we found that the responses from the ASR model with a null LM better approximated human responses, out of the different LM tested. Qualitative analyses showed that the null LM model responses where generally similar to human responses, but with some added noise.
 
 For the identification of full vowels, like humans, the model was accurate at identifying \textipa{/a, i, o/}. Like humans, the model identified \textipa{/u/} as ``o'' in many instances; however, the specific patterns were not exactly mirroring the confusions observed in human responses. Also unlike humans, the model identified instances of \textipa{/e/} as ``i''.
@@ -436,7 +433,10 @@ For the identification of control items (i.e., spliced items with matching vowel
 
 Concerning the test items (i.e., spliced items with mismatching vowel coarticulation and flanking vowel), like humans, most of the null LM model responses are in the set \{``none'', ``u'', ``i''\}. When examining model responses more in detail, we found that vowel coarticulation was driving responses as for humans, but the influence was less specific. One thing to note is that the noise observed in the model responses does not appear to be random; it is in line with the acoustics of the stimuli. As seen in the annex acoustic analyses in section \ref{2-ahpa}, vowel coarticulations in \textipa{/hp/}-items can be clustered as follows, based on their formant values: [[[a,u],o][e,i]]. There is a separation of front and non-front vowel coarticulations, which is also seen in the model responses. Since humans also seem to be sensitive to this acoustic proximity (e.g., ``i'' responses mostly triggered by \textipa{[i,e]} coarticulation; ``o'' responses mostly triggered by \textipa{[o,u]} coarticulation), a question that arises is if the noise observed in the model might be reduced when using a more performant acoustic model in the ASR system.      
 
-\subsection{Experiment 2: {\color{red}Parlato-lms}}
+\subsection{Experiment 2}
+As in the previous experiment, here we investigated how various versions of our ASR model differing in their language models (LMs) compared to real behavioural data.
+The models were used to simulate the identification task described in sections \ref{2-parlato} and \ref{2-parlato-dur}, where Japanese listeners were asked to indicate whether they heard an epenthetic vowel within the consonant cluster of $V_{1}C_{1}C_{2}V_{2}$ items (e.g., \textipa{/abgi/}). For human participants, we saw that (1) they mostly experienced default \textipa{/u/}-epenthesis, and (2) the quality of the flanking vowels $V_{1}$ and $V_{2}$ modulated their responses due to coarticulation. Does the output of the ASR model that best approximated human responses reflected the two aforementioned effects? 
+
 \subsubsection{Methods}
 \paragraph{Stimuli}
 We used the same stimuli as in sections \ref{2-parlato} and \ref{2-parlato-dur}. As a reminder, a native French speaker recorded 54 items with the structure $V_{1}C_{1}C_{2}V_{2}$, with $V_{1}$ and $V_{2}$ vowels from the set \{/a/, /i/, /u/\}, and $C_{1}C_{2}$ a cluster from the set \{/bg/, /bn/, /db/, /dg/, /gb/, /gn/\} (e.g. /abgi/).
@@ -464,9 +464,9 @@ We used the same procedure as in Experiment 1. An example of how the ASR system 
 \end{figure}
 
 \subsubsection{Results: Quantitative analysis}
-As in Experiment 1, we computed the Pearson's product-moment correlation coefficient between the human and model posteriorgrams in order to assess a global measure ressemblance between models' outputs and the human data from section \ref{2-parlato_per}. The model with the highest correlation to the human data was the \textsc{bigram retro} LM ($r = 0.43$), followed by the \textsc{null} ($r = 0.40$), the \textsc{unigram} ($r = 0.30$), the \textsc{bigram online} ($r = 0.23$) and lastly, the \textsc{bigram batch} LM ($r = 0.19$). Numerically, the \textsc{bigram retro} LM better approximated the human data.
+As in Experiment 1, we computed the Pearson's product-moment correlation coefficient between the human and model posteriorgrams in order to assess a global measure of the ressemblance between models' outputs and human data from section \ref{2-parlato_per}. The model with the highest correlation to the human data was the \textsc{bigram retro} LM ($r = 0.43$), followed by the \textsc{null} ($r = 0.40$), the \textsc{unigram} ($r = 0.30$), the \textsc{bigram online} ($r = 0.23$) and lastly, the \textsc{bigram batch} LM ($r = 0.19$). Numerically, the \textsc{bigram retro} LM better approximated the human data.
 
-In order to assess if the correlation differences between the \textsc{null} LM and other LMs were significant, we computed these differences and their corresponding 95\% confidence intervals (CIs), using bootstrapping with 1000 samples. As can be seen in Table \ref{tab:parlato_lms-cor_diff}, the correlation between the human data and the output of the \textsc{null} LM was significantly higher than those of the \textsc{unigram}, \textsc{bigram online} and \textsc{bigram batch}. While the correlation to the human data for \textsc{bigram retro} LM was numerically higher than for the \textsc{null} LM, we did not find evidence of a significant difference between the two as the CI of their difference overlaps zero.
+In order to assess if the correlation differences between the \textsc{null} LM and other LMs were significant, we computed these differences and their corresponding 95\% confidence intervals (CIs), using bootstrapping with 1000 samples. As can be seen in Table \ref{tab:parlato_lms-cor_diff}, the correlation between the human data and the output of the \textsc{null} LM was significantly higher than those of the \textsc{unigram}, \textsc{bigram online} and \textsc{bigram batch}. While the correlation to the human data for the \textsc{bigram retro} LM was numerically higher than for the \textsc{null} LM, we did not find evidence of a significant difference between the two as the CIs of their difference overlaps zero.
 
 % latex table generated in R 3.3.3 by xtable 1.8-2 package
 % Tue Jul  3 03:53:37 2018
@@ -486,7 +486,7 @@ null vs. bigram batch & $0.40 - 0.19$ & $0.21$ $[0.06, 0.35]$ & Yes \\  \bottomr
 \end{table}
 
 Similarly to how we did in Experiment 1, we evaluated the similarity between models' outputs and human data without focusing on percentage of vowel epenthesis. For this we computed the correlation between the human data and models' posteriorgrams after excluding the posteriorgrams for ``none'' responses and re-normalising the remaining posteriorgrams. Recall that, as a consequence, we are focusing on the correlation related to epenthetic vowel quality. The highest correlation corresponded to the \textsc{null} LM ($r = 0.53$), followed by \textsc{bigram retro} ($r = 0.46$), \textsc{unigram} ($r = 0.33$), \textsc{bigram online} ($r = 0.21$), and \textsc{bigram batch} ($r = 0.17$). 
-As can be seen in Figure \ref{tab:parlato_lms-cor_diff-nonone}, the correlation between the human data and the output of the \textsc{null} LM was significantly higher than those between the human data and other LMs. 
+As can be seen in Table \ref{tab:parlato_lms-cor_diff-nonone}, the correlation between the human data and the output of the \textsc{null} LM was significantly higher than those between the human data and other LMs. 
 
 % latex table generated in R 3.3.3 by xtable 1.8-2 package
 % Tue Jul  3 04:00:07 2018
@@ -515,8 +515,8 @@ null vs. bigram retro    & $0.53 - 0.46$ & $0.08$ $[0.04, 0.12]$ & Yes \\
     \caption{\textit{Response patterns for the identification task. Human and models responses are separated by columns; responses are given by rows. Within each rectangle, the horizontal axis separates proportions according to $C_{1}$. The vertical axis corresponds to proportion of responses (i.e., posteriorgrams, in the case of models). The box and whiskers plots display the distribution of the proportions across items (median, quartiles and extrema).}}
     \label{fig:parlato-lms}
   \end{figure}
-  
-{\color{red}Describe graph showing response patterns}
+ 
+Figure \ref{fig:parlato-lms} shows response patterns from the behavioural experiment and model simulations. The most frequent responses given by Japanese listeners were ``u'' ($63\%$), ``i'' ($15\%$), and ``none'' ($13\%$), with ``o'', ``e'', and ``a'' being infrequent responses ($<5\%$ each). The model with the null LM also shares the same three most frequent reponses, ordered as follows based on their posteriorgrams: ``none'' ($28\%$), ``u'' ($25\%$), ``i'' ($23\%$); other responses (``e'', ``o'', ``a'') had posteriorgrams below $12\%$. While human and model responses assign most of the responses to the same three options, we saw that the model's preferred response is not ``u'' but ``none''. Yet, humans experienced default \textipa{/u/}-epenthesis in more than half of the trials. As such, the model was not able to reproduce the default epenthetic vowel preference.          
 
 % 1     0         human 0.13071895
 % 2     a         human 0.01416122
@@ -524,6 +524,7 @@ null vs. bigram retro    & $0.53 - 0.46$ & $0.08$ $[0.04, 0.12]$ & Yes \\
 % 4     i         human 0.15250545
 % 5     o         human 0.04684096
 % 6     u         human 0.63071895
+
 % 7     0          null 0.27663941
 % 8     a          null 0.05414450
 % 9     e          null 0.11487889
@@ -531,51 +532,11 @@ null vs. bigram retro    & $0.53 - 0.46$ & $0.08$ $[0.04, 0.12]$ & Yes \\
 % 11    o          null 0.08025081
 % 12    u          null 0.24926179
 
-%In order to compare how well LMs compared at mimicking human behaviour, we computed the Euclidean distance between $ident_{LM}$ and $ident_{human}$ for each item, for each LM. Do models that integrate information about phoneme probabilities (i.e., \textsc{unigram} LM) or diphone probabilities (i.e., \textsc{bigram} LMs) show smaller \textsc{Eucl. distances} to human data than the \textsc{null} LM?
-
-%The response variable of our statistical models was the \textsc{Eucl. distance} between $ident_{LM}$ and $ident_{human}$, as described above. We chose as fixed effect the \textsc{Language Model} (\textsc{LM}) used during decoding, considered as a categorical variable with \textsc{null} as the reference level. The variable was contrast coded with simple coding, meaning that non-reference levels were compared to the reference level, with the intercept corresponding to the grand mean (all levels). \textsc{$C_{1}$} was added as a random intercept.
-
-%Statistical analyses were performed with the R statistical software \cite{R-base}, using Markov chain Monte Carlo generalised linear mixed-models \cite{R-MCMCglmm, R-coda}. These Bayesian models sample coefficients from the posterior probability distribution conditioned on the data and given priors. We used priors that are standard for linear models. Model convergence was assessed by visual inspection of trace plots and the Gelman–Rubin convergence diagnostic \cite{gelman1992}, using eight chains with different initialisations. Effects were considered statistically significant if the 95\% highest posterior density (HPD) interval estimated for the coefficient of interest did not include zero. We report both the posterior mode and the 95\% HPD interval.
-
-%We found that, relative to the \textsc{null} LM, the \textsc{bigram online} (mode: $0.08$, HPD: $[0.02, 0.15]$) and the \textsc{bigram batch} (mode: $0.08$, HPD: $[0.02, 0.15]$) language models resulted in significantly higher Euclidean distances between the model responses and human responses. On the other hand, we did not find evidence of a difference between the \textsc{null} LM and the \textsc{unigram} (mode: $0.03$, HPD: $[-0.04, 0.10]$) or \textsc{bigram retro} (mode: $0.0$, HPD: $[-0.06, 0.07]$) language models.
-
-%%\subsubsection{Overall similarity}
-%\begin{figure}[H]
-%  \centering
-%   \begin{overpic}[trim={0 0 0 0.75cm}, clip, page=1, width=0.5\linewidth]{chapter03/parl_hmm_figs}\end{overpic}
-%   \caption{\textit{Distribution of posteriorgrams obtained when decoding with a null language model. The box and whiskers plots display the distribution of posteriorgrams across experimental items.}}
-%   \label{fig:parl_hmm_overall}
-% \end{figure}
-% Figure \ref{fig:parl_hmm_overall} shows the distribution of posteriorgrams for each response, with one datapoint per stimulus. The most probable transcriptions for the stimuli were ``none'' (26.7\%), ``u'' (24.3\%) and ``i'' (22.5\%).  While these were also the most frequent responses given by human participants (``none'': 13.1\%; ``u'': 63.1\%; ``i'': 15.3\%), the preponderance of \textipa{/u/}-epenthesis is missing in the model.
-
-% % > agr.ep (model average pgram)
-% %   resp          x
-% % 1 none 0.26667043
-% % 2    a 0.04802057
-% % 3    e 0.12948173
-% % 4    i 0.22494707
-% % 5    o 0.08715853
-% % 6    u 0.24372167
-
-% % > colMeans(d.comp.per[-1]) (human average resp)
-% %     p.none        p.a        p.e        p.i        p.o        p.u 
-% % 0.13071895 0.01416122 0.02505447 0.15250545 0.04684096 0.63071895 
-
-% In order to have a general idea of the model's ability to reproduce human behaviour, we computed the distance between human and model response patterns by computing the normalized Euclidean distance between $ident_{model}$ and $ident_{human}$, within each experimental item. The mean (and median) distance was $0.44$. This is higher than what was obtained by the best exemplar model in section \ref{2-parlato-dur} (mean distance: $0.33$; median distance: $0.21$); however remember that exemplar models were only able to output ``i'', ``o'', and ``u'' as responses. When computing the distance by taking into account the missing responses ``none'', ``a'', and ``e'', responses from the best JP exemplar model have a mean distance of $0.39$ (median: $0.30$) with respect to human responses.
-
-% While it might be tempting to conclude that the exemplar model was superior compared to the HMM model, it is important to note that the task modelled by the HMM-based model is closer to the task participants were subjected to (6-alternative forced choice identification task) than the exemplar models (3-AFC identification task). Technically, a ``dummy'' model in the 3-AFC situation, where all options are equally probable, would output ``u'' for $33\%$ of the trials. This is a higher percentage of \textipa{/u/}-epenthesis than the $24.3\%$ from our current model. Since ``u'' is by far the most frequent response given by human participants (and ``a'' and ``e'' are very infrequent), even a dummy 3-AFC \textipa{\{``i'', ``o'', ``u''\}} model might outclass our 6-AFC \textipa{\{``none'', ``a'', ``e'', ``i'', ``o'', ``u''\}} ASR system.
-
-% As such, we believe that it is unfair to compare Euclidean distances between models based on different tasks. We can, however, see if the ASR-based model reproduces the qualitative effects that the best exemplar model was able to mimic.
-
-% We arbitrarily chose a smoothing factor ($10^{-8}$)  in order to allow the language models to assign a non-zero probability to diphones never seen in the language corpus. The magnitude of this smoothing factor is expected to have an effect on the posteriorgrams assigned to ``none'' responses when decoding the experimental items. Since ``none'' responses constitute $13\%$ of human responses, and since the choice of the smoothing factor only affects the bigram language models, it may be beneficial to do a post-hoc analysis focusing on the models' ability to mimic epenthetic vowel quality after isolating it from the percentage of epenthesis. As such, we perform the same analysis as above, but after removing $p_{none}$ from $ident_{LM}$ and $ident_{human}$.
-
-% The results are qualitatively identical: relative to the \textsc{null} LM, only the \textsc{bigram online} (mode: $0.11$, HPD: $[0.05, 0.19]$) and the \textsc{bigram batch (2PB)} (mode: $0.11$, HPD: $[0.05, 0.19]$) language models resulted in significantly higher Euclidean distances. There was no evidence of a significant difference for the \textsc{unigram (1P)} (mode: $0.06$, HPD: $[-0.02, 0.12]$) or \textsc{bigram retro (2PR)} (mode: $0.03$, HPD: $[-0.04, 0.10]$) language models 
-
 % Interestingly, the models that performed less similarly to human behaviour are those for which \textipa{/u/}- and \textipa{/i/}-epenthesis was blocked after coronal consonants, since \textipa{/du/} and \textipa{/di/} are phonotactically illegal in Japanese and therefore do not appear in our corpus. Yet, as seen in Figure \ref{fig:parlato_per_all}, JP participants mostly reported experiencing \textipa{/u/}- and \textipa{/i/}-epenthesis on trials where $C_{1}$ was a coronal consonant. Similar to how ``none'' responses are blocked for all bigram models, acoustics are unable to counter the low diphone probability of \textipa{/du/} and \textipa{/di/}.
 
 \paragraph{Effect of coarticulation}
 
-Statistical analyses were performed with the R statistical software \cite{R-base}, using Markov chain Monte Carlo generalised linear mixed-models \cite{R-MCMCglmm, R-coda}. These Bayesian models sample coefficients from the posterior probability distribution conditioned on the data and given priors. We used priors that are standard for linear models. Model convergence was assessed by visual inspection of trace plots and the Gelman–Rubin convergence diagnostic \cite{gelman1992}, using eight chains with different initialisations. Effects were considered statistically significant if the 95\% highest posterior density (HPD) interval estimated for the coefficient of interest did not include zero. We report both the posterior mode and the 95\% HPD interval.  
+Next we examined if the coarticulation effect observed in human responses also appeared in model responses. Statistical analyses were performed with the R statistical software \cite{R-base}, using Markov chain Monte Carlo generalised linear mixed-models \cite{R-MCMCglmm, R-coda}. These Bayesian models sample coefficients from the posterior probability distribution conditioned on the data and given priors. We used priors that are standard for linear models. Model convergence was assessed by visual inspection of trace plots and the Gelman–Rubin convergence diagnostic \cite{gelman1992}, using eight chains with different initialisations. Effects were considered statistically significant if the 95\% highest posterior density (HPD) interval estimated for the coefficient of interest did not include zero. We report both the posterior mode and the 95\% HPD interval.  
 
 In order to assess the influence of $V_{1}$ and $V_{2}$ (henceforth: flanking vowels) on epenthetic vowel quality (/i/ or /u/), we chose as fixed effect for our statistical models \textsc{Number of Same Flanking Vowels} (\textsc{NSFV}; considered as a continuous variable with values 0, 1, or 2 instead of a factor with 3 levels, in order to reduce the number of model parameters and promote convergence). Due to the almost null variance and the consequent poor trace plot for the random intercept \textsc{Cluster}, we did not include it in the statistical models. Our response variable was the continuous variable \textsc{Posteriorgram}.\footnote{Responses by human participants and exemplar models were given by trial; therefore in previous analyses the response variable was binomial.}
 
@@ -595,6 +556,10 @@ The main effect of \textsc{NSFV} was significant (mode: $0.14$, HPD: $[0.06, 0.2
 %\paragraph{/u/-epenthesis}
 The right panel of Figure \ref{fig:parl_hmm_iu} shows the posteriorgrams for \textipa{/u/}-epenthesis given by our ASR-based model with a ``null'' language model.
 The main effect of \textsc{NSFV} was not significant (mode: $0.03$, HPD: $[-0.03, 0.09]$). Therefore, an increased number of \textipa{/u/} flanking vowels did not result in significantly higher posteriorgrams for stimuli transcriptions with \textipa{/u/} epenthesis.
+\subsubsection{Summary}
+In summary, we compared the output of our various ASR models to responses given by Japanese listeners in the experiment described in sections \ref{2-parlato} and \ref{2-parlato-dur}. Quantitative analyses revealed that the ASR model using a null LM during decoding was better approximating human responses, in particular when examining epenthetic vowel quality. Focusing on the null model, it was able to capture Japanese listeners' preference for responding ``none'', ``u'', and ``i'' during the identification task. However, while humans responded ``u'' in more than half of the experimental trials, the model posteriorgrams for these three options were numerically very close. As such, the model was unable to capture the ``default'' status of \textipa{/u/}-epenthesis in Japanese.
+
+Now we turn to coarticulation effects observed in the behavioural task. We saw in sections \ref{2-parlato} and \ref{2-parlato-dur} that Japanese listeners were more prone to epenthesizing vowels \textipa{/i/} and \textipa{/u/} when more flanking vowels were of the same quality. The model was able to reflect this coarticulation effect partially: more \textipa{/i/} flanking vowels resulted in significantly more \textipa{/i/}-epenthesis; however, we did not find evidence for the analogous situation for \textipa{/u/}-epenthesis.  
 
 \subsection{Discussion}
 {\color{red}[TODO]}
@@ -625,6 +590,8 @@ The main effect of \textsc{NSFV} was not significant (mode: $0.03$, HPD: $[-0.03
 %%% Qualitative analyses
 % Need analyses with a lot more items (we only have 54 datapoints; 24-24-6)
 
+% Importance of having control items (check if the model is OK in control condition)
+
 %%%%%%%%%%%%
 % k-epenth %
 %%%%%%%%%%%%
@@ -654,15 +621,47 @@ The organisation of the stimuli, based on place of articulation of \textsc{C}, i
 \end{tabular}
 \end{table}
 
-\paragraph{Language models}
+\paragraph{ASR system}
+Two populations of listeners were simulated in this experiment, based on \cite{durvasula2015}: we simulated an English-listening control group using the acoustic model trained on English data (WSJ corpus), and a Korean-listening target group using the acoustic model trained on Korean data (KCSS). As a reminder, we selected the HMM-GMM monophone models with the best performance, namely the models with $15000$ Gaussians.  
 
+Concerning the language models used during the decoding, in order for the decoding task to be analogous to the behavioural experiment described in \cite{durvasula2015}, trial-specific language models were constructed, as shown in Figure \ref{fig:k-epenth_G}. Thus, when decoding the stimulus \textipa{/e}$C_{1}(V_{2})$\textipa{ma/}, the perception model was only given the possibility to transcribe it as {\color{red}\textipa{/e}$C_{1}(V_{2})(SIL)$\textipa{ma/}}, where phones between parentheses are optional, $V_{2}$ was from the set of vowels \textipa{/i, 1/}, and $SIL$ is an optional silence. 
+
+\begin{figure}[htb]
+    \centering
+    %\includegraphics[width=0.8\linewidth]{chapter03/m-ahpa_Gfst.pdf}
+    \caption{{\color{red}[TODO]}}%\textit{Constrained language model used to test the models (here: LM for \textipa{/ahpa/} trials). Nodes in the graph represent states, weighted edges represent transitions between states (here: phonemes). When relevant, weighted edges are labeled with the probability to choose that edge when decoding, which affects the final language model score of each possible path. When no weights are shown (e.g., between states 3 and 4), there is no preference between the paths concerned. The language model scores are combined with acoustic scores when decoding experimental items.}}
+    \label{fig:k-epenth_G}
+  \end{figure}
+  
 \paragraph{Identification task simulation}
+\begin{figure}[htb]
+  \centering
+%  \begin{overpic}[trim={0 1cm 0 1.5cm},clip, width=0.7\linewidth]{chapter03/m-ahpa_praat_ah0apa.pdf}\end{overpic}
+  \caption{{\color{red}[TODO]}}%\textit{Example of how the ASR system decodes the item \textipa{/ah$_{a}$pa/}, using the null version of the language model in Figure \ref{fig:m-ahpa_G}. From top to bottom: original waveform, item name, aligned transcriptions given by the model (from the most probable to the least probable, with the corresponding posteriorgrams shown to their right side), and spectrogram with formant contours. SIL = silence. {\color{red}TODO: get updated figure (this is with mono-6K)}}}
+  \label{fig:k-epenth_align}
+\end{figure}
+
+After decoding the stimuli with the ASR models, we extracted from the resulting lattices each possible transcription of each item, and the corresponding acoustic and language model scores. %An example of how the ASR system decodes the experimental stimuli can be seen in Figure \ref{fig:k-epenth_align}.
+From the (scaled) acoustic and language model scores we derived the item posteriorgrams, which indicate how probable a given transcription was given the audio input. We used these probabilities as proxies of the probability that a listener might exploit when performing reverse inference during speech perception, and therefore, the probabilities used when responding in an identification task. 
+
+As such, for each item, we obtained a three-dimensional vector $ident_{model} = [p_{none}, p_{i}, {\color{red}p_{\textipa{1}}}]$, containing a discrete probability distribution, with a probability mass function linking the identification task options \{`none', `\textipa{i}', `\textipa{1}'}, to their respective probabilities (i.e., posteriorgrams).
+We can define the human equivalent $ident_{human} = [p_{none}, p_{i}, {\color{red}p_{\textipa{1}}}]$, which contains the percentage of responses for each item, after aggregating all participant responses.
 
 \subsubsection{Results}
 \paragraph{English model (control)}
-%% Hopefully the model mostly outputs "none" for clusters and it's almost perfectly accurate for fullV !!!!! 
+%% Hopefully the model mostly outputs "none" for clusters and it's almost perfectly accurate for fullV !!!!!
+
+% Percentage of epenthesis
+% Accuracy
 
 \paragraph{Korean model (test)}
+% Percentage of epenthesis
+
+% Accuracy
+
+
+% [i] in palatal
+
 %> aggregate(pgram~palatal+fullV, data=d.mod.pgram[d.mod.pgram$resp == "--",], FUN=mean)
 %  palatal fullV      pgram
 %1   FALSE FALSE 0.37217973
@@ -686,7 +685,7 @@ The organisation of the stimuli, based on place of articulation of \textsc{C}, i
 
 \begin{figure}[H]
   \centering
-  \begin{overpic}[page=4, width=0.7\linewidth]{chapter03/k-epenth_figs}\end{overpic}  
+  \begin{overpic}[page=4, width=0.5\linewidth]{chapter03/k-epenth_figs}\end{overpic}  
   \caption{\textit{{\color{red}[TODO]}}}
   \label{fig:k-epenth_KR_clusters}
 \end{figure}
@@ -702,25 +701,34 @@ The organisation of the stimuli, based on place of articulation of \textsc{C}, i
 \subsubsection{Methods}
 \paragraph{Stimuli}
 We recorded a female native speaker of Serbo-Croatian in a sound proof room reading a list of {\color{red}$X$} items containing a $C_{1}C_{2}$ cluster either in syllable-initial position ($C_{1}C_{2}V_{1}C_{3}V_{1}$, e.g., \textipa{/znapa/}) or intra-syllabic position ($V_{1}C_{1}C_{2}V_{1}$, e.g., \textipa{/azna/}). $V_{1}$ and $C_{3}$ were always set to \textipa{/a/} and \textipa{/p/}, respectively. 
-We also recorded the "epenthesized" equivalents of said stimuli, namely $C_{1}V_{ep}C_{2}V_{1}C_{3}V_{1}$ (\textipa{/z@napa/}) and $V_{1}C_{1}V_{ep}C_{2}V_{1}$ (\textipa{/az@na/}) with $V_{ep}$ set as {\color{red}\textipa{[@]}}.
+We also recorded the ``epenthesized'' equivalents of said stimuli, namely $C_{1}V_{ep}C_{2}V_{1}C_{3}V_{1}$ (\textipa{/z@napa/}) and $V_{1}C_{1}V_{ep}C_{2}V_{1}$ (\textipa{/az@na/}) with $V_{ep}$ set as {\color{red}\textipa{[@]}}.
 For all stimuli stress fell on the first $V_{1}$.
 {\color{red}The list of stimuli is given by Table X.}
 
 \paragraph{Behavioural experiment}
-{\color{red}[TODO]: Mechanical Turk}
+{\color{red}XX} monolingual native listeners of American English were recruited through the online platform Amazon's Mechanical Turk. An additional {\color{red}XX participants were also tested, but they were excluded from the analyses if they met at least one of the following conditions: extensive exposure to languages other than English, auditory problems, dyslexia, unable to use headphones or earbuds during the experiment}. This information was retrieved from pre-test and post-test questionnaires.
+
+After audio setup\footnote{Participants were given the opportunity to setup the audio to comfortable hearing levels.} and {\color{red}$XX$} training trials, in each experimental trial participants heard an item (e.g., \textipa{/azna/}). Since the grapheme-to-phoneme mapping is not as transparent in English as it is in Japanese or Korean, and because the position of the cluster in the item was not fixed, the task was slightly altered compared to other experiments described in previous sections. Participants were not asked if they had heard a vowel between the consonants; instead, they were asked to provide the orthographic form of what they had heard: if the auditory stimulus was \textipa{/azna/}, participants would be asked to click on the nonword that they heard, between options \textit{``azna''} and  \textit{``azana''}. Since online participantsare often not as immersed in the experiment as participants tested in a laboratory setting, the experiment was self-paced and participants were able to listen to the stimuli as many times as necessary.
+
+Each participant completed {\color{red}$XX$} trials. For each item, participants heard either the cluster version (e.g., \textipa{/azna/}) or the ``epenthesized'' version (e.g., \textipa{/az@na/}). Presentation of trials was counterbalanced between participants.   
 
 
-\paragraph{Modelling: Acoustic models}
-
+\paragraph{ASR system}
 %\paragraph{Acoustic models}
-{\color{red} [TODO]: wpdF vs. wpdT}
+We simulated perception of nonnative nonwords by English listeners using acoustic models trained on American English data (WSJ corpus). As in previous experiments, we used HMM-GMM monophone models with $15000$ Gaussians. However, we tested two types of acoustic models:
 
+\begin{enumerate}
+\item WPD-False (non-word position-dependent) acoustic models: These are the type of models that have been used in all previous sections. For these models, all acoustic realisations of a phoneme are grouped together in a unique HMM-GMM, no matter what the position in a word of the phones were the acoustic tokens originate from. Therefore, for instance, in these models there is only one HMM-GMM corresponding to the phoneme \textipa{/a/}.
+  \item WPD-True (word position-dependent) acoustic models: In these models, different HMM-GMMs are built for phonemes, according to their position in a word (initial, medial, final, isolate). For instance, there will be four HMM-GMMs for the phoneme \textipa{/a/}.  
+\end{enumerate}
 
-\paragraph{Modelling: Language models}
-Item-specific language models were constructed, as shown in Figure \ref{fig:G_fst}. Thus, when decoding a $C_{1}(V_{ep})C_{2}V_{1}C_{3}V_{1}$ stimulus, the perception model was only given the possibility to transcribe it as $C_{1}(V_{ep})C_{2}V_{1}C_{3}V_{2}$, where phones between parentheses are optional and $V_{ep} = $ \textipa{[@]}. And similarly for $V_{1}C_{1}(V_{ep}C_{2}V_{1}$ items.
-While $V_{1}$ was intended to be \textipa{/a/} phonologically, we allowed the model to transcribe $V_{1}$ as any phoneme associated with the grapheme [a]. This allowed to account for phonetic reduction in our stimuli, but also to foresee for the possibility that these transcriptions might be considered by English-speaking participants from the psycholinguistic experiment, due to item transcriptions being presented orthographically onscreen.
+WPD-False and WPD-True acoustic models are allocated the same number of Gaussians, even though the latter have more phones (up to four times more than WPD-False models). This means that it is almost certain that the average number of Gaussians per phone HMM-GMM is lower in WPD-True than in WPD-False acoustic models. Also, since now acoustic realisations are separated according to their position in a word, we expect Gaussians to be distributed differently amongst HMM-GMMs. 
 
-We use a null/uniform language model (\textsc{0P-LM}), which implies that listeners base their decoding of consonant clusters on phonetics alone, without using information on phonotactics.
+%\paragraph{Modelling: Language models}
+Concerning the language model used for decoding stimuli, item-specific language models were constructed, as shown in Figure {\color{red}\ref{fig:wpd_G}}. Thus, when decoding a $C_{1}(V_{ep})C_{2}V_{1}C_{3}V_{1}$ stimulus, the perception model was only given the possibility to transcribe it as $C_{1}(V_{ep})C_{2}V_{1}C_{3}V_{2}$, where phones between parentheses are optional and $V_{ep} = $ \textipa{[@]}. And similarly for $V_{1}C_{1}(V_{ep}C_{2}V_{1}$ items.
+While $V_{1}$ was intended to be \textipa{/a/} phonologically, we allowed the model to transcribe $V_{1}$ as any phoneme associated with the grapheme [a]. This allowed to account for phonetic reduction in our stimuli, but also to foresee for the possibility that these transcriptions might be considered by English-speaking participants from the psycholinguistic experiment, due to item transcriptions being presented orthographically on-screen.
+
+We use a null/uniform language model, which implies that listeners base their decoding of consonant clusters on phonetics alone, without using information on phonotactics.
 
 \begin{figure*}[htb]
 \centering
@@ -728,12 +736,12 @@ We use a null/uniform language model (\textsc{0P-LM}), which implies that listen
 \vspace{0.5cm}
 %\includegraphics[width=0.8\linewidth]{chapter04/G_znapa.pdf}
 \caption{Constrained language model used to test the models (here: LM for \textipa{/znapa/} (top) and \textipa{/azna/} (bottom) trials). Nodes in the graph represent states, weighted edges represent transitions between states (here: phonemes). The LMs are "null"/uniform LMs, as they only constrain the possible decoding outputs without assigning higher or lower probabilities to certain edges. The optimal decoding path is therefore dependent on the acoustic/articulatory scores.}
-\label{fig:G_fst}
+\label{fig:wpd_G}
 \end{figure*}
 
 
-\paragraph{Modelling: Identification task simulation}
-After decoding the stimuli, we obtained for each possible transcription of each item the corresponding acoustic/articulatory and language model scores. From these we derived the item posteriorgrams, which indicate how probable a given transcription was, given the acoustic or articulatory input. We used these probabilities as proxies of the probability that a listener might exploit when performing reverse inference during speech perception, and therefore, the probabilities used when responding in an identification task. As such, for each item, we obtained a percentage of vowel epenthesis.
+\paragraph{Identification task simulation}
+After decoding the stimuli, we obtained for each possible transcription of each item the corresponding acoustic and language model scores. From these we derived the item posteriorgrams; we collapsed together reponses with and without epenthesis, respectively. As such, posteriorgrams indicated the probability of epenthesizing \textipa{[@]} given the acoustic input. We used these probabilities as proxies of the probability that a listener might exploit when performing reverse inference during speech perception, and therefore, the probabilities used when responding in an identification task. In other words, for each item, we obtained a percentage of vowel epenthesis.
 
 \subsubsection{Results}
 \paragraph{Comparing models}
