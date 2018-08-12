@@ -127,14 +127,14 @@
 \contentsline {paragraph}{Behavioural experiment}{71}{section*.52}
 \contentsline {paragraph}{ASR system}{71}{section*.53}
 \contentsline {paragraph}{Identification task simulation}{72}{section*.54}
-\contentsline {subsubsection}{\numberline {3.4.3.2}Results}{72}{subsubsection.3.4.3.2}
-\contentsline {paragraph}{Comparing models}{72}{section*.55}
-\contentsline {paragraph}{Comparing models to humans}{72}{section*.56}
-\contentsline {subsubsection}{\numberline {3.4.3.3}Discussion}{72}{subsubsection.3.4.3.3}
-\contentsline {subsection}{\numberline {3.4.4}General discussion}{72}{subsection.3.4.4}
-\contentsline {section}{\numberline {3.5}Conclusions}{72}{section.3.5}
-\contentsline {chapter}{\numberline {4}General Discussion}{73}{chapter.4}
-\contentsline {paragraph}{Paradigm}{73}{section*.57}
-\contentsline {paragraph}{ASR system}{73}{section*.58}
-\contentsline {paragraph}{Quantitative approach}{73}{section*.59}
-\contentsline {chapter}{\numberline {A}\ignorespaces Are words easier to learn from infant- than adult-directed speech? }{78}{appendix.A}
+\contentsline {subsubsection}{\numberline {3.4.3.2}Results}{73}{subsubsection.3.4.3.2}
+\contentsline {paragraph}{Comparing models}{73}{section*.55}
+\contentsline {paragraph}{Comparing models to humans}{73}{section*.56}
+\contentsline {subsubsection}{\numberline {3.4.3.3}Discussion}{73}{subsubsection.3.4.3.3}
+\contentsline {subsection}{\numberline {3.4.4}General discussion}{73}{subsection.3.4.4}
+\contentsline {section}{\numberline {3.5}Conclusions}{73}{section.3.5}
+\contentsline {chapter}{\numberline {4}General Discussion}{74}{chapter.4}
+\contentsline {paragraph}{Paradigm}{74}{section*.57}
+\contentsline {paragraph}{ASR system}{74}{section*.58}
+\contentsline {paragraph}{Quantitative approach}{74}{section*.59}
+\contentsline {chapter}{\numberline {A}\ignorespaces Are words easier to learn from infant- than adult-directed speech? }{79}{appendix.A}

@@ -732,10 +732,10 @@ We use a null/uniform language model, which implies that listeners base their de
 
 \begin{figure*}[htb]
 \centering
-%\includegraphics[width=0.8\linewidth]{chapter04/G_azna.pdf}
+\includegraphics[width=0.8\linewidth]{chapter03/wpd-G_azna.pdf}
 \vspace{0.5cm}
-%\includegraphics[width=0.8\linewidth]{chapter04/G_znapa.pdf}
-\caption{Constrained language model used to test the models (here: LM for \textipa{/znapa/} (top) and \textipa{/azna/} (bottom) trials). Nodes in the graph represent states, weighted edges represent transitions between states (here: phonemes). The LMs are "null"/uniform LMs, as they only constrain the possible decoding outputs without assigning higher or lower probabilities to certain edges. The optimal decoding path is therefore dependent on the acoustic/articulatory scores.}
+\includegraphics[width=0.8\linewidth]{chapter03/wpd-G_znapa.pdf}
+\caption{Constrained language model used to test the models (here: LMs for \textipa{/azna/} (top) and \textipa{/zn@pa/} (bottom) trials). Nodes in the graph represent states, edges represent transitions between states (here: phonemes, transcribed in WSJ notation). Models were given the choice to transcribe the phoneme \textipa{/a/} with any of the phonemes linked to the grapheme $\langle a \rangle$, as English listeners might have also done so during the task. The LMs are ``null'', as they only constrain the possible decoding outputs without assigning higher or lower probabilities to certain edges. The optimal decoding path is therefore only dependent on the acoustic scores.}
 \label{fig:wpd_G}
 \end{figure*}
 
