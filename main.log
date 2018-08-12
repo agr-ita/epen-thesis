@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.26)  12 AUG 2018 13:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.26)  12 AUG 2018 13:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2108,7 +2108,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [71]
-Overfull \hbox (30.20366pt too wide) in paragraph at lines 728--730
+Overfull \hbox (30.20366pt too wide) in paragraph at lines 730--732
 \OT1/cmr/m/n/10.95 stim-u-lus, the per-cep-tion model was only given the pos-si
 -bil-ity to tran-scribe it as $\OML/cmm/m/it/10.95 C[]\OT1/cmr/m/n/10.95 (\OML/
 cmm/m/it/10.95 V[]\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 C[]V[]C[]V[]$\OT1/cmr
@@ -2116,7 +2116,7 @@ cmm/m/it/10.95 V[]\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 C[]V[]C[]V[]$\OT1/cmr
  []
 
 
-Overfull \hbox (13.10776pt too wide) in paragraph at lines 728--730
+Overfull \hbox (13.10776pt too wide) in paragraph at lines 730--732
 \OT1/cmr/m/n/10.95 where phones be-tween paren-the-ses are op-tional and $\OML/
 cmm/m/it/10.95 V[] \OT1/cmr/m/n/10.95 =$ \T3/cmr/m/n/10.95 [@]\OT1/cmr/m/n/10.9
 5 . And sim-i-larly for $\OML/cmm/m/it/10.95 V[]C[]\OT1/cmr/m/n/10.95 (\OML/cmm
@@ -2127,13 +2127,13 @@ cmm/m/it/10.95 V[] \OT1/cmr/m/n/10.95 =$ \T3/cmr/m/n/10.95 [@]\OT1/cmr/m/n/10.9
 File: images/chapter03/wpd-G_azna.pdf Graphic file (type pdf)
 <use images/chapter03/wpd-G_azna.pdf>
 Package pdftex.def Info: images/chapter03/wpd-G_azna.pdf  used on input line 73
-5.
+7.
 (pdftex.def)             Requested size: 341.43436pt x 128.8748pt.
 <images/chapter03/wpd-G_znapa.pdf, id=1637, 614.295pt x 163.61125pt>
 File: images/chapter03/wpd-G_znapa.pdf Graphic file (type pdf)
 <use images/chapter03/wpd-G_znapa.pdf>
 Package pdftex.def Info: images/chapter03/wpd-G_znapa.pdf  used on input line 7
-37.
+39.
 (pdftex.def)             Requested size: 341.43436pt x 90.93762pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3237,7 +3237,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 124.
 Here is how much of TeX's memory you used:
  10272 strings out of 492980
  155783 string characters out of 6132494
- 258918 words of memory out of 5000000
+ 258917 words of memory out of 5000000
  13219 multiletter control sequences out of 15000+600000
  18877 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3331,7 +3331,7 @@ ublic/tipa/tipa8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tip
 a/tipabx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tipa/tipa
 sl10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tipa/tipasl12.p
 fb>
-Output written on main.pdf (118 pages, 3657071 bytes).
+Output written on main.pdf (118 pages, 3657167 bytes).
 PDF statistics:
  2103 PDF objects out of 2487 (max. 8388607)
  1724 compressed objects within 18 object streams
