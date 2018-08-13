@@ -112,31 +112,31 @@
 \contentsline {subsection}{\numberline {3.3.4}Discussion}{70}{subsection.3.3.4}
 \contentsline {subsubsection}{\numberline {3.3.4.1}Need a better acoustic model}{70}{subsubsection.3.3.4.1}
 \contentsline {subsubsection}{\numberline {3.3.4.2}Need phonotactics and/or abstract grammar}{71}{subsubsection.3.3.4.2}
-\contentsline {section}{\numberline {3.4}{\color {red}Investigating acoustic/phonetic match}}{72}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Introduction}{72}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}{\color {red}Experiment 1: Phonological alternations}}{72}{subsection.3.4.2}
-\contentsline {subsubsection}{\numberline {3.4.2.1}Methods}{72}{subsubsection.3.4.2.1}
-\contentsline {paragraph}{Stimuli}{72}{section*.46}
-\contentsline {paragraph}{ASR system}{72}{section*.47}
-\contentsline {paragraph}{Identification task simulation}{73}{figure.3.15}
-\contentsline {subsubsection}{\numberline {3.4.2.2}Results}{73}{subsubsection.3.4.2.2}
-\contentsline {paragraph}{American English model (control)}{73}{section*.49}
-\contentsline {paragraph}{Korean model (test)}{73}{section*.50}
-\contentsline {subsubsection}{\numberline {3.4.2.3}Summary}{73}{subsubsection.3.4.2.3}
-\contentsline {subsection}{\numberline {3.4.3}{\color {red}Experiment 2: Allophony}}{74}{subsection.3.4.3}
-\contentsline {subsubsection}{\numberline {3.4.3.1}Methods}{75}{subsubsection.3.4.3.1}
-\contentsline {paragraph}{Stimuli}{75}{section*.51}
-\contentsline {paragraph}{Behavioural experiment}{75}{section*.52}
-\contentsline {paragraph}{ASR system}{75}{section*.53}
-\contentsline {paragraph}{Identification task simulation}{76}{section*.54}
-\contentsline {subsubsection}{\numberline {3.4.3.2}Results}{77}{subsubsection.3.4.3.2}
-\contentsline {paragraph}{Quantitative analysis}{77}{section*.55}
-\contentsline {paragraph}{Qualitative analysis}{77}{section*.56}
-\contentsline {subsubsection}{\numberline {3.4.3.3}Summary}{77}{subsubsection.3.4.3.3}
-\contentsline {subsection}{\numberline {3.4.4}General discussion}{77}{subsection.3.4.4}
-\contentsline {section}{\numberline {3.5}Conclusions}{77}{section.3.5}
-\contentsline {chapter}{\numberline {4}General Discussion}{78}{chapter.4}
-\contentsline {paragraph}{Paradigm}{78}{section*.57}
-\contentsline {paragraph}{ASR system}{78}{section*.58}
-\contentsline {paragraph}{Quantitative approach}{78}{section*.59}
-\contentsline {chapter}{\numberline {A}\ignorespaces Are words easier to learn from infant- than adult-directed speech? }{83}{appendix.A}
+\contentsline {section}{\numberline {3.4}{\color {red}Investigating acoustic/phonetic match}}{73}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Introduction}{73}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}{\color {red}Experiment 1: Phonological alternations}}{73}{subsection.3.4.2}
+\contentsline {subsubsection}{\numberline {3.4.2.1}Methods}{73}{subsubsection.3.4.2.1}
+\contentsline {paragraph}{Stimuli}{73}{section*.46}
+\contentsline {paragraph}{ASR system}{73}{section*.47}
+\contentsline {paragraph}{Identification task simulation}{74}{figure.3.15}
+\contentsline {subsubsection}{\numberline {3.4.2.2}Results}{74}{subsubsection.3.4.2.2}
+\contentsline {paragraph}{American English model (control)}{74}{section*.49}
+\contentsline {paragraph}{Korean model (test)}{74}{section*.50}
+\contentsline {subsubsection}{\numberline {3.4.2.3}Summary}{74}{subsubsection.3.4.2.3}
+\contentsline {subsection}{\numberline {3.4.3}{\color {red}Experiment 2: Allophony}}{75}{subsection.3.4.3}
+\contentsline {subsubsection}{\numberline {3.4.3.1}Methods}{76}{subsubsection.3.4.3.1}
+\contentsline {paragraph}{Stimuli}{76}{section*.51}
+\contentsline {paragraph}{Behavioural experiment}{76}{section*.52}
+\contentsline {paragraph}{ASR system}{76}{section*.53}
+\contentsline {paragraph}{Identification task simulation}{77}{section*.54}
+\contentsline {subsubsection}{\numberline {3.4.3.2}Results}{78}{subsubsection.3.4.3.2}
+\contentsline {paragraph}{Quantitative analysis}{78}{section*.55}
+\contentsline {paragraph}{Qualitative analysis}{78}{section*.56}
+\contentsline {subsubsection}{\numberline {3.4.3.3}Summary}{78}{subsubsection.3.4.3.3}
+\contentsline {subsection}{\numberline {3.4.4}General discussion}{78}{subsection.3.4.4}
+\contentsline {section}{\numberline {3.5}Conclusions}{78}{section.3.5}
+\contentsline {chapter}{\numberline {4}General Discussion}{79}{chapter.4}
+\contentsline {paragraph}{Paradigm}{79}{section*.57}
+\contentsline {paragraph}{ASR system}{79}{section*.58}
+\contentsline {paragraph}{Quantitative approach}{79}{section*.59}
+\contentsline {chapter}{\numberline {A}\ignorespaces Are words easier to learn from infant- than adult-directed speech? }{84}{appendix.A}

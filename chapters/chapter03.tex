@@ -603,30 +603,34 @@ Concerning Experiment 2, the correlation between model and human data ($r \appro
 
 It is also possible that the current acoustic model is not fully mirroring human data due to bad duration modelling. Indeed, recall that we saw in section \ref{2-parlato-dur} that adding duration information to an exemplar model increased the closeness of its response patterns to that of humans. By definition, in HMMs the observed emission at state \textit{n} is only determined by the previous state \textit{n-1}. These types of models are therefore not ideal for modelling duration effects; even though some duration information is encoded in the self-loop probabilities (i.e., probabilities determining whether to remain in state \textit{n}).
 
-In sum, in order to continue testing the hypothesis that the acoustic model is sufficient to predict patterns of vowel epenthesis\footnote{Or, in other words, falsify the fact that the language model is necessary}, an even better acoustic model is required. Indeed, recall that we are using relatively primitive ASR models. In the future, it would be a good idea to investigate whether other types of acoustic models (e.g., neural network-based ASR systems) . 
+In sum, in order to continue testing the hypothesis that the acoustic model is sufficient to predict patterns of vowel epenthesis\footnote{Or, in other words, falsify the fact that the language model is necessary}, an even better acoustic model is required. Indeed, recall that we are using relatively primitive ASR models. In the future, it would be a good idea to investigate whether other types of acoustic models (e.g., neural network-based ASR systems). But what if the AM quality is not the source of the problem?
 
 \subsubsection{Need phonotactics and/or abstract grammar}
-But what if the AM quality is not the source of the problem? 
+We assessed how language models with basic phonotactics would fare against a null model. More precisely, we used a unigram LM and three versions of bigram LMs. However, it is always possible to improve our primitive models.
 
-% Phonotactics' impediments
+Due to how probabilities were computed in this identification task, the probability of choosing the non-epenthetic response depended greatly on how the corpus probability of $C_{2}$ (e.g., \textipa{/p/} in \textipa{/ahpa/}) compared to the probabilities of the five Japanese vowels. However, since participants had a access to a partial transcription of the stimulus (e.g., visual prompt \textit{ah?pa} for \textipa{/ahpa/}), the probability\footnote{Here we do not specify whether the probability is unigram, bigram, or other.} of $C_{2}$ was in practice equal to 1 for all responses. The probability of epenthesizing $x$ in \textipa{/ahpa/} is
+\begin{equation}
+  P(ahxpa) = P(a) * P(h) * P(x) * P(p) * P(a)
+\end{equation}
+with $P(a) = P(h) = P(p) = P(a) = 1$ because of the orthographic prompt, meaning that
+\begin{equation}
+  P(ahpa) = P(a) * P(h) * P(p) * P(a) = 1
+\end{equation}
+or put differently,
+\begin{equation}
+  P(ahpa) = \frac{P(ahxpa)}{P(x)} = \frac{P(x)}{P(x)} = 1
+\end{equation}
+An alternative way of setting the probabilities would be to, for instance, weight $P(ahpa)$ and $P(ahxpa)$ by the corpus frequencies of words with $4$ and $5$ phonemes, respectively.   
+
+Another modification relates to how the LMs dealt with bigrams never seen in the corpus (i.e., nonnative sequences). In order to examine a strict type of LMs, the probabilities assigned to unseen bigrams was extremely small. This equates to viewing the native phonotactics filter as a binary process (i.e., legal versus illegal structures).It would be possible to find an optimal smoothing parameter (i.e., setting the threshold of the binary filter), or even infer gradient probabilities of the unseen sequences based on natural classes, their ocurrence across intonational phrases (cf \cite{durvasula2016}), etc. It would also be possible to tune the acoustic scale, which determines the weight of the output of the AM with respect to the LM.
+
+It would be important to also assess the validity of using probabilities derived from a corpus, as some patterns of epenthetic response might be more in line with native phonotactic knowledge rather than with frequency counts (e.g., \cite{kabak2007}). An example of how frequency introduced unexpected response patterns is how our non-null models showed higher rates of \textipa{/a/}-epenthesis compared to the null model, simply because this is the most frequent vowel in our Japanese corpus, yet Japanese listeners rarely epenthesized \textipa{[a]}.  
 %% -> Blocks never seen sequences (legal/illegal view as in Peperkamp (2008?), not probabilistic gradient phonotactics (cf Wilson2014, notes on Lentz2011's thesis).
 %% -> Adds frequency bias that may not be adequate (e.g., increase in /a/ epenthesis because most frequent vowel)
 
-%%% Probabilities & non-null models
-% Was using the probability of 'p' or 'p' within a diphone a good choice for the probability of 'ahpa'? What are the alternatives (e.g., give a probability of 1, but weight by P(4 phone word) vs P(5 phone word)? Remember that, for the unigram P(ahpa) = P(ahxpa)/P(x) since P(ahxpa) = P(a) * P(h) * P(p) * P(a) * P(x)) 
-% Smoothing for unseen sequences?
-% Hybrid model? Vary acoustic scale and find optimal value? (there are some qualitative effects that we seem to see in bigrams, for instance, that might increase correlation)  
-
-%%% Does this mean that phonotactic component is not necessary?
-% As in, surface phonotactic effect just due to how acoustics are interpreted?  
-%% Wilson (2014) - other possibilities!
-% Favoured phonotactic models were those with (1) gradient legality and (2) featural descriptions + maximum entropy
+An obvious next step would be to test the language models used in \cite{wilson2014}, where the authors found that most LMs performed better than the null LM at predicting data from a production task. In that work, the favoured LMs were the ones were phonotactic legality was a gradient process, where phones were represented with featural descriptions (e.g. [CITE Albright 2009]) or where weights given to grammatical constraints were derived from the principle of maximum entropy (e.g. [CITE BoersmaPater2007; HayesWilson2008]). In parallel, we can also explore whether our ASR system's acoustic model (accompanied by a null language model) is able to explain effects attributed to abstract grammatical processes. We will experiment this in the next section. 
 %% Due to task?
 % What would happen in transcription task? (Using non-constrained LM for decoding)
-% Production (Wilson) vs perception task
-% Kabak & Idsardi: "a phonological influence of L1 phonotactic knowledge, rather than an effect of frequency, plays a primary role in explaining Korean groups’ performance."
-
-%%%%% TRANSITION TO NEXT SECTION %%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% BRAIN DUMP %%%
