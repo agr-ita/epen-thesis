@@ -242,7 +242,7 @@ Since the validation and test sets contain utterances from the same speakers, th
 % SurfPhono %
 %%%%%%%%%%%%%
 \newpage
-\section{{\color{red}Investigating surface phonotactics}} \label{3-surfphono}
+\section{Investigating the role of surface phonotactics} \label{3-surfphono}
 
 \small{\textit{{\color{red}ADD ACKNOWLEDGEMENTS THOMAS + EMMANUEL.\\}}}
 
@@ -580,17 +580,33 @@ In summary, we compared the output of our various ASR models to responses given 
 Now we turn to coarticulation effects observed in the behavioural task. We saw in sections \ref{2-parlato} and \ref{2-parlato-dur} that Japanese listeners were more prone to epenthesizing vowels \textipa{/i/} and \textipa{/u/} when more flanking vowels were of the same quality. The model was able to reflect this coarticulation effect partially: more \textipa{/i/} flanking vowels resulted in significantly more \textipa{/i/}-epenthesis; however, we did not find evidence for the analogous situation for \textipa{/u/}-epenthesis.  
 
 \subsection{Discussion}
-{\color{red}[TODO]}
-%%% SUMMARY OF THE RESULTS 
+% WHAT DID WE DO?
+In this section we investigated the role of surface phonotactics on perceptual vowel epenthesis by Japanese listeners. We used perceptual models based on ASR systems, which are each composed by an acoustic model (AM) and a language model (LM). Following the reverse inference proposal of nonnative speech perception \cite{wilson2014} and using the terminology from \cite{dupoux2011}, the AM determines the acoustic match between the nonnative structure and candidate native percepts, while the LM determines the phonotactic probability of the candidate percepts (i.e., sequence match). During the one-step process of reverse inference, the product of the probabilites given by the AM and LM are optimised, in order to find the optimal candidate percept.
 
-% When only looking at epenthetic vowel quality, not only bigram models affected but even the null model correlation increased.  
+We evaluated the hypothesis stating that the AM was not only necessary, but sufficient, to predict patterns of perceptual vowel epenthesis. 
+This was done by comparing the results of the identifications tasks completed by Japanese listeners (cf. sections \ref{2-ahpa} and \ref{2-parlato}) to model results in analogous identification tasks. We built various ASR systems by pairing up a unique AM with different decoding LMs, one of which was a null LM and the others being LMs including basic phonotactic information (unigram/bigram frequency). Did these phonotactic LMs outperform the null LM?
 
-% Lower correlation for parlato_lms than m-/ahpa/. Why? Task-related? 
+% SUMMARY OF THE RESULTS 
+%% Null best model
+Quite the contrary, quantitative analyses revealed that the identification results from the ASR system with the null LM better approximated behavioural data. 
+%% Share top 3 vowels
+Response patterns from the null LM showed a preponderance of responses ``none'' (i.e., no epenthesis), ``u'', and ``i''. This preponderance was present in responses given by Japanese listeners.
+%% Default /u/ yes for m-/ahpa/ but no for Parlato-lms
+However, human participants showed a distinct preference for \textipa{/u/}-epenthesis; indeed, this is often referred to as the ``default epenthetic vowel in Japanese'' both in the psycholinguistics and loanword literature. The model was not fully capable of reflecting this preference as it was observed in Experiment 1 but not in Experiment 2.  
+%% Damped/noisier coarticulation effects
+Concerning other qualitative effects observed in human responses patterns, the model was able to reproduce some effects (e.g., higher \textipa{/u/}-epenthesis for \textipa{/kp/}- than \textipa{/hp/}-items), while in others the patterns were opposite to those observed in humans (e.g., higher rates of epenthesis for \textipa{/hp/}- than \textipa{/kp/}-clusters). Coarticulation effects, in particular, were always at least numerically present, yet not always statistically significant. Indeed, for all effects observed in the model that were coherent with effects seen in human responses, we noticed a dampening of the effects and an increase in noise. It seems that the null LM was the best of the tested LMs, yet it was not good enough. Why? 
 
-% Null LM failures (not best model ever, but good):
-%% Default /u/
-%% Vowel confusions /e/-/i/ and /o/-/u/
-%% Damped coarticulation effects
+% FURTHER DISCUSSION
+\subsubsection{Need a better acoustic model}
+Thanks to the filler items in Experiment 1, we were able to see that the ASR system (all LMs comprised) were generally able to identify nonnative medial vowels \textipa{/a, i, o/} similar to how humans did. However, the identification patterns of full vowels \textipa{/e, u/} by the models did not match Japanese listeners' identification patterns. Therefore, the ASR system's current acoustic model, while mostly good, is not a perfect model of Japanese listeners' perception of stimuli from Experiment 1.
+Concerning Experiment 2, the correlation between model and human data ($r \approx 0.4$) was much lower than in Experiment 1 ($r \approx 0.7$). Unfortunately, there were no full vowel items available for Experiment 2, so we are unable to make educated guesses about the causes of the lower correlation values and how they may be due to acoustic model quality\footnote{It goes without saying that we recommend including full vowel items in identification tasks.}.
+
+It is also possible that the current acoustic model is not fully mirroring human data due to bad duration modelling. Indeed, recall that we saw in section \ref{2-parlato-dur} that adding duration information to an exemplar model increased the closeness of its response patterns to that of humans. By definition, in HMMs the observed emission at state \textit{n} is only determined by the previous state \textit{n-1}. These types of models are therefore not ideal for modelling duration effects; even though some duration information is encoded in the self-loop probabilities (i.e., probabilities determining whether to remain in state \textit{n}).
+
+In sum, in order to continue testing the hypothesis that the acoustic model is sufficient to predict patterns of vowel epenthesis\footnote{Or, in other words, falsify the fact that the language model is necessary}, an even better acoustic model is required. Indeed, recall that we are using relatively primitive ASR models. In the future, it would be a good idea to investigate whether other types of acoustic models (e.g., neural network-based ASR systems) . 
+
+\subsubsection{Need phonotactics and/or abstract grammar}
+But what if the AM quality is not the source of the problem? 
 
 % Phonotactics' impediments
 %% -> Blocks never seen sequences (legal/illegal view as in Peperkamp (2008?), not probabilistic gradient phonotactics (cf Wilson2014, notes on Lentz2011's thesis).
@@ -601,15 +617,6 @@ Now we turn to coarticulation effects observed in the behavioural task. We saw i
 % Smoothing for unseen sequences?
 % Hybrid model? Vary acoustic scale and find optimal value? (there are some qualitative effects that we seem to see in bigrams, for instance, that might increase correlation)  
 
-%%% Null model isn't really null in that transition probabilities in HMMs capture diphone probabilities already. Ideally, for a truly null model, need to modify topology and equalise all C->V TPs. But not identical to having just P(V|C). %%Emmanuel says this is already the case
-
-%%% Duration in ASR? [check topology]
-
-%%% Qualitative analyses
-% Need analyses with a lot more items (we only have 54 datapoints; 24-24-6)
-
-% Importance of having control items (check if the model is OK in control condition)
-
 %%% Does this mean that phonotactic component is not necessary?
 % As in, surface phonotactic effect just due to how acoustics are interpreted?  
 %% Wilson (2014) - other possibilities!
@@ -618,6 +625,25 @@ Now we turn to coarticulation effects observed in the behavioural task. We saw i
 % What would happen in transcription task? (Using non-constrained LM for decoding)
 % Production (Wilson) vs perception task
 % Kabak & Idsardi: "a phonological influence of L1 phonotactic knowledge, rather than an effect of frequency, plays a primary role in explaining Korean groups’ performance."
+
+%%%%% TRANSITION TO NEXT SECTION %%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% BRAIN DUMP %%%
+
+% When only looking at epenthetic vowel quality, not only bigram models affected but even the null model correlation increased.  
+
+%%% Null model isn't really null in that transition probabilities in HMMs capture diphone probabilities already. Ideally, for a truly null model, need to modify topology and equalise all C->V TPs. But not identical to having just P(V|C). %%Emmanuel says this is already the case
+
+%%% How to account for results by:
+% - Durvasula & Kahng (2016): Different rates of epenthesis for [km] and [gm], the latter being legal across IP boundaries. Increased voicing => increased epenthesis, even when splicing out consonantal release. 
+% - Kabak & Idsardi (2007): Better AX performance for clusters with legal coda consonant, even if cluster was illegal.
+% ==> Acoustic productions in certain clusters are more acceptable as allophones of syll/IP final legal Cs than the counterpart for non-legal Cs?
+% Role of markedness (cf Berent 2007)? 
+%%% - Sonority scale has acoustic basis (Yun's thesis)
+%%% - Articulatory basis? More marked structures impose more constraints on the resulting acoustics, making them less likely to ressemble exemplars of the same phoneme from less marked structure?
+%%% Test through splicing experiments? (e.g. lbif with another l). But need to be careful with acoustics...
+
 
 
 %%%%%%%%%%%%
@@ -816,11 +842,21 @@ After decoding the stimuli, we obtained for each possible transcription of each 
 %% --- Automatic iterative decoding from null model  
 %% --- For specific phoneme sequences, find exemplars (e.g., for /hp/ check all /hVp/) and see if well transcribed. Adapt probabilities accordingly. PB: Need many exemplars + Time consuming. 
 
-%%% Null model isn't really null in that transition probabilities in HMMs capture diphone probabilities already. Ideally, for a truly null model, need to modify topology and equalise all C->V TPs. But not identical to having just P(V|C).
+%%% Null model isn't really null in that transition probabilities in HMMs capture diphone probabilities already. Ideally, for a truly null model, need to modify topology and equalise all C->V TPs. But not identical to having just P(V|C). [CHECK THOMAS]
 
 % Need better acoustic model. But we need not to integrate triphones.
 % Ideas:
 %% --- NN-based ASR systems (monophones)
 %% --- End-to-end training
+
+%%% How to account for results by:
+% - Durvasula & Kahng (2016): Different rates of epenthesis for [km] and [gm], the latter being legal across IP boundaries. Increased voicing => increased epenthesis, even when splicing out consonantal release. 
+% - Kabak & Idsardi (2007): Better AX performance for clusters with legal coda consonant, even if cluster was illegal.
+% ==> Acoustic productions in certain clusters are more acceptable as allophones of syll/IP final legal Cs than the counterpart for non-legal Cs?
+% Role of markedness (cf Berent 2007)? 
+%%% - Sonority scale has acoustic basis (Yun's thesis)
+%%% - Articulatory basis? More marked structures impose more constraints on the resulting acoustics, making them less likely to ressemble exemplars of the same phoneme from less marked structure?
+%%% Test through splicing experiments? (e.g. lbif with another l). But need to be careful with acoustics...
+
 
 %%% Conclusions
