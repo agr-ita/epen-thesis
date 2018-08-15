@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.26)  14 AUG 2018 23:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.26)  15 AUG 2018 01:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2168,11 +2168,11 @@ cmm/m/it/10.95 V[]\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 C[]V[]C[]V[]$\OT1/cmr
  []
 
 
-Overfull \hbox (13.10776pt too wide) in paragraph at lines 805--807
+Overfull \hbox (17.3661pt too wide) in paragraph at lines 805--807
 \OT1/cmr/m/n/10.95 where phones be-tween paren-the-ses are op-tional and $\OML/
 cmm/m/it/10.95 V[] \OT1/cmr/m/n/10.95 =$ \T3/cmr/m/n/10.95 [@]\OT1/cmr/m/n/10.9
 5 . And sim-i-larly for $\OML/cmm/m/it/10.95 V[]C[]\OT1/cmr/m/n/10.95 (\OML/cmm
-/m/it/10.95 V[]C[]V[]$
+/m/it/10.95 V[]\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 C[]V[]$
  []
 
 <images/chapter03/wpd-G_azna.pdf, id=1709, 614.295pt x 231.86626pt>
@@ -3405,7 +3405,7 @@ ublic/tipa/tipa8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tip
 a/tipabx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tipa/tipa
 sl10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tipa/tipasl12.p
 fb>
-Output written on main.pdf (123 pages, 3680239 bytes).
+Output written on main.pdf (123 pages, 3680053 bytes).
 PDF statistics:
  2180 PDF objects out of 2487 (max. 8388607)
  1795 compressed objects within 18 object streams
