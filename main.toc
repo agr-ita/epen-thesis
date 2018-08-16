@@ -131,10 +131,10 @@
 \contentsline {paragraph}{Identification task simulation}{77}{section*.54}
 \contentsline {subsubsection}{\numberline {3.4.3.2}Results}{78}{subsubsection.3.4.3.2}
 \contentsline {paragraph}{Quantitative analysis}{78}{figure.3.19}
-\contentsline {paragraph}{Qualitative analysis}{79}{section*.56}
-\contentsline {subsubsection}{\numberline {3.4.3.3}Summary}{79}{subsubsection.3.4.3.3}
-\contentsline {subsection}{\numberline {3.4.4}General discussion}{79}{subsection.3.4.4}
-\contentsline {section}{\numberline {3.5}Conclusions}{79}{section.3.5}
+\contentsline {paragraph}{Qualitative analysis}{79}{figure.3.20}
+\contentsline {subsubsection}{\numberline {3.4.3.3}Summary}{80}{subsubsection.3.4.3.3}
+\contentsline {subsection}{\numberline {3.4.4}General discussion}{80}{subsection.3.4.4}
+\contentsline {section}{\numberline {3.5}Conclusions}{80}{section.3.5}
 \contentsline {chapter}{\numberline {4}General Discussion}{81}{chapter.4}
 \contentsline {paragraph}{Paradigm}{81}{section*.57}
 \contentsline {paragraph}{ASR system}{81}{section*.58}

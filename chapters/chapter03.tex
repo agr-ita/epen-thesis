@@ -843,17 +843,6 @@ After decoding the stimuli, we obtained for each possible transcription of each 
 % Full vowel items
 % word-initial cluster vs. word-medial cluster
 
-{\color{red} [TO-DO] Describe Fig left panel}
-  
-  We examined if, as predicted based on phonology, English listeners experienced lesser amounts of misperceptions when the illegal cluster can be parsed as a sequence of a coda and an onset (word-medial cluster), instead of a complex onset (word-initial cluster). 
-Statistical analyses were performed with the R statistical software \cite{R-base}, using Markov chain Monte Carlo linear models \cite{R-MCMCglmm, R-coda}. These Bayesian models sample coefficients from the posterior probability distribution conditioned on the data and given priors. We used priors that are standard for linear models. Model convergence was assessed by visual inspection of trace plots and the Gelman–Rubin convergence diagnostic \cite{gelman1992}, using eight chains with different initialisations. Effects were considered statistically significant if the 95\% highest posterior density (HPD) interval estimated for the coefficient of interest did not include zero. We report both the posterior mode and the 95\% HPD interval.  
-
-Our response variable was the continuous variable \textsc{\%Accuracy}.
-We chose as fixed effect for our statistical models \textsc{Position} (categorical variable with 2 levels: medial \textit{vs.} initial, contrast coded with deviation coding) and \textsc{Vowel} (categorical variable with 2 levels: true \textit{vs.} false, contrast coded with deviation coding), as well as their interaction.
-
-The right panel of Figure \ref{fig:wpd-hum} shows the percentage of accuracy for human participants. We found a significant main effect for \textsc{Position} (mode: $-0.11$, HPD: $[-0.15, -0.07]$), \textsc{Vowel} (mode: $-0.07$, HPD: $[-0.11, -0.03]$), as well as their interaction (mode: $-0.12$, HPD: $[-0.18, -0.02]$). English listeners were generally better at detecting a present vowel (i.e., no incorrect ellision) than at correctly parsing clusters (i.e., no incorrect epenthesis). They experienced more misperceptions at trials where the cluster was word-initial, even more so for $C_{1}C_{2}$-items than for $C_{1}$\textipa{[@]}$C_{2}$-items. 
-
-  
 \begin{figure}[htb!]
   \centering
     \includegraphics[page=3, width=0.45\linewidth]{chapter03/art2ac_model_pgrams.pdf}% \\
@@ -864,9 +853,17 @@ The right panel of Figure \ref{fig:wpd-hum} shows the percentage of accuracy for
     \label{fig:wpd-hum}
   \end{figure}
 
-
+The left panel of Figure \ref{fig:wpd-hum} shows the average percentage of epenthesis given by human participants for each item. Clusters are ordered according to the ranking of word-initial $C_{1}C_{2}$ clusters. We see that human participants were generally good at detecting \textipa{[@]} between two consonants, but their performance was not perfect, in particular when the target phonemes were word-initial. Concerning $C_{1}C_{2}$ clusters, there is a large range of rates of epenthesis for word-initial items, going from almost no epenthesis for \textipa{/tk/} to almost $75\%$ epenthesis for \textipa{/mr/}. For word-medial clusters we do not see the same variation in epenthesis, as most clusters ellicited epenthesis less that $25\%$ of the times. However, we do see that clusters are order relatively similar to word-initial counterparts (e.g., the lowest and highest rates of epenthesis are for \textipa{/tk/} and \textipa{/mr/}, respectively). Note that, while most of the clusters are phonotactically illegal in English, clusters that ellicited less epenthesis are not necessarily the few clusters that are indeed legal (range from \textipa{/br/}: $6\%$ to \textipa{/gl/}: $31\%$).  
   
-* What about the WPD-F model?
+  Next we examined if, as predicted based on phonology, English listeners experienced lesser amounts of misperceptions when the illegal cluster can be parsed as a sequence of a coda and an onset (word-medial cluster), instead of a complex onset (word-initial cluster). 
+Statistical analyses were performed with the R statistical software \cite{R-base}, using Markov chain Monte Carlo linear models \cite{R-MCMCglmm, R-coda}. These Bayesian models sample coefficients from the posterior probability distribution conditioned on the data and given priors. We used priors that are standard for linear models. Model convergence was assessed by visual inspection of trace plots and the Gelman–Rubin convergence diagnostic \cite{gelman1992}, using eight chains with different initialisations. Effects were considered statistically significant if the 95\% highest posterior density (HPD) interval estimated for the coefficient of interest did not include zero. We report both the posterior mode and the 95\% HPD interval.  
+
+Our response variable was the continuous variable \textsc{\%Accuracy}.
+We chose as fixed effect for our statistical models \textsc{Position} (categorical variable with 2 levels: medial \textit{vs.} initial, contrast coded with deviation coding) and \textsc{Vowel} (categorical variable with 2 levels: true \textit{vs.} false, contrast coded with deviation coding), as well as their interaction.
+
+The right panel of Figure \ref{fig:wpd-hum} shows the percentage of accuracy for human participants. We found a significant main effect for \textsc{Position} (mode: $-0.11$, HPD: $[-0.15, -0.07]$), \textsc{Vowel} (mode: $-0.07$, HPD: $[-0.11, -0.03]$), as well as their interaction (mode: $-0.12$, HPD: $[-0.18, -0.02]$). English listeners were generally better at detecting a present vowel (i.e., no incorrect ellision) than at correctly parsing clusters (i.e., no incorrect epenthesis). They experienced more misperceptions at trials where the cluster was word-initial, even more so for $C_{1}C_{2}$-items than for $C_{1}$\textipa{[@]}$C_{2}$-items. %\\
+
+%%%%%%%  
 \begin{figure}[htb!]
     \centering
     \includegraphics[page=5, width=0.45\linewidth]{chapter03/art2ac_model_pgrams.pdf}%\\
@@ -878,7 +875,11 @@ The right panel of Figure \ref{fig:wpd-hum} shows the percentage of accuracy for
     \label{fig:wpd-mod}
   \end{figure}
 
-
+  Model responses can be seen in Figure \ref{fig:wpd-mod}. On the left panel, we can see that the models almost never ellide full vowels (light gray datapoints). This results in almost perfect performance for these items, as seen in the right panel.
+  On the other hand, there is large variability in the posteriorgrams for $C_{1}C_{2}$ clusters, even for word-medial items. This is also visible from the elongated black boxplot on the right panel. Recall that English listeners gave a large range of percentages for word-initial items only, while they experienced lower rates of epenthesis for word-medial clusters.
+  Closer examination of epenthesis rates according to the ranking of the clusters in the left panel reveals that for word-initial clusters the models generally agree with humans as to which clusters ellicit more (e.g., \textipa{/gn/}, \textipa{/mr/}, \textipa{/dn/}) or less (e.g., \textipa{/zg/}, \textipa{/dl/}, \textipa{/kl/}) epenthesis.
+  We did not analyse the model data as we did for human data, due to issues related to highly skewed distributions. However, from looking at both panels from Figure \ref{fig:wpd-mod}, we can hypothesize that models also misperceived $C_{1}C_{2}$-items more often than $C_{1}$\textipa{[@]}$C_{2}$-items. However, it is difficult to evidence for lessened misperception in word-medial items.  
+  
 \subsubsection{Summary}
 \subsection{General discussion}
 
