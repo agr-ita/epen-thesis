@@ -835,7 +835,7 @@ After decoding the stimuli, we obtained for each possible transcription of each 
     \textsc{\%epenth}_{human} = \textsc{\%epenth}_{model} \times \textsc{Position} \times \textsc{Vowel} + \epsilon
   \end{equation}
 
-  In other words, we compared the predictive power of linear models using as predictor variables the model posteriorgrams ($\textsc{\%epenth}_{model}$), the cluster position (\textsc{position}; initial \textit{vs.} medial), the presence of a full vowel (\textsc{Vowel}; true \textit{vs.} false), their interactions, and residuals ($\epsilon$). The data to be predicted were human percentages of epenthesis per item ($\textsc{\%epenth}_{human}$).
+  In other words, we compared the predictive power of linear models using as predictor variables the model posteriorgrams ($\textsc{\%epenth}_{model}$), the cluster position (\textsc{position}; medial \textit{vs.} initial), the presence of a full vowel (\textsc{Vowel}; true \textit{vs.} false), their interactions, and residuals ($\epsilon$). The data to be predicted were human percentages of epenthesis per item ($\textsc{\%epenth}_{human}$).
   Contrary to expectations, we found the ASR system with the WPD-F acoustic model to have lower average prediction error ($\textsc{CV} = 0.014$) than the ASR system with the WPD-T acoustic model ($\textsc{CV} = 0.016$).
   
 \paragraph{Qualitative analysis}
@@ -843,19 +843,15 @@ After decoding the stimuli, we obtained for each possible transcription of each 
 % Full vowel items
 % word-initial cluster vs. word-medial cluster
 
-\begin{enumerate}
-
-\item Do humans have lower accuracy for initial clusters?
-
+{\color{red} [TO-DO] Describe Fig left panel}
+  
   We examined if, as predicted based on phonology, English listeners experienced lesser amounts of misperceptions when the illegal cluster can be parsed as a sequence of a coda and an onset (word-medial cluster), instead of a complex onset (word-initial cluster). 
 Statistical analyses were performed with the R statistical software \cite{R-base}, using Markov chain Monte Carlo linear models \cite{R-MCMCglmm, R-coda}. These Bayesian models sample coefficients from the posterior probability distribution conditioned on the data and given priors. We used priors that are standard for linear models. Model convergence was assessed by visual inspection of trace plots and the Gelman–Rubin convergence diagnostic \cite{gelman1992}, using eight chains with different initialisations. Effects were considered statistically significant if the 95\% highest posterior density (HPD) interval estimated for the coefficient of interest did not include zero. We report both the posterior mode and the 95\% HPD interval.  
 
 Our response variable was the continuous variable \textsc{\%Accuracy}.
-We chose as fixed effect for our statistical models \textsc{Position} (categorical variable with 2 levels, {\color{red}[TODO]}) and \textsc{Vowel} (categorical variable with 2 levels, {\color{red}[TODO]}), as well as their interaction.
+We chose as fixed effect for our statistical models \textsc{Position} (categorical variable with 2 levels: medial \textit{vs.} initial, contrast coded with deviation coding) and \textsc{Vowel} (categorical variable with 2 levels: true \textit{vs.} false, contrast coded with deviation coding), as well as their interaction.
 
-%The left panel of Figure \ref{fig:parl_hmm_iu} shows the posteriorgrams for \textipa{/i/}-epenthesis given by our ASR-based model with a ``null'' language model.
-%The main effect of \textsc{NSFV} was significant (mode: $0.14$, HPD: $[0.06, 0.22]$). An increased number of \textipa{/i/} flanking vowels resulted in higher posteriorgrams for stimuli transcriptions with \textipa{/i/} epenthesis.
-
+The right panel of Figure \ref{fig:wpd-hum} shows the percentage of accuracy for human participants. We found a significant main effect for \textsc{Position} (mode: $-0.11$, HPD: $[-0.15, -0.07]$), \textsc{Vowel} (mode: $-0.07$, HPD: $[-0.11, -0.03]$), as well as their interaction (mode: $-0.12$, HPD: $[-0.18, -0.02]$). English listeners were generally better at detecting a present vowel (i.e., no incorrect ellision) than at correctly parsing clusters (i.e., no incorrect epenthesis). They experienced more misperceptions at trials where the cluster was word-initial, even more so for $C_{1}C_{2}$-items than for $C_{1}$\textipa{[@]}$C_{2}$-items. 
 
   
 \begin{figure}[htb!]
@@ -868,7 +864,9 @@ We chose as fixed effect for our statistical models \textsc{Position} (categoric
     \label{fig:wpd-hum}
   \end{figure}
 
-  \item What about the WPD-F model?
+
+  
+* What about the WPD-F model?
 \begin{figure}[htb!]
     \centering
     \includegraphics[page=5, width=0.45\linewidth]{chapter03/art2ac_model_pgrams.pdf}%\\
@@ -879,7 +877,7 @@ We chose as fixed effect for our statistical models \textsc{Position} (categoric
         }}
     \label{fig:wpd-mod}
   \end{figure}
-\end{enumerate}
+
 
 \subsubsection{Summary}
 \subsection{General discussion}
