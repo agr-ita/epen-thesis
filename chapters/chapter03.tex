@@ -872,13 +872,15 @@ The right panel of Figure \ref{fig:wpd-hum} shows the percentage of accuracy for
   \end{figure}
 
   Model responses can be seen in Figure \ref{fig:wpd-mod}. On the left panel, we can see that the models almost never ellide full vowels (light gray datapoints). This results in almost perfect performance for these items, as seen in the right panel.
-  On the other hand, there is large variability in the posteriorgrams for $C_{1}C_{2}$ clusters, even for word-medial items. This is also visible from the elongated black boxplot on the right panel. Recall that English listeners gave a large range of percentages for word-initial items only, while they experienced lower rates of epenthesis for word-medial clusters.
+  On the other hand, there is large variability in the posteriorgrams for $C_{1}C_{2}$ clusters, even for word-medial items. This is also visible from the elongated black boxplots on the right panel. Recall that English listeners gave a large range of percentages for word-initial items only, while they experienced lower rates of epenthesis for word-medial clusters.
   Closer examination of epenthesis rates according to the ranking of the clusters in the left panel reveals that for word-initial clusters the models generally agree with humans as to which clusters ellicit more (e.g., \textipa{/gn/}, \textipa{/mr/}, \textipa{/dn/}) or less (e.g., \textipa{/zg/}, \textipa{/dl/}, \textipa{/kl/}) epenthesis.
-  We did not analyse the model data as we did for human data, due to issues related to highly skewed distributions for full vowel items, and too much variability for cluster items (almost uniform distribution in the [0,1] interval). However, from looking at both panels from Figure \ref{fig:wpd-mod}, we can hypothesize that models also misperceived $C_{1}C_{2}$-items more often than $C_{1}$\textipa{[@]}$C_{2}$-items. However, it is difficult to evidence for lessened misperception in word-medial items.  
+  We did not analyse the model data as we did for human data, due to issues related to highly skewed distributions for full vowel items, and too much variability for cluster items (almost uniform distribution in the [0,1] interval). However, from looking at both panels from Figure \ref{fig:wpd-mod}, we can hypothesize that models also misperceived $C_{1}C_{2}$-items more often than $C_{1}$\textipa{[@]}$C_{2}$-items. However, it is difficult to find evidence for lessened misperception in word-medial items.  
   
 \subsubsection{Summary}
-
-
+In this experiment we tested the perception of Serbian clusters (and their ``epenthesized'' counterparts) by native listeners of English. Most of these clusters were phonotactically illegal in English. We found that while English listeners were better at detecting the presence of a full vowel than detecting it's absence, they still experienced ellision on items with full vowels between the consonants of interest. However, the predominant category of mistakes are epenthetic. In particular, listeners experienced misperceptions more often when the clusters where word-initial than when they were word-medial.
+We simulated the experiment above using ASR systems with two types of acoustic models: a WPD-F model, which groups all acoustics related to one phoneme within a unique phone, and a WPF-T model, which groups acoustics according to whether they originate from a word-initial, word-medial, word-final, or isolated phone.
+We found that, globally, the WPD-F model better approximated human results. However, it appears that neither model is able to reproduce the lower accuracy for word-medial than for word-initial $C_{1}($\textipa{[@]}$)C_{2}$ items.
+% Add: did not constrain according to position; so we are investigating AM with different set of phones 
   
 \subsection{General discussion}
 
