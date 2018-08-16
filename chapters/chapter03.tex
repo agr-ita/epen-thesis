@@ -799,7 +799,7 @@ WPD-False and WPD-True acoustic models are allocated the same number of Gaussian
 Concerning the language model used for decoding stimuli, item-specific language models were constructed, as shown in Figure {\color{red}\ref{fig:wpd_G}}. Thus, when decoding a $C_{1}(V_{ep})C_{2}V_{1}C_{3}V_{1}$ stimulus, the perception model was only given the possibility to transcribe it as $C_{1}(V_{ep})C_{2}V_{1}C_{3}V_{2}$, where phones between parentheses are optional and $V_{ep} = $ \textipa{[@]}. And similarly for $V_{1}C_{1}(V_{ep})C_{2}V_{1}$ items.
 While $V_{1}$ was intended to be \textipa{/a/} phonologically, we allowed the model to transcribe $V_{1}$ as any phoneme associated with the grapheme $\langle a \rangle$. This allowed to account for phonetic reduction in our stimuli, but also to foresee for the possibility that these transcriptions might be considered by English-speaking participants from the psycholinguistic experiment, due to item transcriptions being presented orthographically on-screen.
 
-We use a null/uniform language model, which implies that listeners base their decoding of consonant clusters on phonetics alone, without using information on phonotactics.
+We use a null/uniform language model as shown in Figure \ref{fig:wpd_G}, which implies that listeners base their decoding of consonant clusters on phonetics alone, without using information on phonotactics. Note that since we did not constrain the WPD-T model to only transcribe WPD allophones in their respective positions (e.g., allowing only the word-initial allophone of \textipa{/z/} between states $1$ and $2$ of the LM for \textipa{/znapa/}, but not the isolated \textipa{/z/} allophone), we are only comparing the two AMs based on their catalogue of phones, not on word-position matching of said phones.   
 
 \begin{figure*}[htb]
 \centering
@@ -880,7 +880,6 @@ The right panel of Figure \ref{fig:wpd-hum} shows the percentage of accuracy for
 In this experiment we tested the perception of Serbian clusters (and their ``epenthesized'' counterparts) by native listeners of English. Most of these clusters were phonotactically illegal in English. We found that while English listeners were better at detecting the presence of a full vowel than detecting it's absence, they still experienced ellision on items with full vowels between the consonants of interest. However, the predominant category of mistakes are epenthetic. In particular, listeners experienced misperceptions more often when the clusters where word-initial than when they were word-medial.
 We simulated the experiment above using ASR systems with two types of acoustic models: a WPD-F model, which groups all acoustics related to one phoneme within a unique phone, and a WPF-T model, which groups acoustics according to whether they originate from a word-initial, word-medial, word-final, or isolated phone.
 We found that, globally, the WPD-F model better approximated human results. However, it appears that neither model is able to reproduce the lower accuracy for word-medial than for word-initial $C_{1}($\textipa{[@]}$)C_{2}$ items.
-% Add: did not constrain according to position; so we are investigating AM with different set of phones 
   
 \subsection{General discussion}
 
