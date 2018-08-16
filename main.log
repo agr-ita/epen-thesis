@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.26)  16 AUG 2018 17:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.26)  16 AUG 2018 17:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2137,6 +2137,11 @@ f
 pdfTeX warning: pdflatex (file ./images/chapter03/k-epenth_figs.pdf): PDF inclu
 sion: multiple pdfs with page group included in a single page
 >]
+Overfull \hbox (12.40149pt too wide) in paragraph at lines 775--775
+[][]\OT1/cmr/bx/n/14.4 Experiment 2: Po-si-tion de-pen-den-cies and syl-labic s
+truc-
+ []
+
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\@ifnextchar' on input line 775.
@@ -2154,21 +2159,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [76]
-Overfull \hbox (30.20366pt too wide) in paragraph at lines 809--811
-\OT1/cmr/m/n/10.95 stim-u-lus, the per-cep-tion model was only given the pos-si
--bil-ity to tran-scribe it as $\OML/cmm/m/it/10.95 C[]\OT1/cmr/m/n/10.95 (\OML/
-cmm/m/it/10.95 V[]\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 C[]V[]C[]V[]$\OT1/cmr
-/m/n/10.95 ,
- []
-
-
-Overfull \hbox (17.3661pt too wide) in paragraph at lines 809--811
-\OT1/cmr/m/n/10.95 where phones be-tween paren-the-ses are op-tional and $\OML/
-cmm/m/it/10.95 V[] \OT1/cmr/m/n/10.95 =$ \T3/cmr/m/n/10.95 [@]\OT1/cmr/m/n/10.9
-5 . And sim-i-larly for $\OML/cmm/m/it/10.95 V[]C[]\OT1/cmr/m/n/10.95 (\OML/cmm
-/m/it/10.95 V[]\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 C[]V[]$
- []
-
 <images/chapter03/wpd-G_azna.pdf, id=1732, 614.295pt x 231.86626pt>
 File: images/chapter03/wpd-G_azna.pdf Graphic file (type pdf)
 <use images/chapter03/wpd-G_azna.pdf>
@@ -2181,13 +2171,21 @@ File: images/chapter03/wpd-G_znapa.pdf Graphic file (type pdf)
 Package pdftex.def Info: images/chapter03/wpd-G_znapa.pdf  used on input line 8
 18.
 (pdftex.def)             Requested size: 341.43436pt x 90.93762pt.
-<images/chapter03/art2ac_model_pgrams.pdf, id=1734, page=7, 325.215pt x 361.35p
+<images/chapter03/art2ac_model_pgrams.pdf, id=1734, page=3, 325.215pt x 361.35p
 t>
 File: images/chapter03/art2ac_model_pgrams.pdf Graphic file (type pdf)
-<use images/chapter03/art2ac_model_pgrams.pdf, page 7>
-Package pdftex.def Info: images/chapter03/art2ac_model_pgrams.pdf , page7 used 
-on input line 831.
-(pdftex.def)             Requested size: 298.75262pt x 331.97185pt.
+<use images/chapter03/art2ac_model_pgrams.pdf, page 3>
+Package pdftex.def Info: images/chapter03/art2ac_model_pgrams.pdf , page3 used 
+on input line 832.
+(pdftex.def)             Requested size: 192.0548pt x 213.39867pt.
+<images/chapter03/art2ac_model_pgrams.pdf, id=1735, page=4, 325.215pt x 361.35p
+t>
+File: images/chapter03/art2ac_model_pgrams.pdf Graphic file (type pdf)
+<use images/chapter03/art2ac_model_pgrams.pdf, page 4>
+Package pdftex.def Info: images/chapter03/art2ac_model_pgrams.pdf , page4 used 
+on input line 834.
+(pdftex.def)             Requested size: 192.0548pt x 213.39867pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -2195,20 +2193,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [77]
-<images/chapter03/art2ac_model_pgrams.pdf, id=1748, page=3, 325.215pt x 361.35p
+<images/chapter03/art2ac_model_pgrams.pdf, id=1750, page=8, 325.215pt x 361.35p
 t>
 File: images/chapter03/art2ac_model_pgrams.pdf Graphic file (type pdf)
-<use images/chapter03/art2ac_model_pgrams.pdf, page 3>
-Package pdftex.def Info: images/chapter03/art2ac_model_pgrams.pdf , page3 used 
-on input line 852.
-(pdftex.def)             Requested size: 192.0548pt x 213.39867pt.
-<images/chapter03/art2ac_model_pgrams.pdf, id=1749, page=4, 325.215pt x 361.35p
-t>
-File: images/chapter03/art2ac_model_pgrams.pdf Graphic file (type pdf)
-<use images/chapter03/art2ac_model_pgrams.pdf, page 4>
-Package pdftex.def Info: images/chapter03/art2ac_model_pgrams.pdf , page4 used 
-on input line 854.
-(pdftex.def)             Requested size: 192.0548pt x 213.39867pt.
+<use images/chapter03/art2ac_model_pgrams.pdf, page 8>
+Package pdftex.def Info: images/chapter03/art2ac_model_pgrams.pdf , page8 used 
+on input line 845.
+(pdftex.def)             Requested size: 170.71393pt x 189.68402pt.
+
+Underfull \vbox (badness 2042) has occurred while \output is active []
+
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2221,15 +2215,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 pdfTeX warning: pdflatex (file ./images/chapter03/wpd-G_znapa.pdf): PDF inclusi
 on: multiple pdfs with page group included in a single page
 >]
-<images/chapter03/art2ac_model_pgrams.pdf, id=1770, page=8, 325.215pt x 361.35p
-t>
-File: images/chapter03/art2ac_model_pgrams.pdf Graphic file (type pdf)
-<use images/chapter03/art2ac_model_pgrams.pdf, page 8>
-Package pdftex.def Info: images/chapter03/art2ac_model_pgrams.pdf , page8 used 
-on input line 865.
-(pdftex.def)             Requested size: 170.71393pt x 189.68402pt.
-
-Overfull \hbox (6.0461pt too wide) in paragraph at lines 875--876
+Overfull \hbox (6.0461pt too wide) in paragraph at lines 855--856
 \OT1/cmr/m/n/10.95 pants. We found a sig-nif-i-cant main ef-fect for \OT1/cmr/m
 /sc/10.95 Po-si-tion \OT1/cmr/m/n/10.95 (mode: $\OMS/cmsy/m/n/10.95 ^^@\OT1/cmr
 /m/n/10.95 0\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 11$, HPD: $[\OMS/cmsy/m/n/1
@@ -2239,30 +2225,34 @@ T1/cmr/m/n/10.95 07]$),
  []
 
 
-Underfull \vbox (badness 1057) has occurred while \output is active []
-
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[79 <./images/chapter03/art2ac_model_pgrams.pdf>]
-<images/chapter03/art2ac_model_pgrams.pdf, id=1791, page=5, 325.215pt x 361.35p
+[79 <./images/chapter03/art2ac_model_pgrams.pdf> <./images/chapter03/art2ac_mod
+el_pgrams.pdf> <./images/chapter03/art2ac_model_pgrams.pdf>]
+<images/chapter03/art2ac_model_pgrams.pdf, id=1786, page=5, 325.215pt x 361.35p
 t>
 File: images/chapter03/art2ac_model_pgrams.pdf Graphic file (type pdf)
 <use images/chapter03/art2ac_model_pgrams.pdf, page 5>
 Package pdftex.def Info: images/chapter03/art2ac_model_pgrams.pdf , page5 used 
-on input line 880.
+on input line 860.
 (pdftex.def)             Requested size: 192.0548pt x 213.39867pt.
-<images/chapter03/art2ac_model_pgrams.pdf, id=1792, page=6, 325.215pt x 361.35p
+<images/chapter03/art2ac_model_pgrams.pdf, id=1787, page=6, 325.215pt x 361.35p
 t>
 File: images/chapter03/art2ac_model_pgrams.pdf Graphic file (type pdf)
 <use images/chapter03/art2ac_model_pgrams.pdf, page 6>
 Package pdftex.def Info: images/chapter03/art2ac_model_pgrams.pdf , page6 used 
-on input line 882.
+on input line 862.
 (pdftex.def)             Requested size: 192.0548pt x 213.39867pt.
+<images/chapter03/art2ac_model_pgrams.pdf, id=1790, page=7, 325.215pt x 361.35p
+t>
+File: images/chapter03/art2ac_model_pgrams.pdf Graphic file (type pdf)
+<use images/chapter03/art2ac_model_pgrams.pdf, page 7>
+Package pdftex.def Info: images/chapter03/art2ac_model_pgrams.pdf , page7 used 
+on input line 879.
+(pdftex.def)             Requested size: 298.75262pt x 331.97185pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2271,15 +2261,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [80 <./images/chapter03/art2ac_model_pgrams.pdf> <./images/chapter03/art2ac_mod
-el_pgrams.pdf> <./images/chapter03/art2ac_model_pgrams.pdf>]
+el_pgrams.pdf>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[81 <./images/chapter03/art2ac_model_pgrams.pdf> <./images/chapter03/art2ac_mod
-el_pgrams.pdf>]
+[81 <./images/chapter03/art2ac_model_pgrams.pdf>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -2321,7 +2310,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1835, 487.79437pt x 704.
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1845, 487.79437pt x 704.
 60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2350,7 +2339,7 @@ pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1838, page=1, 487.79437p
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1848, page=1, 487.79437p
 t x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2402,7 +2391,7 @@ ge1 used on input line 4.
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1876, page=2, 487.79437p
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1886, page=2, 487.79437p
 t x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2433,7 +2422,7 @@ ge2 used on input line 4.
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1885, page=3, 487.79437p
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1895, page=3, 487.79437p
 t x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2464,7 +2453,7 @@ ge3 used on input line 4.
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1893, page=4, 487.79437p
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1903, page=4, 487.79437p
 t x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2495,7 +2484,7 @@ ge4 used on input line 4.
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1898, page=5, 487.79437p
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1908, page=5, 487.79437p
 t x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2526,7 +2515,7 @@ ge5 used on input line 4.
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1904, page=6, 487.79437p
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1914, page=6, 487.79437p
 t x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2557,7 +2546,7 @@ ge6 used on input line 4.
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1909, page=7, 487.79437p
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1919, page=7, 487.79437p
 t x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2588,7 +2577,7 @@ ge7 used on input line 4.
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1918, page=8, 487.79437p
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1928, page=8, 487.79437p
 t x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2619,7 +2608,7 @@ ge8 used on input line 4.
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1925, page=9, 487.79437p
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1935, page=9, 487.79437p
 t x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2650,7 +2639,7 @@ ge9 used on input line 4.
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1932, page=10, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1943, page=10, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2681,7 +2670,7 @@ ge10 used on input line 4.
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1937, page=11, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1948, page=11, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2712,7 +2701,7 @@ ge11 used on input line 4.
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1944, page=12, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1954, page=12, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2743,7 +2732,7 @@ ge12 used on input line 4.
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1949, page=13, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1959, page=13, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2774,7 +2763,7 @@ ge13 used on input line 4.
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1956, page=14, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1966, page=14, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2805,7 +2794,7 @@ ge14 used on input line 4.
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1966, page=15, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1976, page=15, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2836,7 +2825,7 @@ ge15 used on input line 4.
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1984, page=16, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1994, page=16, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2867,7 +2856,7 @@ ge16 used on input line 4.
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1989, page=17, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1999, page=17, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2898,7 +2887,7 @@ ge17 used on input line 4.
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1995, page=18, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=2005, page=18, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2929,7 +2918,7 @@ ge18 used on input line 4.
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=2004, page=19, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=2014, page=19, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2960,7 +2949,7 @@ ge19 used on input line 4.
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=2010, page=20, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=2020, page=20, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2991,7 +2980,7 @@ ge20 used on input line 4.
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=2016, page=21, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=2026, page=21, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -3022,7 +3011,7 @@ ge21 used on input line 4.
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=2022, page=22, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=2032, page=22, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -3053,7 +3042,7 @@ ge22 used on input line 4.
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=2027, page=23, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=2037, page=23, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -3084,7 +3073,7 @@ ge23 used on input line 4.
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=2032, page=24, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=2042, page=24, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -3115,7 +3104,7 @@ ge24 used on input line 4.
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=2041, page=25, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=2051, page=25, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -3146,7 +3135,7 @@ ge25 used on input line 4.
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=2047, page=26, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=2057, page=26, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -3177,7 +3166,7 @@ ge26 used on input line 4.
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=2052, page=27, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=2062, page=27, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -3208,7 +3197,7 @@ ge27 used on input line 4.
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=2057, page=28, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=2067, page=28, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -3239,7 +3228,7 @@ ge28 used on input line 4.
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=2062, page=29, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=2072, page=29, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -3270,7 +3259,7 @@ ge29 used on input line 4.
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=2067, page=30, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=2077, page=30, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -3301,7 +3290,7 @@ ge30 used on input line 4.
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=2072, page=31, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=2082, page=31, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -3332,7 +3321,7 @@ ge31 used on input line 4.
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=2078, page=32, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=2088, page=32, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -3365,7 +3354,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 126.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 126.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 126.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 107CC034F5AF286E9AB54D0A52984AB7;3815.
+(rerunfilecheck)             Checksum: 501F33A9ECCF0FF0784329A28E5128AE;3850.
 
 
 LaTeX Warning: There were undefined references.
@@ -3494,10 +3483,10 @@ ublic/tipa/tipa8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tip
 a/tipabx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tipa/tipa
 sl10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tipa/tipasl12.p
 fb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (128 pages, 3776321 bytes).
+Output written on main.pdf (128 pages, 3779101 bytes).
 PDF statistics:
- 2262 PDF objects out of 2487 (max. 8388607)
- 1857 compressed objects within 19 object streams
+ 2272 PDF objects out of 2487 (max. 8388607)
+ 1866 compressed objects within 19 object streams
  435 named destinations out of 1000 (max. 500000)
  1041 words of extra memory for PDF output out of 10000 (max. 10000000)
 
