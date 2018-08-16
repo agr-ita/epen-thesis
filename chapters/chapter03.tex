@@ -2,7 +2,7 @@
 % [TODO] %
 %%%%%%%%%%
 % [ ] Mini-intro
-% [ ] surfphono
+% [X] surfphono
 % [ ] k-epenth
 % [ ] wpd
 % [ ] Mini-discussion
@@ -775,26 +775,26 @@ In this experiment, we introduced basic allophony to the acoustic models of our 
 
 \subsubsection{Methods}
 \paragraph{Stimuli}
-We recorded a female native speaker of Serbo-Croatian in a sound proof room reading a list of {\color{red}$X$} items containing a $C_{1}C_{2}$ cluster either in syllable-initial position ($C_{1}C_{2}V_{1}C_{3}V_{1}$, e.g., \textipa{/znapa/}) or intra-syllabic position ($V_{1}C_{1}C_{2}V_{1}$, e.g., \textipa{/azna/}). $V_{1}$ and $C_{3}$ were always set to \textipa{/a/} and \textipa{/p/}, respectively. 
+We recorded a female native speaker of Serbian from Kruševac in a sound proof room reading a list of {\color{red}$X$} items containing a $C_{1}C_{2}$ cluster either in syllable-initial position ($C_{1}C_{2}V_{1}C_{3}V_{1}$, e.g., \textipa{/znapa/}) or intra-syllabic position ($V_{1}C_{1}C_{2}V_{1}$, e.g., \textipa{/azna/}). $V_{1}$ and $C_{3}$ were always set to \textipa{/a/} and \textipa{/p/}, respectively. 
 We also recorded the ``epenthesized'' equivalents of said stimuli, namely $C_{1}V_{ep}C_{2}V_{1}C_{3}V_{1}$ (\textipa{/z@napa/}) and $V_{1}C_{1}V_{ep}C_{2}V_{1}$ (\textipa{/az@na/}) with $V_{ep}$ set as {\color{red}\textipa{[@]}}.
 For all stimuli stress fell on the first $V_{1}$.
-{\color{red}The list of stimuli is given by Table X.}
+{\color{red}The list of stimuli is given in Table X.}
 
 \paragraph{Behavioural experiment}
-{\color{red}XX} monolingual native listeners of American English were recruited through the online platform Amazon's Mechanical Turk. An additional {\color{red}XX participants were also tested, but they were excluded from the analyses if they met at least one of the following conditions: extensive exposure to languages other than English, auditory problems, dyslexia, unable to use headphones or earbuds during the experiment}. This information was retrieved from pre-test and post-test questionnaires.
+{\color{red}XX} monolingual native listeners of American English were recruited through the online platform Amazon Mechanical Turk. An additional {\color{red}XX participants were also tested, but they were excluded from the analyses if they met at least one of the following conditions: did not finish all trials, extensive exposure to languages other than English, auditory problems, dyslexia, unable to use headphones or earbuds during the experiment}. This information was retrieved from pre-test and post-test questionnaires.
 
 After audio setup\footnote{Participants were given the opportunity to setup the audio to comfortable hearing levels.} and {\color{red}$XX$} training trials, in each experimental trial participants heard an item (e.g., \textipa{/azna/}). Since the grapheme-to-phoneme mapping is not as transparent in English as it is in Japanese or Korean, and because the position of the cluster in the item was not fixed, the task was slightly altered compared to other experiments described in previous sections. Participants were not asked if they had heard a vowel between the consonants; instead, they were asked to provide the orthographic form of what they had heard: if the auditory stimulus was \textipa{/azna/}, participants would be asked to click on the nonword that they heard, between options \textit{``azna''} and  \textit{``azana''}. Since online participants are not as immersed in the experiment as participants tested in a laboratory setting, the experiment was self-paced and participants were able to listen to the stimuli as many times as necessary.
 
 Each participant completed {\color{red}$XX$} trials. For each item, participants heard either the cluster version (e.g., \textipa{/azna/}) or the ``epenthesized'' version (e.g., \textipa{/az@na/}). Presentation of trials was counterbalanced between participants.   
 
 
-\paragraph{ASR system}
+\paragraph{ASR systems}
 %\paragraph{Acoustic models}
 We simulated perception of nonnative nonwords by English listeners using acoustic models trained on American English data (WSJ corpus). As in previous experiments, we used HMM-GMM monophone models with $15000$ Gaussians. However, we tested two types of acoustic models:
 
 \begin{enumerate}
-\item WPD-False (non-word position-dependent) acoustic models: These are the type of models that have been used in all previous sections. For these models, all acoustic realisations of a phoneme are grouped together in a unique HMM, no matter what the position in a word of the phones were the acoustic tokens originate from. Therefore, for instance, in these models there is only one HMM corresponding to the phoneme \textipa{/a/}.
-  \item WPD-True (word position-dependent) acoustic models: In these models, different HMM-GMMs are built for phone, which are defined according to their position in a word (initial, medial, final, isolate). For instance, there will be four HMM-GMMs for the phoneme \textipa{/a/}, depending on the phone's position in words.  
+\item WPD-False (non-word position-dependent) acoustic models: These are the type of models that have been used in all previous sections. For these models, all acoustic realisations of a phoneme are grouped together in a unique HMM, no matter what the position in a word of the phones were the acoustic tokens originate from. Therefore, for instance, in these models there is only one HMM corresponding to the phoneme \textipa{/p/}.
+  \item WPD-True (word position-dependent) acoustic models: In these models, different HMM-GMMs are built for phones, which are defined according to their position in a word (initial, medial, final, isolate). For instance, there will be four HMM-GMMs for the phoneme \textipa{/p/}, depending on the phone's position in words.  
 \end{enumerate}
 
 WPD-False and WPD-True acoustic models are allocated the same number of Gaussians, even though the latter have more phones (up to four times more than WPD-False models). This means that it is almost certain that the average number of Gaussians per phone HMM-GMM is lower in WPD-True than in WPD-False acoustic models. Also, since now acoustic realisations are separated according to their position in a word, we expect Gaussians to be distributed differently amongst HMM-GMMs.
@@ -821,13 +821,51 @@ After decoding the stimuli, we obtained for each possible transcription of each 
 
 \subsubsection{Results}
 \paragraph{Quantitative analysis}
+
+\begin{figure}[htb!]
+    \centering
+    \includegraphics[page=7, width=1\linewidth]{chapter03/art2ac_model_pgrams.pdf}
+    \caption{{\color{red}[TODO]%\textit{Response patterns for the identification task. Human and models responses are separated by columns; responses are given by rows. Within each rectangle, the horizontal axis separates proportions according to $C_{1}$. The vertical axis corresponds to proportion of responses (i.e., posteriorgrams, in the case of models). The box and whiskers plots display the distribution of the proportions across items (median, quartiles and extrema).}
+        }}
+    \label{fig:wpd-corr}
+  \end{figure}
+
 % Overall correlations to human data
+%# WPDT
+%forecast::CV(lm(prop_vowel.human ~ prop_vowel.mfcc*Position*Vowel, data=d.ewan[d.ewan$wpd==T,]))["CV"]
+%# CV = 0.01572393
+
+%# WPDF
+%forecast::CV(lm(prop_vowel.human ~ prop_vowel.mfcc*Position*Vowel, data=d.ewan[d.ewan$wpd==F,]))["CV"]
+%# CV = 0.01352878
 
 \paragraph{Qualitative analysis}
+%%% accuracy ~ FullV[T/F] * Position
 % Full vowel items
-
 % word-initial cluster vs. word-medial cluster
 
+\begin{figure}[htb!]
+  \centering
+    \includegraphics[page=3, width=0.7\linewidth]{chapter03/art2ac_model_pgrams.pdf} \\
+    \vspace{0.5cm}
+    \includegraphics[page=4, width=0.7\linewidth]{chapter03/art2ac_model_pgrams.pdf}
+    \caption{{\color{red}[TODO]%\textit{Response patterns for the identification task. Human and models responses are separated by columns; responses are given by rows. Within each rectangle, the horizontal axis separates proportions according to $C_{1}$. The vertical axis corresponds to proportion of responses (i.e., posteriorgrams, in the case of models). The box and whiskers plots display the distribution of the proportions across items (median, quartiles and extrema).}
+        }}
+    \label{fig:wpd-hum}
+  \end{figure}
+
+\begin{figure}[htb!]
+    \centering
+    \includegraphics[page=5, width=0.7\linewidth]{chapter03/art2ac_model_pgrams.pdf}\\
+    \vspace{0.5cm}
+    \includegraphics[page=6, width=0.65\linewidth]{chapter03/art2ac_model_pgrams.pdf}
+
+    \caption{{\color{red}[TODO]%\textit{Response patterns for the identification task. Human and models responses are separated by columns; responses are given by rows. Within each rectangle, the horizontal axis separates proportions according to $C_{1}$. The vertical axis corresponds to proportion of responses (i.e., posteriorgrams, in the case of models). The box and whiskers plots display the distribution of the proportions across items (median, quartiles and extrema).}
+        }}
+    \label{fig:wpd-mod}
+  \end{figure}
+
+  
 \subsubsection{Summary}
 \subsection{General discussion}
 
