@@ -765,7 +765,7 @@ Focusing on trials with vowel epenthesis, after renormalising, we find that {\co
 \subsection{{\color{red}Experiment 2: Allophony}}
 \small{\textit{{\color{red}ADD ACKNOWLEDGEMENTS EWAN, AMELIA KIMBALL, ANTOINE HEDIER, CLARA DELACOURT, PAUL ANDREY, EMMANUEL, MILICA (thank for recordings)}}}
 
-In this experiment, we introduced basic allophony to the acoustic models of our ASR system, and evaluated whether this modification resulted in a better approximation of human responses in a task probing epenthesis. More specifically, we trained two different acoustic models which differed in whether phones were word position-dependent or not. We trained the models using the WSJ American English corpus, in order to model the perception of phonotactically illegal Serbian clusters by American English listeners. The clusters were either word-initial or word-medial. We expected American English listeners to experience epenthesis less frequently with word-medial clusters, as these clusters were legal in syllable boundaries. We examined whether this was the case and, if so, whether word position-dependent models better reflected this effect than non-word position-dependent ones.         
+In this experiment, we introduced basic allophony to the acoustic models of our ASR system, and evaluated whether this modification resulted in a better approximation of human responses in a task probing epenthesis. More specifically, we trained two different acoustic models which differed in whether phones were word position-dependent or not. We trained the models using the WSJ American English corpus, in order to model the perception of phonotactically illegal Serbian clusters by American English listeners. The clusters were either word-initial or word-medial. We expected American English listeners to experience epenthesis less frequently with word-medial clusters, as these clusters were legal in syllable boundaries. We examined whether this was the case and, if so, whether word position-dependent models better approximated participants' rates of epenthesis than non-word position-dependent ones.         
 
 \subsubsection{Methods}
 \paragraph{Stimuli}
@@ -874,9 +874,12 @@ The right panel of Figure \ref{fig:wpd-hum} shows the percentage of accuracy for
   Model responses can be seen in Figure \ref{fig:wpd-mod}. On the left panel, we can see that the models almost never ellide full vowels (light gray datapoints). This results in almost perfect performance for these items, as seen in the right panel.
   On the other hand, there is large variability in the posteriorgrams for $C_{1}C_{2}$ clusters, even for word-medial items. This is also visible from the elongated black boxplot on the right panel. Recall that English listeners gave a large range of percentages for word-initial items only, while they experienced lower rates of epenthesis for word-medial clusters.
   Closer examination of epenthesis rates according to the ranking of the clusters in the left panel reveals that for word-initial clusters the models generally agree with humans as to which clusters ellicit more (e.g., \textipa{/gn/}, \textipa{/mr/}, \textipa{/dn/}) or less (e.g., \textipa{/zg/}, \textipa{/dl/}, \textipa{/kl/}) epenthesis.
-  We did not analyse the model data as we did for human data, due to issues related to highly skewed distributions. However, from looking at both panels from Figure \ref{fig:wpd-mod}, we can hypothesize that models also misperceived $C_{1}C_{2}$-items more often than $C_{1}$\textipa{[@]}$C_{2}$-items. However, it is difficult to evidence for lessened misperception in word-medial items.  
+  We did not analyse the model data as we did for human data, due to issues related to highly skewed distributions for full vowel items, and too much variability for cluster items (almost uniform distribution in the [0,1] interval). However, from looking at both panels from Figure \ref{fig:wpd-mod}, we can hypothesize that models also misperceived $C_{1}C_{2}$-items more often than $C_{1}$\textipa{[@]}$C_{2}$-items. However, it is difficult to evidence for lessened misperception in word-medial items.  
   
 \subsubsection{Summary}
+
+
+  
 \subsection{General discussion}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
