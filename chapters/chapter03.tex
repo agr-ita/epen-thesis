@@ -693,18 +693,11 @@ Concerning the language models used during the decoding, in order for the decodi
 \begin{figure}[htb]
     \centering
     %\includegraphics[width=0.8\linewidth]{chapter03/m-ahpa_Gfst.pdf}
-    \caption{{\color{red}[TODO]}}%\textit{Constrained language model used to test the models (here: LM for \textipa{/ahpa/} trials). Nodes in the graph represent states, weighted edges represent transitions between states (here: phonemes). When relevant, weighted edges are labeled with the probability to choose that edge when decoding, which affects the final language model score of each possible path. When no weights are shown (e.g., between states 3 and 4), there is no preference between the paths concerned. The language model scores are combined with acoustic scores when decoding experimental items.}}
+    \caption{{\color{red}[TODO]: Constrained LM}}%\textit{Constrained language model used to test the models (here: LM for \textipa{/ahpa/} trials). Nodes in the graph represent states, weighted edges represent transitions between states (here: phonemes). When relevant, weighted edges are labeled with the probability to choose that edge when decoding, which affects the final language model score of each possible path. When no weights are shown (e.g., between states 3 and 4), there is no preference between the paths concerned. The language model scores are combined with acoustic scores when decoding experimental items.}}
     \label{fig:k-epenth_G}
   \end{figure}
   
 \paragraph{Identification task simulation}
-\begin{figure}[htb]
-  \centering
-%  \begin{overpic}[trim={0 1cm 0 1.5cm},clip, width=0.7\linewidth]{chapter03/m-ahpa_praat_ah0apa.pdf}\end{overpic}
-  \caption{{\color{red}[TODO]}}%\textit{Example of how the ASR system decodes the item \textipa{/ah$_{a}$pa/}, using the null version of the language model in Figure \ref{fig:m-ahpa_G}. From top to bottom: original waveform, item name, aligned transcriptions given by the model (from the most probable to the least probable, with the corresponding posteriorgrams shown to their right side), and spectrogram with formant contours. SIL = silence. {\color{red}TODO: get updated figure (this is with mono-6K)}}}
-  \label{fig:k-epenth_align}
-\end{figure}
-
 After decoding the stimuli with the ASR models, we extracted from the resulting lattices each possible transcription of each item, and the corresponding acoustic and language model scores. %An example of how the ASR system decodes the experimental stimuli can be seen in Figure \ref{fig:k-epenth_align}.
 From the (scaled) acoustic and language model scores we derived the item posteriorgrams, which indicate how probable a given transcription was given the audio input. We used these probabilities as proxies of the probability that a listener might exploit when performing reverse inference during speech perception, and therefore, the probabilities used when responding in an identification task. 
 
@@ -767,6 +760,7 @@ Focusing on trials with vowel epenthesis, after renormalising, we find that {\co
 %%%%%%%%%%%%
 % art2ac-per %
 %%%%%%%%%%%%
+
 \newpage
 \subsection{{\color{red}Experiment 2: Allophony}}
 \small{\textit{{\color{red}ADD ACKNOWLEDGEMENTS EWAN, AMELIA KIMBALL, ANTOINE HEDIER, CLARA DELACOURT, PAUL ANDREY, EMMANUEL, MILICA (thank for recordings)}}}
@@ -848,8 +842,9 @@ After decoding the stimuli, we obtained for each possible transcription of each 
     \includegraphics[page=3, width=0.45\linewidth]{chapter03/art2ac_model_pgrams.pdf}% \\
     \hspace{0.5cm}
     \includegraphics[page=4, width=0.45\linewidth]{chapter03/art2ac_model_pgrams.pdf}
-    \caption{{\color{red}[TODO]%\textit{Response patterns for the identification task. Human and models responses are separated by columns; responses are given by rows. Within each rectangle, the horizontal axis separates proportions according to $C_{1}$. The vertical axis corresponds to proportion of responses (i.e., posteriorgrams, in the case of models). The box and whiskers plots display the distribution of the proportions across items (median, quartiles and extrema).}
-        }}
+    \caption{\textit{Experimental results for American English listeners.
+      Left: Proportion of epenthesis, collapsed across participants. Clusters are ordered according to rates of epenthesis in word-initial clusters. 
+      Right: Identification accuracy, according to the position of the cluster within the word and presence or absence of a vowel between the consonants. The box and whiskers plots display the distribution of the proportions across items (median, quartiles, extrema and outliers).}}
     \label{fig:wpd-hum}
   \end{figure}
 
@@ -870,8 +865,9 @@ The right panel of Figure \ref{fig:wpd-hum} shows the percentage of accuracy for
     \hspace{0.5cm}
     \includegraphics[page=6, width=0.45\linewidth]{chapter03/art2ac_model_pgrams.pdf}
 
-    \caption{{\color{red}[TODO]%\textit{Response patterns for the identification task. Human and models responses are separated by columns; responses are given by rows. Within each rectangle, the horizontal axis separates proportions according to $C_{1}$. The vertical axis corresponds to proportion of responses (i.e., posteriorgrams, in the case of models). The box and whiskers plots display the distribution of the proportions across items (median, quartiles and extrema).}
-        }}
+    \caption{\textit{Simulation results for ASR models.
+      Left: Epenthesis posteriorgrams. Clusters are ordered according to rates of epenthesis in word-initial clusters given by human participants. 
+      Right: Identification accuracy, according to the position of the cluster within the word and presence or absence of a vowel between the consonants. The box and whiskers plots display the distribution of the proportions across items (median, quartiles, extrema and outliers).}}
     \label{fig:wpd-mod}
   \end{figure}
 
