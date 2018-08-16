@@ -824,7 +824,7 @@ After decoding the stimuli, we obtained for each possible transcription of each 
 
 \begin{figure}[htb!]
     \centering
-    \includegraphics[page=7, width=0.8\linewidth]{chapter03/art2ac_model_pgrams.pdf}
+    \includegraphics[page=7, width=0.7\linewidth]{chapter03/art2ac_model_pgrams.pdf}
     \caption{\textit{Models' epenthesis posteriorgrams as a function of the percentage of epenthesis given by humans for a given $C_{1}C_{2}$ cluster (black) or $C_{1}$\textipa{[@]}$C_{2}$ (light gray) item. Dashed lines indicate identity.}}
     \label{fig:wpd-corr}
   \end{figure}
@@ -832,7 +832,7 @@ After decoding the stimuli, we obtained for each possible transcription of each 
   The relationship between human responses and model estimation can be visualized in Figure \ref{fig:wpd-corr}. In order to perform a global evaluation of the similarity between human responses and the responses given by the WDP-F and WPD-T models, respectively, we used leave-one-out cross-validation. This method consists of computing $\textsc{CV}$, the average prediction error on an item $i$ by a statistical model trained on all items except $i$. We used the following linear models (one per AM) as predictive models:
 
   \begin{equation}
-    \textsc{\%epenth}_{human} = \textsc{\%epenth}_{model} \times \textsc{position} \times \textsc{Vowel} + \epsilon
+    \textsc{\%epenth}_{human} = \textsc{\%epenth}_{model} \times \textsc{Position} \times \textsc{Vowel} + \epsilon
   \end{equation}
 
   In other words, we compared the predictive power of linear models using as predictor variables the model posteriorgrams ($\textsc{\%epenth}_{model}$), the cluster position (\textsc{position}; initial \textit{vs.} medial), the presence of a full vowel (\textsc{Vowel}; true \textit{vs.} false), their interactions, and residuals ($\epsilon$). The data to be predicted were human percentages of epenthesis per item ($\textsc{\%epenth}_{human}$).
@@ -843,28 +843,44 @@ After decoding the stimuli, we obtained for each possible transcription of each 
 % Full vowel items
 % word-initial cluster vs. word-medial cluster
 
+\begin{enumerate}
+
+\item Do humans have lower accuracy for initial clusters?
+
+  We examined if, as predicted based on phonology, English listeners experienced lesser amounts of misperceptions when the illegal cluster can be parsed as a sequence of a coda and an onset (word-medial cluster), instead of a complex onset (word-initial cluster). 
+Statistical analyses were performed with the R statistical software \cite{R-base}, using Markov chain Monte Carlo linear models \cite{R-MCMCglmm, R-coda}. These Bayesian models sample coefficients from the posterior probability distribution conditioned on the data and given priors. We used priors that are standard for linear models. Model convergence was assessed by visual inspection of trace plots and the Gelman–Rubin convergence diagnostic \cite{gelman1992}, using eight chains with different initialisations. Effects were considered statistically significant if the 95\% highest posterior density (HPD) interval estimated for the coefficient of interest did not include zero. We report both the posterior mode and the 95\% HPD interval.  
+
+Our response variable was the continuous variable \textsc{\%Accuracy}.
+We chose as fixed effect for our statistical models \textsc{Position} (categorical variable with 2 levels, {\color{red}[TODO]}) and \textsc{Vowel} (categorical variable with 2 levels, {\color{red}[TODO]}), as well as their interaction.
+
+%The left panel of Figure \ref{fig:parl_hmm_iu} shows the posteriorgrams for \textipa{/i/}-epenthesis given by our ASR-based model with a ``null'' language model.
+%The main effect of \textsc{NSFV} was significant (mode: $0.14$, HPD: $[0.06, 0.22]$). An increased number of \textipa{/i/} flanking vowels resulted in higher posteriorgrams for stimuli transcriptions with \textipa{/i/} epenthesis.
+
+
+  
 \begin{figure}[htb!]
   \centering
-    \includegraphics[page=3, width=0.7\linewidth]{chapter03/art2ac_model_pgrams.pdf} \\
-    \vspace{0.5cm}
-    \includegraphics[page=4, width=0.7\linewidth]{chapter03/art2ac_model_pgrams.pdf}
+    \includegraphics[page=3, width=0.45\linewidth]{chapter03/art2ac_model_pgrams.pdf}% \\
+    \hspace{0.5cm}
+    \includegraphics[page=4, width=0.45\linewidth]{chapter03/art2ac_model_pgrams.pdf}
     \caption{{\color{red}[TODO]%\textit{Response patterns for the identification task. Human and models responses are separated by columns; responses are given by rows. Within each rectangle, the horizontal axis separates proportions according to $C_{1}$. The vertical axis corresponds to proportion of responses (i.e., posteriorgrams, in the case of models). The box and whiskers plots display the distribution of the proportions across items (median, quartiles and extrema).}
         }}
     \label{fig:wpd-hum}
   \end{figure}
 
+  \item What about the WPD-F model?
 \begin{figure}[htb!]
     \centering
-    \includegraphics[page=5, width=0.7\linewidth]{chapter03/art2ac_model_pgrams.pdf}\\
-    \vspace{0.5cm}
-    \includegraphics[page=6, width=0.65\linewidth]{chapter03/art2ac_model_pgrams.pdf}
+    \includegraphics[page=5, width=0.45\linewidth]{chapter03/art2ac_model_pgrams.pdf}%\\
+    \hspace{0.5cm}
+    \includegraphics[page=6, width=0.45\linewidth]{chapter03/art2ac_model_pgrams.pdf}
 
     \caption{{\color{red}[TODO]%\textit{Response patterns for the identification task. Human and models responses are separated by columns; responses are given by rows. Within each rectangle, the horizontal axis separates proportions according to $C_{1}$. The vertical axis corresponds to proportion of responses (i.e., posteriorgrams, in the case of models). The box and whiskers plots display the distribution of the proportions across items (median, quartiles and extrema).}
         }}
     \label{fig:wpd-mod}
   \end{figure}
+\end{enumerate}
 
-  
 \subsubsection{Summary}
 \subsection{General discussion}
 
