@@ -119,25 +119,25 @@
 \contentsline {paragraph}{Stimuli}{73}{section*.46}
 \contentsline {paragraph}{ASR system}{73}{section*.47}
 \contentsline {paragraph}{Identification task simulation}{74}{section*.48}
-\contentsline {subsubsection}{\numberline {3.4.2.2}Results}{74}{subsubsection.3.4.2.2}
-\contentsline {paragraph}{Identification accuracy}{74}{figure.3.15}
-\contentsline {paragraph}{Proportion of epenthesis}{74}{figure.3.16}
-\contentsline {paragraph}{Effect of palatalisation on {\fontencoding {T3}\selectfont /i/}-epenthesis}{75}{figure.3.17}
-\contentsline {subsubsection}{\numberline {3.4.2.3}Summary}{75}{subsubsection.3.4.2.3}
-\contentsline {subsection}{\numberline {3.4.3}{\color {red}Experiment 2: Position dependencies and syllabic structure}}{77}{subsection.3.4.3}
-\contentsline {subsubsection}{\numberline {3.4.3.1}Methods}{77}{subsubsection.3.4.3.1}
-\contentsline {paragraph}{Stimuli}{77}{section*.52}
-\contentsline {paragraph}{Behavioural experiment}{78}{section*.53}
-\contentsline {paragraph}{ASR systems}{78}{section*.54}
-\contentsline {paragraph}{Identification task simulation}{79}{section*.55}
-\contentsline {subsubsection}{\numberline {3.4.3.2}Results}{79}{subsubsection.3.4.3.2}
-\contentsline {paragraph}{Qualitative analysis}{79}{figure.3.20}
-\contentsline {paragraph}{Quantitative analysis}{81}{figure.3.23}
-\contentsline {subsubsection}{\numberline {3.4.3.3}Summary}{82}{subsubsection.3.4.3.3}
-\contentsline {subsection}{\numberline {3.4.4}General discussion}{83}{subsection.3.4.4}
-\contentsline {section}{\numberline {3.5}Conclusions}{84}{section.3.5}
-\contentsline {chapter}{\numberline {4}General Discussion}{85}{chapter.4}
-\contentsline {paragraph}{Paradigm}{85}{section*.58}
-\contentsline {paragraph}{ASR system}{85}{section*.59}
-\contentsline {paragraph}{Quantitative approach}{85}{section*.60}
-\contentsline {chapter}{\numberline {A}\ignorespaces Are words easier to learn from infant- than adult-directed speech? }{90}{appendix.A}
+\contentsline {subsubsection}{\numberline {3.4.2.2}Results}{75}{subsubsection.3.4.2.2}
+\contentsline {paragraph}{Identification accuracy}{75}{figure.3.15}
+\contentsline {paragraph}{Proportion of epenthesis}{75}{figure.3.16}
+\contentsline {paragraph}{Effect of palatalisation on {\fontencoding {T3}\selectfont /i/}-epenthesis}{76}{figure.3.17}
+\contentsline {subsubsection}{\numberline {3.4.2.3}Summary}{77}{subsubsection.3.4.2.3}
+\contentsline {subsection}{\numberline {3.4.3}{\color {red}Experiment 2: Position dependencies and syllabic structure}}{78}{subsection.3.4.3}
+\contentsline {subsubsection}{\numberline {3.4.3.1}Methods}{78}{subsubsection.3.4.3.1}
+\contentsline {paragraph}{Stimuli}{78}{section*.52}
+\contentsline {paragraph}{Behavioural experiment}{79}{section*.53}
+\contentsline {paragraph}{ASR systems}{79}{section*.54}
+\contentsline {paragraph}{Identification task simulation}{80}{section*.55}
+\contentsline {subsubsection}{\numberline {3.4.3.2}Results}{80}{subsubsection.3.4.3.2}
+\contentsline {paragraph}{Qualitative analysis}{80}{figure.3.20}
+\contentsline {paragraph}{Quantitative analysis}{82}{figure.3.23}
+\contentsline {subsubsection}{\numberline {3.4.3.3}Summary}{83}{subsubsection.3.4.3.3}
+\contentsline {subsection}{\numberline {3.4.4}General discussion}{84}{subsection.3.4.4}
+\contentsline {section}{\numberline {3.5}Conclusions}{85}{section.3.5}
+\contentsline {chapter}{\numberline {4}General Discussion}{86}{chapter.4}
+\contentsline {paragraph}{Paradigm}{86}{section*.58}
+\contentsline {paragraph}{ASR system}{86}{section*.59}
+\contentsline {paragraph}{Quantitative approach}{86}{section*.60}
+\contentsline {chapter}{\numberline {A}\ignorespaces Are words easier to learn from infant- than adult-directed speech? }{91}{appendix.A}

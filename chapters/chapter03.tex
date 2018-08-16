@@ -661,7 +661,7 @@ An obvious next step would be to test the language models used in \cite{wilson20
 \subsection{{\color{red}Experiment 1: Phonological alternations}}
 \small{\textit{{\color{red}ADD ACKNOWLEDGEMENTS EMMANUEL. DURVASULA \& KAHNG (thank for recordings), RORY \& JEFF (thank for KSPAN)}}}
 
-In this experiment, we investigate if our ASR models are able to reproduce qualitative effects observed in previous work by \cite{durvasula2015}. More specifically, we trained ASR models using Korean and English data to model the perception of consonant clusters by Korean and American English listeners, respectively. The American English listeners, who served as the control population, did not experience vowel epenthesis, unlike their Korean counterparts. Additionally, the authors observed that Korean listeners epenthesized \textipa{/i/} more often when the first consonant of the cluster was a palatal consonant, at the expense of the default epenthetic vowel \textipa{/1/}\footnote{Following the original article, we use \textipa{[1]} to denote the close back unrounded vowel found in the Korean vowel inventory. However, the notation \textipa{[W]} has also previously been used (e.g., in \cite{kabak2007})}. The authors attributed this to listeners taking into consideration phonological alternations when using reverse inference to decode the stimuli. Since our models were not explicitly made aware of phonological alternations, to what extent were they able to reproduce these effects? Can our models reproduce the cross-linguistic differences in rates of vowel epenthesis without any information about phonotactics? 
+In this experiment, we investigate if our ASR models are able to reproduce qualitative effects observed in previous work by \cite{durvasula2015}. More specifically, we trained ASR models using Korean and English data to model the perception of consonant clusters by Korean and American English listeners, respectively. The American English listeners, who served as the control population, did not experience vowel epenthesis, unlike their Korean counterparts. Additionally, the authors observed that Korean listeners epenthesized \textipa{/i/} more often when the first consonant of the cluster was a palatal consonant, at the expense of the default epenthetic vowel \textipa{/1/}\footnote{Following the original article, we use \textipa{[1]} to denote the close back unrounded vowel found in the Korean vowel inventory. However, the notation \textipa{[W]} has also previously been used (e.g., in \cite{kabak2007})}. The authors attributed this to listeners taking into consideration phonological alternations, between alveolar and palatal consonant in front of \textipa{/i/}, when using reverse inference to decode the stimuli. Since our models were not explicitly made aware of these phonological alternations, to what extent were they able to reproduce these effects? Can our models reproduce the cross-linguistic differences in rates of vowel epenthesis without explicit information about native phonotactics? 
 
 \subsubsection{Methods}
 \paragraph{Stimuli}
@@ -688,12 +688,12 @@ The organisation of the stimuli, based on place of articulation of \textsc{C}, i
 \paragraph{ASR system}
 Two populations of listeners were simulated in this experiment, based on \cite{durvasula2015}: we simulated an English-listening control group using the acoustic model trained on English data (WSJ corpus), and a Korean-listening target group using the acoustic model trained on Korean data (KCSS). As a reminder, we selected the HMM-GMM monophone models with the best performance, namely the models with $15000$ Gaussians.  
 
-Concerning the language models used during the decoding, in order for the decoding task to be analogous to the behavioural experiment described in \cite{durvasula2015}, trial-specific language models were constructed, as shown in Figure \ref{fig:k-epenth_G}. Thus, when decoding the stimulus \textipa{/e}$C_{1}(V_{2})$\textipa{ma/}, the perception model was only given the possibility to transcribe it as {\color{red}\textipa{/e}$C_{1}(V_{2})(SIL)$\textipa{ma/}}, where phones between parentheses are optional, $V_{2}$ was from the set of vowels \textipa{/i, 1/}, and $SIL$ is an optional silence. 
+Concerning the language models used during the decoding, in order for the decoding task to be analogous to the behavioural experiment described in \cite{durvasula2015}, trial-specific language models were constructed, as shown in Figure \ref{fig:k-epenth_G}. Thus, when decoding the stimulus \textipa{/e}$C_{1}(V_{2})$\textipa{ma/}, the perception model was only given the possibility to transcribe it as \textipa{/e}$C_{1}(V_{2})(SIL)$\textipa{ma/}, where phones between parentheses are optional, $V_{2}$ was from the set of vowels \textipa{/i, 1/}\footnote{In \cite{durvasula2015} it was assumed that English listeners would associate the grapheme $\langle u \rangle$ to the phoneme \textipa{/U/}. It is unclear to us if English listeners would, in a similar fashion, associate the grapheme $\langle i \rangle$ to the phoneme \textipa{/I/} instead of \textipa{/i:/}. Since English \textipa{/i:/} is probably the closest vowel to \textipa{[i]} in the stimuli, and since the choice is arbitrary without behavioural testing, we chose its back counterpart \textipa{/u:/} for ``u'' instead of \textipa{/U/}. However, it would have also been possible to build language models that account for more than one possible mapping between native and nonnative phonemes (cf. experiment below)}, and $SIL$ is an optional silence. 
 
 \begin{figure}[htb]
     \centering
-    %\includegraphics[width=0.8\linewidth]{chapter03/m-ahpa_Gfst.pdf}
-    \caption{{\color{red}[TODO]: Constrained LM}}%\textit{Constrained language model used to test the models (here: LM for \textipa{/ahpa/} trials). Nodes in the graph represent states, weighted edges represent transitions between states (here: phonemes). When relevant, weighted edges are labeled with the probability to choose that edge when decoding, which affects the final language model score of each possible path. When no weights are shown (e.g., between states 3 and 4), there is no preference between the paths concerned. The language model scores are combined with acoustic scores when decoding experimental items.}}
+    \includegraphics[width=0.9\linewidth]{chapter03/k-epenth_G.pdf}
+    \caption{\textit{Constrained language model used to decode stimuli with the English (top) and Korean (bottom) acoustic models. The models here were used to decode items \textipa{/es([i|1])ma/}, as well as \textipa{/eS([i|1])ma/}. This is because there is only one \textipa{/s/} phoneme in Korean. As a consequence, we neutralised \textipa{/s/} and \textipa{/S/} for the English model to use either phoneme in a similar way. Nodes in the graph represent states, edges represent transitions between states (here: phonemes). WSJ/KCSS labels are shown on edges, along with their IPA transcriptions. Language model scores issued from this null model are combined with acoustic scores when decoding experimental items.}}
     \label{fig:k-epenth_G}
   \end{figure}
   
@@ -710,7 +710,7 @@ We can define the human equivalent $ident_{human} = [p_{none}, p_{i}, {\color{re
 \begin{figure}[htb!]
   \centering
   \begin{overpic}[page=6, width=0.6\linewidth]{chapter03/k-epenth_figs}\end{overpic} \\
-  \vspace{0.5cm}
+  \vspace{0.25cm}
   \begin{overpic}[page=5, width=0.6\linewidth]{chapter03/k-epenth_figs}\end{overpic}
   \caption{\textit{Identification accuracy on items with a full medial vowel, for human listeners (top, data from \cite{durvasula2015}) and the respective simulations (bottom). Results are shown for a model trained on American English (left) and a model trained on Korean (right). Points with error bars show the mean and standard deviation, respectively. The box and whiskers plots display the distribution of the proportions across items (median, quartiles, extrema and outliers).}}
   \label{fig:k-epenth_acc}
@@ -724,7 +724,7 @@ Contrary to their English-speaking counterparts, Korean listeners showed more di
 \begin{figure}[htb!]
   \centering
   \begin{overpic}[page=8, width=0.6\linewidth]{chapter03/k-epenth_figs}\end{overpic} \\
-  \vspace{0.5cm}
+  \vspace{0.25cm}
   \begin{overpic}[page=7, width=0.6\linewidth]{chapter03/k-epenth_figs}\end{overpic}
   \caption{\textit{Identification patterns on items with consonantal clusters, for human listeners (top, data from \cite{durvasula2015}) and the respective simulations (bottom). Proportion of ``none'', ``i'', and ``u''/``\textipa{1}'' responses given by the American English (left) and Korean (right) ASR systems. Points with error bars show the mean and standard deviation, respectively. The box and whiskers plots display the distribution of the proportions across items (median, quartiles, extrema and outliers).}}
   \label{fig:k-epenth_ep}
@@ -748,15 +748,21 @@ Overall, we saw that the models were able to show the crosslinguistic difference
 Focusing on epenthetic vowel quality, \cite{durvasula2015} found that Korean listeners mostly epenthesized \textipa{[i]} after palatal consonants, while they epenthesized the ``default'' vowel \textipa{[1]} after alveolar consonants. This can be seen for Korean listeners in Figure \ref{fig:k-epenth_ep}, but a similar effect is not visible for the Korean model, for which the rates of \textipa{/i/}- and \textipa{/1/}-epenthesis are at similar values around $25\% - 50\%$. Figure \ref{fig:k-epenth_KR_palatal} shows the proportion of trials with epenthesis for which the epenthetic vowel quality was \textipa{/i/}. Indeed, the difference between palatal ($65\%$) and alveolar ($55\%$) consonants observed in the Korean model is negligible compared to that observed in human responses (over $30\%$ difference).  
 
 \subsubsection{Summary}
-{\color{red}[TODO]}
+In this experiment, we investigated if ASR systems with a null language model could reproduce psycholinguistic effects attributed to native phonotactics. More precisely, we based ourselves on a study on the perception of consonant clusters by Korean listeners, where their performance was compared to that of American English listeners.
 
+The first question related to when listeners experience vowel epenthesis when listening to nonnative speech. 
+The English group served as a control group; the authors expected low rates of epenthesis, as English phonotactics are less restrictive than Korean phonotactics. Indeed, this was the case, with Korean speakers experiencing epenthesis in most trials, unlike English speakers. Thought not as clear cut as for humans, we found a similar effect when comparing cluster decoding by Korean and American English ASR systems.
 
+Concerning trials where there was a full medial vowel between the consonants, the models diverged from human behaviour; in general, the identification accuracy was lower than for humans (especially the English one).
+
+A second question referred to phonological influences on epenthetic vowel quality.
+The authors observed higher rates of \textipa{/i/}-epenthesis in palatal allophones of alveolar consonants, in detriment of the default vowel \textipa{/1/}. This prompted them to hypothesize that phonological alternations were influencing epenthetic vowelselection during perception. We examined this hypothesis by investigating if our models, which lack explicit abstract phonological rules or contraints, could reflect this palatal effect. The hypothesis being that palatal consonants might contain acoustic cues more similar to the front vowel \textipa{/i/} than to \textipa{/1/}. However, we did not find evidences of the effect in the output of our models. It would be interesting to see if the effect might come from phoneme co-occurrences as, for instance, the diphone \textipa{[c\super hi]} is more frequent than \textipa{[c\super h1]} (Figure \ref{fig:k-epenth_kspan}). This might explain, in part, higher rates of \textipa{/i/}- than \textipa{/1/}-epenthesis in /\textipa{c\super h}$C$/ clusters. However, we remain skeptical, following the discussion about the low predictive power of \textipa{n}-gram-based phonotactic models in the previous section. 
 
 \begin{figure}[htb!]
   \centering
   \begin{overpic}[page=3, width=\linewidth]{chapter03/k-epenth_figs_KSPAN}\end{overpic}
   \caption{\textit{Diphone frequency of \textipa{[c\super hi]} and \textipa{[c\super h1]}, relative to all diphones in Korean. Frequencies are computed from the frequencies of word types (top) and word tokens (bottom), as documented in K-SPAN \cite{holliday2017}.}}
-  \label{fig:k-epenth_KR_palatal}
+  \label{fig:k-epenth_kspan}
 \end{figure}
 
 %%%%%%%%%%%%
