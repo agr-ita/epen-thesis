@@ -120,23 +120,24 @@
 \contentsline {paragraph}{ASR system}{73}{section*.47}
 \contentsline {paragraph}{Identification task simulation}{74}{section*.48}
 \contentsline {subsubsection}{\numberline {3.4.2.2}Results}{74}{subsubsection.3.4.2.2}
-\contentsline {paragraph}{American English model (control)}{74}{section*.49}
-\contentsline {paragraph}{Korean model (test)}{74}{section*.50}
-\contentsline {subsubsection}{\numberline {3.4.2.3}Summary}{74}{subsubsection.3.4.2.3}
-\contentsline {subsection}{\numberline {3.4.3}{\color {red}Experiment 2: Allophony}}{75}{subsection.3.4.3}
+\contentsline {paragraph}{Identification accuracy}{74}{figure.3.15}
+\contentsline {paragraph}{Epenthesis}{74}{figure.3.16}
+\contentsline {paragraph}{Effect of palatalisation on {\fontencoding {T3}\selectfont /i/}-epenthesis}{75}{figure.3.17}
+\contentsline {subsubsection}{\numberline {3.4.2.3}Summary}{75}{subsubsection.3.4.2.3}
+\contentsline {subsection}{\numberline {3.4.3}{\color {red}Experiment 2: Allophony}}{76}{subsection.3.4.3}
 \contentsline {subsubsection}{\numberline {3.4.3.1}Methods}{76}{subsubsection.3.4.3.1}
-\contentsline {paragraph}{Stimuli}{76}{section*.51}
-\contentsline {paragraph}{Behavioural experiment}{76}{section*.52}
-\contentsline {paragraph}{ASR systems}{76}{section*.53}
-\contentsline {paragraph}{Identification task simulation}{77}{section*.54}
-\contentsline {subsubsection}{\numberline {3.4.3.2}Results}{78}{subsubsection.3.4.3.2}
-\contentsline {paragraph}{Quantitative analysis}{78}{figure.3.18}
-\contentsline {paragraph}{Qualitative analysis}{79}{figure.3.19}
+\contentsline {paragraph}{Stimuli}{76}{section*.52}
+\contentsline {paragraph}{Behavioural experiment}{76}{section*.53}
+\contentsline {paragraph}{ASR systems}{76}{section*.54}
+\contentsline {paragraph}{Identification task simulation}{77}{section*.55}
+\contentsline {subsubsection}{\numberline {3.4.3.2}Results}{77}{subsubsection.3.4.3.2}
+\contentsline {paragraph}{Quantitative analysis}{77}{figure.3.19}
+\contentsline {paragraph}{Qualitative analysis}{78}{figure.3.20}
 \contentsline {subsubsection}{\numberline {3.4.3.3}Summary}{81}{subsubsection.3.4.3.3}
-\contentsline {subsection}{\numberline {3.4.4}General discussion}{81}{subsection.3.4.4}
-\contentsline {section}{\numberline {3.5}Conclusions}{81}{section.3.5}
-\contentsline {chapter}{\numberline {4}General Discussion}{82}{chapter.4}
-\contentsline {paragraph}{Paradigm}{82}{section*.57}
-\contentsline {paragraph}{ASR system}{82}{section*.58}
-\contentsline {paragraph}{Quantitative approach}{82}{section*.59}
-\contentsline {chapter}{\numberline {A}\ignorespaces Are words easier to learn from infant- than adult-directed speech? }{87}{appendix.A}
+\contentsline {subsection}{\numberline {3.4.4}General discussion}{82}{subsection.3.4.4}
+\contentsline {section}{\numberline {3.5}Conclusions}{83}{section.3.5}
+\contentsline {chapter}{\numberline {4}General Discussion}{84}{chapter.4}
+\contentsline {paragraph}{Paradigm}{84}{section*.58}
+\contentsline {paragraph}{ASR system}{84}{section*.59}
+\contentsline {paragraph}{Quantitative approach}{84}{section*.60}
+\contentsline {chapter}{\numberline {A}\ignorespaces Are words easier to learn from infant- than adult-directed speech? }{89}{appendix.A}

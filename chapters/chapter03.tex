@@ -2,9 +2,9 @@
 % [TODO] %
 %%%%%%%%%%
 % [ ] Mini-intro
-% [X] surfphono
-% [ ] k-epenth
-% [ ] wpd
+% [ ] PhonMatch
+%%% [ ] k-epenth
+%%% [X] wpd
 % [ ] Mini-discussion
 
 %%%%%%%%%%%%%%%%%%%%%%
@@ -661,7 +661,7 @@ An obvious next step would be to test the language models used in \cite{wilson20
 \subsection{{\color{red}Experiment 1: Phonological alternations}}
 \small{\textit{{\color{red}ADD ACKNOWLEDGEMENTS EMMANUEL. DURVASULA \& KAHNG (thank for recordings), RORY \& JEFF (thank for KSPAN)}}}
 
-In this experiment, we investigate if our ASR models are able to reproduce qualitative effects observed in previous work by \cite{durvasula2015}. More specifically, we trained ASR models using Korean and English data to model the perception of consonant clusters by Korean and American English listeners, respectively. The American English listeners, who served as the control population, did not experience vowel epenthesis, unlike their Korean counterparts. Additionally, the authors observed that Korean listeners epenthesized \textipa{/i/} more often when the first consonant of the cluster was a palatal consonant, at the expense of the default epenthetic vowel \textipa{/1/}\footnote{Following the original article, we use \textipa{[1]} to denote the close back unrounded vowel found in the Korean vowel inventory. However, the notation \textipa{[W]} has also previously been used (e.g., in \cite{kabak2007})}. The authors attributed this to listeners taking into consideration phonological alternations when using reverse inference to decode the stimuli. Since our models were not explicitly made aware of phonological alternations, to what extent were they able to reproduce these effects?  
+In this experiment, we investigate if our ASR models are able to reproduce qualitative effects observed in previous work by \cite{durvasula2015}. More specifically, we trained ASR models using Korean and English data to model the perception of consonant clusters by Korean and American English listeners, respectively. The American English listeners, who served as the control population, did not experience vowel epenthesis, unlike their Korean counterparts. Additionally, the authors observed that Korean listeners epenthesized \textipa{/i/} more often when the first consonant of the cluster was a palatal consonant, at the expense of the default epenthetic vowel \textipa{/1/}\footnote{Following the original article, we use \textipa{[1]} to denote the close back unrounded vowel found in the Korean vowel inventory. However, the notation \textipa{[W]} has also previously been used (e.g., in \cite{kabak2007})}. The authors attributed this to listeners taking into consideration phonological alternations when using reverse inference to decode the stimuli. Since our models were not explicitly made aware of phonological alternations, to what extent were they able to reproduce these effects? Can our models reproduce the cross-linguistic differences in rates of vowel epenthesis without any information about phonotactics? 
 
 \subsubsection{Methods}
 \paragraph{Stimuli}
@@ -705,34 +705,49 @@ As such, for each item, we obtained a three-dimensional vector $ident_{model} = 
 We can define the human equivalent $ident_{human} = [p_{none}, p_{i}, {\color{red}p_{\textipa{1}}}]$, which contains the percentage of responses for each item, after aggregating all participant responses.
 
 \subsubsection{Results}
-\paragraph{American English model (control)}
+%\paragraph{American English model (control)}
 %% Hopefully the model mostly outputs "none" for clusters and it's almost perfectly accurate for fullV !!!!! (but who knows, since the acoustics are not native for English either)
 
 % Full vowel
-{\color{red}[...]}
+%{\color{red}[...]}
 
 % Percentage of epenthesis
-Overall, the model posteriorgrams for ``none'' responses for items without a full medial vowel was {\color{red}$XX\%$}; in comparison, English listeners almost never experienced vowel epenthesis ($99\%$ ``none'' responses). {\color{red}[...]}
+%Overall, the model posteriorgrams for ``none'' responses for items without a full medial vowel was {\color{red}$XX\%$}; in comparison, English listeners almost never experienced vowel epenthesis ($99\%$ ``none'' responses). {\color{red}[...]}
 
 
-\paragraph{Korean model (test)}
+%\paragraph{Korean model (test)}
 % Accuracy
-For items with a full medial vowel (e.g. \textipa{/et\super h1ma/}), Korean listeners responded ``none'' in the presence of a medial vowel in $21\%$ of the relevant trials. Importantly, the ellision of the medial vowel by Korean listeners was more prominent for items with medial \textipa{[1]} ($37\%$ ``none'') than those with medial \textipa{[i]} ($5\%$ ``none'').
-The model posteriorgrams for ``none'' responses averaged to {\color{red}$5\%$}. \\
-{\color{red}[... Do we see similar ellision in the model? ... ]; [Accuracy]}
+%For items with a full medial vowel (e.g. \textipa{/et\super h1ma/}), Korean listeners responded ``none'' in the presence of a medial vowel in $21\%$ of the relevant trials. Importantly, the ellision of the medial vowel by Korean listeners was more prominent for items with medial \textipa{[1]} ($37\%$ ``none'') than those with medial \textipa{[i]} ($5\%$ ``none'').
+%The model posteriorgrams for ``none'' responses averaged to {\color{red}$5\%$}. \\
+%{\color{red}[... Do we see similar ellision in the model? ... ]; [Accuracy]}
 
 %> aggregate(pgram~fullV, data=d.mod.pgram[d.mod.pgram$resp == "--",], FUN=mean)
 %  fullV      pgram
 %1 FALSE 0.33942907
 %2  TRUE 0.04875961
 
+\paragraph{Identification accuracy}
 \begin{figure}[htb!]
   \centering
-  \begin{overpic}[page=2, width=0.4\linewidth]{chapter03/k-epenth_figs}\end{overpic}
-  \hspace{1cm}
-  \begin{overpic}[page=3, width=0.4\linewidth]{chapter03/k-epenth_figs}\end{overpic}
-  \caption{\textit{{\color{red}[TODO]}}}
-  \label{fig:k-epenth_KR_fullV}
+  \begin{overpic}[page=5, width=0.8\linewidth]{chapter03/k-epenth_figs}\end{overpic}
+  \caption{\textit{Identification accuracy on items with a full medial vowel. Results are shown for a model trained on American English (left) and a model trained on Korean (right). The box and whiskers plots display the distribution of the proportions across items (median, quartiles, extrema and outliers).}}
+  \label{fig:k-epenth_acc}
+\end{figure}
+
+\paragraph{Epenthesis}
+\begin{figure}[htb!]
+  \centering
+  \begin{overpic}[page=6, width=0.8\linewidth]{chapter03/k-epenth_figs}\end{overpic}
+  \caption{\textit{Identification patterns on items with consonantal clusters. Proportion of ``none'', ``i'', and ``u''/``\textipa{1}'' responses given by the American English (left) and Korean (right) ASR systems. The box and whiskers plots display the distribution of the proportions across items (median, quartiles, extrema and outliers).}}
+  \label{fig:k-epenth_KR_ep}
+\end{figure}
+
+\paragraph{Effect of palatalisation on \textipa{/i/}-epenthesis}
+\begin{figure}[htb!]
+  \centering
+  \begin{overpic}[page=7, width=0.8\linewidth]{chapter03/k-epenth_figs}\end{overpic}
+  \caption{\textit{Proportion of \textipa{/i/}-epenthesis on trials with epenthesis in cluster items, separating according to whether $C_{1}$ is a palatal or alveolar consonant. The box and whiskers plots display the distribution of the proportions across items (median, quartiles, extrema and outliers).}}
+  \label{fig:k-epenth_KR_palatal}
 \end{figure}
 
 %> aggregate(pgram~palatal+fullV, data=d.mod.pgram[d.mod.pgram$resp == "--",], FUN=mean)
@@ -743,19 +758,14 @@ The model posteriorgrams for ``none'' responses averaged to {\color{red}$5\%$}. 
 %4    TRUE  TRUE 0.04285943
 
 % Percentage of epenthesis
-Overall, for items with consonant clusters, Korean listeners experienced vowel epenthesis in approximately $78\%$ of the trials. In comparison, the model posteriorgrams for epenthetic responses averaged $66\%$. 
+%Overall, for items with consonant clusters, Korean listeners experienced vowel epenthesis in approximately $78\%$ of the trials. In comparison, the model posteriorgrams for epenthetic responses averaged $66\%$. 
 % [i] in palatal
-Focusing on trials with vowel epenthesis, after renormalising, we find that {\color{red}[...]}
-
-\begin{figure}[htb!]
-  \centering
-  \begin{overpic}[page=4, width=0.5\linewidth]{chapter03/k-epenth_figs}\end{overpic}  
-  \caption{\textit{{\color{red}[TODO]}}}
-  \label{fig:k-epenth_KR_clusters}
-\end{figure}
+%Focusing on trials with vowel epenthesis, after renormalising, we find that {\color{red}[...]}
 
 \subsubsection{Summary}
 {\color{red}[TODO]}
+
+%Cross-linguistic effect or due to corpora???
 
 %%%%%%%%%%%%
 % art2ac-per %
@@ -893,6 +903,7 @@ We found that, globally, the WPD-F model better approximated human results. Howe
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Chapter mini-discussion %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
 \section{Conclusions}
 %%% SUMMARY %%%
 
