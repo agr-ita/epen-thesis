@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.26)  16 AUG 2018 10:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.26)  16 AUG 2018 10:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2188,10 +2188,6 @@ Package pdftex.def Info: images/chapter03/wpd-G_znapa.pdf  used on input line 8
 08.
 (pdftex.def)             Requested size: 341.43436pt x 90.93762pt.
 
-Underfull \vbox (badness 1546) has occurred while \output is active []
-
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
@@ -2202,12 +2198,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 pdfTeX warning: pdflatex (file ./images/chapter03/wpd-G_znapa.pdf): PDF inclusi
 on: multiple pdfs with page group included in a single page
 >]
-<images/chapter03/art2ac_model_pgrams.pdf, id=1729, page=7, 325.215pt x 361.35p
+<images/chapter03/art2ac_model_pgrams.pdf, id=1730, page=7, 325.215pt x 361.35p
 t>
 File: images/chapter03/art2ac_model_pgrams.pdf Graphic file (type pdf)
 <use images/chapter03/art2ac_model_pgrams.pdf, page 7>
 Package pdftex.def Info: images/chapter03/art2ac_model_pgrams.pdf , page7 used 
-on input line 823.
+on input line 821.
 (pdftex.def)             Requested size: 298.75262pt x 331.97185pt.
 
 
@@ -2222,14 +2218,14 @@ t>
 File: images/chapter03/art2ac_model_pgrams.pdf Graphic file (type pdf)
 <use images/chapter03/art2ac_model_pgrams.pdf, page 3>
 Package pdftex.def Info: images/chapter03/art2ac_model_pgrams.pdf , page3 used 
-on input line 844.
+on input line 842.
 (pdftex.def)             Requested size: 192.0548pt x 213.39867pt.
 <images/chapter03/art2ac_model_pgrams.pdf, id=1748, page=4, 325.215pt x 361.35p
 t>
 File: images/chapter03/art2ac_model_pgrams.pdf Graphic file (type pdf)
 <use images/chapter03/art2ac_model_pgrams.pdf, page 4>
 Package pdftex.def Info: images/chapter03/art2ac_model_pgrams.pdf , page4 used 
-on input line 846.
+on input line 844.
 (pdftex.def)             Requested size: 192.0548pt x 213.39867pt.
 
 
@@ -2240,7 +2236,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [79 <./images/chapter03/art2ac_model_pgrams.pdf> <./images/chapter03/art2ac_mod
 el_pgrams.pdf>]
-Overfull \hbox (6.0461pt too wide) in paragraph at lines 861--862
+Overfull \hbox (6.0461pt too wide) in paragraph at lines 859--860
 \OT1/cmr/m/n/10.95 pants. We found a sig-nif-i-cant main ef-fect for \OT1/cmr/m
 /sc/10.95 Po-si-tion \OT1/cmr/m/n/10.95 (mode: $\OMS/cmsy/m/n/10.95 ^^@\OT1/cmr
 /m/n/10.95 0\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 11$, HPD: $[\OMS/cmsy/m/n/1
@@ -2254,14 +2250,14 @@ t>
 File: images/chapter03/art2ac_model_pgrams.pdf Graphic file (type pdf)
 <use images/chapter03/art2ac_model_pgrams.pdf, page 5>
 Package pdftex.def Info: images/chapter03/art2ac_model_pgrams.pdf , page5 used 
-on input line 866.
+on input line 864.
 (pdftex.def)             Requested size: 192.0548pt x 213.39867pt.
 <images/chapter03/art2ac_model_pgrams.pdf, id=1769, page=6, 325.215pt x 361.35p
 t>
 File: images/chapter03/art2ac_model_pgrams.pdf Graphic file (type pdf)
 <use images/chapter03/art2ac_model_pgrams.pdf, page 6>
 Package pdftex.def Info: images/chapter03/art2ac_model_pgrams.pdf , page6 used 
-on input line 868.
+on input line 866.
 (pdftex.def)             Requested size: 192.0548pt x 213.39867pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3478,7 +3474,7 @@ ublic/tipa/tipa8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tip
 a/tipabx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tipa/tipa
 sl10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tipa/tipasl12.p
 fb>
-Output written on main.pdf (126 pages, 3715091 bytes).
+Output written on main.pdf (126 pages, 3715011 bytes).
 PDF statistics:
  2233 PDF objects out of 2487 (max. 8388607)
  1836 compressed objects within 19 object streams
