@@ -824,21 +824,20 @@ After decoding the stimuli, we obtained for each possible transcription of each 
 
 \begin{figure}[htb!]
     \centering
-    \includegraphics[page=7, width=1\linewidth]{chapter03/art2ac_model_pgrams.pdf}
-    \caption{{\color{red}[TODO]%\textit{Response patterns for the identification task. Human and models responses are separated by columns; responses are given by rows. Within each rectangle, the horizontal axis separates proportions according to $C_{1}$. The vertical axis corresponds to proportion of responses (i.e., posteriorgrams, in the case of models). The box and whiskers plots display the distribution of the proportions across items (median, quartiles and extrema).}
-        }}
+    \includegraphics[page=7, width=0.8\linewidth]{chapter03/art2ac_model_pgrams.pdf}
+    \caption{\textit{Models' epenthesis posteriorgrams as a function of the percentage of epenthesis given by humans for a given $C_{1}C_{2}$ cluster (black) or $C_{1}$\textipa{[@]}$C_{2}$ (light gray) item. Dashed lines indicate identity.}}
     \label{fig:wpd-corr}
   \end{figure}
 
-% Overall correlations to human data
-%# WPDT
-%forecast::CV(lm(prop_vowel.human ~ prop_vowel.mfcc*Position*Vowel, data=d.ewan[d.ewan$wpd==T,]))["CV"]
-%# CV = 0.01572393
+  The relationship between human responses and model estimation can be visualized in Figure \ref{fig:wpd-corr}. In order to perform a global evaluation of the similarity between human responses and the responses given by the WDP-F and WPD-T models, respectively, we used leave-one-out cross-validation. This method consists of computing $\textsc{CV}$, the average prediction error on an item $i$ by a statistical model trained on all items except $i$. We used the following linear models (one per AM) as predictive models:
 
-%# WPDF
-%forecast::CV(lm(prop_vowel.human ~ prop_vowel.mfcc*Position*Vowel, data=d.ewan[d.ewan$wpd==F,]))["CV"]
-%# CV = 0.01352878
+  \begin{equation}
+    \textsc{\%epenth}_{human} = \textsc{\%epenth}_{model} \times \textsc{position} \times \textsc{Vowel} + \epsilon
+  \end{equation}
 
+  In other words, we compared the predictive power of linear models using as predictor variables the model posteriorgrams ($\textsc{\%epenth}_{model}$), the cluster position (\textsc{position}; initial \textit{vs.} medial), the presence of a full vowel (\textsc{Vowel}; true \textit{vs.} false), their interactions, and residuals ($\epsilon$). The data to be predicted were human percentages of epenthesis per item ($\textsc{\%epenth}_{human}$).
+  Contrary to expectations, we found the ASR system with the WPD-F acoustic model to have lower average prediction error ($\textsc{CV} = 0.014$) than the ASR system with the WPD-T acoustic model ($\textsc{CV} = 0.016$).
+  
 \paragraph{Qualitative analysis}
 %%% accuracy ~ FullV[T/F] * Position
 % Full vowel items

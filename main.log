@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.26)  16 AUG 2018 01:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.26)  16 AUG 2018 01:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2198,42 +2198,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 pdfTeX warning: pdflatex (file ./images/chapter03/wpd-G_znapa.pdf): PDF inclusi
 on: multiple pdfs with page group included in a single page
 >]
-<images/chapter03/art2ac_model_pgrams.pdf, id=1730, page=7, 433.62pt x 361.35pt
+<images/chapter03/art2ac_model_pgrams.pdf, id=1730, page=7, 361.35pt x 361.35pt
 >
 File: images/chapter03/art2ac_model_pgrams.pdf Graphic file (type pdf)
 <use images/chapter03/art2ac_model_pgrams.pdf, page 7>
 Package pdftex.def Info: images/chapter03/art2ac_model_pgrams.pdf , page7 used 
 on input line 827.
-(pdftex.def)             Requested size: 426.79134pt x 355.67546pt.
-<images/chapter03/art2ac_model_pgrams.pdf, id=1731, page=3, 433.62pt x 361.35pt
+(pdftex.def)             Requested size: 341.43436pt x 341.43896pt.
+<images/chapter03/art2ac_model_pgrams.pdf, id=1732, page=3, 361.35pt x 361.35pt
 >
 File: images/chapter03/art2ac_model_pgrams.pdf Graphic file (type pdf)
 <use images/chapter03/art2ac_model_pgrams.pdf, page 3>
 Package pdftex.def Info: images/chapter03/art2ac_model_pgrams.pdf , page3 used 
-on input line 849.
-(pdftex.def)             Requested size: 298.75262pt x 248.97337pt.
-<images/chapter03/art2ac_model_pgrams.pdf, id=1732, page=4, 433.62pt x 361.35pt
+on input line 848.
+(pdftex.def)             Requested size: 298.75262pt x 298.75702pt.
+<images/chapter03/art2ac_model_pgrams.pdf, id=1733, page=4, 361.35pt x 361.35pt
 >
 File: images/chapter03/art2ac_model_pgrams.pdf Graphic file (type pdf)
 <use images/chapter03/art2ac_model_pgrams.pdf, page 4>
 Package pdftex.def Info: images/chapter03/art2ac_model_pgrams.pdf , page4 used 
-on input line 851.
-(pdftex.def)             Requested size: 298.75262pt x 248.97337pt.
-<images/chapter03/art2ac_model_pgrams.pdf, id=1733, page=5, 433.62pt x 361.35pt
->
-File: images/chapter03/art2ac_model_pgrams.pdf Graphic file (type pdf)
-<use images/chapter03/art2ac_model_pgrams.pdf, page 5>
-Package pdftex.def Info: images/chapter03/art2ac_model_pgrams.pdf , page5 used 
-on input line 859.
-(pdftex.def)             Requested size: 298.75262pt x 248.97337pt.
-<images/chapter03/art2ac_model_pgrams.pdf, id=1734, page=6, 433.62pt x 361.35pt
->
-File: images/chapter03/art2ac_model_pgrams.pdf Graphic file (type pdf)
-<use images/chapter03/art2ac_model_pgrams.pdf, page 6>
-Package pdftex.def Info: images/chapter03/art2ac_model_pgrams.pdf , page6 used 
-on input line 861.
-(pdftex.def)             Requested size: 277.41176pt x 231.18602pt.
-)
+on input line 850.
+(pdftex.def)             Requested size: 298.75262pt x 298.75702pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -2241,6 +2227,24 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [78 <./images/chapter03/art2ac_model_pgrams.pdf>]
+<images/chapter03/art2ac_model_pgrams.pdf, id=1749, page=5, 361.35pt x 361.35pt
+>
+File: images/chapter03/art2ac_model_pgrams.pdf Graphic file (type pdf)
+<use images/chapter03/art2ac_model_pgrams.pdf, page 5>
+Package pdftex.def Info: images/chapter03/art2ac_model_pgrams.pdf , page5 used 
+on input line 858.
+(pdftex.def)             Requested size: 298.75262pt x 298.75702pt.
+<images/chapter03/art2ac_model_pgrams.pdf, id=1750, page=6, 361.35pt x 361.35pt
+>
+File: images/chapter03/art2ac_model_pgrams.pdf Graphic file (type pdf)
+<use images/chapter03/art2ac_model_pgrams.pdf, page 6>
+Package pdftex.def Info: images/chapter03/art2ac_model_pgrams.pdf , page6 used 
+on input line 860.
+(pdftex.def)             Requested size: 277.41176pt x 277.4133pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -2249,6 +2253,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [79 <./images/chapter03/art2ac_model_pgrams.pdf> <./images/chapter03/art2ac_mod
 el_pgrams.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -2256,11 +2263,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [80 <./images/chapter03/art2ac_model_pgrams.pdf> <./images/chapter03/art2ac_mod
-el_pgrams.pdf>]
-Chapter 4.
-(./chapters/chapter05-disc.tex) (./main.bbl [81
+el_pgrams.pdf>])
 
-] [82
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[81]
+Chapter 4.
+(./chapters/chapter05-disc.tex) (./main.bbl [82
+
+] [83
 
 ]
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10.95> not available
@@ -2272,19 +2286,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[83]
+[84]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[84]) (./chapters/appendix.tex
+[85]) (./chapters/appendix.tex
 
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1782, 487.79437pt x 704.
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1788, 487.79437pt x 704.
 60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2313,7 +2327,7 @@ pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1785, page=1, 487.79437p
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1791, page=1, 487.79437p
 t x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2333,7 +2347,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[85]
+[86]
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
 <use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 1>
@@ -2360,55 +2374,24 @@ File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
 ge1 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
-[86 <./images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf>]
-
-pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
-pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1823, page=2, 487.79437p
-t x 704.60439pt>
-File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
-
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 2>
-Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge2 used on input line 4.
-(pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
-File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
-
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 2>
-Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge2 used on input line 4.
-(pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
-
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 2>
-Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge2 used on input line 4.
-(pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 [87 <./images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf>]
 
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1832, page=3, 487.79437p
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1829, page=2, 487.79437p
 t x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 3>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 2>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge3 used on input line 4.
+ge2 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 3>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 2>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge3 used on input line 4.
+ge2 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2418,28 +2401,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 3>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 2>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge3 used on input line 4.
+ge2 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 [88 <./images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf>]
 
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1840, page=4, 487.79437p
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1838, page=3, 487.79437p
 t x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 4>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 3>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge4 used on input line 4.
+ge3 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 4>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 3>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge4 used on input line 4.
+ge3 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2449,28 +2432,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 4>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 3>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge4 used on input line 4.
+ge3 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 [89 <./images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf>]
 
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1846, page=5, 487.79437p
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1847, page=4, 487.79437p
 t x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 5>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 4>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge5 used on input line 4.
+ge4 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 5>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 4>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge5 used on input line 4.
+ge4 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2480,28 +2463,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 5>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 4>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge5 used on input line 4.
+ge4 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 [90 <./images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf>]
 
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1852, page=6, 487.79437p
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1852, page=5, 487.79437p
 t x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 6>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 5>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge6 used on input line 4.
+ge5 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 6>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 5>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge6 used on input line 4.
+ge5 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2511,28 +2494,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 6>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 5>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge6 used on input line 4.
+ge5 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 [91 <./images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf>]
 
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1857, page=7, 487.79437p
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1858, page=6, 487.79437p
 t x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 7>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 6>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge7 used on input line 4.
+ge6 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 7>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 6>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge7 used on input line 4.
+ge6 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2542,28 +2525,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 7>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 6>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge7 used on input line 4.
+ge6 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 [92 <./images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf>]
 
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1865, page=8, 487.79437p
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1863, page=7, 487.79437p
 t x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 8>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 7>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge8 used on input line 4.
+ge7 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 8>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 7>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge8 used on input line 4.
+ge7 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2573,16 +2556,47 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 8>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 7>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge8 used on input line 4.
+ge7 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 [93 <./images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf>]
 
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1872, page=9, 487.79437p
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1871, page=8, 487.79437p
+t x 704.60439pt>
+File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
+
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 8>
+Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
+ge8 used on input line 4.
+(pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
+File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
+
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 8>
+Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
+ge8 used on input line 4.
+(pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
+
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 8>
+Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
+ge8 used on input line 4.
+(pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
+[94 <./images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf>]
+
+pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
+pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1878, page=9, 487.79437p
 t x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -2608,55 +2622,24 @@ File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
 ge9 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
-[94 <./images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf>]
-
-pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
-pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1879, page=10, 487.79437
-pt x 704.60439pt>
-File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
-
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 10>
-Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge10 used on input line 4.
-(pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
-File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
-
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 10>
-Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge10 used on input line 4.
-(pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
-
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 10>
-Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge10 used on input line 4.
-(pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 [95 <./images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf>]
 
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1885, page=11, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1886, page=10, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 11>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 10>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge11 used on input line 4.
+ge10 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 11>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 10>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge11 used on input line 4.
+ge10 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2666,28 +2649,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 11>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 10>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge11 used on input line 4.
+ge10 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 [96 <./images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf>]
 
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1891, page=12, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1891, page=11, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 12>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 11>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge12 used on input line 4.
+ge11 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 12>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 11>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge12 used on input line 4.
+ge11 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2697,28 +2680,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 12>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 11>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge12 used on input line 4.
+ge11 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 [97 <./images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf>]
 
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1896, page=13, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1897, page=12, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 13>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 12>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge13 used on input line 4.
+ge12 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 13>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 12>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge13 used on input line 4.
+ge12 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2728,28 +2711,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 13>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 12>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge13 used on input line 4.
+ge12 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 [98 <./images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf>]
 
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1902, page=14, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1902, page=13, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 14>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 13>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge14 used on input line 4.
+ge13 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 14>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 13>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge14 used on input line 4.
+ge13 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2759,28 +2742,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 14>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 13>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge14 used on input line 4.
+ge13 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 [99 <./images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf>]
 
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1912, page=15, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1908, page=14, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 15>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 14>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge15 used on input line 4.
+ge14 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 15>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 14>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge15 used on input line 4.
+ge14 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2790,28 +2773,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 15>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 14>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge15 used on input line 4.
+ge14 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 [100 <./images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf>]
 
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1930, page=16, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1918, page=15, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 16>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 15>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge16 used on input line 4.
+ge15 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 16>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 15>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge16 used on input line 4.
+ge15 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2821,28 +2804,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 16>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 15>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge16 used on input line 4.
+ge15 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 [101 <./images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf>]
 
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1936, page=17, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1937, page=16, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 17>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 16>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge17 used on input line 4.
+ge16 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 17>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 16>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge17 used on input line 4.
+ge16 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2852,28 +2835,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 17>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 16>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge17 used on input line 4.
+ge16 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 [102 <./images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf>]
 
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1942, page=18, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1942, page=17, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 18>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 17>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge18 used on input line 4.
+ge17 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 18>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 17>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge18 used on input line 4.
+ge17 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2883,28 +2866,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 18>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 17>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge18 used on input line 4.
+ge17 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 [103 <./images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf>]
 
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1951, page=19, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1948, page=18, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 19>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 18>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge19 used on input line 4.
+ge18 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 19>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 18>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge19 used on input line 4.
+ge18 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2914,28 +2897,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 19>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 18>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge19 used on input line 4.
+ge18 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 [104 <./images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf>]
 
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1956, page=20, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1957, page=19, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 20>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 19>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge20 used on input line 4.
+ge19 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 20>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 19>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge20 used on input line 4.
+ge19 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2945,28 +2928,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 20>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 19>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge20 used on input line 4.
+ge19 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 [105 <./images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf>]
 
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1963, page=21, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1963, page=20, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 21>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 20>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge21 used on input line 4.
+ge20 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 21>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 20>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge21 used on input line 4.
+ge20 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2976,28 +2959,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 21>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 20>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge21 used on input line 4.
+ge20 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 [106 <./images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf>]
 
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1969, page=22, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1969, page=21, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 22>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 21>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge22 used on input line 4.
+ge21 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 22>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 21>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge22 used on input line 4.
+ge21 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3007,28 +2990,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 22>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 21>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge22 used on input line 4.
+ge21 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 [107 <./images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf>]
 
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1975, page=23, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1976, page=22, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 23>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 22>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge23 used on input line 4.
+ge22 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 23>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 22>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge23 used on input line 4.
+ge22 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3038,28 +3021,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 23>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 22>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge23 used on input line 4.
+ge22 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 [108 <./images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf>]
 
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1980, page=24, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1981, page=23, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 24>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 23>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge24 used on input line 4.
+ge23 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 24>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 23>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge24 used on input line 4.
+ge23 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3069,28 +3052,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 24>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 23>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge24 used on input line 4.
+ge23 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 [109 <./images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf>]
 
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1989, page=25, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1986, page=24, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 25>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 24>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge25 used on input line 4.
+ge24 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 25>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 24>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge25 used on input line 4.
+ge24 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3100,28 +3083,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 25>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 24>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge25 used on input line 4.
+ge24 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 [110 <./images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf>]
 
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1994, page=26, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1995, page=25, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 26>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 25>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge26 used on input line 4.
+ge25 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 26>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 25>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge26 used on input line 4.
+ge25 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3131,28 +3114,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 26>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 25>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge26 used on input line 4.
+ge25 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 [111 <./images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf>]
 
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=1999, page=27, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=2000, page=26, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 27>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 26>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge27 used on input line 4.
+ge26 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 27>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 26>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge27 used on input line 4.
+ge26 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3162,28 +3145,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 27>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 26>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge27 used on input line 4.
+ge26 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 [112 <./images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf>]
 
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=2004, page=28, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=2005, page=27, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 28>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 27>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge28 used on input line 4.
+ge27 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 28>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 27>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge28 used on input line 4.
+ge27 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3193,28 +3176,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 28>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 27>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge28 used on input line 4.
+ge27 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 [113 <./images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf>]
 
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=2010, page=29, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=2011, page=28, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 29>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 28>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge29 used on input line 4.
+ge28 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 29>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 28>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge29 used on input line 4.
+ge28 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3224,28 +3207,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 29>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 28>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge29 used on input line 4.
+ge28 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 [114 <./images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf>]
 
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=2015, page=30, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=2016, page=29, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 30>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 29>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge30 used on input line 4.
+ge29 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 30>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 29>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge30 used on input line 4.
+ge29 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3255,28 +3238,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 30>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 29>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge30 used on input line 4.
+ge29 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 [115 <./images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf>]
 
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=2020, page=31, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=2021, page=30, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 31>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 30>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge31 used on input line 4.
+ge30 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 31>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 30>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge31 used on input line 4.
+ge30 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3286,16 +3269,47 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
-<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 31>
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 30>
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
-ge31 used on input line 4.
+ge30 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
 [116 <./images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf>]
 
 pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
 pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=2025, page=32, 487.79437
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=2026, page=31, 487.79437
+pt x 704.60439pt>
+File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
+
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 31>
+Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
+ge31 used on input line 4.
+(pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
+File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
+
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 31>
+Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
+ge31 used on input line 4.
+(pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
+
+<use images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, page 31>
+Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
+ge31 used on input line 4.
+(pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
+[117 <./images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf>]
+
+pdfTeX warning: pdflatex (file ./images/appendix/IDS_ADS_Riken_word_cogsci2018.
+pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+
+<images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf, id=2031, page=32, 487.79437
 pt x 704.60439pt>
 File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 
@@ -3321,7 +3335,7 @@ File: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf Graphic file (type pdf)
 Package pdftex.def Info: images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf , pa
 ge32 used on input line 4.
 (pdftex.def)             Requested size: 585.52151pt x 845.76831pt.
-[117 <./images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf>])
+[118 <./images/appendix/IDS_ADS_Riken_word_cogsci2018.pdf>])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 126.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 126.
  (./main.aux)
@@ -3343,13 +3357,13 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 126.
 ### simple group (level 1) entered at line 281 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 10322 strings out of 492980
- 157126 string characters out of 6132494
- 260499 words of memory out of 5000000
- 13243 multiletter control sequences out of 15000+600000
- 18877 words of font info for 61 fonts, out of 8000000 for 9000
+ 10326 strings out of 492980
+ 157177 string characters out of 6132494
+ 260701 words of memory out of 5000000
+ 13245 multiletter control sequences out of 15000+600000
+ 19479 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 45i,18n,46p,1955b,648s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 45i,18n,46p,1955b,652s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.27} has been referenced b
 ut does not exist, replaced by a fixed one
 
@@ -3457,10 +3471,10 @@ ublic/tipa/tipa8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tip
 a/tipabx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tipa/tipa
 sl10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tipa/tipasl12.p
 fb>
-Output written on main.pdf (125 pages, 3698964 bytes).
+Output written on main.pdf (126 pages, 3702207 bytes).
 PDF statistics:
- 2205 PDF objects out of 2487 (max. 8388607)
- 1811 compressed objects within 19 object streams
- 429 named destinations out of 1000 (max. 500000)
+ 2211 PDF objects out of 2487 (max. 8388607)
+ 1816 compressed objects within 19 object streams
+ 431 named destinations out of 1000 (max. 500000)
  1036 words of extra memory for PDF output out of 10000 (max. 10000000)
 

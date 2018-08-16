@@ -131,12 +131,12 @@
 \contentsline {paragraph}{Identification task simulation}{77}{section*.54}
 \contentsline {subsubsection}{\numberline {3.4.3.2}Results}{78}{subsubsection.3.4.3.2}
 \contentsline {paragraph}{Quantitative analysis}{78}{figure.3.19}
-\contentsline {paragraph}{Qualitative analysis}{78}{figure.3.21}
-\contentsline {subsubsection}{\numberline {3.4.3.3}Summary}{78}{subsubsection.3.4.3.3}
-\contentsline {subsection}{\numberline {3.4.4}General discussion}{78}{subsection.3.4.4}
-\contentsline {section}{\numberline {3.5}Conclusions}{78}{section.3.5}
-\contentsline {chapter}{\numberline {4}General Discussion}{81}{chapter.4}
-\contentsline {paragraph}{Paradigm}{81}{section*.57}
-\contentsline {paragraph}{ASR system}{81}{section*.58}
-\contentsline {paragraph}{Quantitative approach}{81}{section*.59}
-\contentsline {chapter}{\numberline {A}\ignorespaces Are words easier to learn from infant- than adult-directed speech? }{86}{appendix.A}
+\contentsline {paragraph}{Qualitative analysis}{79}{figure.3.21}
+\contentsline {subsubsection}{\numberline {3.4.3.3}Summary}{81}{subsubsection.3.4.3.3}
+\contentsline {subsection}{\numberline {3.4.4}General discussion}{81}{subsection.3.4.4}
+\contentsline {section}{\numberline {3.5}Conclusions}{81}{section.3.5}
+\contentsline {chapter}{\numberline {4}General Discussion}{82}{chapter.4}
+\contentsline {paragraph}{Paradigm}{82}{section*.57}
+\contentsline {paragraph}{ASR system}{82}{section*.58}
+\contentsline {paragraph}{Quantitative approach}{82}{section*.59}
+\contentsline {chapter}{\numberline {A}\ignorespaces Are words easier to learn from infant- than adult-directed speech? }{87}{appendix.A}
