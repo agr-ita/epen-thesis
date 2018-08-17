@@ -17,6 +17,13 @@ Berent, I., Steriade, D., Lennertz, T., and Vaknin, V. (2007).
   illusions.
 \newblock {\em Cognition}, 104(3):591--630.
 
+\bibitem[Best, 1995]{best1995}
+Best, C.~T. (1995).
+\newblock Chapter• 6 a\^{} a direct realist view of cross-language speech
+  perception.
+\newblock {\em Speech perception and linguistic experience: Issues in
+  cross-language research}, pages 171--204.
+
 \bibitem[Boersma et~al., 2002]{praat}
 Boersma, P. et~al. (2002).
 \newblock Praat, a system for doing phonetics by computer.
@@ -37,6 +44,11 @@ Chi, T., Ru, P., and Shamma, S.~A. (2005).
 \newblock Multiresolution spectrotemporal analysis of complex sounds.
 \newblock {\em The Journal of the Acoustical Society of America},
   118(2):887--906.
+
+\bibitem[Church, 1987]{church1987}
+Church, K.~W. (1987).
+\newblock Phonological parsing and lexical retrieval.
+\newblock {\em Cognition}, 25(1-2):53--69.
 
 \bibitem[Daland et~al., 2015]{daland2015}
 Daland, R., Oh, M., and Kim, S. (2015).
@@ -77,6 +89,13 @@ Dupoux, E., Parlato, E., Frota, S., Hirose, Y., and Peperkamp, S. (2011).
 \newblock Where do illusory vowels come from?
 \newblock {\em Journal of Memory and Language}, 64(3):199--210.
 
+\bibitem[Durvasula et~al., 2018]{durvasula2018}
+Durvasula, K., Huang, H.-H., Uehara, S., Luo, Q., and Lin, Y.-H. (2018).
+\newblock Phonology modulates the illusory vowels in perceptual illusions:
+  Evidence from mandarin and english.
+\newblock {\em Laboratory Phonology: Journal of the Association for Laboratory
+  Phonology}, 9(1).
+
 \bibitem[Durvasula and Kahng, 2015]{durvasula2015}
 Durvasula, K. and Kahng, J. (2015).
 \newblock Illusory vowels in perceptual epenthesis: the role of phonological
@@ -113,9 +132,17 @@ Giorgino, T. (2009).
   {dtw} package.
 \newblock {\em Journal of Statistical Software}, 31(7):1--24.
 
-\bibitem[Guevara-Rukoz et~al., 2017]{guekozIS17}
+\bibitem[Guevara-Rukoz et~al., 2017a]{guekozJASA17}
+Guevara-Rukoz, A., Lin, I., Morii, M., Minagawa, Y., Dupoux, E., and Peperkamp,
+  S. (2017a).
+\newblock Which epenthetic vowel? phonetic categories versus acoustic detail in
+  perceptual vowel epenthesis.
+\newblock {\em The Journal of the Acoustical Society of America},
+  142(2):EL211--EL217.
+
+\bibitem[Guevara-Rukoz et~al., 2017b]{guekozIS17}
 Guevara-Rukoz, A., Parlato-Oliveira, E., Yu, S., Hirose, Y., Peperkamp, S., and
-  Dupoux, E. (2017).
+  Dupoux, E. (2017b).
 \newblock Predicting epenthetic vowel quality from acoustics.
 \newblock In {\em INTERSPEECH}.
 
@@ -160,6 +187,13 @@ Kabak, B. and Idsardi, W.~J. (2007).
 Keating, P.~A. (1988).
 \newblock Underspecification in phonetics.
 \newblock {\em Phonology}, 5(02):275--292.
+
+\bibitem[Kuhl and Iverson, 1995]{kuhl1995}
+Kuhl, P.~K. and Iverson, P. (1995).
+\newblock Linguistic experience and the.
+\newblock {\em Perceptual Magnet Effect," in W. Strange ed., Speech Perception
+  and Linguistic Experience: Issues in Cross-language Research}, pages
+  121--154.
 
 \bibitem[Lenth, 2016]{R-lsmeans}
 Lenth, R.~V. (2016).

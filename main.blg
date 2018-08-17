@@ -5,45 +5,45 @@ The style file: apalike.bst
 Database file #1: main.bib
 Warning--I didn't find a database entry for "silverman1992"
 Warning--I didn't find a database entry for "["
-You've used 52 entries,
+You've used 57 entries,
             1935 wiz_defined-function locations,
-            799 strings with 12861 characters,
-and the built_in function-call counts, 21684 in all, are:
-= -- 2151
-> -- 889
-< -- 37
-+ -- 312
-- -- 298
-* -- 1853
-:= -- 3723
-add.period$ -- 161
-call.type$ -- 52
-change.case$ -- 401
-chr.to.int$ -- 52
-cite$ -- 52
-duplicate$ -- 822
-empty$ -- 1517
-format.name$ -- 375
-if$ -- 4250
-int.to.chr$ -- 1
+            828 strings with 13882 characters,
+and the built_in function-call counts, 23943 in all, are:
+= -- 2380
+> -- 977
+< -- 42
++ -- 343
+- -- 328
+* -- 2040
+:= -- 4098
+add.period$ -- 176
+call.type$ -- 57
+change.case$ -- 441
+chr.to.int$ -- 56
+cite$ -- 57
+duplicate$ -- 909
+empty$ -- 1670
+format.name$ -- 412
+if$ -- 4704
+int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 51
-newline$ -- 264
-num.names$ -- 158
-pop$ -- 350
+missing$ -- 56
+newline$ -- 289
+num.names$ -- 173
+pop$ -- 381
 preamble$ -- 1
-purify$ -- 406
+purify$ -- 446
 quote$ -- 0
-skip$ -- 622
+skip$ -- 699
 stack$ -- 0
-substring$ -- 1584
-swap$ -- 121
-text.length$ -- 9
+substring$ -- 1764
+swap$ -- 144
+text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 308
+type$ -- 338
 warning$ -- 0
-while$ -- 187
+while$ -- 207
 width$ -- 0
-write$ -- 677
+write$ -- 742
 (There were 2 warnings)

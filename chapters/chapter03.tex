@@ -536,22 +536,6 @@ null vs. bigram retro    & $0.53 - 0.46$ & $0.08$ $[0.04, 0.12]$ & Yes \\
  
 Figure \ref{fig:parlato-lms} shows response patterns from the behavioural experiment and model simulations. The most frequent responses given by Japanese listeners were ``u'' ($63\%$), ``i'' ($15\%$), and ``none'' ($13\%$), with ``o'', ``e'', and ``a'' being infrequent responses ($<5\%$ each). The model with the null LM shares the same three most frequent reponses, ordered as follows based on their posteriorgrams: ``none'' ($28\%$), ``u'' ($25\%$), ``i'' ($23\%$); other responses (``e'', ``o'', ``a'') had posteriorgrams below $12\%$. While human and model responses assign most of the responses to the same three options, we saw that the model's preferred response is not ``u'' but ``none''. Yet, humans experienced default \textipa{/u/}-epenthesis in more than half of the trials. As such, the model was not able to reproduce the default epenthetic vowel preference.          
 
-% 1     0         human 0.13071895
-% 2     a         human 0.01416122
-% 3     e         human 0.02505447
-% 4     i         human 0.15250545
-% 5     o         human 0.04684096
-% 6     u         human 0.63071895
-
-% 7     0          null 0.27663941
-% 8     a          null 0.05414450
-% 9     e          null 0.11487889
-% 10    i          null 0.22482459
-% 11    o          null 0.08025081
-% 12    u          null 0.24926179
-
-% Interestingly, the models that performed less similarly to human behaviour are those for which \textipa{/u/}- and \textipa{/i/}-epenthesis was blocked after coronal consonants, since \textipa{/du/} and \textipa{/di/} are phonotactically illegal in Japanese and therefore do not appear in our corpus. Yet, as seen in Figure \ref{fig:parlato_per_all}, JP participants mostly reported experiencing \textipa{/u/}- and \textipa{/i/}-epenthesis on trials where $C_{1}$ was a coronal consonant. Similar to how ``none'' responses are blocked for all bigram models, acoustics are unable to counter the low diphone probability of \textipa{/du/} and \textipa{/di/}.
-
 \paragraph{Effect of coarticulation}
 
 Next we examined if the coarticulation effect observed in human responses also appeared in model responses. Statistical analyses were performed with the R statistical software \cite{R-base}, using Markov chain Monte Carlo generalised linear mixed-models \cite{R-MCMCglmm, R-coda}. These Bayesian models sample coefficients from the posterior probability distribution conditioned on the data and given priors. We used priors that are standard for linear models. Model convergence was assessed by visual inspection of trace plots and the Gelman–Rubin convergence diagnostic \cite{gelman1992}, using eight chains with different initialisations. Effects were considered statistically significant if the 95\% highest posterior density (HPD) interval estimated for the coefficient of interest did not include zero. We report both the posterior mode and the 95\% HPD interval.  
@@ -665,23 +649,45 @@ In the previous section we explored the hypothesis that the acoustic model (AM) 
 In the meantime, it is also possible to further investigate the predictive power of the AM alone. Many phenomena encountered in the field of perceptual vowel epenthesis have been assigned a grammatical explanation; in this section we select a few of them in order to test whether these effects can be ellicited by our AMs, without an abstract grammar component that has been defined in the model explicitely. In other word, can some of these seemingly abstract effects be accounted for by how the acoustic information is interpreted by the acoustic model?
 
 %% Effects attributed to abstract grammars:
-We will study three effects at least partially attributed to abstract grammars: (1) Cross-linguistic differences in epenthesis, (2) variations of epenthetic vowel quality due to neighbouring consonants, and (3) variations in epenthesis due to syllabic structure.
+We will study three effects at least partially attributed to abstract grammars: (1) cross-linguistic differences in epenthesis, (2) variations of epenthetic vowel quality due to neighbouring consonants, and (3) variations in epenthesis due to syllabic structure.
 
 \subsubsection{Cross-linguistic differences in epenthesis}
+There is often a control group in experiments probing epenthesis, in most cases constituted of native listeners of the language used to create the experimental stimuli. This allows to ensure that observed effects of epenthesis are due to the difference in linguistic experience, and not due to idiosyncrasies in the items used in the experiment. 
+Both the control group and the test group are processing the same acoustic input, yet only the test group experiences epenthesis. It has been argued that this is evidence against the hypothesis that phonetic properties drive perceptual distortions (e.g., \cite{berent2007}).
 
-
+However, the acquisition of native phonetic categories has been described as a process of partitioning the phonetic space in an optimal way, respective to the phonemic needs of the native language \cite{kuhl1995, best1995}. Phonemic misperceptions can then result from mapping the nonnative input to a native category that is not congruent with the original nonnative, or that lacks finer grained separations resulting in additional phonemic contrasts.    
+Can we explain cross-linguistic differences in perceptual vowel epenthesis within a similar framework? Each language has its partition of the acoustic space specified (i.e., the acoustic model in our ASR systems). The differences between languages at the level of the mapping between their respective AMs and the stimulus acoustics may then trigger vowel epenthesis. We will investigate this possibility in Experiment 1. 
+ 
 \subsubsection{Variations of epenthetic vowel quality due to neighbouring consonants} 
 %  cf Mattingley, maybe also Monahan
-% Rose 
+%  Rose
+Within a given language, most episodes of epenthesis involve a ``default'' epenthetic vowel (e.g., \textipa{[W]} in Japanese, \textipa{[1]} in Korean, \textipa{[@]} in English). Aside from variations in epenthetic vowel quality due to coarticulation \cite{dupoux2011, guekozIS17, guekozJASA17}, variations have also been triggered by neighbouring consonants \cite{mattingley2015, durvasula2015, durvasula2018}.
+
+For instance, previous work has highlighted the fact that palatalized consonants may increase the rate of \textipa{/i/}-epenthesis in languages with a different default epenthetic vowel, as follows:
+
+\begin{itemize}
+\item For Japanese listeners tested by \cite{mattingley2015}, the voiced alveolo-palatal affricate \textipa{/\t{d\textctz}/} triggered \textipa{[i]}-epenthesis and default \textipa{[W]}-epenthesis $92\%$ and $6\%$ of the time, respectively.
+\item For Mandarin listeners tested
+  by \cite{durvasula2018}, the aspirated alveo-palatal affricate \textipa{/\t{tC}\super h/} ellicited more \textipa{[i]}-epenthesis than other vowels (including the ``default'' \textipa{[@]}).
+  \item For Korean speakers tested by \cite{durvasula2015}, palatal consonants \textipa{/c\super h/} and \textipa{/S/} mostly ellicited \textipa{[i]}-epenthesis, with very low rates of default \textipa{[1]}-epenthesis.  
+\end{itemize}
+
+{\color{red}[TODO on Saturday]: Add paragraph about Durvasula2015 and phonological alternations in Korean.}
+
+Given how we found front vowel coarticulation to be particularly salient at triggering \textipa{/i/}-epenthesis in both humans and our ASR models (cf. Figure \ref{fig:m-ahpa_test_heat}), we could hypothesize that similar acoustic cues may be found in palatal consonants. Can our AM-only ASR model reproduce the palatal effects observed by \cite{durvasula2015} without explicit knowledge about phonological alternations? We will study this in Experiment 1.   
+
 \subsubsection{Variations in epenthesis due to syllabic structure}
-% Find that old paper about parsing in syllables
+% Church1987: "the author argues that allophony is not necessarily detrimental for speech recognition. Instead, subtle phonetic cues can help us find syllable boundaries (e.g. aspiration only occurs syllable-initially). "
 % Monahan, too
-% Kabak&Idsardi possible as well
 % Berent is probably revelant as well
+There has been evidence of syllabic structure being taken into consideration by the perceptual system when listening to nonnative speech. For instance, \cite{kabak2007} tested ... {\color{red}[TODO on Saturday]: Quickly describe Kabak\&Idsardi2007 experiment and results}. 
 
+A theory of word recognition, posited by \cite{church1987}, hypothesized that low level cues could be used in a parsing step, allowing a rough segmentation of speech in lexical chunks that could then be looked up in a lexicon. Some of the low level cues suggested by the author were acoustic cues: allophonics, suprasegmental cues (duration, pitch, intensity, etc). Concerning allophonics, consider the case of an English listener parsing a sentence with unknown words. The presence of aspiration in a stop consonant may be used to find syllable boundaries, since in English it only occurs syllable-initially. Therefore, looking at it the other way around, syllable boundaries have an influence on the acoustic realisation of phones. 
 
-%%% Quick plan 
+We could then hypothesize that the acoustic model in the perceptual system is aware of certain allophonic variations, instead of just having a single model per phoneme. In this case, phonotactics have an influence on the acoustic model while it is established, helping cluster phones into positionally-relevant groups, for instance. During perception, acoustic match may be considered between the acoustic input and the independent allophones of all phonemes.
+At the time of perception, a same nonnative phoneme may contain different acoustic cues in different realisations, depending on its position on the word (akin to the aspiration example in syllable-initial stops in English). The acoustics of a Serbian cluster such as \textipa{/gm/} produced in syllable-initial position may be more suggestive of acoustics in English \textipa{[g@m]}, while the word-medial realisations of Serbian \textipa{/gm/} might actually better approximate English \textipa{[gm]} acoustically.
 
+We expect English listeners to be able to correctly perceive certain Serbian clusters such as \textipa{/gm/} word-medially but not word-initially, as they are phonotactically illegal in this latter position. Can our AM-only ASR system reproduce this effect? We will investigate this in Experiment 2. 
 
 \subsection{{\color{red}Experiment 1: Phonological alternations}}
 \small{\textit{{\color{red}ADD ACKNOWLEDGEMENTS EMMANUEL. DURVASULA \& KAHNG (thank for recordings), RORY \& JEFF (thank for KSPAN)}}}
