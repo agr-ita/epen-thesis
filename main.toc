@@ -114,30 +114,33 @@
 \contentsline {subsubsection}{\numberline {3.3.4.2}Need for phonotactics and/or abstract grammar}{71}{subsubsection.3.3.4.2}
 \contentsline {section}{\numberline {3.4}{\color {red}Investigating acoustic/phonetic match}}{73}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Introduction}{73}{subsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.1.1}Cross-linguistic differences in epenthesis}{73}{subsubsection.3.4.1.1}
+\contentsline {subsubsection}{\numberline {3.4.1.2}Variations of epenthetic vowel quality due to neighbouring consonants}{73}{subsubsection.3.4.1.2}
+\contentsline {subsubsection}{\numberline {3.4.1.3}Variations in epenthesis due to syllabic structure}{73}{subsubsection.3.4.1.3}
 \contentsline {subsection}{\numberline {3.4.2}{\color {red}Experiment 1: Phonological alternations}}{73}{subsection.3.4.2}
-\contentsline {subsubsection}{\numberline {3.4.2.1}Methods}{73}{subsubsection.3.4.2.1}
-\contentsline {paragraph}{Stimuli}{73}{section*.46}
-\contentsline {paragraph}{ASR system}{73}{section*.47}
+\contentsline {subsubsection}{\numberline {3.4.2.1}Methods}{74}{subsubsection.3.4.2.1}
+\contentsline {paragraph}{Stimuli}{74}{section*.46}
+\contentsline {paragraph}{ASR system}{74}{section*.47}
 \contentsline {paragraph}{Identification task simulation}{74}{section*.48}
 \contentsline {subsubsection}{\numberline {3.4.2.2}Results}{75}{subsubsection.3.4.2.2}
 \contentsline {paragraph}{Identification accuracy}{75}{figure.3.15}
 \contentsline {paragraph}{Proportion of epenthesis}{75}{figure.3.16}
 \contentsline {paragraph}{Effect of palatalisation on {\fontencoding {T3}\selectfont /i/}-epenthesis}{76}{figure.3.17}
-\contentsline {subsubsection}{\numberline {3.4.2.3}Summary}{77}{subsubsection.3.4.2.3}
-\contentsline {subsection}{\numberline {3.4.3}{\color {red}Experiment 2: Position dependencies and syllabic structure}}{78}{subsection.3.4.3}
-\contentsline {subsubsection}{\numberline {3.4.3.1}Methods}{78}{subsubsection.3.4.3.1}
-\contentsline {paragraph}{Stimuli}{78}{section*.52}
+\contentsline {subsubsection}{\numberline {3.4.2.3}Summary}{76}{subsubsection.3.4.2.3}
+\contentsline {subsection}{\numberline {3.4.3}{\color {red}Experiment 2: Position dependencies and syllabic structure}}{79}{subsection.3.4.3}
+\contentsline {subsubsection}{\numberline {3.4.3.1}Methods}{79}{subsubsection.3.4.3.1}
+\contentsline {paragraph}{Stimuli}{79}{section*.52}
 \contentsline {paragraph}{Behavioural experiment}{79}{section*.53}
 \contentsline {paragraph}{ASR systems}{79}{section*.54}
 \contentsline {paragraph}{Identification task simulation}{80}{section*.55}
 \contentsline {subsubsection}{\numberline {3.4.3.2}Results}{80}{subsubsection.3.4.3.2}
 \contentsline {paragraph}{Qualitative analysis}{81}{figure.3.20}
-\contentsline {paragraph}{Quantitative analysis}{82}{figure.3.23}
-\contentsline {subsubsection}{\numberline {3.4.3.3}Summary}{83}{subsubsection.3.4.3.3}
-\contentsline {subsection}{\numberline {3.4.4}General discussion}{84}{subsection.3.4.4}
-\contentsline {section}{\numberline {3.5}Conclusions}{85}{section.3.5}
-\contentsline {chapter}{\numberline {4}General Discussion}{86}{chapter.4}
-\contentsline {paragraph}{Paradigm}{86}{section*.58}
-\contentsline {paragraph}{ASR system}{86}{section*.59}
-\contentsline {paragraph}{Quantitative approach}{86}{section*.60}
-\contentsline {chapter}{\numberline {A}\ignorespaces Are words easier to learn from infant- than adult-directed speech? }{91}{appendix.A}
+\contentsline {paragraph}{Quantitative analysis}{83}{figure.3.23}
+\contentsline {subsubsection}{\numberline {3.4.3.3}Summary}{84}{subsubsection.3.4.3.3}
+\contentsline {subsection}{\numberline {3.4.4}General discussion}{85}{subsection.3.4.4}
+\contentsline {section}{\numberline {3.5}Conclusions}{86}{section.3.5}
+\contentsline {chapter}{\numberline {4}General Discussion}{87}{chapter.4}
+\contentsline {paragraph}{Paradigm}{87}{section*.58}
+\contentsline {paragraph}{ASR system}{87}{section*.59}
+\contentsline {paragraph}{Quantitative approach}{87}{section*.60}
+\contentsline {chapter}{\numberline {A}\ignorespaces Are words easier to learn from infant- than adult-directed speech? }{92}{appendix.A}

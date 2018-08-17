@@ -628,7 +628,7 @@ It would be important to also assess the validity of using probabilities derived
 %% -> Blocks never seen sequences (legal/illegal view as in Peperkamp (2008?), not probabilistic gradient phonotactics (cf Wilson2014, notes on Lentz2011's thesis).
 %% -> Adds frequency bias that may not be adequate (e.g., increase in /a/ epenthesis because most frequent vowel)
 
-An obvious next step would be to test the language models used in \cite{wilson2014}, where the authors found that most LMs performed better than the null LM at predicting data from a production task. In that work, the favoured LMs were the ones were phonotactic legality was a gradient process, where phones were represented with featural descriptions (e.g. {\color{red}[CITE Albright 2009]}) or where weights given to grammatical constraints were derived from the principle of maximum entropy (e.g. {\color{red}[CITE BoersmaPater2007; HayesWilson2008]}). In parallel, we can also explore whether our ASR system's acoustic model (accompanied by a null language model) is able to explain effects attributed to abstract grammatical processes. We will experiment this in the next section. 
+An obvious next step would be to test the language models used in \cite{wilson2014}, where the authors found that most LMs performed better than the null LM at predicting data from a production task. In that work, the favoured LMs were the ones where phonotactic legality was a gradient process, where phones were represented with featural descriptions (e.g. {\color{red}[CITE Albright 2009]}) or where weights given to grammatical constraints were derived from the principle of maximum entropy (e.g. {\color{red}[CITE BoersmaPater2007; HayesWilson2008]}). In parallel, we can also explore whether our ASR system's acoustic model (accompanied by a null language model) is able to explain effects attributed to abstract grammatical processes. We will experiment this in the next section. 
 %% Due to task?
 % What would happen in transcription task? (Using non-constrained LM for decoding)
 
@@ -658,10 +658,37 @@ An obvious next step would be to test the language models used in \cite{wilson20
 
 
 \subsection{Introduction}
+%% Conclusions from previous section
+In the previous section we explored the hypothesis that the acoustic model (AM) might not only be necessary to explain patterns of vowel epenthesis, but that it might even sufficient. We tested \textit{n}-gram implementations of local phonotactics through the ASR systems' language models (LMs), as these are typically the type of phonotactic models used in ASR when doing phonetic decoding. We saw that LMs in that format did not add any predictive value to the perception models, compared to just letting the AM decide of the optimal decoding. We propose then, to find ways to implement alternative phonotactic models to ASR systems in order to continue testing the relative importance of acoustic and phonotactics.
+
+%% Let's explore!
+In the meantime, it is also possible to further investigate the predictive power of the AM alone. Many phenomena encountered in the field of perceptual vowel epenthesis have been assigned a grammatical explanation; in this section we select a few of them in order to test whether these effects can be ellicited by our AMs, without an abstract grammar component that has been defined in the model explicitely. In other word, can some of these seemingly abstract effects be accounted for by how the acoustic information is interpreted by the acoustic model?
+
+%% Effects attributed to abstract grammars:
+We will study three effects at least partially attributed to abstract grammars: (1) Cross-linguistic differences in epenthesis, (2) variations of epenthetic vowel quality due to neighbouring consonants, and (3) variations in epenthesis due to syllabic structure.
+
+\subsubsection{Cross-linguistic differences in epenthesis}
+
+
+\subsubsection{Variations of epenthetic vowel quality due to neighbouring consonants} 
+%  cf Mattingley, maybe also Monahan
+% Rose 
+\subsubsection{Variations in epenthesis due to syllabic structure}
+% Find that old paper about parsing in syllables
+% Monahan, too
+% Kabak&Idsardi possible as well
+% Berent is probably revelant as well
+
+
+%%% Quick plan 
+
+
 \subsection{{\color{red}Experiment 1: Phonological alternations}}
 \small{\textit{{\color{red}ADD ACKNOWLEDGEMENTS EMMANUEL. DURVASULA \& KAHNG (thank for recordings), RORY \& JEFF (thank for KSPAN)}}}
 
-In this experiment, we investigate if our ASR models are able to reproduce qualitative effects observed in previous work by \cite{durvasula2015}. More specifically, we trained ASR models using Korean and English data to model the perception of consonant clusters by Korean and American English listeners, respectively. The American English listeners, who served as the control population, did not experience vowel epenthesis, unlike their Korean counterparts. Additionally, the authors observed that Korean listeners epenthesized \textipa{/i/} more often when the first consonant of the cluster was a palatal consonant, at the expense of the default epenthetic vowel \textipa{/1/}\footnote{Following the original article, we use \textipa{[1]} to denote the close back unrounded vowel found in the Korean vowel inventory. However, the notation \textipa{[W]} has also previously been used (e.g., in \cite{kabak2007})}. The authors attributed this to listeners taking into consideration phonological alternations, between alveolar and palatal consonant in front of \textipa{/i/}, when using reverse inference to decode the stimuli. Since our models were not explicitly made aware of these phonological alternations, to what extent were they able to reproduce these effects? Can our models reproduce the cross-linguistic differences in rates of vowel epenthesis without explicit information about native phonotactics? 
+In this experiment, we investigate if our ASR models are able to reproduce qualitative effects observed in previous work by \cite{durvasula2015}. More specifically, we trained ASR models using Korean and English data to model the perception of consonant clusters by Korean and American English listeners, respectively. The American English listeners, who served as the control population, did not experience vowel epenthesis, unlike their Korean counterparts. Additionally, the authors observed that Korean listeners epenthesized \textipa{/i/} more often when the first consonant of the cluster was a palatal consonant, at the expense of the default epenthetic vowel \textipa{/1/}\footnote{Following the original article, we use \textipa{[1]} to denote the close back unrounded vowel found in the Korean vowel inventory. However, the notation \textipa{[W]} has also previously been used (e.g., in \cite{kabak2007})}. The authors attributed this to listeners taking into consideration phonological alternations, between alveolar and palatal consonant in front of \textipa{/i/}, when using reverse inference to decode the stimuli. 
+{\color{red}TODO Sharon]: ``I'd explain the alternation more clearly in a separate sentence''.}
+Since our models were not explicitly made aware of these phonological alternations, to what extent were they able to reproduce these effects? Can our models reproduce the cross-linguistic differences in rates of vowel epenthesis without explicit information about native phonological alternations? 
 
 \subsubsection{Methods}
 \paragraph{Stimuli}
@@ -731,7 +758,7 @@ Contrary to their English-speaking counterparts, Korean listeners showed more di
 \end{figure}
 
 Human and model response patterns for items with consonant clusters are given in Figure \ref{fig:k-epenth_ep}.
-Concerning the control English human and model responses, as expected, the predominant case is not experiencing epenthesis. Respectively, English listeners experienced epenthesis in only $1\%$ of the trials, while the English model's average posteriorgram for epenthesis was $15\%$. The model's data was noisier than for humans, but the performances for both human and model in English surpassed the Korean equivalents.
+Concerning the control English human and model responses, as expected, the predominant case is not experiencing epenthesis. English listeners experienced epenthesis in only $1\%$ of the trials, while the English model's average posteriorgram for epenthesis was $15\%$. The model's data was noisier than for humans, but the performances for both human and model in English surpassed the Korean equivalents.
 
 Indeed, Korean listeners experienced epenthesis in $78\%$ of the trials, and the Korean model's posteriorgrams for epenthesis averaged to the equivalent of $66\%$ of the trials. Mirroring the higher rates of epenthesis for the English model, the Korean model outputs lower rates of epenthesis than Korean listeners.
 
@@ -911,8 +938,6 @@ We found that, globally, the WPD-F model better approximated human results. Howe
 % Ideas:
 %% --- Automatic iterative decoding from null model  
 %% --- For specific phoneme sequences, find exemplars (e.g., for /hp/ check all /hVp/) and see if well transcribed. Adapt probabilities accordingly. PB: Need many exemplars + Time consuming. 
-
-%%% Null model isn't really null in that transition probabilities in HMMs capture diphone probabilities already. Ideally, for a truly null model, need to modify topology and equalise all C->V TPs. But not identical to having just P(V|C). [CHECK THOMAS]
 
 % Need better acoustic model. But we need not to integrate triphones.
 % Ideas:
