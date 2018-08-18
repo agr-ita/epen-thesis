@@ -140,7 +140,10 @@
 \contentsline {subsection}{\numberline {3.4.4}General discussion}{89}{subsection.3.4.4}
 \contentsline {section}{\numberline {3.5}Conclusions}{90}{section.3.5}
 \contentsline {chapter}{\numberline {4}General Discussion}{91}{chapter.4}
-\contentsline {paragraph}{Paradigm}{91}{section*.58}
+\contentsline {section}{\numberline {4.1}One-step vs. two-step}{91}{section.4.1}
+\contentsline {section}{\numberline {4.2}Importance of modelling}{91}{section.4.2}
+\contentsline {paragraph}{Quantitative approach}{91}{section*.58}
+\contentsline {section}{\numberline {4.3}Future avenues}{91}{section.4.3}
 \contentsline {paragraph}{ASR system}{91}{section*.59}
-\contentsline {paragraph}{Quantitative approach}{91}{section*.60}
+\contentsline {paragraph}{Paradigm}{91}{section*.60}
 \contentsline {chapter}{\numberline {A}\ignorespaces Are words easier to learn from infant- than adult-directed speech? }{96}{appendix.A}
