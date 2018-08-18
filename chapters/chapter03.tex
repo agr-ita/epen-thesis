@@ -1,32 +1,86 @@
 %%%%%%%%%%
 % [TODO] %
 %%%%%%%%%%
-% [ ] Mini-intro
+% [X] Mini-intro
 % [ ] Mini-discussion
 
 %%%%%%%%%%%%%%%%%%%%%%
 % Chapter mini-intro %
 %%%%%%%%%%%%%%%%%%%%%%
-\section{{\color{red}Introduction}}
-%%% Short BG
-%\subsection{ASR tools as models of perception}
-% Test acoustic model (null)
-% Compare with more informative LMs
-% Qualitative testing on best LM
-% Investigate phonetic match - wpd/phonological alt 
+\section{Introduction}
+%%% Introductory paragraph 
+In the previous chapter we studied the use of non-parametric exemplar-based computational models to investigate the underlying mechanisms of perceptual vowel epenthesis. While the exemplar-based models were able to reproduce modulations in epenthetic vowel quality due to coarticulation, they were unable to show a preference for default vowel epenthesis. More importantly, due to their non-parametric nature, they were entirely unable to output ``no epenthesis'' responses (or any response not in line with the available exemplars, for that matter). In this chapter, we will turn to parametric models, which are implementations of one-step theories of nonnative speech perception.  
+
+\subsection{Implementation of a one-step model}
+%%% Remind one-step proposal
+Our experimental results from the previous chapter were supporting evidence for one-step models of nonnative speech perception, as opposed to two-step models.
+Recall that, according to one-step models, the perception process is a process of reverse inference in which the listener attempts to retrieve the most probable percept given the auditory evidence and language-specific phonotactic acceptability.
+
+This proposal has been advanced by several authors \cite{dupoux2011, dejong2012, wilson2013, durvasula2015}, yet as it often happens in the psycholinguistics literature, authors often fail to provide a well-defined implementable model that accurately conveys their theory. Fortunately, an mathematically-defined model of one-step nonnative perception was proposed by \cite{wilson2013}, allowing us to tweak and test this model empirically.
+
+The proposal advanced by \cite{wilson2013} falls within the Bayesian framework. 
+According to it, the perceptual system computes $P(w | X)$ the posterior probability of candidate percepts $w$ given the auditory input $X$. These are estimated, for each candidate percept, from the product of $P(X|w)$ the likelihood of the acoustics given the percept and $P(w)$ the prior probability of the percept, defined as its phonotactic acceptability. Mathematically, this can be formulated as in equation \ref{eq_onestep1}. Then, in a maximum \textit{a posteriori} (MAP) estimation scenario, the final percept $\widehat{w}$ corresponds to the percept with the highest posterior probability, as shown in equation \ref{eq_onestep2}. Alternatively, the final percept may be estimated by weighted sampling, where weights are defined by the posterior probabilities.     
+
+\begin{equation}
+  P(w | X) \propto P(X | w) \cdot P(w)
+  \label{eq_onestep1}
+\end{equation}
+
+\begin{equation}
+  \widehat{w} = \underset{w}{arg\,max} \left \{ P(X|w) \cdot P(w) \right \}
+  \label{eq_onestep2}
+\end{equation}
 
 
-%%% Research question + alternatives
+%%% Show comparison of one-step formula & HMM ASR formula
+It so happens that a Bayesian approach is also used as the basis of models used in the field of automatic speech recognition. In this context, the speech recognizer's decoder computes $P(w | X)$ the posterior probability of possible words $w$ given the acoustic input $X$. These are estimated, for each possible word in a lexicon, from the product of $P(X|w)$ the likelihood of the acoustics given the word (i.e., the \textit{acoustic model}) and $P(w)$ the prior probability of the word, defined as frequencies of observation in the corpus used for training the model (e.g., the \textit{language model}). Mathematically, this can be formulated exactly as in equation \ref{eq_onestep1}. Since more often than not, the goal of the recognizer is to only output the most probable transcription of an acoustic recording, the model retrieves  $\widehat{w}$ the sequence of words with the highest posterior probability. This is also MAP estimation, as shown in equation \ref{eq_onestep2}. If the experimenter is interested, it is also possible to retrieve posteriorgrams from the model, which correspond to the posterior probabilities of a finite set of possible transcriptions.
 
+As can be seen above, Bayesian speech recognizers can be used to implement the one-step proposal advanced by \cite{wilson2013}. Importantly, since the acoustic model and the language model are separate modules that are combined in a unique optimisation step, it is possible for us to tweak them, independently, before subjecting the resulting models to experiments analogous to those used for testing nonnative speech perception in human participants. As such, we can use these models as tools for better understanding the mechanisms underlying perceptual vowel epenthesis. 
+
+\subsection{Is the acoustic match sufficient?}
+As a continuation of the modelling work in the previous chapter (sections \ref{2-parlato} and \ref{2-parlato-dur}), in this chapter we will test the ability of a reverse inference model that only relies on acoustic match to account for patterns of speech perception. This is a special case of the model presented in equation \ref{eq_onestep1}, where the language model is uniform and does not intervene in the selection of the optimal percept. Considering that we have provided ample evidence of the role of acoustics in the previous chapter, we will assume that this is the most minimal testable version of the reverse inference proposal.
+
+What exactly will we be testing in this chapter? In order to answer this question, let us reprise the dissection of the phenomenon of perceptual vowel epenthesis mentioned in the previous chapter:
+
+\begin{enumerate}
+    \item When does epenthesis occur? (Variations in rates of epenthesis).
+    \item What vowel is epenthesized? (Variation in epenthetic vowel quality).
+\end{enumerate}
+
+Various peculiarities of epenthesis from these two branches have been assumed to be the result of abstract phonological processes, from surface phonotactics to higher order grammar-related computations.
+
+Concerning the first question, we can mention variation in rate of epenthesis resulting from cross-linguistic differences (e.g., \cite{dupoux1999, dehaene2000, berent2007, kabak2007, dupoux2011, shin2011, durvasula2015, durvasula2016, durvasula2018}, prosodic constraints \cite{kabak2007, durvasula2016}, difference in markedness (e.g., \cite{berent2007, zhao2018}).  
+
+For the second question, the following effects have at least been partially given phonological explanations: cross-linguistic variations in default epenthetic vowel quality (e.g., \cite{dupoux2011, guekozIS17}), variations due to neighbouring vowels, possibly due to phonotactics \cite{mattingley2015} or reverse inference of phonological rules \cite{durvasula2015, durvasula2018}.  
+
+But what if the elements triggering these processes are embedded in the acoustic signal, available for direct retrieval?
+For instance, acoustic details have been shown to modulate rates of epenthesis both in perception \cite{peperkamp2008, dejong2012} and production \cite{wilson2013, wilson2014}. So, while we often include phonotactics as intrinsic to the very definition of vowel epenthesis, could their role be of lesser importance than previously thought?
+
+As another illustration, we saw that default epenthetic vowels tend to be phonetically minimal in their respective language-specific inventories \cite{guekozIS17} and are targets for further minimalisation processes such as vowel devoicing \cite{dupoux2011}. Our exemplar-based models in the previous chapter were not able to reproduce default vowel epenthesis, leaving us with uncertitudes about the need for a phonological explanation in spite of the aforementioned acoustic hints. Do our parametric ASR models reproduce this effect?  
+
+\subsection{Chapter preview}
+%% Research questions %%
+In this chapter we will investigate the use of ASR systems as perceptual models in order to tackle three main questions: 
+
+\begin{itemize}
+\item Are speech recognizers a suitable tool for modelling nonnative speech perception within a one-step framework?
+\item What is the relative contribution of the language model to patterns of vowel epenthesis? Are phonotactics really needed to explain epenthetic patterns?
+\item Can the acoustic model alone account for processes attributed to phonology? 
+\end{itemize}
 
 %%% Plan
+In \textbf{section \ref{3-hmm}} we will present the architecture of our ASR models in more detail. We will expose the various steps and models necessary to build the models, including the speech data used for training, how the information is extracted from the speech and represented in a more accessible and informative format, what the acoustic and language models are in practice, and how they are combined to decode (i.e., transcribe and align) the speech input.  
+
+In \textbf{section \ref{3-surfphono}} we examine if combining \textit{n}-gram-based language models with our acoustic models better approximates human perception than if using the acoustic model alone. To do, we present a novel manipulation of Weighted Finite State Transducers (W-FST), traditionally used in the sofware Kaldi \cite{povey2011} to graphically define language models (among other components of the speech recognizer). This allows us to simulate psycholinguistics paradigms used to probe nonnative speech perception, including vowel epenthesis. We evaluate the various combinations of acoustic and language models by comparing their results to a standard set by results from behavioural experiments described in sections \ref{2-ahpa} and \ref{2-parlato}.  
+
+In \textbf{section \ref{3-medley}} we investigate a medley of epenthetic patterns attributed to underlying higher order phonological processes. We test the hypothesis that these may result from listeners incorrectly mapping the incoming acoustic signal to phonetic categories that do not correspond to the parsing intended by the nonnative source. More specifically, we study the predictive power of the acoustic model alone on cross-linguistic differences in rates of vowel epenthesis between English and Korean listeners, increased non-default \textipa{/i/}-epenthesis after palatal consonants in Korean, and word position-dependent differences in epenthesis by English listeners. We reprise the methodology from section \ref{3-surfphono} to address these phenomena.   
 
 
 %%%%%%%%%%%%%%%%%%%
 % General methods % %
 %%%%%%%%%%%%%%%%%%%
-
-\section{Anatomy of our HMM-based speech recogniser}
+\newpage
+\section{Anatomy of a HMM-based speech recogniser} \label{3-hmm}
 For the experiments described in this chapter we used Hidden Markov Model (HMM)-based speech recognisers as models of human perception. 
 Speech audio waveforms are transformed into a sequence of \textbf{acoustic vectors} $X_{1:T} = x_{1}, ..., x_{T}$ through the first step, called feature extraction. In the decoding phase that follows, the trained ASR system attempts to find the sequence of words $w_{1:L} = w_{1}, ..., w_{L}$ which is most likely to have produced the sequence of acoustic feature vectors $X$.
 Mathematically, this equates to solving the following equation:
@@ -161,7 +215,7 @@ Here we represent acoustic frames obtained during the feature extraction step as
 During training, the acoustic model's tasks are to:
 \begin{enumerate}
 \item For each phone, find three groups of acoustic frames that can be used to define the sequential states in the HMM. This equates to colouring the dots, knowing that a sequence of acoustic frames corresponding to a same phoneme exemplar cannot freely jump between states. For example, if we imagine a token of the phone \textipa{[p]} that has six acoustic frames \colorbox{gray}{\textbf{123456}}, possible colouring for these frames are \colorbox{gray}{\textbf{{\color{yellow}123}{\color{blue}45}{\color{framboise}6}}} or \colorbox{gray}{\textbf{{\color{yellow}1}{\color{blue}23}{\color{framboise}456}}}, while \colorbox{gray}{\textbf{{\color{framboise}12}{\color{yellow}3}{\color{blue}45}{\color{yellow}6}}} or \colorbox{gray}{\textbf{{\color{yellow}1}{\color{blue}23}{\color{framboise}45}{\color{yellow}6}}} are not. Keep in mind that this must be true for all tokens of \textipa{[p]} encountered during training, as they are all sharing the same acoustic space.   
-\item Find combinations of Gaussian mixtures (the aforementioned GMMs), and the parameters of their respective diagonal Gaussians distributions, that describe the sections of the acoustic space corresponding to each state. This equates to drawing the dashed ellipses around the coloured dots in order to define the more weirdly-shaped coloured areas. Indeed, GMMs are universal approximators of densities when given enough components. The number of Gaussians allocated to each phoneme state depends on the total number of Gaussians made available to the model, and the complexity of the distribution of the frames in the space. After training, after the GMMs have been defined, the AM is able to tell us, for any new acoustic frame, the likelihood that the frame originated from each GMM (i.e., phoneme state).
+\item Find combinations of Gaussian mixtures (the aforementioned GMMs), and the parameters of their respective diagonal Gaussians distributions, that describe the sections of the acoustic space corresponding to each state. This equates to drawing the dashed ellipses around the coloured dots in order to define the more irregularly-shaped coloured areas. Indeed, GMMs are universal approximators of densities when given enough components. The number of Gaussians allocated to each phoneme state depends on the total number of Gaussians made available to the model, and the complexity of the distribution of the frames in the space. After training, after the GMMs have been defined, the AM is able to tell us, for any new acoustic frame, the likelihood that the frame originated from each GMM (i.e., phoneme state).
 \end{enumerate}   
 
 \subsubsection{Why not triphones?}
@@ -243,7 +297,7 @@ Since the validation and test sets contain utterances from the same speakers\foo
 % 18    WSJ  mono       15  test 11.50    NA
 
 %%%%%%%%%%%%%
-% SurfPhono %
+% SurfPhono % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%
 \newpage
 \section{Investigating the role of surface phonotactics} \label{3-surfphono}
@@ -253,7 +307,7 @@ Since the validation and test sets contain utterances from the same speakers\foo
 \subsection{Introduction}
 
 %%% Background
-In the previous section we described an ASR-based implementation of one-step models of nonnative speech perception, as proposed by \cite{dupoux2011, wilson2014}. In these models, nonnative speech perception is a process of reverse inference; the resulting percept is the output of a process where acoustic and phonotactic match are simultaneously optimised. \cite{wilson2014} formalises the reverse inference process as shown in equation \ref{eq_onestep2_ch3}, where $w$ corresponds to candidate percepts and $X$ corresponds to the stimulus acoustics.
+In the previous section we described an ASR-based implementation of one-step models of nonnative speech perception, as proposed by \cite{dupoux2011, wilson2013}. In these models, nonnative speech perception is a process of reverse inference; the resulting percept is the output of a process where acoustic and phonotactic match are simultaneously optimised. \cite{wilson2013} formalises the reverse inference process as shown in equation \ref{eq_onestep2_ch3}, where $w$ corresponds to candidate percepts and $X$ corresponds to the stimulus acoustics.
 
 \begin{equation}
   \widehat{w} = \underset{w}{arg\,max} \left \{ P(X|w) \cdot P(w) \right \}
@@ -264,12 +318,12 @@ Applying the ASR nomenclature, this equation can be paraphrased as follows: in o
 While the optimisation process combines the probabilities given by the AM and LM, the two modules remain independent from one another before their product is computed. As such, it is possible to modify them in order to study their respective influences in the perception process.   
 
 %%% Research question
-As a continuation of our work on exemplar models in sections \ref{2-parlato} and \ref{2-parlato-dur}, a question that first arises is whether the output of the LM, namely the influence of phonotactics, is at all needed to explain the phenomenon of vowel epenthesis. We found in chapter \ref{chapter02} that acoustic information, such as vowel coarticulation, was essential in determining epenthetic vowel quality. One could hypothesize that the insertion of a vowel (as opposed to no insertion) is determined by how the acoustic cues are interpreted.
+As a continuation of our work on exemplar models in sections \ref{2-parlato} and \ref{2-parlato-dur}, a question that first arises is whether the output of the LM, namely the influence of phonotactics, is at all needed to explain the phenomenon of vowel epenthesis. We found in chapter 2 that acoustic information, such as vowel coarticulation, was essential in determining epenthetic vowel quality. One could hypothesize that the insertion of a vowel (as opposed to no insertion) is determined by how the acoustic cues are interpreted.
 
-For instance, Japanese speakers can sometimes produce devoiced high vowels as a fricative vowel\footnote{Also referred to as a syllabic fricative} when they are preceded by a fricative consonant. In other words, the devoiced vowel becomes a prolongation of the fricative consonant, yet keeping articulatory and spectral information corresponding to the intended vowel \cite{matsui2017}\footnote{We thank Yasuyo Minagawa and Shigeto Kawahara for this comment.}. One could thus hypothesize that a fricative vowel is an acceptable allophone (i.e., model or exemplar) of vowels \textipa{/i/} or \textipa{/u/} in Japanese, while it is not in another language such as English, where the signal will be interpreted as a fricative instead. In this case, the difference in the interpretation of the same acoustic information could lead to epenthesis in Japanese but not in English. In a similar fashion, English listeners may interpret releases of stop consonants as reduced vowels, resulting in increased rates of epenthesis with increased release duration \cite{wilson2014}. 
+For instance, Japanese speakers can sometimes produce devoiced high vowels as a fricative vowel\footnote{Also referred to as a syllabic fricative.} when they are preceded by a fricative consonant. In other words, the devoiced vowel becomes a prolongation of the fricative consonant, yet keeping articulatory and spectral information corresponding to the intended vowel \cite{matsui2017}\footnote{We thank Yasuyo Minagawa and Shigeto Kawahara for this comment.}. One could thus hypothesize that a fricative vowel is an acceptable allophone (i.e., model or exemplar) of vowels \textipa{/i/} or \textipa{/u/} in Japanese, while it is not in another language such as English, where the signal will be interpreted as a fricative instead. In this case, the difference in the interpretation of the same acoustic information could lead to epenthesis in Japanese but not in English. In a similar fashion, English listeners may interpret releases of stop consonants as reduced vowels, resulting in increased rates of epenthesis with increased release duration \cite{wilson2013}, and Korean listeners may experience more epenthesis following consonants that give rise to salient noise \cite{dejong2012}. 
 
 However, are epenthetic repairs not due to cases of phonotactic illegality in the first place? Not necessarily. Indeed, Japanese listeners have been shown to perceive epenthetic vowels after certain acoustic realisations of coda \textipa{[n]}, even though this syllabic structure is phonotactically legal in Japanese. In loanword data, word-final \textipa{[n]} is adapted differently according to the language of origin of the word; French \textipa{/n/} may result in vowel epenthesis, becoming \textipa{[n:u]} or \textipa{[nu]} (e.g., \textit{Cannes} \textipa{/kan/} $\rightarrow$ \textipa{/kan:u/}) while English \textipa{[n]} is kept as a nasal coda consonant (e.g., \textit{pen} adapted as \textipa{/pen/}). This assymetry was observed in online perception with nonwords (therefore excluding the influence of orthography) and can be explained by the presence of a strong vocalic release in French \textipa{[n]} but not English \textipa{[n]} \cite{peperkamp2008}.
-Also, an identical segmental structure might ellicit different amounts of epenthesis depending on the stimulus acoustics. An illustration from production is given by the imitation study on English listeners by \cite{wilson2014}. In that study, a cluster such as \textipa{/bn/}, which is phonotactically illegal in English, ellicited lower rates of epenthesis in one item (\textit{bnase}, $33\%$ epenthesis) than in another (\textit{bnapa}, $80\%$ epenthesis). The authors observed a correlation between the variability of certain acoustic cues in the target stimuli and the variability in the rates of epenthesis (and other errors such as prothesis and consonant deletion) in production.
+Also, an identical segmental structure might ellicit different amounts of epenthesis depending on the stimulus acoustics. An illustration from production is given by the imitation study on English listeners by \cite{wilson2013}. In that study, a cluster such as \textipa{/bn/}, which is phonotactically illegal in English, ellicited lower rates of epenthesis in one item (\textit{bnase}, $33\%$ epenthesis) than in another (\textit{bnapa}, $80\%$ epenthesis). The authors observed a correlation between the variability of certain acoustic cues in the target stimuli and the variability in the rates of epenthesis (and other errors such as prothesis and consonant deletion) in production.
 
 %%% What & How
 In this section we investigate the hypothesis stating that acoustic match is sufficient to account for epenthetic patterns in nonnative speech. To do so, in a first step, we compare the performance, relative to human data, of ASR models that share the same AM but differ in the LM used during decoding. Notably, we assess if LMs with basic phonotactic information better approximate human behaviour than a null LM. In a second step, we assess if the best AM-LM combination is capable of mirroring qualitative effects observed in human data.
@@ -583,7 +637,7 @@ Turning to coarticulation effects observed in the behavioural task, we saw in se
 
 \subsection{Discussion}
 % WHAT DID WE DO?
-In this section we investigated the role of surface phonotactics on perceptual vowel epenthesis by Japanese listeners. We used perceptual models based on ASR systems, which are each composed by an acoustic model (AM) and a language model (LM). Following the reverse inference proposal of nonnative speech perception \cite{wilson2014} and using the terminology from \cite{dupoux2011}, the AM determines the acoustic match between the nonnative structure and candidate native percepts, while the LM determines the phonotactic probability of the candidate percepts (i.e., sequence match). During the one-step process of reverse inference, the product of the probabilites given by the AM and LM are optimised, in order to find the optimal candidate percept.
+In this section we investigated the role of surface phonotactics on perceptual vowel epenthesis by Japanese listeners. We used perceptual models based on ASR systems, which are each composed by an acoustic model (AM) and a language model (LM). Following the reverse inference proposal of nonnative speech perception \cite{wilson2013} and using the terminology from \cite{dupoux2011}, the AM determines the acoustic match between the nonnative structure and candidate native percepts, while the LM determines the phonotactic probability of the candidate percepts (i.e., sequence match). During the one-step process of reverse inference, the product of the probabilites given by the AM and LM are optimised, in order to find the optimal candidate percept.
 
 We evaluated the hypothesis stating that the AM was not only necessary, but sufficient, to predict patterns of perceptual vowel epenthesis. 
 This was done by comparing the results of the identification tasks completed by Japanese listeners (cf. sections \ref{2-ahpa} and \ref{2-parlato}) to model results in analogous identification tasks. We built various ASR systems by pairing up a unique AM with different decoding LMs, one of which was a null LM and the others being LMs including basic phonotactic information (unigram/bigram frequency). Did these phonotactic LMs outperform the null LM?
@@ -627,10 +681,10 @@ An alternative way of setting the probabilities would be to, for instance, weigh
 Another possible modification relates to how the LMs dealt with bigrams never seen in the corpus (i.e., nonnative sequences). In order to examine the effect of strict LMs, the probabilities assigned to unseen bigrams was extremely small. This equates to viewing the native phonotactics filter as a binary process (i.e., legal versus illegal structures). It would be possible to find an optimal smoothing parameter (i.e., setting the threshold of the binary filter), or even infer gradient probabilities of the unseen sequences based on natural classes, their ocurrence across intonational phrases (cf \cite{durvasula2016}), etc. It would also be possible to tune the acoustic scale, which determines the weight of the output of the AM with respect to the LM.
 
 It would be important to also assess the validity of using probabilities derived from a corpus, as some patterns of epenthetic response might be more in line with native phonotactic knowledge rather than with frequency counts (e.g., \cite{kabak2007}). An example of how frequency introduced unexpected response patterns is how our non-null models showed higher rates of \textipa{/a/}-epenthesis compared to the null model, simply because this is the most frequent vowel in our Japanese corpus, yet Japanese listeners rarely epenthesized \textipa{[a]}.  
-%% -> Blocks never seen sequences (legal/illegal view as in Peperkamp (2008?), not probabilistic gradient phonotactics (cf Wilson2014, notes on Lentz2011's thesis).
+%% -> Blocks never seen sequences (legal/illegal view as in Peperkamp (2008?), not probabilistic gradient phonotactics (cf Wilson2013, notes on Lentz2011's thesis).
 %% -> Adds frequency bias that may not be adequate (e.g., increase in /a/ epenthesis because most frequent vowel)
 
-An obvious next step would be to test the language models used in \cite{wilson2014}, where the authors found that most LMs performed better than the null LM at predicting data from a production task. In that work, the favoured LMs were the ones where phonotactic legality was a gradient process, where phones were represented with featural descriptions (e.g. {\color{red}[CITE Albright 2009]}) or where weights given to grammatical constraints were derived from the principle of maximum entropy (e.g. {\color{red}[CITE BoersmaPater2007; HayesWilson2008]}). In parallel, we can also explore whether our ASR system's acoustic model (accompanied by a null language model) is able to explain effects attributed to abstract grammatical processes. We will experiment this in the next section. 
+An obvious next step would be to test the language models used in \cite{wilson2013}, where the authors found that most LMs performed better than the null LM at predicting data from a production task. In that work, the favoured LMs were the ones where phonotactic legality was a gradient process, where phones were represented with featural descriptions (e.g. {\color{red}[CITE Albright 2009]}) or where weights given to grammatical constraints were derived from the principle of maximum entropy (e.g. {\color{red}[CITE BoersmaPater2007; HayesWilson2008]}). In parallel, we can also explore whether our ASR system's acoustic model (accompanied by a null language model) is able to explain effects attributed to abstract grammatical processes. We will experiment this in the next section. 
 %% Due to task?
 % What would happen in transcription task? (Using non-constrained LM for decoding)
 
@@ -638,19 +692,6 @@ An obvious next step would be to test the language models used in \cite{wilson20
 %%% BRAIN DUMP %%%
 
 % When only looking at epenthetic vowel quality, not only bigram models affected but even the null model correlation increased.  
-
-%%% Null model isn't really null in that transition probabilities in HMMs capture diphone probabilities already. Ideally, for a truly null model, need to modify topology and equalise all C->V TPs. But not identical to having just P(V|C). %%Emmanuel says this is already the case
-
-%%% How to account for results by:
-% - Durvasula & Kahng (2016): Different rates of epenthesis for [km] and [gm], the latter being legal across IP boundaries. Increased voicing => increased epenthesis, even when splicing out consonantal release. 
-% - Kabak & Idsardi (2007): Better AX performance for clusters with legal coda consonant, even if cluster was illegal.
-% ==> Acoustic productions in certain clusters are more acceptable as allophones of syll/IP final legal Cs than the counterpart for non-legal Cs?
-% Role of markedness (cf Berent 2007)? 
-%%% - Sonority scale has acoustic basis (Yun's thesis)
-%%% - Articulatory basis? More marked structures impose more constraints on the resulting acoustics, making them less likely to ressemble exemplars of the same phoneme from less marked structure?
-%%% Test through splicing experiments? (e.g. lbif with another l). But need to be careful with acoustics...
-
-
 
 %%%%%%%%%%%%
 % k-epenth %
@@ -690,7 +731,7 @@ For instance, previous work has highlighted the fact that palatalized consonants
 
 {\color{red}[TODO on Saturday]: Add paragraph about Durvasula2015 and phonological alternations in Korean.}
 
-Given how we found front vowel coarticulation to be particularly salient at triggering \textipa{/i/}-epenthesis in both humans and our ASR models (cf. Figure \ref{fig:m-ahpa_test_heat}), we could hypothesize that similar acoustic cues may be found in palatal consonants. Can our AM-only ASR model reproduce the palatal effects observed by \cite{durvasula2015} without explicit knowledge about phonological alternations? We will study this in Experiment 1.   
+Given how we found front vowel coarticulation to be particularly salient at triggering \textipa{/i/}-epenthesis in both humans and our ASR models (cf. Figure \ref{fig:m-ahpa_test_heat}), we could hypothesize that similar acoustic cues may be found in palatal consonants. Similarly, \cite{dejong2012} observed variation in rates of epenthesis by Korean listeners that could be explained in part by the acoustic salience of the consonants in the clusters. Therefore, can our AM-only ASR model reproduce the palatal effects observed by \cite{durvasula2015}, without explicit knowledge about phonological alternations? We will study this in Experiment 1.   
 
 \subsubsection{Variations in epenthesis due to syllabic structure}
 % Monahan, too? Berent is probably revelant as well?
@@ -940,14 +981,7 @@ We simulated the experiment above using ASR systems with two types of acoustic m
 We found that, globally, the WPD-F model better approximated human results. However, it appears that neither model is able to reproduce the lower accuracy for word-medial than for word-initial $C_{1}($\textipa{[@]}$)C_{2}$ items.
   
 \subsection{Discussion}
-%%%%%%%%%%%%%%%%%
-% Section goals %
-%%%%%%%%%%%%%%%%%
 In this section we investigated whether some epenthetic effects attributed to phonological rules/grammars could be explained by the processing of the acoustic signal by an acoustic model (AM) agnostic to such abstract rules/grammars. In particular, as a perceptual model, we used ASR systems for which the AM in question was accompanied by a language model (LM) that only contrained the set of possible percepts, without adding any phonotactic information to the decoding process. The models' patterns of item decoding were compared to results from psylinguistics experiments in order to tackle three main questions, as follows: (1) cross-linguistic differences in epenthesis, (2) variations of epenthetic vowel quality due to neighbouring consonants, and (3) variations in epenthesis due to syllabic structure.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Summary of the main results %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%% 1 %%%%%
 \subsubsection{Cross-linguistic differences in epenthesis}
@@ -964,9 +998,7 @@ Therefore, we provide evidence supporting the hypothesis that cross-linguistic d
 \item The phonetic transcriptions in the WSJ corpus were automatically derived from a lexicon of English words. In order to ensure higher fidelity between the transcriptions and the acoustics, it would have been better for it to be manually transcribed, possibly by trained linguists, as it was the case for the Korean corpus. Unfortunately, this is very costly in terms of time and human resources.
 
   \item The corpus of Korean was much smaller than the English corpus. This was the case when looking both at the length of the recordings and the number of different speakers. It is therefore possible that the Korean AM is noisier and less mature than its English counterpart. Carefully match the corpora sizes remains a possibility in future work.   
-  
 \end{itemize}
-
 
 %%%%% 2 %%%%%
 \subsubsection{Variations of epenthetic vowel quality due to neighbouring consonants}
@@ -987,14 +1019,15 @@ We tested the hypothesis that acoustics tuned by positional differences in the n
 
 We tested the perception of an array of Serbian clusters by American English participants and American English ASR models. The asymmetry in rates of epenthesis between word-initial and word-medial clusters was apparent in human responses, but not in model responses.
 
-An interesting remark is that, for many clusters that are phonotactically illegal in onset position, English listeners reported low rates of epenthesis in word-initial position, comparable to those of legal clusters. When ordering word-initial clusters by increasing rates of epenthesis, we saw that this order was grossly mimicked by the acoustic models. This is in line with the hypothesis advanced by \cite{wilson2014}, stating the influence of phonetic properties on cluster misproductions. Whether participants in our task were able to perceive word-initially illegal clusters as accurately as rates of epenthesis may suggest requires further investigation. Indeed, vowel epenthesis may have been blocked by other misperception processes such as deletion/cluster simplification (e.g., \textipa{/tkapa/} $\rightarrow$ \textipa{/kapa/}) or perceptual adaptation (e.g., \textipa{/tl/} $\rightarrow$ \textipa{/kl/}, as already attested by \cite{halle2007}).  
+An interesting remark is that, for many clusters that are phonotactically illegal in onset position, English listeners reported low rates of epenthesis in word-initial position, comparable to those of legal clusters. When ordering word-initial clusters by increasing rates of epenthesis, we saw that this order was grossly mimicked by the acoustic models. This is in line with the hypothesis advanced by \cite{wilson2013, wilson2014}, stating the influence of phonetic properties on cluster misproductions and the possible preservation of phonotactically illegal representations in perceptual and productive processes. Whether participants in our task were able to perceive word-initially illegal clusters as accurately as rates of epenthesis may suggest requires further investigation. Indeed, vowel epenthesis may have been blocked by other misperception processes such as deletion/cluster simplification (e.g., \textipa{/tkapa/} $\rightarrow$ \textipa{/kapa/}) or perceptual adaptation (e.g., \textipa{/tl/} $\rightarrow$ \textipa{/kl/}, as already attested by \cite{halle2007}).  
 
-%%%%%%%%%%%%%%
-% Conclusion %
-%%%%%%%%%%%%%%
 \subsubsection{Conclusion}
 In conclusion, our purely acoustic ASR models were able to mirror cross-linguistic effects linked to rates of vowel epenthesis in nonnative clusters. However, they were not able to capture variations in epenthetic vowel quality due to neighbouring consonants (i.e., \textipa{/i/}-epenthesis after palatal consonants in Korean), or to capture asymmetries in how a same nonnative cluster might ellicit more epenthesis in one syllabic configuration and not in another. This suggests that, at least for our currentmodels, more abstract phonological information may be need to be injected to the models in order to be able to account for all of the effects studied in this section.  
 
+
+%%%%%%%%%%%%%%%%%%%%%%%
+% CHAPTER CONCLUSIONS %
+%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \section{{\color{red}Chapter conclusions}}
 %%%%%%%%%%%%%%%

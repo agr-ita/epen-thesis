@@ -28,33 +28,36 @@
 \BOOKMARK [2][-]{subsection.2.4.4}{Discussion}{section.2.4}% 28
 \BOOKMARK [1][-]{section.2.5}{Chapter conclusions}{chapter.2}% 29
 \BOOKMARK [0][-]{chapter.3}{Modelling speech perception with ASR systems}{}% 30
-\BOOKMARK [1][-]{section.3.1}{redIntroduction}{chapter.3}% 31
-\BOOKMARK [1][-]{section.3.2}{Anatomy of our HMM-based speech recogniser}{chapter.3}% 32
-\BOOKMARK [2][-]{subsection.3.2.1}{Corpora}{section.3.2}% 33
-\BOOKMARK [2][-]{subsection.3.2.2}{Features}{section.3.2}% 34
-\BOOKMARK [2][-]{subsection.3.2.3}{Acoustic models}{section.3.2}% 35
-\BOOKMARK [2][-]{subsection.3.2.4}{Lexicon \046 language models}{section.3.2}% 36
-\BOOKMARK [2][-]{subsection.3.2.5}{Decoding}{section.3.2}% 37
-\BOOKMARK [2][-]{subsection.3.2.6}{Scoring: Assessing native performance}{section.3.2}% 38
-\BOOKMARK [1][-]{section.3.3}{Investigating the role of surface phonotactics}{chapter.3}% 39
-\BOOKMARK [2][-]{subsection.3.3.1}{Introduction}{section.3.3}% 40
-\BOOKMARK [2][-]{subsection.3.3.2}{Experiment 1}{section.3.3}% 41
-\BOOKMARK [2][-]{subsection.3.3.3}{Experiment 2}{section.3.3}% 42
-\BOOKMARK [2][-]{subsection.3.3.4}{Discussion}{section.3.3}% 43
-\BOOKMARK [1][-]{section.3.4}{Medley of epenthetic variations: \040Due to phonological processes or embedded in the phonetics?}{chapter.3}% 44
-\BOOKMARK [2][-]{subsection.3.4.1}{Introduction}{section.3.4}% 45
-\BOOKMARK [2][-]{subsection.3.4.2}{Experiment 1: Variations due to native phonology}{section.3.4}% 46
-\BOOKMARK [2][-]{subsection.3.4.3}{Experiment 2: Variations due to syllabic structure}{section.3.4}% 47
-\BOOKMARK [2][-]{subsection.3.4.4}{Discussion}{section.3.4}% 48
-\BOOKMARK [1][-]{section.3.5}{redChapter conclusions}{chapter.3}% 49
-\BOOKMARK [0][-]{chapter.4}{redGeneral Discussion}{}% 50
-\BOOKMARK [1][-]{section.4.1}{One-step vs. two-step}{chapter.4}% 51
-\BOOKMARK [1][-]{section.4.2}{Importance of modelling}{chapter.4}% 52
-\BOOKMARK [1][-]{section.4.3}{Future avenues}{chapter.4}% 53
-\BOOKMARK [0][-]{appendix.A}{Example of research based on computational modelling}{}% 54
-\BOOKMARK [1][-]{section.A.1}{Are words easier to learn from infant- than adult-directed speech? \040A quantitative corpus-based investigation}{appendix.A}% 55
-\BOOKMARK [2][-]{subsection.A.1.1}{Introduction}{section.A.1}% 56
-\BOOKMARK [2][-]{subsection.A.1.2}{Experiment 1: Acoustic distribution of word tokens}{section.A.1}% 57
-\BOOKMARK [2][-]{subsection.A.1.3}{Experiment 2: Phonological density}{section.A.1}% 58
-\BOOKMARK [2][-]{subsection.A.1.4}{Experiment 3: Net discriminability}{section.A.1}% 59
-\BOOKMARK [2][-]{subsection.A.1.5}{General discussion}{section.A.1}% 60
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 31
+\BOOKMARK [2][-]{subsection.3.1.1}{Implementation of a one-step model}{section.3.1}% 32
+\BOOKMARK [2][-]{subsection.3.1.2}{Is the acoustic match sufficient?}{section.3.1}% 33
+\BOOKMARK [2][-]{subsection.3.1.3}{Chapter preview}{section.3.1}% 34
+\BOOKMARK [1][-]{section.3.2}{Anatomy of a HMM-based speech recogniser}{chapter.3}% 35
+\BOOKMARK [2][-]{subsection.3.2.1}{Corpora}{section.3.2}% 36
+\BOOKMARK [2][-]{subsection.3.2.2}{Features}{section.3.2}% 37
+\BOOKMARK [2][-]{subsection.3.2.3}{Acoustic models}{section.3.2}% 38
+\BOOKMARK [2][-]{subsection.3.2.4}{Lexicon \046 language models}{section.3.2}% 39
+\BOOKMARK [2][-]{subsection.3.2.5}{Decoding}{section.3.2}% 40
+\BOOKMARK [2][-]{subsection.3.2.6}{Scoring: Assessing native performance}{section.3.2}% 41
+\BOOKMARK [1][-]{section.3.3}{Investigating the role of surface phonotactics}{chapter.3}% 42
+\BOOKMARK [2][-]{subsection.3.3.1}{Introduction}{section.3.3}% 43
+\BOOKMARK [2][-]{subsection.3.3.2}{Experiment 1}{section.3.3}% 44
+\BOOKMARK [2][-]{subsection.3.3.3}{Experiment 2}{section.3.3}% 45
+\BOOKMARK [2][-]{subsection.3.3.4}{Discussion}{section.3.3}% 46
+\BOOKMARK [1][-]{section.3.4}{Medley of epenthetic variations: \040Due to phonological processes or embedded in the phonetics?}{chapter.3}% 47
+\BOOKMARK [2][-]{subsection.3.4.1}{Introduction}{section.3.4}% 48
+\BOOKMARK [2][-]{subsection.3.4.2}{Experiment 1: Variations due to native phonology}{section.3.4}% 49
+\BOOKMARK [2][-]{subsection.3.4.3}{Experiment 2: Variations due to syllabic structure}{section.3.4}% 50
+\BOOKMARK [2][-]{subsection.3.4.4}{Discussion}{section.3.4}% 51
+\BOOKMARK [1][-]{section.3.5}{redChapter conclusions}{chapter.3}% 52
+\BOOKMARK [0][-]{chapter.4}{redGeneral Discussion}{}% 53
+\BOOKMARK [1][-]{section.4.1}{One-step vs. two-step}{chapter.4}% 54
+\BOOKMARK [1][-]{section.4.2}{Importance of modelling}{chapter.4}% 55
+\BOOKMARK [1][-]{section.4.3}{Future avenues}{chapter.4}% 56
+\BOOKMARK [0][-]{appendix.A}{Example of research based on computational modelling}{}% 57
+\BOOKMARK [1][-]{section.A.1}{Are words easier to learn from infant- than adult-directed speech? \040A quantitative corpus-based investigation}{appendix.A}% 58
+\BOOKMARK [2][-]{subsection.A.1.1}{Introduction}{section.A.1}% 59
+\BOOKMARK [2][-]{subsection.A.1.2}{Experiment 1: Acoustic distribution of word tokens}{section.A.1}% 60
+\BOOKMARK [2][-]{subsection.A.1.3}{Experiment 2: Phonological density}{section.A.1}% 61
+\BOOKMARK [2][-]{subsection.A.1.4}{Experiment 3: Net discriminability}{section.A.1}% 62
+\BOOKMARK [2][-]{subsection.A.1.5}{General discussion}{section.A.1}% 63

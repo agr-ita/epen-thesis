@@ -322,6 +322,13 @@ Sebasti{\'a}n-Gall{\'e}s, N. (2005).
 \newblock Cross-language speech perception.
 \newblock {\em The handbook of speech perception}, pages 546--566.
 
+\bibitem[Shin and Iverson, 2011]{shin2011}
+Shin, D.-J. and Iverson, P. (2011).
+\newblock Individual differences in vowel epenthesis among korean learners of
+  english.
+\newblock In {\em (Proceedings) International Congress of Phonetic Sciences},
+  volume~6, pages 1822--1825.
+
 \bibitem[Steriade, 2001]{steriade2001}
 Steriade, D. (2001).
 \newblock The phonology of perceptibility effects: the p-map and its
@@ -355,5 +362,11 @@ Yun, W., Yoon, K., Park, S., Lee, J., Cho, S., Kang, D., Byun, K., Hahn, H.,
 \newblock The korean corpus of spontaneous speech.
 \newblock {\em Daegu: Industry-Academic Cooperation Foundation, Keimyung
   University (Distributor)}.
+
+\bibitem[Zhao and Berent, 2018]{zhao2018}
+Zhao, X. and Berent, I. (2018).
+\newblock The basis of the syllable hierarchy: Articulatory pressures or
+  universal phonological constraints?
+\newblock {\em Journal of psycholinguistic research}, 47(1):29--64.
 
 \end{thebibliography}
