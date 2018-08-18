@@ -161,6 +161,13 @@ Hall{\'e}, P., Segu{\'\i}, J., Dom{\'\i}nguez, A., and Cuetos, F. (2014).
   de Publicaciones, Facultad de Filosofía y Letras, Universidad de Buenos
   Aires.
 
+\bibitem[Hall{\'e} and Best, 2007]{halle2007}
+Hall{\'e}, P.~A. and Best, C.~T. (2007).
+\newblock Dental-to-velar perceptual assimilation: A cross-linguistic study of
+  the perception of dental stop+/l/clusters.
+\newblock {\em The Journal of the Acoustical Society of America},
+  121(5):2899--2914.
+
 \bibitem[Han, 1962]{han1962}
 Han, M.~S. (1962).
 \newblock Unvoicing of vowels in {J}apanese.
@@ -232,7 +239,7 @@ Nosofsky, R.~M. (1992).
 
 \bibitem[Panayotov et~al., 2015]{panayotov2015}
 Panayotov, V., Chen, G., Povey, D., and Khudanpur, S. (2015).
-\newblock Librispeech: an asr corpus based on public domain audio books.
+\newblock Librispeech: an {ASR} corpus based on public domain audio books.
 \newblock In {\em Acoustics, Speech and Signal Processing (ICASSP), 2015 IEEE
   International Conference on}, pages 5206--5210. IEEE.
 
@@ -253,6 +260,13 @@ Peperkamp, S., Vendelin, I., and Nakamura, K. (2008).
 \newblock On the perceptual origin of loanword adaptations: experimental
   evidence from japanese.
 \newblock {\em Phonology}, 25(1):129--164.
+
+\bibitem[Pitt et~al., 2007]{pitt2007}
+Pitt, M.~A., Dilley, L., Johnson, K., Kiesling, S., Raymond, W., Hume, E., and
+  Fosler-Lussier, E. (2007).
+\newblock Buckeye corpus of conversational speech (2nd
+  release)[www.buckeyecorpus.osu. edu] columbus, oh: Department of psychology.
+\newblock {\em Ohio State University (Distributor)}.
 
 \bibitem[Plummer et~al., 2006]{R-coda}
 Plummer, M., Best, N., Cowles, K., and Vines, K. (2006).
@@ -295,6 +309,13 @@ Saraclar, M. (2001).
 Schatz, T. (2016).
 \newblock {\em {ABX}-{Discriminability} {Measures} and {Applications}}.
 \newblock PhD thesis, Ecole Normale Supérieure, Paris.
+
+\bibitem[Schultz, 2002]{schultz2002}
+Schultz, T. (2002).
+\newblock Globalphone: a multilingual speech and text database developed at
+  karlsruhe university.
+\newblock In {\em Seventh International Conference on Spoken Language
+  Processing}.
 
 \bibitem[Sebasti{\'a}n-Gall{\'e}s, 2005]{sebastian2005}
 Sebasti{\'a}n-Gall{\'e}s, N. (2005).

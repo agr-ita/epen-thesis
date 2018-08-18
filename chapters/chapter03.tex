@@ -143,7 +143,7 @@ We therefore obtain 13 MFCCs that summarise the information at each frame of aud
 To these 16 static features we add their respective dynamic features ($\Delta$ and $\Delta^2$) that describe the evolution of the coefficient values over time. 
 Coefficient values are then standardised using Cepstral Mean Variance Normalisation (CMVN); for each speaker the distribution of each coefficient's values has a mean value of zero and a variance of one. 
 
-\subsection{Acoustic model}
+\subsection{Acoustic models}
 
 Now that we have extracted the acoustic features for the labelled utterances in our corpus, we are able to train the acoustic model (AM). Recall that the AM gives the likelihood $P(X|w)$, which corresponds to the probability of the acoustics given the sequence of words $w$.
 In order to simplify things, let's not view an utterance as a sequence of words which are sequences of phonemes themselves, but directly as a sequence of phonemes. Then, we consider the probability of the acoustics $X$ given the sequence of phonemes $W$.
@@ -659,7 +659,7 @@ An obvious next step would be to test the language models used in \cite{wilson20
 % k-epenth %
 %%%%%%%%%%%%
 \newpage
-\section{{\color{red}Medley of epenthetic variations: Phonological processes or embedded in the phonetics?}} \label{3-acmatch}
+\section{{\color{red}Medley of epenthetic variations: \\ Due to phonological processes or embedded in the phonetics?}} \label{3-acmatch}
 
 \subsection{Introduction}
 %% Conclusions from previous section
@@ -675,20 +675,19 @@ We will study three effects at least partially attributed to abstract grammars: 
 There is often a control group in experiments probing epenthesis, in most cases constituted of native listeners of the language used to create the experimental stimuli. This allows to ensure that observed effects of epenthesis are due to the difference in linguistic experience, and not due to idiosyncrasies in the items used in the experiment. 
 Both the control group and the test group are processing the same acoustic input, yet only the test group experiences epenthesis. It has been argued that this is evidence against the hypothesis that phonetic properties drive perceptual distortions (e.g., \cite{berent2007}).
 
-However, the acquisition of native phonetic categories has been described as a process of partitioning the phonetic space in an optimal way, respective to the phonemic needs of the native language \cite{kuhl1995, best1995}. Phonemic misperceptions can then result from mapping the nonnative input to a native category that is not congruent with the original nonnative, or that lacks finer grained separations resulting in additional phonemic contrasts.    
+However, the acquisition of native phonetic categories has been described as a process of partitioning the phonetic space in an optimal way, respective to the phonemic needs of the native language \cite{kuhl1995, best1995}. Phonemic misperceptions can then result from mapping the nonnative input to a native category that is not congruent with the original, intended nonnative category, or that lacks finer grained separations that specify additional phonemic contrasts.    
 Can we explain cross-linguistic differences in perceptual vowel epenthesis within a similar framework? Each language has its partition of the acoustic space specified (i.e., the acoustic model in our ASR systems). The differences between languages at the level of the mapping between their respective AMs and the stimulus acoustics may then trigger vowel epenthesis. We will investigate this possibility in Experiment 1. 
  
 \subsubsection{Variations of epenthetic vowel quality due to neighbouring consonants} 
 %  cf Mattingley, maybe also Monahan
 %  Rose
-Within a given language, most episodes of epenthesis involve a ``default'' epenthetic vowel (e.g., \textipa{[W]} in Japanese, \textipa{[1]} in Korean, \textipa{[@]} in English). Aside from variations in epenthetic vowel quality due to coarticulation \cite{dupoux2011, guekozIS17, guekozJASA17}, variations have also been triggered by neighbouring consonants \cite{mattingley2015, durvasula2015, durvasula2018}.
+Within a given language, most episodes of epenthesis involve a ``default'' epenthetic vowel (e.g., \textipa{[W]} in Japanese, \textipa{[1]} in Korean, \textipa{[@]} in English and Mandarin Chinese). Aside from variations in epenthetic vowel quality due to coarticulation \cite{dupoux2011, guekozIS17, guekozJASA17}, variations have also been triggered by changes in neighbouring consonants \cite{mattingley2015, durvasula2015, durvasula2018}.
 
 For instance, previous work has highlighted the fact that palatalized consonants may increase the rate of \textipa{/i/}-epenthesis in languages with a different default epenthetic vowel, as follows:
 
 \begin{itemize}
-\item For Japanese listeners tested by \cite{mattingley2015}, the voiced alveolo-palatal affricate \textipa{/\t{d\textctz}/} triggered \textipa{[i]}-epenthesis and default \textipa{[W]}-epenthesis $92\%$ and $6\%$ of the time, respectively.
-\item For Mandarin listeners tested
-  by \cite{durvasula2018}, the aspirated alveo-palatal affricate \textipa{/\t{tC}\super h/} ellicited more \textipa{[i]}-epenthesis than other vowels (including the ``default'' \textipa{[@]}).
+\item For Japanese listeners tested by \cite{mattingley2015}, the voiced alveolo-palatal affricate \textipa{/\t{d\textctz}/} mostly triggered \textipa{[i]}-epenthesis ($92\%$), with very few cases of default \textipa{[W]}-epenthesis ($6\%$).
+\item For Mandarin listeners tested by \cite{durvasula2018}, the aspirated alveolo-palatal affricate \textipa{/\t{tC}\super h/} ellicited more \textipa{[i]}-epenthesis than other vowels (including the ``default'' \textipa{[@]}).
   \item For Korean speakers tested by \cite{durvasula2015}, palatal consonants \textipa{/c\super h/} and \textipa{/S/} mostly ellicited \textipa{[i]}-epenthesis, with very low rates of default \textipa{[1]}-epenthesis.  
 \end{itemize}
 
@@ -697,19 +696,17 @@ For instance, previous work has highlighted the fact that palatalized consonants
 Given how we found front vowel coarticulation to be particularly salient at triggering \textipa{/i/}-epenthesis in both humans and our ASR models (cf. Figure \ref{fig:m-ahpa_test_heat}), we could hypothesize that similar acoustic cues may be found in palatal consonants. Can our AM-only ASR model reproduce the palatal effects observed by \cite{durvasula2015} without explicit knowledge about phonological alternations? We will study this in Experiment 1.   
 
 \subsubsection{Variations in epenthesis due to syllabic structure}
-% Church1987: "the author argues that allophony is not necessarily detrimental for speech recognition. Instead, subtle phonetic cues can help us find syllable boundaries (e.g. aspiration only occurs syllable-initially). "
-% Monahan, too
-% Berent is probably revelant as well
+% Monahan, too? Berent is probably revelant as well?
 There has been evidence of syllabic structure being taken into consideration by the perceptual system when listening to nonnative speech. For instance, \cite{kabak2007} tested ... {\color{red}[TODO on Saturday]: Quickly describe Kabak\&Idsardi2007 experiment and results}. 
 
 A theory of word recognition, posited by \cite{church1987}, hypothesized that low level cues could be used in a parsing step, allowing a rough segmentation of speech in lexical chunks that could then be looked up in a lexicon. Some of the low level cues suggested by the author were acoustic cues: allophonics, suprasegmental cues (duration, pitch, intensity, etc). Concerning allophonics, consider the case of an English listener parsing a sentence with unknown words. The presence of aspiration in a stop consonant may be used to find syllable boundaries, since in English it only occurs syllable-initially. Therefore, looking at it the other way around, syllable boundaries have an influence on the acoustic realisation of phones. 
 
-We could then hypothesize that the acoustic model in the perceptual system is aware of certain allophonic variations, instead of just having a single model per phoneme. In this case, phonotactics have an influence on the acoustic model while it is established, helping cluster phones into positionally-relevant groups, for instance. During perception, acoustic match may be considered between the acoustic input and the independent allophones of all phonemes.
+We could then hypothesize that the acoustic model in the perceptual system is aware of certain allophonic variations, instead of just having a single model per phoneme. In this case, phonotactics have an influence on the acoustic model while it is established, helping the clustering of phones into positionally-relevant groups, for instance. During perception, acoustic match may be considered between the acoustic input and the independent allophones of all phonemes.
 At the time of perception, a same nonnative phoneme may contain different acoustic cues in different realisations, depending on its position on the word (akin to the aspiration example in syllable-initial stops in English). The acoustics of a Serbian cluster such as \textipa{/gm/} produced in syllable-initial position may be more suggestive of acoustics in English \textipa{[g@m]}, while the word-medial realisations of Serbian \textipa{/gm/} might actually better approximate English \textipa{[gm]} acoustically.
 
 We expect English listeners to be able to correctly perceive certain Serbian clusters such as \textipa{/gm/} word-medially but not word-initially, as they are phonotactically illegal in this latter position. Can our AM-only ASR system reproduce this effect? We will investigate this in Experiment 2. 
 
-\subsection{{\color{red}Experiment 1: Variations due to native phonological rules/grammar}}
+\subsection{Experiment 1: Variations due to native phonology}
 \small{\textit{{\color{red}ADD ACKNOWLEDGEMENTS EMMANUEL. DURVASULA \& KAHNG (thank for recordings), RORY \& JEFF (thank for KSPAN)}}}
 
 In this experiment, we investigate if our ASR models are able to reproduce qualitative effects observed in previous work by \cite{durvasula2015}. More specifically, we trained ASR models using Korean and English data to model the perception of consonant clusters by Korean and American English listeners, respectively. The American English listeners, who served as the control population, did not experience vowel epenthesis, unlike their Korean counterparts. Additionally, the authors observed that Korean listeners epenthesized \textipa{/i/} more often when the first consonant of the cluster was a palatal consonant, at the expense of the default epenthetic vowel \textipa{/1/}\footnote{Following the original article, we use \textipa{[1]} to denote the close back unrounded vowel found in the Korean vowel inventory. However, the notation \textipa{[W]} has also previously been used (e.g., in \cite{kabak2007})}. The authors attributed this to listeners taking into consideration phonological alternations, between alveolar and palatal consonant in front of \textipa{/i/}, when using reverse inference to decode the stimuli. 
@@ -746,7 +743,7 @@ Concerning the language models used during the decoding, in order for the decodi
 \begin{figure}[htb]
     \centering
     \includegraphics[width=0.9\linewidth]{chapter03/k-epenth_G.pdf}
-    \caption{\textit{Constrained language model used to decode stimuli with the English (top) and Korean (bottom) acoustic models. The models here were used to decode items \textipa{/es([i|1])ma/}, as well as \textipa{/eS([i|1])ma/}. This is because there is only one \textipa{/s/} phoneme in Korean. As a consequence, we neutralised \textipa{/s/} and \textipa{/S/} for the English model to use either phoneme in a similar way. However this rarely happened in practice. Nodes in the graph represent states, edges represent transitions between states (here: phonemes). WSJ/KCSS labels are shown on edges, along with their IPA transcriptions. The LMs are null, as they only constrain the possible decoding outputs without assigning higher or lower probabilities to certain edges. The optimal decoding path is therefore only dependent on the acoustic scores.}}
+    \caption{\textit{Constrained language model used to decode stimuli with the English (top) and Korean (bottom) acoustic models. The models here were used to decode items \textipa{/es([i|1])ma/}, as well as \textipa{/eS([i|1])ma/}. This is because there is only one \textipa{/s/} phoneme in Korean. As a consequence, we neutralised \textipa{/s/} and \textipa{/S/} for the English model to use either phoneme in a similar way. However mismatches between the intended consonant and the transcriptions rarely happened in practice. Nodes in the graph represent states, edges represent transitions between states (here: phonemes). WSJ/KCSS labels are shown on edges, along with their IPA transcriptions. The LMs are null, as they only constrain the possible decoding outputs without assigning higher or lower probabilities to certain edges. The optimal decoding path is therefore only dependent on the acoustic scores.}}
     \label{fig:k-epenth_G}
   \end{figure}
   
@@ -821,9 +818,7 @@ The authors observed higher rates of \textipa{/i/}-epenthesis in palatal allopho
 %%%%%%%%%%%%
 % art2ac-per %
 %%%%%%%%%%%%
-
-\newpage
-\subsection{{\color{red}Experiment 2: Variations due to syllabic structure}}
+\subsection{Experiment 2: Variations due to syllabic structure}
 \small{\textit{{\color{red}ADD ACKNOWLEDGEMENTS EWAN, AMELIA KIMBALL, ANTOINE HEDIER, CLARA DELACOURT, PAUL ANDREY, EMMANUEL, MILICA (thank for recordings)}}}
 
 In this experiment, we introduced basic allophony to the acoustic models of our ASR system, and evaluated whether this modification resulted in a better approximation of human responses in a task probing epenthesis. More specifically, we trained two different acoustic models which differed in whether phones were word-position-dependent (i.e., different HMM-GMMs depending on the position within the word) or not. We trained the models using the WSJ American English corpus, in order to model the perception of phonotactically illegal Serbian clusters by American English listeners. The clusters were either word-initial or word-medial. We expected American English listeners to experience epenthesis less frequently with word-medial clusters, as these clusters were legal across syllable boundaries. We examined whether this was the case and, if so, whether word-position-dependent models better approximated participants' rates of epenthesis than non-word-position-dependent ones.         
@@ -947,34 +942,89 @@ In this experiment we tested the perception of Serbian clusters (and their ``epe
 We simulated the experiment above using ASR systems with two types of acoustic models: a WPD-F model, which groups all acoustics related to one phoneme within a unique phone, and a WPF-T model, which groups acoustics according to whether they originate from a word-initial, word-medial, word-final, or isolated phone.
 We found that, globally, the WPD-F model better approximated human results. However, it appears that neither model is able to reproduce the lower accuracy for word-medial than for word-initial $C_{1}($\textipa{[@]}$)C_{2}$ items.
   
-\subsection{General discussion}
+\subsection{Discussion}
+%%%%%%%%%%%%%%%%%
+% Section goals %
+%%%%%%%%%%%%%%%%%
+In this section we investigated whether some epenthetic effects attributed to phonological rules/grammars could be explained by the processing of the acoustic signal by an acoustic model (AM) agnostic to such abstract rules/grammars. In particular, as a perceptual model, we used ASR systems for which the AM in question was accompanied by a language model (LM) that only contrained the set of possible percepts, without adding any phonotactic information to the decoding process. The models' patterns of item decoding were compared to results from psylinguistics experiments in order to tackle three main questions, as follows: (1) cross-linguistic differences in epenthesis, (2) variations of epenthetic vowel quality due to neighbouring consonants, and (3) variations in epenthesis due to syllabic structure.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Chapter mini-discussion %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Summary of the main results %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%% 1 %%%%%
+\subsubsection{Cross-linguistic differences in epenthesis}
+We tested the hypothesis that cross-linguistic difference in rates of epenthesis might be due not to interference from a higher order native grammar, but due to how the acoustic space is partitioned during the acquisition of the native phonology.
+In order to do so, we compared the rates of epenthesis of an American English-native and a Korean-native ASR systems when decoding stimuli containing consonant clusters that are phonotactically illegal in Korean. Indeed, in the original study by \cite{durvasula2015}, American English listeners almost never experienced epenthesis, while rates of epenthesis were high for Korean listeners.
+
+We found that this asymmetry was also evident in the results from our models, albeit with more nuance: the English model showed low rates of epenthesis but not the near-perfect performance shown by English listeners; the Korean model showed high rates of epenthesis but not as numerically high as Korean listeners did.
+
+Therefore, we provide evidence supporting the hypothesis that cross-linguistic differences in rates of vowel epenthesis may be drive by how the acoustic input is processed and mapped onto a native phonetic inventory. A confound remains in our comparison, however; the corpora used to train the English and Korean models were very different in nature:
+
+\begin{itemize}
+\item English speech was read speech while Korean speech was spontaneous. The next step would be to re-do the same experiment with a corpus of spontaneous American English (e.g., Buckeye corpus \cite{pitt2007}) and a corpus of read Korean speech (e.g., Globalphone Korean corpus \cite{schultz2002}). It then becomes possible to disentangle the roles of speech register and native language on the observed cross-linguistic effect.
+
+\item The phonetic transcriptions in the WSJ corpus were automatically derived from a lexicon of English words. In order to ensure higher fidelity between the transcriptions and the acoustics, it would have been better for it to be manually transcribed, possibly by trained linguists, as it was the case for the Korean corpus. Unfortunately, this is very costly in terms of time and human resources.
+
+  \item The corpus of Korean was much smaller than the English corpus. This was the case when looking both at the length of the recordings and the number of different speakers. It is therefore possible that the Korean AM is noisier and less mature than its English counterpart. Carefully match the corpora sizes remains a possibility in future work.   
+  
+\end{itemize}
+
+
+%%%%% 2 %%%%%
+\subsubsection{Variations of epenthetic vowel quality due to neighbouring consonants}
+Certain variations of epenthetic vowel in Korean have been attributed to a role of phonological alternations during reverse inference \cite{durvasula2015}. Specifically, the authors hypothesized that listeners mentally undo native phonological rules during perception (here: use of the palatal allophone of an alveolar consonant before the vowel \textipa{/i/} $\rightarrow$ a palatal consonant is suggestive of a vowel \textipa{/i/} following it). The behavioural evidence for this was an increase of \textipa{/i/}-epenthesis after palatal consonants, disfavouring default \textipa{/1/}-epenthesis. 
+We tested the hypothesis that this may be due to acoustic cues relative to palatalisation being more suggestive of the acoustics of the vowel \textipa{/i/} than the vowel \textipa{/1/}. In that case, we expected our Korean model to show a similar pattern of results. This was not the case; while the average rate of \textipa{/i/}-epenthesis was numerically higher for palatal than for alveolar consonants, this difference was negligible compared to the magnitude of the difference observed in human listeners.
+
+While data from our models does not support the hypothesis that the effect observed by \cite{durvasula2015} is driven by the acoustic content of the stimuli, there is an alternative hypothesis involving phonology that does not necessarily go as deep as suggesting the retrieval of an underlying representation. Indeed, work on loanword adaptation by \cite{uffmann2006} advanced the influence of neighbouring consonants on variations of epenthetic vowel quality in loanwords in Shona, Samoan, Sranan. For instance, the author observed that labial and front/coronal consonants increased the rates of \textipa{/u/}- and \textipa{/i/}-epenthesis, respectively. They proposed that this was a case of consonantal spreading, where the consonantal features were spread onto the epenthetic vowel. Future work should aim to disentangle various phonology-based explanations.
+
+It is also possible that our task-specific null LMs may have been too restrictive, as they assume that all phonemes (except medial vowels) will be correctly identified by the listeners that it is emulating. We used this type of LM in continuation of the work in the precedent section, however there is no mention of Korean listeners having been shown a partial orthographic transcription of the stimuli during the identification task in \cite{durvasula2015}. As such, there is no guarantee that Korean listeners' perception of consonants in the items is as intended by the authors. It is possible that the choice of epenthetic vowel quality may have been influenced by the consonants imposed to the model. Indeed, a less-than-ideal fit at the level of the $C_{1}$ consonant could cause abnormal boundaries (e.g., suboptimal assignment of acoustic frames to \textipa{[S]} due to the language model imposing that it is \textipa{[s]} instead), meaning that acoustic frames that would have otherwise been interpreted as a given vowel (here, \textipa{[i]}) might be included to a different segment purely by artifact.
+
+Therefore, the next step to have a more comparable task with less assumptions about Korean preception would be to see how the Korean model transcribes the stimuli when given an unconstrained null model. In this scenario, the model finds the optimal combination of phonemes that match the acoustics. However, this may impair the analysis of the results as the model might be able to input transcriptions such as \textipa{[et\super h1t\super hma]}. Does this constitute a case of epenthesis or not? It would be up to the experimenter to prepare for such ambiguous transcriptions. An intermediate solution might be to construct a semi-constrained LM, where the number of phonemes are set, but not their identity. 
+
+%%%%% 3 %%%%%
+\subsubsection{Variations in epenthesis due to syllabic structure}
+In English, certain consonantal clusters are legal in word-medial position while they are illegal in word-initial position. This is because in the former situation it is often possible to parser the two consonants as part of different adjacent syllables, while in the latter case, the only possibility is for the cluster to be a complex syllable onset. In other words, phonotactic legality of a consonant cluster is not absolute and the exact environments of phonotatic illegality need to be defined. In this case, the clusters studied in this section were phonotactically illegal as a syllable onset.
+
+We tested the hypothesis that acoustics tuned by positional differences in the nonnative language might be interpreted differently by the native listener, resulting in clusters being misperceived in certain positions only. For the case of clusters illegal as onset in English, which are legal in Serbian, this would equate to the acoustic realisations of a given cluster being different according to syllabification, for instance. Then, English listeners might epenthesize vowels more readily when the cluster is a complex onset in Serbian due to a poorer acoustic match to the exemplars of the cluster in English relative to epenthesized alternatives, while the opposite may be true when the acoustic realisation corresponds to a word-medial cluster in Serbian.
+
+We tested the perception of an array of Serbian clusters by American English participants and American English ASR models. The asymmetry in rates of epenthesis between word-initial and word-medial clusters was apparent in human responses, but not in model responses.
+
+An interesting remark is that, for many clusters that are phonotactically illegal in onset position, English listeners reported low rates of epenthesis in word-initial position, comparable to those of legal clusters. When ordering word-initial clusters by increasing rates of epenthesis, we saw that this order was grossly mimicked by the acoustic models. This is in line with the hypothesis advanced by \cite{wilson2014}, stating the influence of phonetic properties on cluster misproductions. Whether participants in our task were able to perceive word-initially illegal clusters as accurately as rates of epenthesis may suggest requires further investigation. Indeed, vowel epenthesis may have been blocked by other misperception processes such as deletion/cluster simplification (e.g., \textipa{/tkapa/} $\rightarrow$ \textipa{/kapa/}) or perceptual adaptation (e.g., \textipa{/tl/} $\rightarrow$ \textipa{/kl/}, as already attested by \cite{halle2007}).  
+
+%%%%%%%%%%%%%%
+% Conclusion %
+%%%%%%%%%%%%%%
+\subsubsection{Conclusion}
+In conclusion, our purely acoustic ASR models were able to mirror cross-linguistic effects linked to rates of vowel epenthesis in nonnative clusters. However, they were not able to capture variations in epenthetic vowel quality due to neighbouring consonants (i.e., \textipa{/i/}-epenthesis after palatal consonants in Korean), or to capture asymmetries in how a same nonnative cluster might ellicit more epenthesis in one syllabic configuration and not in another. This suggests that, at least for our currentmodels, more abstract phonological information may be need to be injected to the models in order to be able to account for all of the effects studied in this section.  
+
 \newpage
-\section{Conclusions}
+\section{Chapter conclusions}
+%%%%%%%%%%%%%%%
 %%% SUMMARY %%%
+%%%%%%%%%%%%%%%
 
 %%% SHORT DISCUSSION %%%
 
+% AM probably needs LM (cf wpd effects), but not an n-gram one.
+% The level of depth is unknown (maybe palatal effect will surface with acoustics x surface-level LM).   
+
 %%% LIMITATIONS %%%
 
+
+%% CORPUS ENHANCEMENTS
 % Need more faithful transcription to build LMs from!! (cf differences in epenthesis between BP and PP).
 % Ideas:
 %% --- Automatic iterative decoding from null model  
-%% --- For specific phoneme sequences, find exemplars (e.g., for /hp/ check all /hVp/) and see if well transcribed. Adapt probabilities accordingly. PB: Need many exemplars + Time consuming. 
+%% --- For specific phoneme sequences, find exemplars (e.g., for /hp/ check all /hVp/) and see if well transcribed. Adapt probabilities accordingly. PB: Need many exemplars + Time consuming.
+%% Need same standards to allow for reliable cross-linguistic comparisons
 
+
+%% AM ENHANCEMENTS
 % Need better acoustic model. But we need not to integrate triphones.
 % Ideas:
 %% --- NN-based ASR systems (monophones)
 %% --- End-to-end training
-
-%%% k-epenth
-%EN vs KR: Cross-linguistic effect or due to corpora???
-
-%%% wpd
-%low epenthesis rates for illegal clusters: due to adaptation (cf tl->kl in FR)? Deletion? Or genuinely acoustics > phonology?  
 
 %%% How to account for results by:
 % - Durvasula & Kahng (2016): Different rates of epenthesis for [km] and [gm], the latter being legal across IP boundaries. Increased voicing => increased epenthesis, even when splicing out consonantal release. 
