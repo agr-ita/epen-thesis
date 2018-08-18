@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.26)  18 AUG 2018 07:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.26)  18 AUG 2018 07:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -898,6 +898,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [8]
 Chapter 1.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 101.
+
 (./chapters/chapter01-intro.texpdfTeX warning (ext4): destination with the same
  identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
@@ -1733,17 +1737,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [46]
 Chapter 3.
-(./chapters/chapter03.tex [47
+(./chapters/chapter03.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 10.
+
+[47
 
 ]
 <images/chapter03/hmm_all_version2.pdf, id=1242, 812.5608pt x 362.93102pt>
 File: images/chapter03/hmm_all_version2.pdf Graphic file (type pdf)
 <use images/chapter03/hmm_all_version2.pdf>
 Package pdftex.def Info: images/chapter03/hmm_all_version2.pdf  used on input l
-ine 55.
+ine 52.
 (pdftex.def)             Requested size: 426.79134pt x 190.63023pt.
 
-Overfull \hbox (34.72568pt too wide) in paragraph at lines 68--71
+Overfull \hbox (34.72568pt too wide) in paragraph at lines 65--68
  []\OT1/cmr/bx/n/12 Corpus of Spon-ta-neous Japanese (CSJ)[] \OT1/cmr/m/n/10.95
  As the name sug-gests, the CSJ [[]]
  []
@@ -1773,7 +1782,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: images/chapter03/hmm_3state.pdf Graphic file (type pdf)
 <use images/chapter03/hmm_3state.pdf>
 Package pdftex.def Info: images/chapter03/hmm_3state.pdf  used on input line 15
-6.
+3.
 (pdftex.def)             Requested size: 426.79134pt x 323.44626pt.
 
 
@@ -1803,7 +1812,7 @@ File: images/chapter03/ch3_misc_plotting/figures/plot_hmm_evaluations.pdf Graph
 ic file (type pdf)
 <use images/chapter03/ch3_misc_plotting/figures/plot_hmm_evaluations.pdf>
 Package pdftex.def Info: images/chapter03/ch3_misc_plotting/figures/plot_hmm_ev
-aluations.pdf  used on input line 207.
+aluations.pdf  used on input line 204.
 (pdftex.def)             Requested size: 341.43436pt x 227.63405pt.
 
 
@@ -1828,7 +1837,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [56]
 
-LaTeX Warning: Reference `chapter02' on page 57 undefined on input line 270.
+LaTeX Warning: Reference `chapter02' on page 57 undefined on input line 267.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1848,10 +1857,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: images/chapter03/m-ahpa_Gfst.pdf Graphic file (type pdf)
 <use images/chapter03/m-ahpa_Gfst.pdf>
 Package pdftex.def Info: images/chapter03/m-ahpa_Gfst.pdf  used on input line 2
-95.
+92.
 (pdftex.def)             Requested size: 341.43436pt x 115.4852pt.
 
-Overfull \hbox (6.09016pt too wide) in paragraph at lines 304--305
+Overfull \hbox (6.09016pt too wide) in paragraph at lines 301--302
 []\OT1/cmr/m/n/10.95 A phone-unigram LM, which im-plies that lis-ten-ers do not
  take neigh-bour-ing phonemes
  []
@@ -1860,7 +1869,7 @@ Overfull \hbox (6.09016pt too wide) in paragraph at lines 304--305
 File: images/chapter03/m-ahpa_praat_ah0apa.pdf Graphic file (type pdf)
 <use images/chapter03/m-ahpa_praat_ah0apa.pdf>
 Package pdftex.def Info: images/chapter03/m-ahpa_praat_ah0apa.pdf  used on inpu
-t line 313.
+t line 310.
 (pdftex.def)             Requested size: 298.75262pt x 345.4352pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1869,14 +1878,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [59 <./images/chapter03/m-ahpa_Gfst.pdf>]
-Overfull \hbox (49.65704pt too wide) in paragraph at lines 320--322
+Overfull \hbox (49.65704pt too wide) in paragraph at lines 317--319
 []\OT1/cmr/m/n/10.95 As such, for each item, we ob-tained a six-dimensional vec
 -tor $\OML/cmm/m/it/10.95 ident[] \OT1/cmr/m/n/10.95 = [\OML/cmm/m/it/10.95 p[]
 ; p[]; p[]; p[]; p[]; p[]\OT1/cmr/m/n/10.95 ]$,
  []
 
 
-Overfull \hbox (1.85632pt too wide) in paragraph at lines 320--322
+Overfull \hbox (1.85632pt too wide) in paragraph at lines 317--319
 \OT1/cmr/m/n/10.95 pos-te-ri-or-grams). We can de-fine the hu-man equiv-a-lent 
 $\OML/cmm/m/it/10.95 ident[] \OT1/cmr/m/n/10.95 = [\OML/cmm/m/it/10.95 p[]; p[]
 ; p[]; p[]; p[]; p[]\OT1/cmr/m/n/10.95 ]$,
@@ -1904,10 +1913,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: images/chapter03/m-ahpa_figures.pdf Graphic file (type pdf)
 <use images/chapter03/m-ahpa_figures.pdf>
 Package pdftex.def Info: images/chapter03/m-ahpa_figures.pdf  used on input lin
-e 373.
+e 370.
 (pdftex.def)             Requested size: 426.79134pt x 232.80154pt.
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 374.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 371.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1930,25 +1939,25 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: images/chapter03/m-ahpa_figures.pdf Graphic file (type pdf)
 <use images/chapter03/m-ahpa_figures.pdf, page 8>
 Package pdftex.def Info: images/chapter03/m-ahpa_figures.pdf , page8 used on in
-put line 398.
+put line 395.
 (pdftex.def)             Requested size: 426.79134pt x 232.80154pt.
 <images/chapter03/m-ahpa_figures.pdf, id=1546, page=5, 794.97pt x 433.62pt>
 File: images/chapter03/m-ahpa_figures.pdf Graphic file (type pdf)
 <use images/chapter03/m-ahpa_figures.pdf, page 5>
 Package pdftex.def Info: images/chapter03/m-ahpa_figures.pdf , page5 used on in
-put line 411.
+put line 408.
 (pdftex.def)             Requested size: 384.10959pt x 209.51808pt.
 <images/chapter03/m-ahpa_figures.pdf, id=1550, page=9, 794.97pt x 433.62pt>
 File: images/chapter03/m-ahpa_figures.pdf Graphic file (type pdf)
 <use images/chapter03/m-ahpa_figures.pdf, page 9>
 Package pdftex.def Info: images/chapter03/m-ahpa_figures.pdf , page9 used on in
-put line 422.
+put line 419.
 (pdftex.def)             Requested size: 384.10959pt x 209.51808pt.
 <images/chapter03/m-ahpa_figures.pdf, id=1551, page=10, 794.97pt x 433.62pt>
 File: images/chapter03/m-ahpa_figures.pdf Graphic file (type pdf)
 <use images/chapter03/m-ahpa_figures.pdf, page 10>
 Package pdftex.def Info: images/chapter03/m-ahpa_figures.pdf , page10 used on i
-nput line 423.
+nput line 420.
 (pdftex.def)             Requested size: 384.10959pt x 209.51808pt.
 
 
@@ -1987,13 +1996,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: images/chapter03/parlato_hmm_Gfst.pdf Graphic file (type pdf)
 <use images/chapter03/parlato_hmm_Gfst.pdf>
 Package pdftex.def Info: images/chapter03/parlato_hmm_Gfst.pdf  used on input l
-ine 475.
+ine 472.
 (pdftex.def)             Requested size: 341.43436pt x 109.90622pt.
 <images/chapter03/parlato-hmm_praat_agni.pdf, id=1597, 433.62pt x 614.295pt>
 File: images/chapter03/parlato-hmm_praat_agni.pdf Graphic file (type pdf)
 <use images/chapter03/parlato-hmm_praat_agni.pdf>
 Package pdftex.def Info: images/chapter03/parlato-hmm_praat_agni.pdf  used on i
-nput line 486.
+nput line 483.
 (pdftex.def)             Requested size: 298.75262pt x 344.83795pt.
 
 
@@ -2007,7 +2016,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: images/chapter03/parlato-lms_figs.pdf Graphic file (type pdf)
 <use images/chapter03/parlato-lms_figs.pdf, page 2>
 Package pdftex.def Info: images/chapter03/parlato-lms_figs.pdf , page2 used on 
-input line 539.
+input line 536.
 (pdftex.def)             Requested size: 426.79134pt x 248.96123pt.
 
 
@@ -2017,7 +2026,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [69 <./images/chapter03/parlato-hmm_praat_agni.pdf>]
-Overfull \hbox (2.09415pt too wide) in paragraph at lines 550--551
+Overfull \hbox (2.09415pt too wide) in paragraph at lines 547--548
 []\OT1/cmr/m/n/10.95 In or-der to as-sess the in-flu-ence of $\OML/cmm/m/it/10.
 95 V[]$ \OT1/cmr/m/n/10.95 and $\OML/cmm/m/it/10.95 V[]$ \OT1/cmr/m/n/10.95 (he
 nce-forth: flank-ing vow-els) on epenthetic
@@ -2034,23 +2043,23 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: images/chapter03/parl_hmm_figs.pdf Graphic file (type pdf)
 <use images/chapter03/parl_hmm_figs.pdf, page 1>
 Package pdftex.def Info: images/chapter03/parl_hmm_figs.pdf , page1 used on inp
-ut line 558.
+ut line 555.
 (pdftex.def)             Requested size: 170.71393pt x 146.3272pt.
 <images/chapter03/parl_hmm_figs.pdf, id=1664, page=2, 252.945pt x 216.81pt>
 File: images/chapter03/parl_hmm_figs.pdf Graphic file (type pdf)
 <use images/chapter03/parl_hmm_figs.pdf, page 2>
 Package pdftex.def Info: images/chapter03/parl_hmm_figs.pdf , page2 used on inp
-ut line 560.
+ut line 557.
 (pdftex.def)             Requested size: 170.71393pt x 146.3272pt.
 File: images/chapter02/parlato_dur.pdf Graphic file (type pdf)
 <use images/chapter02/parlato_dur.pdf, page 2>
 Package pdftex.def Info: images/chapter02/parlato_dur.pdf , page2 used on input
- line 562.
+ line 559.
 (pdftex.def)             Requested size: 170.71393pt x 136.56895pt.
 File: images/chapter02/parlato_dur.pdf Graphic file (type pdf)
 <use images/chapter02/parlato_dur.pdf, page 3>
 Package pdftex.def Info: images/chapter02/parlato_dur.pdf , page3 used on input
- line 564.
+ line 561.
 (pdftex.def)             Requested size: 170.71393pt x 136.56895pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2078,7 +2087,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [73]
-Overfull \hbox (5.947pt too wide) in paragraph at lines 636--639
+Overfull \hbox (5.947pt too wide) in paragraph at lines 633--636
 []\OT1/cmr/m/n/10.95 An ob-vi-ous next step would be to test the lan-guage mod-
 els used in [[]],
  []
@@ -2099,14 +2108,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [75]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 662.
+(hyperref)                removing `\\' on input line 659.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 662.
-
-
-Overfull \hbox (39.07088pt too wide) in paragraph at lines 684--685
+Overfull \hbox (39.07088pt too wide) in paragraph at lines 681--682
 \OT1/cmr/m/n/10.95 gered by changes in neigh-bour-ing con-so-nants [[], [],
  []
 
@@ -2121,7 +2126,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [76]
-Overfull \hbox (8.21115pt too wide) in paragraph at lines 691--692
+Overfull \hbox (8.21115pt too wide) in paragraph at lines 688--689
 \T3/cmr/m/n/10.95 /c$[]$/ \OT1/cmr/m/n/10.95 and \T3/cmr/m/n/10.95 /S/ \OT1/cmr
 /m/n/10.95 mostly el-licited \T3/cmr/m/n/10.95 [i]\OT1/cmr/m/n/10.95 -epenthesi
 s, with very low rates of de-fault \T3/cmr/m/n/10.95 [1]\OT1/cmr/m/n/10.95 -epe
@@ -2135,13 +2140,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [77]
-Overfull \hbox (12.24144pt too wide) in paragraph at lines 710--711
+Overfull \hbox (12.24144pt too wide) in paragraph at lines 707--708
 []\OT1/cmr/m/it/10.95 ADD AC-KNOWL-EDGE-MENTS EM-MANUEL. DUR-VA-SULA & KAHNG (t
 hank for record-
  []
 
 
-Overfull \hbox (15.68051pt too wide) in paragraph at lines 741--742
+Overfull \hbox (15.68051pt too wide) in paragraph at lines 738--739
 \OT1/cmr/m/n/10.95 task to be anal-o-gous to the be-havioural ex-per-i-ment de-
 scribed in [[]],
  []
@@ -2157,7 +2162,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: images/chapter03/k-epenth_G.pdf Graphic file (type pdf)
 <use images/chapter03/k-epenth_G.pdf>
 Package pdftex.def Info: images/chapter03/k-epenth_G.pdf  used on input line 74
-5.
+2.
 (pdftex.def)             Requested size: 384.10959pt x 143.33894pt.
 
 
@@ -2167,7 +2172,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [79 <./images/chapter03/k-epenth_G.pdf>]
-Overfull \hbox (15.01555pt too wide) in paragraph at lines 754--756
+Overfull \hbox (15.01555pt too wide) in paragraph at lines 751--753
 []\OT1/cmr/m/n/10.95 As such, for each item, we ob-tained a three-dimensional v
 ec-tor $\OML/cmm/m/it/10.95 ident[] \OT1/cmr/m/n/10.95 = [\OML/cmm/m/it/10.95 p
 []; p[]; [][]\OT1/cmr/m/n/10.95 ]$,
@@ -2177,13 +2182,13 @@ ec-tor $\OML/cmm/m/it/10.95 ident[] \OT1/cmr/m/n/10.95 = [\OML/cmm/m/it/10.95 p
 File: images/chapter03/k-epenth_figs.pdf Graphic file (type pdf)
 <use images/chapter03/k-epenth_figs.pdf, page 6>
 Package pdftex.def Info: images/chapter03/k-epenth_figs.pdf , page6 used on inp
-ut line 762.
+ut line 759.
 (pdftex.def)             Requested size: 256.0774pt x 153.65001pt.
 <images/chapter03/k-epenth_figs.pdf, id=1817, page=5, 542.025pt x 325.215pt>
 File: images/chapter03/k-epenth_figs.pdf Graphic file (type pdf)
 <use images/chapter03/k-epenth_figs.pdf, page 5>
 Package pdftex.def Info: images/chapter03/k-epenth_figs.pdf , page5 used on inp
-ut line 764.
+ut line 761.
 (pdftex.def)             Requested size: 256.0774pt x 153.65001pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2201,19 +2206,19 @@ sion: multiple pdfs with page group included in a single page
 File: images/chapter03/k-epenth_figs.pdf Graphic file (type pdf)
 <use images/chapter03/k-epenth_figs.pdf, page 8>
 Package pdftex.def Info: images/chapter03/k-epenth_figs.pdf , page8 used on inp
-ut line 776.
+ut line 773.
 (pdftex.def)             Requested size: 256.0774pt x 153.65001pt.
 <images/chapter03/k-epenth_figs.pdf, id=1842, page=7, 542.025pt x 325.215pt>
 File: images/chapter03/k-epenth_figs.pdf Graphic file (type pdf)
 <use images/chapter03/k-epenth_figs.pdf, page 7>
 Package pdftex.def Info: images/chapter03/k-epenth_figs.pdf , page7 used on inp
-ut line 778.
+ut line 775.
 (pdftex.def)             Requested size: 256.0774pt x 153.65001pt.
 <images/chapter03/k-epenth_figs.pdf, id=1846, page=9, 542.025pt x 325.215pt>
 File: images/chapter03/k-epenth_figs.pdf Graphic file (type pdf)
 <use images/chapter03/k-epenth_figs.pdf, page 9>
 Package pdftex.def Info: images/chapter03/k-epenth_figs.pdf , page9 used on inp
-ut line 793.
+ut line 790.
 (pdftex.def)             Requested size: 256.0774pt x 153.65001pt.
 
 
@@ -2240,15 +2245,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: images/chapter03/k-epenth_figs_KSPAN.pdf Graphic file (type pdf)
 <use images/chapter03/k-epenth_figs_KSPAN.pdf, page 3>
 Package pdftex.def Info: images/chapter03/k-epenth_figs_KSPAN.pdf , page3 used 
-on input line 813.
+on input line 810.
 (pdftex.def)             Requested size: 426.79134pt x 237.1133pt.
 
 
 LaTeX Font Warning: Font shape `T3/cmr/m/it' in size <8> not available
-(Font)              Font shape `T3/cmr/m/sl' tried instead on input line 814.
+(Font)              Font shape `T3/cmr/m/sl' tried instead on input line 811.
 
 
-Overfull \hbox (21.88657pt too wide) in paragraph at lines 822--823
+Overfull \hbox (21.88657pt too wide) in paragraph at lines 819--820
 []\OT1/cmr/m/it/10.95 ADD AC-KNOWL-EDGE-MENTS EWAN, AMELIA KIM-BALL, AN-TOINE H
 EDIER, CLARA
  []
@@ -2270,14 +2275,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 <images/chapter03/wpd-G_azna.pdf, id=1937, 614.295pt x 231.86626pt>
 File: images/chapter03/wpd-G_azna.pdf Graphic file (type pdf)
 <use images/chapter03/wpd-G_azna.pdf>
-Package pdftex.def Info: images/chapter03/wpd-G_azna.pdf  used on input line 86
-2.
+Package pdftex.def Info: images/chapter03/wpd-G_azna.pdf  used on input line 85
+9.
 (pdftex.def)             Requested size: 341.43436pt x 128.8748pt.
 <images/chapter03/wpd-G_znapa.pdf, id=1938, 614.295pt x 163.61125pt>
 File: images/chapter03/wpd-G_znapa.pdf Graphic file (type pdf)
 <use images/chapter03/wpd-G_znapa.pdf>
 Package pdftex.def Info: images/chapter03/wpd-G_znapa.pdf  used on input line 8
-64.
+61.
 (pdftex.def)             Requested size: 341.43436pt x 90.93762pt.
 
 
@@ -2296,21 +2301,21 @@ t>
 File: images/chapter03/art2ac_model_pgrams.pdf Graphic file (type pdf)
 <use images/chapter03/art2ac_model_pgrams.pdf, page 3>
 Package pdftex.def Info: images/chapter03/art2ac_model_pgrams.pdf , page3 used 
-on input line 878.
+on input line 875.
 (pdftex.def)             Requested size: 192.0548pt x 213.39867pt.
 <images/chapter03/art2ac_model_pgrams.pdf, id=1957, page=4, 325.215pt x 361.35p
 t>
 File: images/chapter03/art2ac_model_pgrams.pdf Graphic file (type pdf)
 <use images/chapter03/art2ac_model_pgrams.pdf, page 4>
 Package pdftex.def Info: images/chapter03/art2ac_model_pgrams.pdf , page4 used 
-on input line 880.
+on input line 877.
 (pdftex.def)             Requested size: 192.0548pt x 213.39867pt.
 <images/chapter03/art2ac_model_pgrams.pdf, id=1960, page=8, 325.215pt x 361.35p
 t>
 File: images/chapter03/art2ac_model_pgrams.pdf Graphic file (type pdf)
 <use images/chapter03/art2ac_model_pgrams.pdf, page 8>
 Package pdftex.def Info: images/chapter03/art2ac_model_pgrams.pdf , page8 used 
-on input line 891.
+on input line 888.
 (pdftex.def)             Requested size: 170.71393pt x 189.68402pt.
 
 
@@ -2321,7 +2326,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [86 <./images/chapter03/art2ac_model_pgrams.pdf> <./images/chapter03/art2ac_mod
 el_pgrams.pdf>]
-Overfull \hbox (6.0461pt too wide) in paragraph at lines 901--902
+Overfull \hbox (6.0461pt too wide) in paragraph at lines 898--899
 \OT1/cmr/m/n/10.95 pants. We found a sig-nif-i-cant main ef-fect for \OT1/cmr/m
 /sc/10.95 Po-si-tion \OT1/cmr/m/n/10.95 (mode: $\OMS/cmsy/m/n/10.95 ^^@\OT1/cmr
 /m/n/10.95 0\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 11$, HPD: $[\OMS/cmsy/m/n/1
@@ -2335,14 +2340,14 @@ t>
 File: images/chapter03/art2ac_model_pgrams.pdf Graphic file (type pdf)
 <use images/chapter03/art2ac_model_pgrams.pdf, page 5>
 Package pdftex.def Info: images/chapter03/art2ac_model_pgrams.pdf , page5 used 
-on input line 906.
+on input line 903.
 (pdftex.def)             Requested size: 192.0548pt x 213.39867pt.
 <images/chapter03/art2ac_model_pgrams.pdf, id=1986, page=6, 325.215pt x 361.35p
 t>
 File: images/chapter03/art2ac_model_pgrams.pdf Graphic file (type pdf)
 <use images/chapter03/art2ac_model_pgrams.pdf, page 6>
 Package pdftex.def Info: images/chapter03/art2ac_model_pgrams.pdf , page6 used 
-on input line 908.
+on input line 905.
 (pdftex.def)             Requested size: 192.0548pt x 213.39867pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2356,7 +2361,7 @@ t>
 File: images/chapter03/art2ac_model_pgrams.pdf Graphic file (type pdf)
 <use images/chapter03/art2ac_model_pgrams.pdf, page 7>
 Package pdftex.def Info: images/chapter03/art2ac_model_pgrams.pdf , page7 used 
-on input line 925.
+on input line 922.
 (pdftex.def)             Requested size: 298.75262pt x 331.97185pt.
 
 
@@ -2394,7 +2399,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[92])
+[92]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 999.
+
+)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -2403,6 +2413,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [93]
 Chapter 4.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 111.
+
 (./chapters/chapter05-disc.tex) (./main.bbl [94
 
 ] [95
@@ -3488,7 +3502,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 126.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 126.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 126.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 32BCF7592E8E3B4094406F7F29F15506;4675.
+(rerunfilecheck)             Checksum: F4BE71BE615BCADAA374FD1C7CC9237E;4684.
 
 
 LaTeX Warning: There were undefined references.
@@ -3500,12 +3514,12 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 126.
  )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 288 ({)
+### simple group (level 1) entered at line 285 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
  10424 strings out of 492980
- 159106 string characters out of 6132494
- 266689 words of memory out of 5000000
+ 159105 string characters out of 6132494
+ 266665 words of memory out of 5000000
  13292 multiletter control sequences out of 15000+600000
  19984 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3630,7 +3644,7 @@ a/tipabx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tipa/tipa
 sl10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tipa/tipasl12.p
 fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tipa/tipasl8.pfb></us
 r/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (140 pages, 3935017 bytes).
+Output written on main.pdf (140 pages, 3935023 bytes).
 PDF statistics:
  2510 PDF objects out of 2984 (max. 8388607)
  2067 compressed objects within 21 object streams
