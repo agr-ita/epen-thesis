@@ -1,6 +1,7 @@
 \documentclass[12pt, twoside]{report}
 \usepackage[a4paper,width=150mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
 % \usepackage{bibtex}
+\usepackage{minitoc}
 \usepackage{amsmath}
 \usepackage{fixltx2e}
 \usepackage{fancyhdr}
@@ -14,6 +15,7 @@
 \usepackage{threeparttable}
 \usepackage{pdfpages}
 \usepackage{epigraph}
+\renewcommand{\textflush}{flushepinormal}
 %\usepackage{CJKutf8,bbm}
 \usepackage[percent]{overpic}
 \definecolor{framboise}{RGB}{143, 0, 55}
@@ -57,12 +59,17 @@ Abstract goes here
 Abstract goes ici
 
 \chapter*{}
-\epigraph{%Los niños han ido con Platero al arroyo de los chopos, y ahora lo traen trotando, entre juegos sin razón y risas desproporcionadas, todo cargado de flores amarillas.
+\setlength{\epigraphwidth}{0.9\textwidth}
+
+\epigraph{In general, we look for a new law by the following process: \\ First we guess it. Then we – now don't laugh, that's really true. Then we compute the consequences of the guess to see what, if this is right, if this law that we guessed is right, to see what it would imply. And then we compare the computation results to nature, or we say compare to experiment or experience, compare it directly with observations to see if it works. If it disagrees with experiment, it's wrong. In that simple statement is the key to science. It doesn't make any difference how beautiful your guess is, it doesn't make any difference how smart you are, who made the guess, or what his name is. If it disagrees with experiment, it's wrong. That's all there is to it.}{\textsc{Richard Feynman}}
+
+\epigraph{Los niños han ido con Platero al arroyo de los chopos, y ahora lo traen trotando, entre juegos sin razón y risas desproporcionadas, todo cargado de flores amarillas.
+  
   Allá abajo les ha llovido —aquella nube fugaz que veló el prado verde con sus hilos de oro y plata, en los que tembló, como en una lira de llanto, el arco iris—. Y sobre la empapada lana del asnucho, las campanillas mojadas gotean todavía.
 
   ¡Idilio fresco, alegre, sentimental! ¡Hasta el rebuzno de Platero se hace tierno bajo la dulce carga llovida! De cuando en cuando, vuelve la cabeza y arranca las flores a que su bocota alcanza. Las campanillas, níveas y gualdas, le cuelgan, un momento, entre el blanco babear verdoso y luego se le van a la barrigota cinchada. ¡Quién, como tú, Platero, pudiera comer flores..., y que no le hicieran daño!
 
-    ¡Tarde equívoca de abril!... Los ojos brillantes y vivos de Platero copian toda la hora de sol y lluvia, en cuyo ocaso, sobre el campo de San Juan, se ve llover, deshilachada, otra nube rosa.}{\textit{Idilio de Abril. Platero y yo. \\ Juan Ramón Jiménez}}
+    ¡Tarde equívoca de abril!... Los ojos brillantes y vivos de Platero copian toda la hora de sol y lluvia, en cuyo ocaso, sobre el campo de San Juan, se ve llover, deshilachada, otra nube rosa.}{Idilio de Abril. Platero y yo. \\ \textsc{Juan Ramón Jiménez}}
 
 %\chapter*{Declaration}
 %I declare that..
@@ -70,8 +77,9 @@ Abstract goes ici
 \chapter*{Acknowledgements}
 I want to thank...
 % do not forget la Maison de la Prairie
-% Thomas (corrections, etc, FSTs... There's a frood who really knows where his towel is)!!!! Page (Paging Dr Page~)!!!! Sanjeev! Hayate!!
-% Thanks Emmanuel for believing so much on me finishing this thesis that you made a backup of my consciousness in case a London taxi rolled me over (because of your jaywalking, of course!)
+% Thomas (corrections, etc, FSTs... There's a frood who really knows where his towel is)!!!! Page (Paging Dr Page~)!!!! Alex Cristia. Sanjeev! Hayate!!
+% Thanks Emmanuel for believing so much on me finishing this thesis that you made a backup of my consciousness in case a London taxi rolled me over (because of your jaywalking, of course!).
+% Les ingénieurs ! Roland, Juan, Mathieu, Julien 
 % Thank commité de suivi de thèse (Christophe + David)
 % Héctor, Oddur; for reading with outside perspective
 % Google team
@@ -96,19 +104,28 @@ I want to thank...
   Proceedings of Interspeech, 596-600.
 \end{itemize}
 
+%%% Mini TOC %%%
+\dominitoc[n]% Initialization
+\nomtcrule
+%\mtcsetoffset{minitoc}{-4.0em}
+\setlength{\mtcindent}{-1.5em}
+% % \undotted
+\setcounter{minitocdepth}{2}
+
 \tableofcontents
-\linenumbers
-\chapter{{\color{red}Introduction}}
+% \linenumbers
+
+\chapter{Introduction}
 \setcounter{page}{1}
 \input{chapters/chapter01-intro}
 
 \chapter{Role of acoustic details in the choice of epenthetic vowel quality}
+\minitoc
 \input{chapters/chapter02}
-
 \chapter{Modelling speech perception with ASR systems}
+\minitoc
 \input{chapters/chapter03}
-
-\chapter{{\color{red}General Discussion}}
+\chapter{Conclusion}
 \input{chapters/chapter05-disc}
 
 %\chapter{References}

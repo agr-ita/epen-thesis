@@ -1,7 +1,11 @@
 %%%%%%%%%%%%%%%%%%%%%%
 % Chapter mini-intro %
 %%%%%%%%%%%%%%%%%%%%%%
+\newpage
 \section{Introduction}
+
+{\color{red}[TODO]: Corrections Emmanuel} \\
+
 %%% Introductory paragraph 
 In the previous chapter we studied the use of non-parametric exemplar-based computational models to investigate the underlying mechanisms of perceptual vowel epenthesis. While the exemplar-based models were able to reproduce modulations in epenthetic vowel quality due to coarticulation, they were unable to show a preference for default vowel epenthesis. More importantly, due to their non-parametric nature, they were entirely unable to output ``no epenthesis'' responses (or any response not in line with the available exemplars, for that matter). In this chapter, we will turn to parametric models, which are implementations of one-step theories of nonnative speech perception.  
 
@@ -215,7 +219,7 @@ During training, the acoustic model's tasks are to:
 \item Find combinations of Gaussian mixtures (the aforementioned GMMs), and the parameters of their respective diagonal Gaussians distributions, that describe the sections of the acoustic space corresponding to each state. This equates to drawing the dashed ellipses around the coloured dots in order to define the more irregularly-shaped coloured areas. Indeed, GMMs are universal approximators of densities when given enough components. The number of Gaussians allocated to each phoneme state depends on the total number of Gaussians made available to the model, and the complexity of the distribution of the frames in the space. After training, after the GMMs have been defined, the AM is able to tell us, for any new acoustic frame, the likelihood that the frame originated from each GMM (i.e., phoneme state).
 \end{enumerate}   
 
-\subsubsection{Why not triphones?}
+\paragraph{Why not triphones?}
 If the reader is already familiar with ASR systems, they may expect us to go a step further and no longer treat phonemes as units for the HMMs (i.e., monophone acoustic models) but, instead, use context-dependent triphones. In this latter representation, an independent three-state HMM is built for each phoneme within a phonemic context. With some simplifications, this equates to no longer having an HMM for the phoneme \textipa{/p/}, but having all context-dependent versions of this phoneme as individual HMMs (e.g., the triphone \textipa{/p$_{a\_i}$/}, which is the phone \textipa{/p/} when preceded by \textipa{/a/} and followed by \textipa{/i/}).
 Traditionally, triphone-based HMM-based ASR systems perform better than monophone systems. However, these more complex models are inappropriate for our experiments. Recall that we aim to use these speech recognition systems as models of nonnative speech perception, using tasks analogous to paradigms used in psycholinguistic experiments (namely, identification/forced-choice tasks). Importantly, we are focusing on modelling perceptual vowel epenthesis. This situation excludes the use of triphones because, by definition, our ASR systems will have to decode speech that does not follow native phonotactics. Decoding such stimuli implies the existence of triphones corresponding to the input, yet the model will have never encountered such triphones in the training data. While this situation might seem analogous to what listeners may experience, one must consider the fact that the ASR system \textit{will attempt to account for said triphones} during decoding in spite of the lack of data. Importantly, poorly estimated, phony triphones (e.g., \textipa{/h$_{a\_p}$/}, when decoding \textipa{/ahpa/}) will be put up against well-estimated triphones (e.g., \textipa{/h$_{a\_a}$/}) during the forced-choice tasks. The well-estimated triphones might simply be preferred as transcriptions over poorly-estimated ones for this reason alone, irrespective of the actual acoustic match between the stimuli and phoneme models.
 In order to increase the performance of monophone models at phonetic labelling tasks such as ours, it is possible to increase the number of total Gaussians available to the model \cite{saraclar2001}. 
@@ -681,7 +685,7 @@ It would be important to also assess the validity of using probabilities derived
 %% -> Blocks never seen sequences (legal/illegal view as in Peperkamp (2008?), not probabilistic gradient phonotactics (cf Wilson2013, notes on Lentz2011's thesis).
 %% -> Adds frequency bias that may not be adequate (e.g., increase in /a/ epenthesis because most frequent vowel)
 
-An obvious next step would be to test the language models used in \cite{wilson2013}, where the authors found that most LMs performed better than the null LM at predicting data from a production task. In that work, the favoured LMs were the ones where phonotactic legality was a gradient process, where phones were represented with featural descriptions (e.g. {\color{red}[CITE Albright 2009]}) or where weights given to grammatical constraints were derived from the principle of maximum entropy (e.g. {\color{red}[CITE BoersmaPater2007; HayesWilson2008]}). In parallel, we can also explore whether our ASR system's acoustic model (accompanied by a null language model) is able to explain effects attributed to abstract grammatical processes. We will experiment this in the next section. 
+An obvious next step would be to test the language models used in \cite{wilson2013}, where the authors found that most LMs performed better than the null LM at predicting data from a production task. In that work, the favoured LMs were the ones where phonotactic legality was a gradient process, where phones were represented with featural descriptions (e.g. {\color{red}\cite{albright2009}}) or where weights given to grammatical constraints were derived from the principle of maximum entropy (e.g. {\color{red}[CITE BoersmaPater2007]}\cite{hayes2008}). In parallel, we can also explore whether our ASR system's acoustic model (accompanied by a null language model) is able to explain effects attributed to abstract grammatical processes. We will experiment this in the next section. 
 %% Due to task?
 % What would happen in transcription task? (Using non-constrained LM for decoding)
 
@@ -694,7 +698,7 @@ An obvious next step would be to test the language models used in \cite{wilson20
 % k-epenth %
 %%%%%%%%%%%%
 \newpage
-\section{Medley of epenthetic variations: \\ Due to phonological processes or embedded in the phonetics?} \label{3-medley}
+\section{Medley of epenthetic variations: Due to phonological processes or embedded in the phonetics?} \label{3-medley}
 
 \subsection{Introduction}
 %% Conclusions from previous section
@@ -710,7 +714,7 @@ We will study three effects at least partially attributed to abstract grammars: 
 There is often a control group in experiments probing epenthesis, in most cases constituted of native listeners of the language used to create the experimental stimuli. This allows to ensure that observed effects of epenthesis are due to the difference in linguistic experience, and not due to idiosyncrasies in the items used in the experiment. 
 Both the control group and the test group are processing the same acoustic input, yet only the test group experiences epenthesis. It has been argued that this is evidence against the hypothesis that phonetic properties drive perceptual distortions (e.g., \cite{berent2007}).
 
-However, the acquisition of native phonetic categories has been described as a process of partitioning the phonetic space in an optimal way, respective to the phonemic needs of the native language \cite{kuhl1995, best1995}. Phonemic misperceptions can then result from mapping the nonnative input to a native category that is not congruent with the original, intended nonnative category, or that lacks finer grained separations that specify additional phonemic contrasts.    
+However, the acquisition of native phonetic categories has been described as a process of partitioning the phonetic space in an optimal way, respective to the phonemic needs of the native language \cite{best1994, kuhl1995}. Phonemic misperceptions can then result from mapping the nonnative input to a native category that is not congruent with the original, intended nonnative category, or that lacks finer grained separations that specify additional phonemic contrasts.    
 Can we explain cross-linguistic differences in perceptual vowel epenthesis within a similar framework? Each language has its partition of the acoustic space specified (i.e., the acoustic model in our ASR systems). The differences between languages at the level of the mapping between their respective AMs and the stimulus acoustics may then trigger vowel epenthesis. We will investigate this possibility in Experiment 1. 
  
 \subsubsection{Variations of epenthetic vowel quality due to neighbouring consonants} 
@@ -1031,7 +1035,7 @@ In conclusion, our purely acoustic ASR models were able to mirror cross-linguist
 % CHAPTER CONCLUSIONS %
 %%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-\section{{\color{red}Chapter conclusions}}
+\section{General Discussion}
 %%%%%%%%%%%
 % Summary %
 %%%%%%%%%%%
@@ -1096,7 +1100,7 @@ The transcription process is not standardised across corpora: corpora built by l
 
 The CSJ is located between the two, in that it has been manually annotated and aligned. However, annotations were provided by Japanese annotators using the Japanese writing systems. This means that, even if acoustically the signal produced by a Japanese speaker presents phonotactically illegal productions such as non-nasal consonant codas or clusters (due to high vowel deletion, for instance), this may not be reflected in the transcriptions. Even if the transcriber were to be able to correctly perceive the illegal structure, the use of the Japanese writing system automatically blocks any chance of seeing cases like this in the corpus. This matters because the ``transcription epenthesis'' introduces mismatches between the audio and the transcriptions, adds noise to the representations of the phonemes in question, and biases corpus frequency statistics to not presenting gradient phonotactics. It is highly probable that this directly impacted the results in section \ref{3-surfphono}. It also matters conceptually, keeping in mind results by \cite{dupoux2011}. They showed that listeners of two dialects of Portuguese, that had the same phonotactics, showed very different rates of epenthesis when hearing items with phonotactically illegal clusters (listeners from Portugal did not experience epenthesis, while listeners from Brazil did). It was hypothesized that this was due to vowel deletion processes in European Portuguese that caused the phonotactically illegal clusters to surface in speech. Since we know Japanese (and Korean) have vowel devoicing and even deletion processes as well, the corpora might not be good enough to reflect the kind of effects seen by \cite{dupoux2011}.
 
-A way to bypass transcription irregularities would be to iteratively train the acoustic models initially with the accompanying transcription, and later with a null language model and its own decoding output as the transcriptions for the next training. We hypothesize that the model would eventually converge to a transcription that is more faithful to the acoustic signal. Another possibility requiring more effort would be to find exemplars of speech segments of interest (e.g., for \textipa{/hp/}, instances of \textipa{[h}$V$\textipa{p]}) and checking that they have been correctly transcribed. From then, it is possible to adapt language model probabilities to account for cases of erroneous transcriptions (e.g., proportionally increase the weight of the ``none'' path and decrease the weight of the ``u'' path if many \textipa{[hWp]} are actually \textipa{[hp]})\footnote{We thank Thomas Schatz for this comment}.   
+A way to bypass transcription irregularities would be to iteratively train the acoustic models initially with the accompanying transcription, and later with a null language model and its own decoding output as the transcriptions for the next training. We hypothesize that the model would eventually converge to a transcription that is more faithful to the acoustic signal. Another possibility requiring more effort would be to find exemplars of speech segments of interest (e.g., for \textipa{/hp/}, instances of \textipa{[h}$V$\textipa{p]}) and checking that they have been correctly transcribed. From then, it is possible to adapt language model probabilities to account for cases of erroneous transcriptions (e.g., proportionally increase the weight of the ``none'' path and decrease the weight of the ``u'' path if many \textipa{[hWp]} are actually \textipa{[hp]})\footnote{We thank Thomas Schatz for this comment.}.   
 
 %%%%%%%%%%%%%%%
 % Conclusions %

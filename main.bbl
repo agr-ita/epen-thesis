@@ -22,12 +22,12 @@ Berent, I., Steriade, D., Lennertz, T., and Vaknin, V. (2007).
   illusions.
 \newblock {\em Cognition}, 104(3):591--630.
 
-\bibitem[Best, 1995]{best1995}
-Best, C.~T. (1995).
-\newblock Chapter• 6 a\^{} a direct realist view of cross-language speech
-  perception.
-\newblock {\em Speech perception and linguistic experience: Issues in
-  cross-language research}, pages 171--204.
+\bibitem[Best, 1994]{best1994}
+Best, C.~T. (1994).
+\newblock The emergence of native-language phonological influences in infants:
+  A perceptual assimilation model.
+\newblock {\em The development of speech perception: The transition from speech
+  sounds to spoken words}, 167(224):233--277.
 
 \bibitem[Boersma et~al., 2002]{praat}
 Boersma, P. et~al. (2002).
@@ -319,6 +319,13 @@ Saraclar, M. (2001).
 Schatz, T. (2016).
 \newblock {\em {ABX}-{Discriminability} {Measures} and {Applications}}.
 \newblock PhD thesis, Ecole Normale Supérieure, Paris.
+
+\bibitem[Schatz et~al., 2018]{schatz2018}
+Schatz, T., Bach, F., and Dupoux, E. (2018).
+\newblock Evaluating automatic speech recognition systems as quantitative
+  models of cross-lingual phonetic category perception.
+\newblock {\em The Journal of the Acoustical Society of America},
+  143(5):EL372--EL378.
 
 \bibitem[Schultz, 2002]{schultz2002}
 Schultz, T. (2002).
