@@ -1,5 +1,10 @@
 \begin{thebibliography}{}
 
+\bibitem[Albright, 2009]{albright2009}
+Albright, A. (2009).
+\newblock Feature-based generalisation as a source of gradient acceptability.
+\newblock {\em Phonology}, 26(1):9--41.
+
 \bibitem[Bates et~al., 2015]{R-lme4}
 Bates, D., M{\"a}chler, M., Bolker, B., and Walker, S. (2015).
 \newblock Fitting linear mixed-effects models using {lme4}.
@@ -172,6 +177,11 @@ Hall{\'e}, P.~A. and Best, C.~T. (2007).
 Han, M.~S. (1962).
 \newblock Unvoicing of vowels in {J}apanese.
 \newblock {\em Onsei no kenkyuu}, 10:81--100.
+
+\bibitem[Hayes and Wilson, 2008]{hayes2008}
+Hayes, B. and Wilson, C. (2008).
+\newblock A maximum entropy model of phonotactics and phonotactic learning.
+\newblock {\em Linguistic inquiry}, 39(3):379--440.
 
 \bibitem[Holliday et~al., 2017]{holliday2017}
 Holliday, J.~J., Turnbull, R., and Eychenne, J. (2017).

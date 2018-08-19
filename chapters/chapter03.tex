@@ -1035,7 +1035,7 @@ In conclusion, our purely acoustic ASR models were able to mirror cross-linguist
 %%%%%%%%%%%
 % Summary %
 %%%%%%%%%%%
-In this chapter we used parametric models from the field of automatic speech recognition (ASR) as models of (nonnative) speech perception. We selected these models as they are defined within a Bayesian framework, as is the one-step reverse inference proposal by \cite{wilson2013}.
+In this chapter we used parametric models from the field of automatic speech recognition (ASR) as models of (nonnative) speech perception. In particular, we focused on empirically testing one-step theories of speech perception. We selected these models as they are defined within a Bayesian framework, akin to the one-step reverse inference proposal by \cite{wilson2013}.
 
 Notably, we introduced a methodology for simulating the identification paradigm commonly used when studying nonnative speech perception when using ASR systems as models of speech perception. This consists in limiting the set of possible decoding options by manually constraining weighted Finite State Transducer (W-FST) used as a language model for decoding. As the name suggests, it is possible to alter the weigths in the W-FST based on, for instance, corpus frequency statistics, to inject a more informative LM to the system. It is then possible to run the simulation with various LMs, using the same AM, in order to test hypothesis about phonotactic information, for example.
 The model results are evaluated by comparison with human results from an analogous experiment.
@@ -1044,7 +1044,7 @@ The model results are evaluated by comparison with human results from an analogo
 % LM contributions %
 %%%%%%%%%%%%%%%%%%%%
 \subsection{Language model contributions} 
-In section \ref{3-surfphono} we asked whether injecting information to the LM about \textit{n}-gram probabilities would enhance the predictive power of our ASR, with respect to behavioural data. We found that, contrary to expectation, the best performing ASR system was the one combining the AM with a null LM, i.e., a LM which only constrained the set of responses, without favouring certain responses over others. Does this mean that the reverse inference proposal should be simplified to a purely acoustic version? We do not think so. At least not yet. Indeed, while standard in the ASR field, \textit{n}-gram-based models have not been supported by previous work as a good model of phonotactics \cite{hayes2008}. Thus, our work is in line with these previous findings. The next step would be to modify our models in order for them to accept other types of phonotactic models {\color{red}[CITE Albright2009, HayesWilson2008]}.        
+In section \ref{3-surfphono} we asked whether injecting information to the LM about \textit{n}-gram probabilities would enhance the predictive power of our ASR, with respect to behavioural data. We found that, contrary to expectation, the best performing ASR system was the one combining the AM with a null LM, i.e., a LM which only constrained the set of responses, without favouring certain responses over others. Does this mean that the reverse inference proposal should be simplified to a purely acoustic version? We do not think so. At least not yet. Indeed, while standard in the ASR field, \textit{n}-gram-based models have not been supported by previous work as a good model of phonotactics \cite{hayes2008}. Thus, our work is in line with these previous findings. The next step would be to modify our models in order for them to accept other types of phonotactic models \cite{hayes2008, albright2009}.        
 %%%%%%%%%%%%%%%%%%
 % Model adequacy %
 %%%%%%%%%%%%%%%%%%
@@ -1055,14 +1055,19 @@ Continuing our work with the ASR systems, we focused on a purely acoustic model 
 % AM predictive power %
 %%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Predictive power of the acoustic model}
+Now let us turn to how the ASR system decodes items containing consonant clusters that are phonotactically illegal in its ``native language''. We will divide the epenthetic variations studied in this chapter depending on whether they relate to rate of epenthesis or epenthetic vowel quality. Within each groups, we will see what were the models' successes and other lessons learned (i.e., ``failures'' from which we can build upon to guide future research).   
 
 %%%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%%%
 % 1) Variations rate of epenthesis %
 %%%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%%%
 \subsubsection{Variations in rates of epenthesis}
 \paragraph{Successes}
+In both experiments in section \ref{3-surfphono}, (along with high vowels \textipa{/i, u/}) the response ``none'' was within the set of responses preferentially given by the Japanese (null) model. In a similar vein, the English models in the Experiment 2 in section \ref{3-medley} were able to show similar rankings on which clusters ellicited more or less epenthesis. Finally, and against expectations, the same English model and the Korean model showed opposite patterns of rates of epenthesis, with the English model outputting low rates and the Korean model outputting high rates. While the difference was of lesser magnitude for the models, this pattern is what was observed in human data from \cite{durvasula2015}.    
 
 \paragraph{Lessons}
+Our Japanese models epenthesized vowels more often for items with \textipa{/hp/}- than for \textipa{/kp/}-clusters, while the opposite pattern was true for humans. It was hypothesized that the behaviour observed in humans might be due to release cues in the stop consonant \textipa{/k/} being interpreted as vowels (similar to what was observed in \cite{dejong2012}). For the model, we can hypothesize that the silent closure periods of the stops in the \textipa{/kp/} clusters are very salient, long-lasting cues that can be readily matched to the SIL (i.e., silence) phone and the stop phones themselves. The release burst of \textipa{/k/}, on the other hand, was more subtle and very short in duration. It is possible that the model was not sensitive to less salient acoustic cues as such. On the other hand, \textipa{/hp/} clusters show long-lasting sections of noise that is spectrally similar to devoiced vowels that the model may have encountered in the training data. This may explain why the model epenthesized more readily after \textipa{/h/}.
+
+On another topic, the English models in Experiment 2 of section \ref{3-medley} was not able to capture the difference in rates of epenthesis for a same cluster depending whether it is in word-initial position (resulting in more epenthesis) or word-medial position (resulting in less epenthesis). As such, it seems that the acoustic properties of the Serbian clusters did not vary in a way that would have allowed the models to correctly parse one positional allophone and not the other. This suggests that the process may indeed require a phonological explanation, such as the syllable boundary violations that \cite{kabak2007} advanced to explain their results.  
 
 %%%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%%%
 % 2) Variations ep. vowel quality %

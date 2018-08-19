@@ -6,45 +6,45 @@ Database file #1: main.bib
 Warning--I didn't find a database entry for "silverman1992"
 Warning--I didn't find a database entry for "["
 Warning--can't use both volume and number fields in shin2011
-You've used 62 entries,
+You've used 64 entries,
             1935 wiz_defined-function locations,
-            852 strings with 14885 characters,
-and the built_in function-call counts, 26093 in all, are:
-= -- 2593
-> -- 1061
-< -- 48
-+ -- 373
-- -- 356
-* -- 2218
-:= -- 4454
-add.period$ -- 191
-call.type$ -- 62
-change.case$ -- 480
-chr.to.int$ -- 61
-cite$ -- 63
-duplicate$ -- 997
-empty$ -- 1824
-format.name$ -- 451
-if$ -- 5135
+            862 strings with 15113 characters,
+and the built_in function-call counts, 26837 in all, are:
+= -- 2670
+> -- 1081
+< -- 50
++ -- 381
+- -- 362
+* -- 2283
+:= -- 4581
+add.period$ -- 197
+call.type$ -- 64
+change.case$ -- 493
+chr.to.int$ -- 63
+cite$ -- 65
+duplicate$ -- 1025
+empty$ -- 1881
+format.name$ -- 461
+if$ -- 5279
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 61
-newline$ -- 314
-num.names$ -- 188
-pop$ -- 419
+missing$ -- 63
+newline$ -- 324
+num.names$ -- 194
+pop$ -- 426
 preamble$ -- 1
-purify$ -- 485
+purify$ -- 498
 quote$ -- 0
-skip$ -- 766
+skip$ -- 788
 stack$ -- 0
-substring$ -- 1916
-swap$ -- 162
+substring$ -- 1983
+swap$ -- 164
 text.length$ -- 13
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 368
+type$ -- 380
 warning$ -- 1
-while$ -- 224
+while$ -- 232
 width$ -- 0
-write$ -- 806
+write$ -- 832
 (There were 3 warnings)
