@@ -6,7 +6,6 @@
 % - [ ] ABX IDS/ADS in "Justifying the modelling approach"
 
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 {\color{red}[Sharon]: I automatically started giving detailed comments, but suddenly realize: why on earth begin your thesis with a story on infants and early acquisition? You should talk about the difficulties adults have perceiving (and if you wish producing) foreign sounds and sound structures! An anecdote would be ok (but not necessary), and then explain that our perception is optimized for native language processing and - if you wish! - that this is put in place during the first year of life.}
@@ -139,10 +138,9 @@ Indeed, using computational models in order to investigate competing theories is
 
 Secondly, obtaining a computational implementation of a theory means that it is then possible to derive predictions from the models in question. It is then possible to qualitatively and quantitatively examine these predictions, and compare them to what is observed in behavioural data.
 
-\section{Outline of this thesis}
+\section{Outline}
 %%%%%%%
 
-{\color{red}[TO-DO while writing discussion]}
+This dissertation is divided in two main sections. First, in Chapter 2, we use an identification paradigm to investigate the influence of acoustic details on modulations of epenthetic vowel quality. We discuss the implications of our results in the context of the opposition between the two-step and one-step theories of nonnative speech perception. We find that acoustic details modulate epenthetic vowel quality, results that are in agreement with one-step theories. Building on these results, we present a basic model of speech perception exclusively reliant on acoustic matching betwen minimal pairs of nonnative and native speech exemplars. Namely, we build non-parametric exemplar-based models of perception. Relative to human results, we find the models to be able to reproduce some qualitative effects linked to the role of coarticulation on epenthetic vowel quality; however, the models are limited by their inability to output responses other than those derived from their specific inventory of exemplars.
 
-
-
+In Chapter 3 we turn to a parametric implementation of a one-step proposal, using tools from the field of automatic speech recognition (ASR). We present an HMM-GMM speech recognizer composed of independent acoustic and phonotactic models. These can be tweaked as necessary to test hypotheses about the underlying mechanisms of nonnative speech perception. We propose a novel methodology to test ASR systems which use language models represented by Weighted Finite State Transducers (W-FST) in identification tasks analogous to those used to test human participants. Using this method, we test the predictive power of the acoustic model on patterns of vowel epenthesis. We find that the acoustic model alone better predicts human results than when accompanied by language models, at least when the latter are \textit{n}-gram based phonotactic models. We further test whether some effects traditionally attributed to phonology may actually be predicted from acoustics alone. Following promising but not perfect results, we propose future research paths for enhancing the methodology and to further investigate the mechanisms underlying nonnative speech perception.  
