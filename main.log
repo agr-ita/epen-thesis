@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.26)  20 AUG 2018 23:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.26)  20 AUG 2018 23:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1011,14 +1011,6 @@ l.24
       [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 43--44
-
- []
-
-
-Underfull \vbox (badness 1248) has occurred while \output is active []
-
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1029,16 +1021,15 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.44 
+l.42 
       [2]
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
 
 
-Overfull \hbox (0.921pt too wide) in paragraph at lines 68--69
-[]\OT1/cmr/m/n/12 Another sim-i-lar mech-a-nism was pro-posed by [CITE La Chari
-t^^Se & Par-adis (2005)],
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
+
  []
 
 
@@ -1051,8 +1042,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.69 
+l.67 
       [3]
+Overfull \hbox (0.921pt too wide) in paragraph at lines 68--69
+[]\OT1/cmr/m/n/12 Another sim-i-lar mech-a-nism was pro-posed by [CITE La Chari
+t^^Se & Par-adis (2005)],
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1063,10 +1059,10 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.84 
+l.83 
       [4]
 
-LaTeX Warning: Citation `silverman1992' on page 5 undefined on input line 98.
+LaTeX Warning: Citation `silverman1992' on page 5 undefined on input line 97.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1080,7 +1076,7 @@ been already used, duplicate ignored
                    \relax 
 l.103 
        [5]
-<images/chapter01-intro/12step.pdf, id=498, page=1, 1008.97478pt x 455.12466pt>
+<images/chapter01-intro/12step.pdf, id=497, page=1, 1008.97478pt x 455.12466pt>
 
 File: images/chapter01-intro/12step.pdf Graphic file (type pdf)
 <use images/chapter01-intro/12step.pdf, page 1>
@@ -1119,7 +1115,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.7}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.145 
+l.138 
        [7])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3884,7 +3880,7 @@ ipa/tipabx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tipa/ti
 pasl10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tipa/tipasl12
 .pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tipa/tipasl8.pfb></
 usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (150 pages, 3980433 bytes).
+Output written on main.pdf (150 pages, 3980569 bytes).
 PDF statistics:
  2796 PDF objects out of 2984 (max. 8388607)
  2341 compressed objects within 24 object streams
