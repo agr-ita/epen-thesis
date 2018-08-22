@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="354.61407mm"
-   height="159.95802mm"
-   viewBox="0 0 1256.5066 566.78039"
+   width="348.74451mm"
+   height="125.08175mm"
+   viewBox="0 0 1235.7089 443.20305"
    id="svg12264"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -208,9 +208,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.7698765"
-     inkscape:cx="1129.5772"
-     inkscape:cy="116.09666"
+     inkscape:zoom="0.50998985"
+     inkscape:cx="348.72213"
+     inkscape:cy="63.299764"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -227,87 +227,87 @@
      fit-margin-right="0"
      fit-margin-bottom="0">
     <sodipodi:guide
-       position="248.13213,429.25909"
+       position="227.33446,320.93343"
        orientation="1,0"
        id="guide12915" />
     <sodipodi:guide
-       position="64.799936,264.02086"
+       position="44.002264,155.6952"
        orientation="1,0"
        id="guide13067" />
     <sodipodi:guide
-       position="281.07327,309.32967"
+       position="260.2756,201.00401"
        orientation="1,0"
        id="guide13138" />
     <sodipodi:guide
-       position="354.60413,114.22776"
+       position="333.80647,5.9020858"
        orientation="1,0"
        id="guide13171" />
     <sodipodi:guide
-       position="538.29361,369.39573"
+       position="517.49595,261.07007"
        orientation="0,1"
        id="guide13340" />
     <sodipodi:guide
-       position="787.53852,329.98973"
+       position="766.74087,221.66407"
        orientation="1,0"
        id="guide13420" />
     <sodipodi:guide
-       position="1184.0324,170.11121"
+       position="1163.2348,61.785539"
        orientation="1,0"
        id="guide15707" />
     <sodipodi:guide
-       position="416.97385,517.75245"
+       position="396.17619,409.42679"
        orientation="0,1"
        id="guide15736" />
     <sodipodi:guide
-       position="547.99919,117.05065"
+       position="293.94044,35.871517"
        orientation="0,1"
        id="guide15738" />
     <sodipodi:guide
-       position="528.58803,416.53712"
+       position="507.79037,308.21146"
        orientation="1,0"
        id="guide15740" />
     <sodipodi:guide
-       position="489.76571,323.64085"
+       position="468.96805,215.31519"
        orientation="1,0"
        id="guide15744" />
     <sodipodi:guide
-       position="570.18337,216.87947"
+       position="549.38571,108.55381"
        orientation="1,0"
        id="guide15746" />
     <sodipodi:guide
-       position="887.6945,29.700431"
+       position="866.89685,-78.625247"
        orientation="1,0"
        id="guide15748" />
     <sodipodi:guide
-       position="965.33913,29.700431"
+       position="944.54148,-78.625247"
        orientation="1,0"
        id="guide15750" />
     <sodipodi:guide
-       position="528.58803,0.50000266"
+       position="507.79037,-107.82568"
        orientation="0,1"
        id="guide15767" />
     <sodipodi:guide
-       position="926.51682,266.79388"
+       position="905.71917,158.46822"
        orientation="1,0"
        id="guide15802" />
     <sodipodi:guide
-       position="320.61129,566.28036"
+       position="299.81362,457.95471"
        orientation="0,1"
        id="guide15806" />
     <sodipodi:guide
-       position="0.49999974,-74.511283"
+       position="-20.297674,-182.83697"
        orientation="1,0"
        id="guide15808" />
     <sodipodi:guide
-       position="1256.0065,-72.098593"
+       position="1235.2089,-180.42428"
        orientation="1,0"
        id="guide15810" />
     <sodipodi:guide
-       position="1154.2708,131.8919"
+       position="1133.4732,23.566227"
        orientation="1,0"
        id="guide15883" />
     <sodipodi:guide
-       position="570.18337,51.300924"
+       position="446.85871,0.50001552"
        orientation="0,1"
        id="guide15885" />
   </sodipodi:namedview>
@@ -327,7 +327,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(34.989939,-204.70372)">
+     transform="translate(14.192266,-219.95538)">
     <path
        style="fill:none;stroke:#000000;stroke-width:2.40521717;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 184.96921,294.43865 13.15441,-0.25205 3.20392,-13.93517 2.57413,34.82759 3.4787,-56.96511 2.71383,65.18666 3.16592,-56.25347 -0.10618,49.13011 0.90457,-25.70541 29.54728,-1.42538 2.60765,-6.68361 0.765,11.57206 3.98004,-17.7793 1.11207,19.24483 3.02366,-13.77826 1.80927,6.89115 6.05091,-0.41347 22.25189,-0.64521 2.08367,-13.80116 0.80338,22.84143 2.96354,-29.23589 2.14916,29.6771 2.06268,-22.98205 2.06256,14.42895 10.00422,-0.79646"
@@ -591,22 +591,7 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;font-family:'Gentium Basic';-inkscape-font-specification:'Gentium Basic Bold';text-align:center;text-anchor:middle"
          id="flowPara15713">x</flowPara><flowPara
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;font-family:'Gentium Basic';-inkscape-font-specification:'Gentium Basic Bold';text-align:center;text-anchor:middle"
-         id="flowPara15715">Sequence match</flowPara></flowRoot>    <flowRoot
-       xml:space="preserve"
-       id="flowRoot3004-5-8-5-04-4-6-7-4-1"
-       style="font-style:normal;font-weight:normal;font-size:23.80119514px;line-height:125%;font-family:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-       transform="translate(120.20761,656.05319)"><flowRegion
-         id="flowRegion3006-4-6-0-22-7-2-9-5-2"><rect
-           style="text-align:start;text-anchor:start"
-           id="rect3008-7-8-3-2-4-61-2-2-9"
-           width="253.44786"
-           height="78.885506"
-           x="-1.2400848"
-           y="-7.3169618" /></flowRegion><flowPara
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:31.25px;font-family:'Gentium Basic';-inkscape-font-specification:'Gentium Basic Bold';text-align:center;text-anchor:middle"
-         id="flowPara13428-9">Berent et al. </flowPara><flowPara
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:31.25px;font-family:'Gentium Basic';-inkscape-font-specification:'Gentium Basic Bold';text-align:center;text-anchor:middle"
-         id="flowPara15771">(2007)</flowPara></flowRoot>    <rect
+         id="flowPara15715">Sequence match</flowPara></flowRoot>    <rect
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:3.2349999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect13100-8-8-8"
        width="129.41434"
@@ -620,55 +605,32 @@
        id="path12688-3-0-8-4"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:4, 8;stroke-dashoffset:7.80000019;stroke-opacity:0.49685537"
-       d="m 493.59809,286.79904 0,407.63437"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.70032442;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:3.40064873, 6.80129747;stroke-dashoffset:7.80000019;stroke-opacity:0.49685537"
+       d="m 493.44718,306.45359 0,294.40495"
        id="path15742"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:4, 8;stroke-dashoffset:7.80000019;stroke-opacity:0.49685537"
-       d="m 891.55734,286.10578 0,407.63437"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.70032442;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:3.40064873, 6.80129747;stroke-dashoffset:7.80000019;stroke-opacity:0.49685537"
+       d="m 891.70825,305.9529 0,294.40494"
        id="path15742-1"
        inkscape:connector-curvature="0" />
-    <flowRoot
-       xml:space="preserve"
-       id="flowRoot3004-5-8-5-04-4-6-7-4-1-0"
-       style="font-style:normal;font-weight:normal;font-size:23.80119514px;line-height:125%;font-family:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-       transform="translate(625.03441,656.55524)"><flowRegion
-         id="flowRegion3006-4-6-0-22-7-2-9-5-2-3"><rect
-           style="text-align:start;text-anchor:start"
-           id="rect3008-7-8-3-2-4-61-2-2-9-0"
-           width="253.44786"
-           height="78.885506"
-           x="-1.2400848"
-           y="-7.3169618" /></flowRegion><flowPara
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:31.25px;font-family:'Gentium Basic';-inkscape-font-specification:'Gentium Basic Bold';text-align:center;text-anchor:middle"
-         id="flowPara13428-9-4">Monahan et al. </flowPara><flowPara
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:31.25px;font-family:'Gentium Basic';-inkscape-font-specification:'Gentium Basic Bold';text-align:center;text-anchor:middle"
-         id="flowPara15771-4">(2009)</flowPara></flowRoot>    <rect
+    <rect
        style="opacity:1;fill:#8f0037;fill-opacity:0.42138367;stroke:#000000;stroke-width:1.69786167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:3.39572335, 6.7914467;stroke-dashoffset:7.80000019;stroke-opacity:0.49685537"
        id="rect15804"
        width="1267.5736"
        height="34.964924"
-       x="-200.39351"
-       y="-1625.3026"
+       x="-225.07201"
+       y="145.17859"
        ry="12.715159"
        transform="matrix(0,1,-1,0,0,0)" />
-    <flowRoot
-       xml:space="preserve"
-       id="flowRoot3004-5-8-5-04-4-6-76-3-4"
-       style="font-style:normal;font-weight:normal;font-size:23.80119514px;line-height:125%;font-family:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-       transform="translate(1044.6011,656.34216)"><flowRegion
-         id="flowRegion3006-4-6-0-22-7-2-5-9-4"><rect
-           style="text-align:start;text-anchor:start"
-           id="rect3008-7-8-3-2-4-61-6-4-7"
-           width="151.58359"
-           height="81.983017"
-           x="-1.2400848"
-           y="-7.3169618" /></flowRegion><flowPara
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:31.25px;font-family:'Gentium Basic';-inkscape-font-specification:'Gentium Basic Bold';text-align:center;text-anchor:middle"
-         id="flowPara13038-7-8-6">Reverse</flowPara><flowPara
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:20px;font-family:'Gentium Basic';-inkscape-font-specification:'Gentium Basic Bold';text-align:center;text-anchor:middle"
-         id="flowPara15715-9"><flowSpan
-           id="flowSpan15866"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:31.25px;font-family:'Gentium Basic';-inkscape-font-specification:'Gentium Basic Bold';text-align:center;text-anchor:middle">inference</flowSpan></flowPara></flowRoot>  </g>
+    <rect
+       style="opacity:1;fill:#8f0037;fill-opacity:0.42138367;stroke:#000000;stroke-width:1.69786167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:3.39572335, 6.7914467;stroke-dashoffset:7.80000019;stroke-opacity:0.49685537"
+       id="rect15804-3"
+       width="1267.5736"
+       height="34.964924"
+       x="-1229.5277"
+       y="-5.0512252"
+       ry="12.715159"
+       transform="scale(-1,-1)" />
+  </g>
 </svg>
