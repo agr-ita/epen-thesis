@@ -83,7 +83,7 @@ In \textbf{section \ref{3-medley}} we investigate a medley of epenthetic pattern
 \newpage
 \section{Anatomy of a HMM-based speech recogniser} \label{3-hmm}
 For the experiments described in this chapter we used Hidden Markov Model (HMM)-based speech recognisers as models of human perception. 
-Speech audio waveforms are transformed into a sequence of \textbf{acoustic vectors} $X_{1:T} = x_{1}, ..., x_{T}$ through the first step, called feature extraction. In the decoding phase that follows, the trained ASR system attempts to find the sequence of words $w_{1:L} = w_{1}, ..., w_{L}$ which is most likely to have produced the sequence of acoustic feature vectors $X$.
+Speech audio waveforms are transformed into a sequence of \textbf{acoustic vectors} $X_{1:T} = x_{1}, ..., x_{T}$ in the first step, called feature extraction. In the decoding phase that follows, the trained ASR system attempts to find the sequence of words $w_{1:L} = w_{1}, ..., w_{L}$ which is most likely to have produced the sequence of acoustic feature vectors $X$.
 Mathematically, this equates to solving the following equation:
 
 \begin{equation}
@@ -117,7 +117,7 @@ While the ideal annotation is one for which phoneticians have provided phoneme c
 In the following sections we have trained ASR systems with different ``native'' languages, namely Japanese (JP) and Korean (KR). These languages were of particular interest because of their relatively restrictive phonotactics with regards to consonant clusters, as well as the availability of corpora of spontaneous speech, which we will now present. We also trained an American English (EN) corpus in order to evaluate our model's performance with respect to state-of-the-art systems. 
 
 \paragraph{Corpus of Spontaneous Japanese (CSJ)}
-As the name suggests, the CSJ \cite{maekawa2003} contains recordings of spontaneous Standard Japanese. The corpus is composed of two subparts: (1) academic presentation speech (APS), which consists of live recordings of academic presentations, and (2) simulated public speech (SPS), where speakers presented everyday topics in front of a small audience. For our models we only kept SPS, which is more representative of everyday conversations at the level of the lexicon, and has a more balanced population than the young, male-dominated APS.
+The CSJ \cite{maekawa2003} contains recordings of spontaneous Standard Japanese. The corpus is composed of two subparts: (1) academic presentation speech (APS), which consists of live recordings of academic presentations, and (2) simulated public speech (SPS), where speakers presented everyday topics in front of a small audience. For our models we only kept SPS, which is more representative of everyday conversations at the level of the lexicon, and has a more balanced population than the young, male-dominated APS.
 Recordings were manually transcribed by native speakers of Japanese using Japanese syllabaries, which meant that the phonetic transcriptions only included phonotactically legal phoneme sequences, even in cases where the actual acoustics might have been closer to illegal sequences. Phoneme boundaries were manually adjusted; however, this alignment was not used when training our models, as it was overwritten by forced alignment due to technical constraints.
 Our subset of the corpus contained $400,547$ utterances produced by $594$ speakers\footnote{For the CSJ and KCSS, we used utterances from the same speakers for the validation and test sets, but their data was not seen during model training. For the WSJ, data from all speakers was used in the 3 corpus subsets, due to a planned comparison to another corpus not described here. Since the speakers that we used in our experiments are not from any of the corpora, this is not an issue. However, it needs to be kept in mind that error rates (\%WER and \%PER) for KCSS, CSJ, and WSJ are only comparable within corpus.} ($331$ female, $263$ male), with an average of $674.3$ utterances per speaker. The division of the corpus across training, validation, and test set are shown in Table \ref{tab:hmm_csj}.
 
@@ -160,7 +160,7 @@ The corpus contains $57,504$ utterances produced by $40$ speakers (as explained 
 \paragraph{Wall Street Journal - Read (WSJ)}
 The WSJ \cite{paul1992} is a corpus of both read and spontaneous American English.
 For our work, we only kept the read subset of the corpus, which consisted of {\color{red}professionally trained journalists} recorded while reading news articles. Contrary to the CSJ and KCSS, the recordings were not phonetically transcribed. However, we had access to the news articles themselves, as well as to a dictionary which mapped the standard phonetic pronunciation of words in American English to the words in the articles.
-In total, $338$ speakers {\color{red}($X$ female, $Y$ male)} uttered $71,037$ utterances, with an average of $210.2$ utterances per speaker. The division of the corpus across training, validation, and test sets is shown in Table \ref{tab:hmm_wsj}. 
+In total, $338$ speakers {\color{red}($X$ female, $Y$ male)} read $71,037$ utterances, with an average of $210.2$ utterances per speaker. The division of the corpus across training, validation, and test sets is shown in Table \ref{tab:hmm_wsj}. 
 
 \begin{table}[htb]
 \centering
@@ -177,7 +177,7 @@ In total, $338$ speakers {\color{red}($X$ female, $Y$ male)} uttered $71,037$ ut
 \end{table}
       
 \subsection{Features}
-In order for our ASR systems to be able to use speech as input, it is necessary to perform signal analysis. This procedure transforms the continuous raw speech waveform into sequential speech features. This latter form ensures a more informative representation of speech, with modifications that enhance phonemic contrasts and better approximate how speech is processed by the human cochlea. In this work we used Mel-frequency cepstrum coefficients (MFCC), traditionally used for HMM-based ASR systems.
+In order for our ASR systems to be able to use speech as input, it is necessary to perform signal processing. This procedure transforms the continuous raw speech waveform into sequential speech features. This latter form ensures a more informative representation of speech, with modifications that enhance phonemic contrasts and better approximate how speech is processed by the human cochlea. In this work we used Mel-frequency cepstrum coefficients (MFCC), traditionally used for HMM-based ASR systems.
 
 Speech is recorded with a microphone; the continuous audio signal is digitalized at a sampling rate of 16kHz.
 The audio is then segmented into frames of 25 ms, with a shift of 10 ms between the beginning of each frame. By using frames, we make the assumption that the signal is stationary within the 25 ms window, and we apply the following proccessing steps to each frame, using Kaldi \cite{povey2011}:
@@ -186,7 +186,7 @@ The audio is then segmented into frames of 25 ms, with a shift of 10 ms between 
 \item Pre-processing: The data is extracted and pre-processed (dithering, pre-emphasis, and DC offset removal).
 \item Windowing: The data in the 25 ms frame is multiplied by a tapered window (Hamming window), to avoid discontinuities at the edges of the segment.
 \item Spectral analysis: By applying a Fast Fourier Transform (FFT), we find out how much energy there is at each frequency band for this frame.
-\item Nonlinear frequency scaling: In order to compensate for the fact that human hearing is less sensitive to higher frequencies, frequencies are mapped onto a Mel scale, which is linear until approximately 1000 Hz and logarithmic afterwards. This is done by applying a mel-filter bank with 23 bins, which are equally spaced in the mel-frequency domain. Each filter summarises the amount of energy in a section of the range of frequencies. 
+\item Nonlinear frequency scaling: In order to compensate for the fact that human hearing is less sensitive to higher frequencies, frequencies are mapped onto a Mel scale, which is linear until approximately 1000 Hz and logarithmic afterwards. This is done by applying a mel-filter bank with 23 bins, which are equally spaced in the mel-frequency domain. Each filter summarises the amount of energy in a section of the range of frequencies. %[Oddur]: Add more details (to be done for final version)
 \item Cepstral analysis: The log of the energy in each bin is computed, from which we take the cosine transform. We keep 13 MFCCs, including $c_{0}$, the zeroth coefficient which represents the average of the log-frequency of the bins \cite{gales2008}.
   \item Cepstral liftering: Coefficients are scaled, ensuring that they have a reasonable range.
 \end{enumerate}
