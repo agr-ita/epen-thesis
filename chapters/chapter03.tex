@@ -274,28 +274,26 @@ Concerning the test set (i.e., $15\%$ of the corpora), we find \%WER comparable 
 Since the validation and test sets contain utterances from the same speakers\footnote{This would be a seen as a huge red flag in speech engineering. However, remember that our real ``test sets'' will be the items used in the experiments. The reason why we did not just use the sum of the validation and test sets as a bigger validation set ($20\%$ of each corpus) was because of the computational demands of decoding sets of such sizes, testing each combination of parameters. This was an issue particularly when decoding with phone language models, due to the huge set of transcriptions that were possible for any given utterance. We would like to emphasize that we are showing error rates to give the reader a vague idea of the performance of such models. It is not our goal to compare our models to models that have been trained, validated, and tested with properly balanced datasets.}, this information does not allow us to evaluate our models' error variability when decoding datasets with different sets of speakers that are not seen in the training data (recall that none of our models have any speaker adaptation; only CMVN is applied when processing the features). However, the fact that validation and test set scores are similar indicates that, while rudimentary, our acoustic models give stable performances when confronted with datasets with structurally different lexical exemplars and acoustically different phonetic exemplars.   
 
 {\color{red}[TODO]: Add WSJ}
-%> d.eval
-%   corpus model totgauss   set   WER   PER
-%1     CSJ  mono        1 valid 47.24 44.16
+% > d.eval
+%    corpus model totgauss   set   WER   PER
+% 1     CSJ  mono        1 valid 47.24 44.16
 % 2     CSJ  mono        3 valid 42.28 40.92
 % 3     CSJ  mono        6 valid 40.14 39.47
 % 4     CSJ  mono       15 valid 37.64 38.07
 % 5     CSJ   tri       15 valid 29.94 25.33
 % 6     CSJ  mono       15  test 37.48 37.96
-
 % 7    KCSS  mono        1 valid 81.39 56.23
 % 8    KCSS  mono        3 valid 77.20 53.05
 % 9    KCSS  mono        6 valid 75.59 51.66
 % 10   KCSS  mono       15 valid 74.03 50.70
 % 11   KCSS   tri       15 valid 65.48 38.42
 % 12   KCSS  mono       15  test 73.35 50.70
-
-% 13    WSJ  mono        1 valid 18.54    NA
-% 14    WSJ  mono        3 valid 14.55    NA
-% 15    WSJ  mono        6 valid 12.81    NA
-% 16    WSJ  mono       15 valid 11.26    NA
-% 17    WSJ   tri       15 valid  8.48    NA
-% 18    WSJ  mono       15  test 11.50    NA
+% 13    WSJ  mono        1 valid 18.54 48.11
+% 14    WSJ  mono        3 valid 14.55 44.44
+% 15    WSJ  mono        6 valid 12.81 42.60
+% 16    WSJ  mono       15 valid 11.26 40.88
+% 17    WSJ   tri       15 valid  8.48 28.55
+% 18    WSJ  mono       15  test 11.50 40.92 wpdF 41.26 wpdT
 
 %%%%%%%%%%%%%
 % SurfPhono % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
