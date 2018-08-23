@@ -44,7 +44,7 @@ d.eval <- data.frame(corpus=c(rep("CSJ",6), rep("KCSS",6), rep("WSJ",6)),
                            c(18.54, 14.55, 12.81, 11.26, 8.48, 11.5)), #11.44 test wpdT
                      PER=c(c(44.16, 40.92, 39.47, 38.07, 25.33, 37.96), 
                            c(56.23, 53.05, 51.66, 50.70, 38.42, 50.7),
-                           c(NA, NA, NA, NA, NA, NA)))
+                           c(48.11, 44.44, 42.60, 40.88, 28.55, 40.92))) #wpdT WSJ = 
 d.eval.melted <- melt(d.eval, id.vars = c("corpus", "model", "totgauss", "set"))
 
 ########
@@ -54,11 +54,11 @@ pdf(file="figures/plot_hmm_evaluations.pdf", width = 6, height = 4)
 
 ggplot(d.eval.melted[d.eval.melted$set=="valid",], aes(x=totgauss, y=value, col=corpus, pch=model, label=(round(value, 1)))) + 
   facet_wrap(~variable) +
-  geom_point(size=2) + geom_line() +
+  geom_point(size=2.5, alpha=1) + geom_line() +
   # geom_text(vjust = -1.5, check_overlap = F) + 
   xlim(0,15) + ylim(0, 100) + 
   xlab("Number of Gaussians (x1000)") + ylab("Error rate (%)") +
-  scale_color_manual(values=c("orange", "black", "purple4")) +
+  scale_color_manual(values=c("gray14", "purple4", "orange")) +
   theme_ita() + theme(legend.position="bottom")
 
 dev.off()

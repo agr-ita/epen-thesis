@@ -2,9 +2,9 @@
 \contentsline {paragraph}{Conference proceedings}{6}{section*.7}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Nonnative misperceptions}{2}{section.1.1}
-\contentsline {section}{\numberline {1.2}Perceptual vowel epenthesis}{2}{section.1.2}
+\contentsline {section}{\numberline {1.2}Perceptual vowel epenthesis}{3}{section.1.2}
 \contentsline {section}{\numberline {1.3}Processing steps in perceptual vowel epenthesis}{4}{section.1.3}
-\contentsline {section}{\numberline {1.4}Vowel epenthesis in loanword adaptations}{5}{section.1.4}
+\contentsline {section}{\numberline {1.4}Vowel epenthesis in loanword adaptations}{6}{section.1.4}
 \contentsline {section}{\numberline {1.5}Justifying the modelling approach}{7}{section.1.5}
 \contentsline {section}{\numberline {1.6}Outline}{9}{section.1.6}
 \contentsline {chapter}{\numberline {2}Role of acoustic details in the choice of epenthetic vowel quality}{10}{chapter.2}
