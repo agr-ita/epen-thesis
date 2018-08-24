@@ -116,7 +116,7 @@
 \contentsline {subsubsection}{\numberline {3.3.3.4}Summary}{77}{subsubsection.3.3.3.4}
 \contentsline {subsection}{\numberline {3.3.4}Discussion}{78}{subsection.3.3.4}
 \contentsline {subsubsection}{\numberline {3.3.4.1}Need for a better acoustic model}{79}{subsubsection.3.3.4.1}
-\contentsline {subsubsection}{\numberline {3.3.4.2}Need for phonotactics and/or abstract grammar}{80}{subsubsection.3.3.4.2}
+\contentsline {subsubsection}{\numberline {3.3.4.2}Need for phonotactics and/or abstract grammar}{79}{subsubsection.3.3.4.2}
 \contentsline {section}{\numberline {3.4}Medley of epenthetic variations: Due to phonological processes or embedded in the phonetics?}{81}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Introduction}{81}{subsection.3.4.1}
 \contentsline {subsubsection}{\numberline {3.4.1.1}Cross-linguistic differences in epenthesis}{81}{subsubsection.3.4.1.1}
@@ -161,10 +161,10 @@
 \contentsline {subsection}{\numberline {3.5.5}Data enhancements}{101}{subsection.3.5.5}
 \contentsline {subsection}{\numberline {3.5.6}Conclusion}{102}{subsection.3.5.6}
 \contentsline {chapter}{\numberline {4}Conclusion}{103}{chapter.4}
-\contentsline {chapter}{\numberline {A}Example of research based on computational modelling}{110}{appendix.A}
-\contentsline {section}{\numberline {A.1}\ignorespaces Are words easier to learn from infant- than adult-directed speech? \\ A quantitative corpus-based investigation}{111}{section.A.1}
-\contentsline {subsection}{\numberline {A.1.1}\ignorespaces Introduction}{111}{subsection.A.1.1}
-\contentsline {subsection}{\numberline {A.1.2}\ignorespaces Experiment 1: Acoustic distribution of word tokens}{120}{subsection.A.1.2}
-\contentsline {subsection}{\numberline {A.1.3}\ignorespaces Experiment 2: Phonological density}{124}{subsection.A.1.3}
-\contentsline {subsection}{\numberline {A.1.4}\ignorespaces Experiment 3: Net discriminability}{128}{subsection.A.1.4}
-\contentsline {subsection}{\numberline {A.1.5}\ignorespaces General discussion}{131}{subsection.A.1.5}
+\contentsline {chapter}{\numberline {A}Example of research based on computational modelling}{111}{appendix.A}
+\contentsline {section}{\numberline {A.1}\ignorespaces Are words easier to learn from infant- than adult-directed speech? \\ A quantitative corpus-based investigation}{112}{section.A.1}
+\contentsline {subsection}{\numberline {A.1.1}\ignorespaces Introduction}{112}{subsection.A.1.1}
+\contentsline {subsection}{\numberline {A.1.2}\ignorespaces Experiment 1: Acoustic distribution of word tokens}{121}{subsection.A.1.2}
+\contentsline {subsection}{\numberline {A.1.3}\ignorespaces Experiment 2: Phonological density}{125}{subsection.A.1.3}
+\contentsline {subsection}{\numberline {A.1.4}\ignorespaces Experiment 3: Net discriminability}{129}{subsection.A.1.4}
+\contentsline {subsection}{\numberline {A.1.5}\ignorespaces General discussion}{132}{subsection.A.1.5}
