@@ -38,7 +38,7 @@
 \BOOKMARK [2][-]{subsection.3.2.2}{Features}{section.3.2}% 38
 \BOOKMARK [2][-]{subsection.3.2.3}{Acoustic models}{section.3.2}% 39
 \BOOKMARK [2][-]{subsection.3.2.4}{Lexicon \046 language models}{section.3.2}% 40
-\BOOKMARK [2][-]{subsection.3.2.5}{Decoding}{section.3.2}% 41
+\BOOKMARK [2][-]{subsection.3.2.5}{Lattices}{section.3.2}% 41
 \BOOKMARK [2][-]{subsection.3.2.6}{Scoring: Assessing native performance}{section.3.2}% 42
 \BOOKMARK [1][-]{section.3.3}{Investigating the role of surface phonotactics}{chapter.3}% 43
 \BOOKMARK [2][-]{subsection.3.3.1}{Introduction}{section.3.3}% 44

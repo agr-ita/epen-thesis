@@ -84,88 +84,88 @@
 \contentsline {section}{\numberline {3.2}Anatomy of a HMM-based speech recogniser}{54}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Corpora}{54}{subsection.3.2.1}
 \contentsline {paragraph}{Corpus of Spontaneous Japanese (CSJ)}{55}{section*.32}
-\contentsline {paragraph}{Korean Corpus of Spontaneous Speech (KCSS)}{55}{section*.33}
+\contentsline {paragraph}{Korean Corpus of Spontaneous Speech (KCSS)}{56}{section*.33}
 \contentsline {paragraph}{Wall Street Journal - Read (WSJ)}{56}{section*.34}
 \contentsline {subsection}{\numberline {3.2.2}Features}{56}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}Acoustic models}{58}{subsection.3.2.3}
 \contentsline {paragraph}{Why not triphones?}{59}{section*.35}
 \contentsline {subsection}{\numberline {3.2.4}Lexicon \& language models}{60}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Decoding}{61}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.5}Lattices}{61}{subsection.3.2.5}
 \contentsline {subsection}{\numberline {3.2.6}Scoring: Assessing native performance}{61}{subsection.3.2.6}
-\contentsline {section}{\numberline {3.3}Investigating the role of surface phonotactics}{63}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Introduction}{63}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Experiment 1}{64}{subsection.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.2.1}Methods}{64}{subsubsection.3.3.2.1}
-\contentsline {paragraph}{Stimuli}{64}{section*.36}
-\contentsline {paragraph}{Language models}{64}{section*.37}
-\contentsline {paragraph}{Identification task simulation}{66}{figure.3.5}
-\contentsline {subsubsection}{\numberline {3.3.2.2}Quantitative analysis}{67}{subsubsection.3.3.2.2}
-\contentsline {subsubsection}{\numberline {3.3.2.3}Qualitative analyses}{67}{subsubsection.3.3.2.3}
-\contentsline {paragraph}{Identification accuracy}{67}{section*.39}
-\contentsline {paragraph}{Control items}{68}{section*.40}
-\contentsline {paragraph}{Test items}{70}{section*.41}
-\contentsline {subsubsection}{\numberline {3.3.2.4}Summary}{73}{subsubsection.3.3.2.4}
-\contentsline {subsection}{\numberline {3.3.3}Experiment 2}{73}{subsection.3.3.3}
-\contentsline {subsubsection}{\numberline {3.3.3.1}Methods}{73}{subsubsection.3.3.3.1}
-\contentsline {paragraph}{Stimuli}{73}{section*.42}
-\contentsline {paragraph}{Language models}{74}{section*.43}
-\contentsline {paragraph}{Identification task simulation}{74}{section*.44}
-\contentsline {subsubsection}{\numberline {3.3.3.2}Results: Quantitative analysis}{74}{subsubsection.3.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.3.3}Results: Qualitative analysis}{75}{subsubsection.3.3.3.3}
-\contentsline {paragraph}{Default vowel}{75}{figure.3.12}
-\contentsline {paragraph}{Effect of coarticulation}{76}{section*.46}
-\contentsline {subsubsection}{\numberline {3.3.3.4}Summary}{77}{subsubsection.3.3.3.4}
-\contentsline {subsection}{\numberline {3.3.4}Discussion}{78}{subsection.3.3.4}
-\contentsline {subsubsection}{\numberline {3.3.4.1}Need for a better acoustic model}{79}{subsubsection.3.3.4.1}
-\contentsline {subsubsection}{\numberline {3.3.4.2}Need for phonotactics and/or abstract grammar}{80}{subsubsection.3.3.4.2}
-\contentsline {section}{\numberline {3.4}Medley of epenthetic variations: Due to phonological processes or embedded in the phonetics?}{81}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Introduction}{81}{subsection.3.4.1}
-\contentsline {subsubsection}{\numberline {3.4.1.1}Cross-linguistic differences in epenthesis}{81}{subsubsection.3.4.1.1}
-\contentsline {subsubsection}{\numberline {3.4.1.2}Variations of epenthetic vowel quality due to neighbouring consonants}{82}{subsubsection.3.4.1.2}
-\contentsline {subsubsection}{\numberline {3.4.1.3}Variations in epenthesis due to syllabic structure}{82}{subsubsection.3.4.1.3}
-\contentsline {subsection}{\numberline {3.4.2}Experiment 1: Variations due to native phonology}{83}{subsection.3.4.2}
-\contentsline {subsubsection}{\numberline {3.4.2.1}Methods}{84}{subsubsection.3.4.2.1}
-\contentsline {paragraph}{Stimuli}{84}{section*.47}
-\contentsline {paragraph}{ASR system}{84}{section*.48}
-\contentsline {paragraph}{Identification task simulation}{84}{section*.49}
-\contentsline {subsubsection}{\numberline {3.4.2.2}Results}{85}{subsubsection.3.4.2.2}
-\contentsline {paragraph}{Identification accuracy}{85}{figure.3.16}
-\contentsline {paragraph}{Proportion of epenthesis}{85}{figure.3.17}
-\contentsline {paragraph}{Effect of palatalisation on {\fontencoding {T3}\selectfont /i/}-epenthesis}{86}{figure.3.18}
-\contentsline {subsubsection}{\numberline {3.4.2.3}Summary}{88}{subsubsection.3.4.2.3}
-\contentsline {subsection}{\numberline {3.4.3}Experiment 2: Variations due to syllabic structure}{89}{subsection.3.4.3}
-\contentsline {subsubsection}{\numberline {3.4.3.1}Methods}{89}{subsubsection.3.4.3.1}
-\contentsline {paragraph}{Stimuli}{89}{section*.53}
-\contentsline {paragraph}{Behavioural experiment}{89}{section*.54}
-\contentsline {paragraph}{ASR systems}{89}{section*.55}
-\contentsline {paragraph}{Identification task simulation}{90}{section*.56}
-\contentsline {subsubsection}{\numberline {3.4.3.2}Results}{90}{subsubsection.3.4.3.2}
-\contentsline {paragraph}{Qualitative analysis}{91}{figure.3.21}
-\contentsline {paragraph}{Quantitative analysis}{93}{section*.58}
-\contentsline {subsubsection}{\numberline {3.4.3.3}Summary}{94}{subsubsection.3.4.3.3}
-\contentsline {subsection}{\numberline {3.4.4}Discussion}{95}{subsection.3.4.4}
-\contentsline {subsubsection}{\numberline {3.4.4.1}Cross-linguistic differences in epenthesis}{95}{subsubsection.3.4.4.1}
-\contentsline {subsubsection}{\numberline {3.4.4.2}Variations of epenthetic vowel quality due to neighbouring consonants}{96}{subsubsection.3.4.4.2}
-\contentsline {subsubsection}{\numberline {3.4.4.3}Variations in epenthesis due to syllabic structure}{97}{subsubsection.3.4.4.3}
-\contentsline {subsubsection}{\numberline {3.4.4.4}Conclusion}{97}{subsubsection.3.4.4.4}
-\contentsline {section}{\numberline {3.5}General Discussion}{98}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Language model contributions}{98}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Model adequacy}{98}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}Predictive power of the acoustic model}{99}{subsection.3.5.3}
-\contentsline {subsubsection}{\numberline {3.5.3.1}Variations in rates of epenthesis}{99}{subsubsection.3.5.3.1}
-\contentsline {paragraph}{Successes}{99}{section*.59}
-\contentsline {paragraph}{Lessons}{99}{section*.60}
-\contentsline {subsubsection}{\numberline {3.5.3.2}Variation in epenthetic vowel quality}{99}{subsubsection.3.5.3.2}
-\contentsline {paragraph}{Successes}{99}{section*.61}
-\contentsline {paragraph}{Lessons}{100}{section*.62}
-\contentsline {subsection}{\numberline {3.5.4}Model enhancements}{100}{subsection.3.5.4}
-\contentsline {subsection}{\numberline {3.5.5}Data enhancements}{101}{subsection.3.5.5}
-\contentsline {subsection}{\numberline {3.5.6}Conclusion}{102}{subsection.3.5.6}
-\contentsline {chapter}{\numberline {4}Conclusion}{103}{chapter.4}
-\contentsline {chapter}{\numberline {A}Example of research based on computational modelling}{110}{appendix.A}
-\contentsline {section}{\numberline {A.1}\ignorespaces Are words easier to learn from infant- than adult-directed speech? \\ A quantitative corpus-based investigation}{111}{section.A.1}
-\contentsline {subsection}{\numberline {A.1.1}\ignorespaces Introduction}{111}{subsection.A.1.1}
-\contentsline {subsection}{\numberline {A.1.2}\ignorespaces Experiment 1: Acoustic distribution of word tokens}{120}{subsection.A.1.2}
-\contentsline {subsection}{\numberline {A.1.3}\ignorespaces Experiment 2: Phonological density}{124}{subsection.A.1.3}
-\contentsline {subsection}{\numberline {A.1.4}\ignorespaces Experiment 3: Net discriminability}{128}{subsection.A.1.4}
-\contentsline {subsection}{\numberline {A.1.5}\ignorespaces General discussion}{131}{subsection.A.1.5}
+\contentsline {section}{\numberline {3.3}Investigating the role of surface phonotactics}{64}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Introduction}{64}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Experiment 1}{65}{subsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.2.1}Methods}{65}{subsubsection.3.3.2.1}
+\contentsline {paragraph}{Stimuli}{65}{section*.36}
+\contentsline {paragraph}{Language models}{65}{section*.37}
+\contentsline {paragraph}{Identification task simulation}{67}{figure.3.5}
+\contentsline {subsubsection}{\numberline {3.3.2.2}Quantitative analysis}{68}{subsubsection.3.3.2.2}
+\contentsline {subsubsection}{\numberline {3.3.2.3}Qualitative analyses}{68}{subsubsection.3.3.2.3}
+\contentsline {paragraph}{Identification accuracy}{68}{section*.39}
+\contentsline {paragraph}{Control items}{69}{section*.40}
+\contentsline {paragraph}{Test items}{71}{section*.41}
+\contentsline {subsubsection}{\numberline {3.3.2.4}Summary}{74}{subsubsection.3.3.2.4}
+\contentsline {subsection}{\numberline {3.3.3}Experiment 2}{74}{subsection.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.3.1}Methods}{74}{subsubsection.3.3.3.1}
+\contentsline {paragraph}{Stimuli}{74}{section*.42}
+\contentsline {paragraph}{Language models}{75}{section*.43}
+\contentsline {paragraph}{Identification task simulation}{75}{section*.44}
+\contentsline {subsubsection}{\numberline {3.3.3.2}Results: Quantitative analysis}{75}{subsubsection.3.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3.3}Results: Qualitative analysis}{76}{subsubsection.3.3.3.3}
+\contentsline {paragraph}{Default vowel}{76}{figure.3.12}
+\contentsline {paragraph}{Effect of coarticulation}{77}{section*.46}
+\contentsline {subsubsection}{\numberline {3.3.3.4}Summary}{78}{subsubsection.3.3.3.4}
+\contentsline {subsection}{\numberline {3.3.4}Discussion}{79}{subsection.3.3.4}
+\contentsline {subsubsection}{\numberline {3.3.4.1}Need for a better acoustic model}{80}{subsubsection.3.3.4.1}
+\contentsline {subsubsection}{\numberline {3.3.4.2}Need for phonotactics and/or abstract grammar}{81}{subsubsection.3.3.4.2}
+\contentsline {section}{\numberline {3.4}Medley of epenthetic variations: Due to phonological processes or embedded in the phonetics?}{82}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Introduction}{82}{subsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.1.1}Cross-linguistic differences in epenthesis}{82}{subsubsection.3.4.1.1}
+\contentsline {subsubsection}{\numberline {3.4.1.2}Variations of epenthetic vowel quality due to neighbouring consonants}{83}{subsubsection.3.4.1.2}
+\contentsline {subsubsection}{\numberline {3.4.1.3}Variations in epenthesis due to syllabic structure}{83}{subsubsection.3.4.1.3}
+\contentsline {subsection}{\numberline {3.4.2}Experiment 1: Variations due to native phonology}{84}{subsection.3.4.2}
+\contentsline {subsubsection}{\numberline {3.4.2.1}Methods}{85}{subsubsection.3.4.2.1}
+\contentsline {paragraph}{Stimuli}{85}{section*.47}
+\contentsline {paragraph}{ASR system}{85}{section*.48}
+\contentsline {paragraph}{Identification task simulation}{85}{section*.49}
+\contentsline {subsubsection}{\numberline {3.4.2.2}Results}{86}{subsubsection.3.4.2.2}
+\contentsline {paragraph}{Identification accuracy}{86}{figure.3.16}
+\contentsline {paragraph}{Proportion of epenthesis}{86}{figure.3.17}
+\contentsline {paragraph}{Effect of palatalisation on {\fontencoding {T3}\selectfont /i/}-epenthesis}{87}{figure.3.18}
+\contentsline {subsubsection}{\numberline {3.4.2.3}Summary}{89}{subsubsection.3.4.2.3}
+\contentsline {subsection}{\numberline {3.4.3}Experiment 2: Variations due to syllabic structure}{90}{subsection.3.4.3}
+\contentsline {subsubsection}{\numberline {3.4.3.1}Methods}{90}{subsubsection.3.4.3.1}
+\contentsline {paragraph}{Stimuli}{90}{section*.53}
+\contentsline {paragraph}{Behavioural experiment}{90}{section*.54}
+\contentsline {paragraph}{ASR systems}{90}{section*.55}
+\contentsline {paragraph}{Identification task simulation}{91}{section*.56}
+\contentsline {subsubsection}{\numberline {3.4.3.2}Results}{91}{subsubsection.3.4.3.2}
+\contentsline {paragraph}{Qualitative analysis}{92}{figure.3.21}
+\contentsline {paragraph}{Quantitative analysis}{94}{section*.58}
+\contentsline {subsubsection}{\numberline {3.4.3.3}Summary}{95}{subsubsection.3.4.3.3}
+\contentsline {subsection}{\numberline {3.4.4}Discussion}{96}{subsection.3.4.4}
+\contentsline {subsubsection}{\numberline {3.4.4.1}Cross-linguistic differences in epenthesis}{96}{subsubsection.3.4.4.1}
+\contentsline {subsubsection}{\numberline {3.4.4.2}Variations of epenthetic vowel quality due to neighbouring consonants}{97}{subsubsection.3.4.4.2}
+\contentsline {subsubsection}{\numberline {3.4.4.3}Variations in epenthesis due to syllabic structure}{98}{subsubsection.3.4.4.3}
+\contentsline {subsubsection}{\numberline {3.4.4.4}Conclusion}{98}{subsubsection.3.4.4.4}
+\contentsline {section}{\numberline {3.5}General Discussion}{99}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Language model contributions}{99}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Model adequacy}{99}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Predictive power of the acoustic model}{100}{subsection.3.5.3}
+\contentsline {subsubsection}{\numberline {3.5.3.1}Variations in rates of epenthesis}{100}{subsubsection.3.5.3.1}
+\contentsline {paragraph}{Successes}{100}{section*.59}
+\contentsline {paragraph}{Lessons}{100}{section*.60}
+\contentsline {subsubsection}{\numberline {3.5.3.2}Variation in epenthetic vowel quality}{100}{subsubsection.3.5.3.2}
+\contentsline {paragraph}{Successes}{100}{section*.61}
+\contentsline {paragraph}{Lessons}{101}{section*.62}
+\contentsline {subsection}{\numberline {3.5.4}Model enhancements}{101}{subsection.3.5.4}
+\contentsline {subsection}{\numberline {3.5.5}Data enhancements}{102}{subsection.3.5.5}
+\contentsline {subsection}{\numberline {3.5.6}Conclusion}{103}{subsection.3.5.6}
+\contentsline {chapter}{\numberline {4}Conclusion}{104}{chapter.4}
+\contentsline {chapter}{\numberline {A}Example of research based on computational modelling}{111}{appendix.A}
+\contentsline {section}{\numberline {A.1}\ignorespaces Are words easier to learn from infant- than adult-directed speech? \\ A quantitative corpus-based investigation}{112}{section.A.1}
+\contentsline {subsection}{\numberline {A.1.1}\ignorespaces Introduction}{112}{subsection.A.1.1}
+\contentsline {subsection}{\numberline {A.1.2}\ignorespaces Experiment 1: Acoustic distribution of word tokens}{121}{subsection.A.1.2}
+\contentsline {subsection}{\numberline {A.1.3}\ignorespaces Experiment 2: Phonological density}{125}{subsection.A.1.3}
+\contentsline {subsection}{\numberline {A.1.4}\ignorespaces Experiment 3: Net discriminability}{129}{subsection.A.1.4}
+\contentsline {subsection}{\numberline {A.1.5}\ignorespaces General discussion}{132}{subsection.A.1.5}
