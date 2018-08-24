@@ -3,63 +3,46 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
 The style file: apalike.bst
 Database file #1: main.bib
-Warning--I didn't find a database entry for "polivanov1939"
-Warning--I didn't find a database entry for "trubetzkoy1939"
-Warning--I didn't find a database entry for "goto1991"
-Warning--I didn't find a database entry for "miyawaki1981"
-Warning--I didn't find a database entry for "durvasul2016"
-Warning--I didn't find a database entry for "kuhl1997"
-Warning--I didn't find a database entry for "andruski1999"
-Warning--I didn't find a database entry for "bernstein1984"
-Warning--I didn't find a database entry for "burnham2002"
-Warning--I didn't find a database entry for "cristia2014"
-Warning--I didn't find a database entry for "liu2003"
-Warning--I didn't find a database entry for "mcmurray2013"
-Warning--I didn't find a database entry for "uther2007"
-Warning--I didn't find a database entry for "kirchoff2005"
-Warning--I didn't find a database entry for "martin2015"
 Warning--I didn't find a database entry for "["
-Warning--can't use both volume and number fields in peperkamp2005
-Warning--can't use both volume and number fields in shin2011
-You've used 73 entries,
+You've used 97 entries,
             1935 wiz_defined-function locations,
-            926 strings with 16705 characters,
-and the built_in function-call counts, 30711 in all, are:
-= -- 3058
-> -- 1226
-< -- 54
-+ -- 440
-- -- 410
-* -- 2648
-:= -- 5236
-add.period$ -- 224
-call.type$ -- 73
-change.case$ -- 562
-chr.to.int$ -- 71
-cite$ -- 75
-duplicate$ -- 1155
-empty$ -- 2163
-format.name$ -- 520
-if$ -- 6023
+            1042 strings with 21439 characters,
+and the built_in function-call counts, 41167 in all, are:
+= -- 4094
+> -- 1679
+< -- 67
++ -- 602
+- -- 564
+* -- 3589
+:= -- 7029
+add.period$ -- 296
+call.type$ -- 97
+change.case$ -- 759
+chr.to.int$ -- 95
+cite$ -- 97
+duplicate$ -- 1517
+empty$ -- 2879
+format.name$ -- 710
+if$ -- 8050
 int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 72
-newline$ -- 369
-num.names$ -- 221
-pop$ -- 476
+missing$ -- 96
+newline$ -- 489
+num.names$ -- 293
+pop$ -- 635
 preamble$ -- 1
-purify$ -- 567
+purify$ -- 764
 quote$ -- 0
-skip$ -- 880
+skip$ -- 1156
 stack$ -- 0
-substring$ -- 2341
-swap$ -- 175
-text.length$ -- 14
+substring$ -- 3173
+swap$ -- 218
+text.length$ -- 17
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 434
-warning$ -- 2
-while$ -- 268
+type$ -- 578
+warning$ -- 0
+while$ -- 360
 width$ -- 0
-write$ -- 950
-(There were 18 warnings)
+write$ -- 1260
+(There was 1 warning)

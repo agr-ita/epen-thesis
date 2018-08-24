@@ -5,6 +5,13 @@ Albright, A. (2009).
 \newblock Feature-based generalisation as a source of gradient acceptability.
 \newblock {\em Phonology}, 26(1):9--41.
 
+\bibitem[Andruski et~al., 1999]{andruski1999}
+Andruski, J.~E., Kuhl, P.~K., and Hayashi, A. (1999).
+\newblock The acoustics of vowels in {Japanese} women’s speech to infants and
+  adults.
+\newblock In {\em Proceedings of the 14th International Congress on Phonetic
+  Sciences}, volume~3, pages 2177--79.
+
 \bibitem[Bates et~al., 2015]{R-lme4}
 Bates, D., M{\"a}chler, M., Bolker, B., and Walker, S. (2015).
 \newblock Fitting linear mixed-effects models using {lme4}.
@@ -22,6 +29,11 @@ Berent, I., Steriade, D., Lennertz, T., and Vaknin, V. (2007).
   illusions.
 \newblock {\em Cognition}, 104(3):591--630.
 
+\bibitem[Bernstein~Ratner, 1984]{bernstein1984}
+Bernstein~Ratner, N. (1984).
+\newblock Patterns of vowel modification in mother--child speech.
+\newblock {\em Journal of child language}, 11(03):557--578.
+
 \bibitem[Best, 1994]{best1994}
 Best, C.~T. (1994).
 \newblock The emergence of native-language phonological influences in infants:
@@ -29,15 +41,32 @@ Best, C.~T. (1994).
 \newblock {\em The development of speech perception: The transition from speech
   sounds to spoken words}, 167(224):233--277.
 
+\bibitem[Best and Strange, 1992]{best1992}
+Best, C.~T. and Strange, W. (1992).
+\newblock Effects of phonological and phonetic factors on cross-language
+  perception of approximants.
+\newblock {\em Journal of Phonetics}.
+
 \bibitem[Boersma et~al., 2002]{praat}
 Boersma, P. et~al. (2002).
 \newblock Praat, a system for doing phonetics by computer.
 \newblock {\em Glot international}, 5(9/10):341--345.
 
+\bibitem[Boersma and Pater, 2007]{boersma2007}
+Boersma, P. and Pater, J. (2007).
+\newblock Constructing constraints from language data: The case of canadian
+  english diphthongs.
+\newblock {\em Handout, NELS}, 38.
+
 \bibitem[Bombien et~al., 2016]{R-wrassp}
 Bombien, L., Winkelmann, R., and Scheffers, M. (2016).
 \newblock {\em wrassp: an R wrapper to the ASSP Library}.
 \newblock R package version 0.1.4.
+
+\bibitem[Burnham et~al., 2002]{burnham2002}
+Burnham, D., Kitamura, C., and Vollmer-Conna, U. (2002).
+\newblock What's new, pussycat? {On} talking to babies and animals.
+\newblock {\em Science}, 296(5572):1435--1435.
 
 \bibitem[Chan and Lane, 2015]{chan2015}
 Chan, W. and Lane, I. (2015).
@@ -54,6 +83,11 @@ Chi, T., Ru, P., and Shamma, S.~A. (2005).
 Church, K.~W. (1987).
 \newblock Phonological parsing and lexical retrieval.
 \newblock {\em Cognition}, 25(1-2):53--69.
+
+\bibitem[Cristia and Seidl, 2014]{cristia2014}
+Cristia, A. and Seidl, A. (2014).
+\newblock {The hyperarticulation hypothesis of infant-directed speech.}
+\newblock {\em Journal of Child Language}, pages 1--22.
 
 \bibitem[Daland et~al., 2015]{daland2015}
 Daland, R., Oh, M., and Kim, S. (2015).
@@ -98,6 +132,12 @@ Dupoux, E., Pallier, C., Sebastian, N., and Mehler, J. (1997).
 Dupoux, E., Parlato, E., Frota, S., Hirose, Y., and Peperkamp, S. (2011).
 \newblock Where do illusory vowels come from?
 \newblock {\em Journal of Memory and Language}, 64(3):199--210.
+
+\bibitem[Dupoux et~al., 2010]{dupoux2010}
+Dupoux, E., Peperkamp, S., and Sebasti{\'a}n-Gall{\'e}s, N. (2010).
+\newblock Limits on bilingualism revisited: Stress ‘deafness’ in
+  simultaneous french--spanish bilinguals.
+\newblock {\em Cognition}, 114(2):266--275.
 
 \bibitem[Dupoux et~al., 2008]{dupoux2008}
 Dupoux, E., Sebasti{\'a}n-Gall{\'e}s, N., Navarrete, E., and Peperkamp, S.
@@ -161,6 +201,18 @@ Giorgino, T. (2009).
   {dtw} package.
 \newblock {\em Journal of Statistical Software}, 31(7):1--24.
 
+\bibitem[Golinkoff et~al., 2015]{golinkoff2015}
+Golinkoff, R.~M., Can, D.~D., Soderstrom, M., and Hirsh-Pasek, K. (2015).
+\newblock (baby) talk to me: {The} social context of infant-directed speech and
+  its effects on early language acquisition.
+\newblock {\em Current Directions in Psychological Science}, 24(5):339--344.
+
+\bibitem[Goto, 1971]{goto1971}
+Goto, H. (1971).
+\newblock Auditory perception by normal japanese adults of the sounds {"L"} and
+  {"R"}.
+\newblock {\em Neuropsychologia}.
+
 \bibitem[Guevara-Rukoz et~al., 2017a]{guekozJASA17}
 Guevara-Rukoz, A., Lin, I., Morii, M., Minagawa, Y., Dupoux, E., and Peperkamp,
   S. (2017a).
@@ -218,6 +270,13 @@ Hyafil, A., Fontolan, L., Kabdebon, C., Gutkin, B., and Giraud, A.-L. (2015).
 \newblock Speech encoding by coupled cortical theta and gamma oscillations.
 \newblock {\em Elife}, 4:e06213.
 
+\bibitem[Iverson et~al., 2005]{iverson2005}
+Iverson, P., Hazan, V., and Bannister, K. (2005).
+\newblock Phonetic training with acoustic cue manipulations: A comparison of
+  methods for teaching english/r/-/l/to japanese adults.
+\newblock {\em The Journal of the Acoustical Society of America},
+  118(5):3267--3278.
+
 \bibitem[Kabak and Idsardi, 2007]{kabak2007}
 Kabak, B. and Idsardi, W.~J. (2007).
 \newblock Perceptual distortions in the adaptation of {E}nglish consonant
@@ -228,6 +287,21 @@ Kabak, B. and Idsardi, W.~J. (2007).
 Keating, P.~A. (1988).
 \newblock Underspecification in phonetics.
 \newblock {\em Phonology}, 5(02):275--292.
+
+\bibitem[Kirchhoff and Schimmel, 2005]{kirchhoff2005}
+Kirchhoff, K. and Schimmel, S. (2005).
+\newblock Statistical properties of infant-directed versus adult-directed
+  speech: {Insights} from speech recognition.
+\newblock {\em The Journal of the Acoustical Society of America},
+  117(4):2238--2246.
+
+\bibitem[Kuhl et~al., 1997]{kuhl1997}
+Kuhl, P.~K., Andruski, J.~E., Chistovich, I.~A., Chistovich, L.~A.,
+  Kozhevnikova, E.~V., Ryskina, V.~L., Stolyarova, E.~I., Sundberg, U., and
+  Lacerda, F. (1997).
+\newblock Cross-language analysis of phonetic units in language addressed to
+  infants.
+\newblock {\em Science}, 277(5326):684--686.
 
 \bibitem[Kuhl and Iverson, 1995]{kuhl1995}
 Kuhl, P.~K. and Iverson, P. (1995).
@@ -241,11 +315,39 @@ Lenth, R.~V. (2016).
 \newblock Least-squares means: The {R} package {lsmeans}.
 \newblock {\em Journal of Statistical Software}, 69(1):1--33.
 
+\bibitem[Liu et~al., 2003]{liu2003}
+Liu, H.-M., Kuhl, P.~K., and Tsao, F.-M. (2003).
+\newblock An association between mothers’ speech clarity and infants’
+  speech discrimination skills.
+\newblock {\em Developmental Science}, 6(3):F1--F10.
+
+\bibitem[Lively et~al., 1993]{lively1993}
+Lively, S.~E., Logan, J.~S., and Pisoni, D.~B. (1993).
+\newblock Training {Japanese} listeners to identify {English} /r/ and /l/.
+  {II:} {The} role of phonetic environment and talker variability in learning
+  new perceptual categories.
+\newblock {\em The Journal of the Acoustical Society of America},
+  94(3):1242--1255.
+
+\bibitem[Logan et~al., 1991]{logan1991}
+Logan, J.~S., Lively, S.~E., and Pisoni, D.~B. (1991).
+\newblock Training {Japanese} listeners to identify {English} {/r/} and {/l/}:
+  {A} first report.
+\newblock {\em The Journal of the Acoustical Society of America},
+  89(2):874--886.
+
 \bibitem[Maekawa, 2003]{maekawa2003}
 Maekawa, K. (2003).
 \newblock Corpus of spontaneous japanese: Its design and evaluation.
 \newblock In {\em ISCA \& IEEE Workshop on Spontaneous Speech Processing and
   Recognition}.
+
+\bibitem[Martin et~al., 2015]{martin2015}
+Martin, A., Schatz, T., Versteegh, M., Miyazawa, K., Mazuka, R., Dupoux, E.,
+  and Cristia, A. (2015).
+\newblock Mothers speak less clearly to infants than to adults: {A}
+  comprehensive test of the hyperarticulation hypothesis.
+\newblock {\em Psychological science}, 26(3):341--347.
 
 \bibitem[Matsui, 2017]{matsui2017}
 Matsui, M.~F. (2017).
@@ -259,6 +361,19 @@ Mattingley, W., Hume, E., and Hall, K.~C. (2015).
   {J}apanese}.
 \newblock In {\em Proceedings of the 18th International Congress of Phonetic
   Sciences}, pages 888:1--5.
+
+\bibitem[McMurray et~al., 2013]{mcmurray2013}
+McMurray, B., Kovack-Lesh, K.~A., Goodwin, D., and McEchron, W. (2013).
+\newblock Infant directed speech and the development of speech perception:
+  {Enhancing} development or an unintended consequence?
+\newblock {\em Cognition}, 129(2):362--378.
+
+\bibitem[Miyawaki et~al., 1975]{miyawaki1975}
+Miyawaki, K., Jenkins, J.~J., Strange, W., Liberman, A.~M., Verbrugge, R., and
+  Fujimura, O. (1975).
+\newblock An effect of linguistic experience: The discrimination of {[r]} and
+  {[l]} by native speakers of japanese and english.
+\newblock {\em Perception \& Psychophysics}, 18(5):331--340.
 
 \bibitem[Monahan et~al., 2009]{monahan2009}
 Monahan, P.~J., Takahashi, E., Nakao, C., and Idsardi, W.~J. (2009).
@@ -380,13 +495,25 @@ Shin, D.-J. and Iverson, P. (2011).
 \newblock Individual differences in vowel epenthesis among korean learners of
   english.
 \newblock In {\em (Proceedings) International Congress of Phonetic Sciences},
-  volume~6, pages 1822--1825.
+  pages 1822--1825.
+
+\bibitem[Soderstrom, 2007]{soderstrom2007}
+Soderstrom, M. (2007).
+\newblock Beyond babytalk: {Re-evaluating} the nature and content of speech
+  input to preverbal infants.
+\newblock {\em Developmental Review}, 27(4):501--532.
 
 \bibitem[Steriade, 2001]{steriade2001}
 Steriade, D. (2001).
 \newblock The phonology of perceptibility effects: the p-map and its
   consequences for constraint organization.
 \newblock {\em Ms., UCLA}.
+
+\bibitem[Takagi and Mann, 1995]{takagi1995}
+Takagi, N. and Mann, V. (1995).
+\newblock The limits of extended naturalistic exposure on the perceptual
+  mastery of english /r/ and /l/ by adult japanese learners of english.
+\newblock {\em Applied Psycholinguistics}, 16(4):380–406.
 
 \bibitem[Tsuchida, 2001]{tsuchida2001}
 Tsuchida, A. (2001).
@@ -399,6 +526,12 @@ Uffmann, C. (2006).
 \newblock Epenthetic vowel quality in loanwords: {E}mpirical and formal issues.
 \newblock {\em Lingua}, 116(7):1079--1111.
 
+\bibitem[Uther et~al., 2007]{uther2007}
+Uther, M., Knoll, M.~A., and Burnham, D. (2007).
+\newblock Do you speak {E-NG-LI-SH}? {A} comparison of foreigner-and
+  infant-directed speech.
+\newblock {\em Speech Communication}, 49(1):2--7.
+
 \bibitem[Vance, 1987]{vance1987}
 Vance, T.~J. (1987).
 \newblock {\em Introduction to Japanese phonology}.
@@ -408,6 +541,11 @@ Vance, T.~J. (1987).
 Vendelin, I. and Peperkamp, S. (2006).
 \newblock The influence of orthography on loanword adaptations.
 \newblock {\em Lingua}, 116(7):996--1007.
+
+\bibitem[Wang and Munro, 2004]{wang2004}
+Wang, X. and Munro, M.~J. (2004).
+\newblock Computer-based training for learning english vowel contrasts.
+\newblock {\em System}, 32(4):539--552.
 
 \bibitem[Wilson and Davidson, 2013]{wilson2013}
 Wilson, C. and Davidson, L. (2013).
@@ -419,6 +557,21 @@ Wilson, C., Davidson, L., and Martin, S. (2014).
 \newblock Effects of acoustic--phonetic detail on cross-language speech
   production.
 \newblock {\em Journal of Memory and Language}, 77:1--24.
+
+\bibitem[Wong, 2012]{wong2012}
+Wong, J. W.~S. (2012).
+\newblock Training the perception and production of {English} /e/ and /ae/ of
+  {Cantonese ESL} learners: {A} comparison of low vs. high variability phonetic
+  training.
+\newblock In {\em Proceedings of the 14th Australasian International Conference
+  on Speech Science and Techniology. Sydney, Australia}, pages 3--6.
+
+\bibitem[Ylinen et~al., 2010]{ylinen2010}
+Ylinen, S., Uther, M., Latvala, A., Veps{\"a}l{\"a}inen, S., Iverson, P.,
+  Akahane-Yamada, R., and N{\"a}{\"a}t{\"a}nen, R. (2010).
+\newblock Training the brain to weight speech cues differently: A study of
+  finnish second-language users of english.
+\newblock {\em Journal of Cognitive Neuroscience}, 22(6):1319--1332.
 
 \bibitem[Yun et~al., 2015]{yun2015}
 Yun, W., Yoon, K., Park, S., Lee, J., Cho, S., Kang, D., Byun, K., Hahn, H.,
