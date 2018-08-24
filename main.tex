@@ -30,7 +30,7 @@
 \usepackage{setspace}
 %\doublespacing
 \usepackage{lineno}
-
+\usepackage{psl-cover}
 \setcounter{secnumdepth}{3}
 
 \graphicspath{{images/}}
@@ -42,13 +42,64 @@
 \fancyfoot[LE,RO]{\thepage}
 
 
-\title{
-	{Decoding perceptual vowel epenthesis: Experiments \& Modelling}\\
-	{\large Institution Name}\\
-%	{\includegraphics{university.jpg}}
+\title{Decoding perceptual vowel epenthesis: Experiments \& Modelling}
+
+\author{\\Adriana GUEVARA RUKOZ}
+
+\supervisor{Emmanuel DUPOUX \\\& Sharon PEPERKAMP}
+\doctoralschool{École Doctorale Cerveau-Cognition-Comportement}{158}
+\specialty{Sciences Cognitives}
+\date{19 Octobre 2018}
+
+\jury{
+%  ???\\
+%  Établissement, Président
+
+  Mme Sophie DUFOUR\\
+  Établissement, Rapporteur
+
+  M Laurent BESACIER\\
+  Établissement, Rapporteur
+
+  M Christophe PALLIER\\
+  Établissement, Membre du jury
+
+  M Paul IVERSON\\
+  Établissement, Membre du jury
+  
+  M Emmanuel DUPOUX\\
+  Établissement, Directeur
+
+  Mme Sharon PEPERKAMP\\
+  Établissement, Co-Directrice
+
 }
-\author{AGR}
-\date{Day Month Year}
+
+\frabstract{\small{
+ Pourquoi des personnes ayant grandi dans des milieux linguistiques différents ne perçoivent-elles pas toujours un même signal acoustique de la même manière? Par exemple, il arrive que des auditeurs rapportent avoir entendu des voyelles qui n'étaient pas présentes dans l'acoustique de mots non-natifs, lorsque ceux-ci ne se conforment pas aux structures sonores permises dans leur langue. Ce phénomène, connu sous le nom d'épenthèse vocalique perceptive, a été observée dans plusieurs langues telles que le japonais, le portuguais brésilien, le coréen, et l'anglais. L'identité de la voyelle épenthétique varie en fonction des langues, mais aussi parmi les langues elles-mêmes, en fonction des environnements phonémiques.
+A quel point ce processus est-il dirigé par des informations directement accessibles dans le signal acoustique ? Quelle est la part de contribution de la phonologie native ? Comment sont combinés ces deux éléments lors du calcul de ce qui est perçu par l'auditeur ? Deux familles principales de théories ont été proposées en tant qu'explications : les théories à deux étapes, et les théories à une étape. Les premières proposent une analyse initiale des catégories phonétiques, suivie de réparations faites par une grammaire abstraite (e.g., cas d'épenthèse). De leur côté, les théories à une étape proposent que tous les facteurs acoustiques, phonétiques, et phonologiques sont intégrés simultanément de manière probabiliste lors du calcul du percept optimal.
+Dans cette thèse, nous combinons des approches expérimentales et de modélisation, afin d'évaluer si l'épenthèse vocalique perceptive est un processus à une ou deux étapes. En particulier, nous examinons ceci en mesurant le rôle des détails acoustiques dans les modulations de l'identité de la voyelle épenthétique.
+Dans un premier temps, des résultats d'expériences comportementales nous montrent que ces modulations sont influencées aussi bien par les détails acoustiques que par des processus phonologiques. Cependant, la plupart de la variation de l'identité de la voyelle épenthétique est expliquée par l'acoustique. De plus, nous présentons un modèle de perception à une étape qui utilise des exemplaires; celui-ci est capable de reproduire les effets de la coarticulation qui ont été relevés dans les données expérimentales. Ces résultats constituent de l'évidence en faveur des modèles de perception étrangère à une étape.    
+Dans un deuxième temps, nous présentons une implémentation du modèle à une étape proposé par \cite{wilson2013}, en utilisant des modèles HMM-GMM (automates de Markov à états cachés en mélanges gaussiens), issus du milieu de la reconnaissance automatique de la parole (RAP). Ces modèles se composent d'un modèle acoustique et d'un modèle de langage, qui déterminent la correspondence acoustique et phonotactique entre la parole et des transcriptions possibles, respectivement. Il nous est alors possible de les ajuster indépendamment afin d'évaluer leur influence relative dans l'épenthèse vocalique perceptuelle. Nous proposons une nouvelle manière d'utiliser ces modèles pour simuler des paradigmes de choix forcés utilisés pour étudier l'épenthèse vocalique chez des participants humains, en utilisant des modèles de language contraints lors du processus de décodage de la parole.
+Dans un premier ensemble d'études, nous utilisons cette nouvelle méthode afin de tester si des systèmes de RAP avec des modèles de langage à phonotactique à \textit{n}-grammes donnent des résultats plus proches des résultats humains qu'un système de RAP avec un modèle de langage nul (i.e., sans phonotactique). De manière étonnante, les résultats montrent que le système à modèle de langage nul prédit le mieux la performance des participants.
+Dans un deuxième ensemble d'études, nous évaluons si certains effets traditionnellement attribués à des processus phonologiques peuvent être expliqués qu'à partir de la correspondance acoustique. Bien que les résultats soient prometteurs, nos modèles ne sont capables de reproduire qu'une sous-partie des effets observés chez l'humain. Avant de pouvoir attribuer l'origine de ces effets à des processus phonologiques, il est nécessaire de tester des systèmes de RAP avec des modèles acoustiques plus performants. Nous énumérons des futures pistes de recherche d'utilisation de modèles améliorés, et nous soulignons les avantages de l'utilisation conjointe d'expériences comportementales et modélisations computationnelles afin d'élucider les mécanismes sous-jacents la perception de la parole étrangère.}
+}
+
+\enabstract{
+ \small{Why do people of different linguistic background sometimes perceive the same acoustic signal differently? For instance, when hearing nonnative speech that does not conform to sound structures allowed in their native language, listeners may report hearing vowels that are not acoustically present. This phenomenon, known as perceptual vowel epenthesis, has been attested in various languages such as Japanese, Brazilian Portuguese, Korean, and English. The quality of the epenthesized vowel varies between languages, but also within languages, given certain phonemic environments. 
+How much of this process is guided by information directly accessible in the acoustic signal? What is the contribution of the native phonology? How are these two elements combined when computing the native percept? Two main families of theories have been proposed as explanations: two-step and one-step theories. The former advocate an initial parsing of the phonetic categories, followed by repairs by an abstract grammar (e.g., epenthesis), while one-step proposals posit that all acoustic, phonetic, and phonological factors are integrated simultaneously in a probabilistic manner, in order to find the optimal percept.  
+In this dissertation, we use a combination of experimental and modelling approaches in order to evaluate whether perceptual vowel epenthesis is a two-step or one-step process. In particular, we investigate this by assessing the role of acoustic details in modulations of epenthetic vowel quality.
+In a first part, results from two behavioural experiments show that these modulations are influenced by acoustic cues as well as phonology; however, the former explain most of the variation in epenthetic vowel responses. Additionally, we present a one-step exemplar-based model of perception that is able to reproduce coarticulation effects observed in human data. These results constitute evidence for one-step models of nonnative speech perception.
+In a second part, we present an implementation of the one-step proposal in \cite{wilson2013}, using HMM-GMM (hidden Markov models with Gaussian mixture models) from the field of automatic speech recognition. These models present two separate components determining the acoustic and phonotactic matches between speech and possible transcriptions. We can thus tweak them independently in order to evaluate the relative influence of acoustic/phonetic and phonological factors in perceptual vowel epenthesis. We propose a novel way to simulate with these models the forced choice paradigm used to probe vowel epenthesis in human participants, using constrained language models during the speech decoding process.
+In a first set of studies, we use this method to test whether various ASR systems with \textit{n}-gram phonotactics as their language model better approximate human results than an ASR system with a null (i.e., no phonotactics) language model. Surprisingly, we find that this null model was the best predictor of human performance. 
+In a second set of studies, we evaluate whether effects traditionally attributed to phonology may be predictable solely from acoustic match. We find that, while promising, our models are only able to partially reproduce some effects observed in results from human experiments. Before attributing the source of these effects to phonology, it is necessary to test ASR systems with more performant acoustic models. We discuss future avenues for using enhanced models, and highlight the advantages of using a hybrid approach with behavioural experiments and computational modelling in order to elucidate the mechanisms underlying nonnative speech perception.}
+}
+
+\frkeywords{ Caesar licentia post honoratis haec adhibens urbium
+  honoratis nullum Caesar.}
+\enkeywords{ Delatus delatus nominatus
+  onere aut trahebatur quod tenus et bonorum.}
+
 
 \begin{document}
 \maketitle
