@@ -809,8 +809,8 @@ Concerning the language models used during the decoding, in order for the decodi
 After decoding the stimuli with the ASR models, we extracted from the resulting lattices each possible transcription of each item, and the corresponding acoustic and language model scores. %An example of how the ASR system decodes the experimental stimuli can be seen in Figure \ref{fig:k-epenth_align}.
 From the (scaled) acoustic and language model scores we derived the item posteriorgrams, which indicate how probable a given transcription was given the audio input. We used these probabilities as proxies of the probability that a listener might exploit when performing reverse inference during speech perception, and therefore, the probabilities used when responding in an identification task. 
 
-As such, for each item, we obtained a three-dimensional vector $ident_{model} = [p_{none}, p_{i}, {\color{red}p_{\textipa{1}}}]$, containing a discrete probability distribution, with a probability mass function linking the identification task options \{`none', `\textipa{i}', `\textipa{1}'\}, to their respective probabilities (i.e., posteriorgrams).
-We can define the human equivalent $ident_{human} = [p_{none}, p_{i}, {\color{red}p_{\textipa{1}}}]$, which contains the percentage of responses for each item, after aggregating all participant responses.
+As such, for each item, we obtained a three-dimensional vector $ident_{model} = [p_{none}, p_{i}, p_{i-bar}]$, containing a discrete probability distribution, with a probability mass function linking the identification task options \{`none', `\textipa{i}', `\textipa{1}'\}, to their respective probabilities (i.e., posteriorgrams).
+We can define the human equivalent $ident_{human} = [p_{none}, p_{i}, p_{i-bar}]$, which contains the percentage of responses for each item, after aggregating all participant responses.
 
 \subsubsection{Results}
 

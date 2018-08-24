@@ -580,13 +580,13 @@ From the DTW we extract two values per template-query combination: (1) $DTW_{dis
 We use the same similarity function as in section \ref{2-parlato}, inspired by the exemplar-based generalized context model (GCM) detailed by \cite{nosofsky1992}, and make modifications to accommodate for the inclusion of the duration mismatch penalty $DTW_{time}$.
 Our goal is to classify the $V_{1}C_{1}C_{2}V_{2}$ template into a category from the set of vowels \textipa{/i, o, u/}, through the similarity of the template to exemplars $V_{1}C_{1}iC_{2}V_{2}$, $V_{1}C_{1}oC_{2}V_{2}$, and $V_{1}C_{1}uC_{2}V_{2}$, respectively. We obtain $P(R_{J}|S_{i})$, the evidence favouring category $J$ given stimulus $i$, by averaging the similarity of said stimulus $i$ to all recorded exemplars of category $J$. Since we do not aim to introduce a language model to the exemplar model, as we want it to be based entirely on acoustics, we do not introduce a term for response bias for category J. All exemplars are weighted equally.   
 
-{\color{red}
+{%\color{red}
 \begin{equation}
   % P(R_{J}|S_{i}) = \frac{b_{J} \sum_{j\epsilon C_{J}}M_{j} \eta_{ij}}{\sum_{k}b_{K} \sum_{k\epsilon C_{K}}M_{k} \eta_{ik}} %Nosofsky92
   P(R_{J}|S_{i}) = \frac{ \frac{1}{n_{J}} \sum_{j\epsilon C_{J}} \eta_{ij}}{\sum_{K} \frac{1}{n_{K}} \sum_{k\epsilon C_{K}} \eta_{ik}}
   \label{parlato-dur_eq_sim1}
 \end{equation}
-}
+%}
 where $n_{J}$ is the number of exemplars of category $J$ and with $\eta$ defined as in equation \ref{parlato-dur_eq_sim2},
 
 \begin{equation}
@@ -629,7 +629,7 @@ We found a significant main effect of \textsc{Language} (mode: $-6.33$, HPD: $[-
 The main effect of \textsc{NSFV} was also significant (mode: $3.72$, HPD: $[3.30, 4.27]$); participants epenthesized \textipa{/i/} more often when more flanking vowels were \textipa{/i/}.
 The interaction between the fixed effects \textsc{Language x NSFV} was not significant (mode: $-0.24$, HPD: $[-1.15, 0.76]$). 
 
-\begin{figure}[h!]
+\begin{figure}[htb!]
   \centering
   \begin{overpic}[clip, trim=0 0 0 0, page=2, width=0.50\linewidth]{chapter02/parlato_dur.pdf}\end{overpic}
   \begin{overpic}[clip, trim=0 0 70 0, page=3, width=0.40\linewidth]{chapter02/parlato_dur.pdf}\end{overpic}
