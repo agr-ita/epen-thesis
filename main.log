@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.26)  24 AUG 2018 20:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.26)  24 AUG 2018 20:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1110,26 +1110,26 @@ LaTeX Warning: Label `eq_hmm_dec_post' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 104.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 104.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 105.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 105.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1229,7 +1229,7 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-Package hyperref Info: Link coloring ON on input line 104.
+Package hyperref Info: Link coloring ON on input line 105.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1239,62 +1239,62 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count167
 )
-LaTeX Info: Redefining \ref on input line 104.
-LaTeX Info: Redefining \pageref on input line 104.
-LaTeX Info: Redefining \nameref on input line 104.
+LaTeX Info: Redefining \ref on input line 105.
+LaTeX Info: Redefining \pageref on input line 105.
+LaTeX Info: Redefining \nameref on input line 105.
 
 (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
  ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 105.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 106.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <18> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 105.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 106.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <15> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 105.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 106.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 105.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 106.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <16> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 105.
-LaTeX Font Info:    Calculating math sizes for size <16> on input line 105.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 106.
+LaTeX Font Info:    Calculating math sizes for size <16> on input line 106.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <16> not available
-(Font)              size <17.28> substituted on input line 105.
+(Font)              size <17.28> substituted on input line 106.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <16> not available
-(Font)              size <17.28> substituted on input line 105.
+(Font)              size <17.28> substituted on input line 106.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <16> not available
-(Font)              size <17.28> substituted on input line 105.
+(Font)              size <17.28> substituted on input line 106.
 
 
 LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <16> not available
-(Font)              size <17.28> substituted on input line 105.
+(Font)              size <17.28> substituted on input line 106.
 
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <11.19995> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 105.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 106.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 105.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 106.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <11> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 105.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 106.
 <./logo-institute.png, id=272, 1499.6025pt x 702.625pt>
 File: ./logo-institute.png Graphic file (type png)
 <use ./logo-institute.png>
-Package pdftex.def Info: ./logo-institute.png  used on input line 105.
+Package pdftex.def Info: ./logo-institute.png  used on input line 106.
 (pdftex.def)             Requested size: 54.64236pt x 25.6073pt.
 <./logo-psl.jpg, id=274, 547.04375pt x 298.11375pt>
 File: ./logo-psl.jpg Graphic file (type jpg)
 <use ./logo-psl.jpg>
-Package pdftex.def Info: ./logo-psl.jpg  used on input line 105.
+Package pdftex.def Info: ./logo-psl.jpg  used on input line 106.
 (pdftex.def)             Requested size: 62.65411pt x 34.14322pt.
 [1
 
@@ -1302,7 +1302,7 @@ Package pdftex.def Info: ./logo-psl.jpg  used on input line 105.
 institute.png> <./logo-psl.jpg>] [2
 
 ]
-Overfull \hbox (0.6738pt too wide) in paragraph at lines 115--118
+Overfull \hbox (0.6738pt too wide) in paragraph at lines 116--119
 \OT1/cmr/m/n/12 [[]], us-ing HMM-GMM (hid-den Markov mod-els with Gaus-
  []
 
@@ -1310,7 +1310,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.118 
+l.119 
        [1
 
 
@@ -1325,15 +1325,15 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.119 \chapter
+l.120 \chapter
               *{Résumé} [2]
-Overfull \hbox (4.23335pt too wide) in paragraph at lines 120--122
+Overfull \hbox (4.23335pt too wide) in paragraph at lines 121--123
 \OT1/cmr/m/n/12 ex-em-ple, il ar-rive que des au-di-teurs rap-por-tent avoir en
 -tendu des voyelles qui n'^^Setaient
  []
 
 
-Overfull \hbox (7.91943pt too wide) in paragraph at lines 123--124
+Overfull \hbox (7.91943pt too wide) in paragraph at lines 124--125
 []\OT1/cmr/m/n/12 Dans cette th^^Rese, nous com-bi-nons des ap-proches exp^^Ser
 imentales et de mod^^Selisation,
  []
@@ -1352,15 +1352,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 ] [6
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 163.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 164.
 
  (/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 163.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 164.
 Package minitoc Info: I0024
-(minitoc)             PREPARING MINITOCS FROM main.toc on input line 181.
+(minitoc)             PREPARING MINITOCS FROM main.toc on input line 182.
 
 {\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode 
 Journal articles}{\reset@font\mtcPfont 7}{section*.6}}
@@ -1584,7 +1584,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.8}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.195 \chapter
+l.196 \chapter
               {Role of acoustic details in the choice of epenthetic vowel qu...
 [8]
 Chapter 2.
@@ -4213,333 +4213,315 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [147] [148
 
 ] [149]
-LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 216.
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <11> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 217.
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--216
-[]\OT1/phv/m/n/10.95 Pourquoi des per-son-nes ayant
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
+[]\OT1/phv/m/n/11 Pourquoi des per-son-nes ayant
  []
 
 
-Underfull \hbox (badness 4132) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 diff[]erents ne per[]oivent-elles pas
+Underfull \hbox (badness 8019) in paragraph at lines 217--217
+\OT1/phv/m/n/11 diff[]erents ne per[]oivent-elles un
  []
 
 
-Underfull \hbox (badness 6758) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 tent avoir en-tendu des voyelles
+Underfull \hbox (badness 1424) in paragraph at lines 217--217
+\OT1/phv/m/n/11 mani[]ere? Par ex-em-ple, il ar-rive
  []
 
 
-Underfull \hbox (badness 2617) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 qui n'[]etaient pas pr[]esentes dans
+Underfull \hbox (badness 1325) in paragraph at lines 217--217
+\OT1/phv/m/n/11 lorsque ceux-ci ne se con-for-ment
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 l'acoustique de mots non-natifs,
+Underfull \hbox (badness 3735) in paragraph at lines 217--217
+\OT1/phv/m/n/11 pas aux struc-tures sonores per-
  []
 
 
-Underfull \hbox (badness 1521) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 lorsque ceux-ci ne se con-for-ment
+Underfull \hbox (badness 4242) in paragraph at lines 217--217
+\OT1/phv/m/n/11 la voyelle []epenth[]etique varie en
  []
 
 
-Underfull \hbox (badness 3942) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 connu sous le nom d'[]epenth[]ese
+Underfull \hbox (badness 1917) in paragraph at lines 217--217
+\OT1/phv/m/n/11 fonc-tion des langues, mais aussi
  []
 
 
-Underfull \hbox (badness 1629) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 des en-vi-ron-nements phon[]emiques.
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
+\OT1/phv/m/n/11 familles prin-ci-pales de th[]eories
  []
 
 
-Underfull \hbox (badness 1859) in paragraph at lines 216--216
-[]\OT1/phv/m/n/10.95 etape. Les premi[]eres pro-posent
+Underfull \hbox (badness 1681) in paragraph at lines 217--217
+[]\OT1/phv/m/n/11 etape. Les premi[]eres pro-posent
  []
 
 
-Underfull \hbox (badness 1005) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 phon[]etiques, suivie de r[]eparations
+Underfull \hbox (badness 1297) in paragraph at lines 217--217
+\OT1/phv/m/n/11 De leur c[]ot[]e, les th[]eories []a une
  []
 
 
-Underfull \hbox (badness 1755) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 cept op-ti-mal. Dans cette th[]ese,
+Underfull \hbox (badness 1371) in paragraph at lines 217--217
+\OT1/phv/m/n/11 tan[]ement de mani[]ere prob-a-biliste.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 nous com-bi-nons des ap-proches
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
+\OT1/phv/m/n/11 exp[]eriences et de mod[]elisation,
  []
 
 
-Underfull \hbox (badness 4805) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 afin d'[]evaluer si l'[]epenth[]ese vo-
+Underfull \hbox (badness 3396) in paragraph at lines 217--217
+\OT1/phv/m/n/11 en mesurant le r[]ole des d[]etails
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 le r[]ole des d[]etails acous-tiques
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
+\OT1/phv/m/n/11 acous-tiques dans les mod-u-la-
  []
 
 
-Underfull \hbox (badness 1509) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 dans les mod-u-la-tions de l'identit[]e
+Underfull \hbox (badness 5133) in paragraph at lines 217--217
+\OT1/phv/m/n/11 tions de l'identit[]e de la voyelle
  []
 
 
-Underfull \hbox (badness 3838) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 un pre-mier temps, des r[]esultats
+Underfull \hbox (badness 2781) in paragraph at lines 217--217
+[]\OT1/phv/m/n/11 epenth[]etique. Dans un pre-mier
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 d'exp[]eriences com-porte-men-tales
+Underfull \hbox (badness 3792) in paragraph at lines 217--217
+\OT1/phv/m/n/11 d[]etails acous-tiques que par des
  []
 
 
-Underfull \hbox (badness 4193) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 d[]etails acous-tiques que par des
+Underfull \hbox (badness 1728) in paragraph at lines 217--217
+\OT1/phv/m/n/11 r[]esultats con-stituent de l'[]evidence
  []
 
 
-Underfull \hbox (badness 2050) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 r[]esultats con-stituent de l'[]evidence
+Underfull \hbox (badness 3872) in paragraph at lines 217--217
+\OT1/phv/m/n/11 en faveur des mod[]eles de per-
  []
 
 
-Underfull \hbox (badness 4181) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 en faveur des mod[]eles de per-
+Underfull \hbox (badness 6725) in paragraph at lines 217--217
+\OT1/phv/m/n/11 cep-tion []etrang[]ere []a une []etape.
  []
 
 
-Underfull \hbox (badness 7291) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 cep-tion []etrang[]ere []a une []etape.
+Underfull \hbox (badness 3229) in paragraph at lines 217--217
+\OT1/phv/m/n/11 Dans un deuxi[]eme temps, nous
  []
 
 
-Underfull \hbox (badness 3568) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 Dans un deuxi[]eme temps, nous
+Underfull \hbox (badness 1092) in paragraph at lines 217--217
+\OT1/phv/m/n/11 mod[]ele []a une []etape pro-pos[]e par
  []
 
 
-Underfull \hbox (badness 1231) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 mod[]ele []a une []etape pro-pos[]e par
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
+\OT1/phv/m/n/11 [[]], en
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 [[]], en
+Underfull \hbox (badness 1533) in paragraph at lines 217--217
+\OT1/phv/m/n/11 util-isant des mod[]eles HMM-GMM,
  []
 
 
-Underfull \hbox (badness 3250) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 util-isant des mod[]eles HMM-GMM
+Underfull \hbox (badness 2253) in paragraph at lines 217--217
+\OT1/phv/m/n/11 is-sus du mi-lieu de la re-con-nais-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 (au-to-mates de Markov []a []etats
+Underfull \hbox (badness 4391) in paragraph at lines 217--217
+\OT1/phv/m/n/11 sance au-toma-tique de la pa-role
  []
 
 
-Underfull \hbox (badness 4779) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 cach[]es en m[]elanges gaussiens),
+Underfull \hbox (badness 5050) in paragraph at lines 217--217
+\OT1/phv/m/n/11 d'un mod[]ele acous-tique et d'un
  []
 
 
-Underfull \hbox (badness 2478) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 is-sus du mi-lieu de la re-con-nais-
+Underfull \hbox (badness 5064) in paragraph at lines 217--217
+\OT1/phv/m/n/11 la cor-re-spon-dence acous-tique et
  []
 
 
-Underfull \hbox (badness 4819) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 sance au-toma-tique de la pa-role
+Underfull \hbox (badness 5077) in paragraph at lines 217--217
+\OT1/phv/m/n/11 les ajuster ind[]ependamment afin
  []
 
 
-Underfull \hbox (badness 5519) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 d'un mod[]ele acous-tique et d'un
+Underfull \hbox (badness 1005) in paragraph at lines 217--217
+\OT1/phv/m/n/11 l'[]epenth[]ese vo-calique per-ceptuelle.
  []
 
 
-Underfull \hbox (badness 5711) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 la cor-re-spon-dence acous-tique et
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
+\OT1/phv/m/n/11 Nous pro-posons une nou-velle
  []
 
 
-Underfull \hbox (badness 5711) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 les ajuster ind[]ependamment afin
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
+\OT1/phv/m/n/11 mani[]ere d'utiliser ces mod[]eles
  []
 
 
-Underfull \hbox (badness 1354) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 l'[]epenth[]ese vo-calique per-ceptuelle.
+Underfull \hbox (badness 2865) in paragraph at lines 217--217
+\OT1/phv/m/n/11 pour simuler des paradigmes de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 Nous pro-posons une nou-velle
+Underfull \hbox (badness 2903) in paragraph at lines 217--217
+\OT1/phv/m/n/11 choix forc[]es utilis[]es pour []etudier
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 mani[]ere d'utiliser ces mod[]eles
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
+\OT1/phv/m/n/11 l'[]epenth[]ese vo-calique chez des
  []
 
 
-Underfull \hbox (badness 3189) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 pour simuler des paradigmes de
+Underfull \hbox (badness 3492) in paragraph at lines 217--217
+\OT1/phv/m/n/11 par-tic-i-pants hu-mains, en util-isant
  []
 
 
-Underfull \hbox (badness 3240) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 choix forc[]es utilis[]es pour []etudier
+Underfull \hbox (badness 1769) in paragraph at lines 217--217
+\OT1/phv/m/n/11 mod[]eles de lan-gage []a phono-tac-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 l'[]epenth[]ese vo-calique chez des
+Underfull \hbox (badness 3536) in paragraph at lines 217--217
+\OT1/phv/m/n/11 tique []a \OT1/phv/m/sl/11 n\OT1/phv/m/n/11 -grammes don-nent d
+es
  []
 
 
-Underfull \hbox (badness 1231) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 du pro-ces-sus de d[]ecodage de la
+Underfull \hbox (badness 3019) in paragraph at lines 217--217
+\OT1/phv/m/n/11 hu-mains qu'un syst[]eme de RAP
  []
 
 
-Underfull \hbox (badness 1418) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 de lan-gage []a phono-tac-tique []a \OT1/phv/m/sl/10.95 n\OT
-1/phv/m/n/10.95 -
+Underfull \hbox (badness 1796) in paragraph at lines 217--217
+\OT1/phv/m/n/11 avec un mod[]ele de lan-gage nul.
  []
 
 
-Underfull \hbox (badness 1275) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 mieux la per-for-mance des par-tic-i-
+Underfull \hbox (badness 4479) in paragraph at lines 217--217
+\OT1/phv/m/n/11 nous []evaluons si cer-tains ef-fets
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 ef-fets tra-di-tion-nelle-ment at-tribu[]es
+Underfull \hbox (badness 3199) in paragraph at lines 217--217
+\OT1/phv/m/n/11 tra-di-tion-nelle-ment at-tribu[]es []a des
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--216
-[]\OT1/phv/m/n/10.95 a des pro-ces-sus phonologiques
+Underfull \hbox (badness 4108) in paragraph at lines 217--217
+\OT1/phv/m/n/11 pro-ces-sus phonologiques peu-vent
  []
 
 
-Underfull \hbox (badness 1394) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 peu-vent []etre ex-pliqu[]es qu'[]a par-tir
+Underfull \hbox (badness 7558) in paragraph at lines 217--217
+\OT1/phv/m/n/11 nos mod[]eles ne sont ca-pa-bles
  []
 
 
-Underfull \hbox (badness 2111) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 de la cor-re-spon-dance acous-tique.
+Underfull \hbox (badness 4752) in paragraph at lines 217--217
+\OT1/phv/m/n/11 de re-pro-duire qu'une sous-partie
  []
 
 
-Underfull \hbox (badness 5359) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 de re-pro-duire qu'une sous-partie
+Underfull \hbox (badness 5189) in paragraph at lines 217--217
+\OT1/phv/m/n/11 de ces ef-fets []a des pro-ces-sus
  []
 
 
-Underfull \hbox (badness 5563) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 de ces ef-fets []a des pro-ces-sus
+Underfull \hbox (badness 5741) in paragraph at lines 217--217
+\OT1/phv/m/n/11 phonologiques, il est n[]ecessaire
  []
 
 
-Underfull \hbox (badness 6380) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 phonologiques, il est n[]ecessaire
+Underfull \hbox (badness 2096) in paragraph at lines 217--217
+\OT1/phv/m/n/11 de tester des syst[]emes de RAP
  []
 
 
-Underfull \hbox (badness 2310) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 de tester des syst[]emes de RAP
+Underfull \hbox (badness 7133) in paragraph at lines 217--217
+\OT1/phv/m/n/11 per-for-mants. Nous []enum[]erons
  []
 
 
-Underfull \hbox (badness 7722) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 per-for-mants. Nous []enum[]erons
+Underfull \hbox (badness 4391) in paragraph at lines 217--217
+\OT1/phv/m/n/11 des fu-tures pistes de recherche
  []
 
 
-Underfull \hbox (badness 4832) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 des fu-tures pistes de recherche
+Underfull \hbox (badness 2503) in paragraph at lines 217--217
+\OT1/phv/m/n/11 l'utilisation con-jointe d'exp[]eriences
  []
 
-
-Underfull \hbox (badness 1082) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 d'utilisation de mod[]eles am[]elior[]es,
- []
-
-
-Underfull \hbox (badness 3128) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 l'utilisation con-jointe d'exp[]eriences
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 com-pu-ta-tion-nelles afin d'[]elucider
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 216--216
-\OT1/phv/m/n/10.95 les m[]ecanismes sous-jacents la
- []
-
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 216.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 217.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 216.
+(Font)              size <5> substituted on input line 217.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <5.5> not available
-(Font)              size <5> substituted on input line 216.
+(Font)              size <5> substituted on input line 217.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 216.
+(Font)              size <5> substituted on input line 217.
 
 
-Underfull \hbox (badness 1817) in paragraph at lines 216--216
+Underfull \hbox (badness 1817) in paragraph at lines 217--217
 \OT1/phv/m/n/11 ad-hibens ur-bium hon-o-ratis nul-lum
  []
 
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.95> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 217.
 
-Underfull \hbox (badness 1571) in paragraph at lines 216--216
+Underfull \hbox (badness 1571) in paragraph at lines 217--217
 \OT1/phv/m/n/10.95 ian Por-tuguese, Ko-rean, and En-
  []
 
 
-Underfull \hbox (badness 1320) in paragraph at lines 216--216
+Underfull \hbox (badness 1320) in paragraph at lines 217--217
 \OT1/phv/m/n/10.95 man data. These re-sults con-sti-
  []
 
 
-Underfull \hbox (badness 3088) in paragraph at lines 216--216
+Underfull \hbox (badness 3088) in paragraph at lines 217--217
 \OT1/phv/m/n/10.95 ing the acous-tic and phono-tac-tic
  []
 
 
-Underfull \hbox (badness 1430) in paragraph at lines 216--216
+Underfull \hbox (badness 1430) in paragraph at lines 217--217
 \OT1/phv/m/n/10.95 acous-tic/phonetic and phono-log-i-cal
  []
 
 
-Underfull \hbox (badness 2460) in paragraph at lines 216--216
+Underfull \hbox (badness 2460) in paragraph at lines 217--217
 \OT1/phv/m/n/10.95 epenthe-sis in hu-man par-tic-i-pants,
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 216.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 217.
 [150]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 216.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 217.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 216.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 216.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 217.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 217.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 7CA6D60359875F03AF5F8C0AD54476ED;5119.
 
@@ -4553,7 +4535,7 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 216.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 217.
  )
 (\end occurred inside a group at level 2)
 
@@ -4561,11 +4543,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 216.
 ### simple group (level 1) entered at line 583 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 22180 strings out of 492980
- 400409 string characters out of 6132494
- 505861 words of memory out of 5000000
- 24492 multiletter control sequences out of 15000+600000
- 44677 words of font info for 93 fonts, out of 8000000 for 9000
+ 22183 strings out of 492980
+ 400446 string characters out of 6132494
+ 504282 words of memory out of 5000000
+ 24494 multiletter control sequences out of 15000+600000
+ 46563 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,18n,57p,1955b,1340s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.34} has been referenced b
@@ -4699,7 +4681,7 @@ live/2017/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/20
 17/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texm
 f-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2017/texmf-dist
 /fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (161 pages, 4095621 bytes).
+Output written on main.pdf (161 pages, 4095013 bytes).
 PDF statistics:
  2994 PDF objects out of 3580 (max. 8388607)
  2516 compressed objects within 26 object streams
