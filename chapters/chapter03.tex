@@ -166,8 +166,9 @@ The corpus contains $57,504$ utterances produced by $40$ speakers (as explained 
 
 \paragraph{Wall Street Journal - Read (WSJ)}
 The WSJ \cite{paul1992} is a corpus of both read and spontaneous American English.
-For our work, we only kept the read subset of the corpus, which consisted of {\color{red}professionally trained journalists} recorded while reading news articles. Contrary to the CSJ and KCSS, the recordings were not phonetically transcribed. However, we had access to the news articles themselves, as well as to a dictionary which mapped the standard phonetic pronunciation of words in American English to the words in the articles.
-In total, $338$ speakers {\color{red}($X$ female, $Y$ male)} read $71,037$ utterances, with an average of $210.2$ utterances per speaker. The division of the corpus across training, validation, and test sets is shown in Table \ref{tab:hmm_wsj}. 
+For our work, we only kept the read subset of the corpus, which consisted of recordings of read news articles. Contrary to the CSJ and KCSS, the recordings were not phonetically transcribed. However, we had access to the news articles themselves, as well as to a dictionary which mapped the standard phonetic pronunciation of words in American English to the words in the articles.
+In total, $338$ speakers %{\color{red}($X$ female, $Y$ male)}
+read $71,037$ utterances, with an average of $210.2$ utterances per speaker. The division of the corpus across training, validation, and test sets is shown in Table \ref{tab:hmm_wsj}. 
 
 \begin{table}[htb]
 \centering
@@ -486,7 +487,46 @@ Next we examine the identification task response patterns for test items. As a r
 \label{fig:m-ahpa_test_coll}
 \end{figure}
 
-As shown in Figure \ref{fig:m-ahpa_test_coll}, reponses that were represented the most in the null model posteriorgrams were {\color{red}``none'' (\%), ``i'' (\%), and ``u'' (\%)}. These were also the responses that human participants gave the most {\color{red}(``none'' (\%), ``i'' (\%), and ``u'' (\%))}.
+% > prop.table(xtabs(~RESP, data=d.human[d.human$TYPE=="sp",]))
+% RESP
+%          0          a          e          i          o          u 
+% 0.37482595 0.02464495 0.02673350 0.21512114 0.03077137 0.32790309 
+
+As shown in Figure \ref{fig:m-ahpa_test_coll}, reponses that were represented the most in the null model posteriorgrams were ``none'' ($32\%$), ``i'' ($16\%$), and ``u'' ($40\%$). These were also the responses that human participants gave the most (``none'' ($37\%$), ``i'' ($22\%$), and ``u'' ($33\%$)).
+
+% > aggregate(pgram~resp+lm, data=d.mod.pgram[d.mod.pgram$itemtype == "sp",], FUN=mean)
+%    resp            lm        pgram
+% 1     0          null 0.3236349725
+% 2     a          null 0.0586367655
+% 3     e          null 0.0114950268
+% 4     i          null 0.1641848346
+% 5     o          null 0.0395039241
+% 6     u          null 0.4025444765
+
+% 7     0       unigram 0.0000000000
+% 8     a       unigram 0.2010891589
+% 9     e       unigram 0.0285264815
+% 10    i       unigram 0.2442560213
+% 11    o       unigram 0.1210595030
+% 12    u       unigram 0.4050688354
+% 13    0 bigram_online 0.0000000000
+% 14    a bigram_online 0.2041084914
+% 15    e bigram_online 0.0043491834
+% 16    i bigram_online 0.2246453826
+% 17    o bigram_online 0.0761391313
+% 18    u bigram_online 0.4907578113
+% 19    0  bigram_retro 0.0000000000
+% 20    a  bigram_retro 0.1095237260
+% 21    e  bigram_retro 0.0119238208
+% 22    i  bigram_retro 0.1474084979
+% 23    o  bigram_retro 0.1109821183
+% 24    u  bigram_retro 0.6201618370
+% 25    0  bigram_batch 0.0000000000
+% 26    a  bigram_batch 0.1871525953
+% 27    e  bigram_batch 0.0001512578
+% 28    i  bigram_batch 0.1550070445
+% 29    o  bigram_batch 0.0886642442
+% 30    u  bigram_batch 0.5690248581
 
 We saw in section \ref{2-ahpa} that, for human participants, responses were mainly determined by the quality of the vowel coarticulation within the consonant cluster. This manifested itself in the appearance of horizontal bars, and some very faint vertical bars, in the top panels of Figure \ref{fig:m-ahpa_test_heat}. Do we observe something similar in the output of the model with null LM?
 
@@ -883,17 +923,65 @@ In this experiment, we introduced basic allophony to the acoustic models of our 
 
 \subsubsection{Methods}
 \paragraph{Stimuli}
-We recorded a female native speaker of Serbian from Kruševac in a sound proof room reading a list of {\color{red}$X$} items containing a $C_{1}C_{2}$ cluster either in word-initial position ($C_{1}C_{2}V_{1}C_{3}V_{1}$, e.g., \textipa{/znapa/}) or word-medial position ($V_{1}C_{1}C_{2}V_{1}$, e.g., \textipa{/azna/}). $V_{1}$ and $C_{3}$ were always set to \textipa{/a/} and \textipa{/p/}, respectively. 
+We recorded a female native speaker of Serbian from Kruševac in a sound proof room reading a list of $136$ items containing one of $34$ $C_{1}C_{2}$ cluster either in word-initial position ($C_{1}C_{2}V_{1}C_{3}V_{1}$, e.g., \textipa{/znapa/}) or word-medial position ($V_{1}C_{1}C_{2}V_{1}$, e.g., \textipa{/azna/}). $V_{1}$ and $C_{3}$ were always set to \textipa{/a/} and \textipa{/p/}, respectively. 
 We also recorded the ``epenthesized'' equivalents of said stimuli, namely $C_{1}V_{ep}C_{2}V_{1}C_{3}V_{1}$ (\textipa{/z@napa/}) and $V_{1}C_{1}V_{ep}C_{2}V_{1}$ (\textipa{/az@na/}) with $V_{ep}$ set as \textipa{[@]}.
 For all stimuli stress fell on the first $V_{1}$.
-{\color{red}The list of stimuli is given in Table X.}
+The list of $C_{1}C_{2}$ clusters is given in Table \ref{wpd-tab}.
+
+% latex table generated in R 3.2.3 by xtable 1.8-2 package
+% Fri Aug 24 18:58:03 2018
+\begin{table}[htb!]
+  \centering
+  \caption{\textit{Clusters used to construct the experimental stimuli, ordered by increasing rates of epenthesis given by humans (word-initial position). We indicate the sonority contour, as well as whether the cluster is a legal onset in English.}} \vspace{0.5cm} 
+\label{wpd-tab}
+\begin{tabular}{ccc}
+  \toprule
+Cluster & Sonority & Legal word-initially? \\ 
+  \midrule
+  \textipa{/tk/} & plateau & No \\ 
+  \textipa{/zg/} & plateau & No \\ 
+  \textipa{/br/} & largerise & Yes \\ 
+  \textipa{/dl/} & largerise & No \\ 
+  \textipa{/dg/} & plateau & No \\ 
+  \textipa{/kl/} & largerise & Yes \\ 
+  \textipa{/ks/} & plateau & No \\ 
+  \textipa{/bl/} & largerise & Yes \\ 
+  \textipa{/fl/} & largerise & Yes \\ 
+  \textipa{/zd/} & plateau & No \\ 
+  \textipa{/pS/} & plateau & No \\ 
+  \textipa{/zn/} & smallrise & No \\ 
+  \textipa{/kr/} & largerise & Yes \\ 
+  \textipa{/zm/} & smallrise & No \\ 
+  \textipa{/zl/} & largerise & No \\ 
+  \textipa{/kv/} & plateau & No \\ 
+  \textipa{/zb/} & plateau & No \\ 
+  \textipa{/pl/} & largerise & Yes \\ 
+  \textipa{/gd/} & plateau & No \\ 
+  \textipa{/bd/} & plateau & No \\ 
+  \textipa{/gl/} & largerise & Yes \\ 
+  \textipa{/pn/} & smallrise & No \\ 
+  \textipa{/km/} & smallrise & No \\ 
+  \textipa{/tm/} & smallrise & No \\ 
+  \textipa{/kn/} & smallrise & No \\ 
+  \textipa{/pt/} & plateau & No \\ 
+  \textipa{/zr/} & largerise & No \\ 
+  \textipa{/tl/} & largerise & No \\ 
+  \textipa{/mn/} & plateau & No \\ 
+  \textipa{/gm/} & smallrise & No \\ 
+  \textipa{/ml/} & smallrise & No \\ 
+  \textipa{/dn/} & smallrise & No \\ 
+  \textipa{/gn/} & smallrise & No \\ 
+  \textipa{/mr/} & smallrise & No \\ 
+   \bottomrule
+\end{tabular}
+\end{table}
 
 \paragraph{Behavioural experiment}
-We recruited {\color{red}XX} monolingual native listeners of American English through the online platform Amazon Mechanical Turk. An additional {\color{red}XX participants were also tested, but they were excluded from the analyses if they met at least one of the following conditions: did not finish all trials, extensive exposure to languages other than English, auditory problems, dyslexia, unable to use headphones or earbuds during the experiment}. This information was retrieved from pre-test and post-test questionnaires.
+We recruited $38$ monolingual native listeners of American English through the online platform Amazon Mechanical Turk. An additional $43$ participants were also tested, but they were excluded from the analyses if they met at least one of the following conditions: did not finish all trials, extensive exposure to languages other than English, auditory problems, dyslexia, unable to use headphones or earbuds during the experiment. This information was retrieved from pre-test and post-test questionnaires.
 
-After audio setup\footnote{Participants were given the opportunity to setup the audio to comfortable hearing levels.} and {\color{red}$XX$} training trials, in each experimental trial participants heard an item (e.g., \textipa{/azna/}). Since the grapheme-to-phoneme mapping is not as transparent in English as it is in Japanese or Korean, and because the position of the cluster in the item was not fixed, the task was slightly altered compared to other experiments described in previous sections. Participants were not asked if they had heard a vowel between the consonants; instead, they were given a 2-alternative forced choice task with orthographic transcriptions: if the auditory stimulus was \textipa{/azna/}, participants would be given the options \textit{``azna''} and  \textit{``azana''}. Since online participants are not as immersed in the experiment as participants tested in a laboratory setting, the experiment was self-paced and participants were able to listen to the stimuli as many times as necessary.
+After audio setup\footnote{Participants were given the opportunity to setup the audio to comfortable hearing levels.} and a few training trials, in each experimental trial participants heard an item (e.g., \textipa{/azna/}). Since the grapheme-to-phoneme mapping is not as transparent in English as it is in Japanese or Korean, and because the position of the cluster in the item was not fixed, the task was slightly altered compared to other experiments described in previous sections. Participants were not asked if they had heard a vowel between the consonants; instead, they were given a 2-alternative forced choice task with orthographic transcriptions: if the auditory stimulus was \textipa{/azna/}, participants would be given the options \textit{``azna''} and  \textit{``azana''}. Since online participants are not as immersed in the experiment as participants tested in a laboratory setting, the experiment was self-paced and participants were able to listen to the stimuli as many times as necessary.
 
-Each participant completed {\color{red}$XX$} trials. For each item, participants heard either the cluster version (e.g., \textipa{/azna/}) or the ``epenthesized'' version (e.g., \textipa{/az@na/}). Presentation of trials was counterbalanced between participants.   
+Each participant completed $81$ trials. For each item, participants heard either the cluster version (e.g., \textipa{/azna/}) or the ``epenthesized'' version (e.g., \textipa{/az@na/}). Presentation of trials was counterbalanced between participants.   
 
 
 \paragraph{ASR systems}
