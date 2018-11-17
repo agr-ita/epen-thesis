@@ -82,23 +82,23 @@
 {\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Identification task simulation}{\reset@font\mtcPfont 97}{section*.63}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.4.3.2}Results}{\reset@font\mtcSSSfont 98}{subsubsection.3.4.3.2}}
 {\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Qualitative analysis}{\reset@font\mtcPfont 98}{figure.3.21}}
-{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Quantitative analysis}{\reset@font\mtcPfont 101}{figure.3.24}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.4.3.3}Summary}{\reset@font\mtcSSSfont 102}{subsubsection.3.4.3.3}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Quantitative analysis}{\reset@font\mtcPfont 100}{figure.3.24}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.4.3.3}Summary}{\reset@font\mtcSSSfont 101}{subsubsection.3.4.3.3}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.4.4}Discussion}{\reset@font\mtcSSfont 102}{subsection.3.4.4}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.4.4.1}Cross-linguistic differences in epenthesis}{\reset@font\mtcSSSfont 102}{subsubsection.3.4.4.1}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.4.4.2}Variations of epenthetic vowel quality due to neighbouring consonants}{\reset@font\mtcSSSfont 103}{subsubsection.3.4.4.2}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.4.4.3}Variations in epenthesis due to syllabic structure}{\reset@font\mtcSSSfont 104}{subsubsection.3.4.4.3}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.4.4.4}Conclusion}{\reset@font\mtcSSSfont 105}{subsubsection.3.4.4.4}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.5}General Discussion}{\reset@font\mtcSfont 106}{section.3.5}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.5.1}Language model contributions}{\reset@font\mtcSSfont 106}{subsection.3.5.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.5.2}Model adequacy}{\reset@font\mtcSSfont 106}{subsection.3.5.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.5.3}Predictive power of the acoustic model}{\reset@font\mtcSSfont 107}{subsection.3.5.3}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.5.3.1}Variations in rates of epenthesis}{\reset@font\mtcSSSfont 107}{subsubsection.3.5.3.1}}
-{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Successes}{\reset@font\mtcPfont 107}{section*.66}}
-{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Lessons}{\reset@font\mtcPfont 107}{section*.67}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.5.3.2}Variation in epenthetic vowel quality}{\reset@font\mtcSSSfont 107}{subsubsection.3.5.3.2}}
-{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Successes}{\reset@font\mtcPfont 107}{section*.68}}
-{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Lessons}{\reset@font\mtcPfont 108}{section*.69}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.5.4}Model enhancements}{\reset@font\mtcSSfont 108}{subsection.3.5.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.5.5}Data enhancements}{\reset@font\mtcSSfont 109}{subsection.3.5.5}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.5.6}Conclusion}{\reset@font\mtcSSfont 110}{subsection.3.5.6}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.4.4.4}Conclusion}{\reset@font\mtcSSSfont 104}{subsubsection.3.4.4.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.5}General Discussion}{\reset@font\mtcSfont 105}{section.3.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.5.1}Language model contributions}{\reset@font\mtcSSfont 105}{subsection.3.5.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.5.2}Model adequacy}{\reset@font\mtcSSfont 105}{subsection.3.5.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.5.3}Predictive power of the acoustic model}{\reset@font\mtcSSfont 106}{subsection.3.5.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.5.3.1}Variations in rates of epenthesis}{\reset@font\mtcSSSfont 106}{subsubsection.3.5.3.1}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Successes}{\reset@font\mtcPfont 106}{section*.66}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Lessons}{\reset@font\mtcPfont 106}{section*.67}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {3.5.3.2}Variation in epenthetic vowel quality}{\reset@font\mtcSSSfont 106}{subsubsection.3.5.3.2}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Successes}{\reset@font\mtcPfont 106}{section*.68}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Lessons}{\reset@font\mtcPfont 107}{section*.69}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.5.4}Model enhancements}{\reset@font\mtcSSfont 107}{subsection.3.5.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.5.5}Data enhancements}{\reset@font\mtcSSfont 108}{subsection.3.5.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.5.6}Conclusion}{\reset@font\mtcSSfont 109}{subsection.3.5.6}}

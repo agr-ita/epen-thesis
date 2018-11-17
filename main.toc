@@ -1,5 +1,5 @@
-\contentsline {paragraph}{Journal articles}{7}{section*.6}
-\contentsline {paragraph}{Conference proceedings}{7}{section*.7}
+\contentsline {paragraph}{Journal articles}{9}{section*.6}
+\contentsline {paragraph}{Conference proceedings}{9}{section*.7}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Nonnative speech misperceptions}{2}{section.1.1}
 \contentsline {section}{\numberline {1.2}Perceptual vowel epenthesis}{3}{section.1.2}
