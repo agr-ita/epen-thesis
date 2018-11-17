@@ -3,7 +3,6 @@
 %%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \section{Introduction}
-%{\color{red}[TODO]: Corrections Emmanuel} \\
 
 %%% Introductory paragraph 
 In the previous chapter we studied the use of exemplar-based computational models to investigate the underlying mechanisms of perceptual vowel epenthesis. While the exemplar-based models were able to reproduce modulations in epenthetic vowel quality due to coarticulation, they were unable to show a preference for default vowel epenthesis. More importantly, due to their non-parametric nature, they were entirely unable to output ``no epenthesis'' responses (or any response not in line with the available exemplars, for that matter). In this chapter, we will turn to parametric models, which are implementations of one-step theories of nonnative speech perception.  
@@ -371,7 +370,7 @@ In order for the decoding task to be analogous to the behavioural experiment des
     \label{fig:m-ahpa_G}
 \end{figure}
 
-In this section, we investigate the type of phonotactic information that might be used by Japanese listeners when perceiving foreign speech that does not conform to native phonotactics. We test 5 types of language models (LM) when decoding our $V_{1}C_{1}(V_{2})C_{2}V_{1}$ items; these LMs differ only in the weights given to edges between nodes 2 and 3 in the graph shown in Figure \ref{fig:m-ahpa_G}. The weights were obtained by computing frequency counts from the portion of the CSJ used for training the acoustic model. Using the same acoustic model, we compared the following LMs: %{\color{red}[TODO] Add formulae as annex}
+In this section, we investigate the type of phonotactic information that might be used by Japanese listeners when perceiving foreign speech that does not conform to native phonotactics. We test 5 types of language models (LM) when decoding our $V_{1}C_{1}(V_{2})C_{2}V_{1}$ items; these LMs differ only in the weights given to edges between nodes 2 and 3 in the graph shown in Figure \ref{fig:m-ahpa_G}. The weights were obtained by computing frequency counts from the portion of the CSJ used for training the acoustic model. Using the same acoustic model, we compared the following LMs: 
 
 \begin{enumerate}
     \item A null LM, which implies that listeners base their decoding of consonant clusters on phonetic match alone, without using information on phonotactics.
@@ -738,7 +737,7 @@ or put differently,
 \begin{equation}
   P(ahpa) = \frac{P(ahxpa)}{P(x)} = \frac{P(x)}{P(x)} = 1
 \end{equation}
-An alternative way of setting the probabilities would be to, for instance, weight $P(ahpa)$ and $P(ahxpa)$ by the corpus frequencies of words with $4$ and $5$ phonemes, respectively.   
+An alternative way of setting the probabilities would be to, for instance, weight $P(ahpa)$ and $P(ahxpa)$ by the corpus frequencies of words with $4$ and $5$ phonemes, respectively \footnote{Please refer to the appendix of this section for a more thorough explanation on how to enhance the computation of \textit{n}-gram-based phonotactics.}.   
 
 Another possible modification relates to how the LMs dealt with bigrams never seen in the corpus (i.e., nonnative sequences). In order to examine the effect of strict LMs, the probabilities assigned to unseen bigrams was extremely small. This equates to viewing the native phonotactics filter as a binary process (i.e., legal versus illegal structures). It would be possible to find an optimal smoothing parameter (i.e., setting the threshold of the binary filter), or even infer gradient probabilities of the unseen sequences based on natural classes, their ocurrence across intonational phrases (cf \cite{durvasula2016}), etc. It would also be possible to tune the acoustic scale, which determines the weight of the output of the AM with respect to the LM.
 
@@ -747,6 +746,182 @@ It would be important to also assess the validity of using probabilities derived
 %% -> Adds frequency bias that may not be adequate (e.g., increase in /a/ epenthesis because most frequent vowel)
 
 An obvious next step would be to test the language models used in \cite{wilson2013}, where the authors found that most LMs performed better than the null LM at predicting data from a production task. In that work, the favoured LMs were the ones where phonotactic legality was a gradient process, where phones were represented with featural descriptions (e.g. \cite{albright2009}) or where weights given to grammatical constraints were derived from the principle of maximum entropy (e.g. \cite{boersma2007, hayes2008}). In parallel, we can also explore whether our ASR system's acoustic model (accompanied by a null language model) is able to explain effects attributed to abstract grammatical processes. We will experiment this in the next section. 
+
+
+\subsection{Appendix}
+\subsubsection{Unigram (phone-level) language model}
+\label{I}
+
+The central idea in a unigram model is to have the probability of a word be proportional to the product of the probabilities of the individual phones composing it.
+
+Translating this formally, for a word $w$ formed from the $N_w$ phones $\rho_1^w$, $\rho_2^w$, ..., $\rho_{N_w}^w$, we have:
+\[p_1(w) = \frac{1}{K}\prod_{i=1}^{N_w}p(\rho_i^w),\]
+where $p_1(w)$ is the probability of occurrence of $w$ according to a unigram language model, $p(\rho)$ is the probability of occurrence of phone $\rho$ and $K$ is a normalization constant (the same for all words).
+
+There is a difficulty with this definition however: if we want to allow words of arbitrary length, it becomes impossible to find an appropriate normalization constant (i.e. one such that $p_1$ is a proper probability distribution, whose sum over all possible words equals one)\footnote{To see this notice that for any integer $l\geq 1$, the sum of $p_1(w)$ over all words of length $l$ is $1/K$. Thus, if $K>0$, $\sum{p_1} = \sum_{l\in\{1, 2, ...\}}{1} = +\infty$ and if $K=0$, $\sum{p_1}=0$.}
+
+Next, we consider three different ways of solving this problem and get a properly defined unigram language model.
+
+\paragraph{Finite language}
+\label{S1}
+The simplest solution consists in defining the language model only on a finite set of possible words, for example by considering a language consisting only of words of length less than a specified limit.
+
+If we note $L$ the finite set of possible words considered, then:
+\[K = \sum_{w\in L}p_1(w)\]
+is finite and:
+\[p_1(w) = \frac{\prod_{i=1}^{N_w}p(\rho_i^w)}{K} = \frac{\prod_{i=1}^{N_w}p(\rho_i^w)}{\sum_{w\in L}\prod_{i=1}^{N_w}p(\rho_i^w)}\]
+defines a proper unigram language model over $L$.
+
+\paragraph{Application to the ah(V?)pa language}
+\label{app1}
+
+Let us note $f_a$, $f_e$, $f_i$, $f_o$, $f_u$, $f_p$ the respective probabilities of phones $a$, $e$, $i$, $o$, $u$, $p$ (typically obtained as the frequency of occurrence of these phones in a representative corpus).
+
+After simplification, we get\footnote{In the language models used in this work, we have erroneously used $p_1(ahpa) = \frac{f_p}{f_p + f_i + f_a + f_e + f_o + f_u}$ instead}:
+\[p_1(ahpa) = \frac{1}{1 + f_i + f_a + f_e + f_o + f_u}\]
+and, for any $V \in \{a, e, i, o, u\}$:
+\[p_1(ahVpa) = \frac{f_V}{1 + f_i + f_a + f_e + f_o + f_u}.\]
+
+\subsubsection{`Word-end' phone}
+
+The previous solution defines a unigram language model for a finite language. One way to define a proper unigram language model for potentially infinite languages is to introduce a special `word end' phone $\pi$ with its own probability of occurrence $p(\pi)$\footnote{Typically estimated from a representative corpus, like the other phone probabilities. For example, for a corpus containing the single sentence \{He has.\} with the phonetic transcript \{hi hæz\}, out of seven phones (including word-ends), two are word-ends, so $p(\pi)=2/7$.}.
+
+We can then define a proper unigram language model over all words as:
+\[p_1(w) = \frac{p(\pi)}{1-p(\pi)}\prod_{i=1}^{N_w}p(\rho_i^w),\]
+where the special `word-end' phone is not included in the decomposition of $w$ into $\rho_1^w$, $\rho_2^w$, ..., $\rho_{N_w}^w$.
+
+The key is that now the total probability of the `normal' phones is $1-p(\pi) < 1$. As a consequence, the sum of the probability over all
+words of length $l$ becomes $p(\pi)(1-p(\pi))^{l-1}$.
+
+We can check that the sum of the probability over all possible words is $1$ by recognizing: \[\sum_{w}p_1(w) = \sum_{l=1}^{+\infty}p(\pi)(1-p(\pi))^{l-1}\]
+as the sum of terms of a geometric series with reason $1-p(\pi) < 1$, so that:
+\[\sum_{w}p_1(w) = p(\pi)\frac{1}{1-(1-p(\pi))} = 1.\]
+
+This defines a proper unigram language model over all possible words. To obtain a unigram language model for a more restricted language $L$, we simply compute the conditional probabilities:
+\[p_1(w|w\in L) = \frac{p_1(w)}{\sum_{w\in L}{p_1(w)}}.\]
+
+\paragraph{Application to to the ah(V?)pa language}
+
+We can easily check that the formula remain the same as in Section \ref{app1}, but the procedure to estimate the phone probabilities is now different. As we start counting word-ends as a special phone, the probability of occurrence for the other phones mechanically decreases (it gets multiplied by a factor of $1-p(\pi)$).
+
+\paragraph{Explicit word length modeling}
+
+One limit of the previous solutions is that they do not allow a realistic modeling of the distribution of word lengths observed in natural languages (by which we mean the distribution of length of word tokens not word types). In English for example, according to Miller, Newman \& Friedman (1958), the probability of words first increases with length up to words of length three before decreasing. This pattern cannot be properly captured by the two previous solutions\footnote{With the first solution, long words are just as likely as shorter words. With the second solution, word probability decreases with word length according to a power law.}.
+
+A simple way to avoid these shortcomings consists in estimating the distribution of word lengths from a corpus and combine it with the individual phone probabilities to define a language model, as follows:
+
+\[p_1^*(w) = p_1(w)p_{\lambda}(N_w),\]
+where $p_{\lambda}(N_w)$ is an estimate of the probability for word tokens to have length $N_w$ and, as before:
+\[p_1(w) = \prod_{i=1}^{N_w}p(\rho_i^w).\]
+
+$p_1^*$ defines a proper probability distribution over all possible words as long as $p_{\lambda}$ is a proper probability distribution, because, as we have mentioned already the sum of $p_1$ over all possible words of length $l$ for any integer $l\geq 1$ is equal to $1$.
+
+As in the previous Section, this defines a unigram language model over all possible words and we can obtain language models for a more restricted language $L$ by conditioning over $L$.
+
+\subsubsection{Application to to the ah(V?)pa language}
+
+We use the same notation as before. Let us define in addition $q_4$, respectively $q_5$, the estimated probability that word tokens have length $4$, respectively $5$. Then:
+
+\[p_1^*(ahpa) = \frac{q_4}{q_4 + q_5(f_i + f_a + f_e + f_o + f_u)}\]
+and, for any $V \in \{a, e, i, o, u\}$:
+\[p_1^*(ahVpa) = \frac{q_5f_V}{q_4 + q_5(f_i + f_a + f_e + f_o + f_u)}.\]
+
+
+\subsection{Bigram (phone-level) language model}
+
+For a bigram language model, the central idea is to obtain word probabilities from transition probabilities between pairs of consecutive phones.
+
+One way to instantiate this formally is to have for a word $w$ formed from the $N_w$ phones $\rho_1^w$, $\rho_2^w$, ..., $\rho_{N_w}^w$:
+\[p_2(w) = \frac{1}{K}p(\rho_1^w)\prod_{i=2}^{N_w}p(\rho_i^w\ |\ \rho_{i-1}^w),\]
+where $p_2(w)$ is the probability of occurrence of $w$ according to a bigram language model, $p(\rho)$ is the probability of occurrence of phone $\rho$, $p(\rho_a\ |\ \rho_b)$ is the probability of occurrence of phone $\rho_a$ \emph{immediately after} phone $\rho_b$ and $K$ is a normalization constant (the same for all words).
+% If a transcription in words is available to the system estimating the bigram LM, it is probably better to estimate the transition probabilities using only within-words transitions.
+
+As for the unigram model, this first approach gives probability $1/K$ to word of length $l$ for any integer $l\geq1$ and thus does not define a proper language model over all possible words.
+
+The three ideas we presented to solve this problem in the unigram case translate to the bigram case relatively easily.
+
+\subsubsection{Finite language}
+\label{F2}
+
+As in the unigram case, it is straightforward to apply our definition to a finite language. If we note $L$ the finite set of possible words considered, then:
+\[K = \sum_{w\in L}p_2(w)\]
+is finite and:
+\[p_2(w) = \frac{p(\rho_1^w)\prod_{i=2}^{N_w}p(\rho_i^w\ |\ \rho_{i-1}^w)}{\sum_{w\in L}p(\rho_1^w)\prod_{i=2}^{N_w}p(\rho_i^w\ |\ \rho_{i-1}^w)}\]
+defines a proper bigram language model over $L$.
+
+\paragraph{Application to the ah(V?)pa language}
+\label{app2}
+
+Let us note $p_{S_1S_2}$, the bigram transition probability between phones $S_1$ and $S_2$ and $\mathcal{V}$ the vowel set $\{a, e, i, o, u\}$.
+
+After simplification, we get:
+\[p_2(ahpa) = \frac{p_{hp}}{p_{hp} + \sum_{V\in \mathcal{V}}{p_{hV}p_{Vp}}}\]
+and, for any $V \in \mathcal{V}$:
+\[p_2(ahVpa) = \frac{p_{hV}p_{Vp}}{p_{hp} + \sum_{V\in \mathcal{V}}{p_{hV}p_{Vp}}}.\]
+
+\subsubsection{`Word-beginning' and `Word-end' phones}
+
+The second idea can also be adapted, but this is more involved and the distribution of probability for word lengths becomes hard to characterize. One difference in the bigram case is that it becomes natural to also introduce a special `Word-beginning' phone here. This approach was not used, so we do not give more detail here.
+
+% Back of the envelope computations give me that the probability of for words of length l is $\Theta^{t}P^{l-1}\Pi$. $\Theta$ and $\Pi$ are column vectors containing the probability of going from the beginning symbol to each of the possible phones, respectively to each of the possible phones to the end symbol. $P$ is the matrix containing in row i, column j the bigram transition probability from phone i to phone j.
+% Then because the matrix is slightly less than a stochastic matrix (some probability mass is kept to go from word beginning to phones and from phones to word end), we should be able to show that its maximal eigenvalue is strictly less than 1 and thus the total probability K over all possible words should converge to some definite value (based on eigenvalues of a matrix being equal to sum of terms of a geometric series with reason of module strictly less than 1).
+
+\paragraph{Application to to the ah(V?)pa language}
+
+The formula are the same as in Section \ref{app2}, but the way the bigram transition probabilities are estimated changes following the introduction of the special `word beginning' and `word end' phones.
+
+\subsubsection{Explicit word length modeling}
+\label{F3}
+The reasoning we applied to the unigram case extend directly to the bigram case. We obtain the formula:
+\[p_2^*(w) = p_2(w)p_{\lambda}(N_w),\]
+where, as before, $p_{\lambda}(N_w)$ is an estimate of the probability for word tokens to have length $N_w$ and:
+\[p_2(w) = p(\rho_1^w)\prod_{i=2}^{N_w}p(\rho_i^w\ |\ \rho_{i-1}^w).\] 
+
+\paragraph{Application to to the ah(V?)pa language}
+
+Keeping the same notations as before, we get:
+\[p_2(ahpa) = \frac{q_4p_{hp}}{q_4p_{hp} + q_5\sum_{V\in \mathcal{V}}{p_{hV}p_{Vp}}}\]
+and, for any $V \in \mathcal{V}$:
+\[p_2(ahVpa) = \frac{q_5p_{hV}p_{Vp}}{q_4p_{hp} + q_5\sum_{V\in \mathcal{V}}{p_{hV}p_{Vp}}}.\]
+
+
+\subsection{Online and Retro language models}
+
+Until now, we have considered the probability provided by the language model to whole words in the ah(V?)pa language. Let us call this condition the \emph{batch} condition. We are also interested in an \emph{online} condition, where the language model is applied to obtain information at a moment where only the beginning of the word, up to the ambiguous middle part (one of the 5 vowels or nothing) has been presented. We also consider a \emph{retro} condition as a control, where the language model is applied based only on the word information presented \emph{after} the the ambiguous middle part of the ah(V?)pa stimuli. The word probability given by our various unigram models are the same in all three conditions (batch, online, retro), so we only distinguish these conditions for the bigram models.
+
+We give the bigram language model probabilities for the  ah(V?)pa stimuli in the Online and Retro conditions below for the Finite Language case defined in Section \ref{F2} and for the Explicit word length modeling case defined in Section \ref{F3}, as these are the case we have investigated in practice.
+% The true reason being that special symbol solutions will have different formula here because beginning and ends are not the same anymore for all 'words' in these Online and Backward conditions and I am too lazy to write it down.
+
+\subsubsection{Finite Language}
+
+We keep the same notations as in previous sections.
+
+For the Online condition, we get:
+\[p_2(ahpa) = p_2(ahp) = \frac{p_{hp}}{p_{hp} + \sum_{V\in \mathcal{V}}{p_{hV}}}\]
+and, for any $V \in \mathcal{V}$:
+\[p_2(ahVpa) = p_2(ahV) = \frac{p_{hV}}{p_{hp} + \sum_{V\in \mathcal{V}}{p_{hV}}}.\]
+
+For the Retro condition, we get:
+\[p_2(ahpa) = p_2(hpa) = \frac{p_{hp}}{p_{hp} + \sum_{V\in \mathcal{V}}{p_{Vp}}}\]
+and, for any $V \in \mathcal{V}$:
+\[p_2(ahVpa) = p_2(Vpa) = \frac{p_{Vp}}{p_{hp} + \sum_{V\in \mathcal{V}}{p_{Vp}}}.\]
+
+
+\subsubsection{Explicit word length modeling}
+% Not sure what Adriana did here. Did she keep the q4 and q5 or switch to q3 maybe?
+
+We keep the same notations as in previous sections.
+
+For the Online condition, we get:
+\[p_2(ahpa) = p_2(ahp) = \frac{q_4p_{hp}}{q_4p_{hp} + q_5\sum_{V\in \mathcal{V}}{p_{hV}}}\]
+and, for any $V \in \mathcal{V}$:
+\[p_2(ahVpa) = p_2(ahV) = \frac{q_5p_{hV}}{q_4p_{hp} + q_5\sum_{V\in \mathcal{V}}{p_{hV}}}.\]
+
+For the Retro condition, we get:
+\[p_2(ahpa) = p_2(hpa) = \frac{q_4p_{hp}}{q_4p_{hp} + q_5\sum_{V\in \mathcal{V}}{p_{Vp}}}\]
+and, for any $V \in \mathcal{V}$:
+\[p_2(ahVpa) = p_2(Vpa) = \frac{q_5p_{Vp}}{q_4p_{hp} + q_5\sum_{V\in \mathcal{V}}{p_{Vp}}}.\]
+
 
 %%%%%%%%%%%%
 % k-epenth %
@@ -803,7 +978,7 @@ A theory of word recognition, posited by \cite{church1987}, hypothesized that lo
 We could then hypothesize that the acoustic model in the perceptual system is aware of certain allophonic variations, instead of just having a single model per phoneme. In this case, phonotactics have an influence on the acoustic model while it is established, helping the clustering of phones into positionally-relevant groups, for instance. During perception, acoustic match may be considered between the acoustic input and the independent allophones of all phonemes.
 At the time of perception, a same nonnative phoneme may contain different acoustic cues in different realisations, depending on its position on the word (akin to the aspiration example in syllable-initial stops in English). The acoustics of a Serbian cluster such as \textipa{/gm/} produced in syllable-initial position may be more suggestive of acoustics in English \textipa{[g@m]}, while the word-medial realisations of Serbian \textipa{/gm/} might actually better approximate English \textipa{[gm]} acoustically.
 
-We expect English listeners to be able to correctly perceive certain Serbian clusters such as \textipa{/gm/} word-medially but not word-initially, as they are phonotactically illegal in this latter position. Can our AM-only ASR system reproduce this effect? We will investigate this in Experiment 4. 
+We expect English listeners to be able to correctly perceive certain Serbian clusters such as \textipa{/gm/} word-medially but not word-initially, as they are phonotactically illegal in this latter position. Can our AM-only ASR system reproduce this effect? We will investigate this in Experiment 4.
 
 \subsection{Experiment 3: Variations due to native phonology}
 \small{\textit{{\color{darkgray}The work described in this section was done in collaboration with Emmanuel Dupoux. We thank Karthik Durvasula and Jimin Kahng for kindly sharing with us the stimuli used in the work described in \cite{durvasula2015}. We also thank Rory Turnbull and Jeffrey Holliday for providing the K-SPAN database used for frequency analyses \cite{holliday2017}.\\}}}
@@ -917,7 +1092,6 @@ The authors observed higher rates of \textipa{/i/}-epenthesis in palatal allopho
 % art2ac-per %
 %%%%%%%%%%%%
 \subsection{Experiment 4: Variations due to syllabic structure}
-\small{\textit{{\color{red}ADD ACKNOWLEDGEMENTS EWAN, AMELIA KIMBALL, ANTOINE HEDIER, CLARA DELACOURT, PAUL ANDREY, EMMANUEL, MILICA (thank for recordings)}}}
 \small{\textit{{\color{darkgray}The work described in this section was done in collaboration with Ewan Dunbar, Paul Andrey, Amelia Kimball, Clara Delacourt, Antoine Hedier, and Emmanuel Dupoux. We thank Milica Denić, our Serbian speaker.\\}}}
 
 
