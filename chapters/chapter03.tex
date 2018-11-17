@@ -325,7 +325,7 @@ Since the validation and test sets contain utterances from the same speakers\foo
 \newpage
 \section{Investigating the role of surface phonotactics} \label{3-surfphono}
 
-\small{\textit{{\color{red}ADD ACKNOWLEDGEMENTS THOMAS + EMMANUEL.\\}}}
+\small{\textit{{\color{darkgray}The work described in this section was done in collaboration with Thomas Schatz and Emmanuel Dupoux.}}}
 
 \subsection{Introduction}
 
@@ -806,7 +806,7 @@ At the time of perception, a same nonnative phoneme may contain different acoust
 We expect English listeners to be able to correctly perceive certain Serbian clusters such as \textipa{/gm/} word-medially but not word-initially, as they are phonotactically illegal in this latter position. Can our AM-only ASR system reproduce this effect? We will investigate this in Experiment 4. 
 
 \subsection{Experiment 3: Variations due to native phonology}
-\small{\textit{{\color{red}ADD ACKNOWLEDGEMENTS EMMANUEL. DURVASULA \& KAHNG (thank for recordings), RORY \& JEFF (thank for KSPAN)}}}
+\small{\textit{{\color{darkgray}The work described in this section was done in collaboration with Emmanuel Dupoux. We thank Karthik Durvasula and Jimin Kahng for kindly sharing with us the stimuli used in the work described in \cite{durvasula2015}. We also thank Rory Turnbull and Jeffrey Holliday for providing the K-SPAN database used for frequency analyses \cite{holliday2017}.\\}}}
 
 In this experiment, we investigate if our ASR models are able to reproduce qualitative effects observed in previous work by \cite{durvasula2015}. More specifically, we trained ASR models using Korean and English data to model the perception of consonant clusters by Korean and American English listeners, respectively. The American English listeners, who served as the control population, did not experience vowel epenthesis, unlike their Korean counterparts. Additionally, the authors observed that Korean listeners epenthesized \textipa{/i/} more often when the first consonant of the cluster was a palatal consonant, at the expense of the default epenthetic vowel \textipa{/1/}\footnote{Following the original article, we use \textipa{[1]} to denote the close back unrounded vowel found in the Korean vowel inventory. However, the notation \textipa{[W]} has also previously been used (e.g., in \cite{kabak2007})}. The authors attributed this to listeners taking into consideration phonological alternations when using reverse inference to decode the stimuli. More specifically, palatal consonants are allophonic variants of alveolar consonants preceding the vowel \textipa{/i/}. Therefore, according to their hypothesis, Korean listeners may interpret palatal consonants in a cluster as suggestive of the presence of the vowel \textipa{/i/}.   
 Since our models were not explicitly made aware of these phonological alternations, to what extent were they able to reproduce these effects? Can our models reproduce the cross-linguistic differences in rates of vowel epenthesis without explicit information about native phonological alternations? 
@@ -918,6 +918,8 @@ The authors observed higher rates of \textipa{/i/}-epenthesis in palatal allopho
 %%%%%%%%%%%%
 \subsection{Experiment 4: Variations due to syllabic structure}
 \small{\textit{{\color{red}ADD ACKNOWLEDGEMENTS EWAN, AMELIA KIMBALL, ANTOINE HEDIER, CLARA DELACOURT, PAUL ANDREY, EMMANUEL, MILICA (thank for recordings)}}}
+\small{\textit{{\color{darkgray}The work described in this section was done in collaboration with Ewan Dunbar, Paul Andrey, Amelia Kimball, Clara Delacourt, Antoine Hedier, and Emmanuel Dupoux. We thank Milica Denić, our Serbian speaker.\\}}}
+
 
 In this experiment, we introduced basic allophony to the acoustic models of our ASR system, and evaluated whether this modification resulted in a better approximation of human responses in a task probing epenthesis. More specifically, we trained two different acoustic models which differed in whether phones were word-position-dependent (i.e., different HMM-GMMs depending on the position within the word) or not. We trained the models using the WSJ American English corpus, in order to model the perception of phonotactically illegal Serbian clusters by American English listeners. The clusters were either word-initial or word-medial. Based on results by \cite{kabak2007}, we expected American English listeners to experience epenthesis less frequently with word-medial clusters, when the consonant clusters could be syllabified as a coda followed by an onset consonant. On the other hand, these clusters were not phonotactically legal word-initially, where the only syllabification possible is as a complex onset cluster. We examined whether American English listeners showed differences in rates of epethesis according to word position and, if so, whether word-position-dependent models better approximated participants' rates of epenthesis than word-position-independent ones.         
 
