@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.26)  17 NOV 2018 23:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.26)  20 NOV 2018 01:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2555,20 +2555,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [66 <./images/chapter03/m-ahpa_Gfst.pdf>]
-Overfull \hbox (49.65704pt too wide) in paragraph at lines 393--395
-[]\OT1/cmr/m/n/10.95 As such, for each item, we ob-tained a six-dimensional vec
--tor $\OML/cmm/m/it/10.95 ident[] \OT1/cmr/m/n/10.95 = [\OML/cmm/m/it/10.95 p[]
-; p[]; p[]; p[]; p[]; p[]\OT1/cmr/m/n/10.95 ]$,
- []
-
-
-Overfull \hbox (1.85632pt too wide) in paragraph at lines 393--395
-\OT1/cmr/m/n/10.95 pos-te-ri-or-grams). We can de-fine the hu-man equiv-a-lent 
-$\OML/cmm/m/it/10.95 ident[] \OT1/cmr/m/n/10.95 = [\OML/cmm/m/it/10.95 p[]; p[]
-; p[]; p[]; p[]; p[]\OT1/cmr/m/n/10.95 ]$,
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -4603,7 +4589,7 @@ r/ucrr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvb8
 a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><
 /usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/l
 ocal/texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (168 pages, 4725455 bytes).
+Output written on main.pdf (168 pages, 4725462 bytes).
 PDF statistics:
  3275 PDF objects out of 3580 (max. 8388607)
  2750 compressed objects within 28 object streams
